@@ -14,23 +14,22 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 public class RytsxProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (!itemstack.getOrCreateTag().getBoolean("ranyuan_tao_zhi")) {
-			if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaotie")))) {
-				itemstack.getOrCreateTag().putDouble("ranyuan_tao_zhi", 0.5);
-			}
-			if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaozuanshi")))) {
-				itemstack.getOrCreateTag().putDouble("ranyuan_tao_zhi", 1);
-			}
-			if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaoxiajiehejin")))) {
-				itemstack.getOrCreateTag().putDouble("ranyuan_tao_zhi", 2);
-			}
+		if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaotie")))) {
+			itemstack.getOrCreateTag().putDouble("ranyuan_tao_zhi", ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQHUO.get())) : false) ? 1 : 0.5));
 		}
-		if (!(entity instanceof LivingEntity _livEnt14 && _livEnt14.hasEffect(MobEffects.FIRE_RESISTANCE))) {
+		if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaozuanshi")))) {
+			itemstack.getOrCreateTag().putDouble("ranyuan_tao_zhi", ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQHUO.get())) : false) ? 1.5 : 1));
+		}
+		if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaoxiajiehejin")))) {
+			itemstack.getOrCreateTag().putDouble("ranyuan_tao_zhi", ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQHUO.get())) : false) ? 2.5 : 2));
+		}
+		if (!(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(MobEffects.FIRE_RESISTANCE))) {
 			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getOrCreateTag().getDouble("ranyuan_tao_zhi")
 					+ (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getOrCreateTag().getDouble("ranyuan_tao_zhi")
 					+ (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getOrCreateTag().getDouble("ranyuan_tao_zhi")
@@ -43,7 +42,7 @@ public class RytsxProcedure {
 				+ (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getOrCreateTag().getDouble("ranyuan_tao_zhi")
 				+ (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getOrCreateTag().getDouble("ranyuan_tao_zhi")
 				+ (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getOrCreateTag().getDouble("ranyuan_tao_zhi") >= 4) {
-			if ((entity.isInLava() || entity.isOnFire()) && !(entity instanceof LivingEntity _livEnt34 && _livEnt34.hasEffect(PrimogemcraftModMobEffects.FEIXING.get()))) {
+			if ((entity.isInLava() || entity.isOnFire()) && !(entity instanceof LivingEntity _livEnt35 && _livEnt35.hasEffect(PrimogemcraftModMobEffects.FEIXING.get()))) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.FEIXING.get(),
 							(int) (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getOrCreateTag().getDouble("ranyuan_tao_zhi")
@@ -73,7 +72,7 @@ public class RytsxProcedure {
 					}
 					return false;
 				}
-			}.checkGamemode(entity)) && entity instanceof LivingEntity _livEnt46 && _livEnt46.hasEffect(PrimogemcraftModMobEffects.FEIXING.get())) {
+			}.checkGamemode(entity)) && entity instanceof LivingEntity _livEnt47 && _livEnt47.hasEffect(PrimogemcraftModMobEffects.FEIXING.get())) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PrimogemcraftModMobEffects.FEIXING.get());
 			}

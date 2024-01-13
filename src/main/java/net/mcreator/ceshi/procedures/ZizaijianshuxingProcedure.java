@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
@@ -22,7 +23,7 @@ public class ZizaijianshuxingProcedure {
 		if (entity == null)
 			return;
 		if (itemstack.getItem() == PrimogemcraftModItems.ZIZAITIEJIAN.get()) {
-			if (Math.random() < 0.25) {
+			if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQFENG.get())) : false) ? 0.375 : 0.25)) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 2, 20, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -38,7 +39,7 @@ public class ZizaijianshuxingProcedure {
 			}
 		}
 		if (itemstack.getItem() == PrimogemcraftModItems.ZIZAIZUANSHIJIAN.get()) {
-			if (Math.random() < 0.5) {
+			if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQFENG.get())) : false) ? 0.75 : 0.5)) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 2, 45, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -54,7 +55,7 @@ public class ZizaijianshuxingProcedure {
 			}
 		}
 		if (itemstack.getItem() == PrimogemcraftModItems.ZIZAIHEJINJIAN.get()) {
-			if (Math.random() < 0.75) {
+			if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQFENG.get())) : false) ? 1 : 0.75)) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 2, 60, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ShqwfnjItem extends Item {
 	public ShqwfnjItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(8).rarity(Rarity.COMMON));
 	}
 
 	@Override

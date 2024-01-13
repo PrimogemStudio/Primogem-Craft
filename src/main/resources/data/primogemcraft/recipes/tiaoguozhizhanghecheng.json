@@ -2,15 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "  a",
-    " b ",
-    "b  "
+    " ab",
+    " ca",
+    "d  "
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:yuanshi"
+      "item": "minecraft:redstone"
     },
     "b": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "c": {
+      "item": "minecraft:gold_nugget"
+    },
+    "d": {
       "item": "primogemcraft:yishijiemugun"
     }
   },

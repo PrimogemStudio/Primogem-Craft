@@ -32,12 +32,8 @@ public class Heita_shuxingProcedure {
 			return;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PrimogemcraftModItems.SHENSHENGHUABAN.get()) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getDamageValue() > 1) {
-				{
-					Entity _ent = entity;
-					_ent.teleportTo(x, (-64), z);
-					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(x, (-64), z, _ent.getYRot(), _ent.getXRot());
-				}
+				if (!entity.level().isClientSide())
+					entity.discard();
 				itemstack.setDamageValue(0);
 				itemstack.getOrCreateTag().putBoolean("kaiqi", true);
 			}

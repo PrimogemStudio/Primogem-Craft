@@ -50,7 +50,7 @@ public class AxgItem extends PickaxeItem {
 	@Override
 	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
 		boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
-		AxgsxProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		AxgsxProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate, entity);
 		return retval;
 	}
 

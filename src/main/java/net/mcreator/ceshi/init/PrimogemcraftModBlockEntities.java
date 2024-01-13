@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.ceshi.block.entity.XjhpyhfhBlockEntity;
 import net.mcreator.ceshi.block.entity.Moladui02BlockEntity;
 import net.mcreator.ceshi.block.entity.MmolazhilajitongBlockEntity;
 import net.mcreator.ceshi.block.entity.Mlxdml03BlockEntity;
@@ -21,6 +22,7 @@ import net.mcreator.ceshi.block.entity.GanjinglajitongxiangziBlockEntity;
 import net.mcreator.ceshi.block.entity.DangaoliyueBlockEntity;
 import net.mcreator.ceshi.block.entity.ChuangzaoxiaodengfasheqiBlockEntity;
 import net.mcreator.ceshi.block.entity.CeshixiaodengfasheqiBlockEntity;
+import net.mcreator.ceshi.block.entity.BwdxjhpyhfhBlockEntity;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
 public class PrimogemcraftModBlockEntities {
@@ -35,6 +37,8 @@ public class PrimogemcraftModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> MLXDML_02 = register("mlxdml_02", PrimogemcraftModBlocks.MLXDML_02, Mlxdml02BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MLXDML_03 = register("mlxdml_03", PrimogemcraftModBlocks.MLXDML_03, Mlxdml03BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DANGAOLIYUE = register("dangaoliyue", PrimogemcraftModBlocks.DANGAOLIYUE, DangaoliyueBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> XJHPYHFH = register("xjhpyhfh", PrimogemcraftModBlocks.XJHPYHFH, XjhpyhfhBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BWDXJHPYHFH = register("bwdxjhpyhfh", PrimogemcraftModBlocks.BWDXJHPYHFH, BwdxjhpyhfhBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

@@ -29,7 +29,7 @@ public class SzqItem extends ShovelItem {
 			}
 
 			public float getSpeed() {
-				return 1f;
+				return 2f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -53,7 +53,7 @@ public class SzqItem extends ShovelItem {
 	@Override
 	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
 		boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
-		Szqsx2Procedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), itemstack);
+		Szqsx2Procedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity, itemstack);
 		return retval;
 	}
 
@@ -68,7 +68,8 @@ public class SzqItem extends ShovelItem {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		SzqsxProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
+		SzqsxProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getLevel().getBlockState(context.getClickedPos()), context.getPlayer(),
+				context.getItemInHand());
 		return InteractionResult.SUCCESS;
 	}
 }

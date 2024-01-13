@@ -15,5 +15,5 @@ import net.mcreator.ceshi.PrimogemcraftMod;
 
 public class PrimogemcraftModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, PrimogemcraftMod.MODID);
-	public static final RegistryObject<SimpleParticleType> MOYIN = REGISTRY.register("moyin", () -> new SimpleParticleType(false));
+	public static final RegistryObject<SimpleParticleType> MOYIN = REGISTRY.register("moyin", () -> new SimpleParticleType(true));
 }

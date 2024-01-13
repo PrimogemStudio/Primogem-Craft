@@ -3,6 +3,7 @@ package net.mcreator.ceshi.procedures;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.EntityType;
@@ -19,7 +20,7 @@ public class ZsjgjsxProcedure {
 			return;
 		if (!(sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.GOUYU.get()))) {
 			if (itemstack.getItem() == PrimogemcraftModItems.ZSTJ.get()) {
-				if (Math.random() < 0.05) {
+				if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 0.075 : 0.05)) {
 					if (world instanceof ServerLevel _level) {
 						LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 						entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
@@ -28,7 +29,7 @@ public class ZsjgjsxProcedure {
 				}
 			}
 			if (itemstack.getItem() == PrimogemcraftModItems.ZSZSJ.get()) {
-				if (Math.random() < 0.07) {
+				if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 0.105 : 0.07)) {
 					if (world instanceof ServerLevel _level) {
 						LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 						entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
@@ -37,7 +38,7 @@ public class ZsjgjsxProcedure {
 				}
 			}
 			if (itemstack.getItem() == PrimogemcraftModItems.ZSHJJ.get()) {
-				if (Math.random() < 0.1) {
+				if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 0.15 : 0.1)) {
 					if (world instanceof ServerLevel _level) {
 						LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 						entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;

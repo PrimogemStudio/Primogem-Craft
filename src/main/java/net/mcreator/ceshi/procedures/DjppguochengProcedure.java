@@ -6,6 +6,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -16,8 +17,9 @@ public class DjppguochengProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		entity.getPersistentData().putDouble("djpp", (entity.getPersistentData().getDouble("djpp") + 1));
-		if (entity.getPersistentData().getDouble("djpp") >= 40) {
+		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.DJPPXIANZHI.get())) && entity.isAlive()) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.DJPPXIANZHI.get(), 40, 0, false, false));
 			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.DJPP.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.DJPP.get()).getAmplifier() : 0) == 0) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 4));
@@ -41,7 +43,6 @@ public class DjppguochengProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:djpp1")), SoundSource.PLAYERS, (float) 0.5, 1, false);
 				}
 			}
-			entity.getPersistentData().putDouble("djpp", 0);
 		}
 	}
 }

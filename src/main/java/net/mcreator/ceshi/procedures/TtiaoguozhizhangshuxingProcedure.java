@@ -44,17 +44,21 @@ public class TtiaoguozhizhangshuxingProcedure {
 					}
 					if (Math.random() < 0.1) {
 						entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 114514);
+						if (!entityiterator.level().isClientSide())
+							entityiterator.discard();
 					} else {
 						entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1);
+						if (!entityiterator.level().isClientSide())
+							entityiterator.discard();
+					}
+					{
+						ItemStack _ist = itemstack;
+						if (_ist.hurt(1, RandomSource.create(), null)) {
+							_ist.shrink(1);
+							_ist.setDamageValue(0);
+						}
 					}
 				}
-			}
-		}
-		{
-			ItemStack _ist = itemstack;
-			if (_ist.hurt(1, RandomSource.create(), null)) {
-				_ist.shrink(1);
-				_ist.setDamageValue(0);
 			}
 		}
 		if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {

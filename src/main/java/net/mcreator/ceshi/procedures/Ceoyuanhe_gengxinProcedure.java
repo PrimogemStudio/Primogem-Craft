@@ -6,7 +6,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 
 public class Ceoyuanhe_gengxinProcedure {
@@ -16,24 +15,16 @@ public class Ceoyuanhe_gengxinProcedure {
 		entity.getPersistentData().putDouble("cao_chixu", (entity.getPersistentData().getDouble("cao_chixu") + 1));
 		if (entity.getPersistentData().getDouble("cao_chixu") >= 200) {
 			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1);
-			{
-				Entity _ent = entity;
-				_ent.teleportTo(x, (-64), z);
-				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(x, (-64), z, _ent.getYRot(), _ent.getXRot());
-			}
+			if (!entity.level().isClientSide())
+				entity.discard();
 		}
 		if (entity.isOnFire()) {
 			entity.getPersistentData().putDouble("cao_baozha", (entity.getPersistentData().getDouble("cao_baozha") + 1));
 			if (!(entity.getPersistentData().getDouble("cao_baozha") > 1)) {
 				if (world instanceof Level _level && !_level.isClientSide())
 					_level.explode(null, x, y, z, 4, Level.ExplosionInteraction.TNT);
-				{
-					Entity _ent = entity;
-					_ent.teleportTo(x, (-64), z);
-					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport(x, (-64), z, _ent.getYRot(), _ent.getXRot());
-				}
+				if (!entity.level().isClientSide())
+					entity.discard();
 			}
 		}
 	}

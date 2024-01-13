@@ -50,7 +50,7 @@ public class JlfItem extends AxeItem {
 	@Override
 	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
 		boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
-		JlfsxProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		JlfsxProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return retval;
 	}
 

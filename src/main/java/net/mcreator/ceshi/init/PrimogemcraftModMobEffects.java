@@ -16,6 +16,7 @@ import net.mcreator.ceshi.potion.ZhengchangdaimaMobEffect;
 import net.mcreator.ceshi.potion.ZhandouzhuangtaiMobEffect;
 import net.mcreator.ceshi.potion.YijiMobEffect;
 import net.mcreator.ceshi.potion.TldhyMobEffect;
+import net.mcreator.ceshi.potion.SyzfMobEffect;
 import net.mcreator.ceshi.potion.QwymgsMobEffect;
 import net.mcreator.ceshi.potion.QuezhushixiaoguoMobEffect;
 import net.mcreator.ceshi.potion.QiqiaodaimaxiufuMobEffect;
@@ -28,13 +29,17 @@ import net.mcreator.ceshi.potion.LengquezhongguizhongjuMobEffect;
 import net.mcreator.ceshi.potion.JishengMobEffect;
 import net.mcreator.ceshi.potion.JingquedaimaMobEffect;
 import net.mcreator.ceshi.potion.JijishengchongdefennuMobEffect;
+import net.mcreator.ceshi.potion.JiazuxianzhiMobEffect;
 import net.mcreator.ceshi.potion.GuoquMobEffect;
 import net.mcreator.ceshi.potion.GouyuMobEffect;
 import net.mcreator.ceshi.potion.GongjitishengMobEffect;
 import net.mcreator.ceshi.potion.FengraoMobEffect;
 import net.mcreator.ceshi.potion.FeixingMobEffect;
+import net.mcreator.ceshi.potion.DjqjkjxgxianzhiMobEffect;
+import net.mcreator.ceshi.potion.DjppxianzhiMobEffect;
 import net.mcreator.ceshi.potion.DjppMobEffect;
 import net.mcreator.ceshi.potion.DiguixiaoguoMobEffect;
+import net.mcreator.ceshi.potion.ChunmeipaoxianzhixiaoguoMobEffect;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
 public class PrimogemcraftModMobEffects {
@@ -64,4 +69,9 @@ public class PrimogemcraftModMobEffects {
 	public static final RegistryObject<MobEffect> QWYMGS = REGISTRY.register("qwymgs", () -> new QwymgsMobEffect());
 	public static final RegistryObject<MobEffect> TLDHY = REGISTRY.register("tldhy", () -> new TldhyMobEffect());
 	public static final RegistryObject<MobEffect> LJTDWQ = REGISTRY.register("ljtdwq", () -> new LjtdwqMobEffect());
+	public static final RegistryObject<MobEffect> SYZF = REGISTRY.register("syzf", () -> new SyzfMobEffect());
+	public static final RegistryObject<MobEffect> CHUNMEIPAOXIANZHIXIAOGUO = REGISTRY.register("chunmeipaoxianzhixiaoguo", () -> new ChunmeipaoxianzhixiaoguoMobEffect());
+	public static final RegistryObject<MobEffect> JIAZUXIANZHI = REGISTRY.register("jiazuxianzhi", () -> new JiazuxianzhiMobEffect());
+	public static final RegistryObject<MobEffect> DJPPXIANZHI = REGISTRY.register("djppxianzhi", () -> new DjppxianzhiMobEffect());
+	public static final RegistryObject<MobEffect> DJQJKJXGXIANZHI = REGISTRY.register("djqjkjxgxianzhi", () -> new DjqjkjxgxianzhiMobEffect());
 }

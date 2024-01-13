@@ -41,13 +41,13 @@ public class SanyuezhufuItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u514D\u75AB\u6454\u843D\u4F24\u5BB3"));
-		list.add(Component.literal("\u6BCF\u5929\u635F\u59311\u70B9\u8010\u4E45"));
+		list.add(Component.literal("\u00A77\u643A\u5E26\u540E\u514D\u75AB\u6454\u843D\u4F24\u5BB3\uFF01"));
+		list.add(Component.literal("\u00A77\u6BCF\u4E2A\u6E38\u620F\u65E5\u635F\u59311\u70B9\u8010\u4E45"));
 	}
 
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		CeshihufuProcedure.execute(world, entity, itemstack);
+		CeshihufuProcedure.execute(entity, itemstack);
 	}
 }

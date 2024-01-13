@@ -42,6 +42,7 @@ public class PrimogemcraftModTrades {
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(PrimogemcraftModBlocks.CESHIXIAODENGFASHEQI.get()), new ItemStack(PrimogemcraftModItems.CCHONGGAODAODEDEZANXU.get(), 5),
 					new ItemStack(PrimogemcraftModBlocks.CHUANGZAOXIAODENGFASHEQI.get()), 10, 5, 0.01f));
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.BOOK), new ItemStack(Items.EXPERIENCE_BOTTLE), new ItemStack(PrimogemcraftModItems.DAYINGXIONGDEJINGYAN.get()), 10, 5, 0.05f));
+			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.PAPER), new ItemStack(PrimogemcraftModItems.XIAODAIMOLA.get()), new ItemStack(PrimogemcraftModItems.CUNQUPINGZHENG.get()), 10, 5, 0.05f));
 		}
 		if (event.getType() == VillagerProfession.LEATHERWORKER) {
 			event.getTrades().get(1).add(

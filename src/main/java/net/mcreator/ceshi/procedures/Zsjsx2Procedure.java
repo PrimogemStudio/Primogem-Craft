@@ -27,11 +27,11 @@ public class Zsjsx2Procedure {
 					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.GOUYU.get(), 200, 2));
 			}
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(PrimogemcraftModItems.ZSTJ.get(), 600);
+				_player.getCooldowns().addCooldown(PrimogemcraftModItems.ZSTJ.get(), (int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 300 : 600));
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(PrimogemcraftModItems.ZSZSJ.get(), 800);
+				_player.getCooldowns().addCooldown(PrimogemcraftModItems.ZSZSJ.get(), (int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 400 : 800));
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(PrimogemcraftModItems.ZSHJJ.get(), 900);
+				_player.getCooldowns().addCooldown(PrimogemcraftModItems.ZSHJJ.get(), (int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 450 : 900));
 		}
 	}
 }

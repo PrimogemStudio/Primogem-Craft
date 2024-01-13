@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 4,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:grindstone",
+            "Properties": {
+              "face": "wall",
+              "facing": "north"
+            }
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:bwdxjhpyhfh"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:loom",
+            "Properties": {
+              "facing": "north"
+            }
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:bwdxjhpyhfh"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:lectern",
+            "Properties": {
+              "facing": "north",
+              "has_book": "false",
+              "powered": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:bwdxjhpyhfh"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:smithing_table"
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:bwdxjhpyhfh"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:stonecutter",
+            "Properties": {
+              "facing": "north"
+            }
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:bwdxjhpyhfh"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:composter",
+            "Properties": {
+              "level": "0"
+            }
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:bwdxjhpyhfh"
+        }
+      }
+    ]
+  }
+}

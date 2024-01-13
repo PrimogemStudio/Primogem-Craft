@@ -14,21 +14,20 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 public class Axtsx1Procedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (!itemstack.getOrCreateTag().getBoolean("aixu_tao_zhi")) {
-			if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaotie")))) {
-				itemstack.getOrCreateTag().putDouble("aixu_tao_zhi", 0.5);
-			}
-			if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaozuanshi")))) {
-				itemstack.getOrCreateTag().putDouble("aixu_tao_zhi", 1);
-			}
-			if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaoxiajiehejin")))) {
-				itemstack.getOrCreateTag().putDouble("aixu_tao_zhi", 2);
-			}
+		if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaotie")))) {
+			itemstack.getOrCreateTag().putDouble("aixu_tao_zhi", ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQBING.get())) : false) ? 1 : 0.5));
+		}
+		if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaozuanshi")))) {
+			itemstack.getOrCreateTag().putDouble("aixu_tao_zhi", ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQBING.get())) : false) ? 1.5 : 1));
+		}
+		if (itemstack.is(ItemTags.create(new ResourceLocation("primogemcraft:yuansutaoxiajiehejin")))) {
+			itemstack.getOrCreateTag().putDouble("aixu_tao_zhi", ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQBING.get())) : false) ? 2.5 : 2));
 		}
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getOrCreateTag().getDouble("aixu_tao_zhi")
 				+ (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getOrCreateTag().getDouble("aixu_tao_zhi")
@@ -51,7 +50,7 @@ public class Axtsx1Procedure {
 								* 0.25 * 0.5 * 0.04));
 					entity.getPersistentData().putDouble("ax_dj_sx", 0);
 				}
-				if ((entity.isInLava() || entity.isOnFire()) && !(entity instanceof LivingEntity _livEnt51 && _livEnt51.hasEffect(PrimogemcraftModMobEffects.FEIXING.get()))) {
+				if ((entity.isInLava() || entity.isOnFire()) && !(entity instanceof LivingEntity _livEnt52 && _livEnt52.hasEffect(PrimogemcraftModMobEffects.FEIXING.get()))) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.FEIXING.get(),
 								(int) (((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getOrCreateTag().getDouble("aixu_tao_zhi")
@@ -81,7 +80,7 @@ public class Axtsx1Procedure {
 						}
 						return false;
 					}
-				}.checkGamemode(entity)) && entity instanceof LivingEntity _livEnt63 && _livEnt63.hasEffect(PrimogemcraftModMobEffects.FEIXING.get())) {
+				}.checkGamemode(entity)) && entity instanceof LivingEntity _livEnt64 && _livEnt64.hasEffect(PrimogemcraftModMobEffects.FEIXING.get())) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(PrimogemcraftModMobEffects.FEIXING.get());
 				}
@@ -107,7 +106,7 @@ public class Axtsx1Procedure {
 					}
 					return false;
 				}
-			}.checkGamemode(entity)) && entity instanceof LivingEntity _livEnt67 && _livEnt67.hasEffect(PrimogemcraftModMobEffects.FEIXING.get())) {
+			}.checkGamemode(entity)) && entity instanceof LivingEntity _livEnt68 && _livEnt68.hasEffect(PrimogemcraftModMobEffects.FEIXING.get())) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(PrimogemcraftModMobEffects.FEIXING.get());
 			}

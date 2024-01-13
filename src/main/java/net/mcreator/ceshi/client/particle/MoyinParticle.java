@@ -42,22 +42,17 @@ public class MoyinParticle extends TextureSheetParticle {
 		this.lifetime = (int) Math.max(1, 10 + (this.random.nextInt(4) - 2));
 		this.gravity = 0f;
 		this.hasPhysics = true;
-		this.xd = vx * 1;
-		this.yd = vy * 1;
-		this.zd = vz * 1;
+		this.xd = vx * 0.5;
+		this.yd = vy * 0.5;
+		this.zd = vz * 0.5;
 		this.angularVelocity = -0.2f;
 		this.angularAcceleration = -0.2f;
 		this.setSpriteFromAge(spriteSet);
 	}
 
 	@Override
-	public int getLightColor(float partialTick) {
-		return 15728880;
-	}
-
-	@Override
 	public ParticleRenderType getRenderType() {
-		return ParticleRenderType.PARTICLE_SHEET_LIT;
+		return ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
 	}
 
 	@Override
@@ -67,7 +62,7 @@ public class MoyinParticle extends TextureSheetParticle {
 		this.roll += this.angularVelocity;
 		this.angularVelocity += this.angularAcceleration;
 		if (!this.removed) {
-			this.setSprite(this.spriteSet.get((this.age / 1) % 10 + 1, 10));
+			this.setSprite(this.spriteSet.get((this.age / 3) % 10 + 1, 10));
 		}
 	}
 }

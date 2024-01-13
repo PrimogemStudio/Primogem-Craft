@@ -1,12 +1,17 @@
 package net.mcreator.ceshi.procedures;
 
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
@@ -14,7 +19,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 
 public class SuijiqiwuguishuxingProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double a = 0;
@@ -48,47 +53,15 @@ public class SuijiqiwuguishuxingProcedure {
 					}
 				}
 				a = Mth.nextInt(RandomSource.create(), 0, 2);
-				if (Math.random() < 0.16) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.YIYINHEDALETOU.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) a)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else if (Math.random() < 0.16) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.XINGJIDALETOU.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) a)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else if (Math.random() < 0.16) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.JLBJ.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) a)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else if (Math.random() < 0.16) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QWXYZQ.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) a)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else if (Math.random() < 0.16) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.WANSHINANG.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) a)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.XIANGDANGANLAO.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) a)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
+				if (!world.isClientSide() && world.getServer() != null) {
+					for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation("primogemcraft:entities/heitaqiwu_01"))
+							.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
+						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							ItemStack _setstack = itemstackiterator;
+							_setstack.setCount(1);
+							((Slot) _slots.get((int) a)).set(_setstack);
+							_player.containerMenu.broadcastChanges();
+						}
 					}
 				}
 				b = Mth.nextInt(RandomSource.create(), 0, 2);
@@ -117,47 +90,15 @@ public class SuijiqiwuguishuxingProcedure {
 				} else {
 					b = b;
 				}
-				if (Math.random() < 0.16) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.WAWANXIANGWUCHANGTOU.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) b)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else if (Math.random() < 0.16) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QWXBZSQ.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) b)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else if (Math.random() < 0.16) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QWHDLZ.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) b)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else if (Math.random() < 0.16) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.FULINJIAO.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) b)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else if (Math.random() < 0.16) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.FENLIEJINBI.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) b)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QWYMZJ.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) b)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
+				if (!world.isClientSide() && world.getServer() != null) {
+					for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation("primogemcraft:entities/heitaqiwu_02"))
+							.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
+						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							ItemStack _setstack = itemstackiterator;
+							_setstack.setCount(1);
+							((Slot) _slots.get((int) b)).set(_setstack);
+							_player.containerMenu.broadcastChanges();
+						}
 					}
 				}
 				if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
@@ -169,40 +110,15 @@ public class SuijiqiwuguishuxingProcedure {
 						c = 2;
 					}
 				}
-				if (Math.random() < 0.2) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.CEBUZHUNXIA.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) c)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else if (Math.random() < 0.2) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QWKWZJ.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) c)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else if (Math.random() < 0.2) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QWFLYB.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) c)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else if (Math.random() < 0.2) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.YIYIMUGUOSHI.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) c)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
-					}
-				} else {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SSANBAMIANTOU.get());
-						_setstack.setCount(1);
-						((Slot) _slots.get((int) c)).set(_setstack);
-						_player.containerMenu.broadcastChanges();
+				if (!world.isClientSide() && world.getServer() != null) {
+					for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation("primogemcraft:entities/heitaqiwu_03"))
+							.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
+						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							ItemStack _setstack = itemstackiterator;
+							_setstack.setCount(1);
+							((Slot) _slots.get((int) c)).set(_setstack);
+							_player.containerMenu.broadcastChanges();
+						}
 					}
 				}
 			}

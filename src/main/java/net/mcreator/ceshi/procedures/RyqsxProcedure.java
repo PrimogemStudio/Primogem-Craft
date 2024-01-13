@@ -14,6 +14,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 
 public class RyqsxProcedure {
@@ -30,7 +31,7 @@ public class RyqsxProcedure {
 					}
 				}
 				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CLAY) {
-					if (Math.random() < 0.5) {
+					if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQHUO.get())) : false) ? 0.75 : 0.5)) {
 						world.setBlock(BlockPos.containing(x, y, z), Blocks.BRICKS.defaultBlockState(), 3);
 					}
 					{
@@ -41,11 +42,11 @@ public class RyqsxProcedure {
 						}
 					}
 					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
+						_player.getCooldowns().addCooldown(itemstack.getItem(), (int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQHUO.get())) : false) ? 10 : 20));
 				}
 				if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:logs")))) {
 					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
+						_player.getCooldowns().addCooldown(itemstack.getItem(), (int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQHUO.get())) : false) ? 10 : 20));
 					{
 						ItemStack _ist = itemstack;
 						if (_ist.hurt(1, RandomSource.create(), null)) {
@@ -53,7 +54,7 @@ public class RyqsxProcedure {
 							_ist.setDamageValue(0);
 						}
 					}
-					if (Math.random() < 0.1) {
+					if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQHUO.get())) : false) ? 0.15 : 0.1)) {
 						world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.MUTANKUAI.get().defaultBlockState(), 3);
 					} else {
 						if (Math.random() < 0.7) {

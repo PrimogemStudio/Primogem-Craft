@@ -64,7 +64,7 @@ public class SuijiqiwuButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			SuijiqiwuguishuxingProcedure.execute(entity);
+			SuijiqiwuguishuxingProcedure.execute(world, entity);
 		}
 	}
 

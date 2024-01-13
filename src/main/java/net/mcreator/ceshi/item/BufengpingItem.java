@@ -4,7 +4,6 @@ package net.mcreator.ceshi.item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
@@ -13,6 +12,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.Bufengpingsx01Procedure;
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 import java.util.List;
 
@@ -28,7 +28,7 @@ public class BufengpingItem extends Item {
 
 	@Override
 	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-		return new ItemStack(Items.GLASS_BOTTLE);
+		return new ItemStack(PrimogemcraftModItems.YSJBFPK.get());
 	}
 
 	@Override

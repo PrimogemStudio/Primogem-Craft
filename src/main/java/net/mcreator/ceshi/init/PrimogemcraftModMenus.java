@@ -12,7 +12,9 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.ceshi.world.inventory.ZhangquanzhezhinangguiMenu;
+import net.mcreator.ceshi.world.inventory.YinhangMenu;
 import net.mcreator.ceshi.world.inventory.YibangrenzhinangguiMenu;
+import net.mcreator.ceshi.world.inventory.TaozhuangchakanMenu;
 import net.mcreator.ceshi.world.inventory.SuijiqiwuMenu;
 import net.mcreator.ceshi.world.inventory.MolalajitongMenu;
 import net.mcreator.ceshi.world.inventory.MaoxianjiazhinangguiMenu;
@@ -20,9 +22,11 @@ import net.mcreator.ceshi.world.inventory.LiulangzhezhinangguiMenu;
 import net.mcreator.ceshi.world.inventory.HeitayindaoyongguiMenu;
 import net.mcreator.ceshi.world.inventory.GanjinglajitongMenu;
 import net.mcreator.ceshi.world.inventory.GUImoladuiMenu;
+import net.mcreator.ceshi.world.inventory.CunzheshezhiMenu;
 import net.mcreator.ceshi.world.inventory.CeshishijianxuanzejiemianMenu;
 import net.mcreator.ceshi.world.inventory.CeshiguiMenu;
 import net.mcreator.ceshi.world.inventory.CeshifumoguiMenu;
+import net.mcreator.ceshi.world.inventory.BwdyinhangMenu;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
 public class PrimogemcraftModMenus {
@@ -39,4 +43,8 @@ public class PrimogemcraftModMenus {
 	public static final RegistryObject<MenuType<CeshifumoguiMenu>> CESHIFUMOGUI = REGISTRY.register("ceshifumogui", () -> IForgeMenuType.create(CeshifumoguiMenu::new));
 	public static final RegistryObject<MenuType<HeitayindaoyongguiMenu>> HEITAYINDAOYONGGUI = REGISTRY.register("heitayindaoyonggui", () -> IForgeMenuType.create(HeitayindaoyongguiMenu::new));
 	public static final RegistryObject<MenuType<GUImoladuiMenu>> GU_IMOLADUI = REGISTRY.register("gu_imoladui", () -> IForgeMenuType.create(GUImoladuiMenu::new));
+	public static final RegistryObject<MenuType<YinhangMenu>> YINHANG = REGISTRY.register("yinhang", () -> IForgeMenuType.create(YinhangMenu::new));
+	public static final RegistryObject<MenuType<BwdyinhangMenu>> BWDYINHANG = REGISTRY.register("bwdyinhang", () -> IForgeMenuType.create(BwdyinhangMenu::new));
+	public static final RegistryObject<MenuType<CunzheshezhiMenu>> CUNZHESHEZHI = REGISTRY.register("cunzheshezhi", () -> IForgeMenuType.create(CunzheshezhiMenu::new));
+	public static final RegistryObject<MenuType<TaozhuangchakanMenu>> TAOZHUANGCHAKAN = REGISTRY.register("taozhuangchakan", () -> IForgeMenuType.create(TaozhuangchakanMenu::new));
 }

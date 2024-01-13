@@ -14,6 +14,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 
 public class YxaxgsxProcedure {
@@ -22,8 +23,8 @@ public class YxaxgsxProcedure {
 			return;
 		if (blockstate.getBlock() == PrimogemcraftModBlocks.YUANSUJINGSHIKUAI.get()) {
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
-			if (Math.random() < 0.95) {
+				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQBING.get())) : false) ? 10 : 20));
+			if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQBING.get())) : false) ? 1 : 0.95)) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.beacon.power_select")), SoundSource.BLOCKS, 1, 1);
@@ -46,9 +47,9 @@ public class YxaxgsxProcedure {
 				} else {
 					world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.AIXUBINGYUFANGKU_I.get().defaultBlockState(), 3);
 				}
-				world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(PrimogemcraftModBlocks.YUANSUJINGSHIKUAI.get().defaultBlockState()));
 			} else {
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(PrimogemcraftModBlocks.YUANSUJINGSHIKUAI.get().defaultBlockState()));
 			}
 		}
 	}

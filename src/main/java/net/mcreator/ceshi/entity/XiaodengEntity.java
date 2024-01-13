@@ -134,7 +134,7 @@ public class XiaodengEntity extends PathfinderMob {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		Xiaodeng_shuxing_2Procedure.execute(this.getX(), this.getY(), this.getZ(), this);
+		Xiaodeng_shuxing_2Procedure.execute(this);
 	}
 
 	@Override

@@ -27,10 +27,12 @@ public class JjlcjlqsxProcedure {
 				}
 			}
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), Mth.nextInt(RandomSource.create(), 160, 320));
+				_player.getCooldowns().addCooldown(itemstack.getItem(),
+						Mth.nextInt(RandomSource.create(), (int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQYAN.get())) : false) ? 80 : 160),
+								(int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQYAN.get())) : false) ? 160 : 320)));
 		}
 		if (itemstack.getItem() == PrimogemcraftModItems.JLC.get()) {
-			if (Math.random() < 0.001) {
+			if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQYAN.get())) : false) ? 0.0015 : 0.001)) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(PrimogemcraftModItems.JIANLAOHUANGYU.get()));
 					entityToSpawn.setPickUpDelay(0);

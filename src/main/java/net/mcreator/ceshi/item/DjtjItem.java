@@ -49,7 +49,7 @@ public class DjtjItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		DjjsxProcedure.execute(sourceentity, itemstack);
+		DjjsxProcedure.execute(entity, sourceentity, itemstack);
 		return retval;
 	}
 
