@@ -41,7 +41,7 @@ public class DaguanziBlock extends FallingBlock {
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:xiaoguanzi")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.step")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.step")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.step")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.step"))))
-				.strength(0f, 1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
+				.strength(0f, 1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().noLootTable().offsetType(Block.OffsetType.XZ));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

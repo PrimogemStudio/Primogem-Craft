@@ -49,37 +49,15 @@ public class JiemuwuqibufenProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.item.break")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
-			if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) == 1) {
-				(immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-						.setDamageValue((int) ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage() * 0.9));
-				{
-					Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
-						_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
-						EnchantmentHelper.setEnchantments(_enchantments, (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					}
-				}
-			}
-			if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) == 2) {
-				(immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-						.setDamageValue((int) ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage() * 0.75));
-				{
-					Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
-						_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
-						EnchantmentHelper.setEnchantments(_enchantments, (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					}
-				}
-			}
-			if ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) == 3) {
-				(immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-						.setDamageValue((int) ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage() * 0.5));
-				{
-					Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
-						_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
-						EnchantmentHelper.setEnchantments(_enchantments, (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					}
+			(immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+					.setDamageValue((int) ((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage()
+							- (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage()
+									* (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) * 0.2));
+			{
+				Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
+				if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
+					_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
+					EnchantmentHelper.setEnchantments(_enchantments, (immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
 				}
 			}
 		}
@@ -92,34 +70,14 @@ public class JiemuwuqibufenProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.item.break")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) == 1) {
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).setDamageValue((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage() * 0.9));
-				{
-					Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
-						_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
-						EnchantmentHelper.setEnchantments(_enchantments, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					}
-				}
-			}
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) == 2) {
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).setDamageValue((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage() * 0.75));
-				{
-					Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
-						_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
-						EnchantmentHelper.setEnchantments(_enchantments, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					}
-				}
-			}
-			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) == 3) {
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).setDamageValue((int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage() * 0.5));
-				{
-					Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
-						_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
-						EnchantmentHelper.setEnchantments(_enchantments, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					}
+			(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).setDamageValue(
+					(int) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage() - (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage()
+							* (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) * 0.2));
+			{
+				Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
+				if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
+					_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
+					EnchantmentHelper.setEnchantments(_enchantments, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
 				}
 			}
 		}

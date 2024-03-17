@@ -11,7 +11,7 @@ import net.mcreator.ceshi.procedures.Fengrao_lizishuxingProcedure;
 
 public class FengraoMobEffect extends MobEffect {
 	public FengraoMobEffect() {
-		super(MobEffectCategory.BENEFICIAL, -13312);
+		super(MobEffectCategory.BENEFICIAL, -16038607);
 	}
 
 	@Override

@@ -1,24 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    " a ",
-    "bcb",
-    " a "
-  ],
-  "key": {
-    "a": {
-      "item": "primogemcraft:xinghui"
-    },
-    "b": {
-      "item": "primogemcraft:yuanshi"
-    },
-    "c": {
-      "item": "primogemcraft:xixiangyuzhiyuan"
-    }
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:yuanshi"
+  },
+  "base": {
+    "item": "primogemcraft:xingchen"
+  },
+  "addition": {
+    "item": "primogemcraft:xinghui"
   },
   "result": {
-    "item": "primogemcraft:jijiuchanzhiyuan",
-    "count": 2
+    "item": "primogemcraft:jijiuchanzhiyuan"
   }
 }

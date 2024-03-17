@@ -33,7 +33,7 @@ public class ChuangzaoxiaodengfasheqiBlock extends Block implements EntityBlock 
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u6536\u5230\u7EA2\u77F3\u4FE1\u53F7\u53D1\u5C04\u9704\u706F"));
+		list.add(Component.literal("\u00A77\u7EA2\u77F3\u9A71\u52A8"));
 		list.add(Component.literal("\u00A7d\u4E0D\u4F1A\u635F\u8017\u5BFF\u547D"));
 	}
 

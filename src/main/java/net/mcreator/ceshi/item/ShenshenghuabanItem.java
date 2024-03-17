@@ -38,10 +38,9 @@ public class ShenshenghuabanItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u5B83\u771F\u597D\u770B"));
-		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A7d\u53F3\u952E\u5730\u9762\u53EC\u5524\u4E00\u53EA\u9ED1\u5854"));
-		list.add(Component.literal("\u00A7d\u624B\u6301\u53F3\u952E\u56DE\u6536\u4E00\u53EA\u9ED1\u5854"));
+		list.add(Component.literal("\u00A77\u53F3\u952E\u5730\u9762\u00A7b\u53EC\u5524\u00A77\u865A\u62DF\u9ED1\u5854"));
+		list.add(Component.literal("\u00A77\u53F3\u952E\u865A\u62DF\u9ED1\u5854\u4EE5\u00A7e\u56DE\u6536"));
+		list.add(Component.literal("\u00A78\u5B83\u771F\u597D\u770B"));
 	}
 
 	@Override

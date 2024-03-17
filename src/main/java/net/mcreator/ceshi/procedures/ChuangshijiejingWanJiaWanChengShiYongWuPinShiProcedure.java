@@ -12,15 +12,11 @@ public class ChuangshijiejingWanJiaWanChengShiYongWuPinShiProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1800, 1));
+			_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 6000, 1));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3200, 1));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 200, 1));
-		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 100, 5));
-		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 1800, 2));
+			_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 1200, 2));
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), 1600);
 	}

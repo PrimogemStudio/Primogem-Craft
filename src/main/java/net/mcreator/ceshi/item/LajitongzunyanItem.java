@@ -22,7 +22,7 @@ public class LajitongzunyanItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u5783\u573E\u6876\u8FD8\u6709\u5C0A\u4E25....\uFF1F"));
+		list.add(Component.literal("\u00A77\u975E\u5E38\u6709\u5C0A\u4E25\u7684\u5783\u573E\u6876...."));
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A75\u5F53\u98DF\u7528\u540E\uFF1A"));
 		list.add(Component.literal("\u00A79\u6297\u6027\u63D0\u5347II\uFF083:00\uFF09"));

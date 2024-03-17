@@ -1,27 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "aba",
-    "c c",
-    "d d"
-  ],
-  "key": {
-    "a": {
-      "item": "primogemcraft:molakuai_01"
-    },
-    "b": {
-      "item": "primogemcraft:mmolapeiziwupin"
-    },
-    "c": {
-      "item": "primogemcraft:jingzhimolakuai"
-    },
-    "d": {
-      "item": "primogemcraft:jinzhimola"
-    }
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:qhmbml"
+  },
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "addition": {
+    "item": "primogemcraft:mmolapeiziwupin"
   },
   "result": {
-    "item": "primogemcraft:kkuijiaceshi_leggings",
-    "count": 1
+    "item": "primogemcraft:kkuijiaceshi_leggings"
   }
 }

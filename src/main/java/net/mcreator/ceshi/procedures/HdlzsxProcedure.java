@@ -56,7 +56,14 @@ public class HdlzsxProcedure {
 				}
 			}
 			if (sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWXBZSQ.get())) : false) {
-				if (Math.random() <= 0.01) {
+				if (Math.random() <= (!((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("xinbiao_zhuoseji_sx"))
+						? 0.01
+						: (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("xinbiao_zhuoseji_sx") * 0.1)) {
+					(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("xinbiao_zhuoseji_sx",
+							(!((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("xinbiao_zhuoseji_sx"))
+									? 0.1
+									: (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("xinbiao_zhuoseji_sx")
+											- (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("xinbiao_zhuoseji_sx") * 0.1));
 					{
 						CompoundTag _nbtTag = ((EnchantmentHelper.enchantItem(RandomSource.create(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY), 1, false)).copy()).getTag();
 						if (_nbtTag != null)

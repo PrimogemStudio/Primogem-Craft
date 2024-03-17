@@ -43,6 +43,13 @@ public class PrimogemcraftModTrades {
 					new ItemStack(PrimogemcraftModBlocks.CHUANGZAOXIAODENGFASHEQI.get()), 10, 5, 0.01f));
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.BOOK), new ItemStack(Items.EXPERIENCE_BOTTLE), new ItemStack(PrimogemcraftModItems.DAYINGXIONGDEJINGYAN.get()), 10, 5, 0.05f));
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.PAPER), new ItemStack(PrimogemcraftModItems.XIAODAIMOLA.get()), new ItemStack(PrimogemcraftModItems.CUNQUPINGZHENG.get()), 10, 5, 0.05f));
+			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(PrimogemcraftModItems.XINGHUI.get(), 5), new ItemStack(PrimogemcraftModItems.XIAODAIMOLA.get()), new ItemStack(PrimogemcraftModItems.JIJIUCHANZHIYUAN.get()), 5, 5, 0f));
+			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(PrimogemcraftModItems.XINGHUI.get(), 5),
+
+					new ItemStack(PrimogemcraftModItems.XIXIANGYUZHIYUAN.get()), 5, 5, 0f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(PrimogemcraftModItems.XINGCHEN.get(), 10),
+
+					new ItemStack(PrimogemcraftModItems.SHANBIANZHICHEN.get()), 3, 5, 0.03f));
 		}
 		if (event.getType() == VillagerProfession.LEATHERWORKER) {
 			event.getTrades().get(1).add(

@@ -18,5 +18,6 @@ public class Ljtg2sxProcedure {
 					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.LJTDWQ.get(), 60, 0, false, false));
 			}
 		}
+		LjtchenshouProcedure.execute(entity, itemstack);
 	}
 }

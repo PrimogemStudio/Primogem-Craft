@@ -37,15 +37,10 @@ public class MaoxianjiadejingyanItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("\u00A78\u53EF\u4EE5\u50A8\u5B58\u00A7727\u00A78\u7ECF\u9A8C\u7B49\u7EA7\u7684\u00A78\u7ECF\u9A8C\u503C\uFF01"));
 		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A77\u53EF\u4EE5\u50A8\u5B58\u00A7e27\u00A7a\u7ECF\u9A8C\u7B49\u7EA7\u00A77\u7684\u00A7a\u7ECF\u9A8C\u503C\uFF01"));
-		list.add(Component.literal("\u00A77---------------------"));
-		list.add(Component.literal("\u00A77\u5B58\u5165\u5F53\u524D\u7ECF\u9A8C\u503C\u00A7e[\u53F3\u952E]"));
-		list.add(Component.literal("\u00A76[shift+\u53F3\u952E]\u00A77\u53D6\u51FA\u6240\u6709\u7ECF\u9A8C\u503C"));
-		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A7c - \u5347\u7EA7\u540E\u4E0D\u4FDD\u7559\u7ECF\u9A8C"));
-		list.add(Component.literal("\u00A7c - \u7ECF\u9A8C\u4E66\u9891\u7E41\u5B58\u53D6\u53EF\u80FD"));
-		list.add(Component.literal("\u00A7c\u635F\u5931\u4E00\u5C0F\u90E8\u5206\u7ECF\u9A8C\uFF01"));
+		list.add(Component.literal("\u00A7c \u5347\u7EA7\u540E\u4E0D\u4FDD\u7559\u7ECF\u9A8C"));
+		list.add(Component.literal("\u00A7c \u9891\u7E41\u5B58\u53D6\u53EF\u80FD\u9020\u6210\u635F\u5931"));
 	}
 
 	@Override

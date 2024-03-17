@@ -94,5 +94,6 @@ public class AxjsxProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 240, 127));
 			}
 		}
+		entity.setTicksFrozen(200);
 	}
 }

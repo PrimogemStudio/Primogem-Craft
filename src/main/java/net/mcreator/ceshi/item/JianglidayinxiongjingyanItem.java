@@ -16,43 +16,40 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.ceshi.procedures.Liulang_jingyan_shuxingProcedure;
 import net.mcreator.ceshi.procedures.JingyanshutongyongsuijijingyanjiangliProcedure;
+import net.mcreator.ceshi.procedures.Jingyanshushuxing2Procedure;
+import net.mcreator.ceshi.procedures.Jingyanshushuxing1Procedure;
+import net.mcreator.ceshi.procedures.Jingyanshushuxing0Procedure;
 import net.mcreator.ceshi.procedures.HechengxiufujingyanquchuProcedure;
-import net.mcreator.ceshi.procedures.Dayingxiong_shu_faguangProcedure;
 
 import java.util.List;
 
 public class JianglidayinxiongjingyanItem extends Item {
 	public JianglidayinxiongjingyanItem() {
-		super(new Item.Properties().durability(1396).fireResistant().rarity(Rarity.EPIC));
+		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public boolean isFoil(ItemStack itemstack) {
 		Entity entity = Minecraft.getInstance().player;
-		return Dayingxiong_shu_faguangProcedure.execute(entity, itemstack);
+		return Jingyanshushuxing0Procedure.execute(entity, itemstack);
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A77\u53EF\u4EE5\u50A8\u5B58\u00A7d30\u00A7a\u7ECF\u9A8C\u7B49\u7EA7\u00A77\u7684\u00A7a\u7ECF\u9A8C\u503C\uFF01"));
-		list.add(Component.literal("\u00A77---------------------"));
-		list.add(Component.literal("\u00A77\u5B58\u5165\u5F53\u524D\u7ECF\u9A8C\u503C\u00A7e[\u53F3\u952E]"));
-		list.add(Component.literal("\u00A76[shift+\u53F3\u952E]\u00A77\u53D6\u51FA\u6240\u6709\u7ECF\u9A8C\u503C"));
-		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A7c - \u5347\u7EA7\u540E\u4E0D\u4FDD\u7559\u7ECF\u9A8C"));
-		list.add(Component.literal("\u00A7c - \u7ECF\u9A8C\u4E66\u9891\u7E41\u5B58\u53D6\u53EF\u80FD"));
-		list.add(Component.literal("\u00A7c\u635F\u5931\u4E00\u5C0F\u90E8\u5206\u7ECF\u9A8C\uFF01"));
+		Entity entity = itemstack.getEntityRepresentation();
+		double x = entity != null ? entity.getX() : 0.0;
+		double y = entity != null ? entity.getY() : 0.0;
+		double z = entity != null ? entity.getZ() : 0.0;
+		list.add(Component.literal(Jingyanshushuxing1Procedure.execute(world, itemstack)));
 	}
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		Liulang_jingyan_shuxingProcedure.execute(world, entity, ar.getObject());
+		JingyanshutongyongsuijijingyanjiangliProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
 	}
 
@@ -65,6 +62,6 @@ public class JianglidayinxiongjingyanItem extends Item {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		JingyanshutongyongsuijijingyanjiangliProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		Jingyanshushuxing2Procedure.execute();
 	}
 }

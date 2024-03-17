@@ -24,7 +24,7 @@ public class ZuishengkuangshiBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A75\u5728\u6C34\u57DF\u00A7c\u9644\u8FD1\u00A75\u751F\u6210"));
+		list.add(Component.literal("\u00A78\u5728\u6CB3\u6D41\u7FA4\u620F\u6D45\u5C42\u6DF1\u5904\u751F\u6210"));
 	}
 
 	@Override

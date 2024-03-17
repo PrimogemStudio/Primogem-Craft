@@ -23,15 +23,15 @@ public class WawanxiangwuchangtouItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A7b\u53F3\u952E\u4F7F\u7528\u00A7f\u540E\u4F9D\u636E\u00A7b\u526F\u624B\u6301\u6709\u00A7a\u5DE5\u5177\u00A7f\u7684\u00A7b\u7C7B\u578B"));
-		list.add(Component.literal("\u00A7f\u5BF9\u00A7c\u5DF2\u9644\u9B54\u00A7f\u7684\u00A7b\u5DE5\u5177\u7C7B\u00A7e\u7269\u54C1\u00A7f\u63D0\u4F9B"));
-		list.add(Component.literal("\u00A7d2\u6761\u00A7e\u968F\u673A\u5C5E\u6027\u00A7b\u968F\u673A\u7B49\u7EA7\u00A7f\u7684\u00A75\u9644\u9B54\u00A7f\u6548\u679C\uFF01"));
+		list.add(Component.literal("\u00A77\u53F3\u952E\u4F7F\u7528\u540E\u5BF9\u526F\u624B\u5DF2\u9644\u9B54\u7269\u54C1"));
+		list.add(Component.literal("\u00A77\u6DFB\u52A0\u4E00\u6B2130\u9644\u9B54\u7B49\u7EA7\u7684\u968F\u673A\u9644"));
+		list.add(Component.literal("\u00A77\u9B54\uFF0C\u6BCF\u4EF6\u88C5\u5907\u4EC5\u53EF\u4F7F\u7528\u4E00\u6B21"));
 	}
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		WawanxiangwuchangtoushuxingProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		WawanxiangwuchangtoushuxingProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
 	}
 }

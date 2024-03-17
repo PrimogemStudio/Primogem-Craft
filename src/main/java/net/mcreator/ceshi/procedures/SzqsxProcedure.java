@@ -17,13 +17,14 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 
 public class SzqsxProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (entity.isShiftKeyDown() && blockstate.is(BlockTags.create(new ResourceLocation("minecraft:dirt")))) {
+		if (entity.isShiftKeyDown() && (blockstate.is(BlockTags.create(new ResourceLocation("minecraft:dirt"))) || blockstate.getBlock() == Blocks.DIRT_PATH)) {
 			if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
@@ -32,7 +33,7 @@ public class SzqsxProcedure {
 					_entity.swing(InteractionHand.OFF_HAND, true);
 			}
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 10);
+				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQCAO.get())) : false) ? 5 : 10));
 			{
 				ItemStack _ist = itemstack;
 				if (_ist.hurt(1, RandomSource.create(), null)) {

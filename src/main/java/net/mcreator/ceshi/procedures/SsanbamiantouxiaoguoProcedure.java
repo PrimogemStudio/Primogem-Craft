@@ -511,6 +511,18 @@ public class SsanbamiantouxiaoguoProcedure {
 					}
 				}
 			}
+			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWYZZM.get())) : false) {
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(PrimogemcraftModItems.QWYZZM.get());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+					}
+				}
+			}
 		}
 	}
 }

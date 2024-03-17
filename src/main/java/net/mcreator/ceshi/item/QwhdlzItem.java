@@ -24,7 +24,7 @@ public class QwhdlzItem extends Item {
 		list.add(Component.literal("\u00A77\u6740\u6B7B64\u53EA\u4EA1\u7075\u751F\u7269\u6216\u8282\u80A2\u751F\u7269\u540E\uFF0C\u4E3A"));
 		list.add(Component.literal("\u00A77\u526F\u624B\u7269\u54C1\u6DFB\u52A0\u4E00\u6B21\u968F\u673A1\u7EA7\u9644\u9B54"));
 		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A7c\u4E0D\u4F1A\u663E\u793A\u8FDB\u5EA6\uFF01"));
+		list.add(Component.literal("\u00A7c\u4E0D\u4F1A\u663E\u793A\u8FDB\u5EA6\u4E14\u5355\u4E00\u88C5\u5907\u81F3\u591A\u89E6\u53D1\u4E24\u6B21"));
 	}
 
 	@Override

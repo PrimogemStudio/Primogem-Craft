@@ -21,7 +21,7 @@ public class WanshinangItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u7834\u574F\u7F50\u5B50\u65F6\u6389\u843D\u53CC\u500D\u7269\u54C1"));
+		list.add(Component.literal("\u00A77\u7834\u574F\u7F50\u5B50\u65F6\u6389\u843D\u53CC\u500D\u6218\u5229\u54C1"));
 	}
 
 	@Override

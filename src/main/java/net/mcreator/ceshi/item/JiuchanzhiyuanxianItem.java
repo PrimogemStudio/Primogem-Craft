@@ -18,6 +18,6 @@ public class JiuchanzhiyuanxianItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u4EC5\u9650\u5408\u6210"));
+		list.add(Component.literal("\u00A77\u5408\u6210\u6750\u6599"));
 	}
 }

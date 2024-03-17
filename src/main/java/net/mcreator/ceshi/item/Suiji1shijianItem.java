@@ -23,7 +23,7 @@ public class Suiji1shijianItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u53F3\u952E\u83B7\u5F97\u9519\u8BEF\u4EE3\u7801"));
+		list.add(Component.literal("\u00A78\u53F3\u952E\u83B7\u5F97\u9519\u8BEF\u4EE3\u7801"));
 	}
 
 	@Override

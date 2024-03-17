@@ -30,8 +30,7 @@ public class JijiuchanzhiyuanItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u624B\u6301\u00A7b\u957F\u6309\u53F3\u952E\u00A7f\u4EE5\u62BD\u5361"));
-		list.add(Component.literal("\u00A7f\u5341....\u4FDD....\u6B6A"));
+		list.add(Component.literal("\u00A77\u957F\u6309\u53F3\u952E\u4F7F\u7528"));
 	}
 
 	@Override

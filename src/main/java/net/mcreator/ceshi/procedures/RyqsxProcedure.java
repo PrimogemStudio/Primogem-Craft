@@ -21,6 +21,7 @@ public class RyqsxProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		boolean a = false;
 		if (entity.isShiftKeyDown()) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CLAY || (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:logs")))) {
 				if (world instanceof Level _level) {
@@ -32,6 +33,9 @@ public class RyqsxProcedure {
 				}
 				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.CLAY) {
 					if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQHUO.get())) : false) ? 0.75 : 0.5)) {
+						a = true;
+					}
+					if (a) {
 						world.setBlock(BlockPos.containing(x, y, z), Blocks.BRICKS.defaultBlockState(), 3);
 					}
 					{
@@ -55,11 +59,16 @@ public class RyqsxProcedure {
 						}
 					}
 					if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQHUO.get())) : false) ? 0.15 : 0.1)) {
-						world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.MUTANKUAI.get().defaultBlockState(), 3);
+						a = true;
 					} else {
 						if (Math.random() < 0.7) {
-							world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+							a = false;
 						}
+					}
+					if (a) {
+						world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.MUTANKUAI.get().defaultBlockState(), 3);
+					} else {
+						world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 					}
 				}
 			}

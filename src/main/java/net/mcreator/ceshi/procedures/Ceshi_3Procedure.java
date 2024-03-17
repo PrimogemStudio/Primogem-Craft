@@ -2,7 +2,6 @@ package net.mcreator.ceshi.procedures;
 
 import net.minecraftforge.network.NetworkHooks;
 
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -11,6 +10,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
@@ -22,7 +22,7 @@ import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 import io.netty.buffer.Unpooled;
 
 public class Ceshi_3Procedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double ceshi_01 = 0;
@@ -46,9 +46,13 @@ public class Ceshi_3Procedure {
 					}, _bpos);
 				}
 			} else {
-				entity.setDeltaMovement(new Vec3((entity.getLookAngle().x + 0.5), (entity.getLookAngle().y + 0.2), (entity.getLookAngle().z + 0.5)));
-				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
+				{
+					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+					if (_ist.hurt(10, RandomSource.create(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
+					}
+				}
 			}
 		}
 	}

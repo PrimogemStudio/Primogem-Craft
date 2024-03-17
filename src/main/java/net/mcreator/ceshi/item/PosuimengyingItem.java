@@ -18,6 +18,6 @@ public class PosuimengyingItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u597D\u50CF\u8FD8\u6709\u673A\u4F1A"));
+		list.add(Component.literal("\u00A77\u53EF\u4FEE\u590D"));
 	}
 }

@@ -17,5 +17,6 @@ public class Ljtg3sxProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 0, false, false));
 			}
 		}
+		LjtchenshouProcedure.execute(entity, itemstack);
 	}
 }

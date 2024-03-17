@@ -4,11 +4,14 @@
   "pattern": [
     "aaa",
     "aaa",
-    "aaa"
+    " b "
   ],
   "key": {
     "a": {
       "item": "primogemcraft:jinzhimola"
+    },
+    "b": {
+      "item": "primogemcraft:liulangzhezhinang"
     }
   },
   "result": {

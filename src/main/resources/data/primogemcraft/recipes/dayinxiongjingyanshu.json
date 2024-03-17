@@ -3,15 +3,21 @@
   "category": "misc",
   "pattern": [
     " a ",
-    "aba",
+    "bcd",
     " a "
   ],
   "key": {
     "a": {
-      "item": "minecraft:ender_eye"
+      "item": "primogemcraft:jlmo"
     },
     "b": {
+      "item": "primogemcraft:hhaokandelaji"
+    },
+    "c": {
       "item": "primogemcraft:maoxianjiadejingyan"
+    },
+    "d": {
+      "item": "primogemcraft:jinzhimola"
     }
   },
   "result": {

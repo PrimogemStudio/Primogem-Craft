@@ -1,23 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "aba",
-    "c c"
-  ],
-  "key": {
-    "a": {
-      "item": "primogemcraft:jingzhimolakuai"
-    },
-    "b": {
-      "item": "primogemcraft:mmolapeiziwupin"
-    },
-    "c": {
-      "item": "primogemcraft:jinzhimola"
-    }
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:qhmbml"
+  },
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "addition": {
+    "item": "primogemcraft:mmolapeiziwupin"
   },
   "result": {
-    "item": "primogemcraft:kkuijiaceshi_boots",
-    "count": 1
+    "item": "primogemcraft:kkuijiaceshi_boots"
   }
 }

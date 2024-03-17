@@ -224,5 +224,14 @@
         "stream": false
       }
     ]
+  },
+  "jingyanshu00": {
+    "subtitle": "subtitles.jingyanshu00",
+    "sounds": [
+      {
+        "name": "primogemcraft:sheng_ji_",
+        "stream": false
+      }
+    ]
   }
 }

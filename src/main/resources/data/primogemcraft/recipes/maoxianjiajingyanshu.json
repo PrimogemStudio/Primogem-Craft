@@ -3,14 +3,17 @@
   "category": "misc",
   "pattern": [
     " a ",
-    "aba",
-    " a "
+    "bcb",
+    " b "
   ],
   "key": {
     "a": {
       "item": "minecraft:ender_pearl"
     },
     "b": {
+      "item": "primogemcraft:yuzhousuipian"
+    },
+    "c": {
       "item": "primogemcraft:liulangzhedejingyan"
     }
   },

@@ -3,15 +3,15 @@
   "category": "misc",
   "pattern": [
     " a ",
-    "bcb",
+    "bca",
     " b "
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:cchonggaodaodedezanxu"
+      "item": "minecraft:lapis_lazuli"
     },
     "b": {
-      "item": "minecraft:lapis_lazuli"
+      "item": "primogemcraft:mmola_01"
     },
     "c": {
       "item": "minecraft:book"

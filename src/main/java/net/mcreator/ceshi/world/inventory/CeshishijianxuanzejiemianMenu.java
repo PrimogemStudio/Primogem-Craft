@@ -51,7 +51,7 @@ public class CeshishijianxuanzejiemianMenu extends AbstractContainerMenu impleme
 		super(PrimogemcraftModMenus.CESHISHIJIANXUANZEJIEMIAN.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(667);
+		this.internal = new ItemStackHandler(5);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -136,8 +136,8 @@ public class CeshishijianxuanzejiemianMenu extends AbstractContainerMenu impleme
 				return PrimogemcraftModItems.SUIJI_1SHIJIAN.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(666, this.addSlot(new SlotItemHandler(internal, 666, 158, 5) {
-			private final int slot = 666;
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 158, 5) {
+			private final int slot = 4;
 
 			@Override
 			public boolean mayPickup(Player entity) {
@@ -291,7 +291,7 @@ public class CeshishijianxuanzejiemianMenu extends AbstractContainerMenu impleme
 						continue;
 					if (j == 2)
 						continue;
-					if (j == 666)
+					if (j == 4)
 						continue;
 					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 				}
@@ -303,7 +303,7 @@ public class CeshishijianxuanzejiemianMenu extends AbstractContainerMenu impleme
 						continue;
 					if (i == 2)
 						continue;
-					if (i == 666)
+					if (i == 4)
 						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}

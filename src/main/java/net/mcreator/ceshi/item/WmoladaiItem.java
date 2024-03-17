@@ -18,6 +18,6 @@ public class WmoladaiItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u6EE1\u6EE1\u4E00\u888B\u6469\u62C9"));
+		list.add(Component.literal("\u00A77\u6750\u6599"));
 	}
 }

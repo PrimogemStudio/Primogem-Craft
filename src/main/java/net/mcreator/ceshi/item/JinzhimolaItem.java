@@ -18,6 +18,6 @@ public class JinzhimolaItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u5176\u94F8\u9020\u5DE5\u827A\u4F7F\u5F97\u672C\u5730\u751F\u7269\u4E5F\u4E3A\u4E4B\u8D5E\u53F9"));
+		list.add(Component.literal("\u00A77\u7CBE\u6E5B\u7684\u94F8\u9020\u5DE5\u827A...."));
 	}
 }

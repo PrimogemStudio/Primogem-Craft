@@ -20,6 +20,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.ceshi.procedures.Shiti_qingchuProcedure;
 import net.mcreator.ceshi.procedures.Shiti_cao_beileipiProcedure;
 import net.mcreator.ceshi.procedures.Ceoyuanhe_gengxinProcedure;
 import net.mcreator.ceshi.init.PrimogemcraftModEntities;
@@ -72,6 +73,12 @@ public class CaoyuanheshengwuEntity extends PathfinderMob {
 	public void thunderHit(ServerLevel serverWorld, LightningBolt lightningBolt) {
 		super.thunderHit(serverWorld, lightningBolt);
 		Shiti_cao_beileipiProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		Shiti_qingchuProcedure.execute(this);
 	}
 
 	@Override

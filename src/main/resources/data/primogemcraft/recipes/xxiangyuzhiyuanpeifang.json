@@ -1,10 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
   "template": {
-    "item": "primogemcraft:xingchen"
+    "item": "primogemcraft:yuanshi"
   },
   "base": {
-    "item": "primogemcraft:yuanshi"
+    "item": "primogemcraft:xingchen"
   },
   "addition": {
     "item": "primogemcraft:xingchen"

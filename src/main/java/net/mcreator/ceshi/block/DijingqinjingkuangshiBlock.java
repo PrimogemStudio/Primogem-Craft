@@ -27,7 +27,7 @@ public class DijingqinjingkuangshiBlock extends FallingBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u00A71\u6D77\u6D0B\u7FA4\u7CFB\u751F\u6210"));
+		list.add(Component.literal("\u00A78\u5728\u6D77\u6D0B\u7FA4\u7CFB\u751F\u6210"));
 	}
 
 	@Override

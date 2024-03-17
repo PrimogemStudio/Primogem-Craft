@@ -23,7 +23,7 @@ public class AixubingyukuangshiBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u5728\u4EFB\u610F\u4F4D\u7F6E\u751F\u6210"));
+		list.add(Component.literal("\u00A78\u5728\u51B0\u5DDD\u751F\u6210"));
 	}
 
 	@Override

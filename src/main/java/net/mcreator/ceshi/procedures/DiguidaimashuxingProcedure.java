@@ -9,7 +9,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -32,7 +31,7 @@ public class DiguidaimashuxingProcedure {
 			entity.getPersistentData().putBoolean("daima6_naijiu", false);
 		}
 		if (!itemstack.getOrCreateTag().getBoolean("daima6_yixiufu")) {
-			if (!itemstack.getOrCreateTag().getBoolean("daishanchu") && itemstack.getDamageValue() == 0) {
+			if (!itemstack.getOrCreateTag().getBoolean("daishanchu") && !itemstack.getOrCreateTag().getBoolean("daima6_yixiufu") && itemstack.getDamageValue() == 0) {
 				itemstack.getOrCreateTag().putBoolean("daima6_yixiufu", true);
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("\u00A75\u300E\u5947\u7269\u300F\u00A7b\u65E0\u9650\u9012\u5F52\u7684\u4EE3\u7801\u00A7a\u4FEE\u590D\u5B8C\u6210"), false);
@@ -45,28 +44,10 @@ public class DiguidaimashuxingProcedure {
 				}
 			}
 		} else {
-			if (!(entity instanceof LivingEntity _livEnt18 && _livEnt18.hasEffect(PrimogemcraftModMobEffects.DIGUIXIAOGUO.get()))) {
+			if (!(entity instanceof LivingEntity _livEnt20 && _livEnt20.hasEffect(PrimogemcraftModMobEffects.DIGUIXIAOGUO.get()))) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.DIGUIXIAOGUO.get(), 100, 0, false, false));
-				{
-					ItemStack _ist = itemstack;
-					if (_ist.hurt(1, RandomSource.create(), null)) {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
-					}
-				}
 				NaijiuxianzhiProcedure.execute(itemstack);
-			}
-		}
-		if (!itemstack.getOrCreateTag().getBoolean("daishanchu") && itemstack.getDamageValue() == itemstack.getMaxDamage()) {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("\u00A75\u300E\u5947\u7269\u300F\u00A7b\u65E0\u9650\u9012\u5F52\u7684\u4EE3\u7801\u00A7c\u5DF2\u8017\u5C3D\uFF01"), false);
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5, false);
-				}
 			}
 		}
 	}

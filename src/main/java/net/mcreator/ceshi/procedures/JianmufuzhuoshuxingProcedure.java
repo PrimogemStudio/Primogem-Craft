@@ -25,34 +25,12 @@ public class JianmufuzhuoshuxingProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.item.break")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
-			if (itemstack.getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) == 1) {
-				itemstack.setDamageValue((int) (itemstack.getMaxDamage() * 0.9));
-				{
-					Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments(itemstack);
-					if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
-						_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
-						EnchantmentHelper.setEnchantments(_enchantments, itemstack);
-					}
-				}
-			}
-			if (itemstack.getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) == 2) {
-				itemstack.setDamageValue((int) (itemstack.getMaxDamage() * 0.75));
-				{
-					Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments(itemstack);
-					if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
-						_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
-						EnchantmentHelper.setEnchantments(_enchantments, itemstack);
-					}
-				}
-			}
-			if (itemstack.getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) == 3) {
-				itemstack.setDamageValue((int) (itemstack.getMaxDamage() * 0.5));
-				{
-					Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments(itemstack);
-					if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
-						_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
-						EnchantmentHelper.setEnchantments(_enchantments, itemstack);
-					}
+			itemstack.setDamageValue((int) (itemstack.getMaxDamage() - itemstack.getMaxDamage() * itemstack.getEnchantmentLevel(PrimogemcraftModEnchantments.CESHIFUMO_01.get()) * 0.2));
+			{
+				Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments(itemstack);
+				if (_enchantments.containsKey(PrimogemcraftModEnchantments.CESHIFUMO_01.get())) {
+					_enchantments.remove(PrimogemcraftModEnchantments.CESHIFUMO_01.get());
+					EnchantmentHelper.setEnchantments(_enchantments, itemstack);
 				}
 			}
 		}

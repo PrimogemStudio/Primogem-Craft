@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "ghi"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:jianransuixie"
+    },
+    "b": {
+      "item": "primogemcraft:ziziyousongshisuixie"
+    },
+    "c": {
+      "item": "primogemcraft:aixubingyusuixie"
+    },
+    "d": {
+      "item": "primogemcraft:zuishengsuixie"
+    },
+    "e": {
+      "item": "minecraft:sculk"
+    },
+    "f": {
+      "item": "primogemcraft:ranyuansuixie"
+    },
+    "g": {
+      "item": "primogemcraft:shengzhangbifeisuixie"
+    },
+    "h": {
+      "item": "minecraft:diamond"
+    },
+    "i": {
+      "item": "primogemcraft:dijingsuixie"
+    }
+  },
+  "result": {
+    "item": "minecraft:echo_shard",
+    "count": 1
+  }
+}

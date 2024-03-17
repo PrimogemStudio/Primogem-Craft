@@ -18,6 +18,6 @@ public class XiaodaimolaItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u88AB\u7CBE\u51C6\u5206\u914D\u7684\u7CBE\u81F4\u6469\u62C9\uFF0C\u6216\u8BB8\u6751\u6C11\u4F1A\u559C\u6B22"));
+		list.add(Component.literal("\u00A77\u53EF\u7528\u4E8E\u4EA4\u6613"));
 	}
 }

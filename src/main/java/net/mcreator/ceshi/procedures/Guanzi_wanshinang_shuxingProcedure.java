@@ -30,6 +30,9 @@ public class Guanzi_wanshinang_shuxingProcedure {
 		if (entity == null)
 			return;
 		if (blockstate.getBlock() == PrimogemcraftModBlocks.DAGUANZI.get()) {
+			if (world instanceof ServerLevel _level)
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"loot spawn ~ ~ ~ loot primogemcraft:blocks/daguanzi");
 			{
 				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
 				entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
@@ -47,7 +50,7 @@ public class Guanzi_wanshinang_shuxingProcedure {
 									}
 									return false;
 								}
-							}.checkGamemode(entity)) && !(entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(MobEffects.DIG_SLOWDOWN))) {
+							}.checkGamemode(entity)) && !(entity instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(MobEffects.DIG_SLOWDOWN))) {
 								entity.getPersistentData().putBoolean("wanshinang_naijiu", true);
 								if (world instanceof ServerLevel _level)
 									_level.getServer().getCommands().performPrefixedCommand(
@@ -60,6 +63,9 @@ public class Guanzi_wanshinang_shuxingProcedure {
 			}
 		}
 		if (blockstate.getBlock() == PrimogemcraftModBlocks.XIAOGUANZI.get()) {
+			if (world instanceof ServerLevel _level)
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"loot spawn ~ ~ ~ loot primogemcraft:blocks/xiaoguanzi");
 			{
 				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
 				entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
@@ -77,7 +83,7 @@ public class Guanzi_wanshinang_shuxingProcedure {
 									}
 									return false;
 								}
-							}.checkGamemode(entity)) && !(entity instanceof LivingEntity _livEnt14 && _livEnt14.hasEffect(MobEffects.DIG_SLOWDOWN))) {
+							}.checkGamemode(entity)) && !(entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(MobEffects.DIG_SLOWDOWN))) {
 								if (world instanceof ServerLevel _level)
 									_level.getServer().getCommands().performPrefixedCommand(
 											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),

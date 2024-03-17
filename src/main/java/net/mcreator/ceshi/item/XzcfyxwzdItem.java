@@ -31,7 +31,10 @@ public class XzcfyxwzdItem extends ShieldItem {
 		list.add(Component.literal("\u00A77\u66F4\u534E\u4E3D\u7684\u5783\u573E\u6876\u76D6\u7F62\u4E86\uFF01"));
 		list.add(Component.literal(""));
 		list.add(Component.literal("\u00A76 \u2022 \u6297\u6027\u63D0\u5347"));
-		list.add(Component.literal("\u00A77 \u6C38\u4E45\u63D0\u4F9B\u6297\u6027\u63D0\u5347 I"));
+		list.add(Component.literal("\u00A78 \u6C38\u4E45\u63D0\u4F9B\u6297\u6027\u63D0\u5347 I"));
+		list.add(Component.literal("\u00A76 \u2022 \u8D81\u624B"));
+		list.add(Component.literal("\u00A78 \u6D88\u8017\u8010\u4E45\u62B5\u5FA1\u683C\u6321\u5931\u8D25"));
+		list.add(Component.literal("\u00A78 \u540E\u88AB\u65BD\u52A0\u7684\u51B7\u5374"));
 	}
 
 	@Override

@@ -67,6 +67,7 @@ import net.mcreator.ceshi.block.LajitongBlock;
 import net.mcreator.ceshi.block.JljskBlock;
 import net.mcreator.ceshi.block.JiuchanzhiyuankuaiBlock;
 import net.mcreator.ceshi.block.JingzhimolakuaiBlock;
+import net.mcreator.ceshi.block.JianshijingbanBlock;
 import net.mcreator.ceshi.block.JianlaokuangshiBlock;
 import net.mcreator.ceshi.block.JianlaohuangyukuaiBlock;
 import net.mcreator.ceshi.block.JdykBlock;
@@ -161,6 +162,7 @@ public class PrimogemcraftModBlocks {
 	public static final RegistryObject<Block> YUANSUJINGSHIKUAI = REGISTRY.register("yuansujingshikuai", () -> new YuansujingshikuaiBlock());
 	public static final RegistryObject<Block> JIUCHANZHIYUANKUAI = REGISTRY.register("jiuchanzhiyuankuai", () -> new JiuchanzhiyuankuaiBlock());
 	public static final RegistryObject<Block> DBMLK = REGISTRY.register("dbmlk", () -> new DbmlkBlock());
+	public static final RegistryObject<Block> JDYK = REGISTRY.register("jdyk", () -> new JdykBlock());
 	public static final RegistryObject<Block> ZZJSK = REGISTRY.register("zzjsk", () -> new ZzjskBlock());
 	public static final RegistryObject<Block> JLJSK = REGISTRY.register("jljsk", () -> new JljskBlock());
 	public static final RegistryObject<Block> YHJSK = REGISTRY.register("yhjsk", () -> new YhjskBlock());
@@ -211,10 +213,13 @@ public class PrimogemcraftModBlocks {
 	public static final RegistryObject<Block> CAOMO_23 = REGISTRY.register("caomo_23", () -> new Caomo23Block());
 	public static final RegistryObject<Block> CAOMU_33 = REGISTRY.register("caomu_33", () -> new Caomu33Block());
 	public static final RegistryObject<Block> XIUMUZHALAN = REGISTRY.register("xiumuzhalan", () -> new XiumuzhalanBlock());
+	public static final RegistryObject<Block> CSHIXIUTIEZHALAN = REGISTRY.register("cshixiutiezhalan", () -> new CshixiutiezhalanBlock());
 	public static final RegistryObject<Block> MLXDML_01 = REGISTRY.register("mlxdml_01", () -> new Mlxdml01Block());
 	public static final RegistryObject<Block> MLXDML_02 = REGISTRY.register("mlxdml_02", () -> new Mlxdml02Block());
 	public static final RegistryObject<Block> MLXDML_03 = REGISTRY.register("mlxdml_03", () -> new Mlxdml03Block());
-	public static final RegistryObject<Block> CSHIXIUTIEZHALAN = REGISTRY.register("cshixiutiezhalan", () -> new CshixiutiezhalanBlock());
+	public static final RegistryObject<Block> DANGAOLIYUE = REGISTRY.register("dangaoliyue", () -> new DangaoliyueBlock());
+	public static final RegistryObject<Block> XJHPYHFH = REGISTRY.register("xjhpyhfh", () -> new XjhpyhfhBlock());
+	public static final RegistryObject<Block> BWDXJHPYHFH = REGISTRY.register("bwdxjhpyhfh", () -> new BwdxjhpyhfhBlock());
 	public static final RegistryObject<Block> XIJAIEYANGENGDI = REGISTRY.register("xijaieyangengdi", () -> new XijaieyangengdiBlock());
 	public static final RegistryObject<Block> DISUISHUIJINGTI = REGISTRY.register("disuishuijingti", () -> new DisuishuijingtiBlock());
 	public static final RegistryObject<Block> CAOYUANSUECI = REGISTRY.register("caoyuansueci", () -> new CaoyuansueciBlock());
@@ -228,8 +233,5 @@ public class PrimogemcraftModBlocks {
 	public static final RegistryObject<Block> CAOMU_36 = REGISTRY.register("caomu_36", () -> new Caomu36Block());
 	public static final RegistryObject<Block> YISHIJIEMUBAN_BUTTON = REGISTRY.register("yishijiemuban_button", () -> new YishijiemubanButtonBlock());
 	public static final RegistryObject<Block> D_17 = REGISTRY.register("d_17", () -> new D17Block());
-	public static final RegistryObject<Block> DANGAOLIYUE = REGISTRY.register("dangaoliyue", () -> new DangaoliyueBlock());
-	public static final RegistryObject<Block> XJHPYHFH = REGISTRY.register("xjhpyhfh", () -> new XjhpyhfhBlock());
-	public static final RegistryObject<Block> JDYK = REGISTRY.register("jdyk", () -> new JdykBlock());
-	public static final RegistryObject<Block> BWDXJHPYHFH = REGISTRY.register("bwdxjhpyhfh", () -> new BwdxjhpyhfhBlock());
+	public static final RegistryObject<Block> JIANSHIJINGBAN = REGISTRY.register("jianshijingban", () -> new JianshijingbanBlock());
 }

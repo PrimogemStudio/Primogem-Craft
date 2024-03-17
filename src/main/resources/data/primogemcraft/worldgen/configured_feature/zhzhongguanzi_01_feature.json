@@ -4,7 +4,10 @@
     "structure": "primogemcraft:zhongguanzi01",
     "random_rotation": true,
     "random_mirror": true,
-    "ignored_blocks": "minecraft:structure_block",
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ],
     "offset": [
       0,
       1,

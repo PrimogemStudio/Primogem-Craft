@@ -4,20 +4,23 @@
   "pattern": [
     "aba",
     "aca",
-    "ada"
+    "ded"
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:jingzhimolakuai"
+      "item": "primogemcraft:jljsl"
     },
     "b": {
       "tag": "minecraft:sand"
     },
     "c": {
-      "item": "primogemcraft:ranyuankuai"
+      "item": "primogemcraft:ranyuanduanpian"
     },
     "d": {
-      "item": "primogemcraft:molakuai_01"
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "e": {
+      "item": "primogemcraft:dbmlk"
     }
   },
   "result": {

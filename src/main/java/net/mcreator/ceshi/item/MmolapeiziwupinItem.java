@@ -18,6 +18,6 @@ public class MmolapeiziwupinItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("\u7528\u4E8E\u6253\u9020\u88C5\u5907"));
+		list.add(Component.literal("\u00A7d\u9AD8\u7EA7\u953B\u9020\u6750\u6599"));
 	}
 }

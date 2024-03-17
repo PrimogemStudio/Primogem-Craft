@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "primogemcraft:item/fanrongdezhexue"
+    "layer0": "primogemcraft:item/xinqinliao01"
   }
 }
