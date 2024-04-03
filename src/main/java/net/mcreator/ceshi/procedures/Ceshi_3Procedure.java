@@ -1,6 +1,7 @@
 package net.mcreator.ceshi.procedures;
 
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.items.ItemHandlerHelper;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -17,6 +18,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.world.inventory.TaozhuangchakanMenu;
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 
 import io.netty.buffer.Unpooled;
@@ -44,6 +46,12 @@ public class Ceshi_3Procedure {
 							return new TaozhuangchakanMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 						}
 					}, _bpos);
+				}
+			} else if ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 1, entity.getZ()))).getBlock() == PrimogemcraftModBlocks.SHIZUOYUANSHIKUAI.get()) {
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QHZLLH_4.get());
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
 			} else {
 				{
