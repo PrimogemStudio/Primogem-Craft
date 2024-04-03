@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.STONE_AXE"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:Mmola01"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:Qhmbml"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Mmolafu"
+    },
+    "name": "mmolafuhecheng",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:weizhiyepian"
+    },
+    "b": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "c": {
+      "item": "minecraft:emerald"
+    },
+    "d": {
+      "item": "primogemcraft:shanbianzhichen"
+    },
+    "e": {
+      "item": "minecraft:gold_ingot"
+    },
+    "f": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:totem_of_undying",
+    "count": 1
+  }
+}

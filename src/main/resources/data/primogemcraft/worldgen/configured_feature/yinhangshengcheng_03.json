@@ -1,0 +1,9 @@
+{
+  "type": "primogemcraft:structure_feature",
+  "config": {
+    "structure": "primogemcraft:shijian_yinhang_02",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:barrier"
+  }
+}

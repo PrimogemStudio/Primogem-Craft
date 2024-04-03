@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "lajitong_gai_01"
+      },
+      "name": "default"
+    }
+  }
+}

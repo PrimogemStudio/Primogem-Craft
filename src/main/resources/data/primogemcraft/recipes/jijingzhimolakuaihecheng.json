@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:lava_bucket"
+  },
+  "base": {
+    "item": "primogemcraft:wmoladai"
+  },
+  "addition": {
+    "item": "minecraft:quartz"
+  },
+  "result": {
+    "item": "primogemcraft:jingzhimolakuai"
+  }
+}

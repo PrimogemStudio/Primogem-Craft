@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/zzjs_kuai",
+    "up": "primogemcraft:block/zzjs_kuai",
+    "north": "primogemcraft:block/zzjs_kuai",
+    "east": "primogemcraft:block/zzjs_kuai",
+    "south": "primogemcraft:block/zzjs_kuai",
+    "west": "primogemcraft:block/zzjs_kuai",
+    "particle": "primogemcraft:block/zzjs_kuai"
+  },
+  "render_type": "solid"
+}

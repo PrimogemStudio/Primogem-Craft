@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Mzsj"
+      },
+      {
+        "value": "CUSTOM:Mzsj2"
+      },
+      {
+        "value": "CUSTOM:Mzsj3"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "dzmb_5",
+    "namespace": "pgc"
+  }
+}

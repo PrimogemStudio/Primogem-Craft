@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "primogemcraft:shanbianzhichen"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:ysfc",
+    "count": 4
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "6zhe_shi_shi_lian__",
+    "customModelName": "Tool",
+    "customProperties": {},
+    "states": [],
+    "name": "十枚纠缠之缘",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "手持§b长按右键§f以§e十连抽！"
+      ]
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "Shshilianchouxiaoguo"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "isFood": true,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "bow"
+  }
+}

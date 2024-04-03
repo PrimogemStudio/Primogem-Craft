@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Mmola01"
+      },
+      {
+        "value": "Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE"
+      },
+      {
+        "value": "CUSTOM:Mmola01"
+      },
+      {
+        "value": "CUSTOM:Mmola01"
+      },
+      {
+        "value": "CUSTOM:Ganjinglajitongxiangzi"
+      },
+      {
+        "value": "CUSTOM:Mmola01"
+      },
+      {
+        "value": "CUSTOM:Mmola01"
+      },
+      {
+        "value": "CUSTOM:Jinzhimola"
+      },
+      {
+        "value": "CUSTOM:Mmola01"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Mmolazhilajitong"
+    },
+    "name": "molalajitongpeifang",
+    "namespace": "mod"
+  }
+}

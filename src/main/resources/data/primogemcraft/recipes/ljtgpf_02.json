@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:heavy_weighted_pressure_plate"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "primogemcraft:ljtg_01"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:ljtg_02",
+    "count": 1
+  }
+}

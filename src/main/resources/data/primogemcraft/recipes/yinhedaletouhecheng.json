@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "daletouhecheng",
+  "category": "misc",
+  "pattern": [
+    " aa",
+    "bca",
+    "bb "
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:xixiangyuzhiyuan"
+    },
+    "b": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "c": {
+      "tag": "minecraft:coals"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yiyinhedaletou",
+    "count": 1
+  }
+}

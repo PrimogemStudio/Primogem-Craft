@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Jljsl"
+      },
+      {
+        "value": "Blocks.SAND"
+      },
+      {
+        "value": "CUSTOM:Jljsl"
+      },
+      {
+        "value": "CUSTOM:Jljsl"
+      },
+      {
+        "value": "CUSTOM:Ranyuanduanpian"
+      },
+      {
+        "value": "CUSTOM:Jljsl"
+      },
+      {
+        "value": "CUSTOM:Jingzhimolakuai"
+      },
+      {
+        "value": "CUSTOM:Dbmlk"
+      },
+      {
+        "value": "CUSTOM:Jingzhimolakuai"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Mmolapeiziwupin"
+    },
+    "name": "mmolapeizi",
+    "namespace": "mod"
+  }
+}

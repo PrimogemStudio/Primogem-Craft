@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/cangsnagshizhuan",
+    "up": "primogemcraft:block/cangsnagshizhuan",
+    "north": "primogemcraft:block/cangsnagshizhuan",
+    "east": "primogemcraft:block/cangsnagshizhuan",
+    "south": "primogemcraft:block/cangsnagshizhuan",
+    "west": "primogemcraft:block/cangsnagshizhuan",
+    "particle": "primogemcraft:block/cangsnagshizhuan"
+  },
+  "render_type": "solid"
+}

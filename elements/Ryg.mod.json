@@ -1,0 +1,43 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "ryg",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§c『燃愿玛瑙』 镐",
+    "specialInformation": {
+      "fixedValue": [
+        "§d挖掘石英矿石时：",
+        "§7 - 5%概率掉落一个元素晶石粉尘"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 4,
+    "efficiency": 9.0,
+    "attackSpeed": 1.0,
+    "enchantability": 15,
+    "damageVsEntity": 4.0,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": "CUSTOM:Ranyuansuixie"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "Rygsx"
+    }
+  }
+}

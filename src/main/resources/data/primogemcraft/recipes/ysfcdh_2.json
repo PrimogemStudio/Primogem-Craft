@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:ysfc"
+    },
+    {
+      "item": "primogemcraft:jianlaoduanpian"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:jianransuixie",
+    "count": 5
+  }
+}

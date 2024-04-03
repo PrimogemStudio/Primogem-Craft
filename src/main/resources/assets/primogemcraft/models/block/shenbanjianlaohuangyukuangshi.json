@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/qx_plas_jlhy_02",
+    "up": "primogemcraft:block/qx_plas_jlhy_02",
+    "north": "primogemcraft:block/qx_plas_jlhy_02",
+    "east": "primogemcraft:block/qx_plas_jlhy_02",
+    "south": "primogemcraft:block/qx_plas_jlhy_02",
+    "west": "primogemcraft:block/qx_plas_jlhy_02",
+    "particle": "primogemcraft:block/qx_plas_jlhy_02"
+  },
+  "render_type": "solid"
+}

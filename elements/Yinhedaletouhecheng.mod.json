@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "daletouhecheng",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Xixiangyuzhiyuan"
+      },
+      {
+        "value": "CUSTOM:Xixiangyuzhiyuan"
+      },
+      {
+        "value": "CUSTOM:Jijiuchanzhiyuan"
+      },
+      {
+        "value": "Items.COAL"
+      },
+      {
+        "value": "CUSTOM:Xixiangyuzhiyuan"
+      },
+      {
+        "value": "CUSTOM:Jijiuchanzhiyuan"
+      },
+      {
+        "value": "CUSTOM:Jijiuchanzhiyuan"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Yiyinhedaletou"
+    },
+    "name": "yinhedaletouhecheng",
+    "namespace": "mod"
+  }
+}

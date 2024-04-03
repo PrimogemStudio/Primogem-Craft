@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "primogemcraft:block/yimuding",
+    "top": "primogemcraft:block/yimuding",
+    "side": "primogemcraft:block/yimuding"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 10,
+  "cookingtime": 300,
+  "ingredient": {
+    "item": "primogemcraft:zhongkouweitieding"
+  },
+  "result": "primogemcraft:lajitongzunyan"
+}

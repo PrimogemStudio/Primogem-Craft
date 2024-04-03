@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:disuikuai_1"
+    },
+    {
+      "item": "primogemcraft:disuikuai_1"
+    },
+    {
+      "item": "primogemcraft:disuikuai_1"
+    },
+    {
+      "item": "primogemcraft:disuikuai_1"
+    },
+    {
+      "item": "primogemcraft:disuikuai_1"
+    },
+    {
+      "item": "primogemcraft:disuikuai_1"
+    },
+    {
+      "item": "primogemcraft:disuikuai_1"
+    },
+    {
+      "item": "primogemcraft:disuikuai_1"
+    },
+    {
+      "item": "primogemcraft:disuikuai_1"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:disuishuijingti",
+    "count": 1
+  }
+}

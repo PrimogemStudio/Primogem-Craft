@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:caoyuanhehuamuban"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:ceshi_mucaibao_button",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:ysfc"
+    },
+    "b": {
+      "item": "primogemcraft:yuansujingti"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yuansujingshikuai",
+    "count": 1
+  }
+}

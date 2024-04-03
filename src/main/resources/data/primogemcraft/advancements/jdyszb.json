@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:yuanshigao"
+    },
+    "title": {
+      "translate": "advancements.jdyszb.title"
+    },
+    "description": {
+      "translate": "advancements.jdyszb.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "jdyszb": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:jdwmypszyd"
+}

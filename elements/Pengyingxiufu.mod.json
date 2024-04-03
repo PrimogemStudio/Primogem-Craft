@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:Posuimengying"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:Zuishengsuixie"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:Mmola01"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Mengying"
+    },
+    "name": "pengyingxiufu",
+    "namespace": "mod"
+  }
+}

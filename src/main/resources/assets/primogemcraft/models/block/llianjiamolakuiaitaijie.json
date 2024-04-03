@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "primogemcraft:block/121qxmlk",
+    "top": "primogemcraft:block/121qxmlk",
+    "side": "primogemcraft:block/121qxmlk"
+  },
+  "render_type": "solid"
+}

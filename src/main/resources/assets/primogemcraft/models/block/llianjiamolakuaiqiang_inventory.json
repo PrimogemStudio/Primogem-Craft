@@ -1,0 +1,8 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "primogemcraft:block/121qxmlk",
+    "particle": "primogemcraft:block/121qxmlk"
+  },
+  "render_type": "solid"
+}

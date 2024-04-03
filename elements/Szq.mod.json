@@ -1,0 +1,50 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "szq",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§a『生长碧翡』锹",
+    "specialInformation": {
+      "fixedValue": [
+        "§d在主手时：",
+        "§7 - 破坏泥土时有概率产出战利品",
+        "§7 - [§6SHIFT+右键]§7改变泥土状态"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 4,
+    "efficiency": 2.0,
+    "attackSpeed": 3.0,
+    "enchantability": 5,
+    "damageVsEntity": 2.0,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": "CUSTOM:Shengzhangbifeisuixie"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "Szqsx"
+    },
+    "onBlockDestroyedWithTool": {
+      "name": "Szqsx2"
+    }
+  }
+}

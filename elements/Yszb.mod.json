@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Yuanshijian"
+      },
+      {
+        "value": "CUSTOM:Yuanshigao"
+      },
+      {
+        "value": "CUSTOM:Yuanshifu"
+      },
+      {
+        "value": "CUSTOM:Yuanshiqiao"
+      },
+      {
+        "value": "CUSTOM:Yuanshichutou"
+      },
+      {
+        "value": "CUSTOM:Qgdysj"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "yszb",
+    "namespace": "pgc"
+  }
+}

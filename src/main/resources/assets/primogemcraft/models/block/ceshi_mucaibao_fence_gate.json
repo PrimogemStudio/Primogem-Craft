@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "primogemcraft:block/caoyuanhe_muban"
+  },
+  "render_type": "solid"
+}

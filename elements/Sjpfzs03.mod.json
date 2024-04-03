@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
+        "value": "CUSTOM:Yhjs"
+      },
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
+        "value": "CUSTOM:Jlmo"
+      },
+      {
+        "value": "Items.NETHERITE_SCRAP"
+      },
+      {
+        "value": "CUSTOM:Jlmo"
+      },
+      {
+        "value": "CUSTOM:Yhjs"
+      },
+      {
+        "value": "CUSTOM:Jlmo"
+      },
+      {
+        "value": "CUSTOM:Yhjs"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Sjzshj"
+    },
+    "name": "sjpfzs_03",
+    "namespace": "mod"
+  }
+}

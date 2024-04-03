@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "primogemcraft:block/yimudi",
+    "top": "primogemcraft:block/yimudi",
+    "side": "primogemcraft:block/yimudi"
+  },
+  "render_type": "solid"
+}

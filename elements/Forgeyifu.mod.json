@@ -1,0 +1,81 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Kkuijiaceshi.body"
+      },
+      {
+        "value": "CUSTOM:Zizaitiejia.body"
+      },
+      {
+        "value": "CUSTOM:Zizaizuantao.body"
+      },
+      {
+        "value": "CUSTOM:Zizizaihejintao.body"
+      },
+      {
+        "value": "CUSTOM:Kjjlt.body"
+      },
+      {
+        "value": "CUSTOM:Jlkjzs.body"
+      },
+      {
+        "value": "CUSTOM:Jlkjhj.body"
+      },
+      {
+        "value": "CUSTOM:Zstkj.body"
+      },
+      {
+        "value": "CUSTOM:Zszst.body"
+      },
+      {
+        "value": "CUSTOM:Zshjt.body"
+      },
+      {
+        "value": "CUSTOM:Szkjtie.body"
+      },
+      {
+        "value": "CUSTOM:Szzskj.body"
+      },
+      {
+        "value": "CUSTOM:Szhjkj.body"
+      },
+      {
+        "value": "CUSTOM:Djtt.body"
+      },
+      {
+        "value": "CUSTOM:Djzst.body"
+      },
+      {
+        "value": "CUSTOM:Djhjt.body"
+      },
+      {
+        "value": "CUSTOM:Rytt.body"
+      },
+      {
+        "value": "CUSTOM:Ruzst.body"
+      },
+      {
+        "value": "CUSTOM:Ryhjt.body"
+      },
+      {
+        "value": "CUSTOM:Axtt.body"
+      },
+      {
+        "value": "CUSTOM:Axzst.body"
+      },
+      {
+        "value": "CUSTOM:Axhjt.body"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "armors/chestplates",
+    "namespace": "forge"
+  }
+}

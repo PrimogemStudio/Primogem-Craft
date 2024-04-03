@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 36,
+  "ingredient": {
+    "item": "primogemcraft:jlmo"
+  },
+  "result": "primogemcraft:jlza"
+}

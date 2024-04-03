@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Zziyousongshiduanpian"
+      },
+      {
+        "value": "CUSTOM:Jianlaoduanpian"
+      },
+      {
+        "value": "CUSTOM:Zuishengduanpian"
+      },
+      {
+        "value": "CUSTOM:Shengzhangduanpian"
+      },
+      {
+        "value": "CUSTOM:Dijingduanpian"
+      },
+      {
+        "value": "CUSTOM:Ranyuanduanpian"
+      },
+      {
+        "value": "CUSTOM:Aaixubingyuduanpian"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "ysdp_0",
+    "namespace": "forge"
+  }
+}

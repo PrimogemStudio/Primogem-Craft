@@ -1,0 +1,55 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "yimuguoshi",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "§5『奇物』§6异木果实",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 3,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7玩家死亡时，为其提供一分钟的额外生命",
+        "§7期间免疫5次任意伤害",
+        "§c临终效果结束后会尝试杀死玩家",
+        "§a不能连续触发"
+      ]
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "Yiyijieguoshi_shuxing"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

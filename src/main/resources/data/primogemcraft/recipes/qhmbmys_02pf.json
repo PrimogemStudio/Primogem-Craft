@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:laoshi"
+  },
+  "base": {
+    "item": "primogemcraft:qhmbml"
+  },
+  "addition": {
+    "item": "primogemcraft:yuanshi"
+  },
+  "result": {
+    "item": "primogemcraft:qhmbmlys_02"
+  }
+}

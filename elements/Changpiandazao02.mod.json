@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:Jijiuchanzhiyuan"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:Shengzhangbifei"
+    },
+    "smithingInputTemplateStack": {
+      "value": "TAG:minecraft:music_discs"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Ccangruimilinjian014"
+    },
+    "name": "changpiandazao_02",
+    "namespace": "mod"
+  }
+}

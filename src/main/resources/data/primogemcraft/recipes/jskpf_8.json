@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:zzjs"
+    },
+    {
+      "item": "primogemcraft:zzjs"
+    },
+    {
+      "item": "primogemcraft:zzjs"
+    },
+    {
+      "item": "primogemcraft:zzjs"
+    },
+    {
+      "item": "primogemcraft:zzjs"
+    },
+    {
+      "item": "primogemcraft:zzjs"
+    },
+    {
+      "item": "primogemcraft:zzjs"
+    },
+    {
+      "item": "primogemcraft:zzjs"
+    },
+    {
+      "item": "primogemcraft:zzjs"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:zzjsk",
+    "count": 1
+  }
+}

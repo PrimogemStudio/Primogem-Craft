@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:ccaoyuanhehuamuban_3"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:caomu_32",
+    "count": 6
+  }
+}

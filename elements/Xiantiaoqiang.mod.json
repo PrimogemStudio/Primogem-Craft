@@ -1,0 +1,56 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "xian_tiao_qiang_",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "§6仙跳墙",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "stackSize": 8,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§c别把碗吃了！！！",
+        "§",
+        "§5当食用后：",
+        "§9+1 力量等级（5:00）",
+        "§9>继承持续时间"
+      ]
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "Xiantiaoqiangjixuxiaoguo"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "isFood": true,
+    "nutritionalValue": 8,
+    "saturation": 10.0,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": true,
+    "isAlwaysEdible": true,
+    "animation": "eat"
+  }
+}

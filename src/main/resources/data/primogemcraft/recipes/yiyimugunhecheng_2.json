@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:planks"
+    },
+    "b": {
+      "item": "primogemcraft:yuanshi"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yishijiemugun",
+    "count": 8
+  }
+}

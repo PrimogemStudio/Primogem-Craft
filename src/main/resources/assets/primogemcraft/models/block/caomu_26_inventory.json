@@ -1,0 +1,7 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "primogemcraft:block/yuanhe_muban_2"
+  },
+  "render_type": "solid"
+}

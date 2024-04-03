@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:shengzhangbifeisuixie"
+    },
+    "b": {
+      "item": "minecraft:piston"
+    },
+    "c": {
+      "item": "primogemcraft:mmola_01"
+    }
+  },
+  "result": {
+    "item": "minecraft:sticky_piston",
+    "count": 1
+  }
+}

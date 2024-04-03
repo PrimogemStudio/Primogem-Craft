@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Mmola01"
+      },
+      {
+        "value": "CUSTOM:Jinzhimola"
+      },
+      {
+        "value": "TAG:forge:mora/block"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "mora",
+    "namespace": "forge"
+  }
+}

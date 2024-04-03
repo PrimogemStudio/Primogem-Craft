@@ -1,0 +1,45 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "axhjj",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§b『哀叙冰玉』§e下界合金剑",
+    "specialInformation": {
+      "fixedValue": [
+        "§d攻击目标时：",
+        "§7 - 30%几率为其施加缓慢效果",
+        "§7 - 50%概率使已被施加缓慢的目标禁锢",
+        "§7 - 持续12秒"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 4,
+    "efficiency": 10.0,
+    "attackSpeed": 1.8,
+    "enchantability": 20,
+    "damageVsEntity": 8.0,
+    "usageCount": 2561,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Aaixubingyuduanpian"
+      },
+      {
+        "value": "Items.NETHERITE_INGOT"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "Axjsx"
+    }
+  }
+}

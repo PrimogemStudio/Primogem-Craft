@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "primogemcraft:molayiji_01_feature",
+  "step": "underground_structures"
+}

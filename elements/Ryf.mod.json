@@ -1,0 +1,44 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "ryf",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§c『燃愿玛瑙』斧",
+    "specialInformation": {
+      "fixedValue": [
+        "§d破坏木制方块时：",
+        "§7 - 10%概率掉落木炭",
+        "§7 - 3%概率掉落元素粉尘"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 3,
+    "efficiency": 10.0,
+    "attackSpeed": 1.0,
+    "enchantability": 15,
+    "damageVsEntity": 8.0,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": "CUSTOM:Ranyuansuixie"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "Ryfsx"
+    }
+  }
+}

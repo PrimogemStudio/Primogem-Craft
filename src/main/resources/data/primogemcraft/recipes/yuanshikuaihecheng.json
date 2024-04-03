@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:yuanshi"
+    },
+    {
+      "item": "primogemcraft:yuanshi"
+    },
+    {
+      "item": "primogemcraft:yuanshi"
+    },
+    {
+      "item": "primogemcraft:yuanshi"
+    },
+    {
+      "item": "primogemcraft:yuanshi"
+    },
+    {
+      "item": "primogemcraft:yuanshi"
+    },
+    {
+      "item": "primogemcraft:yuanshi"
+    },
+    {
+      "item": "primogemcraft:yuanshi"
+    },
+    {
+      "item": "primogemcraft:yuanshi"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:shizuoyuanshikuai",
+    "count": 1
+  }
+}

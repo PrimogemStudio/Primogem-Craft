@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 10,
+  "cookingtime": 1200,
+  "ingredient": {
+    "item": "primogemcraft:jianshijingban"
+  },
+  "result": "primogemcraft:jlmo"
+}

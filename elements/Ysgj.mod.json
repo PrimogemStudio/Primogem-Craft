@@ -1,0 +1,106 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Zizgao"
+      },
+      {
+        "value": "CUSTOM:Zizaifu"
+      },
+      {
+        "value": "CUSTOM:Zizaiqiao"
+      },
+      {
+        "value": "CUSTOM:Zizaichu"
+      },
+      {
+        "value": "CUSTOM:Jlg"
+      },
+      {
+        "value": "CUSTOM:Jlf"
+      },
+      {
+        "value": "CUSTOM:Jlq"
+      },
+      {
+        "value": "CUSTOM:Jlc"
+      },
+      {
+        "value": "CUSTOM:Zsg"
+      },
+      {
+        "value": "CUSTOM:Zsq"
+      },
+      {
+        "value": "CUSTOM:Zsf"
+      },
+      {
+        "value": "CUSTOM:Zsc"
+      },
+      {
+        "value": "CUSTOM:Szg"
+      },
+      {
+        "value": "CUSTOM:Szf"
+      },
+      {
+        "value": "CUSTOM:Szq"
+      },
+      {
+        "value": "CUSTOM:Szc"
+      },
+      {
+        "value": "CUSTOM:Djg"
+      },
+      {
+        "value": "CUSTOM:Djf"
+      },
+      {
+        "value": "CUSTOM:Djq"
+      },
+      {
+        "value": "CUSTOM:Djc"
+      },
+      {
+        "value": "CUSTOM:Ryg"
+      },
+      {
+        "value": "CUSTOM:Ryf"
+      },
+      {
+        "value": "CUSTOM:Ryq"
+      },
+      {
+        "value": "CUSTOM:Ryc"
+      },
+      {
+        "value": "CUSTOM:Axg"
+      },
+      {
+        "value": "CUSTOM:Yxaxg"
+      },
+      {
+        "value": "CUSTOM:Axf"
+      },
+      {
+        "value": "CUSTOM:Axq"
+      },
+      {
+        "value": "CUSTOM:Axc"
+      },
+      {
+        "value": "CUSTOM:Zfg"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "ysgj",
+    "namespace": "pgc"
+  }
+}

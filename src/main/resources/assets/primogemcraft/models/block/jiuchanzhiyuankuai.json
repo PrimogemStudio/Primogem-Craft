@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/jiuchanzhiyuankuaixiaban01",
+    "up": "primogemcraft:block/jiuchanzhiyuankuaishangban01",
+    "north": "primogemcraft:block/jiuchanzhiyuankuai",
+    "east": "primogemcraft:block/jiuchanzhiyuankuai",
+    "south": "primogemcraft:block/jiuchanzhiyuankuai",
+    "west": "primogemcraft:block/jiuchanzhiyuankuai",
+    "particle": "primogemcraft:block/jiuchanzhiyuankuaixiaban01"
+  },
+  "render_type": "solid"
+}

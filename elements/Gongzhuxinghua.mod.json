@@ -1,0 +1,27 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "§6共逐星华",
+    "rarity": "RARE",
+    "texture": "gongzhuxinghua",
+    "description": "§eHOYO-MiX",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "music": {
+      "value": "CUSTOM:gongzhuxinghua"
+    },
+    "lengthInTicks": 8000,
+    "analogOutput": 15,
+    "onRightClickedInAir": {
+      "name": "Gongzhuxinghuacaidanchufa"
+    },
+    "onRightClickedOnBlock": {
+      "name": "Gongzhuxinghuacaidan"
+    }
+  }
+}

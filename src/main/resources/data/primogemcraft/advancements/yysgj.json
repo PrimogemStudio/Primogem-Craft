@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:qhmbmlys_02"
+    },
+    "title": {
+      "translate": "advancements.yysgj.title"
+    },
+    "description": {
+      "translate": "advancements.yysgj.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "yysgj": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:jdyszb"
+}

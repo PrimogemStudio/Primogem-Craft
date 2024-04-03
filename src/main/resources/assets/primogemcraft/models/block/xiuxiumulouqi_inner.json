@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "primogemcraft:block/xiumu",
+    "top": "primogemcraft:block/xiumu",
+    "side": "primogemcraft:block/xiumu"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,184 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Yuzhousuipian"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 145,
+          "y": 55
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Yuzhousuipian"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 145,
+          "y": 73
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Yuzhousuipian"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 145,
+          "y": 91
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_cun_ru_zhe_xie",
+          "text": "存入这些",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GUIbwdyinhang01"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 248,
+          "y": 65
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_qing_ni_gun_kai",
+          "text": "请你滚开",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GUIyinhanggunkai"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 248,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cun_ru_yu_zhou_sui_pian_dang",
+          "text": {
+            "fixedValue": "存入宇宙碎片，当"
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "x": 173,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_50gai_lu_huo_de_sui_ji",
+          "text": {
+            "fixedValue": "50%概率获得随机"
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "x": 173,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bei_lu_yu_zhou_sui_pian",
+          "text": {
+            "fixedValue": "倍率宇宙碎片！"
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "x": 173,
+          "y": 88
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_yu_dao_lei_si_she_shi_shi",
+          "text": {
+            "fixedValue": "遇到类似设施时，"
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "x": 173,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ke_ti_gong_ping_zheng_bing_you",
+          "text": {
+            "fixedValue": "可提供凭证，并有"
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "x": 173,
+          "y": 68
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "Guiyinhangyinxiao01"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 1,
+      "oy": 36,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:ranyuansuixie"
+    },
+    "b": {
+      "item": "primogemcraft:rranyuanmanao"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:ranyuankuai_2",
+    "count": 1
+  }
+}

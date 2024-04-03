@@ -1,0 +1,59 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "new_piskel1",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "§5『奇物』§9公司咕咕钟",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "stackSize": 1,
+    "enchantability": 1,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 2233,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§e拾取该奇物后移除2.5%~75%的",
+        "§e当前经验值！",
+        "§",
+        "§7可合成修复后重复使用",
+        "§8一个捡到就会被压榨的公司的咕咕钟"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

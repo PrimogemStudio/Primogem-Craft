@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:Wmoladai"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.QUARTZ"
+    },
+    "smithingInputTemplateStack": {
+      "value": "Items.LAVA_BUCKET"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Jingzhimolakuai"
+    },
+    "name": "jijingzhimolakuaihecheng",
+    "namespace": "mod"
+  }
+}

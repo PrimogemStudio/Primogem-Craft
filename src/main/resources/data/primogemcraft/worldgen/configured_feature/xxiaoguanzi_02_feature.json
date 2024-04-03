@@ -1,0 +1,17 @@
+{
+  "type": "primogemcraft:xxiaoguanzi_02_feature",
+  "config": {
+    "structure": "primogemcraft:xiaoguanzi02",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ],
+    "offset": [
+      0,
+      1,
+      0
+    ]
+  }
+}

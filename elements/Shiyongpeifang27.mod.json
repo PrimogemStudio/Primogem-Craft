@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Dijingsuixie"
+      },
+      {
+        "value": "CUSTOM:Shanbianzhichen"
+      },
+      {
+        "value": "CUSTOM:Dijingsuixie"
+      },
+      {
+        "value": "CUSTOM:Dijingsuixie"
+      },
+      {
+        "value": "Items.HEART_OF_THE_SEA"
+      },
+      {
+        "value": "CUSTOM:Dijingsuixie"
+      },
+      {
+        "value": "CUSTOM:Dijingsuixie"
+      },
+      {
+        "value": "CUSTOM:Dijingsuixie"
+      },
+      {
+        "value": "CUSTOM:Dijingsuixie"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.NAUTILUS_SHELL"
+    },
+    "name": "shiyongpeifang_27",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "wuqiezhihuiguang2",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Wuqiezhihuiguang",
+    "specialInformation": {
+      "fixedValue": [
+        "§e精炼[3]",
+        "§",
+        "§7随她左右即可"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.5,
+    "enchantability": 15,
+    "damageVsEntity": 12.0,
+    "usageCount": 1536,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jijiuchanzhiyuan"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true
+  }
+}

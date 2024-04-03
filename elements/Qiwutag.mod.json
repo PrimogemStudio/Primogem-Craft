@@ -1,0 +1,118 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Yiyinhedaletou"
+      },
+      {
+        "value": "CUSTOM:Xiangdanganlao"
+      },
+      {
+        "value": "CUSTOM:Qiwuchongwang"
+      },
+      {
+        "value": "CUSTOM:Ssanbamiantou"
+      },
+      {
+        "value": "CUSTOM:Wawanxiangwuchangtou"
+      },
+      {
+        "value": "CUSTOM:Cebuzhunxia"
+      },
+      {
+        "value": "CUSTOM:Fulinjiao"
+      },
+      {
+        "value": "CUSTOM:Zhzhenyinhedaletou"
+      },
+      {
+        "value": "CUSTOM:Pengkeluodejingshen"
+      },
+      {
+        "value": "CUSTOM:Fenliejinbi"
+      },
+      {
+        "value": "CUSTOM:Yiyimuguoshi"
+      },
+      {
+        "value": "CUSTOM:Wanshinang"
+      },
+      {
+        "value": "CUSTOM:Qwkwzj"
+      },
+      {
+        "value": "CUSTOM:Xingjidaletou"
+      },
+      {
+        "value": "CUSTOM:Qwtldhy"
+      },
+      {
+        "value": "CUSTOM:Qwhdlz"
+      },
+      {
+        "value": "CUSTOM:Jlbj"
+      },
+      {
+        "value": "CUSTOM:Qwybtzdypj"
+      },
+      {
+        "value": "CUSTOM:Qwxyzq"
+      },
+      {
+        "value": "CUSTOM:Qwymzj"
+      },
+      {
+        "value": "CUSTOM:Qwflyb"
+      },
+      {
+        "value": "CUSTOM:Qwxbzsq"
+      },
+      {
+        "value": "TAG:forge:curio/bad"
+      },
+      {
+        "value": "TAG:forge:curio/code"
+      },
+      {
+        "value": "CUSTOM:Chunmeizhipao"
+      },
+      {
+        "value": "CUSTOM:Qwjzyj"
+      },
+      {
+        "value": "CUSTOM:Hqfeng"
+      },
+      {
+        "value": "CUSTOM:Hqyan"
+      },
+      {
+        "value": "CUSTOM:Hqlei"
+      },
+      {
+        "value": "CUSTOM:Hqcao"
+      },
+      {
+        "value": "CUSTOM:Hqshui"
+      },
+      {
+        "value": "CUSTOM:Hqhuo"
+      },
+      {
+        "value": "CUSTOM:Hqbing"
+      },
+      {
+        "value": "TAG:forge:curio/clock"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "curio",
+    "namespace": "forge"
+  }
+}

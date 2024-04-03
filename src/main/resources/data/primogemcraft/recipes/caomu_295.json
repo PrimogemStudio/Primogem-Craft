@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:caoyuanhehuabuban_2"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:caomu_26",
+    "count": 1
+  }
+}

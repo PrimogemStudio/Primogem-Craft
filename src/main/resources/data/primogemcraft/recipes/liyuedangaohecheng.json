@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "primogemcraft:jljsl"
+    },
+    "c": {
+      "item": "minecraft:cake"
+    },
+    "d": {
+      "item": "minecraft:iron_nugget"
+    },
+    "e": {
+      "item": "primogemcraft:molakuai_01"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:dangaoliyue",
+    "count": 1
+  }
+}

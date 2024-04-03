@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "primogemcraft:ccaoyuanhehuamuban_3"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:caomu_34",
+    "count": 1
+  }
+}

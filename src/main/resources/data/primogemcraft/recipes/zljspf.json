@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "b": {
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "c": {
+      "item": "primogemcraft:mmola_01"
+    },
+    "d": {
+      "item": "primogemcraft:jianlaoduanpian"
+    },
+    "e": {
+      "item": "primogemcraft:jlmo"
+    },
+    "f": {
+      "item": "primogemcraft:jianransuixie"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:jlzs",
+    "count": 2
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "xin_mlg",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§e摩拉 镐",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 2,
+    "efficiency": 7.0,
+    "attackSpeed": 1.2,
+    "enchantability": 20,
+    "damageVsEntity": 4.5,
+    "usageCount": 560,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Mmola01"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true
+  }
+}

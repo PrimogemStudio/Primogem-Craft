@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "primogemcraft:item/pgc5sheng_chang_bi_fei_"
+  }
+}

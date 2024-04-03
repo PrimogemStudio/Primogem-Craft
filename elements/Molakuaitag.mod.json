@@ -1,0 +1,45 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Moladui02"
+      },
+      {
+        "value": "CUSTOM:Molakuai01"
+      },
+      {
+        "value": "CUSTOM:Jingzhimolakuai"
+      },
+      {
+        "value": "CUSTOM:Llianjiamolakuai"
+      },
+      {
+        "value": "CUSTOM:Lianjiamolakuaibankuai"
+      },
+      {
+        "value": "CUSTOM:Llianjiamolakuiaitaijie"
+      },
+      {
+        "value": "CUSTOM:Llianjiamolakuaiqiang"
+      },
+      {
+        "value": "CUSTOM:Mlxdml01"
+      },
+      {
+        "value": "CUSTOM:Mlxdml02"
+      },
+      {
+        "value": "CUSTOM:Mlxdml03"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "mora/block",
+    "namespace": "forge"
+  }
+}

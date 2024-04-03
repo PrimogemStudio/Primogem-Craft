@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "minecraft:light_weighted_pressure_plate"
+    },
+    "c": {
+      "item": "primogemcraft:jinzhimola"
+    },
+    "d": {
+      "item": "primogemcraft:ljtg_02"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:xzcfyxwzd",
+    "count": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.RED_FLOWER"
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "Blocks.CACTUS"
+      },
+      {
+        "value": "Blocks.SAPLING"
+      },
+      {
+        "value": "CUSTOM:Shengzhangduanpian"
+      },
+      {
+        "value": "Blocks.SAND"
+      },
+      {
+        "value": "CUSTOM:Jlmo"
+      },
+      {
+        "value": "CUSTOM:Shengzhangduanpian"
+      },
+      {
+        "value": "CUSTOM:Jlmo"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Zhjs"
+    },
+    "name": "zhjspf",
+    "namespace": "mod"
+  }
+}

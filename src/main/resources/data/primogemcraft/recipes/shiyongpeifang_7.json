@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:shengzhangbifeisuixie"
+    },
+    {
+      "tag": "minecraft:saplings"
+    },
+    {
+      "item": "primogemcraft:ranyuansuixie"
+    }
+  ],
+  "result": {
+    "item": "minecraft:acacia_sapling",
+    "count": 1
+  }
+}

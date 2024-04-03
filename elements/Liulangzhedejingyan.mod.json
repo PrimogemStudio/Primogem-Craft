@@ -1,0 +1,65 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "liulangzheshu",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "流浪者的经验书",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 551,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§8可以储存§720§8经验等级的§8经验值！",
+        "§",
+        "§c  升级后不保留经验",
+        "§c 频繁存取可能造成损失"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true,
+      "name": "Dayingxiong_shu_faguang"
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "Liulang_jingyan_shuxing"
+    },
+    "onItemInInventoryTick": {
+      "name": "Jingyanshu_beibaonaijiu"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

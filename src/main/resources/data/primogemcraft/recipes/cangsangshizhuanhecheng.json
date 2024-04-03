@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:stone"
+    },
+    "b": {
+      "item": "primogemcraft:disuikuai_1"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:cangsangshizhuan",
+    "count": 8
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Blocks.END_STONE"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.IRON_INGOT"
+    },
+    "smithingInputTemplateStack": {
+      "value": "TAG:minecraft:music_discs"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Taikongmanbuchangpian"
+    },
+    "name": "taikongmanbuhecheng",
+    "namespace": "mod"
+  }
+}

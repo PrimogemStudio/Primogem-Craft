@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:ender_pearl"
+    },
+    "b": {
+      "item": "primogemcraft:yuzhousuipian"
+    },
+    "c": {
+      "item": "primogemcraft:liulangzhedejingyan"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:maoxianjiadejingyan",
+    "count": 1
+  }
+}

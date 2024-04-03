@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 24,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "TAG:primogemcraft:yuansutaoxiajiehejin"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:Qhzlh"
+    },
+    "name": "lhpf_12",
+    "namespace": "mod"
+  }
+}

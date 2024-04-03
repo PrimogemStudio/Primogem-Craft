@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:ziyousongshikuai"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:zziyousongshiduanpian",
+    "count": 18
+  }
+}

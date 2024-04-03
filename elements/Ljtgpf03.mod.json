@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE"
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "CUSTOM:Jinzhimola"
+      },
+      {
+        "value": "CUSTOM:Ljtg02"
+      },
+      {
+        "value": "CUSTOM:Jinzhimola"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Jinzhimola"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Xzcfyxwzd"
+    },
+    "name": "ljtgpf_03",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:qwkwzj"
+    },
+    {
+      "item": "primogemcraft:shqwyhdlt"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:yiyinhedaletou",
+    "count": 1
+  }
+}

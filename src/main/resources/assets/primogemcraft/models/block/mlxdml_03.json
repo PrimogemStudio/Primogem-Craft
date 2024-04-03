@@ -1,0 +1,9 @@
+{
+  "parent": "primogemcraft:custom/xd_moladui_04",
+  "textures": {
+    "all": "primogemcraft:block/xin_mld_tietu",
+    "particle": "primogemcraft:block/xin_mld_tietu",
+    "0": "primogemcraft:block/xin_mld_tietu"
+  },
+  "render_type": "solid"
+}

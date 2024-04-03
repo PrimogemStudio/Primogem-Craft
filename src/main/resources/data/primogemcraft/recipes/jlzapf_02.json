@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "b "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "b": {
+      "item": "primogemcraft:mmola_01"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:jlza",
+    "count": 1
+  }
+}

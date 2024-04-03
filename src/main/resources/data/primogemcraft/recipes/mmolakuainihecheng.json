@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:molakuai_01"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:mmola_01",
+    "count": 36
+  }
+}

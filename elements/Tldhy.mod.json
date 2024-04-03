@@ -1,0 +1,20 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "塔拉毒火焰",
+    "icon": "ta_la_du_huo_yan_.png",
+    "color": {
+      "value": -3355393,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onExpired": {
+      "name": "Tldhy_sx"
+    }
+  }
+}

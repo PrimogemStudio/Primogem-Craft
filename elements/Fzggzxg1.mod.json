@@ -1,0 +1,20 @@
+{
+  "_fv": 57,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "§c分裂咕咕钟§f[复制品]",
+    "icon": "fen_lie_gu_gu_zhong_.png",
+    "color": {
+      "value": -39169,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onExpired": {
+      "name": "Flggzxgsx2"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "fen_lie_gu_gu_zhong_",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "§5『奇物』§d分裂咕咕钟",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 1396,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§6手持右键支付§b1395§6经验值[§b30经验等级§6]",
+        "§6以解除负面效果！",
+        "§7攻击最大生命值小或等于自身最大生命值",
+        "§7的亡灵生物时，将有§e5%§7概率复制一个同",
+        "§7类型亡灵生物",
+        "§8该奇物每五分钟进行一次分裂，至多同时",
+        "§8存在3个复制品",
+        "§c持有分裂咕咕钟复制品的负面效果时无法",
+        "§c解除该奇物提供的负面效果！"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "Flggz_sx_1"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

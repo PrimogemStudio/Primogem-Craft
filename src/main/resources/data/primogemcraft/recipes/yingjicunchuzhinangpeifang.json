@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "c c",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:jiuchanzhiyuanxian"
+    },
+    "b": {
+      "item": "primogemcraft:yuanshi"
+    },
+    "c": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "d": {
+      "item": "primogemcraft:chuangshijiejing"
+    },
+    "e": {
+      "item": "primogemcraft:jiuchanzhiyuankuai"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yingjicunchunang",
+    "count": 1
+  }
+}

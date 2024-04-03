@@ -1,0 +1,9 @@
+{
+  "parent": "primogemcraft:custom/xingjiyinhang",
+  "textures": {
+    "all": "primogemcraft:block/xingjihepingyinhang",
+    "particle": "primogemcraft:block/yuzhousuipian",
+    "1": "primogemcraft:block/xingjihepingyinhang"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,51 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "zszsj",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§d『最胜紫晶』§b钻石剑",
+    "specialInformation": {
+      "fixedValue": [
+        "§6[SHIFT+右键]：",
+        "§5 - 获得勾玉效果 II",
+        "§7 - 持续时间10秒",
+        "§7 - 冷却40秒",
+        "§6非勾玉状态下",
+        "§7 - 攻击目标概率释放闪电",
+        "§7 - 触发概率7%"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 3,
+    "efficiency": 8.0,
+    "attackSpeed": 1.8,
+    "enchantability": 14,
+    "damageVsEntity": 5.5,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Zuishengsuixie"
+      },
+      {
+        "value": "Items.DIAMOND"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "Zsjsx2"
+    },
+    "onEntityHitWith": {
+      "name": "Zsjgjsx"
+    }
+  }
+}

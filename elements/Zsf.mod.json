@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "zsf",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§d『最胜紫晶』斧",
+    "specialInformation": {
+      "fixedValue": [
+        "§d攻击目标时：",
+        "§7 - 为目标施加§d『过去』§7效果",
+        "§",
+        "§a[SHIFT+左键]调整效果延迟"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 3,
+    "efficiency": 8.0,
+    "attackSpeed": 1.0,
+    "enchantability": 15,
+    "damageVsEntity": 7.0,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": "CUSTOM:Zuishengsuixie"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "Zsfsx"
+    },
+    "onEntitySwing": {
+      "name": "Zsqsx2"
+    }
+  }
+}

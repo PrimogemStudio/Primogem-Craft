@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:moladui_02"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:molakuai_01",
+    "count": 1
+  }
+}

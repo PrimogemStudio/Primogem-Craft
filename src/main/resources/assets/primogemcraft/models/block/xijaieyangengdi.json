@@ -1,0 +1,10 @@
+{
+  "parent": "primogemcraft:custom/gengdi",
+  "textures": {
+    "all": "primogemcraft:block/diyugengdi_2",
+    "particle": "primogemcraft:block/diyugengdi_2",
+    "1": "primogemcraft:block/diyugengdi_2",
+    "2": "primogemcraft:block/xiajieyangengdi_dongtai"
+  },
+  "render_type": "solid"
+}

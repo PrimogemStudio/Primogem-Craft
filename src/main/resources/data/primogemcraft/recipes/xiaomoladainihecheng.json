@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:xiaodaimola"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:jinzhimola",
+    "count": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "primogemcraft:molayiji_01_feature",
+  "config": {
+    "structure": "primogemcraft:molayiji101",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

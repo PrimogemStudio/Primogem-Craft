@@ -1,0 +1,16 @@
+{
+  "_fv": 57,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "原石学家",
+    "pointOfInterest": {
+      "value": "CUSTOM:Hualiduanzao"
+    },
+    "actionSound": {
+      "value": "CUSTOM:jingyanshu00"
+    },
+    "hat": "Partial",
+    "professionTextureFile": "ceshi_yuanshixuejia.png",
+    "zombifiedProfessionTextureFile": "cesysxj.png"
+  }
+}

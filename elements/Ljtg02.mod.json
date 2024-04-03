@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Shield",
+    "renderType": 1,
+    "blockingRenderType": 1,
+    "texture": "lajitong_gai_02",
+    "customModelName": "lajitong_gai_03:default",
+    "blockingModelName": "lajitong_gai_04:default",
+    "name": "铁质垃圾桶盖",
+    "specialInformation": {
+      "fixedValue": [
+        "§7手感好像还不错？",
+        "",
+        "§6 • 垃圾桶的顽强！",
+        "§8 受到攻击时有4%几率免疫",
+        "§8 这次伤害！",
+        "§6 • 趁手",
+        "§8  消耗耐久抵御格挡失败后",
+        "§8  被施加的冷却"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 25,
+    "damageVsEntity": 4.0,
+    "usageCount": 1500,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jlza"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": {
+      "name": "Ljtg2sx"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    " b ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:jijiuchanzhiyuan"
+    },
+    "b": {
+      "item": "primogemcraft:yiyinhedaletou"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:shilianchou",
+    "count": 1
+  }
+}

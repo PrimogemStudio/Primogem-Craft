@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "fgf"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:lantern"
+    },
+    "b": {
+      "item": "minecraft:lightning_rod"
+    },
+    "c": {
+      "item": "minecraft:soul_lantern"
+    },
+    "d": {
+      "item": "minecraft:piston"
+    },
+    "e": {
+      "item": "primogemcraft:dijingduanpian"
+    },
+    "f": {
+      "item": "primogemcraft:jlmo"
+    },
+    "g": {
+      "item": "primogemcraft:chuangshijiejing"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:zyjs",
+    "count": 2
+  }
+}

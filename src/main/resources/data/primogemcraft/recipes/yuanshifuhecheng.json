@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:yuanshiyuanpei"
+  },
+  "base": {
+    "item": "minecraft:wooden_axe"
+  },
+  "addition": {
+    "item": "primogemcraft:yuanshi"
+  },
+  "result": {
+    "item": "primogemcraft:yuanshifu"
+  }
+}

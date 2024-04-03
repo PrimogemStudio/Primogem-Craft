@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 10.0,
+    "cookingTime": 1200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:Jianshijingban"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:Jlmo"
+    },
+    "name": "jingbanpf_1",
+    "namespace": "mod"
+  }
+}

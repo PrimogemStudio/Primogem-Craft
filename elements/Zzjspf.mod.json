@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "CUSTOM:Bufengping"
+      },
+      {
+        "value": "Items.SLIME_BALL"
+      },
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": "CUSTOM:Zziyousongshiduanpian"
+      },
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": "CUSTOM:Jlmo"
+      },
+      {
+        "value": "CUSTOM:Ziziyousongshisuixie"
+      },
+      {
+        "value": "CUSTOM:Jlmo"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Zzjs"
+    },
+    "name": "zzjspf",
+    "namespace": "mod"
+  }
+}

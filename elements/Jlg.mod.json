@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "jlg",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§6『坚牢黄玉』镐",
+    "specialInformation": {
+      "fixedValue": [
+        "§6 [SHIFT]§d右键方块时：",
+        "§7 - 消耗耐久后50%转化石头为金矿石",
+        "§7 - 有低概率转化方块为合金块！",
+        "§7 - 冷却时间20秒"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 3,
+    "efficiency": 12.5,
+    "attackSpeed": 1.2,
+    "enchantability": 15,
+    "damageVsEntity": 6.0,
+    "usageCount": 1861,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jianransuixie"
+      },
+      {
+        "value": "CUSTOM:Yuanshi"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "Jlgsx"
+    }
+  }
+}

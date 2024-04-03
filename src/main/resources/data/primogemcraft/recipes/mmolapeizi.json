@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:jljsl"
+    },
+    "b": {
+      "tag": "minecraft:sand"
+    },
+    "c": {
+      "item": "primogemcraft:ranyuanduanpian"
+    },
+    "d": {
+      "item": "primogemcraft:jingzhimolakuai"
+    },
+    "e": {
+      "item": "primogemcraft:dbmlk"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:mmolapeiziwupin",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:paper"
+    },
+    "b": {
+      "tag": "minecraft:planks"
+    },
+    "c": {
+      "item": "minecraft:orange_dye"
+    },
+    "d": {
+      "item": "primogemcraft:jianransuixie"
+    },
+    "e": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:xiaodengwupin",
+    "count": 3
+  }
+}

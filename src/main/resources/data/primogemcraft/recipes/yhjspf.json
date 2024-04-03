@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone_block"
+    },
+    "b": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "c": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "d": {
+      "item": "primogemcraft:zuishengkuai"
+    },
+    "e": {
+      "item": "primogemcraft:jlmo"
+    },
+    "f": {
+      "item": "minecraft:coal_ore"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yhjs",
+    "count": 3
+  }
+}

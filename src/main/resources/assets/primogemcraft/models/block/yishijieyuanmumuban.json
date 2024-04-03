@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/yimudi",
+    "up": "primogemcraft:block/yimuding",
+    "north": "primogemcraft:block/yimuce",
+    "east": "primogemcraft:block/yimuce",
+    "south": "primogemcraft:block/yimuce",
+    "west": "primogemcraft:block/yimuce",
+    "particle": "primogemcraft:block/yimudi"
+  },
+  "render_type": "solid"
+}

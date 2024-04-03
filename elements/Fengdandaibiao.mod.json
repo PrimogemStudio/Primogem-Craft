@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Ballad of Many Waters",
+    "rarity": "RARE",
+    "texture": "fengdandaibiao",
+    "description": "HOYO-MiX",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:lr_fengdan"
+    },
+    "lengthInTicks": 5000,
+    "analogOutput": 4
+  }
+}

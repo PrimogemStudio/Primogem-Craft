@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "primogemcraft:item/pgc6ai_xu_bing_yu_"
+  }
+}

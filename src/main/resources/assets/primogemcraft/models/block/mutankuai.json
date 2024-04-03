@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/mutankuai",
+    "up": "primogemcraft:block/mutankuai",
+    "north": "primogemcraft:block/mutankuai",
+    "east": "primogemcraft:block/mutankuai",
+    "south": "primogemcraft:block/mutankuai",
+    "west": "primogemcraft:block/mutankuai",
+    "particle": "primogemcraft:block/mutankuai"
+  },
+  "render_type": "solid"
+}

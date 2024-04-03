@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 3,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:ice"
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:aixubingyukuangshi"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:packed_ice"
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:aixubingyukuangshi"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:frosted_ice",
+            "Properties": {
+              "age": "0"
+            }
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:aixubingyukuangshi"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:blue_ice"
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:aixubingyukuangshi"
+        }
+      }
+    ]
+  }
+}

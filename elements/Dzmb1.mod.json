@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Shengjizizaitie"
+      },
+      {
+        "value": "CUSTOM:Shengjijltiewp"
+      },
+      {
+        "value": "CUSTOM:Sjzst"
+      },
+      {
+        "value": "CUSTOM:Szsjtie"
+      },
+      {
+        "value": "CUSTOM:Djtsj"
+      },
+      {
+        "value": "CUSTOM:Rytsj"
+      },
+      {
+        "value": "CUSTOM:Axtsj"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "dzmb_1",
+    "namespace": "pgc"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "primogemcraft:block/yuanhe_muban_2",
+    "top": "primogemcraft:block/yuanhe_muban_2",
+    "side": "primogemcraft:block/yuanhe_muban_2"
+  },
+  "render_type": "solid"
+}

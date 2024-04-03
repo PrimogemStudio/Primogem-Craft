@@ -1,0 +1,237 @@
+{
+  "liyueqincezhuang012": {
+    "sounds": [
+      {
+        "name": "primogemcraft:li_yue_dai_biao_chen_zhi_yi_hoyo-mix_-_the_fading_stories_qingce_night_bu_zai_nian_qing_de_cun_zhuang__qing_ce_ye_jian_",
+        "stream": true
+      }
+    ]
+  },
+  "sanyuehee": {
+    "subtitle": "subtitles.sanyuehee",
+    "sounds": [
+      {
+        "name": "primogemcraft:san_yue_he_e_",
+        "stream": true
+      }
+    ]
+  },
+  "sanyueennnn": {
+    "subtitle": "subtitles.sanyueennnn",
+    "sounds": [
+      {
+        "name": "primogemcraft:san_yue_ng_ng_ng_",
+        "stream": true
+      }
+    ]
+  },
+  "sanyueexixi": {
+    "subtitle": "subtitles.sanyueexixi",
+    "sounds": [
+      {
+        "name": "primogemcraft:san_yue_ai_xi_xi_",
+        "stream": true
+      }
+    ]
+  },
+  "taikongmanbuyinpin": {
+    "subtitle": "subtitles.taikongmanbuyinpin",
+    "sounds": [
+      {
+        "name": "primogemcraft:tai_kong_man_bu_",
+        "stream": true
+      }
+    ]
+  },
+  "kaixiang": {
+    "subtitle": "subtitles.kaixiang",
+    "sounds": [
+      {
+        "name": "primogemcraft:kai_xiang_",
+        "stream": false
+      }
+    ]
+  },
+  "djpp1": {
+    "subtitle": "subtitles.djpp1",
+    "sounds": [
+      {
+        "name": "primogemcraft:dijingpaopao_01",
+        "stream": false
+      }
+    ]
+  },
+  "djpp02": {
+    "subtitle": "subtitles.djpp02",
+    "sounds": [
+      {
+        "name": "primogemcraft:dijingpaopao_02_",
+        "stream": false
+      }
+    ]
+  },
+  "wu_sheng": {
+    "subtitle": "subtitles.wu_sheng",
+    "sounds": [
+      {
+        "name": "primogemcraft:mei_you_sheng_yin_",
+        "stream": false
+      }
+    ]
+  },
+  "lr_fengdan": {
+    "subtitle": "subtitles.lr_fengdan",
+    "sounds": [
+      {
+        "name": "primogemcraft:zhong_shui_zhi_shi_",
+        "stream": false
+      }
+    ]
+  },
+  "mengdeyewai011": {
+    "subtitle": "subtitles.mengdeyewai011",
+    "sounds": [
+      {
+        "name": "primogemcraft:xi_wang_de_xin__tian_",
+        "stream": true
+      }
+    ]
+  },
+  "xumimolazhuang": {
+    "sounds": [
+      {
+        "name": "primogemcraft:wei_rui_lin_ye_jian_",
+        "stream": true
+      }
+    ]
+  },
+  "daoqigantiancun013": {
+    "sounds": [
+      {
+        "name": "primogemcraft:shen_hu_de_zhu_fu_",
+        "stream": true
+      }
+    ]
+  },
+  "yanziyueliang": {
+    "sounds": [
+      {
+        "name": "primogemcraft:yan_zi_yue_liang_",
+        "stream": true
+      }
+    ]
+  },
+  "tashanglvtu": {
+    "sounds": [
+      {
+        "name": "primogemcraft:ta_shang_lu_tu_",
+        "stream": true
+      }
+    ]
+  },
+  "gongzhuxinghua": {
+    "sounds": [
+      {
+        "name": "primogemcraft:gong_zhu_xing_hua_",
+        "stream": false
+      }
+    ]
+  },
+  "zhapian": {
+    "sounds": [
+      {
+        "name": "primogemcraft:zha_pian_",
+        "stream": false
+      }
+    ]
+  },
+  "dashengchulan01": {
+    "sounds": [
+      {
+        "name": "primogemcraft:2chu_lan_",
+        "stream": false
+      }
+    ]
+  },
+  "dashengchuzi01": {
+    "sounds": [
+      {
+        "name": "primogemcraft:2chu_zi_",
+        "stream": false
+      }
+    ]
+  },
+  "dashengchujin": {
+    "sounds": [
+      {
+        "name": "primogemcraft:2chu_jin_",
+        "stream": false
+      }
+    ]
+  },
+  "choukaqianxi01": {
+    "sounds": [
+      {
+        "name": "primogemcraft:chou_qia_qian_xi_",
+        "stream": false
+      }
+    ]
+  },
+  "shilianyinpin": {
+    "sounds": [
+      {
+        "name": "primogemcraft:shi_lian_qian_zou_",
+        "stream": false
+      }
+    ]
+  },
+  "qiwusunhuai066": {
+    "sounds": [
+      {
+        "name": "primogemcraft:qi_wu_sun_pi_",
+        "stream": false
+      }
+    ]
+  },
+  "xiaoguanzi": {
+    "sounds": [
+      {
+        "name": "primogemcraft:xiao_guan_zi_",
+        "stream": false
+      }
+    ]
+  },
+  "choukatiaoguo.1": {
+    "sounds": [
+      {
+        "name": "primogemcraft:2chu_lan_",
+        "stream": false
+      }
+    ]
+  },
+  "qianye_chufa": {
+    "sounds": [
+      {
+        "name": "primogemcraft:qian_xie_hong_fa_",
+        "stream": false
+      }
+    ]
+  },
+  "qianye_shijia": {
+    "sounds": [
+      {
+        "name": "primogemcraft:qian_xie_shi_jia_",
+        "stream": false
+      }
+    ]
+  },
+  "jingyanshu00": {
+    "subtitle": "subtitles.jingyanshu00",
+    "sounds": [
+      {
+        "name": "primogemcraft:sheng_ji_",
+        "stream": false
+      }
+    ]
+  }
+}

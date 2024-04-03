@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:jlliang"
+    },
+    {
+      "item": "primogemcraft:jlliang"
+    },
+    {
+      "item": "primogemcraft:jlliang"
+    },
+    {
+      "item": "primogemcraft:jlliang"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:jlmo",
+    "count": 1
+  }
+}

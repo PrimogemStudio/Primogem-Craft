@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 8000,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:Lajitongsuipian"
+    },
+    "blastingReturnStack": {
+      "value": "Items.IRON_INGOT"
+    },
+    "name": "lajisuipianyongtu_2",
+    "namespace": "mod"
+  }
+}

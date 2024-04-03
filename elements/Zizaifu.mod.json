@@ -1,0 +1,44 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Axe",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "zizaifu",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§a『自在松石』斧",
+    "specialInformation": {
+      "fixedValue": [
+        "§d手持工具时：",
+        "§7 - 步行时获得急速",
+        "§7 - 游泳时获得海豚的恩惠"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 3,
+    "efficiency": 9.5,
+    "attackSpeed": 1.0,
+    "enchantability": 15,
+    "damageVsEntity": 8.5,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ziziyousongshisuixie"
+      },
+      {
+        "value": "CUSTOM:Yuanshi"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "Zizaifushuxing"
+    }
+  }
+}

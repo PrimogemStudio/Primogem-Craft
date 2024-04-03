@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Ryjll"
+      },
+      {
+        "value": "CUSTOM:Ryjll"
+      },
+      {
+        "value": "CUSTOM:Ryjll"
+      },
+      {
+        "value": "CUSTOM:Ryjll"
+      },
+      {
+        "value": "CUSTOM:Ryjll"
+      },
+      {
+        "value": "CUSTOM:Ryjll"
+      },
+      {
+        "value": "CUSTOM:Ryjll"
+      },
+      {
+        "value": "CUSTOM:Ryjll"
+      },
+      {
+        "value": "CUSTOM:Ryjll"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Ryjs"
+    },
+    "name": "jl_13",
+    "namespace": "mod"
+  }
+}

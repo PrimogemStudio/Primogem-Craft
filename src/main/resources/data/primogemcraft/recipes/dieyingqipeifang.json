@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:jianshijingban"
+  },
+  "base": {
+    "item": "primogemcraft:zhaiquan"
+  },
+  "addition": {
+    "item": "primogemcraft:zhaiquan"
+  },
+  "result": {
+    "item": "primogemcraft:tezhidieyingqi"
+  }
+}

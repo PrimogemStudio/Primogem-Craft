@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:jinzhimola"
+  },
+  "base": {
+    "item": "minecraft:diamond_chestplate"
+  },
+  "addition": {
+    "item": "primogemcraft:axzssj"
+  },
+  "result": {
+    "item": "primogemcraft:axzst_chestplate"
+  }
+}

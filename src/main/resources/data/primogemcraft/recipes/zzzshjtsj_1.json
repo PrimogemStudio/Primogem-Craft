@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:qhmbmlys_01"
+  },
+  "base": {
+    "item": "primogemcraft:zizaizuantao_helmet"
+  },
+  "addition": {
+    "item": "primogemcraft:shengjizuanshejin"
+  },
+  "result": {
+    "item": "primogemcraft:zizizaihejintao_helmet"
+  }
+}

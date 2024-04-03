@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:shqwyhdlt"
+    },
+    "title": {
+      "translate": "advancements.jdxxcy.title"
+    },
+    "description": {
+      "translate": "advancements.jdxxcy.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "jdxxcy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "primogemcraft:shqwyhdlt"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "primogemcraft:d_du_tu_de_kai_shi"
+}

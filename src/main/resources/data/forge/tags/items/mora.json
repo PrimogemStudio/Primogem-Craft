@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:mora/block",
+    "primogemcraft:jinzhimola",
+    "primogemcraft:mmola_01"
+  ]
+}

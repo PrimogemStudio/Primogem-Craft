@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "primogemcraft:block/cangsnagshizhuan",
+    "top": "primogemcraft:block/cangsnagshizhuan",
+    "side": "primogemcraft:block/cangsnagshizhuan"
+  },
+  "render_type": "solid"
+}

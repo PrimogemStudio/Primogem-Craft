@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "TAG:forge:ysdp_0"
+      },
+      {
+        "value": "TAG:forge:yssx_0"
+      },
+      {
+        "value": "TAG:forge:ysk_0"
+      },
+      {
+        "value": "TAG:primogemcraft:yuansujingticailiaobiaoqian"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "element_powder",
+    "namespace": "forge"
+  }
+}

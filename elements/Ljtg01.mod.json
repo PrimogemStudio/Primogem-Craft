@@ -1,0 +1,50 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Shield",
+    "renderType": 1,
+    "blockingRenderType": 1,
+    "texture": "lajitong_gai_01",
+    "customModelName": "lajitong_gai_01:default",
+    "blockingModelName": "lajitong_gai_02:default",
+    "name": "光耀意志之盾",
+    "specialInformation": {
+      "fixedValue": [
+        "§7真的不是一个普通的",
+        "§7垃圾桶盖吗？",
+        "",
+        "§6 • 趁手",
+        "§8  消耗耐久抵御格挡失败",
+        "§8  后被施加的冷却"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 20,
+    "damageVsEntity": 4.0,
+    "usageCount": 200,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Lajitongsuipian"
+      },
+      {
+        "value": "CUSTOM:Jlza"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": {
+      "name": "Ljtchenshou"
+    }
+  }
+}

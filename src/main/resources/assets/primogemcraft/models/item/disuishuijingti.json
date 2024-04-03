@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "primogemcraft:item/di_sui_shui_jing_lin_shi_"
+  },
+  "render_type": "translucent"
+}

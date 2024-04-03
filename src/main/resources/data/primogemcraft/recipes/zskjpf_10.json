@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:qhmbmlys_01"
+  },
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "addition": {
+    "item": "primogemcraft:sjzshj"
+  },
+  "result": {
+    "item": "primogemcraft:zshjt_chestplate"
+  }
+}

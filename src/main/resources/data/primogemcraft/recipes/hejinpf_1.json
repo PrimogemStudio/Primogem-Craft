@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:mmola_01"
+  },
+  "base": {
+    "tag": "forge:hejin_1"
+  },
+  "addition": {
+    "item": "primogemcraft:mzsj_3"
+  },
+  "result": {
+    "item": "minecraft:netherite_chestplate"
+  }
+}

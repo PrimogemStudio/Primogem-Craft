@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:dbmlk"
+    },
+    {
+      "item": "primogemcraft:dbmlk"
+    },
+    {
+      "item": "primogemcraft:dbmlk"
+    },
+    {
+      "item": "primogemcraft:dbmlk"
+    },
+    {
+      "item": "primogemcraft:dbmlk"
+    },
+    {
+      "item": "primogemcraft:dbmlk"
+    },
+    {
+      "item": "primogemcraft:dbmlk"
+    },
+    {
+      "item": "primogemcraft:dbmlk"
+    },
+    {
+      "item": "primogemcraft:dbmlk"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:mljnb",
+    "count": 1
+  }
+}

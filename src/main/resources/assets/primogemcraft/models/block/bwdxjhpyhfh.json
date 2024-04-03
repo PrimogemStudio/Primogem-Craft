@@ -1,0 +1,9 @@
+{
+  "parent": "primogemcraft:custom/bwd_yinhang",
+  "textures": {
+    "all": "primogemcraft:block/bwd_yinhang",
+    "particle": "primogemcraft:block/yuzhousuipian",
+    "3": "primogemcraft:block/bwd_yinhang"
+  },
+  "render_type": "cutout"
+}

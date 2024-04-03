@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/xin_molakuai",
+    "up": "primogemcraft:block/xin_molakuai",
+    "north": "primogemcraft:block/xin_molakuai",
+    "east": "primogemcraft:block/xin_molakuai",
+    "south": "primogemcraft:block/xin_molakuai",
+    "west": "primogemcraft:block/xin_molakuai",
+    "particle": "primogemcraft:block/xin_molakuai"
+  },
+  "render_type": "solid"
+}

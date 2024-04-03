@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:mmola_01"
+  },
+  "base": {
+    "item": "minecraft:iron_helmet"
+  },
+  "addition": {
+    "item": "primogemcraft:rytsj"
+  },
+  "result": {
+    "item": "primogemcraft:rytt_helmet"
+  }
+}

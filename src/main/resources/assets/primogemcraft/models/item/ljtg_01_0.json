@@ -1,0 +1,7 @@
+{
+  "parent": "primogemcraft:custom/lajitong_gai_02",
+  "textures": {
+    "2": "primogemcraft:block/lajitong_gai_01",
+    "particle": "primogemcraft:item/lajitong_gai_01"
+  }
+}

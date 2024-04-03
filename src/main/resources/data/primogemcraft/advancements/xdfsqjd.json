@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:ceshixiaodengfasheqi"
+    },
+    "title": {
+      "translate": "advancements.xdfsqjd.title"
+    },
+    "description": {
+      "translate": "advancements.xdfsqjd.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "xdfsqjd": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "primogemcraft:ceshixiaodengfasheqi"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "primogemcraft:wanwuqiyuan"
+}

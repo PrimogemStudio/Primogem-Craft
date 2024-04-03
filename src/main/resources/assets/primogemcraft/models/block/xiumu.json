@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/xiumu",
+    "up": "primogemcraft:block/xiumu",
+    "north": "primogemcraft:block/xiumu",
+    "east": "primogemcraft:block/xiumu",
+    "south": "primogemcraft:block/xiumu",
+    "west": "primogemcraft:block/xiumu",
+    "particle": "primogemcraft:block/xiumu"
+  },
+  "render_type": "solid"
+}

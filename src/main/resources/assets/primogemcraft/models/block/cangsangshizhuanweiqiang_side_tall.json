@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "primogemcraft:block/cangsnagshizhuan",
+    "particle": "primogemcraft:block/cangsnagshizhuan"
+  },
+  "render_type": "solid"
+}

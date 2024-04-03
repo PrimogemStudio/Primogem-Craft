@@ -1,0 +1,7 @@
+{
+  "type": "primogemcraft:structure_feature",
+  "config": {
+    "structure": "primogemcraft:lajitong",
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

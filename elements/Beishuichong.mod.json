@@ -1,0 +1,24 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Mlxdml01"
+      },
+      {
+        "value": "CUSTOM:Mlxdml02"
+      },
+      {
+        "value": "CUSTOM:Mlxdml03"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "signs",
+    "namespace": "minecraft"
+  }
+}

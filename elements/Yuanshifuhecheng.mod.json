@@ -1,0 +1,28 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.WOODEN_AXE"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:Yuanshi"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:Yuanshiyuanpei"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Yuanshifu"
+    },
+    "name": "yuanshifuhecheng",
+    "namespace": "mod"
+  }
+}

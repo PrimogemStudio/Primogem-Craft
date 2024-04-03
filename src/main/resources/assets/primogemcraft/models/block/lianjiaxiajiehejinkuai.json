@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/lianjia_xiajiehejinkuai",
+    "up": "primogemcraft:block/lianjia_xiajiehejinkuai",
+    "north": "primogemcraft:block/lianjia_xiajiehejinkuai",
+    "east": "primogemcraft:block/lianjia_xiajiehejinkuai",
+    "south": "primogemcraft:block/lianjia_xiajiehejinkuai",
+    "west": "primogemcraft:block/lianjia_xiajiehejinkuai",
+    "particle": "primogemcraft:block/lianjia_xiajiehejinkuai"
+  },
+  "render_type": "solid"
+}

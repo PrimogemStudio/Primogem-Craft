@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/jingduanyongkuai",
+    "up": "primogemcraft:block/jingduanyongkuai",
+    "north": "primogemcraft:block/jingduanyongkuai",
+    "east": "primogemcraft:block/jingduanyongkuai",
+    "south": "primogemcraft:block/jingduanyongkuai",
+    "west": "primogemcraft:block/jingduanyongkuai",
+    "particle": "primogemcraft:block/jingduanyongkuai"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "primogemcraft:block/xiumu",
+    "particle": "primogemcraft:block/xiumu"
+  },
+  "render_type": "solid"
+}

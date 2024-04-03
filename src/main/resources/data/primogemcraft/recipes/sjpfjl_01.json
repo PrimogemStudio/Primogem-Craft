@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:jlza"
+    },
+    "b": {
+      "item": "primogemcraft:jianransuixie"
+    },
+    "c": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "d": {
+      "item": "primogemcraft:wmoladai"
+    },
+    "e": {
+      "item": "primogemcraft:jlliang"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:shengjijltiewp",
+    "count": 1
+  }
+}

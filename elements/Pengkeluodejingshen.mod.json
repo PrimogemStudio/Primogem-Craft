@@ -1,0 +1,59 @@
+{
+  "_fv": 57,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "peng_ke_luo_de_jing_shen__2",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "朋克洛德精神",
+    "rarity": "EPIC",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 10,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§9赋予战斗状态",
+        "§d处于战斗状态下：",
+        "§7被攻击时，将有50%概率对攻击者施加：",
+        "§7 - 凋零 I （5s）",
+        "§7 - 缓慢 III （5s）",
+        "§7 - 失明 III （5s）",
+        "§7 - 黑暗 III （5s）",
+        "§7其中一种"
+      ]
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "Luodejingshe_shuxing"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

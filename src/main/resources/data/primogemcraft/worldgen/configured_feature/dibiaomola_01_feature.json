@@ -1,0 +1,17 @@
+{
+  "type": "primogemcraft:dibiaomola_01_feature",
+  "config": {
+    "structure": "primogemcraft:molayiji_05",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": [
+      "minecraft:barrier",
+      "minecraft:structure_block"
+    ],
+    "offset": [
+      0,
+      -17,
+      0
+    ]
+  }
+}

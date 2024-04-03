@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/szbfkkkkkk",
+    "up": "primogemcraft:block/szbfkkkkkk",
+    "north": "primogemcraft:block/szbfkkkkkk",
+    "east": "primogemcraft:block/szbfkkkkkk",
+    "south": "primogemcraft:block/szbfkkkkkk",
+    "west": "primogemcraft:block/szbfkkkkkk",
+    "particle": "primogemcraft:block/szbfkkkkkk"
+  },
+  "render_type": "solid"
+}

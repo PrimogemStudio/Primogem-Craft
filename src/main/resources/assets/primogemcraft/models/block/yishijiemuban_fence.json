@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "primogemcraft:block/yimuding",
+    "particle": "primogemcraft:block/yimuding"
+  },
+  "render_type": "solid"
+}

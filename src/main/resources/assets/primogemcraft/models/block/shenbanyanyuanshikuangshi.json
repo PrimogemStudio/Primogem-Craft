@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/shenbanyuanshi_xin",
+    "up": "primogemcraft:block/shenbanyuanshi_xin",
+    "north": "primogemcraft:block/shenbanyuanshi_xin",
+    "east": "primogemcraft:block/shenbanyuanshi_xin",
+    "south": "primogemcraft:block/shenbanyuanshi_xin",
+    "west": "primogemcraft:block/shenbanyuanshi_xin",
+    "particle": "primogemcraft:block/shenbanyuanshi_xin"
+  },
+  "render_type": "solid"
+}

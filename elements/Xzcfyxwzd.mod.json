@@ -1,0 +1,51 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Shield",
+    "renderType": 1,
+    "blockingRenderType": 1,
+    "texture": "lajitong_gai_03",
+    "customModelName": "lajitong_gai_05:default",
+    "blockingModelName": "lajitong_gai_06:default",
+    "name": "§6象征财富与希望之盾",
+    "specialInformation": {
+      "fixedValue": [
+        "§7更华丽的垃圾桶盖罢了！",
+        "",
+        "§6 • 抗性提升",
+        "§8  永久提供抗性提升 I",
+        "§6 • 趁手",
+        "§8  消耗耐久抵御格挡失败",
+        "§8  后被施加的冷却"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 30,
+    "damageVsEntity": 4.0,
+    "usageCount": 2048,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jinzhimola"
+      },
+      {
+        "value": "CUSTOM:Jlliang"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": {
+      "name": "Ljtg3sx"
+    }
+  }
+}

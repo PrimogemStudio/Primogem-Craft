@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:tezhidieyingqi"
+  },
+  "base": {
+    "item": "primogemcraft:wuqiezhihuiguang"
+  },
+  "addition": {
+    "item": "primogemcraft:yhjsl"
+  },
+  "result": {
+    "item": "primogemcraft:wuqie_2"
+  }
+}

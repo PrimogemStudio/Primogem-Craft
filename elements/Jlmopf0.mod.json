@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 10.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "Items.NETHERITE_SCRAP"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:Jlmo"
+    },
+    "name": "jlmopf_0",
+    "namespace": "mod"
+  }
+}

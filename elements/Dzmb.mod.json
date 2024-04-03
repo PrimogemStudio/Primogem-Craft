@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "TAG:pgc:dzmb_0"
+      },
+      {
+        "value": "TAG:pgc:dzmb_1"
+      },
+      {
+        "value": "TAG:pgc:dzmb_2"
+      },
+      {
+        "value": "TAG:pgc:dzmb_3"
+      },
+      {
+        "value": "TAG:pgc:dzmb_4"
+      },
+      {
+        "value": "TAG:pgc:dzmb_5"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "dzmb",
+    "namespace": "pgc"
+  }
+}

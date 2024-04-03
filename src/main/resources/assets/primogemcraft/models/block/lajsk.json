@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/lajsk",
+    "up": "primogemcraft:block/lajsk",
+    "north": "primogemcraft:block/lajsk",
+    "east": "primogemcraft:block/lajsk",
+    "south": "primogemcraft:block/lajsk",
+    "west": "primogemcraft:block/lajsk",
+    "particle": "primogemcraft:block/lajsk"
+  },
+  "render_type": "solid"
+}

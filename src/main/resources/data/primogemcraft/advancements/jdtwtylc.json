@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:zzjs"
+    },
+    "title": {
+      "translate": "advancements.jdtwtylc.title"
+    },
+    "description": {
+      "translate": "advancements.jdtwtylc.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "jdtwtylc": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:jdwxjyjh"
+}

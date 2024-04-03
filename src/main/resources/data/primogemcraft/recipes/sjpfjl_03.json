@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cac",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "b": {
+      "item": "primogemcraft:jlzs"
+    },
+    "c": {
+      "item": "primogemcraft:jlmo"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:shengjijlhjwp",
+    "count": 1
+  }
+}

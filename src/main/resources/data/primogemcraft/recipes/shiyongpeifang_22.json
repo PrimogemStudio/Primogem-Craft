@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:shanbianzhichen"
+    },
+    "b": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "c": {
+      "item": "primogemcraft:ranyuansuixie"
+    }
+  },
+  "result": {
+    "item": "minecraft:nether_wart",
+    "count": 1
+  }
+}

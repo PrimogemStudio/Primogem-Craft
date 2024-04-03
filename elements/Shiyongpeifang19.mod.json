@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Laji"
+      },
+      {
+        "value": "CUSTOM:Shanbianzhichen"
+      },
+      {
+        "value": "CUSTOM:Yuzhousuipian"
+      },
+      {
+        "value": "CUSTOM:Shengzhangbifeisuixie"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "CUSTOM:Shengzhangbifeisuixie"
+      },
+      {
+        "value": "CUSTOM:Yuzhousuipian"
+      },
+      {
+        "value": "CUSTOM:Dijingsuixie"
+      },
+      {
+        "value": "CUSTOM:Yuzhousuipian"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Blocks.SCULK"
+    },
+    "name": "shiyongpeifang_19",
+    "namespace": "mod"
+  }
+}

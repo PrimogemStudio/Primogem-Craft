@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "xin_mld_tietu"
+      },
+      "name": "default"
+    }
+  }
+}

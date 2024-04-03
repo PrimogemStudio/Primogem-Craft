@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "primogemcraft:qhmbmlys_02"
+  },
+  "addition": {
+    "item": "primogemcraft:molakuai_01"
+  },
+  "result": {
+    "item": "primogemcraft:qhmbmlys_01"
+  }
+}

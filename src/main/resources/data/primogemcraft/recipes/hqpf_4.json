@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:dijingduanpian"
+    },
+    "b": {
+      "item": "primogemcraft:zyjsl"
+    },
+    "c": {
+      "item": "primogemcraft:zyjs"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:hqshui",
+    "count": 1
+  }
+}

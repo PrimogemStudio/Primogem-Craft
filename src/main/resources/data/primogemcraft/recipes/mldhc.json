@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:mmola_01"
+    },
+    {
+      "item": "primogemcraft:mmola_01"
+    },
+    {
+      "item": "primogemcraft:mmola_01"
+    },
+    {
+      "item": "primogemcraft:mmola_01"
+    },
+    {
+      "item": "primogemcraft:mmola_01"
+    },
+    {
+      "item": "primogemcraft:mmola_01"
+    },
+    {
+      "item": "primogemcraft:mmola_01"
+    },
+    {
+      "item": "primogemcraft:mmola_01"
+    },
+    {
+      "item": "primogemcraft:mmola_01"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:mlxdml_01",
+    "count": 1
+  }
+}

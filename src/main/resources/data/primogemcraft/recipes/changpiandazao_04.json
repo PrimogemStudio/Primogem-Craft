@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "tag": "minecraft:music_discs"
+  },
+  "base": {
+    "item": "primogemcraft:jijiuchanzhiyuan"
+  },
+  "addition": {
+    "item": "primogemcraft:bufengping"
+  },
+  "result": {
+    "item": "primogemcraft:xiwangdeyitian_011"
+  }
+}

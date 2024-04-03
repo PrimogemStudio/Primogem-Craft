@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:echo_shard"
+    },
+    "b": {
+      "item": "minecraft:emerald"
+    },
+    "c": {
+      "item": "primogemcraft:shengzhangbifeisuixie"
+    },
+    "d": {
+      "item": "primogemcraft:zhjs"
+    },
+    "e": {
+      "item": "primogemcraft:jlliang"
+    },
+    "f": {
+      "item": "primogemcraft:jlmo"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:szzssj",
+    "count": 1
+  }
+}

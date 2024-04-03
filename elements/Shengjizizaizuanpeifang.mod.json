@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.AMETHYST_SHARD"
+      },
+      {
+        "value": "CUSTOM:Ziziyousongshisuixie"
+      },
+      {
+        "value": "CUSTOM:Zzjs"
+      },
+      {
+        "value": "CUSTOM:Ziziyousongshisuixie"
+      },
+      {
+        "value": "CUSTOM:Jlliang"
+      },
+      {
+        "value": "CUSTOM:Jlmo"
+      },
+      {
+        "value": "CUSTOM:Jlliang"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Shengjizizaizuan"
+    },
+    "name": "shengjizizaizuanpeifang",
+    "namespace": "mod"
+  }
+}

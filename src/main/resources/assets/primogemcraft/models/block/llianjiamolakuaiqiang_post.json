@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "primogemcraft:block/121qxmlk",
+    "particle": "primogemcraft:block/121qxmlk"
+  },
+  "render_type": "solid"
+}

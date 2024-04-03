@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "tag": "forge:stained_glass_panes"
+    },
+    "c": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:jianshijingban",
+    "count": 2
+  }
+}

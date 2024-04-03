@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:zhjs"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:zhjsl",
+    "count": 9
+  }
+}

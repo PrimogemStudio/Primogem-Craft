@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "primogemcraft:block/caoyuanhe_muban",
+    "top": "primogemcraft:block/caoyuanhe_muban",
+    "side": "primogemcraft:block/caoyuanhe_muban"
+  },
+  "render_type": "solid"
+}

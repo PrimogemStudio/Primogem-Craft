@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:mlxdml_03"
+    }
+  ],
+  "result": {
+    "item": "primogemcraft:mmola_01",
+    "count": 39
+  }
+}

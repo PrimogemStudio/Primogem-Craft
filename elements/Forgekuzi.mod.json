@@ -1,0 +1,81 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Kkuijiaceshi.legs"
+      },
+      {
+        "value": "CUSTOM:Zizaitiejia.legs"
+      },
+      {
+        "value": "CUSTOM:Zizaizuantao.legs"
+      },
+      {
+        "value": "CUSTOM:Zizizaihejintao.legs"
+      },
+      {
+        "value": "CUSTOM:Kjjlt.legs"
+      },
+      {
+        "value": "CUSTOM:Jlkjzs.legs"
+      },
+      {
+        "value": "CUSTOM:Jlkjhj.legs"
+      },
+      {
+        "value": "CUSTOM:Zstkj.legs"
+      },
+      {
+        "value": "CUSTOM:Zszst.legs"
+      },
+      {
+        "value": "CUSTOM:Zshjt.legs"
+      },
+      {
+        "value": "CUSTOM:Szkjtie.legs"
+      },
+      {
+        "value": "CUSTOM:Szzskj.legs"
+      },
+      {
+        "value": "CUSTOM:Szhjkj.legs"
+      },
+      {
+        "value": "CUSTOM:Djtt.legs"
+      },
+      {
+        "value": "CUSTOM:Djzst.legs"
+      },
+      {
+        "value": "CUSTOM:Djhjt.legs"
+      },
+      {
+        "value": "CUSTOM:Rytt.legs"
+      },
+      {
+        "value": "CUSTOM:Ruzst.legs"
+      },
+      {
+        "value": "CUSTOM:Ryhjt.legs"
+      },
+      {
+        "value": "CUSTOM:Axtt.legs"
+      },
+      {
+        "value": "CUSTOM:Axzst.legs"
+      },
+      {
+        "value": "CUSTOM:Axhjt.legs"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "armors/leggings",
+    "namespace": "forge"
+  }
+}

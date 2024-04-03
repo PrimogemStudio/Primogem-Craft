@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:jinzhimola"
+  },
+  "base": {
+    "item": "minecraft:diamond_helmet"
+  },
+  "addition": {
+    "item": "primogemcraft:ryzssj"
+  },
+  "result": {
+    "item": "primogemcraft:ruzst_helmet"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "djc",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§b『涤净青金』 锄",
+    "specialInformation": {
+      "fixedValue": [
+        "§7§o『既是武器，也是工具』"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 3,
+    "efficiency": 10.0,
+    "attackSpeed": 1.2,
+    "enchantability": 15,
+    "damageVsEntity": 10.0,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": "CUSTOM:Dijingsuixie"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "Djcsx"
+    }
+  }
+}

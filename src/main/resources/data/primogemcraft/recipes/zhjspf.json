@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    "geg"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:small_flowers"
+    },
+    "b": {
+      "item": "minecraft:emerald"
+    },
+    "c": {
+      "item": "minecraft:cactus"
+    },
+    "d": {
+      "tag": "minecraft:saplings"
+    },
+    "e": {
+      "item": "primogemcraft:shengzhangduanpian"
+    },
+    "f": {
+      "tag": "minecraft:sand"
+    },
+    "g": {
+      "item": "primogemcraft:jlmo"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:zhjs",
+    "count": 3
+  }
+}

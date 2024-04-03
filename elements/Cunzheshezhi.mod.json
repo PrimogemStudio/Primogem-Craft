@@ -1,0 +1,264 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:Cunqupingzheng"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 52
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "00",
+          "name": "cunzhe_shuliang",
+          "width": 47,
+          "height": 20,
+          "x": 191,
+          "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_qing_ling",
+          "text": "重置",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Cunzheshuxing2"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 147,
+          "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "v",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Cunzheshuxing02"
+          },
+          "width": 10,
+          "height": 20,
+          "x": 148,
+          "y": 51
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "+"
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "x": 216,
+          "y": 103
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "-"
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "x": 205,
+          "y": 103
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_10",
+          "text": "1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GUIsxp1"
+          },
+          "width": 14,
+          "height": 20,
+          "x": 223,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_100",
+          "text": "10",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GUIsxp10"
+          },
+          "width": 17,
+          "height": 20,
+          "x": 239,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_1000",
+          "text": "100",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GUIsxp100"
+          },
+          "width": 23,
+          "height": 20,
+          "x": 258,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_11",
+          "text": "1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GUIsxr1"
+          },
+          "width": 13,
+          "height": 20,
+          "x": 191,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_101",
+          "text": "10",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GUIsxr10"
+          },
+          "width": 16,
+          "height": 20,
+          "x": 173,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_1001",
+          "text": "100",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GUIsxr100"
+          },
+          "width": 23,
+          "height": 20,
+          "x": 148,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "︽",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Cunzheshuxing"
+          },
+          "width": 12,
+          "height": 20,
+          "x": 241,
+          "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty2",
+          "text": "︾",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Cunzheshuxing3"
+          },
+          "width": 12,
+          "height": 20,
+          "x": 256,
+          "y": 72
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_qi_yong_guan_bi_bu_wen_ding",
+          "text": {
+            "fixedValue": "启用/关闭 不稳定？"
+          },
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "x": 214,
+          "y": 55
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty3",
+          "text": "？",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Cunzheguibwd"
+          },
+          "width": 19,
+          "height": 20,
+          "x": 194,
+          "y": 50
+        }
+      }
+    ],
+    "onClosed": {
+      "name": "GUI_cunzhe_cz"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

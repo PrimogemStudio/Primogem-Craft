@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "ac ",
+    "de "
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:yhjs"
+    },
+    "b": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "minecraft:diamond_sword"
+    },
+    "d": {
+      "item": "minecraft:white_terracotta"
+    },
+    "e": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:wuqiezhihuiguang",
+    "count": 1
+  }
+}

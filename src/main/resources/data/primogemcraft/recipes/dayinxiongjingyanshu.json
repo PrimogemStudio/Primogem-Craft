@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:jlmo"
+    },
+    "b": {
+      "item": "primogemcraft:hhaokandelaji"
+    },
+    "c": {
+      "item": "primogemcraft:maoxianjiadejingyan"
+    },
+    "d": {
+      "item": "primogemcraft:jinzhimola"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:dayingxiongdejingyan",
+    "count": 1
+  }
+}

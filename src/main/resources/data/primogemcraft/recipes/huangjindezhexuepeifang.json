@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    " c",
+    " c"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:mmolapeiziwupin"
+    },
+    "b": {
+      "item": "primogemcraft:yuanshi"
+    },
+    "c": {
+      "item": "primogemcraft:yishijiemugun"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:huangjindezhexue",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 57,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "葳蕤林野间",
+    "rarity": "RARE",
+    "texture": "xumidaibiao",
+    "description": "陈致逸,HOYO-MiX",
+    "creativeTab": {
+      "value": "CUSTOM:Zhenghuo"
+    },
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "music": {
+      "value": "CUSTOM:xumimolazhuang"
+    },
+    "lengthInTicks": 5000,
+    "analogOutput": 10
+  }
+}

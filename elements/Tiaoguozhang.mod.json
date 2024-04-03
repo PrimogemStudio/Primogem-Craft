@@ -1,0 +1,39 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "qiyuan_zhizhang_02",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "祈愿之杖",
+    "specialInformation": {
+      "fixedValue": [
+        "§7手持右键快速结算抽取范围",
+        "§7内的祈愿实体"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 1,
+    "efficiency": 1.0,
+    "attackSpeed": 1.0,
+    "enchantability": 1,
+    "damageVsEntity": 1.1,
+    "usageCount": 648,
+    "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true,
+    "onRightClickedInAir": {
+      "name": "Ttiaoguozhizhangshuxing"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "_fv": 57,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Spade",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "jlq",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§6『坚牢黄玉』锹",
+    "specialInformation": {
+      "fixedValue": [
+        "§6[SHIFT+右键]§d地面时：",
+        "§7 - 消耗耐久产生爆炸！",
+        "§7 - 单次冷却8~16秒",
+        "§c - 不要在家里使用"
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+    },
+    "harvestLevel": 3,
+    "efficiency": 9.0,
+    "attackSpeed": 2.0,
+    "enchantability": 14,
+    "damageVsEntity": 6.0,
+    "usageCount": 1890,
+    "blocksAffected": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": "CUSTOM:Jianlaokuaiwupin"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "Jjlcjlqsx"
+    }
+  }
+}

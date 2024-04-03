@@ -1,0 +1,55 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Zstj"
+      },
+      {
+        "value": "CUSTOM:Zszsj"
+      },
+      {
+        "value": "CUSTOM:Zshjj"
+      },
+      {
+        "value": "CUSTOM:Zsg"
+      },
+      {
+        "value": "CUSTOM:Zsq"
+      },
+      {
+        "value": "CUSTOM:Zsf"
+      },
+      {
+        "value": "CUSTOM:Zsc"
+      },
+      {
+        "value": "CUSTOM:Wuqiezhihuiguang"
+      },
+      {
+        "value": "CUSTOM:Wuqie2"
+      },
+      {
+        "value": "CUSTOM:Wuqie3"
+      },
+      {
+        "value": "CUSTOM:Wuqie4"
+      },
+      {
+        "value": "CUSTOM:Wuqie5"
+      },
+      {
+        "value": "CUSTOM:Tiaoguozhang"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "electro_infusion",
+    "namespace": "genshincraft"
+  }
+}

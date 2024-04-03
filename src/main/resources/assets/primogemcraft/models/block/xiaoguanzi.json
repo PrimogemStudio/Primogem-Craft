@@ -1,0 +1,9 @@
+{
+  "parent": "primogemcraft:custom/xinxiaoguanzi",
+  "textures": {
+    "all": "primogemcraft:block/xinxiaoguanzi",
+    "particle": "primogemcraft:block/xinxiaoguanzi",
+    "0": "primogemcraft:block/xinxiaoguanzi"
+  },
+  "render_type": "solid"
+}

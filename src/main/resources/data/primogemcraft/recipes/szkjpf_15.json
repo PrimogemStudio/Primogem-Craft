@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:qhmbmlys_01"
+  },
+  "base": {
+    "item": "primogemcraft:szzskj_leggings"
+  },
+  "addition": {
+    "item": "primogemcraft:szbfzsshjsj"
+  },
+  "result": {
+    "item": "primogemcraft:szhjkj_leggings"
+  }
+}

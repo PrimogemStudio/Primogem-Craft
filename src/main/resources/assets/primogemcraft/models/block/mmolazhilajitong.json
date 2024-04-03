@@ -1,0 +1,9 @@
+{
+  "parent": "primogemcraft:custom/cx_ljt_03",
+  "textures": {
+    "all": "primogemcraft:block/cx_molazljt_tt",
+    "particle": "primogemcraft:block/cx_molazljt_tt",
+    "4": "primogemcraft:block/cx_molazljt_tt"
+  },
+  "render_type": "solid"
+}
