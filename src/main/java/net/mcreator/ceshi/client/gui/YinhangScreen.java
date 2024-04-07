@@ -6,7 +6,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.world.inventory.YinhangMenu;
@@ -22,8 +22,8 @@ public class YinhangScreen extends AbstractContainerScreen<YinhangMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_cun_ru_zhe_xie;
-	Button button_qing_ni_gun_kai;
+	ImageButton imagebutton_dui;
+	ImageButton imagebutton_cuo;
 
 	public YinhangScreen(YinhangMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -43,6 +43,10 @@ public class YinhangScreen extends AbstractContainerScreen<YinhangMenu> {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		if (mouseX > leftPos + 126 && mouseX < leftPos + 147 && mouseY > topPos + 26 && mouseY < topPos + 47)
+			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.yinhang.tooltip_ssacun_ru_zhe_xie_bing_huo_de_ping_zheng"), mouseX, mouseY);
+		if (mouseX > leftPos + 126 && mouseX < leftPos + 147 && mouseY > topPos + 53 && mouseY < topPos + 73)
+			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.yinhang.tooltip_sscqing_ni_gun_kai_ss8cui_hui_she_shi"), mouseX, mouseY);
 	}
 
 	@Override
@@ -84,21 +88,21 @@ public class YinhangScreen extends AbstractContainerScreen<YinhangMenu> {
 	@Override
 	public void init() {
 		super.init();
-		button_cun_ru_zhe_xie = Button.builder(Component.translatable("gui.primogemcraft.yinhang.button_cun_ru_zhe_xie"), e -> {
+		imagebutton_dui = new ImageButton(this.leftPos + 126, this.topPos + 26, 21, 21, 0, 0, 21, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_dui.png"), 21, 42, e -> {
 			if (true) {
 				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new YinhangButtonMessage(0, x, y, z));
 				YinhangButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 122, this.topPos + 28, 46, 20).build();
-		guistate.put("button:button_cun_ru_zhe_xie", button_cun_ru_zhe_xie);
-		this.addRenderableWidget(button_cun_ru_zhe_xie);
-		button_qing_ni_gun_kai = Button.builder(Component.translatable("gui.primogemcraft.yinhang.button_qing_ni_gun_kai"), e -> {
+		});
+		guistate.put("button:imagebutton_dui", imagebutton_dui);
+		this.addRenderableWidget(imagebutton_dui);
+		imagebutton_cuo = new ImageButton(this.leftPos + 126, this.topPos + 53, 21, 21, 0, 0, 21, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_cuo.png"), 21, 42, e -> {
 			if (true) {
 				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new YinhangButtonMessage(1, x, y, z));
 				YinhangButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 122, this.topPos + 55, 46, 20).build();
-		guistate.put("button:button_qing_ni_gun_kai", button_qing_ni_gun_kai);
-		this.addRenderableWidget(button_qing_ni_gun_kai);
+		});
+		guistate.put("button:imagebutton_cuo", imagebutton_cuo);
+		this.addRenderableWidget(imagebutton_cuo);
 	}
 }

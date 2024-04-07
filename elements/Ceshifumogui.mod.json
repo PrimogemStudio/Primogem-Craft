@@ -109,6 +109,19 @@
           "x": 181,
           "y": 96
         }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ssesuo_xu_jing_yan_zhi_jiang_bei_yu_zhou_sui_pian_di_xiao",
+          "text": {
+            "fixedValue": "§e所需经验值将被宇宙碎片抵消"
+          },
+          "width": 82,
+          "height": 29,
+          "x": 213,
+          "y": 42
+        }
       }
     ],
     "gridSettings": {

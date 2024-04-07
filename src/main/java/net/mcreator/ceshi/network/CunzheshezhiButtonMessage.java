@@ -74,47 +74,47 @@ public class CunzheshezhiButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			Cunzheshuxing2Procedure.execute(entity, guistate);
+			Cunzheshuxing02Procedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
-			Cunzheshuxing02Procedure.execute(entity);
+			GUIsxp1Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 2) {
 
-			GUIsxp1Procedure.execute(entity, guistate);
+			GUIsxp10Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 3) {
 
-			GUIsxp10Procedure.execute(entity, guistate);
+			GUIsxp100Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 4) {
 
-			GUIsxp100Procedure.execute(entity, guistate);
+			GUIsxr1Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 5) {
 
-			GUIsxr1Procedure.execute(entity, guistate);
+			GUIsxr10Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 6) {
 
-			GUIsxr10Procedure.execute(entity, guistate);
+			GUIsxr100Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 7) {
 
-			GUIsxr100Procedure.execute(entity, guistate);
+			CunzheshuxingProcedure.execute(entity, guistate);
 		}
 		if (buttonID == 8) {
 
-			CunzheshuxingProcedure.execute(entity, guistate);
+			Cunzheshuxing3Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 9) {
 
-			Cunzheshuxing3Procedure.execute(entity, guistate);
+			CunzheguibwdProcedure.execute(entity);
 		}
 		if (buttonID == 10) {
 
-			CunzheguibwdProcedure.execute(entity);
+			Cunzheshuxing2Procedure.execute(entity, guistate);
 		}
 	}
 

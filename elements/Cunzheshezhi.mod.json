@@ -42,21 +42,6 @@
       {
         "type": "button",
         "data": {
-          "name": "button_qing_ling",
-          "text": "重置",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "Cunzheshuxing2"
-          },
-          "width": 35,
-          "height": 20,
-          "x": 147,
-          "y": 72
-        }
-      },
-      {
-        "type": "button",
-        "data": {
           "name": "button_empty",
           "text": "v",
           "isUndecorated": false,
@@ -80,7 +65,7 @@
             "value": -10066330,
             "falpha": 0.0
           },
-          "x": 216,
+          "x": 215,
           "y": 103
         }
       },
@@ -247,6 +232,97 @@
           "height": 20,
           "x": 194,
           "y": 50
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_shi_shu_liang_zeng_jia",
+          "text": {
+            "fixedValue": "使数量增加"
+          },
+          "width": 13,
+          "height": 20,
+          "x": 241,
+          "y": 72
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_shi_shu_liang_jian_shao",
+          "text": {
+            "fixedValue": "使数量减少"
+          },
+          "width": 11,
+          "height": 20,
+          "x": 257,
+          "y": 72
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_qu_chu_shi_you_gu_ding_shu_liang_zhuan_bian_wei_0240",
+          "text": {
+            "fixedValue": "取出时由固定数量转变为0~240%"
+          },
+          "width": 19,
+          "height": 19,
+          "x": 194,
+          "y": 50
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_cong_xia_fang_an_niu_shu_ru",
+          "text": {
+            "fixedValue": "从下方按钮输入"
+          },
+          "width": 45,
+          "height": 18,
+          "x": 192,
+          "y": 73
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_fang_ru_bei_bao",
+          "text": {
+            "fixedValue": "放入背包"
+          },
+          "width": 10,
+          "height": 20,
+          "x": 148,
+          "y": 51
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_cuo",
+          "image": "cuo.png",
+          "hoveredImage": "cuo.png",
+          "onClick": {
+            "name": "Cunzheshuxing2"
+          },
+          "x": 157,
+          "y": 72
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ssczhong_zhi_she_ding_shu_liang_he_ping_zheng",
+          "text": {
+            "fixedValue": "§c重置设定数量和凭证"
+          },
+          "width": 21,
+          "height": 22,
+          "x": 157,
+          "y": 72
         }
       }
     ],
