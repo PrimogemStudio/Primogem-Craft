@@ -30156,7 +30156,7 @@
     "description": "一个暂时啥也不是的mod",
     "author": "Pepper某人, MCreator",
     "websiteURL": "https://www.mcmod.cn/class/10429.html",
-    "license": "Academic Free License v3.0",
+    "license": "MIT",
     "serverSideOnly": false,
     "modPicture": "xin_yuan_shi_dan_tu_",
     "requiredMods": [],
