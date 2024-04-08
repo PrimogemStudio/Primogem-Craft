@@ -26737,7 +26737,7 @@
     ],
     "ITEMS:forge:ingots": [
       "CUSTOM:Zhongkouweitieding",
-      "TAG:forge:ys_jinshu"
+      "TAG:forge:ysjinshu"
     ],
     "ITEMS:forge:tie_2": [
       "CUSTOM:Zizaitiejia.legs",
@@ -27261,9 +27261,9 @@
     ],
     "ITEMS:forge:primogemcraft": [
       "TAG:pgc:tzzb",
-      "TAG:gpc:zzzb",
       "TAG:pgc:hjzzb",
-      "TAG:pgc:dzmb"
+      "TAG:pgc:dzmb",
+      "TAG:pgc:zzzb"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
       "~CUSTOM:Dijingqinjingkuangshi",
