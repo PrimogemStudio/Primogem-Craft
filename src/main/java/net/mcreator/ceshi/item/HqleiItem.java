@@ -16,8 +16,8 @@ public class HqleiItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A79\u5BF9\u4E8E\u6700\u80DC\u7D2B\u6676\u7CFB\u5217\u88C5\u5907\uFF1A"));
 		list.add(Component.literal(" \u00A7a+50%\u00A78 \u00A7/ \u00A7d+0.5"));
 		list.add(Component.literal(" \u00A77\u6982\u7387\u00A78 \u00A7/ \u00A7/ \u00A7/ \u00A77\u5957\u88C5\u6570\u503C"));

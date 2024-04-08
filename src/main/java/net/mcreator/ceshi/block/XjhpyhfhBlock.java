@@ -23,8 +23,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -41,8 +39,6 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.ceshi.world.inventory.YinhangMenu;
 import net.mcreator.ceshi.block.entity.XjhpyhfhBlockEntity;
 
-import java.util.List;
-
 import io.netty.buffer.Unpooled;
 
 public class XjhpyhfhBlock extends Block implements EntityBlock {
@@ -50,13 +46,8 @@ public class XjhpyhfhBlock extends Block implements EntityBlock {
 
 	public XjhpyhfhBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).strength(-1, 3600000).lightLevel(s -> 6).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
-				.isRedstoneConductor((bs, br, bp) -> false).noLootTable());
+				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override

@@ -54,8 +54,8 @@ public class YishijiecunzheItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A76\u53F3\u952E\u00A77\u6253\u5F00\u4E00\u4E2AGUI\u00A78\uFF0C\u53EF\u8BBE\u7F6E\u5B58\u53D6\u51ED\u8BC1\uFF01"));
 		list.add(Component.literal("\u00A77\u6F5C\u884C\u53F3\u952E\u00A78\u661F\u9645\u548C\u5E73\u94F6\u884C\u53EF\u4F7F\u5176\u00A77\u4E0D\u4F1A\u635F\u574F\uFF01"));
 		list.add(Component.literal("\u00A7c\u4EC5\u521B\u9020"));

@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "gou_gou_liao_jin_zhi_fu_du": {
+    "gou_gou_liao_jin_zhi_fu_du_0": {
       "trigger": "minecraft:impossible"
     }
   },

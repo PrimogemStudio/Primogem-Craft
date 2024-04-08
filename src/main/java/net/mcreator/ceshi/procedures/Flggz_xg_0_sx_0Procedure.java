@@ -46,7 +46,7 @@ public class Flggz_xg_0_sx_0Procedure {
 						a.setHoverName(Component.literal("\u00A75\u300E\u5947\u7269\u300F\u00A7d\u5206\u88C2\u5495\u5495\u949F \u00A7cIII"));
 					}
 					if (entity instanceof Player _player) {
-						ItemStack _setstack = a;
+						ItemStack _setstack = a.copy();
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}

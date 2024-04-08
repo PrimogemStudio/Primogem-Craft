@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "jdljhs": {
+    "jdljhs_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

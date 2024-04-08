@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "lletouderenke": {
+    "lletouderenke_0": {
       "trigger": "minecraft:impossible"
     }
   },

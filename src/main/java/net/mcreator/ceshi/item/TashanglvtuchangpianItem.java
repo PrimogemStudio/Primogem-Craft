@@ -28,8 +28,8 @@ public class TashanglvtuchangpianItem extends RecordItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7b\u53F3\u952E\u7A7A\u6C14\u00A7f\u00A7a\u6216\u00A7f\u653E\u8FDB\u00A7b\u5531\u7247\u673A\u00A7f\u4EE5\u64AD\u653E"));
 		list.add(Component.literal("\u00A7bps\uFF1A\u5531\u7247\u673A\u97F3\u8D28\u66F4\u597D\uFF01"));
 	}

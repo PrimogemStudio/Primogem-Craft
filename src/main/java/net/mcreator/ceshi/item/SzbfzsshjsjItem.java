@@ -16,8 +16,8 @@ public class SzbfzsshjsjItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u53EF\u76F4\u63A5\u5F3A\u5316\u81F3\u5408\u91D1\u7B49\u7EA7"));
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A77\u53EF\u5E94\u7528\u4E8E\uFF1A"));

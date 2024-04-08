@@ -1,16 +1,16 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "deep_cold_ocean",
-    "frozen_ocean",
-    "warm_ocean",
-    "lukewarm_ocean",
-    "ocean",
-    "plains",
-    "deep_lukewarm_ocean",
     "cold_ocean",
+    "deep_cold_ocean",
+    "deep_frozen_ocean",
+    "deep_lukewarm_ocean",
     "deep_ocean",
-    "deep_frozen_ocean"
+    "plains",
+    "frozen_ocean",
+    "lukewarm_ocean",
+    "warm_ocean",
+    "ocean"
   ],
   "features": "primogemcraft:dijingqinjingkuangshi",
   "step": "underground_ores"

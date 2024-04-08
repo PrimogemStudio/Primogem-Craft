@@ -21,8 +21,8 @@ public class QwflybItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7d\u624B\u6301\u53F3\u952E\uFF1A"));
 		list.add(Component.literal("\u00A77\u83B7\u5F97\u00A7f8~24\u00A77\u5B87\u5B99\u788E\u7247"));
 	}

@@ -15,11 +15,6 @@ public class GuoquMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.guoqu";
-	}
-
-	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		GuoqukaishiProcedure.execute(entity.level(), entity);
 	}

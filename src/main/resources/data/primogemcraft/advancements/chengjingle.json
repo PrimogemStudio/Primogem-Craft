@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "chengjingle": {
+    "chengjingle_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

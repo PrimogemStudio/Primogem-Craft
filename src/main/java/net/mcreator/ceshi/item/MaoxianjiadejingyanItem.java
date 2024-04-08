@@ -35,8 +35,8 @@ public class MaoxianjiadejingyanItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A78\u53EF\u4EE5\u50A8\u5B58\u00A7727\u00A78\u7ECF\u9A8C\u7B49\u7EA7\u7684\u00A78\u7ECF\u9A8C\u503C\uFF01"));
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A7c \u5347\u7EA7\u540E\u4E0D\u4FDD\u7559\u7ECF\u9A8C"));

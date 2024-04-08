@@ -1,15 +1,15 @@
 {
   "replace": false,
   "values": [
-    "minecraft:wall_torch",
+    "minecraft:lava",
     "minecraft:torch",
-    "minecraft:soul_wall_torch",
-    "minecraft:soul_fire",
-    "minecraft:soul_campfire",
-    "minecraft:campfire",
+    "minecraft:wall_torch",
     "minecraft:soul_torch",
-    "minecraft:magma_block",
+    "minecraft:soul_wall_torch",
     "minecraft:fire",
-    "minecraft:lava"
+    "minecraft:soul_fire",
+    "minecraft:campfire",
+    "minecraft:soul_campfire",
+    "minecraft:magma_block"
   ]
 }

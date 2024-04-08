@@ -127,8 +127,8 @@ public class PrimogemcraftModVariables {
 			return nbt;
 		}
 
-		public void readNBT(Tag Tag) {
-			CompoundTag nbt = (CompoundTag) Tag;
+		public void readNBT(Tag tag) {
+			CompoundTag nbt = (CompoundTag) tag;
 			ceshi = nbt.getDouble("ceshi");
 			wanjia_qianye = nbt.getDouble("wanjia_qianye");
 			qianye_lengque = nbt.getDouble("qianye_lengque");

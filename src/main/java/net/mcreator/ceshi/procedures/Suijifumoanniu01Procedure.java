@@ -100,7 +100,7 @@ public class Suijifumoanniu01Procedure {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack _setstack = (EnchantmentHelper.enchantItem(RandomSource.create(),
 							(entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY),
-							Mth.nextInt(RandomSource.create(), 3, 9), true));
+							Mth.nextInt(RandomSource.create(), 3, 9), true)).copy();
 					_setstack.setCount(1);
 					((Slot) _slots.get(3)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
@@ -174,7 +174,7 @@ public class Suijifumoanniu01Procedure {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack _setstack = (EnchantmentHelper.enchantItem(RandomSource.create(),
 							(entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY),
-							Mth.nextInt(RandomSource.create(), 7, 17), true));
+							Mth.nextInt(RandomSource.create(), 7, 17), true)).copy();
 					_setstack.setCount(1);
 					((Slot) _slots.get(3)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
@@ -220,7 +220,7 @@ public class Suijifumoanniu01Procedure {
 			}.getAmount(1) >= 30) {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack _setstack = (EnchantmentHelper.enchantItem(RandomSource.create(),
-							(entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY), 30, true));
+							(entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY), 30, true)).copy();
 					_setstack.setCount(1);
 					((Slot) _slots.get(3)).set(_setstack);
 					_player.containerMenu.broadcastChanges();

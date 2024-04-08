@@ -24,8 +24,8 @@ public class ZhapiandingzhengshiItem extends RecordItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u8868\u9762\u7559\u6709\u7EC6\u7EB9"));
 		list.add(Component.literal("\u00A77\u6216\u8BB8\u53EF\u4EE5\u653E\u8FDB\u5531\u7247\u673A...."));
 	}

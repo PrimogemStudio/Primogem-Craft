@@ -28,7 +28,7 @@ public class Suijidaima_shijianProcedure {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
 						? ((Slot) _slt.get(Mth.nextInt(RandomSource.create(), 0, 2))).getItem()
-						: ItemStack.EMPTY);
+						: ItemStack.EMPTY).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
@@ -53,14 +53,14 @@ public class Suijidaima_shijianProcedure {
 				a = Mth.nextInt(RandomSource.create(), 0, 2);
 				if (Math.random() < 0.5) {
 					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.JINGQUEYOUYADAIMA.get());
+						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.JINGQUEYOUYADAIMA.get()).copy();
 						_setstack.setCount(1);
 						((Slot) _slots.get((int) a)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 				} else {
 					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.LUANQIBAZAODEDAIMA.get());
+						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.LUANQIBAZAODEDAIMA.get()).copy();
 						_setstack.setCount(1);
 						((Slot) _slots.get((int) a)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
@@ -94,14 +94,14 @@ public class Suijidaima_shijianProcedure {
 				}
 				if (Math.random() < 0.5) {
 					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.YOUDIANQIQIAODEDAIMA.get());
+						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.YOUDIANQIQIAODEDAIMA.get()).copy();
 						_setstack.setCount(1);
 						((Slot) _slots.get((int) b)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 				} else {
 					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.WUXIANDIGUIDEDAIMA.get());
+						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.WUXIANDIGUIDEDAIMA.get()).copy();
 						_setstack.setCount(1);
 						((Slot) _slots.get((int) b)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
@@ -118,14 +118,14 @@ public class Suijidaima_shijianProcedure {
 				}
 				if (Math.random() < 0.5) {
 					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.MEIYOUZHUSHIDAIMA.get());
+						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.MEIYOUZHUSHIDAIMA.get()).copy();
 						_setstack.setCount(1);
 						((Slot) _slots.get((int) c)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 				} else {
 					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.ZHONGGUIZHONGJUDEDAIMA.get());
+						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.ZHONGGUIZHONGJUDEDAIMA.get()).copy();
 						_setstack.setCount(1);
 						((Slot) _slots.get((int) c)).set(_setstack);
 						_player.containerMenu.broadcastChanges();

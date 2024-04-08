@@ -20,8 +20,8 @@ public class HhaokandelajiItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A76\u4E00\u4E2A\u4EBA\u7684\u5783\u573E...."));
 		list.add(Component.literal("\u00A79\u751F\u547D\u6062\u590DII\uFF081:00\uFF09"));
 		list.add(Component.literal("\u00A79\u77AC\u95F4\u6CBB\u7597II"));

@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "sshehuifeirenjindu": {
+    "sshehuifeirenjindu_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

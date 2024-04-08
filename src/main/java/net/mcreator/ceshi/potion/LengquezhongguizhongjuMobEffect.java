@@ -10,11 +10,6 @@ public class LengquezhongguizhongjuMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.lengquezhongguizhongju";
-	}
-
-	@Override
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}

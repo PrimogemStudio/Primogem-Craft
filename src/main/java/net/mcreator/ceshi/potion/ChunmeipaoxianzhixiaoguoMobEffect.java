@@ -15,11 +15,6 @@ public class ChunmeipaoxianzhixiaoguoMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.chunmeipaoxianzhixiaoguo";
-	}
-
-	@Override
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}

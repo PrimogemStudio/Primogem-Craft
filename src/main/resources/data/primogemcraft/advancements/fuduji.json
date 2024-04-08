@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "fuduji": {
+    "fuduji_0": {
       "trigger": "minecraft:impossible"
     }
   },

@@ -49,7 +49,7 @@ public class Ceshi_3Procedure {
 				}
 			} else if ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 1, entity.getZ()))).getBlock() == PrimogemcraftModBlocks.SHIZUOYUANSHIKUAI.get()) {
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QHZLLH_4.get());
+					ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QHZLLH_4.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}

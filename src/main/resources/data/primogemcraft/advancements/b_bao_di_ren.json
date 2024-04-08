@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "b_bao_di_ren": {
+    "b_bao_di_ren_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

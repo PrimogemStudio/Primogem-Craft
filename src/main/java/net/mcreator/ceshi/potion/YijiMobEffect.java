@@ -15,11 +15,6 @@ public class YijiMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.yiji";
-	}
-
-	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		YjsxProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}

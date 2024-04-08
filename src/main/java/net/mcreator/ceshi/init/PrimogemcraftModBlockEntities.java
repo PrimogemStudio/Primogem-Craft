@@ -28,11 +28,11 @@ import net.mcreator.ceshi.PrimogemcraftMod;
 public class PrimogemcraftModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, PrimogemcraftMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> MOLADUI_02 = register("moladui_02", PrimogemcraftModBlocks.MOLADUI_02, Moladui02BlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> CESHIXIAODENGFASHEQI = register("ceshixiaodengfasheqi", PrimogemcraftModBlocks.CESHIXIAODENGFASHEQI, CeshixiaodengfasheqiBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> CHUANGZAOXIAODENGFASHEQI = register("chuangzaoxiaodengfasheqi", PrimogemcraftModBlocks.CHUANGZAOXIAODENGFASHEQI, ChuangzaoxiaodengfasheqiBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> LAJITONG = register("lajitong", PrimogemcraftModBlocks.LAJITONG, LajitongBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> GANJINGLAJITONGXIANGZI = register("ganjinglajitongxiangzi", PrimogemcraftModBlocks.GANJINGLAJITONGXIANGZI, GanjinglajitongxiangziBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MMOLAZHILAJITONG = register("mmolazhilajitong", PrimogemcraftModBlocks.MMOLAZHILAJITONG, MmolazhilajitongBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CESHIXIAODENGFASHEQI = register("ceshixiaodengfasheqi", PrimogemcraftModBlocks.CESHIXIAODENGFASHEQI, CeshixiaodengfasheqiBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CHUANGZAOXIAODENGFASHEQI = register("chuangzaoxiaodengfasheqi", PrimogemcraftModBlocks.CHUANGZAOXIAODENGFASHEQI, ChuangzaoxiaodengfasheqiBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MLXDML_01 = register("mlxdml_01", PrimogemcraftModBlocks.MLXDML_01, Mlxdml01BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MLXDML_02 = register("mlxdml_02", PrimogemcraftModBlocks.MLXDML_02, Mlxdml02BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MLXDML_03 = register("mlxdml_03", PrimogemcraftModBlocks.MLXDML_03, Mlxdml03BlockEntity::new);

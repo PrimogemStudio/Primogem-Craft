@@ -15,11 +15,6 @@ public class FeixingMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.feixing";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		Feixing_kaishiProcedure.execute(entity);
 	}

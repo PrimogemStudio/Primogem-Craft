@@ -21,8 +21,8 @@ public class JianmushengfaqiItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u53F3\u952E\u63D0\u9AD8\u9B54\u9634\u8EAB\u751F\u6210\u6982\u7387"));
 		list.add(Component.literal("\u00A77\u6F5C\u884C+\u53F3\u952E\u964D\u4F4E\u9B54\u9634\u8EAB\u751F\u6210\u6982\u7387"));
 	}

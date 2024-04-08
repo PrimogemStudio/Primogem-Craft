@@ -71,7 +71,7 @@ public class FenlieggzsxProcedure {
 					}
 				}
 				if (e1 instanceof LivingEntity _entity) {
-					ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QWGGZFENLIE_B.get());
+					ItemStack _setstack = new ItemStack(PrimogemcraftModItems.QWGGZFENLIE_B.get()).copy();
 					_setstack.setCount(1);
 					_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
 					if (_entity instanceof Player _player)
@@ -107,7 +107,7 @@ public class FenlieggzsxProcedure {
 							}
 						}
 						if (e1 instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(Items.GOLDEN_SWORD);
+							ItemStack _setstack = new ItemStack(Items.GOLDEN_SWORD).copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 							if (_entity instanceof Player _player)
@@ -143,7 +143,7 @@ public class FenlieggzsxProcedure {
 							}
 						}
 						if (e1 instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(Items.IRON_SWORD);
+							ItemStack _setstack = new ItemStack(Items.IRON_SWORD).copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 							if (_entity instanceof Player _player)
@@ -179,7 +179,7 @@ public class FenlieggzsxProcedure {
 							}
 						}
 						if (e1 instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(Items.DIAMOND_SWORD);
+							ItemStack _setstack = new ItemStack(Items.DIAMOND_SWORD).copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 							if (_entity instanceof Player _player)

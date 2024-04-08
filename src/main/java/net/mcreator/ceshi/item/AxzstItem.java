@@ -12,7 +12,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
@@ -80,8 +79,8 @@ public abstract class AxzstItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u624B\u6301\u9539\u65F6\u63D0\u4F9B\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A7b \u2022 \u00A774x \u95F4\u6B47\u6027\u6062\u590D\u5C11\u91CF\u751F\u547D\u503C"));
 			list.add(Component.literal("\u00A7c \u2022 \u00A772x \u906D\u9047\u706B\u7130\u6216\u5CA9\u6D46\u65F6\u63D0\u4F9B\u77ED\u65F6\u95F4\u98DE\u884C\u80FD\u529B"));
@@ -94,11 +93,6 @@ public abstract class AxzstItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "primogemcraft:textures/models/armor/axzst__layer_1.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 
 		@Override
@@ -116,8 +110,8 @@ public abstract class AxzstItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u624B\u6301\u9550\u65F6\u63D0\u4F9B\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A7e \u2022 \u00A772x \u95F4\u6B47\u6027\u63D0\u4F9B\u5C11\u91CF\u4F24\u5BB3\u5438\u6536"));
 			list.add(Component.literal("\u00A7a \u2022 \u00A772x \u63D0\u5347\u5C11\u91CF\u751F\u547D\u503C\u4E0A\u9650"));
@@ -130,11 +124,6 @@ public abstract class AxzstItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "primogemcraft:textures/models/armor/axzst__layer_1.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 
 		@Override
@@ -152,8 +141,8 @@ public abstract class AxzstItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u624B\u6301\u5251\u65F6\u63D0\u4F9B\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A7d \u2022 \u00A772x \u96E8\u6216\u96F7\u96E8\u5929\u83B7\u5F97\u5C11\u91CF\u529B\u91CF\u548C\u901F\u5EA6\u7684\u589E\u76CA"));
 			list.add(Component.literal("\u00A7f \u2022 \u00A772x \u00A7kbuzhidaoxiesha"));
@@ -166,11 +155,6 @@ public abstract class AxzstItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "primogemcraft:textures/models/armor/axzst__layer_2.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 
 		@Override
@@ -188,8 +172,8 @@ public abstract class AxzstItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u624B\u6301\u65A7\u65F6\u63D0\u4F9B\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A7b \u2022 \u00A772x \u514D\u75AB\u7F13\u6162\u6548\u679C"));
 			list.add(Component.literal("\u00A7a \u2022 \u00A772x \u83B7\u5F97\u8DF3\u8DC3\u63D0\u5347\u589E\u76CA"));
@@ -202,11 +186,6 @@ public abstract class AxzstItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "primogemcraft:textures/models/armor/axzst__layer_1.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 
 		@Override

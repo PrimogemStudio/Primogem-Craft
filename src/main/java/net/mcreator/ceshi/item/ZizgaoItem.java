@@ -55,8 +55,8 @@ public class ZizgaoItem extends PickaxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A76[SHIFT+\u53F3\u952E]"));
 		list.add(Component.literal("\u00A77 - \u6D88\u8017\u8010\u4E45\u5E76\u98DE\u5411\u9AD8\u7A7A\uFF01"));
 	}

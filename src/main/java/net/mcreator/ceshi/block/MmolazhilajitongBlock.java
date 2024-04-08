@@ -7,7 +7,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
@@ -50,7 +49,6 @@ import net.mcreator.ceshi.world.inventory.MolalajitongMenu;
 import net.mcreator.ceshi.block.entity.MmolazhilajitongBlockEntity;
 
 import java.util.List;
-import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
@@ -65,8 +63,8 @@ public class MmolazhilajitongBlock extends Block implements SimpleWaterloggedBlo
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u53EF\u4EE5\u7528\u6765\u5B58\u653E\u66F4\u591A\u7269\u54C1"));
 		list.add(Component.literal("\u00A77\u662F\u7684\uFF0C\u6CA1\u4E86"));
 	}
@@ -144,14 +142,6 @@ public class MmolazhilajitongBlock extends Block implements SimpleWaterloggedBlo
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
 	}
 
 	@Override

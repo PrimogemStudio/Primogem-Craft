@@ -75,8 +75,8 @@ public class JiuchanzhiyuangaoItem extends PickaxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u62BD\u5361\u54EA\u6709\u6316\u77FF\u6709\u610F\u601D"));
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A75\u7834\u574F\u65B9\u5757\u65F6\uFF1A"));

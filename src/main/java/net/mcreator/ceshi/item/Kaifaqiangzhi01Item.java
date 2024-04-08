@@ -19,8 +19,8 @@ public class Kaifaqiangzhi01Item extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("- \u5F3A\u5236\u9000\u51FA\u754C\u9762\u540E\u8FD4\u8FD8"));
 		list.add(Component.literal("\u4E00\u4E2A\u968F\u673A\u7ED3\u679C"));
 	}

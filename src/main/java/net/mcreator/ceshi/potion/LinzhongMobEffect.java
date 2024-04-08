@@ -14,11 +14,6 @@ public class LinzhongMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.linzhong";
-	}
-
-	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
 		Yimuguo_shuxingProcedure.execute(entity.level(), entity);

@@ -39,8 +39,8 @@ public class PengkeluodejingshenItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A79\u8D4B\u4E88\u6218\u6597\u72B6\u6001"));
 		list.add(Component.literal("\u00A7d\u5904\u4E8E\u6218\u6597\u72B6\u6001\u4E0B\uFF1A"));
 		list.add(Component.literal("\u00A77\u88AB\u653B\u51FB\u65F6\uFF0C\u5C06\u670950%\u6982\u7387\u5BF9\u653B\u51FB\u8005\u65BD\u52A0\uFF1A"));

@@ -32,8 +32,8 @@ public class BufengpingItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u53F3\u952E\u4F7F\u7528"));
 		list.add(Component.literal("\u00A77\u7A7A\u6355\u98CE\u74F6\u6F5C\u884C\u53F3\u952E\u5F97\u5230"));
 	}

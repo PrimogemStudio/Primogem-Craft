@@ -16,11 +16,6 @@ public class DjppMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.djpp";
-	}
-
-	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		DjqjkaishiProcedure.execute(entity);
 	}

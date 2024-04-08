@@ -21,8 +21,8 @@ public class YdggzItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A79\u62FE\u53D6\u540E\u89E6\u53D1\uFF1A"));
 		list.add(Component.literal("\u00A77\u6BCF3\u5206\u949F\u6263\u9664\u81EA\u8EAB5%\u5F53\u524D\u7ECF\u9A8C\u503C"));
 		list.add(Component.literal("\u00A77\u51FB\u6740\u751F\u7269\u6709\u6982\u7387\u6389\u843D\u00A7e\u5495\u949F\u96F6\u4EF6\u00A77"));

@@ -13,11 +13,6 @@ public class ZhuoshaoMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.zhuoshao";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		Zuoshao_sxProcedure.execute(entity.level(), entity);
 	}

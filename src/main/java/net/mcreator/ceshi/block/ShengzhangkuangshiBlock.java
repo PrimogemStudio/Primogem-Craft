@@ -28,8 +28,8 @@ public class ShengzhangkuangshiBlock extends Block {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A78\u5728\u4E3B\u4E16\u754C\u62E5\u6709\u6CE5\u571F\u7684\u4F4D\u7F6E\u751F\u6210"));
 	}
 

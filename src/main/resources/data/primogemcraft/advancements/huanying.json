@@ -16,7 +16,7 @@
     "hidden": false
   },
   "criteria": {
-    "huanying": {
+    "huanying_0": {
       "trigger": "minecraft:impossible"
     }
   }

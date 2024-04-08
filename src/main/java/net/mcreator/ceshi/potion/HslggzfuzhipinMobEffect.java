@@ -14,11 +14,6 @@ public class HslggzfuzhipinMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.hslggzfuzhipin";
-	}
-
-	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
 		Hslggz_xiaoguo_sx_2Procedure.execute(entity);

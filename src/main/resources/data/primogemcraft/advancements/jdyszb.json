@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "jdyszb": {
+    "jdyszb_0": {
       "trigger": "minecraft:impossible"
     }
   },

@@ -57,7 +57,7 @@ public class SuijiqiwuguishuxingProcedure {
 					for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation("primogemcraft:entities/heitaqiwu_01"))
 							.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
 						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-							ItemStack _setstack = itemstackiterator;
+							ItemStack _setstack = itemstackiterator.copy();
 							_setstack.setCount(1);
 							((Slot) _slots.get((int) a)).set(_setstack);
 							_player.containerMenu.broadcastChanges();
@@ -94,7 +94,7 @@ public class SuijiqiwuguishuxingProcedure {
 					for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation("primogemcraft:entities/heitaqiwu_02"))
 							.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
 						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-							ItemStack _setstack = itemstackiterator;
+							ItemStack _setstack = itemstackiterator.copy();
 							_setstack.setCount(1);
 							((Slot) _slots.get((int) b)).set(_setstack);
 							_player.containerMenu.broadcastChanges();
@@ -114,7 +114,7 @@ public class SuijiqiwuguishuxingProcedure {
 					for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation("primogemcraft:entities/heitaqiwu_03"))
 							.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
 						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-							ItemStack _setstack = itemstackiterator;
+							ItemStack _setstack = itemstackiterator.copy();
 							_setstack.setCount(1);
 							((Slot) _slots.get((int) c)).set(_setstack);
 							_player.containerMenu.broadcastChanges();

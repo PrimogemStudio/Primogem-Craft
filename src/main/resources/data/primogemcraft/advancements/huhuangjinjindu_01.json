@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "huhuangjinjindu_01": {
+    "huhuangjinjindu_01_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

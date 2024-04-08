@@ -53,8 +53,8 @@ public class DjfItem extends AxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7d\u653B\u51FB\u76EE\u6807\u65F6:"));
 		list.add(Component.literal("\u00A77 - \u4F7F\u5176\u6D6E\u7A7A"));
 		list.add(Component.literal("\u00A77 - \u6301\u7EED4\u79D2"));

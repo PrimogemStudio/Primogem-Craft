@@ -29,7 +29,7 @@ public class RycItem extends HoeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 3f;
 			}
 
 			public int getLevel() {
@@ -47,8 +47,8 @@ public class RycItem extends HoeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u00A7o\u300E\u5C1D\u8BD5\u8015\u4F5C\u4E0B\u754C\u5CA9\u300F"));
 	}
 

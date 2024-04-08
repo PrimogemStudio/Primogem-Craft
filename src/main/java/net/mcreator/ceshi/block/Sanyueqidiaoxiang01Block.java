@@ -49,8 +49,8 @@ public class Sanyueqidiaoxiang01Block extends Block {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u8D85\u7EA7\u9AD8\u6E05\u7248"));
 		list.add(Component.literal("\u4E09\u6708\u4E03\u96D5\u50CF"));
 	}

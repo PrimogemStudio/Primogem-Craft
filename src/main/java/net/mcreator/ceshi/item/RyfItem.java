@@ -55,8 +55,8 @@ public class RyfItem extends AxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7d\u7834\u574F\u6728\u5236\u65B9\u5757\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A77 - 10%\u6982\u7387\u6389\u843D\u6728\u70AD"));
 		list.add(Component.literal("\u00A77 - 3%\u6982\u7387\u6389\u843D\u5143\u7D20\u7C89\u5C18"));

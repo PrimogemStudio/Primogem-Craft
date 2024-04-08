@@ -517,7 +517,6 @@ public class PrimogemcraftModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-
 		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(PrimogemcraftModBlocks.CESHI_MUCAIBAO_PRESSURE_PLATE.get().asItem());
 			tabData.accept(PrimogemcraftModBlocks.CAOMU_25.get().asItem());
@@ -529,13 +528,9 @@ public class PrimogemcraftModTabs {
 			tabData.accept(PrimogemcraftModBlocks.CAOMU_36.get().asItem());
 			tabData.accept(PrimogemcraftModBlocks.YISHIJIEMUBAN_BUTTON.get().asItem());
 			tabData.accept(PrimogemcraftModBlocks.D_17.get().asItem());
-		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(PrimogemcraftModItems.CESHIYONGWUPIN.get());
-		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(PrimogemcraftModItems.GONGZHUXINGHUA.get());
 		}
 	}

@@ -15,11 +15,6 @@ public class HeisenlinggzMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.heisenlinggz";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		Heisenlin_ggz_xiaoguo_sx_0Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}

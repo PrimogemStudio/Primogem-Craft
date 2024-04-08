@@ -23,8 +23,8 @@ public class Jinguangbaodi01Item extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u53F3\u952E\u4F7F\u7528"));
 		list.add(Component.literal("\u00A77100%\u00A7e\u51FA\u91D1\uFF01"));
 	}

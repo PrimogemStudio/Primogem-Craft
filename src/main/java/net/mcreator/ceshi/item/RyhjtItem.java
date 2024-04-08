@@ -12,7 +12,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
@@ -77,8 +76,8 @@ public abstract class RyhjtItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
 			list.add(Component.literal("\u00A77 4x \u906D\u9047\u706B\u7130\u6216\u5CA9\u6D46\u65F6\u63D0\u4F9B\u98DE\u884C\u80FD\u529B"));
@@ -90,11 +89,6 @@ public abstract class RyhjtItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "primogemcraft:textures/models/armor/ryhjt__layer_1.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 
 		@Override
@@ -112,8 +106,8 @@ public abstract class RyhjtItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
 			list.add(Component.literal("\u00A77 4x \u906D\u9047\u706B\u7130\u6216\u5CA9\u6D46\u65F6\u63D0\u4F9B\u98DE\u884C\u80FD\u529B"));
@@ -125,11 +119,6 @@ public abstract class RyhjtItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "primogemcraft:textures/models/armor/ryhjt__layer_1.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 
 		@Override
@@ -147,8 +136,8 @@ public abstract class RyhjtItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
 			list.add(Component.literal("\u00A77 4x \u906D\u9047\u706B\u7130\u6216\u5CA9\u6D46\u65F6\u63D0\u4F9B\u98DE\u884C\u80FD\u529B"));
@@ -160,11 +149,6 @@ public abstract class RyhjtItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "primogemcraft:textures/models/armor/ryhjt__layer_2.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 
 		@Override
@@ -182,8 +166,8 @@ public abstract class RyhjtItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
+		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
 			list.add(Component.literal("\u00A77 4x \u906D\u9047\u706B\u7130\u6216\u5CA9\u6D46\u65F6\u63D0\u4F9B\u98DE\u884C\u80FD\u529B"));
@@ -195,11 +179,6 @@ public abstract class RyhjtItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "primogemcraft:textures/models/armor/ryhjt__layer_1.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 
 		@Override

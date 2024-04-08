@@ -14,11 +14,6 @@ public class QianyelengqueMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.qianyelengque";
-	}
-
-	@Override
 	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		super.removeAttributeModifiers(entity, attributeMap, amplifier);
 		QylqsxProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());

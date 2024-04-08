@@ -76,7 +76,7 @@ public class XjdltsxProcedure {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal(("\u00A79\u5E76\u4E14\uFF0C\u79FB\u9664\u4E86\u00A7a" + new java.text.DecimalFormat("##.##").format(a) + "\u00A79\u7EA7\u7ECF\u9A8C\u7B49\u7EA7\uFF01")), false);
 						if (entity instanceof Player _player) {
-							ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SHXJDLT.get());
+							ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SHXJDLT.get()).copy();
 							_setstack.setCount(1);
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}

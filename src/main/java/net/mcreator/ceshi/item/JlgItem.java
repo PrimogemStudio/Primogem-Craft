@@ -47,8 +47,8 @@ public class JlgItem extends PickaxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A76 [SHIFT]\u00A7d\u53F3\u952E\u65B9\u5757\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A77 - \u6D88\u8017\u8010\u4E45\u540E50%\u8F6C\u5316\u77F3\u5934\u4E3A\u91D1\u77FF\u77F3"));
 		list.add(Component.literal("\u00A77 - \u6709\u4F4E\u6982\u7387\u8F6C\u5316\u65B9\u5757\u4E3A\u5408\u91D1\u5757\uFF01"));

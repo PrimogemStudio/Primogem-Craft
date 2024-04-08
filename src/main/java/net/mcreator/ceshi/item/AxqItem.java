@@ -47,8 +47,8 @@ public class AxqItem extends ShovelItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7d\u53F3\u952E\u51B0\u5757\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A77 - \u4F7F\u5176\u8F6C\u5316\u4E3A\u84DD\u51B0"));
 	}

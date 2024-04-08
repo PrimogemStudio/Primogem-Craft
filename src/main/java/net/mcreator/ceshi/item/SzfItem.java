@@ -55,8 +55,8 @@ public class SzfItem extends AxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A76[SHIFT+\u53F3\u952E]\u00A7d\u7A7A\u6C14\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A77 - \u521B\u9020\u4E00\u68F5\u6811\uFF0C\u5E76\u5C06\u81EA\u8EAB\u9001\u81F3\u6811\u9876"));
 	}

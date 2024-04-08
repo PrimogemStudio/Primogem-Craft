@@ -15,7 +15,7 @@
     "hidden": true
   },
   "criteria": {
-    "zhongjifeiqiu": {
+    "zhongjifeiqiu_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

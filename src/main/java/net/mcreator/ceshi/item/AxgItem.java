@@ -55,8 +55,8 @@ public class AxgItem extends PickaxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7d\u6316\u6398\u4EFB\u610F\u5143\u7D20\u6676\u4F53\u5757\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A77 - 10%\u6982\u7387\u5C06\u5176\u8F6C\u5316\u4E3A\u00A7f\u00A7n\u901A\u7528\u5143\u7D20\u6676\u4F53\u5757"));
 		list.add(Component.literal("\u00A7c - \u4F46\u8F6C\u5316\u65F6\u4E5F\u670910%\u6982\u7387\u8F6C\u5316\u5931\u8D25"));

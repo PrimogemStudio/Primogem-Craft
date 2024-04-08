@@ -16,8 +16,8 @@ public class ChunmeizhipaoItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u6BCF\u62E5\u670964\u5B87\u5B99\u788E\u7247\uFF0C\u653B\u51FB\u76EE\u6807\u540E\u4F1A\u5BF9"));
 		list.add(Component.literal("\u00A77\u5176\u989D\u5916\u9020\u6210\u4E00\u6B21\u7B49\u540C\u4E8E\u653B\u51FB\u8005\u6700\u5927\u751F\u547D"));
 		list.add(Component.literal("\u00A771.6%\u7684\u989D\u5916\u4F24\u5BB3"));

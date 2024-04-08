@@ -13,11 +13,6 @@ public class QuezhushixiaoguoMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.quezhushixiaoguo";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		Daima_xiaoguoProcedure.execute();
 	}

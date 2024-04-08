@@ -55,8 +55,8 @@ public class DjgItem extends PickaxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7d\u6C34\u4E0B\u53F3\u952E\u7A7A\u6C14\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A79 - \u6C34\u4E0B\u547C\u5438\uFF081:00\uFF09"));
 		list.add(Component.literal("\u00A79 - \u6025\u8FEBII\uFF081:00\uFF09"));

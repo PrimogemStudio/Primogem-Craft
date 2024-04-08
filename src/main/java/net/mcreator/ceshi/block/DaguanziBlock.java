@@ -21,17 +21,12 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.procedures.Guanzi_wanshinang_shuxingProcedure;
-
-import java.util.List;
 
 public class DaguanziBlock extends FallingBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
@@ -41,13 +36,8 @@ public class DaguanziBlock extends FallingBlock {
 				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:xiaoguanzi")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.step")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.step")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.step")),
 						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.step"))))
-				.strength(0f, 1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().noLootTable().offsetType(Block.OffsetType.XZ));
+				.strength(0f, 1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override

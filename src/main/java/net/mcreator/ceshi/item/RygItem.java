@@ -55,8 +55,8 @@ public class RygItem extends PickaxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7d\u6316\u6398\u77F3\u82F1\u77FF\u77F3\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A77 - 5%\u6982\u7387\u6389\u843D\u4E00\u4E2A\u5143\u7D20\u6676\u77F3\u7C89\u5C18"));
 	}

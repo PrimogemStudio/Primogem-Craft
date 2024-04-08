@@ -55,8 +55,8 @@ public class ZizaiqiaoItem extends ShovelItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7d\u6316\u6398\u65B9\u5757\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A77 - \u83B7\u5F97\u6025\u8FEB\u6548\u679C"));
 		list.add(Component.literal("\u00A77 - \u6025\u8FEB\u6548\u679C\u53EF\u6301\u7EED\u53E0\u52A0"));

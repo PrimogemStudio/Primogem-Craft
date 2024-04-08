@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "yiyidantashang": {
+    "yiyidantashang_0": {
       "trigger": "minecraft:impossible"
     }
   },

@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "mmolajianjindu": {
+    "mmolajianjindu_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

@@ -65,7 +65,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 							}
 						}
 						if (entity instanceof Player _player) {
-							ItemStack _setstack = new ItemStack(Items.DIAMOND);
+							ItemStack _setstack = new ItemStack(Items.DIAMOND).copy();
 							_setstack.setCount(64);
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
@@ -115,7 +115,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 								if (Math.random() < 0.01 && !(entity instanceof ServerPlayer _plr31 && _plr31.level() instanceof ServerLevel
 										&& _plr31.getAdvancements().getOrStartProgress(_plr31.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:zhongjifeiqiu"))).isDone())) {
 									if (entity instanceof Player _player) {
-										ItemStack _setstack = new ItemStack(PrimogemcraftModItems.FEIQIUPINGZHENG.get());
+										ItemStack _setstack = new ItemStack(PrimogemcraftModItems.FEIQIUPINGZHENG.get()).copy();
 										_setstack.setCount(1);
 										ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 									}
@@ -148,7 +148,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 										}
 									}
 									if (entity instanceof Player _player) {
-										ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SHQWYHDLT.get());
+										ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SHQWYHDLT.get()).copy();
 										_setstack.setCount(1);
 										ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 									}
@@ -193,7 +193,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 							}
 						}
 						if (entity instanceof Player _player) {
-							ItemStack _setstack = new ItemStack(Items.DIAMOND);
+							ItemStack _setstack = new ItemStack(Items.DIAMOND).copy();
 							_setstack.setCount(64);
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
@@ -243,7 +243,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 								if (Math.random() < 0.01 && !(entity instanceof ServerPlayer _plr78 && _plr78.level() instanceof ServerLevel
 										&& _plr78.getAdvancements().getOrStartProgress(_plr78.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:zhongjifeiqiu"))).isDone())) {
 									if (entity instanceof Player _player) {
-										ItemStack _setstack = new ItemStack(PrimogemcraftModItems.FEIQIUPINGZHENG.get());
+										ItemStack _setstack = new ItemStack(PrimogemcraftModItems.FEIQIUPINGZHENG.get()).copy();
 										_setstack.setCount(1);
 										ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 									}
@@ -276,7 +276,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 										}
 									}
 									if (entity instanceof Player _player) {
-										ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SHQWYHDLT.get());
+										ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SHQWYHDLT.get()).copy();
 										_setstack.setCount(1);
 										ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 									}

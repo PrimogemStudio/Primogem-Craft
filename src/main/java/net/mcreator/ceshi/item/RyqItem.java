@@ -47,8 +47,8 @@ public class RyqItem extends ShovelItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7d\u6D88\u8017\u8010\u4E45\u00A76[SHIFT+\u53F3\u952E]\u00A7d\u65B9\u5757\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A77 - \u6982\u7387\u8F6C\u5316\u7C98\u571F\u4E3A\u7EA2\u7816\u5757"));
 		list.add(Component.literal("\u00A77 - \u6982\u7387\u8F6C\u5316\u539F\u6728\u4E3A\u6728\u70AD\u5757"));

@@ -47,7 +47,7 @@ public class Kongyuezhufu_shuxingProcedure {
 				itemstack.getOrCreateTag().putBoolean("yueka_lengque", true);
 				PrimogemcraftMod.queueServerWork(32, () -> {
 					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.YUANSHI.get());
+						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.YUANSHI.get()).copy();
 						_setstack.setCount(Mth.nextInt(RandomSource.create(), 1, 9));
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}

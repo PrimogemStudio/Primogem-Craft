@@ -33,7 +33,7 @@ public class ZstjItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2f;
+				return 0f;
 			}
 
 			public int getLevel() {
@@ -65,8 +65,8 @@ public class ZstjItem extends SwordItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A76[SHIFT+\u53F3\u952E]\uFF1A"));
 		list.add(Component.literal("\u00A75 - \u83B7\u5F97\u52FE\u7389\u6548\u679C I"));
 		list.add(Component.literal("\u00A77 - \u6301\u7EED\u65F6\u95F410\u79D2"));

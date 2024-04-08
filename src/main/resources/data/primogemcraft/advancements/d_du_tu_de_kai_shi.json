@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "d_du_tu_de_kai_shi": {
+    "d_du_tu_de_kai_shi_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

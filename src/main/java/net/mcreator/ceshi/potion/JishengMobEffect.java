@@ -15,11 +15,6 @@ public class JishengMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.jisheng";
-	}
-
-	@Override
 	public boolean isInstantenous() {
 		return true;
 	}

@@ -26,8 +26,8 @@ public class Ljtg01Item extends ShieldItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u771F\u7684\u4E0D\u662F\u4E00\u4E2A\u666E\u901A\u7684"));
 		list.add(Component.literal("\u00A77\u5783\u573E\u6876\u76D6\u5417\uFF1F"));
 		list.add(Component.literal(""));

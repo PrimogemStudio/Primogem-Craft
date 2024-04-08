@@ -13,11 +13,6 @@ public class DiguixiaoguoMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.diguixiaoguo";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		Daima_xiaoguoProcedure.execute();
 	}

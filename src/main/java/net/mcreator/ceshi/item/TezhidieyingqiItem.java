@@ -16,8 +16,8 @@ public class TezhidieyingqiItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u611F\u6069\u6234\u5FB7\u5427\uFF01\u6211\u90FD\u66FF\u4F60\u8003\u8651\u597D\u4E86\uFF01"));
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A7d\u9AD8\u9636\u5F3A\u5316\u6750\u6599"));

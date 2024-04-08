@@ -33,7 +33,7 @@ public class CcebuzhunxiashuxingProcedure {
 				} else {
 					(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
 					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SHCBZX.get());
+						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SHCBZX.get()).copy();
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
@@ -48,8 +48,8 @@ public class CcebuzhunxiashuxingProcedure {
 						_player.displayClientMessage(Component.literal("\u00A75\u300E\u5947\u7269\u300F\u00A7e\u6D4B\u4E0D\u51C6\u5323\u00A7c\u5DF2\u6D88\u8017"), true);
 					if (Math.random() < 0.1) {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = (EnchantmentHelper.enchantItem(RandomSource.create(), (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY), (int) Mth.nextDouble(RandomSource.create(), 10, 30),
-									true));
+							ItemStack _setstack = (EnchantmentHelper.enchantItem(RandomSource.create(), (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY), (int) Mth.nextDouble(RandomSource.create(), 10, 30), true))
+									.copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
 							if (_entity instanceof Player _player)
@@ -57,7 +57,8 @@ public class CcebuzhunxiashuxingProcedure {
 						}
 					} else {
 						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = (EnchantmentHelper.enchantItem(RandomSource.create(), (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY), (int) Mth.nextDouble(RandomSource.create(), 1, 13), true));
+							ItemStack _setstack = (EnchantmentHelper.enchantItem(RandomSource.create(), (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY), (int) Mth.nextDouble(RandomSource.create(), 1, 13), true))
+									.copy();
 							_setstack.setCount(1);
 							_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
 							if (_entity instanceof Player _player)

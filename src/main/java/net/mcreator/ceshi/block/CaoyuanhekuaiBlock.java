@@ -3,7 +3,6 @@ package net.mcreator.ceshi.block;
 
 import net.minecraftforge.common.IPlantable;
 
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -19,7 +18,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import java.util.List;
-import java.util.Collections;
 
 public class CaoyuanhekuaiBlock extends Block {
 	public CaoyuanhekuaiBlock() {
@@ -27,8 +25,8 @@ public class CaoyuanhekuaiBlock extends Block {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u5F53\u95EA\u7535\u51FB\u4E2D\u8349\u539F\u6838\u65F6\u51FA\u73B0"));
 		list.add(Component.literal("\u4E5F\u53EF\u4EE5\u5408\u6210"));
 	}
@@ -48,13 +46,5 @@ public class CaoyuanhekuaiBlock extends Block {
 		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 1;
 		return false;
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
 	}
 }

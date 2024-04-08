@@ -12,13 +12,15 @@ credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="Pepper某人, MCreator"
 description="一个暂时啥也不是的mod"
 
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
 [[dependencies.primogemcraft]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
-
 
 
 

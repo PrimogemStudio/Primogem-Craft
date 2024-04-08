@@ -1,18 +1,13 @@
 
 package net.mcreator.ceshi.item;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
-
-import java.util.List;
 
 public class MmolajianItem extends SwordItem {
 	public MmolajianItem() {
@@ -26,7 +21,7 @@ public class MmolajianItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2.5f;
+				return 0.5f;
 			}
 
 			public int getLevel() {
@@ -61,10 +56,5 @@ public class MmolajianItem extends SwordItem {
 	@Override
 	public boolean isRepairable(ItemStack itemstack) {
 		return false;
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 }

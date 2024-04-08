@@ -15,11 +15,6 @@ public class GouyuMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.gouyu";
-	}
-
-	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
 		GouyukaishiProcedure.execute(entity.level(), entity);
 	}

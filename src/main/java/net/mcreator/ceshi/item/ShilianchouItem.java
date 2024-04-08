@@ -26,8 +26,8 @@ public class ShilianchouItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u624B\u6301\u00A7b\u957F\u6309\u53F3\u952E\u00A7f\u4EE5\u00A7e\u5341\u8FDE\u62BD\uFF01"));
 	}
 

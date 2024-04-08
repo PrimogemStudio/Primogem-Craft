@@ -1,9 +1,9 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "lukewarm_ocean",
     "beach",
-    "river"
+    "river",
+    "lukewarm_ocean"
   ],
   "features": "primogemcraft:zuishengkuangshi",
   "step": "underground_ores"

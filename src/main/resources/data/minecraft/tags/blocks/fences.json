@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "primogemcraft:caomo_23",
-    "primogemcraft:xiumuzhalan",
+    "primogemcraft:yishijiemuzhalan",
     "primogemcraft:ceshi_mucaibao_fence",
-    "primogemcraft:yishijiemuban_fence",
     "primogemcraft:caomu_33",
+    "primogemcraft:caomo_23",
+    "primogemcraft:yishijiemuban_fence",
     "primogemcraft:d_14",
-    "primogemcraft:yishijiemuzhalan"
+    "primogemcraft:xiumuzhalan"
   ]
 }

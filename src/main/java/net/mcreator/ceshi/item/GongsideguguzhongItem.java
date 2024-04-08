@@ -21,8 +21,8 @@ public class GongsideguguzhongItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7e\u62FE\u53D6\u8BE5\u5947\u7269\u540E\u79FB\u96642.5%~75%\u7684"));
 		list.add(Component.literal("\u00A7e\u5F53\u524D\u7ECF\u9A8C\u503C\uFF01"));
 		list.add(Component.literal("\u00A7"));

@@ -1,9 +1,7 @@
 
 package net.mcreator.ceshi.item;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
@@ -12,11 +10,8 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
-
-import java.util.List;
 
 public abstract class KkuijiaceshiItem extends ArmorItem {
 	public KkuijiaceshiItem(ArmorItem.Type type, Item.Properties properties) {
@@ -69,11 +64,6 @@ public abstract class KkuijiaceshiItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
-		}
-
-		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "primogemcraft:textures/models/armor/kuijiaceshi01_layer_1.png";
 		}
@@ -82,11 +72,6 @@ public abstract class KkuijiaceshiItem extends ArmorItem {
 	public static class Chestplate extends KkuijiaceshiItem {
 		public Chestplate() {
 			super(ArmorItem.Type.CHESTPLATE, new Item.Properties());
-		}
-
-		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
 		}
 
 		@Override
@@ -101,11 +86,6 @@ public abstract class KkuijiaceshiItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
-		}
-
-		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "primogemcraft:textures/models/armor/kuijiaceshi01_layer_2.png";
 		}
@@ -114,11 +94,6 @@ public abstract class KkuijiaceshiItem extends ArmorItem {
 	public static class Boots extends KkuijiaceshiItem {
 		public Boots() {
 			super(ArmorItem.Type.BOOTS, new Item.Properties());
-		}
-
-		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
 		}
 
 		@Override

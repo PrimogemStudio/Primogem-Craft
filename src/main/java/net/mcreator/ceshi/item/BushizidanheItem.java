@@ -32,8 +32,8 @@ public class BushizidanheItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u5565\u4E5F\u4E0D\u662F\uFF0C\u5565\u4E5F\u4E0D\u662F"));
 	}
 

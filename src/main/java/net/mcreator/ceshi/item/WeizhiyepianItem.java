@@ -16,8 +16,8 @@ public class WeizhiyepianItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u53EF\u4E0E\u00A7b\u6D53\u7A20\u7684\u836F\u6C34\u00A7f\u917F\u9020\u00A7e\u4E30\u9976\u743C\u6D46"));
 	}
 }

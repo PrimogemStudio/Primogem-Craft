@@ -8,7 +8,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
@@ -52,7 +51,6 @@ import net.mcreator.ceshi.world.inventory.GanjinglajitongMenu;
 import net.mcreator.ceshi.block.entity.GanjinglajitongxiangziBlockEntity;
 
 import java.util.List;
-import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
@@ -67,8 +65,8 @@ public class GanjinglajitongxiangziBlock extends Block implements SimpleWaterlog
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u53EF\u4EE5\u7528\u6765\u5B58\u653E\u7269\u54C1"));
 	}
 
@@ -157,14 +155,6 @@ public class GanjinglajitongxiangziBlock extends Block implements SimpleWaterlog
 		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 1;
 		return false;
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
 	}
 
 	@Override

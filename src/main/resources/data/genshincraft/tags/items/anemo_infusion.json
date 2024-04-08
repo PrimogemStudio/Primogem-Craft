@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "primogemcraft:zizaiqiao",
-    "primogemcraft:zizaizuanshijian",
-    "primogemcraft:zizaichu",
-    "primogemcraft:zizaihejinjian",
     "primogemcraft:zizaitiejian",
+    "primogemcraft:zizaizuanshijian",
+    "primogemcraft:zizaihejinjian",
     "primogemcraft:zizgao",
-    "primogemcraft:zizaifu"
+    "primogemcraft:zizaifu",
+    "primogemcraft:zizaiqiao",
+    "primogemcraft:zizaichu"
   ]
 }

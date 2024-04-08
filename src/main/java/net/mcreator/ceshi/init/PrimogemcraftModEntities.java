@@ -35,14 +35,6 @@ public class PrimogemcraftModEntities {
 			.setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(QQyuanchuzi01Entity::new).fireImmune().sized(0.3f, 0.3f));
 	public static final RegistryObject<EntityType<QQQyuanchulan01Entity>> QQ_QYUANCHULAN_01 = register("qq_qyuanchulan_01", EntityType.Builder.<QQQyuanchulan01Entity>of(QQQyuanchulan01Entity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(QQQyuanchulan01Entity::new).fireImmune().sized(0.3f, 0.3f));
-	public static final RegistryObject<EntityType<CaoyuanheshengwuEntity>> CAOYUANHESHENGWU = register("caoyuanheshengwu",
-			EntityType.Builder.<CaoyuanheshengwuEntity>of(CaoyuanheshengwuEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(CaoyuanheshengwuEntity::new)
-
-					.sized(0.2f, 0.2f));
-	public static final RegistryObject<EntityType<XiaodengEntity>> XIAODENG = register("xiaodeng",
-			EntityType.Builder.<XiaodengEntity>of(XiaodengEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(XiaodengEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<XiaoheitaEntity>> XIAOHEITA = register("xiaoheita", EntityType.Builder.<XiaoheitaEntity>of(XiaoheitaEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-			.setUpdateInterval(3).setCustomClientFactory(XiaoheitaEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<QqiwuzhanlipinshitiEntity>> QQIWUZHANLIPINSHITI = register("qqiwuzhanlipinshiti",
 			EntityType.Builder.<QqiwuzhanlipinshitiEntity>of(QqiwuzhanlipinshitiEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(0).setUpdateInterval(3).setCustomClientFactory(QqiwuzhanlipinshitiEntity::new)
 
@@ -51,6 +43,14 @@ public class PrimogemcraftModEntities {
 			EntityType.Builder.<BaiguangguodushengwuEntity>of(BaiguangguodushengwuEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(BaiguangguodushengwuEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CaoyuanheshengwuEntity>> CAOYUANHESHENGWU = register("caoyuanheshengwu",
+			EntityType.Builder.<CaoyuanheshengwuEntity>of(CaoyuanheshengwuEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(CaoyuanheshengwuEntity::new)
+
+					.sized(0.2f, 0.2f));
+	public static final RegistryObject<EntityType<XiaodengEntity>> XIAODENG = register("xiaodeng",
+			EntityType.Builder.<XiaodengEntity>of(XiaodengEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(XiaodengEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<XiaoheitaEntity>> XIAOHEITA = register("xiaoheita", EntityType.Builder.<XiaoheitaEntity>of(XiaoheitaEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(XiaoheitaEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -62,11 +62,11 @@ public class PrimogemcraftModEntities {
 			QqiyuanJinGuangEntity.init();
 			QQyuanchuzi01Entity.init();
 			QQQyuanchulan01Entity.init();
+			QqiwuzhanlipinshitiEntity.init();
+			BaiguangguodushengwuEntity.init();
 			CaoyuanheshengwuEntity.init();
 			XiaodengEntity.init();
 			XiaoheitaEntity.init();
-			QqiwuzhanlipinshitiEntity.init();
-			BaiguangguodushengwuEntity.init();
 		});
 	}
 
@@ -75,10 +75,10 @@ public class PrimogemcraftModEntities {
 		event.put(QQIYUAN_JIN_GUANG.get(), QqiyuanJinGuangEntity.createAttributes().build());
 		event.put(Q_QYUANCHUZI_01.get(), QQyuanchuzi01Entity.createAttributes().build());
 		event.put(QQ_QYUANCHULAN_01.get(), QQQyuanchulan01Entity.createAttributes().build());
+		event.put(QQIWUZHANLIPINSHITI.get(), QqiwuzhanlipinshitiEntity.createAttributes().build());
+		event.put(BAIGUANGGUODUSHENGWU.get(), BaiguangguodushengwuEntity.createAttributes().build());
 		event.put(CAOYUANHESHENGWU.get(), CaoyuanheshengwuEntity.createAttributes().build());
 		event.put(XIAODENG.get(), XiaodengEntity.createAttributes().build());
 		event.put(XIAOHEITA.get(), XiaoheitaEntity.createAttributes().build());
-		event.put(QQIWUZHANLIPINSHITI.get(), QqiwuzhanlipinshitiEntity.createAttributes().build());
-		event.put(BAIGUANGGUODUSHENGWU.get(), BaiguangguodushengwuEntity.createAttributes().build());
 	}
 }

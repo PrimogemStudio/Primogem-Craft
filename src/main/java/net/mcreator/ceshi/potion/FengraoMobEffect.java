@@ -15,11 +15,6 @@ public class FengraoMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.fengrao";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		Fengrao_lizishuxingProcedure.execute(entity);
 	}

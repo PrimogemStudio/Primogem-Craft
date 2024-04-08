@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "primogemcraft:gongsideguguzhong",
+    "primogemcraft:qiwuheisenlinggz",
     "#forge:curio/clock/division",
-    "primogemcraft:ydggz",
-    "primogemcraft:qiwuheisenlinggz"
+    "primogemcraft:ydggz"
   ]
 }

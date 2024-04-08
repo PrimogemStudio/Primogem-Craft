@@ -28,7 +28,7 @@ public class QgdysjItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return -1.7f;
+				return -3.7f;
 			}
 
 			public int getLevel() {
@@ -53,8 +53,8 @@ public class QgdysjItem extends SwordItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A76\u00A7o\u300E\u5F69\u86CB\u6B66\u5668\u300F"));
 		list.add(Component.literal("\u00A77 \u2022 \u653B\u51FB\u751F\u547D\u503C\u5C0F\u4E8E10\u70B9\u7684\u751F\u7269\u4F7F\u5176\u89E6\u53D1\u4E00"));
 		list.add(Component.literal("\u00A77 \u4E2A\u795E\u5947\u7684\u6548\u679C"));

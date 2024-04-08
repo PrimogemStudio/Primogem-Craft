@@ -15,11 +15,6 @@ public class YydggzxgMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.primogemcraft.yydggzxg";
-	}
-
-	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
 		Ydggzxgsx0Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}

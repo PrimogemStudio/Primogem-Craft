@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "primogemcraft:jianransuixie",
     "primogemcraft:ziziyousongshisuixie",
-    "primogemcraft:aixubingyusuixie",
-    "primogemcraft:shengzhangbifeisuixie",
-    "primogemcraft:ranyuansuixie",
-    "primogemcraft:ysfc",
+    "primogemcraft:jianransuixie",
     "primogemcraft:zuishengsuixie",
-    "primogemcraft:dijingsuixie"
+    "primogemcraft:shengzhangbifeisuixie",
+    "primogemcraft:dijingsuixie",
+    "primogemcraft:ranyuansuixie",
+    "primogemcraft:aixubingyusuixie",
+    "primogemcraft:ysfc"
   ]
 }

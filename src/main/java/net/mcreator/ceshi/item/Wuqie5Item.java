@@ -26,7 +26,7 @@ public class Wuqie5Item extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 26f;
+				return 24f;
 			}
 
 			public int getLevel() {
@@ -64,8 +64,8 @@ public class Wuqie5Item extends SwordItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7e\u7CBE\u70BC[5]"));
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A77\u968F\u5979\u5DE6\u53F3\u5373\u53EF"));

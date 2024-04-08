@@ -17,7 +17,7 @@ public class GUItishiProcedure {
 			return;
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(PrimogemcraftModItems.KAIFAQIANGZHI_01.get());
+				ItemStack _setstack = new ItemStack(PrimogemcraftModItems.KAIFAQIANGZHI_01.get()).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(4)).set(_setstack);
 				_player.containerMenu.broadcastChanges();

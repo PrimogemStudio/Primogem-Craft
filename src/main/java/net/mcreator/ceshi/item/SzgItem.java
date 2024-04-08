@@ -55,8 +55,8 @@ public class SzgItem extends PickaxeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7d\u5904\u4E8E\u6C34\u4E2D\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A77 - \u6316\u6398\u65B9\u5757\u6709\u6982\u7387\u6389\u843D\u7269\u54C1\u8349\u539F\u6838"));
 	}

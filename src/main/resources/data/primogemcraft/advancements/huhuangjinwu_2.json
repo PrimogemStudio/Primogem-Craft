@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "huhuangjinwu_2": {
+    "huhuangjinwu_2_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

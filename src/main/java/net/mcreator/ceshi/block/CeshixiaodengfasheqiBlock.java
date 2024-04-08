@@ -1,7 +1,6 @@
 
 package net.mcreator.ceshi.block;
 
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
@@ -23,7 +22,6 @@ import net.mcreator.ceshi.procedures.Xiaodengfasheqi_shuxingProcedure;
 import net.mcreator.ceshi.block.entity.CeshixiaodengfasheqiBlockEntity;
 
 import java.util.List;
-import java.util.Collections;
 
 public class CeshixiaodengfasheqiBlock extends Block implements EntityBlock {
 	public CeshixiaodengfasheqiBlock() {
@@ -31,8 +29,8 @@ public class CeshixiaodengfasheqiBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u7EA2\u77F3\u9A71\u52A8\uFF0C\u89E6\u53D1\u5341\u6B21\u540E"));
 		list.add(Component.literal("\u00A77\u53D8\u4E3A\u6389\u843D\u7269"));
 	}
@@ -40,14 +38,6 @@ public class CeshixiaodengfasheqiBlock extends Block implements EntityBlock {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
 	}
 
 	@Override

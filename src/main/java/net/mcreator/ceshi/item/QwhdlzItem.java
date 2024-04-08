@@ -19,8 +19,8 @@ public class QwhdlzItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u6740\u6B7B64\u53EA\u4EA1\u7075\u751F\u7269\u6216\u8282\u80A2\u751F\u7269\u540E\uFF0C\u4E3A"));
 		list.add(Component.literal("\u00A77\u526F\u624B\u7269\u54C1\u6DFB\u52A0\u4E00\u6B21\u968F\u673A1\u7EA7\u9644\u9B54"));
 		list.add(Component.literal("\u00A7"));

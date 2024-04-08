@@ -22,8 +22,8 @@ public class YiyinhedaletouItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7a\u526F\u624B\u6301\u6709\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A72\u7834\u574F\u65B9\u5757\uFF1A"));
 		list.add(Component.literal("\u00A7a - \u5C0F\u6982\u7387\u83B7\u5F97\u94BB\u77F3"));

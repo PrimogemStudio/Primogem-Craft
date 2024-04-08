@@ -33,8 +33,8 @@ public class ZhuangmanlajidelajitongItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7c\u4E2D\u6BD2IV\uFF081:14\uFF09"));
 		list.add(Component.literal("\u00A7c\u53CD\u80C3IV\uFF085:14\uFF09"));
 	}

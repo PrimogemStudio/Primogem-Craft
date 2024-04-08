@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "primogemcraft:qgdysj",
-    "primogemcraft:yuanshigao",
-    "primogemcraft:yuanshiqiao",
     "primogemcraft:yuanshijian",
+    "primogemcraft:yuanshigao",
     "primogemcraft:yuanshifu",
-    "primogemcraft:yuanshichutou"
+    "primogemcraft:yuanshiqiao",
+    "primogemcraft:yuanshichutou",
+    "primogemcraft:qgdysj"
   ]
 }

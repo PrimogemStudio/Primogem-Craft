@@ -21,8 +21,8 @@ public class Qhzllh4Item extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A78\u53F2\u8BD7\u793C\u76D220%\u6982\u7387\u8F6C\u5316"));
 		list.add(Component.literal("\u00A7e[\u53F3\u952E]\u00A77\u4F7F\u7528\u4E00\u4E2A"));
 		list.add(Component.literal("\u00A7b[\u6F5C\u884C+\u53F3\u952E]\u00A77\u4F7F\u7528\u5168\u90E8"));

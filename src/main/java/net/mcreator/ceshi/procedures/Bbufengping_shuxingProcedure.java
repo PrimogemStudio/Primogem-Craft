@@ -48,7 +48,7 @@ public class Bbufengping_shuxingProcedure {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(PrimogemcraftModItems.BUFENGPING.get());
+				ItemStack _setstack = new ItemStack(PrimogemcraftModItems.BUFENGPING.get()).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
@@ -78,7 +78,7 @@ public class Bbufengping_shuxingProcedure {
 			}.checkGamemode(entity))) {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(PrimogemcraftModItems.YSJBFPK.get());
+					ItemStack _setstack = new ItemStack(PrimogemcraftModItems.YSJBFPK.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}

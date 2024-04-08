@@ -15,7 +15,7 @@
     "hidden": false
   },
   "criteria": {
-    "shshiwanyuyuedacheng": {
+    "shshiwanyuyuedacheng_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [

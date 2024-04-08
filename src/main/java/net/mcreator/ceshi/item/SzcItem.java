@@ -30,7 +30,7 @@ public class SzcItem extends HoeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 1f;
+				return 2f;
 			}
 
 			public int getLevel() {
@@ -55,8 +55,8 @@ public class SzcItem extends HoeItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A7d\u624B\u6301\u53F3\u952E\u7A7A\u6C14\u65F6\u5019\uFF1A"));
 		list.add(Component.literal("\u00A77 - \u6D88\u8017\u8010\u4E45\u5E76\u5BF9\u811A\u5E95\u91CA\u653E\u4E00\u6B21\u9AA8\u7C89"));
 	}
