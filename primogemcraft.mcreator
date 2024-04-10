@@ -26269,6 +26269,59 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qwqcxxmx",
+      "type": "item",
+      "sortid": 1536,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwqcxxmx",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwqcxxmx.json",
+          "src/main/java/net/mcreator/ceshi/item/QwqcxxmxItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Qcmx_sx",
+      "type": "procedure",
+      "sortid": 1537,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qcmx_sx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Qcmx_sxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -28544,6 +28597,7 @@
       "item.primogemcraft.yhjsl": "Eternity Nugget",
       "item.primogemcraft.ccangruimilinjian_014.desc": "Village Surrounded By Green陈致逸,HOYO-MiX",
       "gui.primogemcraft.taozhuangchakan.label_huo_01": "火",
+      "item.primogemcraft.qwqcxxmx": "§5『奇物』§f龋齿星系模型",
       "advancements.sierfusheng.title": "Revive",
       "advancements.xdfsqczjd.descr": "为什么不问问神奇的村民呢",
       "item.primogemcraft.jianransuixie": "§6Prithiva Topaz Sliver",
@@ -29445,6 +29499,7 @@
       "item.primogemcraft.yhjsl": "Eternity Nugget",
       "item.primogemcraft.ccangruimilinjian_014.desc": "Village Surrounded By Green陈致逸,HOYO-MiX",
       "gui.primogemcraft.taozhuangchakan.label_huo_01": "火",
+      "item.primogemcraft.qwqcxxmx": "§5『奇物』§f龋齿星系模型",
       "advancements.sierfusheng.title": "Revive",
       "advancements.xdfsqczjd.descr": "为什么不问问神奇的村民呢",
       "item.primogemcraft.jianransuixie": "§6Prithiva Topaz Sliver",
@@ -30340,6 +30395,7 @@
       "item.primogemcraft.yhjsl": "永恒金属粒",
       "item.primogemcraft.ccangruimilinjian_014.desc": "陈致逸,HOYO-MiX",
       "gui.primogemcraft.taozhuangchakan.label_huo_01": "火",
+      "item.primogemcraft.qwqcxxmx": "§5『奇物』§f龋齿星系模型",
       "advancements.sierfusheng.title": "死而复生",
       "advancements.xdfsqczjd.descr": "为什么不问问神奇的村民呢",
       "item.primogemcraft.jianransuixie": "§6坚牢黄玉 碎屑",
