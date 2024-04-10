@@ -45,7 +45,7 @@ public class Liulang_jingyan_shuxingProcedure {
 						if (entity instanceof Player _player)
 							_player.giveExperiencePoints(-((int) (itemstack.getDamageValue() - 1)));
 						itemstack.setDamageValue((int) ((itemstack.getMaxDamage() - jingyan) - (itemstack.getMaxDamage() - itemstack.getDamageValue())));
-						itemstack.getOrCreateTag().putDouble("naijiu_xianzhi", (itemstack.getMaxDamage() - itemstack.getDamageValue()));
+						itemstack.getOrCreateTag().putDouble("naijiu_xianzhi", ((itemstack.getMaxDamage() - itemstack.getDamageValue()) - 1));
 						if (entity instanceof Player _player)
 							_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
 						jingyan = 0;
