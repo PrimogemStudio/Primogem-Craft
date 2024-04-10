@@ -26111,6 +26111,58 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qwjlbbgsx1",
+      "type": "procedure",
+      "sortid": 1530,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwjlbbgsx_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Qwjlbbgsx1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwjlbbgsx2",
+      "type": "potioneffect",
+      "sortid": 1531,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwjlbbgsx_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/potion/Qwjlbbgsx2MobEffect.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -27954,6 +28006,7 @@
       "gui.primogemcraft.yinhang.button_ju_jue_bing_wei_xie_ta_rang_kai": "拒绝并威胁它让开",
       "item.primogemcraft.shilianchou": "Ten Interwined Fate",
       "item.primogemcraft.qhzllh_4": "§6特殊产出 强化助力礼盒",
+      "effect.primogemcraft.qwjlbbgsx_2": "俱乐部普通八卦",
       "item.primogemcraft.sztj": "§a『Nagadus Emerald』§fIron Sword",
       "advancements.jdkx.title": "开箱！",
       "entity.primogemcraft.baiguangguodushengwu": "5-star item...?",
@@ -28852,6 +28905,7 @@
       "gui.primogemcraft.yinhang.button_ju_jue_bing_wei_xie_ta_rang_kai": "拒绝并威胁它让开",
       "item.primogemcraft.shilianchou": "Ten Interwined Fate",
       "item.primogemcraft.qhzllh_4": "§6特殊产出 强化助力礼盒",
+      "effect.primogemcraft.qwjlbbgsx_2": "俱乐部普通八卦",
       "item.primogemcraft.sztj": "§a『Nagadus Emerald』§fIron Sword",
       "advancements.jdkx.title": "开箱！",
       "entity.primogemcraft.baiguangguodushengwu": "5-star item...?",
@@ -29745,6 +29799,7 @@
       "gui.primogemcraft.yinhang.button_ju_jue_bing_wei_xie_ta_rang_kai": "拒绝并威胁它让开",
       "item.primogemcraft.shilianchou": "十枚纠缠之缘",
       "item.primogemcraft.qhzllh_4": "§6特殊产出 强化助力礼盒",
+      "effect.primogemcraft.qwjlbbgsx_2": "俱乐部普通八卦",
       "item.primogemcraft.sztj": "§a『生长碧翡』§f铁剑",
       "advancements.jdkx.title": "开箱！",
       "entity.primogemcraft.baiguangguodushengwu": "金...？",

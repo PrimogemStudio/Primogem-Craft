@@ -8,10 +8,10 @@ import net.minecraftforge.event.entity.player.PlayerXpEvent;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.Component;
 
-import net.mcreator.ceshi.init.PrimogemcraftModItems;
+import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
 import javax.annotation.Nullable;
@@ -32,12 +32,14 @@ public class Qwjlbbgsx0Procedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWTCJLBPTBG.get())) : false) {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("aaaaa").format(DiaoyongjisuanjingyanzhiProcedure.execute(entity)))), false);
+		double a = 0;
+		ItemStack b = ItemStack.EMPTY;
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.QWJLBBGSX_2.get()) && !world.isClientSide()) {
+			entity.getPersistentData().putDouble("tcptbg_0", DiaoyongjisuanjingyanzhiProcedure.execute(entity));
 			PrimogemcraftMod.queueServerWork(1, () -> {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("bbbbbb").format(DiaoyongjisuanjingyanzhiProcedure.execute(entity)))), false);
+				entity.getPersistentData().putDouble("tcptbg_1", DiaoyongjisuanjingyanzhiProcedure.execute(entity));
+				if (entity instanceof Player _player)
+					_player.giveExperiencePoints((int) (entity.getPersistentData().getDouble("tcptbg_1") - entity.getPersistentData().getDouble("tcptbg_0")));
 			});
 		}
 	}

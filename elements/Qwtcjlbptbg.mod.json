@@ -28,10 +28,11 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7拾取经验球的收益提升100%",
-        "§7但也会以8点经验值每个的比例回收宇",
-        "§7宙碎片，回收576个后改奇物将被销毁",
-        "§7奇物被销毁后扣除50%当前经验值"
+        "§6 - 拾取经验球的收益提升100%",
+        "§8但会将宇宙碎片转化为经验值",
+        "§5宇宙碎片§fx1§b»§5经验值§fx8",
+        "§8转化256宇宙碎片后销毁",
+        "§c奇物被销毁后扣除50%当前经验值"
       ]
     },
     "glowCondition": {
@@ -40,6 +41,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "Qwjlbbgsx1"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {

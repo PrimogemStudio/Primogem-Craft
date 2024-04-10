@@ -55,6 +55,9 @@ public class Ceshi_3Procedure {
 					_level.addFreshEntity(new ExperienceOrb(_level, x, y, z, (int) a));
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("\u751F\u6210\u4E86##\u7ECF\u9A8C\u503C\u7684\u7ECF\u9A8C\u7403.##").format(a))), false);
+			} else if ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 1, entity.getZ()))).getBlock() == PrimogemcraftModBlocks.DBMLK.get()) {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("\u5F53\u524D\u7ECF\u9A8C\u503C\uFF1A").format(DiaoyongjisuanjingyanzhiProcedure.execute(entity)))), false);
 			} else {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
