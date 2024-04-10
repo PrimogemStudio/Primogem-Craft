@@ -7,8 +7,8 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§5『奇物』§f天才俱乐部普通八卦",
-    "rarity": "COMMON",
+    "name": "§5『奇物』§e鲁伯特帝国机械齿轮",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Zhenghuo"
     },
@@ -28,11 +28,11 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§6 - 拾取经验球的收益提升100%",
-        "§8 但会将宇宙碎片转化为经验值",
-        "§5宇宙碎片§fx1§b»§5经验值§fx8",
-        "§8 转化256宇宙碎片后销毁",
-        "§c奇物被销毁后扣除50%当前经验值"
+        "§2存在物品栏且物品栏中拥有至少",
+        "§2 x45宇宙碎片时：",
+        "§7每个游戏日§8（24000tik）§7赠予10～20宇宙碎片",
+        "§7触发后，如若持有宇宙碎片总数›64个则移除所",
+        "§7有宇宙碎片§5并产出少量材料"
       ]
     },
     "glowCondition": {
@@ -42,7 +42,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onItemInInventoryTick": {
-      "name": "Qwjlbbgsx1"
+      "name": "Qwlbtclsx"
     },
     "enableRanged": false,
     "shootConstantly": false,

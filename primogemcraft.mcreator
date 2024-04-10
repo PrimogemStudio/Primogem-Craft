@@ -26163,6 +26163,59 @@
           "src/main/java/net/mcreator/ceshi/potion/Qwjlbbgsx2MobEffect.java"
         ]
       }
+    },
+    {
+      "name": "Qwlbtdgcl",
+      "type": "item",
+      "sortid": 1532,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlbtdgcl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwlbtdgcl.json",
+          "src/main/java/net/mcreator/ceshi/item/QwlbtdgclItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Qwlbtclsx",
+      "type": "procedure",
+      "sortid": 1533,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlbtclsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwlbtclsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -27610,6 +27663,7 @@
       "advancements.gyyz.title": "光耀意志！",
       "subtitles.cp_fengdandaibiao": "",
       "item.primogemcraft.jljzs": "§6『Prithiva Topaz』§bDiamond Sword",
+      "item.primogemcraft.qwlbtdgcl": "§5『奇物』§e鲁伯特帝国机械齿轮",
       "block.primogemcraft.yiyishijiemubanlouqi": "The another world\u0027s wood Stairs",
       "effect.primogemcraft.heisenlinggz": "黑森林咕咕钟",
       "item.primogemcraft.ruzst_leggings": "§c『Agnidus Agate』§bDiamond Leggings",
@@ -28509,6 +28563,7 @@
       "advancements.gyyz.title": "光耀意志！",
       "subtitles.cp_fengdandaibiao": "",
       "item.primogemcraft.jljzs": "§6『Prithiva Topaz』§bDiamond Sword",
+      "item.primogemcraft.qwlbtdgcl": "§5『奇物』§e鲁伯特帝国机械齿轮",
       "block.primogemcraft.yiyishijiemubanlouqi": "The another world\u0027s wood Stairs",
       "effect.primogemcraft.heisenlinggz": "黑森林咕咕钟",
       "item.primogemcraft.ruzst_leggings": "§c『Agnidus Agate』§bDiamond Leggings",
@@ -29408,6 +29463,7 @@
       "subtitles.cp_fengdandaibiao": "",
       "advancements.gyyz.title": "光耀意志！",
       "item.primogemcraft.jljzs": "§6『坚牢黄玉』§b钻石剑",
+      "item.primogemcraft.qwlbtdgcl": "§5『奇物』§e鲁伯特帝国机械齿轮",
       "block.primogemcraft.yiyishijiemubanlouqi": "异世界木 楼梯",
       "effect.primogemcraft.heisenlinggz": "黑森林咕咕钟",
       "item.primogemcraft.jianglidayinxiongjingyan": "大英雄的经验",

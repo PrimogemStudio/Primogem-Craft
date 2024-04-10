@@ -181,6 +181,7 @@ import net.mcreator.ceshi.item.QwxyzqItem;
 import net.mcreator.ceshi.item.QwxbzsqItem;
 import net.mcreator.ceshi.item.QwtldhyItem;
 import net.mcreator.ceshi.item.QwtcjlbptbgItem;
+import net.mcreator.ceshi.item.QwlbtdgclItem;
 import net.mcreator.ceshi.item.QwkwzjItem;
 import net.mcreator.ceshi.item.QwjzyjItem;
 import net.mcreator.ceshi.item.QwhdlzItem;
@@ -833,6 +834,7 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> QHZLLH_4 = REGISTRY.register("qhzllh_4", () -> new Qhzllh4Item());
 	public static final RegistryObject<Item> HUALIDUANZAO = block(PrimogemcraftModBlocks.HUALIDUANZAO);
 	public static final RegistryObject<Item> QWTCJLBPTBG = REGISTRY.register("qwtcjlbptbg", () -> new QwtcjlbptbgItem());
+	public static final RegistryObject<Item> QWLBTDGCL = REGISTRY.register("qwlbtdgcl", () -> new QwlbtdgclItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
