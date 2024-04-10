@@ -831,6 +831,7 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> SHENMILIHE = REGISTRY.register("shenmilihe", () -> new ShenmiliheItem());
 	public static final RegistryObject<Item> QHZLLH_4 = REGISTRY.register("qhzllh_4", () -> new Qhzllh4Item());
 	public static final RegistryObject<Item> HUALIDUANZAO = block(PrimogemcraftModBlocks.HUALIDUANZAO);
+	public static final RegistryObject<Item> QWTCJLBPTBG = REGISTRY.register("qwtcjlbptbg", () -> new QwtcjlbptbgItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

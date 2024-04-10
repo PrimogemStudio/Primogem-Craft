@@ -26074,6 +26074,20 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qwtcjlbptbg",
+      "type": "item",
+      "sortid": 1528,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwtcjlbptbg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwtcjlbptbg.json",
+          "src/main/java/net/mcreator/ceshi/item/QwtcjlbptbgItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -28099,6 +28113,7 @@
       "subtitles.choukatiaoguo.1": "",
       "block.primogemcraft.yishijiemuzhalan": "The Another World Wood  Fence Gate",
       "item.primogemcraft.szsjtie": "『Iron Upgrade』§aNagadus Emerald",
+      "item.primogemcraft.qwtcjlbptbg": "§5『奇物』§f天才俱乐部普通八卦",
       "gui.primogemcraft.bwdyinhang.tooltip_sscqing_ni_gun_kai_ss8cui_hui_she_shi": "§c请你滚开§8（摧毁设施）",
       "block.primogemcraft.ziyousongshikuangshi": "§aVayuda Turquoise Ore",
       "subtitles.sanyueexixi": "hehe",
@@ -28996,6 +29011,7 @@
       "subtitles.choukatiaoguo.1": "",
       "block.primogemcraft.yishijiemuzhalan": "The Another World Wood  Fence Gate",
       "item.primogemcraft.szsjtie": "『Iron Upgrade』§aNagadus Emerald",
+      "item.primogemcraft.qwtcjlbptbg": "§5『奇物』§f天才俱乐部普通八卦",
       "gui.primogemcraft.bwdyinhang.tooltip_sscqing_ni_gun_kai_ss8cui_hui_she_shi": "§c请你滚开§8（摧毁设施）",
       "block.primogemcraft.ziyousongshikuangshi": "§aVayuda Turquoise Ore",
       "subtitles.sanyueexixi": "hehe",
@@ -29887,6 +29903,7 @@
       "subtitles.choukatiaoguo.1": "",
       "block.primogemcraft.yishijiemuzhalan": "异世界木 栅栏",
       "item.primogemcraft.szsjtie": "『铁质升级』§a生长碧翡",
+      "item.primogemcraft.qwtcjlbptbg": "§5『奇物』§f天才俱乐部普通八卦",
       "gui.primogemcraft.bwdyinhang.tooltip_sscqing_ni_gun_kai_ss8cui_hui_she_shi": "§c请你滚开§8（摧毁设施）",
       "block.primogemcraft.ziyousongshikuangshi": "§a自在松石 矿石",
       "subtitles.sanyueexixi": "欸嘻嘻",
