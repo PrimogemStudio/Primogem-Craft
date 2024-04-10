@@ -21,7 +21,7 @@ public class Liulang_jingyan_shuxingProcedure {
 				} else {
 					if (entity instanceof Player _player)
 						_player.giveExperiencePoints((int) ((itemstack.getMaxDamage() - 1) - itemstack.getDamageValue()));
-					if (itemstack.getMaxDamage() - itemstack.getDamageValue() != 1) {
+					if ((itemstack.getMaxDamage() - 1) - itemstack.getDamageValue() != 1) {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("\u00A7a\u7ECF\u9A8C\u503C\u00A7e\u5DF2\u53D6\u51FA\uFF01"), false);
 						if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
@@ -43,9 +43,9 @@ public class Liulang_jingyan_shuxingProcedure {
 					if (!(itemstack.getDamageValue() == 0)) {
 						jingyan = DiaoyongjisuanjingyanzhiProcedure.execute(entity);
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-((int) (itemstack.getDamageValue() - 1)));
+							_player.giveExperiencePoints(-(itemstack.getDamageValue()));
 						itemstack.setDamageValue((int) ((itemstack.getMaxDamage() - jingyan) - (itemstack.getMaxDamage() - itemstack.getDamageValue())));
-						itemstack.getOrCreateTag().putDouble("naijiu_xianzhi", ((itemstack.getMaxDamage() - itemstack.getDamageValue()) - 1));
+						itemstack.getOrCreateTag().putDouble("naijiu_xianzhi", (itemstack.getMaxDamage() - itemstack.getDamageValue()));
 						if (entity instanceof Player _player)
 							_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
 						jingyan = 0;
