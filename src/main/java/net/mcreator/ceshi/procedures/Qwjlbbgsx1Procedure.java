@@ -53,9 +53,9 @@ public class Qwjlbbgsx1Procedure {
 							.literal("\u00A75\u300E\u5947\u7269\u300F\u00A7f\u5929\u624D\u4FF1\u4E50\u90E8\u666E\u901A\u516B\u5366\u00A7c\u8F6C\u5316\u4E86\u6240\u6709\u5B87\u5B99\u788E\u7247\uFF0C\u5E76\u9500\u6BC1\u4E86\u81EA\u8EAB\uFF01"), false);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 1, (float) 0.5);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 1, (float) 0.5, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5, false);
 					}
 				}
 				itemstack.shrink(1);
@@ -73,9 +73,9 @@ public class Qwjlbbgsx1Procedure {
 					_player.displayClientMessage(Component.literal("\u00A75\u300E\u5947\u7269\u300F\u00A7f\u5929\u624D\u4FF1\u4E50\u90E8\u666E\u901A\u516B\u5366\u00A76\u5C06\u5B87\u5B99\u788E\u7247\u8F6C\u5316\u4E3A\u4E86\u7ECF\u9A8C"), false);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 1, (float) 0.5);
+						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 1, (float) 0.5, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5, false);
 					}
 				}
 				itemstack.setHoverName(Component.literal(

@@ -43,7 +43,7 @@ public class QwlbtclsxProcedure {
 		}
 		if (a >= 45 && !world.isClientSide()) {
 			itemstack.getOrCreateTag().putDouble("lubotechilun", (itemstack.getOrCreateTag().getDouble("lubotechilun") + 1));
-			if (itemstack.getOrCreateTag().getDouble("lubotechilun") >= 200) {
+			if (itemstack.getOrCreateTag().getDouble("lubotechilun") >= 24000) {
 				itemstack.getOrCreateTag().putDouble("lubotechilun", 0);
 				c = Math.round(Mth.nextInt(RandomSource.create(), 10, 20));
 				if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -78,9 +78,9 @@ public class QwlbtclsxProcedure {
 						_player.displayClientMessage(Component.literal("\u00A75\u300E\u5947\u7269\u300F\u00A7e\u9C81\u4F2F\u7279\u5E1D\u56FD\u673A\u68B0\u9F7F\u8F6E\u00A7c\u89C9\u5F97\u4F60\u62E5\u6709\u7684\u592A\u591A\u4E86"), false);
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 1, (float) 0.5);
+							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5);
 						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 1, (float) 0.5, false);
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5, false);
 						}
 					}
 				}
