@@ -32,6 +32,7 @@ public class QwqcxxmxItem extends Item {
 		list.add(Component.literal("\u00A76 \u6700\u5927\u6301\u7EED\u65F6\u95F4"));
 		list.add(Component.literal("\u00A78\u6BCF\u6B21\u4F7F\u7528\u6263\u9664\u6548\u679C\u7B49\u7EA7*5\u6570\u91CF"));
 		list.add(Component.literal("\u00A78 \u6700\u5927\u6301\u7EED\u65F6\u95F4"));
+		list.add(Component.literal("\u00A79\u6301\u7EED\u65F6\u95F4\u4E3A0\u65F6\u5947\u7269\u5C06\u88AB\u9500\u6BC1"));
 	}
 
 	@Override
