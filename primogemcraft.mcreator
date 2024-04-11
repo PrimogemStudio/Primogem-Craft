@@ -26909,6 +26909,26 @@
       "CUSTOM:Ryhjt.boots",
       "CUSTOM:Axhjt.boots"
     ],
+    "ITEMS:pgc:lbtjxclzlp": [
+      "Items.RAW_IRON",
+      "Items.IRON_INGOT",
+      "Items.RAW_COPPER",
+      "Items.COPPER_INGOT",
+      "Items.REDSTONE",
+      "Items.RAW_GOLD",
+      "Items.GOLD_INGOT",
+      "Items.DIAMOND",
+      "Items.NETHERITE_SCRAP",
+      "Items.EMERALD",
+      "Items.QUARTZ",
+      "Items.PRISMARINE_SHARD",
+      "Items.AMETHYST_SHARD",
+      "Items.ECHO_SHARD",
+      "CUSTOM:Yuanshi",
+      "CUSTOM:Xinghui",
+      "CUSTOM:Xingchen",
+      "Items.DYE#4"
+    ],
     "ITEMS:forge:hejin_2": [
       "CUSTOM:Zizizaihejintao.legs",
       "CUSTOM:Jlkjhj.legs",
@@ -27674,7 +27694,11 @@
       "CUSTOM:Hqshui",
       "CUSTOM:Hqhuo",
       "CUSTOM:Hqbing",
-      "TAG:forge:curio/clock"
+      "TAG:forge:curio/clock",
+      "CUSTOM:Qwtcjlbptbg",
+      "CUSTOM:Qwlbtdgcl",
+      "CUSTOM:Quxgjibing",
+      "CUSTOM:Qwqcxxmx"
     ],
     "ITEMS:forge:armors/leggings": [
       "CUSTOM:Kkuijiaceshi.legs",
