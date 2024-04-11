@@ -99,7 +99,5 @@ public class Qcmx_sxProcedure {
 																	: new java.text.DecimalFormat("\u00A7b##.s##").format(itemstack.getOrCreateTag().getDouble("quchi_sx")))))));
 		}
 		DiaoyonghuishouProcedure.execute(entity, itemstack);
-		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##").format(itemstack.getOrCreateTag().getDouble("quchi_sx")))), false);
 	}
 }

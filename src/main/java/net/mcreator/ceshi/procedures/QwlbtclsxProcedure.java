@@ -47,7 +47,7 @@ public class QwlbtclsxProcedure {
 		}
 		if (a >= 45 && !world.isClientSide()) {
 			itemstack.getOrCreateTag().putDouble("lubotechilun", (itemstack.getOrCreateTag().getDouble("lubotechilun") + 1));
-			if (itemstack.getOrCreateTag().getDouble("lubotechilun") >= 200) {
+			if (itemstack.getOrCreateTag().getDouble("lubotechilun") >= 24000) {
 				itemstack.getOrCreateTag().putDouble("lubotechilun", 0);
 				c = Math.round(Mth.nextInt(RandomSource.create(), 10, 20));
 				if (entity instanceof Player _player && !_player.level().isClientSide())
