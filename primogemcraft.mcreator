@@ -26532,6 +26532,108 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qwqskxjxt",
+      "type": "item",
+      "sortid": 1548,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwqskxjxt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwqskxjxt.json",
+          "src/main/java/net/mcreator/ceshi/item/QwqskxjxtItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Qskxjxtxg",
+      "type": "potioneffect",
+      "sortid": 1549,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qskxjxtxg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/potion/QskxjxtxgMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Qskxjxt_sx",
+      "type": "procedure",
+      "sortid": 1550,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qskxjxt_sx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Qskxjxt_sxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qskxjxtpf",
+      "type": "recipe",
+      "sortid": 1551,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qskxjxtpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qskxjxtpf.json"
+        ]
+      }
+    },
+    {
+      "name": "Qskxjxtsx",
+      "type": "procedure",
+      "sortid": 1552,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qskxjxtsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QskxjxtsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -26793,14 +26895,6 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:pgc:dzmb": [
-      "TAG:pgc:dzmb_0",
-      "TAG:pgc:dzmb_1",
-      "TAG:pgc:dzmb_2",
-      "TAG:pgc:dzmb_3",
-      "TAG:pgc:dzmb_4",
-      "TAG:pgc:dzmb_5"
-    ],
     "BLOCKS:minecraft:woodenfences": [
       "CUSTOM:Yishijiemuzhalan",
       "CUSTOM:Ceshi_mucaibaoFence",
@@ -26811,6 +26905,23 @@
       "CUSTOM:Xiumuzhalan",
       "CUSTOM:Llianjiamolakuaiqiang",
       "CUSTOM:Cangsangshizhuanweiqiang"
+    ],
+    "ITEMS:pgc:dzmb": [
+      "TAG:pgc:dzmb_0",
+      "TAG:pgc:dzmb_1",
+      "TAG:pgc:dzmb_2",
+      "TAG:pgc:dzmb_3",
+      "TAG:pgc:dzmb_4",
+      "TAG:pgc:dzmb_5"
+    ],
+    "ITEMS:forge:yszsj": [
+      "CUSTOM:Zizaizuanshijian",
+      "CUSTOM:Jljzs",
+      "CUSTOM:Zszsj",
+      "CUSTOM:Szzsj",
+      "CUSTOM:Ddjzsj",
+      "CUSTOM:Ryzsj",
+      "CUSTOM:Axzsj"
     ],
     "BLOCKS:forge:mora/block": [
       "CUSTOM:Moladui02",
@@ -26824,15 +26935,6 @@
       "CUSTOM:Mlxdml02",
       "CUSTOM:Mlxdml03"
     ],
-    "ITEMS:forge:yszsj": [
-      "CUSTOM:Zizaizuanshijian",
-      "CUSTOM:Jljzs",
-      "CUSTOM:Zszsj",
-      "CUSTOM:Szzsj",
-      "CUSTOM:Ddjzsj",
-      "CUSTOM:Ryzsj",
-      "CUSTOM:Axzsj"
-    ],
     "ITEMS:forge:ysdp_0": [
       "CUSTOM:Zziyousongshiduanpian",
       "CUSTOM:Jianlaoduanpian",
@@ -26841,37 +26943,6 @@
       "CUSTOM:Dijingduanpian",
       "CUSTOM:Ranyuanduanpian",
       "CUSTOM:Aaixubingyuduanpian"
-    ],
-    "ITEMS:primogemcraft:yuansutaozuanshi": [
-      "CUSTOM:Zizaizuantao.helmet",
-      "CUSTOM:Zizaizuantao.body",
-      "CUSTOM:Zizaizuantao.legs",
-      "CUSTOM:Zizaizuantao.boots",
-      "CUSTOM:Jlkjzs.helmet",
-      "CUSTOM:Jlkjzs.body",
-      "CUSTOM:Jlkjzs.legs",
-      "CUSTOM:Jlkjzs.boots",
-      "CUSTOM:Zszst.helmet",
-      "CUSTOM:Zszst.body",
-      "CUSTOM:Zszst.legs",
-      "CUSTOM:Zszst.boots",
-      "CUSTOM:Szzskj.helmet",
-      "CUSTOM:Szzskj.body",
-      "CUSTOM:Szzskj.legs",
-      "CUSTOM:Szzskj.boots",
-      "CUSTOM:Djzst.helmet",
-      "CUSTOM:Djzst.body",
-      "CUSTOM:Djzst.legs",
-      "CUSTOM:Djzst.boots",
-      "CUSTOM:Ruzst.helmet",
-      "CUSTOM:Ruzst.body",
-      "CUSTOM:Ruzst.legs",
-      "CUSTOM:Ruzst.boots",
-      "CUSTOM:Axzst.helmet",
-      "CUSTOM:Axzst.body",
-      "CUSTOM:Axzst.legs",
-      "CUSTOM:Axzst.boots",
-      "CUSTOM:Axzsj"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Jianshijingban",
@@ -26924,6 +26995,37 @@
       "~CUSTOM:Molakuai01",
       "~CUSTOM:Jiuchanzhiyuankuai",
       "~CUSTOM:Yuanshikuangshi"
+    ],
+    "ITEMS:primogemcraft:yuansutaozuanshi": [
+      "CUSTOM:Zizaizuantao.helmet",
+      "CUSTOM:Zizaizuantao.body",
+      "CUSTOM:Zizaizuantao.legs",
+      "CUSTOM:Zizaizuantao.boots",
+      "CUSTOM:Jlkjzs.helmet",
+      "CUSTOM:Jlkjzs.body",
+      "CUSTOM:Jlkjzs.legs",
+      "CUSTOM:Jlkjzs.boots",
+      "CUSTOM:Zszst.helmet",
+      "CUSTOM:Zszst.body",
+      "CUSTOM:Zszst.legs",
+      "CUSTOM:Zszst.boots",
+      "CUSTOM:Szzskj.helmet",
+      "CUSTOM:Szzskj.body",
+      "CUSTOM:Szzskj.legs",
+      "CUSTOM:Szzskj.boots",
+      "CUSTOM:Djzst.helmet",
+      "CUSTOM:Djzst.body",
+      "CUSTOM:Djzst.legs",
+      "CUSTOM:Djzst.boots",
+      "CUSTOM:Ruzst.helmet",
+      "CUSTOM:Ruzst.body",
+      "CUSTOM:Ruzst.legs",
+      "CUSTOM:Ruzst.boots",
+      "CUSTOM:Axzst.helmet",
+      "CUSTOM:Axzst.body",
+      "CUSTOM:Axzst.legs",
+      "CUSTOM:Axzst.boots",
+      "CUSTOM:Axzsj"
     ],
     "BLOCKS:minecraft:beacon_base_blocks": [
       "CUSTOM:Shengzhangbifeidakuai",
@@ -27990,8 +28092,8 @@
       "item.primogemcraft.hqbing": "§5『Curio』§b§ksealing wax of §r§bMecry",
       "block.primogemcraft.yhjsk": "nity mental block",
       "item.primogemcraft.qq_qyuanchulan_01_spawn_egg": "Result Rare Spawn Egg",
-      "block.primogemcraft.yishijiemuban_fence": "monochrome another world wood planks Fence",
       "item.primogemcraft.zszsj": "§d『Vajrada Amethyst』§bDiamond Sword",
+      "block.primogemcraft.yishijiemuban_fence": "monochrome another world wood planks Fence",
       "item.primogemcraft.axzsshjsj": "§d『Netherite Upgrade』§bShivada Jade Gemstone",
       "advancements.cchangchangkan.descr": "Obtain§5Trash",
       "advancements.jdybdw.descr": "obtain the Netherite Upgrading element template",
@@ -28003,8 +28105,8 @@
       "advancements.zzenmezhemechoua.title": "How Stinky！",
       "gui.primogemcraft.cunzheshezhi.button_qing_ling": "reset",
       "effect.primogemcraft.tldhy": "Thalan Toxi-Flame",
-      "subtitles.cp_fengdandaibiao": "",
       "advancements.gyyz.title": "光耀意志！",
+      "subtitles.cp_fengdandaibiao": "",
       "item.primogemcraft.jljzs": "§6『Prithiva Topaz』§bDiamond Sword",
       "item.primogemcraft.qwlbtdgcl": "§5『奇物』§e鲁伯特帝国机械齿轮",
       "block.primogemcraft.yiyishijiemubanlouqi": "The another world\u0027s wood Stairs",
@@ -28019,24 +28121,25 @@
       "item.primogemcraft.rytsj": "『Iron Upgrade』§cAgnidus Agate",
       "gui.primogemcraft.cunzheshezhi.tooltip_qu_chu_shi_you_gu_ding_shu_liang_zhuan_bian_wei_0240": "取出时由固定数量转变为0~240%",
       "gui.primogemcraft.ganjinglajitong.label_wu_pin_lan": "Inventory",
-      "advancements.ttazhenhaokan.descr": "Gain the Mysterious petal",
       "item.primogemcraft.zizizaihejintao_chestplate": "§a『Vayuda Turquoise』§eNetherite Chestplate",
-      "subtitles.choukaqianxi01": "ohhhhh",
+      "advancements.ttazhenhaokan.descr": "Gain the Mysterious petal",
       "effect.primogemcraft.djqjkjxgxianzhi": "effect of varunada armors restricted",
+      "subtitles.choukaqianxi01": "ohhhhh",
       "item.primogemcraft.mmolagao": "§eMora Pickaxe",
       "advancements.zhzhiyexuanshou.title": "“Professional Player”",
       "advancements.bbaozang.title": "Treasures！",
-      "item.primogemcraft.yibangrenzhinang": "§bStranger\u0027s Travel Bag",
       "gui.primogemcraft.yinhang.label_yu_jian_shi_gei_yu_shuang_bei": "doubles when met",
+      "item.primogemcraft.yibangrenzhinang": "§bStranger\u0027s Travel Bag",
       "item.primogemcraft.djhjsj": "§e『Smithing Template』§bVarunada Lazurite",
       "advancements.jdszzqh.title": "upgrading and enhancing",
       "block.primogemcraft.yuanshikuangshi": "Primogem Ore",
       "gui.primogemcraft.heitayindaoyonggui.label_ge_cuo_wu_dai_ma": "个Error Code Curios",
       "gui.primogemcraft.bwdyinhang.label_xia_ci_yu_dao_shi_ke_ti": "withdrawable when met next",
-      "item.primogemcraft.ryhjsj": "§e『Smithing Templete』§cAgnidus Agate",
-      "item.primogemcraft.yuanshiqiao": "§bPrimogem Shovel",
       "item.primogemcraft.maoxianjiazhinang": "§7Adventurer\u0027s Kit Bag",
+      "item.primogemcraft.yuanshiqiao": "§bPrimogem Shovel",
+      "item.primogemcraft.ryhjsj": "§e『Smithing Templete』§cAgnidus Agate",
       "block.primogemcraft.zhjsk": "Ingenuity  blck",
+      "item.primogemcraft.qwqskxjxt": "§5『奇物』§b「奇思狂想」机械团",
       "gamerule.jinyongnang.description": "是否阻止囊被使用？",
       "item.primogemcraft.yiyimuguoshi": "§5『Curio』§6Fruit of the Alien Tree",
       "effect.primogemcraft.jijishengchongdefennu": "Parasitized",
@@ -28046,11 +28149,11 @@
       "gui.primogemcraft.cunzheshezhi.label_empty": "+",
       "item.primogemcraft.qwjzyj": "§5『Curio』§aFamily Ties",
       "entity.primogemcraft.q_qyuanchuzi_01": "Wish purple result",
-      "block.primogemcraft.ceshi_mucaibao_slab": "Dendro Core Slab",
       "item.primogemcraft.feiqiupingzheng": "§e§kaha§8§rVochur of Unlucky§e§kaha",
-      "item.primogemcraft.wufengjian": "Dull Blade",
-      "item.minecraft.tipped_arrow.effect.fengraoqiongjiang": "§eAbundant Drinking Arrow",
+      "block.primogemcraft.ceshi_mucaibao_slab": "Dendro Core Slab",
       "gamerule.cs.description": "ces",
+      "item.minecraft.tipped_arrow.effect.fengraoqiongjiang": "§eAbundant Drinking Arrow",
+      "item.primogemcraft.wufengjian": "Dull Blade",
       "item.primogemcraft.wmoladai": "§eBag filled with exquisite Mora",
       "item.primogemcraft.axzst_chestplate": "§b『Shivada Jade』Diamond Chestplate",
       "block.primogemcraft.yishijiemuban_button": "monochrome another world wood planks button",
@@ -28062,26 +28165,26 @@
       "item.primogemcraft.qwxyzq": "§5『CUrio』§eFaith Bond",
       "item.primogemcraft.zshjt_chestplate": "§d『Vajrada Amethyst』§eNetherite Chestplate",
       "effect.primogemcraft.ljtdwq": "垃圾桶的顽强！",
-      "item.primogemcraft.yishijiecunzhe": "bankbook of Another world",
-      "item.primogemcraft.xingchen": "§bMasterless Stardust",
       "item.primogemcraft.hqcao": "§5『Curio』§aSealing wax of Erudition",
+      "item.primogemcraft.xingchen": "§bMasterless Stardust",
+      "item.primogemcraft.yishijiecunzhe": "bankbook of Another world",
       "item.primogemcraft.szhjkj_boots": "§a『Nagadus Emerald』§eNetherite boots",
       "advancements.zhzhongjixintu.title": "Ultra Devotees",
       "item.primogemcraft.tashanglvtuchangpian.desc": "Take The Journey HOYO-MiX",
       "effect.linzhong": "Deathbed",
-      "item.primogemcraft.posuimengying": "§cBroken§dDream Sakura",
-      "gui.primogemcraft.heitayindaoyonggui.label_xiao_hao_da_liang_yu_zhou_sui_pian_wei_gong_ju_huo_kui_jia_gai_lu_tian": "Deple Amount of Cosmic Fragment为工具或盔甲概率添",
-      "item.primogemcraft.zizaihejinjian": "§a『Vayuda Turquoise』§eNethetite Sword",
       "item.primogemcraft.mmolachutou": "§eMora Hoe",
+      "item.primogemcraft.zizaihejinjian": "§a『Vayuda Turquoise』§eNethetite Sword",
+      "gui.primogemcraft.heitayindaoyonggui.label_xiao_hao_da_liang_yu_zhou_sui_pian_wei_gong_ju_huo_kui_jia_gai_lu_tian": "Deple Amount of Cosmic Fragment为工具或盔甲概率添",
+      "item.primogemcraft.posuimengying": "§cBroken§dDream Sakura",
       "gui.primogemcraft.maoxianjiazhinanggui.label_mou_xian_jia_zhi_nang": "Adventurer\u0027s Kit bag",
       "item.primogemcraft.dijingsuixie": "§9Varunada Lazurite Sliver",
       "item.primogemcraft.szbfzsshjsj": "§d『Smith Templete』§aNagadus Emerald",
       "advancements.molahuoqujindu_01.title": "Of course Not",
       "item.primogemcraft.yuanshichutou": "§bPrimogem Hoe",
-      "item.primogemcraft.zizaichu": "§a『Vayuda Turquoise』Hoe",
       "item.primogemcraft.jiuchanzhiyuangao": "§dInterwined Fate Pickaxe",
-      "advancements.jdwxjyjh.descr": "Gain any element sliver or Crystal",
+      "item.primogemcraft.zizaichu": "§a『Vayuda Turquoise』Hoe",
       "item.primogemcraft.djzst_helmet": "§b『Varunada Lazurite』Diamond Helmet",
+      "advancements.jdwxjyjh.descr": "Gain any element sliver or Crystal",
       "block.primogemcraft.caoyuansueci": "§aBlessing Of Dendro",
       "item.primogemcraft.cunqupingzheng": "bankbook",
       "item.primogemcraft.qwyzzm": "§5『Curio』§cFool\u0027s Mask",
@@ -28096,8 +28199,8 @@
       "item.primogemcraft.ryzsj": "§c『Agnidus Agate』§bDiamond Sword",
       "item.primogemcraft.jianlaohuangyu": "§6Prithiva Topaz Gemstone",
       "advancements.gou_gou_liao_jin_zhi_fu_du.title": "Enough，Stop Repeating",
-      "advancements.xdfsqjd.descr": "Gain the Xiao Latern igniter",
       "item.primogemcraft.diijingqingjing": "§9Varunada Lazurite Gemstone",
+      "advancements.xdfsqjd.descr": "Gain the Xiao Latern igniter",
       "effect.zhuoshao": "Burning",
       "item.primogemcraft.gongzhuxinghua": "§6Chasing Starlight With You",
       "advancements.jdyszb.descr": "Gain the Priomogem Armor",
@@ -28135,8 +28238,8 @@
       "effect.primogemcraft.chunmeipaoxianzhixiaoguo": "Robe of the Beauty Cooling Down",
       "item.primogemcraft.djtj": "§b『Varunada Lazurite』 §fIron Sword",
       "item.primogemcraft.rytt_boots": "§c『Agnidus Agate』§fIron Boots",
-      "gui.primogemcraft.yinhang.tooltip_sscqing_ni_gun_kai_ss8cui_hui_she_shi": "§c请你滚开§8（摧毁设施）",
       "advancements.mmowangwuzhuang.descr": "The Whole set of mora amor",
+      "gui.primogemcraft.yinhang.tooltip_sscqing_ni_gun_kai_ss8cui_hui_she_shi": "§c请你滚开§8（摧毁设施）",
       "block.ceshi.jiuchanzhiyuankuai": "Interwined Fate Block",
       "item.primogemcraft.ydggz": "§5『奇物』§b永动咕咕钟",
       "enchantment.primogemcraft.ceshifumo_01": "revive",
@@ -28164,15 +28267,15 @@
       "subtitles.xiaoguanzi": "",
       "block.primogemcraft.cangsangshizhuantaijie": "Vicissitude Brick Stairs",
       "item.primogemcraft.szzskj_leggings": "§a『Nagadus Emerald』§dDiamond Leggings",
-      "item.primogemcraft.qwymzj": "§5『Curio』§6Obliteration Wick Trimmer",
       "item.ceshi.yuanshi": "Primogem",
+      "item.primogemcraft.qwymzj": "§5『Curio』§6Obliteration Wick Trimmer",
       "item.primogemcraft.shanbianzhichen": "Dust of Inverting",
       "block.primogemcraft.caomu_26": "Dendro-Core Wood Button",
       "item.primogemcraft.yishijiemugun": "Tewatt Stick",
       "block.primogemcraft.caomu_25": "Dendro-Core Wood Plate",
       "block.primogemcraft.caomu_24": "Dendro-Core Wood Fence Gate",
-      "item.primogemcraft.rytt_chestplate": "§c『Agnidus Agate』§fIron Chestplate",
       "item.primogemcraft.zshjt_boots": "§d『Vajrada Amethyst』§eNetherite Boots",
+      "item.primogemcraft.rytt_chestplate": "§c『Agnidus Agate』§fIron Chestplate",
       "block.primogemcraft.caomu_22": "Dendro-Core Wood Slab",
       "item.primogemcraft.szhjkj_leggings": "§a『Nagadus Emerald』§eNetherite Leggings",
       "block.ceshi.shengzhangdechuangshijiejing": "Growing Genesis Crystal",
@@ -28188,12 +28291,12 @@
       "item.primogemcraft.hqshui": "§5『Curio』§9Sealing wax of Justice",
       "subtitles.qianye_shijia": "",
       "block.primogemcraft.d_12": "monochrome another world wood planks Stairs",
-      "block.primogemcraft.zzjsk": "Vayuda Block",
       "block.primogemcraft.d_11": "monochrome another world wood planks",
+      "block.primogemcraft.zzjsk": "Vayuda Block",
       "block.primogemcraft.d_14": "monochrome another world wood planks Fence",
       "block.primogemcraft.d_13": "monochrome another world wood planks Slab",
-      "item.primogemcraft.zzjll": "Vayuda Nugget",
       "block.primogemcraft.d_16": "monochrome another world wood planks Pressure Plate",
+      "item.primogemcraft.zzjll": "Vayuda Nugget",
       "block.primogemcraft.d_15": "monochrome another world wood planks Fence Gate",
       "item.primogemcraft.mzsj_3": "§6增强 反致精炼用魔矿",
       "block.primogemcraft.d_17": "monochrome another world wood planks button",
@@ -28218,15 +28321,16 @@
       "advancements.jdwmypszyd.title": "Genshin",
       "item.primogemcraft.jinguangbaodi_01": "Star Rail Special Pass",
       "item.primogemcraft.szkjtie_leggings": "§a『Nagadus Emerald』§fIron Leggings",
-      "block.ceshi.yuanshikuangshi": "Primogem Ore",
       "advancements.mmowangwuzhuang.title": "Mora Legacy Transformation",
+      "block.ceshi.yuanshikuangshi": "Primogem Ore",
       "item.primogemcraft.hhaokandelaji": "Exquisite Trash",
-      "advancements.zhzhiyexuanshou.descr": "Professional and Scientific",
-      "gui.primogemcraft.suijiqiwu.label_sui_ji_qi_wu": "Random Curio",
       "item.primogemcraft.shiwutsslm": "糖霜史莱姆",
+      "gui.primogemcraft.suijiqiwu.label_sui_ji_qi_wu": "Random Curio",
+      "advancements.zhzhiyexuanshou.descr": "Professional and Scientific",
       "effect.primogemcraft.linzhong": "deathbed",
       "advancements.molahuoqujindu_01.descr": "What was that？",
       "item.primogemcraft.xiantiaoqiang": "§6Adeptus\u0027 Temptation",
+      "effect.primogemcraft.qskxjxtxg": "奇思狂想机械团",
       "item.primogemcraft.ryhjj": "§c『Agnidus Agate』§eNetherite Sword",
       "item.primogemcraft.axzst_helmet": "§b『Shivada Jade』Diamond Helmet",
       "advancements.fuduji.title": "The Echoer",
@@ -28941,6 +29045,7 @@
       "item.primogemcraft.ryhjsj": "§e『Smithing Templete』§cAgnidus Agate",
       "item.primogemcraft.yuanshiqiao": "§bPrimogem Shovel",
       "item.primogemcraft.maoxianjiazhinang": "§7Adventurer\u0027s Kit Bag",
+      "item.primogemcraft.qwqskxjxt": "§5『奇物』§b「奇思狂想」机械团",
       "block.primogemcraft.zhjsk": "Ingenuity  blck",
       "gamerule.jinyongnang.description": "是否阻止囊被使用？",
       "item.primogemcraft.yiyimuguoshi": "§5『Curio』§6Fruit of the Alien Tree",
@@ -29132,6 +29237,7 @@
       "effect.primogemcraft.linzhong": "deathbed",
       "advancements.molahuoqujindu_01.descr": "What was that？",
       "item.primogemcraft.xiantiaoqiang": "§6Adeptus\u0027 Temptation",
+      "effect.primogemcraft.qskxjxtxg": "奇思狂想机械团",
       "item.primogemcraft.ryhjj": "§c『Agnidus Agate』§eNetherite Sword",
       "item.primogemcraft.axzst_helmet": "§b『Shivada Jade』Diamond Helmet",
       "advancements.fuduji.title": "The Echoer",
@@ -29846,6 +29952,7 @@
       "item.primogemcraft.ryhjsj": "§e『下界合金升级』§c燃愿玛瑙",
       "item.primogemcraft.yuanshiqiao": "§b原石 锹",
       "item.primogemcraft.maoxianjiazhinang": "§7冒险家之囊",
+      "item.primogemcraft.qwqskxjxt": "§5『奇物』§b「奇思狂想」机械团",
       "block.primogemcraft.zhjsk": "智慧金属块",
       "gamerule.jinyongnang.description": "是否阻止囊被使用？",
       "item.primogemcraft.yiyimuguoshi": "§5『奇物』§6异木果实",
@@ -30035,6 +30142,7 @@
       "effect.primogemcraft.linzhong": "临终",
       "advancements.molahuoqujindu_01.descr": "那这是什么？",
       "item.primogemcraft.xiantiaoqiang": "§6仙跳墙",
+      "effect.primogemcraft.qskxjxtxg": "奇思狂想机械团",
       "item.primogemcraft.ryhjj": "§c『燃愿玛瑙』§e下界合金剑",
       "item.primogemcraft.axzst_helmet": "§b『哀叙冰玉』钻石头盔",
       "advancements.fuduji.title": "复读姬",
