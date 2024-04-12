@@ -510,7 +510,7 @@ public class SsanbamiantouxiaoguoProcedure {
 								}
 							}
 						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.QWSMCL.get()) {
+						if (itemstackiterator.getItem() == PrimogemcraftModItems.QWQSKXJXT.get()) {
 							if (entity instanceof Player _player) {
 								ItemStack _stktoremove = itemstackiterator;
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());

@@ -33,8 +33,8 @@ public class QskxjxtsxProcedure {
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.QSKXJXTXG.get()) && (itemstack.getItem().isEdible() ? itemstack.getItem().getFoodProperties().getNutrition() : 0) > 0) {
 			if (entity instanceof Player _player)
 				_player.getFoodData()
-						.setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) + (itemstack.getItem().isEdible() ? itemstack.getItem().getFoodProperties().getNutrition() : 0) * 0.5 >= 20
-								+ (itemstack.getItem().isEdible() ? itemstack.getItem().getFoodProperties().getNutrition() : 0) * 0.5
+						.setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - (itemstack.getItem().isEdible() ? itemstack.getItem().getFoodProperties().getNutrition() : 0)
+								+ (itemstack.getItem().isEdible() ? itemstack.getItem().getFoodProperties().getNutrition() : 0) * 0.5 >= 20 - (itemstack.getItem().isEdible() ? itemstack.getItem().getFoodProperties().getNutrition() : 0) * 0.5
 										? 20
 										: (entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - (itemstack.getItem().isEdible() ? itemstack.getItem().getFoodProperties().getNutrition() : 0) * 0.5));
 			if ((itemstack.getItem().isEdible() ? itemstack.getItem().getFoodProperties().getSaturationModifier() : 0) > 0) {
