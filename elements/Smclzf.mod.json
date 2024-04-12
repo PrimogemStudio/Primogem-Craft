@@ -1,0 +1,23 @@
+{
+  "_fv": 60,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "神秘磁力[增幅]",
+    "icon": "yuanshi.png",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "Smcl_zf_sx_1"
+    },
+    "onExpired": {
+      "name": "Smcl_zf_sx_0"
+    }
+  }
+}

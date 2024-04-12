@@ -26620,8 +26620,68 @@
       "locked_code": false,
       "registry_name": "qskxjxtsx",
       "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwsmcl",
+      "type": "item",
+      "sortid": 1553,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwsmcl",
+      "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/QskxjxtsxProcedure.java"
+          "src/main/java/net/mcreator/ceshi/item/QwsmclItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwsmcl.json"
+        ]
+      }
+    },
+    {
+      "name": "Smclxg",
+      "type": "potioneffect",
+      "sortid": 1554,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smclxg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/potion/SmclxgMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Smclzf",
+      "type": "potioneffect",
+      "sortid": 1555,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smclzf",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/potion/SmclzfMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Smclsx",
+      "type": "procedure",
+      "sortid": 1556,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smclsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/SmclsxProcedure.java"
         ],
         "dependencies": [
           {
@@ -26631,6 +26691,138 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Smclstsx",
+      "type": "procedure",
+      "sortid": 1557,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smclstsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/SmclstsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Smcl_zf_sx_0",
+      "type": "procedure",
+      "sortid": 1558,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smcl_zf_sx_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Smcl_zf_sx_0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Smcl_zf_sx_1",
+      "type": "procedure",
+      "sortid": 1559,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smcl_zf_sx_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Smcl_zf_sx_1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Smclxgzfsx",
+      "type": "procedure",
+      "sortid": 1560,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smclxgzfsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/SmclxgzfsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -27543,7 +27735,8 @@
       "CUSTOM:Jlliang",
       "CUSTOM:Yuzhousuipian",
       "CUSTOM:Qwwxntdmj",
-      "CUSTOM:Gzsmz"
+      "CUSTOM:Gzsmz",
+      "CUSTOM:Qwsmcl"
     ],
     "ITEMS:genshincraft:dendro_infusion": [
       "CUSTOM:Sztj",
@@ -28013,7 +28206,8 @@
       "CUSTOM:Qwlbtdgcl",
       "CUSTOM:Quxgjibing",
       "CUSTOM:Qwqcxxmx",
-      "CUSTOM:Qwwxntdmj"
+      "CUSTOM:Qwwxntdmj",
+      "CUSTOM:Qwsmcl"
     ],
     "ITEMS:forge:armors/leggings": [
       "CUSTOM:Kkuijiaceshi.legs",
@@ -28621,6 +28815,7 @@
       "effect.primogemcraft.letoudechengfa": "Punishment Of Lotto",
       "advancements.chengjingle.descr": "Statue of March 7th",
       "item.primogemcraft.jijiuchanzhiyuan": "JiInterwined Fate",
+      "item.primogemcraft.qwsmcl": "§5『奇物』§d「神秘」磁力",
       "item.primogemcraft.gongzhuxinghua.desc": "§eHOYO-MiX",
       "item.primogemcraft.teshukuijia_01_boots": "特殊01",
       "gui.primogemcraft.heitayindaoyonggui.button_empty": "\u003e\u003e\u003e\u003e",
@@ -28794,6 +28989,7 @@
       "advancements.jdbfwb.title": "变废为宝！",
       "item.primogemcraft.gzsmz": "咕钟三明治",
       "item.primogemcraft.szhjj": "§a『Nagadus Emerald 』§eNetherite Sword",
+      "effect.primogemcraft.smclzf": "神秘磁力[增幅]",
       "block.primogemcraft.yishijiemuban_fence_gate": "monochrome another world wood planks Fence Gate",
       "effect.paopaolengque": "§9Bubble§cCooldown",
       "advancements.jdzlyp.title": "再来亿§m瓶§r张！",
@@ -28823,6 +29019,7 @@
       "block.primogemcraft.shizuoyuanshikuai": "Prototype Primogem Block",
       "item.primogemcraft.youdianqiqiaodedaima": "§5『Curio』§9Odd Code",
       "item.primogemcraft.jlmo": "Mystic Enhancement Ore",
+      "effect.primogemcraft.smclxg": "神秘磁力",
       "gui.primogemcraft.bwdyinhang.tooltip_ssecun_ru_hou_huo_de_bu_wen_ding_ping_zheng": "§e存入后获得不稳定凭证",
       "gui.primogemcraft.ganjinglajitong.label_gan_jing_de_la_ji_tong": "clean Trash Can",
       "gui.primogemcraft.yinhang.label_gong_xiang_ying_ping_zheng_bing_huo": "供相应凭证，并获",
@@ -29528,6 +29725,7 @@
       "effect.primogemcraft.letoudechengfa": "Punishment Of Lotto",
       "advancements.chengjingle.descr": "Statue of March 7th",
       "item.primogemcraft.jijiuchanzhiyuan": "JiInterwined Fate",
+      "item.primogemcraft.qwsmcl": "§5『奇物』§d「神秘」磁力",
       "item.primogemcraft.gongzhuxinghua.desc": "§eHOYO-MiX",
       "item.primogemcraft.teshukuijia_01_boots": "特殊01",
       "gui.primogemcraft.heitayindaoyonggui.button_empty": "\u003e\u003e\u003e\u003e",
@@ -29701,6 +29899,7 @@
       "advancements.jdbfwb.title": "变废为宝！",
       "item.primogemcraft.gzsmz": "咕钟三明治",
       "item.primogemcraft.szhjj": "§a『Nagadus Emerald 』§eNetherite Sword",
+      "effect.primogemcraft.smclzf": "神秘磁力[增幅]",
       "block.primogemcraft.yishijiemuban_fence_gate": "monochrome another world wood planks Fence Gate",
       "effect.paopaolengque": "§9Bubble§cCooldown",
       "advancements.jdzlyp.title": "再来亿§m瓶§r张！",
@@ -29730,6 +29929,7 @@
       "block.primogemcraft.shizuoyuanshikuai": "Prototype Primogem Block",
       "item.primogemcraft.youdianqiqiaodedaima": "§5『Curio』§9Odd Code",
       "item.primogemcraft.jlmo": "Mystic Enhancement Ore",
+      "effect.primogemcraft.smclxg": "神秘磁力",
       "gui.primogemcraft.bwdyinhang.tooltip_ssecun_ru_hou_huo_de_bu_wen_ding_ping_zheng": "§e存入后获得不稳定凭证",
       "gui.primogemcraft.ganjinglajitong.label_gan_jing_de_la_ji_tong": "clean Trash Can",
       "gui.primogemcraft.yinhang.label_gong_xiang_ying_ping_zheng_bing_huo": "供相应凭证，并获",
@@ -30430,6 +30630,7 @@
       "effect.primogemcraft.letoudechengfa": "乐透的惩罚",
       "advancements.chengjingle.descr": "获得小三月......的雕像",
       "item.primogemcraft.jijiuchanzhiyuan": "纠缠之缘",
+      "item.primogemcraft.qwsmcl": "§5『奇物』§d「神秘」磁力",
       "item.primogemcraft.gongzhuxinghua.desc": "§eHOYO-MiX",
       "item.primogemcraft.teshukuijia_01_boots": "特殊01",
       "gui.primogemcraft.heitayindaoyonggui.button_empty": "\u003e\u003e\u003e\u003e",
@@ -30602,6 +30803,7 @@
       "advancements.jdbfwb.title": "变废为宝！",
       "item.primogemcraft.gzsmz": "咕钟三明治",
       "item.primogemcraft.szhjj": "§a『生长碧翡』§e下界合金剑",
+      "effect.primogemcraft.smclzf": "神秘磁力[增幅]",
       "block.primogemcraft.yishijiemuban_fence_gate": "单色异世界木木板 栅栏门",
       "effect.paopaolengque": "§9泡泡§c冷却",
       "advancements.jdzlyp.title": "再来亿§m瓶§r张！",
@@ -30631,6 +30833,7 @@
       "block.primogemcraft.shizuoyuanshikuai": "§e原§d石§b块",
       "item.primogemcraft.youdianqiqiaodedaima": "§5『奇物』§9有点蹊跷的代码",
       "item.primogemcraft.jlmo": "精锻用魔矿",
+      "effect.primogemcraft.smclxg": "神秘磁力",
       "gui.primogemcraft.bwdyinhang.tooltip_ssecun_ru_hou_huo_de_bu_wen_ding_ping_zheng": "§e存入后获得不稳定凭证",
       "gui.primogemcraft.ganjinglajitong.label_gan_jing_de_la_ji_tong": "干净的垃圾桶",
       "gui.primogemcraft.yinhang.label_gong_xiang_ying_ping_zheng_bing_huo": "供相应凭证，并获",
