@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:bread"
+    },
+    "b": {
+      "item": "primogemcraft:guzhonglingjian"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:gzsmz",
+    "count": 1
+  }
+}

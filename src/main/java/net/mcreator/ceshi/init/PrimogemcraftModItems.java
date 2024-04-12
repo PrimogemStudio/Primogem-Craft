@@ -179,6 +179,7 @@ import net.mcreator.ceshi.item.QwymzjItem;
 import net.mcreator.ceshi.item.QwybtzdypjItem;
 import net.mcreator.ceshi.item.QwxyzqItem;
 import net.mcreator.ceshi.item.QwxbzsqItem;
+import net.mcreator.ceshi.item.QwwxntdmjItem;
 import net.mcreator.ceshi.item.QwtldhyItem;
 import net.mcreator.ceshi.item.QwtcjlbptbgItem;
 import net.mcreator.ceshi.item.QwqcxxmxItem;
@@ -273,6 +274,7 @@ import net.mcreator.ceshi.item.HqfengItem;
 import net.mcreator.ceshi.item.HqcaoItem;
 import net.mcreator.ceshi.item.HqbingItem;
 import net.mcreator.ceshi.item.HhaokandelajiItem;
+import net.mcreator.ceshi.item.GzsmzItem;
 import net.mcreator.ceshi.item.GuzhonglingjianItem;
 import net.mcreator.ceshi.item.GongzhuxinghuaItem;
 import net.mcreator.ceshi.item.GongsideguguzhongItem;
@@ -839,6 +841,8 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> QWLBTDGCL = REGISTRY.register("qwlbtdgcl", () -> new QwlbtdgclItem());
 	public static final RegistryObject<Item> QUXGJIBING = REGISTRY.register("quxgjibing", () -> new QuxgjibingItem());
 	public static final RegistryObject<Item> QWQCXXMX = REGISTRY.register("qwqcxxmx", () -> new QwqcxxmxItem());
+	public static final RegistryObject<Item> QWWXNTDMJ = REGISTRY.register("qwwxntdmj", () -> new QwwxntdmjItem());
+	public static final RegistryObject<Item> GZSMZ = REGISTRY.register("gzsmz", () -> new GzsmzItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
