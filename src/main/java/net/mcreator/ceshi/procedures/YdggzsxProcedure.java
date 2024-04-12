@@ -38,7 +38,7 @@ public class YdggzsxProcedure {
 		if (entity == null)
 			return;
 		if (itemstack.getItem() == PrimogemcraftModItems.YDGGZ.get()) {
-			if (itemstack.getDamageValue() == 0) {
+			if (itemstack.getDamageValue() == 0 && !entity.getPersistentData().getBoolean("yongdongguguzhong")) {
 				entity.getPersistentData().putBoolean("yongdongguguzhong", true);
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.YYDGGZXG.get(), 60, 0));
