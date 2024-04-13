@@ -32,6 +32,7 @@ public class GUIqwxzanniusx0Procedure {
 			((Slot) _slots.get(2)).set(ItemStack.EMPTY);
 			_player.containerMenu.broadcastChanges();
 		}
+		entity.getPersistentData().putDouble("pgc_qiwuxuanze", 0);
 		if (entity instanceof Player _player)
 			_player.closeContainer();
 	}
