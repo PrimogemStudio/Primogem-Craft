@@ -10,6 +10,8 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.world.inventory.GuiheitaxinyindaoMenu;
+import net.mcreator.ceshi.network.GuiheitaxinyindaoButtonMessage;
+import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.HashMap;
 
@@ -86,14 +88,26 @@ public class GuiheitaxinyindaoScreen extends AbstractContainerScreen<Guiheitaxin
 	public void init() {
 		super.init();
 		imagebutton_heita_xuanzeanniu = new ImageButton(this.leftPos + 31, this.topPos + 13, 114, 43, 0, 0, 43, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_heita_xuanzeanniu.png"), 114, 86, e -> {
+			if (true) {
+				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new GuiheitaxinyindaoButtonMessage(0, x, y, z));
+				GuiheitaxinyindaoButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_heita_xuanzeanniu", imagebutton_heita_xuanzeanniu);
 		this.addRenderableWidget(imagebutton_heita_xuanzeanniu);
 		imagebutton_heita_xuanzeanniu1 = new ImageButton(this.leftPos + 31, this.topPos + 61, 114, 43, 0, 0, 43, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_heita_xuanzeanniu1.png"), 114, 86, e -> {
+			if (true) {
+				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new GuiheitaxinyindaoButtonMessage(1, x, y, z));
+				GuiheitaxinyindaoButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_heita_xuanzeanniu1", imagebutton_heita_xuanzeanniu1);
 		this.addRenderableWidget(imagebutton_heita_xuanzeanniu1);
 		imagebutton_heita_xuanzeanniu2 = new ImageButton(this.leftPos + 31, this.topPos + 109, 114, 43, 0, 0, 43, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_heita_xuanzeanniu2.png"), 114, 86, e -> {
+			if (true) {
+				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new GuiheitaxinyindaoButtonMessage(2, x, y, z));
+				GuiheitaxinyindaoButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_heita_xuanzeanniu2", imagebutton_heita_xuanzeanniu2);
 		this.addRenderableWidget(imagebutton_heita_xuanzeanniu2);

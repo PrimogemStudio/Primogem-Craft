@@ -20,6 +20,7 @@ import net.mcreator.ceshi.world.inventory.MolalajitongMenu;
 import net.mcreator.ceshi.world.inventory.MaoxianjiazhinangguiMenu;
 import net.mcreator.ceshi.world.inventory.LiulangzhezhinangguiMenu;
 import net.mcreator.ceshi.world.inventory.HeitayindaoyongguiMenu;
+import net.mcreator.ceshi.world.inventory.GuiheitaxinyindaoMenu;
 import net.mcreator.ceshi.world.inventory.GanjinglajitongMenu;
 import net.mcreator.ceshi.world.inventory.GUIqiwuxuanzeMenu;
 import net.mcreator.ceshi.world.inventory.GUImoladuiMenu;

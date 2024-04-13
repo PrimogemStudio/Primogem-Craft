@@ -26970,7 +26970,97 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ceshi/client/gui/GuiheitaxinyindaoScreen.java",
+          "src/main/java/net/mcreator/ceshi/network/GuiheitaxinyindaoButtonMessage.java",
           "src/main/java/net/mcreator/ceshi/world/inventory/GuiheitaxinyindaoMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Guixsxinheitayindaocwdm",
+      "type": "procedure",
+      "sortid": 1571,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guixsxinheitayindaocwdm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/GuixsxinheitayindaocwdmProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Guixinheitaqiwu",
+      "type": "procedure",
+      "sortid": 1572,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guixinheitaqiwu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/GuixinheitaqiwuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Guixinheitalikai",
+      "type": "procedure",
+      "sortid": 1573,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guixinheitalikai",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/GuixinheitalikaiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       }
     }

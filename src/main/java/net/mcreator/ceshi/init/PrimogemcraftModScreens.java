@@ -20,6 +20,7 @@ import net.mcreator.ceshi.client.gui.MolalajitongScreen;
 import net.mcreator.ceshi.client.gui.MaoxianjiazhinangguiScreen;
 import net.mcreator.ceshi.client.gui.LiulangzhezhinangguiScreen;
 import net.mcreator.ceshi.client.gui.HeitayindaoyongguiScreen;
+import net.mcreator.ceshi.client.gui.GuiheitaxinyindaoScreen;
 import net.mcreator.ceshi.client.gui.GanjinglajitongScreen;
 import net.mcreator.ceshi.client.gui.GUIqiwuxuanzeScreen;
 import net.mcreator.ceshi.client.gui.GUImoladuiScreen;

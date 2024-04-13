@@ -17,7 +17,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.world.inventory.TaozhuangchakanMenu;
-import net.mcreator.ceshi.world.inventory.GUIqiwuxuanzeMenu;
+import net.mcreator.ceshi.world.inventory.GuiheitaxinyindaoMenu;
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 
 import io.netty.buffer.Unpooled;
@@ -53,12 +53,12 @@ public class Ceshi_3Procedure {
 					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 						@Override
 						public Component getDisplayName() {
-							return Component.literal("GUIqiwuxuanze");
+							return Component.literal("Guiheitaxinyindao");
 						}
 
 						@Override
 						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new GUIqiwuxuanzeMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							return new GuiheitaxinyindaoMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 						}
 					}, _bpos);
 				}
