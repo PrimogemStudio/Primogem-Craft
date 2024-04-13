@@ -62,6 +62,7 @@ public class Ceshi_3Procedure {
 						}
 					}, _bpos);
 				}
+				entity.getPersistentData().putDouble("pgc_qiwuxuanze", 0);
 			} else {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);

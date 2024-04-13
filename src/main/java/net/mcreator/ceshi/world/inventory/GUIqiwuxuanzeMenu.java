@@ -4,6 +4,9 @@ package net.mcreator.ceshi.world.inventory;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -19,12 +22,15 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.ceshi.procedures.GUIxuanzeqiwusxProcedure;
+import net.mcreator.ceshi.procedures.GUIxuanzeqiwuguanbiProcedure;
 import net.mcreator.ceshi.init.PrimogemcraftModMenus;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+@Mod.EventBusSubscriber
 public class GUIqiwuxuanzeMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -247,6 +253,7 @@ public class GUIqiwuxuanzeMenu extends AbstractContainerMenu implements Supplier
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		GUIxuanzeqiwuguanbiProcedure.execute(world, x, y, z, entity);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
@@ -274,5 +281,17 @@ public class GUIqiwuxuanzeMenu extends AbstractContainerMenu implements Supplier
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
+	}
+
+	@SubscribeEvent
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		Player entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof GUIqiwuxuanzeMenu) {
+			Level world = entity.level();
+			double x = entity.getX();
+			double y = entity.getY();
+			double z = entity.getZ();
+			GUIxuanzeqiwusxProcedure.execute(world, entity);
+		}
 	}
 }

@@ -10,9 +10,8 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.world.inventory.GUIqiwuxuanzeMenu;
-import net.mcreator.ceshi.procedures.Guiqwxzwenben2Procedure;
-import net.mcreator.ceshi.procedures.Guiqwxzwenben1Procedure;
-import net.mcreator.ceshi.procedures.GUIqwxzwenben0Procedure;
+import net.mcreator.ceshi.network.GUIqiwuxuanzeButtonMessage;
+import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.HashMap;
 
@@ -45,12 +44,14 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 35 && mouseX < leftPos + 51 && mouseY > topPos + 53 && mouseY < topPos + 69)
+		if (mouseX > leftPos + 32 && mouseX < leftPos + 48 && mouseY > topPos + 52 && mouseY < topPos + 68)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_iqiwuxuanze.tooltip_sseque_ren_xuan_ze"), mouseX, mouseY);
 		if (mouseX > leftPos + 79 && mouseX < leftPos + 95 && mouseY > topPos + 53 && mouseY < topPos + 69)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_iqiwuxuanze.tooltip_sseque_ren_xuan_ze1"), mouseX, mouseY);
 		if (mouseX > leftPos + 124 && mouseX < leftPos + 140 && mouseY > topPos + 53 && mouseY < topPos + 69)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_iqiwuxuanze.tooltip_sseque_ren_xuan_ze2"), mouseX, mouseY);
+		if (mouseX > leftPos + 5 && mouseX < leftPos + 53 && mouseY > topPos + 6 && mouseY < topPos + 14)
+			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_iqiwuxuanze.tooltip_sscqiang_zhi_tui_chu_jie_mian_hui_sui_ji_xuan_ze_ge_qi_wu"), mouseX, mouseY);
 	}
 
 	@Override
@@ -78,15 +79,7 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font,
-
-				GUIqwxzwenben0Procedure.execute(entity), 22, 8, -12829636, false);
-		guiGraphics.drawString(this.font,
-
-				Guiqwxzwenben1Procedure.execute(entity), 61, 8, -12829636, false);
-		guiGraphics.drawString(this.font,
-
-				Guiqwxzwenben2Procedure.execute(entity), 107, 8, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.gu_iqiwuxuanze.label_xuan_ze_ge_qi_wu"), 5, 5, -1, false);
 	}
 
 	@Override
@@ -98,14 +91,26 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 	public void init() {
 		super.init();
 		imagebutton_xuanze0 = new ImageButton(this.leftPos + 35, this.topPos + 53, 16, 16, 0, 0, 16, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_xuanze0.png"), 16, 32, e -> {
+			if (true) {
+				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new GUIqiwuxuanzeButtonMessage(0, x, y, z));
+				GUIqiwuxuanzeButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_xuanze0", imagebutton_xuanze0);
 		this.addRenderableWidget(imagebutton_xuanze0);
 		imagebutton_xuanze01 = new ImageButton(this.leftPos + 79, this.topPos + 53, 16, 16, 0, 0, 16, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_xuanze01.png"), 16, 32, e -> {
+			if (true) {
+				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new GUIqiwuxuanzeButtonMessage(1, x, y, z));
+				GUIqiwuxuanzeButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_xuanze01", imagebutton_xuanze01);
 		this.addRenderableWidget(imagebutton_xuanze01);
 		imagebutton_xuanze02 = new ImageButton(this.leftPos + 124, this.topPos + 53, 16, 16, 0, 0, 16, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_xuanze02.png"), 16, 32, e -> {
+			if (true) {
+				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new GUIqiwuxuanzeButtonMessage(2, x, y, z));
+				GUIqiwuxuanzeButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_xuanze02", imagebutton_xuanze02);
 		this.addRenderableWidget(imagebutton_xuanze02);

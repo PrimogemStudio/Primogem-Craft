@@ -82,6 +82,9 @@
           "name": "imagebutton_xuanze0",
           "image": "xuanze0.png",
           "hoveredImage": "xuanze1.png",
+          "onClick": {
+            "name": "GUIqwxzanniusx0"
+          },
           "x": 161,
           "y": 90
         }
@@ -92,6 +95,9 @@
           "name": "imagebutton_xuanze01",
           "image": "xuanze0.png",
           "hoveredImage": "xuanze1.png",
+          "onClick": {
+            "name": "GUIqwxzanniusx1"
+          },
           "x": 205,
           "y": 90
         }
@@ -102,6 +108,9 @@
           "name": "imagebutton_xuanze02",
           "image": "xuanze0.png",
           "hoveredImage": "xuanze1.png",
+          "onClick": {
+            "name": "GUIqwxzanniusx2"
+          },
           "x": 250,
           "y": 90
         }
@@ -115,8 +124,8 @@
           },
           "width": 16,
           "height": 16,
-          "x": 161,
-          "y": 90
+          "x": 158,
+          "y": 89
         }
       },
       {
@@ -146,54 +155,40 @@
         }
       },
       {
-        "type": "label",
+        "type": "tooltip",
         "data": {
-          "name": "label_proc_gu_iqwxzwenben_0",
+          "name": "tooltip_sscqiang_zhi_tui_chu_jie_mian_hui_sui_ji_xuan_ze_ge_qi_wu",
           "text": {
-            "fixedValue": "",
-            "name": "GUIqwxzwenben0"
+            "fixedValue": "§c强制退出界面会随机选择一个奇物！"
           },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 148,
-          "y": 45
+          "width": 48,
+          "height": 8,
+          "x": 131,
+          "y": 43
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_proc_guiqwxzwenben_1",
+          "name": "label_xuan_ze_ge_qi_wu",
           "text": {
-            "fixedValue": "",
-            "name": "Guiqwxzwenben1"
+            "fixedValue": "选择一个奇物"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
-          "x": 187,
-          "y": 45
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_guiqwxzwenben_2",
-          "text": {
-            "fixedValue": "",
-            "name": "Guiqwxzwenben2"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 233,
-          "y": 45
+          "x": 131,
+          "y": 42
         }
       }
     ],
+    "onTick": {
+      "name": "GUIxuanzeqiwusx"
+    },
+    "onClosed": {
+      "name": "GUIxuanzeqiwuguanbi"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
