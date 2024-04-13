@@ -26843,6 +26843,106 @@
           "src/main/java/net/mcreator/ceshi/world/inventory/GUIqiwuxuanzeMenu.java"
         ]
       }
+    },
+    {
+      "name": "GUIqwxzwenben0",
+      "type": "procedure",
+      "sortid": 1562,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gu_iqwxzwenben_0",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/GUIqwxzwenben0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Guiqwxzwenben1",
+      "type": "procedure",
+      "sortid": 1563,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guiqwxzwenben_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Guiqwxzwenben1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Guiqwxzwenben2",
+      "type": "procedure",
+      "sortid": 1564,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guiqwxzwenben_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Guiqwxzwenben2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GUIxuanzeqiwusx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gu_ixuanzeqiwusx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/GUIxuanzeqiwusxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GUIxuanzeqiwuguanbi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gu_ixuanzeqiwuguanbi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/GUIxuanzeqiwuguanbiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [

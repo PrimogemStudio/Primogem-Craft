@@ -144,6 +144,54 @@
           "x": 250,
           "y": 90
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_gu_iqwxzwenben_0",
+          "text": {
+            "fixedValue": "",
+            "name": "GUIqwxzwenben0"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 148,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_guiqwxzwenben_1",
+          "text": {
+            "fixedValue": "",
+            "name": "Guiqwxzwenben1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 187,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_guiqwxzwenben_2",
+          "text": {
+            "fixedValue": "",
+            "name": "Guiqwxzwenben2"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 233,
+          "y": 45
+        }
       }
     ],
     "gridSettings": {

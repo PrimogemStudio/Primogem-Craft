@@ -10,6 +10,9 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.world.inventory.GUIqiwuxuanzeMenu;
+import net.mcreator.ceshi.procedures.Guiqwxzwenben2Procedure;
+import net.mcreator.ceshi.procedures.Guiqwxzwenben1Procedure;
+import net.mcreator.ceshi.procedures.GUIqwxzwenben0Procedure;
 
 import java.util.HashMap;
 
@@ -75,6 +78,15 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font,
+
+				GUIqwxzwenben0Procedure.execute(entity), 22, 8, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				Guiqwxzwenben1Procedure.execute(entity), 61, 8, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				Guiqwxzwenben2Procedure.execute(entity), 107, 8, -12829636, false);
 	}
 
 	@Override
