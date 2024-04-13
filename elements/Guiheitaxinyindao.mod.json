@@ -99,7 +99,8 @@
         "data": {
           "name": "label_xiao_hao_16yu_zhou_sui_pian",
           "text": {
-            "fixedValue": "消耗16宇宙碎片。"
+            "fixedValue": "消耗16宇宙碎片。",
+            "name": "Guigoumaiqiwuwenben"
           },
           "color": {
             "value": -1,

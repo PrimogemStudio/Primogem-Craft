@@ -27063,6 +27063,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "Guigoumaiqiwuwenben",
+      "type": "procedure",
+      "sortid": 1574,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guigoumaiqiwuwenben",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/GuigoumaiqiwuwenbenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [

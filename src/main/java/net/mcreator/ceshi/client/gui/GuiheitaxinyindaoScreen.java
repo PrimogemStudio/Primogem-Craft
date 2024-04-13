@@ -10,6 +10,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.world.inventory.GuiheitaxinyindaoMenu;
+import net.mcreator.ceshi.procedures.GuigoumaiqiwuwenbenProcedure;
 import net.mcreator.ceshi.network.GuiheitaxinyindaoButtonMessage;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
@@ -74,7 +75,9 @@ public class GuiheitaxinyindaoScreen extends AbstractContainerScreen<Guiheitaxin
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.guiheitaxinyindao.label_xiao_hao_1ge_sui_ji_cuo_wu_dai_ma"), 34, 27, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.guiheitaxinyindao.label_xuan_ze_ge_cuo_wu_dai_ma"), 38, 15, -5070724, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.guiheitaxinyindao.label_gou_mai_ge_qi_wu"), 38, 63, -5070724, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.guiheitaxinyindao.label_xiao_hao_16yu_zhou_sui_pian"), 35, 75, -1, false);
+		guiGraphics.drawString(this.font,
+
+				GuigoumaiqiwuwenbenProcedure.execute(entity), 35, 75, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.guiheitaxinyindao.label_chi_kai"), 37, 111, -5070724, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.guiheitaxinyindao.label_chi_kai_zhe_li"), 36, 123, -1, false);
 	}
