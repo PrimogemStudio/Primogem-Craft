@@ -47,4 +47,5 @@ public class PrimogemcraftModMenus {
 	public static final RegistryObject<MenuType<BwdyinhangMenu>> BWDYINHANG = REGISTRY.register("bwdyinhang", () -> IForgeMenuType.create(BwdyinhangMenu::new));
 	public static final RegistryObject<MenuType<CunzheshezhiMenu>> CUNZHESHEZHI = REGISTRY.register("cunzheshezhi", () -> IForgeMenuType.create(CunzheshezhiMenu::new));
 	public static final RegistryObject<MenuType<TaozhuangchakanMenu>> TAOZHUANGCHAKAN = REGISTRY.register("taozhuangchakan", () -> IForgeMenuType.create(TaozhuangchakanMenu::new));
+	public static final RegistryObject<MenuType<GUIqiwuxuanzeMenu>> GU_IQIWUXUANZE = REGISTRY.register("gu_iqiwuxuanze", () -> IForgeMenuType.create(GUIqiwuxuanzeMenu::new));
 }

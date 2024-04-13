@@ -1,0 +1,157 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "color": {
+            "value": -14869978,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 160,
+          "y": 57
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "color": {
+            "value": -14869978,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 204,
+          "y": 57
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "color": {
+            "value": -14869978,
+            "falpha": 0.0
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 249,
+          "y": 57
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_xuanze0",
+          "image": "xuanze0.png",
+          "hoveredImage": "xuanze1.png",
+          "x": 161,
+          "y": 90
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_xuanze01",
+          "image": "xuanze0.png",
+          "hoveredImage": "xuanze1.png",
+          "x": 205,
+          "y": 90
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_xuanze02",
+          "image": "xuanze0.png",
+          "hoveredImage": "xuanze1.png",
+          "x": 250,
+          "y": 90
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sseque_ren_xuan_ze",
+          "text": {
+            "fixedValue": "§e确认选择"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 161,
+          "y": 90
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sseque_ren_xuan_ze1",
+          "text": {
+            "fixedValue": "§e确认选择"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 205,
+          "y": 90
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sseque_ren_xuan_ze2",
+          "text": {
+            "fixedValue": "§e确认选择"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 250,
+          "y": 90
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 37,
+      "oy": 44,
+      "snapOnGrid": false
+    }
+  }
+}

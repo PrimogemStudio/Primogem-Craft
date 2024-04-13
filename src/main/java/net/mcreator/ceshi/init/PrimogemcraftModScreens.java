@@ -49,6 +49,7 @@ public class PrimogemcraftModScreens {
 			MenuScreens.register(PrimogemcraftModMenus.BWDYINHANG.get(), BwdyinhangScreen::new);
 			MenuScreens.register(PrimogemcraftModMenus.CUNZHESHEZHI.get(), CunzheshezhiScreen::new);
 			MenuScreens.register(PrimogemcraftModMenus.TAOZHUANGCHAKAN.get(), TaozhuangchakanScreen::new);
+			MenuScreens.register(PrimogemcraftModMenus.GU_IQIWUXUANZE.get(), GUIqiwuxuanzeScreen::new);
 		});
 	}
 }
