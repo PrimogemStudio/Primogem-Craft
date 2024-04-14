@@ -3,11 +3,15 @@
   "category": "misc",
   "pattern": [
     "aa",
-    "aa"
+    "aa",
+    "b "
   ],
   "key": {
     "a": {
       "item": "primogemcraft:shengzhangbifeisuixie"
+    },
+    "b": {
+      "item": "minecraft:stick"
     }
   },
   "result": {
