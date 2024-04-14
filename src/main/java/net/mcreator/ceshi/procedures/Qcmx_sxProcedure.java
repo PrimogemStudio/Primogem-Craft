@@ -61,8 +61,8 @@ public class Qcmx_sxProcedure {
 				}
 				if (a != 0) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, (int) (itemstack.getOrCreateTag().getDouble("quchi_sx") * 20), (int) (a * (1 / 16.0) - 1), false, false));
-					itemstack.getOrCreateTag().putDouble("quchi_sx", (itemstack.getOrCreateTag().getDouble("quchi_sx") - Math.floor(a * (1 / 16.0)) * 5));
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, (int) (itemstack.getOrCreateTag().getDouble("quchi_sx") * 20), (int) (Math.floor(a * (1 / 16.0)) - 1), false, false));
+					itemstack.getOrCreateTag().putDouble("quchi_sx", (itemstack.getOrCreateTag().getDouble("quchi_sx") - Math.ceil(a * (1 / 16.0)) * 5));
 					if (itemstack.getOrCreateTag().getDouble("quchi_sx") < 1) {
 						c = itemstack;
 						if (entity instanceof Player _player) {

@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
@@ -10,16 +10,36 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "CUSTOM:Jinguangbaodi01"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:Zhaiquan"
-    },
-    "smithingInputTemplateStack": {
-      "value": "Blocks.RED_FLOWER#2"
-    },
-    "smithingReturnStack": {
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Yuzhousuipian"
+      },
+      {
+        "value": "CUSTOM:Shanbianzhichen"
+      },
+      {
+        "value": "CUSTOM:Yuzhousuipian"
+      },
+      {
+        "value": "CUSTOM:Yuzhousuipian"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#2"
+      },
+      {
+        "value": "CUSTOM:Yuzhousuipian"
+      },
+      {
+        "value": "CUSTOM:Yuzhousuipian"
+      },
+      {
+        "value": "CUSTOM:Yuzhousuipian"
+      },
+      {
+        "value": "CUSTOM:Yuzhousuipian"
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:Shenshenghuaban"
     },
     "name": "shenmihuabanpeifang",

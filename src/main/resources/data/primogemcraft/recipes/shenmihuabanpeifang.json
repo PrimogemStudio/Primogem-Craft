@@ -1,15 +1,24 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": {
-    "item": "minecraft:allium"
-  },
-  "base": {
-    "item": "primogemcraft:jinguangbaodi_01"
-  },
-  "addition": {
-    "item": "primogemcraft:zhaiquan"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:yuzhousuipian"
+    },
+    "b": {
+      "item": "primogemcraft:shanbianzhichen"
+    },
+    "c": {
+      "item": "minecraft:allium"
+    }
   },
   "result": {
-    "item": "primogemcraft:shenshenghuaban"
+    "item": "primogemcraft:shenshenghuaban",
+    "count": 1
   }
 }
