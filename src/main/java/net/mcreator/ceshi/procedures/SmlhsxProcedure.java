@@ -25,17 +25,17 @@ public class SmlhsxProcedure {
 			if (Math.random() < 0.5) {
 				for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 1, 3); index0++) {
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.8), (entity.getZ()),
 								new ItemStack((ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation("pgc:lihe_0"))).getRandomElement(RandomSource.create()).orElseGet(() -> Items.AIR))));
-						entityToSpawn.setPickUpDelay(5);
+						entityToSpawn.setPickUpDelay(0);
 						_level.addFreshEntity(entityToSpawn);
 					}
 				}
 			} else {
 				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.8), (entity.getZ()),
 							new ItemStack((ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation("pgc:lihe_1"))).getRandomElement(RandomSource.create()).orElseGet(() -> Items.AIR))));
-					entityToSpawn.setPickUpDelay(5);
+					entityToSpawn.setPickUpDelay(0);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
