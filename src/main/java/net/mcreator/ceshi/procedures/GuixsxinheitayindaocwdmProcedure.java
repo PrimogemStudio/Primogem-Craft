@@ -49,11 +49,6 @@ public class GuixsxinheitayindaocwdmProcedure {
 						}, _bpos);
 					}
 				});
-			} else {
-				if (entity instanceof Player _player)
-					_player.closeContainer();
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("\u00A7c\u5F53\u524D\u6CA1\u6709\u8DB3\u591F\u7684\u968F\u673A\u9519\u8BEF\u4EE3\u7801\u7403"), false);
 			}
 		}
 	}

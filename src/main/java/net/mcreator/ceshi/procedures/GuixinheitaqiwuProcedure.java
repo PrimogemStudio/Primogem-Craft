@@ -68,17 +68,7 @@ public class GuixinheitaqiwuProcedure {
 							}, _bpos);
 						}
 					});
-				} else {
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("\u00A7c\u5F53\u524D\u5B87\u5B99\u788E\u7247\u6570\u91CF\u4E0D\u8DB3\uFF01"), false);
-					if (entity instanceof Player _player)
-						_player.closeContainer();
 				}
-			} else {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("\u00A7c\u5F53\u524D\u6CA1\u6709\u5B87\u5B99\u788E\u7247\uFF01"), false);
-				if (entity instanceof Player _player)
-					_player.closeContainer();
 			}
 		}
 	}

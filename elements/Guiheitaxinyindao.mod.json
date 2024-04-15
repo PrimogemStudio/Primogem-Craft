@@ -139,6 +139,38 @@
           "x": 162,
           "y": 160
         }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sscdang_qian_mei_you_zu_gou_de_sui_ji_cuo_wu_dai_ma_qiu",
+          "text": {
+            "fixedValue": "§c当前没有足够的随机错误代码球！"
+          },
+          "displayCondition": {
+            "name": "Guixinheitayindaocuowufanhui"
+          },
+          "width": 114,
+          "height": 43,
+          "x": 157,
+          "y": 50
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sscdang_qian_yu_zhou_sui_pian_shu_liang_bu_zu",
+          "text": {
+            "fixedValue": "§c当前宇宙碎片数量不足！"
+          },
+          "displayCondition": {
+            "name": "GUIxinhtydcuowufanhui"
+          },
+          "width": 113,
+          "height": 43,
+          "x": 158,
+          "y": 98
+        }
       }
     ],
     "gridSettings": {

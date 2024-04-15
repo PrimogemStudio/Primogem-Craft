@@ -10,7 +10,9 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.world.inventory.GuiheitaxinyindaoMenu;
+import net.mcreator.ceshi.procedures.GuixinheitayindaocuowufanhuiProcedure;
 import net.mcreator.ceshi.procedures.GuigoumaiqiwuwenbenProcedure;
+import net.mcreator.ceshi.procedures.GUIxinhtydcuowufanhuiProcedure;
 import net.mcreator.ceshi.network.GuiheitaxinyindaoButtonMessage;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
@@ -45,6 +47,12 @@ public class GuiheitaxinyindaoScreen extends AbstractContainerScreen<Guiheitaxin
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		if (GuixinheitayindaocuowufanhuiProcedure.execute(entity))
+			if (mouseX > leftPos + 31 && mouseX < leftPos + 145 && mouseY > topPos + 13 && mouseY < topPos + 56)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guiheitaxinyindao.tooltip_sscdang_qian_mei_you_zu_gou_de_sui_ji_cuo_wu_dai_ma_qiu"), mouseX, mouseY);
+		if (GUIxinhtydcuowufanhuiProcedure.execute(world, entity))
+			if (mouseX > leftPos + 32 && mouseX < leftPos + 145 && mouseY > topPos + 61 && mouseY < topPos + 104)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guiheitaxinyindao.tooltip_sscdang_qian_yu_zhou_sui_pian_shu_liang_bu_zu"), mouseX, mouseY);
 	}
 
 	@Override
