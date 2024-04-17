@@ -16,6 +16,7 @@ import net.mcreator.ceshi.world.inventory.YinhangMenu;
 import net.mcreator.ceshi.world.inventory.YibangrenzhinangguiMenu;
 import net.mcreator.ceshi.world.inventory.TaozhuangchakanMenu;
 import net.mcreator.ceshi.world.inventory.SuijiqiwuMenu;
+import net.mcreator.ceshi.world.inventory.SJGUIfumo01Menu;
 import net.mcreator.ceshi.world.inventory.SJGUIfumo00Menu;
 import net.mcreator.ceshi.world.inventory.MolalajitongMenu;
 import net.mcreator.ceshi.world.inventory.MaoxianjiazhinangguiMenu;
@@ -55,4 +56,5 @@ public class PrimogemcraftModMenus {
 	public static final RegistryObject<MenuType<GuiheitaxinyindaoMenu>> GUIHEITAXINYINDAO = REGISTRY.register("guiheitaxinyindao", () -> IForgeMenuType.create(GuiheitaxinyindaoMenu::new));
 	public static final RegistryObject<MenuType<GUISJfumoMenu>> GUIS_JFUMO = REGISTRY.register("guis_jfumo", () -> IForgeMenuType.create(GUISJfumoMenu::new));
 	public static final RegistryObject<MenuType<SJGUIfumo00Menu>> SJGU_IFUMO_00 = REGISTRY.register("sjgu_ifumo_00", () -> IForgeMenuType.create(SJGUIfumo00Menu::new));
+	public static final RegistryObject<MenuType<SJGUIfumo01Menu>> SJGU_IFUMO_01 = REGISTRY.register("sjgu_ifumo_01", () -> IForgeMenuType.create(SJGUIfumo01Menu::new));
 }

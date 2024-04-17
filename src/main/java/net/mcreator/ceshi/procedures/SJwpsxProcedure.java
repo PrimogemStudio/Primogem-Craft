@@ -21,6 +21,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.ceshi.world.inventory.SJGUIfumo01Menu;
 import net.mcreator.ceshi.world.inventory.SJGUIfumo00Menu;
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 
@@ -61,6 +62,22 @@ public class SJwpsxProcedure {
 							@Override
 							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
 								return new SJGUIfumo00Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
+				}
+				if (a.getOrCreateTag().getBoolean("PGC_fumo_shijian_01")) {
+					if (entity instanceof ServerPlayer _ent) {
+						BlockPos _bpos = BlockPos.containing(x, y, z);
+						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+							@Override
+							public Component getDisplayName() {
+								return Component.literal("SJGUIfumo01");
+							}
+
+							@Override
+							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+								return new SJGUIfumo01Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 							}
 						}, _bpos);
 					}
