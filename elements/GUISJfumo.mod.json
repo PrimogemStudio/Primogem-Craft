@@ -49,13 +49,105 @@
       {
         "type": "image",
         "data": {
+          "image": "gui_baocuo.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GUIfumobaocuo"
+          },
+          "x": 200,
+          "y": 66
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian",
+          "text": {
+            "fixedValue": "§c该物品不满足附魔条件！"
+          },
+          "displayCondition": {
+            "name": "GUIfumobaocuo"
+          },
+          "width": 5,
+          "height": 28,
+          "x": 223,
+          "y": 66
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian1",
+          "text": {
+            "fixedValue": "§c该物品不满足附魔条件！"
+          },
+          "displayCondition": {
+            "name": "GUIfumopinzhixianshi0"
+          },
+          "width": 24,
+          "height": 5,
+          "x": 200,
+          "y": 89
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian2",
+          "text": {
+            "fixedValue": "§c该物品不满足附魔条件！"
+          },
+          "displayCondition": {
+            "name": "GUIfumopinzhixianshi0"
+          },
+          "width": 5,
+          "height": 23,
+          "x": 200,
+          "y": 66
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian3",
+          "text": {
+            "fixedValue": "§c该物品不满足附魔条件！"
+          },
+          "displayCondition": {
+            "name": "GUIfumopinzhixianshi0"
+          },
+          "width": 18,
+          "height": 5,
+          "x": 205,
+          "y": 66
+        }
+      },
+      {
+        "type": "image",
+        "data": {
           "image": "guifu_bai.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "GUIfumopinzhixianshi0"
           },
-          "x": 183,
-          "y": 52
+          "x": 206,
+          "y": 57
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ss7di_pin_zhi_fu_mo",
+          "text": {
+            "fixedValue": "§7低品质附魔"
+          },
+          "displayCondition": {
+            "name": "GUIfumopinzhixianshi0"
+          },
+          "width": 17,
+          "height": 8,
+          "x": 206,
+          "y": 57
         }
       },
       {
@@ -66,8 +158,24 @@
           "displayCondition": {
             "name": "GUIfumopinzhixianshi1"
           },
-          "x": 183,
-          "y": 52
+          "x": 206,
+          "y": 57
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ssbzhong_pin_zhi_fu_mo",
+          "text": {
+            "fixedValue": "§b中品质附魔"
+          },
+          "displayCondition": {
+            "name": "GUIfumopinzhixianshi1"
+          },
+          "width": 17,
+          "height": 8,
+          "x": 206,
+          "y": 57
         }
       },
       {
@@ -78,8 +186,24 @@
           "displayCondition": {
             "name": "GUIfumopinzhixianshi2"
           },
-          "x": 183,
-          "y": 52
+          "x": 206,
+          "y": 57
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_ss6gao_pin_zhi_fu_mo",
+          "text": {
+            "fixedValue": "§6高品质附魔"
+          },
+          "displayCondition": {
+            "name": "GUIfumopinzhixianshi2"
+          },
+          "width": 17,
+          "height": 8,
+          "x": 206,
+          "y": 57
         }
       },
       {
@@ -90,8 +214,24 @@
           "displayCondition": {
             "name": "GUIfumopinzhixianshi3"
           },
-          "x": 183,
-          "y": 52
+          "x": 206,
+          "y": 57
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sscte_ji_fu_mo",
+          "text": {
+            "fixedValue": "§c特级附魔"
+          },
+          "displayCondition": {
+            "name": "GUIfumopinzhixianshi3"
+          },
+          "width": 17,
+          "height": 8,
+          "x": 206,
+          "y": 57
         }
       }
     ],

@@ -72,7 +72,7 @@ public class GUISJfumoSlotMessage {
 			return;
 		if (slot == 0 && changeType == 0) {
 
-			GUIshijianfumoshuxingProcedure.execute(world, entity);
+			GUIshijianfumoshuxingProcedure.execute(entity);
 		}
 	}
 
