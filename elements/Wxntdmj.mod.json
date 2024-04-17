@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "无效念头代码机",
-    "icon": "yuanshi.png",
+    "icon": "zhi_song_da_nao_.png",
     "color": {
       "value": -1,
       "falpha": 0.0
