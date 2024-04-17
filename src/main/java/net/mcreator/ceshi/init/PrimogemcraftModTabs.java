@@ -194,6 +194,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.GZSMZ.get());
 				tabData.accept(PrimogemcraftModItems.QWQSKXJXT.get());
 				tabData.accept(PrimogemcraftModItems.QWSMCL.get());
+				tabData.accept(PrimogemcraftModItems.SH_JWUPIN.get());
 			})
 
 					.build());

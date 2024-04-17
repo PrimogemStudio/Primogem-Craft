@@ -1,0 +1,8 @@
+{
+  "parent": "primogemcraft:custom/shijian_moxing",
+  "textures": {
+    "0": "primogemcraft:block/shijiansucai",
+    "missing": "primogemcraft:block/shijiansucai",
+    "particle": "primogemcraft:item/shijiansucai"
+  }
+}

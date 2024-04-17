@@ -14,4 +14,6 @@ public class PrimogemcraftModGameRules {
 	public static final GameRules.Key<GameRules.IntegerValue> GUIZEMOYINSHENSHENGMINGZHI = GameRules.register("guizemoyinshenshengmingzhi", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(256));
 	public static final GameRules.Key<GameRules.BooleanValue> GUIZEYUANSHISHENGCHENG = GameRules.register("guizeyuanshishengcheng", GameRules.Category.UPDATES, GameRules.BooleanValue.create(true));
 	public static final GameRules.Key<GameRules.BooleanValue> JINYONGNANG = GameRules.register("jinyongnang", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
+	public static final GameRules.Key<GameRules.IntegerValue> GUIZESUIJISHIJIAN = GameRules.register("guizesuijishijian", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(100));
+	public static final GameRules.Key<GameRules.IntegerValue> GUIZESHIJIANXIANZHI = GameRules.register("guizeshijianxianzhi", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(5));
 }

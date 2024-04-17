@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "§b原石工艺 随机事件掉落概率",
+    "description": "概率=<值>* 0.01（%）",
+    "category": "SPAWNING",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 100
+  }
+}

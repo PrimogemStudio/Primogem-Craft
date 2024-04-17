@@ -27127,6 +27127,91 @@
           }
         ]
       }
+    },
+    {
+      "name": "SHJwupin",
+      "type": "item",
+      "sortid": 1577,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sh_jwupin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/sh_jwupin.json",
+          "src/main/java/net/mcreator/ceshi/item/SHJwupinItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Guizesuijishijian",
+      "type": "gamerule",
+      "sortid": 1578,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guizesuijishijian",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
+    },
+    {
+      "name": "Guizeshijianxianzhi",
+      "type": "gamerule",
+      "sortid": 1579,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guizeshijianxianzhi",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
+    },
+    {
+      "name": "Suijishijiandiaoluo",
+      "type": "procedure",
+      "sortid": 1580,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suijishijiandiaoluo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/SuijishijiandiaoluoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shijianxianzhishuaxin",
+      "type": "procedure",
+      "sortid": 1581,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shijianxianzhishuaxin",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -27159,6 +27244,18 @@
       "type": "logic",
       "scope": "global",
       "value": "false"
+    },
+    {
+      "name": "shijian_xianzhi",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "jishiqi_meiri",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -28592,8 +28689,10 @@
       "item.primogemcraft.axzsshjsj": "§d『钻石合金升级』§b哀叙冰玉",
       "advancements.cchangchangkan.descr": "获得§5垃圾",
       "advancements.jdybdw.descr": "获得钻石合金制元素模板",
+      "gamerule.guizeshijianxianzhi.description": "每个游戏日至多掉落几次随机事件",
       "block.primogemcraft.lajsk": "§klsjs§r金属块",
       "item.primogemcraft.axhjt_leggings": "§b『哀叙冰玉』§e下界合金护腿",
+      "gamerule.guizesuijishijian.description": "概率\u003d\u003c值\u003e* 0.01（%）",
       "effect.primogemcraft.zhongguizhongjuxiaoguo": "§a已修复§f代码",
       "subtitles.xumimozhuang": "",
       "gui.primogemcraft.yinhang.label_ti_gong_ping_zheng_hou_jiang_huo_de": "gain after the voucher submitted",
@@ -28666,6 +28765,7 @@
       "item.primogemcraft.szhjkj_boots": "§a『生长碧翡』§e下界合金靴子",
       "advancements.zhzhongjixintu.title": "终极信徒",
       "item.primogemcraft.tashanglvtuchangpian.desc": "HOYO-MiX",
+      "gamerule.guizesuijishijian": "§b原石工艺 随机事件掉落概率",
       "effect.linzhong": "Deathbed",
       "item.primogemcraft.mmolachutou": "§e摩拉 锄",
       "item.primogemcraft.zizaihejinjian": "§a『自在松石』§e下界合金剑",
@@ -28936,6 +29036,7 @@
       "advancements.jdwqqcb.descr": "获得雾切之回光精炼[1]",
       "gui.primogemcraft.zhangquanzhezhinanggui.label_wu_pin_lan": "物品栏",
       "advancements.djmszb.title": "§m米式装备",
+      "item.primogemcraft.sh_jwupin": "随机事件",
       "effect.primogemcraft.feixing": "飞行",
       "block.primogemcraft.yiyishijiemuzhalan": "异世界木 栅栏",
       "item.primogemcraft.fengdandaibiao.desc": "HOYO-MiX",
@@ -29066,6 +29167,7 @@
       "gui.primogemcraft.cunzheshezhi.button_xie_ru": "写入",
       "item.primogemcraft.zhjsl": "智慧金属粒",
       "gui.primogemcraft.taozhuangchakan.label_shui_01": "水",
+      "gamerule.guizeshijianxianzhi": "§b原石工艺 随机事件掉落数量限制",
       "item.primogemcraft.shenshenghuaban": "§5神秘花瓣",
       "advancements.nnizhiguanchou.title": "你只管抽卡",
       "advancements.jdyszb.title": "钻石降级版",
@@ -29515,8 +29617,10 @@
       "item.primogemcraft.axzsshjsj": "§d『Netherite Upgrade』§bShivada Jade Gemstone",
       "advancements.cchangchangkan.descr": "Obtain§5Trash",
       "advancements.jdybdw.descr": "obtain the Netherite Upgrading element template",
+      "gamerule.guizeshijianxianzhi.description": "每个游戏日至多掉落几次随机事件",
       "block.primogemcraft.lajsk": "§klsjs§rMetal block",
       "item.primogemcraft.axhjt_leggings": "§b『Shivada Jade』§eNetherite leggings",
+      "gamerule.guizesuijishijian.description": "概率\u003d\u003c值\u003e* 0.01（%）",
       "effect.primogemcraft.zhongguizhongjuxiaoguo": "§aFixed§fCode",
       "subtitles.xumimozhuang": "",
       "gui.primogemcraft.yinhang.label_ti_gong_ping_zheng_hou_jiang_huo_de": "gain after the voucher submitted",
@@ -29589,6 +29693,7 @@
       "item.primogemcraft.szhjkj_boots": "§a『Nagadus Emerald』§eNetherite boots",
       "advancements.zhzhongjixintu.title": "Ultra Devotees",
       "item.primogemcraft.tashanglvtuchangpian.desc": "Take The Journey HOYO-MiX",
+      "gamerule.guizesuijishijian": "§b原石工艺 随机事件掉落概率",
       "effect.linzhong": "Deathbed",
       "item.primogemcraft.mmolachutou": "§eMora Hoe",
       "item.primogemcraft.zizaihejinjian": "§a『Vayuda Turquoise』§eNethetite Sword",
@@ -29859,6 +29964,7 @@
       "advancements.jdwqqcb.descr": "获得雾切之回光精炼[1]",
       "gui.primogemcraft.zhangquanzhezhinanggui.label_wu_pin_lan": "Inventory",
       "advancements.djmszb.title": "§m米式装备",
+      "item.primogemcraft.sh_jwupin": "随机事件",
       "effect.primogemcraft.feixing": "Flying",
       "block.primogemcraft.yiyishijiemuzhalan": "The Another World Wood Fence",
       "item.primogemcraft.fengdandaibiao.desc": "HOYO-MiX",
@@ -29989,6 +30095,7 @@
       "gui.primogemcraft.cunzheshezhi.button_xie_ru": "写入",
       "item.primogemcraft.zhjsl": "Ingenuity Nugget",
       "gui.primogemcraft.taozhuangchakan.label_shui_01": "水",
+      "gamerule.guizeshijianxianzhi": "§b原石工艺 随机事件掉落数量限制",
       "item.primogemcraft.shenshenghuaban": "§5Mysterious Petal",
       "advancements.nnizhiguanchou.title": "Just Gacha",
       "advancements.jdyszb.title": "钻石降级版",
@@ -30438,8 +30545,10 @@
       "item.primogemcraft.axzsshjsj": "§d『钻石合金升级』§b哀叙冰玉",
       "advancements.cchangchangkan.descr": "获得§5垃圾",
       "advancements.jdybdw.descr": "获得钻石合金制元素模板",
+      "gamerule.guizeshijianxianzhi.description": "每个游戏日至多掉落几次随机事件",
       "block.primogemcraft.lajsk": "§klsjs§r金属块",
       "item.primogemcraft.axhjt_leggings": "§b『哀叙冰玉』§e下界合金护腿",
+      "gamerule.guizesuijishijian.description": "概率\u003d\u003c值\u003e* 0.01（%）",
       "effect.primogemcraft.zhongguizhongjuxiaoguo": "§a已修复§f代码",
       "subtitles.xumimozhuang": "",
       "gui.primogemcraft.yinhang.label_ti_gong_ping_zheng_hou_jiang_huo_de": "提供凭证后将获得",
@@ -30511,6 +30620,7 @@
       "item.primogemcraft.szhjkj_boots": "§a『生长碧翡』§e下界合金靴子",
       "advancements.zhzhongjixintu.title": "终极信徒",
       "item.primogemcraft.tashanglvtuchangpian.desc": "HOYO-MiX",
+      "gamerule.guizesuijishijian": "§b原石工艺 随机事件掉落概率",
       "effect.linzhong": "临终",
       "item.primogemcraft.mmolachutou": "§e摩拉 锄",
       "item.primogemcraft.zizaihejinjian": "§a『自在松石』§e下界合金剑",
@@ -30777,6 +30887,7 @@
       "advancements.jdwqqcb.descr": "获得雾切之回光精炼[1]",
       "gui.primogemcraft.zhangquanzhezhinanggui.label_wu_pin_lan": "物品栏",
       "advancements.djmszb.title": "§m米式装备",
+      "item.primogemcraft.sh_jwupin": "随机事件",
       "subtitles.wu_sheng": "....",
       "effect.primogemcraft.feixing": "飞行",
       "block.primogemcraft.yiyishijiemuzhalan": "异世界木 栅栏",
@@ -30907,6 +31018,7 @@
       "gui.primogemcraft.cunzheshezhi.button_xie_ru": "写入",
       "item.primogemcraft.zhjsl": "智慧金属粒",
       "gui.primogemcraft.taozhuangchakan.label_shui_01": "水",
+      "gamerule.guizeshijianxianzhi": "§b原石工艺 随机事件掉落数量限制",
       "item.primogemcraft.shenshenghuaban": "§5神秘花瓣",
       "advancements.nnizhiguanchou.title": "你只管抽卡",
       "advancements.jdyszb.title": "钻石降级版",
