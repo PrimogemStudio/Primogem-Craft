@@ -35,6 +35,9 @@ public class SuijishijiandiaoluoProcedure {
 			if (Math.random() < ((world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZESUIJISHIJIAN)) * 0.01) / 100
 					&& PrimogemcraftModVariables.MapVariables.get(world).shijian_xianzhi < (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZESHIJIANXIANZHI))) {
 				a = new ItemStack(PrimogemcraftModItems.SH_JWUPIN.get());
+				if (Math.random() < 1) {
+					a.getOrCreateTag().putBoolean("PGC_fumo_shijian_00", true);
+				}
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, a);
 					entityToSpawn.setPickUpDelay(40);
