@@ -116,11 +116,6 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		taozhuang_0 = new EditBox(this.font, this.leftPos + 25, this.topPos + 26, 25, 18, Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_0")) {

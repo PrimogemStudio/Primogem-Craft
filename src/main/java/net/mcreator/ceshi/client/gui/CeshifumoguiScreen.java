@@ -75,11 +75,6 @@ public class CeshifumoguiScreen extends AbstractContainerScreen<CeshifumoguiMenu
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		imagebutton_heitasuijifumo = new ImageButton(this.leftPos + 55, this.topPos + 59, 64, 19, 0, 0, 19, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_heitasuijifumo.png"), 64, 38, e -> {

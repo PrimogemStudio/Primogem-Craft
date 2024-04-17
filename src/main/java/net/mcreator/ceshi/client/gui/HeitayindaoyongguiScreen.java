@@ -79,11 +79,6 @@ public class HeitayindaoyongguiScreen extends AbstractContainerScreen<Heitayinda
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		imagebutton_heitaanniu = new ImageButton(this.leftPos + 96, this.topPos + 34, 56, 20, 0, 0, 20, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_heitaanniu.png"), 56, 40, e -> {

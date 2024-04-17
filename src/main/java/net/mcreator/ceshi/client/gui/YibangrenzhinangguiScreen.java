@@ -70,11 +70,6 @@ public class YibangrenzhinangguiScreen extends AbstractContainerScreen<Yibangren
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

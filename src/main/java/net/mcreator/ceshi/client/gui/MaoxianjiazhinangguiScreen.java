@@ -70,11 +70,6 @@ public class MaoxianjiazhinangguiScreen extends AbstractContainerScreen<Maoxianj
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

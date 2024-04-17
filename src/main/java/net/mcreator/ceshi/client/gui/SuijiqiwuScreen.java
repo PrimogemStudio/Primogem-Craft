@@ -73,11 +73,6 @@ public class SuijiqiwuScreen extends AbstractContainerScreen<SuijiqiwuMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		button_shua_xin = Button.builder(Component.translatable("gui.primogemcraft.suijiqiwu.button_shua_xin"), e -> {

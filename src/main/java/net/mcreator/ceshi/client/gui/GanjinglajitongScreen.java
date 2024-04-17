@@ -70,11 +70,6 @@ public class GanjinglajitongScreen extends AbstractContainerScreen<Ganjinglajito
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

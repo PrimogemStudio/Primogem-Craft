@@ -104,11 +104,6 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		cunzhe_shuliang = new EditBox(this.font, this.leftPos + 66, this.topPos + 36, 45, 18, Component.translatable("gui.primogemcraft.cunzheshezhi.cunzhe_shuliang")) {

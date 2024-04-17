@@ -83,11 +83,6 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		imagebutton_xuanze0 = new ImageButton(this.leftPos + 35, this.topPos + 53, 16, 16, 0, 0, 16, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_xuanze0.png"), 16, 32, e -> {

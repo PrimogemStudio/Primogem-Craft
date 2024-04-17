@@ -82,11 +82,6 @@ public class BwdyinhangScreen extends AbstractContainerScreen<BwdyinhangMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		imagebutton_dui = new ImageButton(this.leftPos + 127, this.topPos + 27, 21, 21, 0, 0, 21, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_dui.png"), 21, 42, e -> {

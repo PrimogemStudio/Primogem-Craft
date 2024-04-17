@@ -73,11 +73,6 @@ public class CeshishijianxuanzejiemianScreen extends AbstractContainerScreen<Ces
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		button_shua_xin = Button.builder(Component.translatable("gui.primogemcraft.ceshishijianxuanzejiemian.button_shua_xin"), e -> {

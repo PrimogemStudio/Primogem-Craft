@@ -91,11 +91,6 @@ public class GuiheitaxinyindaoScreen extends AbstractContainerScreen<Guiheitaxin
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		imagebutton_heita_xuanzeanniu = new ImageButton(this.leftPos + 31, this.topPos + 13, 114, 43, 0, 0, 43, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_heita_xuanzeanniu.png"), 114, 86, e -> {

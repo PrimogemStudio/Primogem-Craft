@@ -70,11 +70,6 @@ public class LiulangzhezhinangguiScreen extends AbstractContainerScreen<Liulangz
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

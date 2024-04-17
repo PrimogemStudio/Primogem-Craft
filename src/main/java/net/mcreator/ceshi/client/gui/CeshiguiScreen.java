@@ -70,11 +70,6 @@ public class CeshiguiScreen extends AbstractContainerScreen<CeshiguiMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}
