@@ -235,6 +235,9 @@
         }
       }
     ],
+    "onClosed": {
+      "name": "GUISJfumo_guanbi"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

@@ -27505,6 +27505,29 @@
           }
         ]
       }
+    },
+    {
+      "name": "GUISJfumo_guanbi",
+      "type": "procedure",
+      "sortid": 1594,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guis_jfumo_guanbi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/GUISJfumo_guanbiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [

@@ -44,7 +44,6 @@ public class SJwpsxProcedure {
 		ItemStack a = ItemStack.EMPTY;
 		a = (itemstack.copy());
 		if (a.getItem() == ForgeRegistries.ITEMS.getValue(new ResourceLocation("primogemcraft:sh_jwupin")) && !entity.getPersistentData().getBoolean("fumo_shijian_daishanchu")) {
-			itemstack.getOrCreateTag().putBoolean("fumo_shijian_daishanchu", true);
 			if (entity.getPersistentData().getDouble("pgc_shijian_fumo_pinzhi") != 0) {
 				if (entity instanceof ServerPlayer _ent) {
 					BlockPos _bpos = BlockPos.containing(x, y, z);
@@ -61,6 +60,7 @@ public class SJwpsxProcedure {
 					}, _bpos);
 				}
 			} else {
+				itemstack.getOrCreateTag().putBoolean("fumo_shijian_daishanchu", true);
 				if (itemstack.getOrCreateTag().getBoolean("PGC_fumo_shijian_00")) {
 					if (entity instanceof ServerPlayer _ent) {
 						BlockPos _bpos = BlockPos.containing(x, y, z);

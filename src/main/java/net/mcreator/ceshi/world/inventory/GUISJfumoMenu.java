@@ -19,6 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.ceshi.procedures.GUISJfumo_guanbiProcedure;
 import net.mcreator.ceshi.network.GUISJfumoSlotMessage;
 import net.mcreator.ceshi.init.PrimogemcraftModMenus;
 import net.mcreator.ceshi.PrimogemcraftMod;
@@ -219,6 +220,7 @@ public class GUISJfumoMenu extends AbstractContainerMenu implements Supplier<Map
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		GUISJfumo_guanbiProcedure.execute(world, entity);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
