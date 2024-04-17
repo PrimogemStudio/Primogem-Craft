@@ -73,10 +73,11 @@ public class SJGUIfumo00Screen extends AbstractContainerScreen<SJGUIfumo00Menu> 
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_20dang_qian_zui_da_hp"), 34, 28, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_70dang_qian_zui_da_hp"), 35, 75, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.sjgu_ifumo_00.label_chi_kai_zhe_li"), 36, 123, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.sjgu_ifumo_00.label_chi_kai_zhe_li1"), 38, 111, -5070724, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_zhong_pin_zhi_fu_mo"), 37, 63, -5070724, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_di_pin_zhi_fu_mo"), 37, 15, -5070724, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_gao_pin_zhi_fu_mo"), 37, 111, -5070724, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_95dang_qian_zui_da_hp"), 35, 123, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.sjgu_ifumo_00.label_yi_ji_20yu_zhou_sui_pian"), 35, 133, -1, false);
 	}
 
 	@Override

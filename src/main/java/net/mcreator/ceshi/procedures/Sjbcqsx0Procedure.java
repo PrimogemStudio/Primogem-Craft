@@ -8,7 +8,7 @@ public class Sjbcqsx0Procedure {
 				? "\u00A77\u4F4E\u54C1\u8D28"
 				: "" + (itemstack.getOrCreateTag().getDouble("shijianbuchang") == 2
 						? "\u00A7b\u4E2D\u54C1\u8D28"
-						: "" + (itemstack.getOrCreateTag().getDouble("shijianbuchang") == 3 ? "\u00A76\u9AD8\u54C1\u8D28" : "\u00A7c\u7279\u7EA7\u54C1\u8D28"))))
+						: "" + (itemstack.getOrCreateTag().getDouble("shijianbuchang") == 3 ? "\u00A76\u9AD8\u54C1\u8D28" : "" + (itemstack.getOrCreateTag().getDouble("shijianbuchang") == 4 ? "\u00A7c\u7279\u7EA7\u54C1\u8D28" : "\u00A77[\u7A7A]")))))
 				+ "\u00A78\u9644\u9B54";
 	}
 }

@@ -44,24 +44,26 @@ public class SJwpsxProcedure {
 			return;
 		ItemStack a = ItemStack.EMPTY;
 		a = (itemstack.copy());
-		if (a.getItem() == ForgeRegistries.ITEMS.getValue(new ResourceLocation("primogemcraft:sh_jwupin")) && !(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PrimogemcraftModMobEffects.SHIJIANBUCHUFA.get()))) {
+		if (a.getItem() == ForgeRegistries.ITEMS.getValue(new ResourceLocation("primogemcraft:sh_jwupin"))) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
 			}
-			if (a.getOrCreateTag().getBoolean("PGC_fumo_shijian_00")) {
-				if (entity instanceof ServerPlayer _ent) {
-					BlockPos _bpos = BlockPos.containing(x, y, z);
-					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-						@Override
-						public Component getDisplayName() {
-							return Component.literal("SJGUIfumo00");
-						}
+			if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PrimogemcraftModMobEffects.SHIJIANBUCHUFA.get()))) {
+				if (a.getOrCreateTag().getBoolean("PGC_fumo_shijian_00")) {
+					if (entity instanceof ServerPlayer _ent) {
+						BlockPos _bpos = BlockPos.containing(x, y, z);
+						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+							@Override
+							public Component getDisplayName() {
+								return Component.literal("SJGUIfumo00");
+							}
 
-						@Override
-						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new SJGUIfumo00Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-						}
-					}, _bpos);
+							@Override
+							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+								return new SJGUIfumo00Menu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
 				}
 			}
 		}

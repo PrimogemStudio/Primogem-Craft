@@ -1,10 +1,11 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
+import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraft.world.item.ShieldItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
@@ -12,40 +13,50 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.BlockPos;
 
-import net.mcreator.ceshi.init.PrimogemcraftModItems;
+import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
-import java.util.List;
-import java.util.Comparator;
 
 public class GUIshijianfumoshuxingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		ItemStack a = ItemStack.EMPTY;
-		ItemStack b = ItemStack.EMPTY;
-		b = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY);
-		if (b.isEnchantable() && !b.isEnchanted() && entity.getPersistentData().getDouble("pgc_shijian_fumo_pinzhi") != 0 && !(b.getItem() instanceof ShieldItem)) {
-			a = (EnchantmentHelper.enchantItem(RandomSource.create(), (b.copy()), (int) (entity.getPersistentData().getDouble("pgc_shijian_fumo_pinzhi") * 10 + Mth.nextInt(RandomSource.create(), 1, 10)), true));
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).isEnchantable()
+				&& !((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).isEnchanted())
+				&& entity.getPersistentData().getDouble("pgc_shijian_fumo_pinzhi") != 0) {
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+						(EnchantmentHelper.enchantItem(RandomSource.create(),
+								(entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY),
+								(int) ((entity.getPersistentData().getDouble("pgc_shijian_fumo_pinzhi") - 1) * 10 + Mth.nextInt(RandomSource.create(), 1, 10)), true)));
+				entityToSpawn.setPickUpDelay(0);
+				entityToSpawn.setUnlimitedLifetime();
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.enchantment_table.use")), SoundSource.PLAYERS, (float) 0.7, 1);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.enchantment_table.use")), SoundSource.PLAYERS, (float) 0.7, 1, false);
+				}
+			}
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = a.copy();
+				ItemStack _setstack = new ItemStack(Blocks.AIR).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get(0)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
-			{
-				final Vec3 _center = new Vec3(x, y, z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-				for (Entity entityiterator : _entfound) {
-					if ((entityiterator instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY).getItem() == PrimogemcraftModItems.SH_JWUPIN.get()) {
-						if (!entityiterator.level().isClientSide())
-							entityiterator.discard();
-					}
-				}
-			}
 			entity.getPersistentData().putBoolean("pgc_shijian_fumo_pinzhi", false);
+			PrimogemcraftMod.queueServerWork(10, () -> {
+				if (entity instanceof Player _player)
+					_player.closeContainer();
+			});
 		}
 	}
 }

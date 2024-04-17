@@ -16,6 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.ceshi.procedures.SJGUIfumo00guanbiProcedure;
 import net.mcreator.ceshi.init.PrimogemcraftModMenus;
 
 import java.util.function.Supplier;
@@ -66,6 +67,12 @@ public class SJGUIfumo00Menu extends AbstractContainerMenu implements Supplier<M
 	@Override
 	public ItemStack quickMoveStack(Player playerIn, int index) {
 		return ItemStack.EMPTY;
+	}
+
+	@Override
+	public void removed(Player playerIn) {
+		super.removed(playerIn);
+		SJGUIfumo00guanbiProcedure.execute(entity);
 	}
 
 	public Map<Integer, Slot> get() {
