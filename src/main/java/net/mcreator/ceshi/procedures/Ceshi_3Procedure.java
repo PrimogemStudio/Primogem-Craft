@@ -11,13 +11,14 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.world.inventory.TaozhuangchakanMenu;
-import net.mcreator.ceshi.world.inventory.GuiheitaxinyindaoMenu;
+import net.mcreator.ceshi.world.inventory.GUISJfumoMenu;
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 
 import io.netty.buffer.Unpooled;
@@ -53,16 +54,16 @@ public class Ceshi_3Procedure {
 					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 						@Override
 						public Component getDisplayName() {
-							return Component.literal("Guiheitaxinyindao");
+							return Component.literal("GUISJfumo");
 						}
 
 						@Override
 						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new GuiheitaxinyindaoMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							return new GUISJfumoMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 						}
 					}, _bpos);
 				}
-				entity.getPersistentData().putDouble("pgc_qiwuxuanze", 0);
+				entity.getPersistentData().putDouble("pgc_shijian_fumo_pinzhi", (Mth.nextInt(RandomSource.create(), 1, 4)));
 			} else {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);

@@ -1,0 +1,106 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "GUIshijianfumoshuxing"
+          },
+          "x": 205,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fang_ru_ke_fu_mo_wu_pin",
+          "text": {
+            "fixedValue": "放入可附魔物品"
+          },
+          "color": {
+            "value": -5070724,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 42
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "guifu_bai.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GUIfumopinzhixianshi0"
+          },
+          "x": 183,
+          "y": 52
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "guifu_lan.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GUIfumopinzhixianshi1"
+          },
+          "x": 183,
+          "y": 52
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "guifu_huang.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GUIfumopinzhixianshi2"
+          },
+          "x": 183,
+          "y": 52
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "guifu_rhong.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GUIfumopinzhixianshi3"
+          },
+          "x": 183,
+          "y": 52
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
