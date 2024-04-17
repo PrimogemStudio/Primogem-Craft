@@ -220,7 +220,7 @@ public class GUISJfumoMenu extends AbstractContainerMenu implements Supplier<Map
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		GUISJfumo_guanbiProcedure.execute(world, entity);
+		GUISJfumo_guanbiProcedure.execute(world, x, y, z, entity);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {

@@ -52,51 +52,6 @@
       {
         "type": "label",
         "data": {
-          "name": "label_dui_wu_pin_jin_xing_1ci_di_pin_zhi_fu_mo",
-          "text": {
-            "fixedValue": "• 对物品进行1次低品质附魔。"
-          },
-          "color": {
-            "value": -5070724,
-            "falpha": 0.0
-          },
-          "x": 163,
-          "y": 52
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_dui_wu_pin_jin_xing_1ci_zhong_pin_zhi_fu_mo",
-          "text": {
-            "fixedValue": "• 对物品进行1次中品质附魔。"
-          },
-          "color": {
-            "value": -5070724,
-            "falpha": 0.0
-          },
-          "x": 163,
-          "y": 100
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_dui_wu_pin_jin_xing_1ci_gao_pin_zhi_fu_mo",
-          "text": {
-            "fixedValue": "• 对物品进行1次高品质附魔。"
-          },
-          "color": {
-            "value": -5070724,
-            "falpha": 0.0
-          },
-          "x": 163,
-          "y": 148
-        }
-      },
-      {
-        "type": "label",
-        "data": {
           "name": "label_xiao_hao_20dang_qian_zui_da_hp",
           "text": {
             "fixedValue": "消耗20%当前最大HP。"
@@ -106,7 +61,7 @@
             "falpha": 0.0
           },
           "x": 160,
-          "y": 64
+          "y": 65
         }
       },
       {
@@ -120,23 +75,68 @@
             "value": -1,
             "falpha": 0.0
           },
-          "x": 160,
-          "y": 111
+          "x": 161,
+          "y": 112
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_xiao_hao_dang_qian_95zui_da_hp",
+          "name": "label_chi_kai_zhe_li",
           "text": {
-            "fixedValue": "消耗当前95%最大HP。"
+            "fixedValue": "离开这里。"
           },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "x": 161,
-          "y": 159
+          "x": 162,
+          "y": 160
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_chi_kai_zhe_li1",
+          "text": {
+            "fixedValue": "离开这里。"
+          },
+          "color": {
+            "value": -5070724,
+            "falpha": 0.0
+          },
+          "x": 164,
+          "y": 148
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dui_wu_pin_jin_xing_1ci_zhong_pin_zhi_fu_mo",
+          "text": {
+            "fixedValue": "对物品进行1次中品质附魔。"
+          },
+          "color": {
+            "value": -5070724,
+            "falpha": 0.0
+          },
+          "x": 163,
+          "y": 100
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dui_wu_pin_jin_xing_1ci_di_pin_zhi_fu_mo",
+          "text": {
+            "fixedValue": "对物品进行1次低品质附魔。"
+          },
+          "color": {
+            "value": -5070724,
+            "falpha": 0.0
+          },
+          "x": 163,
+          "y": 52
         }
       }
     ],

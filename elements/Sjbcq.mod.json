@@ -2,13 +2,13 @@
   "_fv": 60,
   "_type": "item",
   "definition": {
-    "renderType": 1,
-    "texture": "shijiansucai",
-    "customModelName": "shijian_moxing:default",
+    "renderType": 0,
+    "texture": "shijianbuchangquan",
+    "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "随机事件",
-    "rarity": "RARE",
+    "name": "事件补偿券",
+    "rarity": "EPIC",
     "creativeTab": {
       "value": "CUSTOM:Zhenghuo"
     },
@@ -27,7 +27,8 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "Sjbcqsx0"
     },
     "glowCondition": {
       "fixedValue": false
@@ -36,7 +37,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "SJwpsx"
+      "name": "Sjbcq_sx_1"
     },
     "enableRanged": false,
     "shootConstantly": false,

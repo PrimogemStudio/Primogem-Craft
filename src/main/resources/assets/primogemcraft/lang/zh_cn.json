@@ -53,7 +53,7 @@
   "block.primogemcraft.lajsk": "§klsjs§r金属块",
   "gamerule.guizesuijishijian.description": "概率\u003d\u003c值\u003e* 0.01（%）",
   "item.primogemcraft.axhjt_leggings": "§b『哀叙冰玉』§e下界合金护腿",
-  "gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_zhong_pin_zhi_fu_mo": "• 对物品进行1次中品质附魔。",
+  "gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_zhong_pin_zhi_fu_mo": "对物品进行1次中品质附魔。",
   "effect.primogemcraft.zhongguizhongjuxiaoguo": "§a已修复§f代码",
   "subtitles.xumimozhuang": "",
   "gui.primogemcraft.yinhang.label_ti_gong_ping_zheng_hou_jiang_huo_de": "提供凭证后将获得",
@@ -199,6 +199,7 @@
   "item.primogemcraft.ydggz": "§5『奇物』§b永动咕咕钟",
   "enchantment.primogemcraft.ceshifumo_01": "建木附着",
   "item.primogemcraft.axtt_leggings": "§b『哀叙冰玉』§f铁护腿",
+  "effect.primogemcraft.shijianbuchufa": "事件不触发",
   "block.primogemcraft.jljsk": "坚牢金属块",
   "entity.primogemcraft.xiaodeng": "霄灯",
   "gui.primogemcraft.heitayindaoyonggui.label_xiao_hao_16_ge_yu_zhou_sui_pian_huo_de_ge_sui_ji_qi_wu": "消耗 16 个宇宙碎片获得一个随机奇物",
@@ -402,6 +403,7 @@
   "effect.primogemcraft.feixing": "飞行",
   "block.primogemcraft.yiyishijiemuzhalan": "异世界木 栅栏",
   "item.primogemcraft.fengdandaibiao.desc": "HOYO-MiX",
+  "item.primogemcraft.sjbcq": "事件补偿券",
   "item_group.primogemcraft.yuanshifangkuaika": "原石工艺 方块",
   "item.primogemcraft.hqlei": "§5『奇物』§d永恒火漆",
   "subtitles.yanziyueliang": "QAQ",
@@ -510,6 +512,7 @@
   "advancements.jijinzhimolajindu.descr": "第一枚摩拉的既视感",
   "item.primogemcraft.jlza": "精锻用杂矿",
   "item.primogemcraft.shqwfnj": "§5『奇物』§f福灵胶",
+  "gui.primogemcraft.sjgu_ifumo_00.label_chi_kai_zhe_li1": "离开这里。",
   "item.primogemcraft.chiyuejinshu": "赤月金属",
   "advancements.jdlysf.title": "璃月首富！！",
   "item.primogemcraft.caoyuanhe": "§a草原核",
@@ -685,7 +688,7 @@
   "item.primogemcraft.djc": "§b『涤净青金』 锄",
   "item.primogemcraft.djf": "§b『涤净青金』 斧",
   "item.primogemcraft.djg": "§b『涤净青金』 镐",
-  "gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_di_pin_zhi_fu_mo": "• 对物品进行1次低品质附魔。",
+  "gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_di_pin_zhi_fu_mo": "对物品进行1次低品质附魔。",
   "subtitles.dashengchulan": "",
   "advancements.zhongjifeiqiu.title": "终极非酋",
   "item.primogemcraft.axtsj": "『铁质升级』§b哀叙冰玉",
@@ -940,5 +943,5 @@
   "item.primogemcraft.rranyuanmanao": "§c燃愿玛瑙",
   "gui.primogemcraft.liulangzhezhinanggui.label_liu_lang_zhe_zhi_nang": "流浪者之囊",
   "item.primogemcraft.yyanziyueliangchangpian.desc": "HOYO-MiX",
-  "gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_gao_pin_zhi_fu_mo": "• 对物品进行1次高品质附魔。"
+  "gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_gao_pin_zhi_fu_mo": "离开这里。"
 }

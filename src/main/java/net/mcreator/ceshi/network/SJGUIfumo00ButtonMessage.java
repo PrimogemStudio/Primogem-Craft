@@ -74,7 +74,7 @@ public class SJGUIfumo00ButtonMessage {
 		}
 		if (buttonID == 2) {
 
-			Sjguifumo00sx2Procedure.execute(world, x, y, z, entity);
+			Sjguifumo00sx2Procedure.execute(entity);
 		}
 	}
 

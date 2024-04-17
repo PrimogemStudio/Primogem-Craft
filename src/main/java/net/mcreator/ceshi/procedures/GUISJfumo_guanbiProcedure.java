@@ -1,28 +1,26 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 
-import java.util.concurrent.atomic.AtomicReference;
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 public class GUISJfumo_guanbiProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		{
-			AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-			entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
-			if (_iitemhandlerref.get() != null) {
-				for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-					ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-					if (itemstackiterator.getOrCreateTag().getBoolean("fumo_shijian_daishanchu")) {
-						itemstackiterator.shrink(1);
-					}
-				}
+		ItemStack a = ItemStack.EMPTY;
+		if (entity.getPersistentData().getDouble("pgc_shijian_fumo_pinzhi") > 0) {
+			a = new ItemStack(PrimogemcraftModItems.SJBCQ.get());
+			a.getOrCreateTag().putDouble("shijianbuchang", (entity.getPersistentData().getDouble("pgc_shijian_fumo_pinzhi")));
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, a);
+				entityToSpawn.setPickUpDelay(0);
+				entityToSpawn.setUnlimitedLifetime();
+				_level.addFreshEntity(entityToSpawn);
 			}
 		}
 	}
