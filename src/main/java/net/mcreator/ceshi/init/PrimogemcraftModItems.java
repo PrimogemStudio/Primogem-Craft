@@ -20,6 +20,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.item.ItemProperties;
 
+import net.mcreator.ceshi.procedures.FumoquanpinzhizhiProcedure;
 import net.mcreator.ceshi.item.ZzjsItem;
 import net.mcreator.ceshi.item.ZzjllItem;
 import net.mcreator.ceshi.item.ZziyousongshikuaiItem;
@@ -864,6 +865,7 @@ public class PrimogemcraftModItems {
 			ItemProperties.register(LJTG_01.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
 			ItemProperties.register(LJTG_02.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
 			ItemProperties.register(XZCFYXWZD.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
+			ItemProperties.register(SJBCQ.get(), new ResourceLocation("primogemcraft:sjbcq_pinzhi"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) FumoquanpinzhizhiProcedure.execute(itemStackToRender));
 		});
 	}
 }

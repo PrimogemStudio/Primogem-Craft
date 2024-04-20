@@ -2,5 +2,31 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "primogemcraft:item/shijianbuchangquan"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "primogemcraft:sjbcq_pinzhi": 1
+      },
+      "model": "primogemcraft:item/sjbcq_0"
+    },
+    {
+      "predicate": {
+        "primogemcraft:sjbcq_pinzhi": 2
+      },
+      "model": "primogemcraft:item/sjbcq_1"
+    },
+    {
+      "predicate": {
+        "primogemcraft:sjbcq_pinzhi": 3
+      },
+      "model": "primogemcraft:item/sjbcq_2"
+    },
+    {
+      "predicate": {
+        "primogemcraft:sjbcq_pinzhi": 4
+      },
+      "model": "primogemcraft:item/sjbcq_3"
+    }
+  ]
 }
