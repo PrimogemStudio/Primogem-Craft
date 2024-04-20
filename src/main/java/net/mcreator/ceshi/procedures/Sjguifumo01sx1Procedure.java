@@ -1,6 +1,5 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
@@ -9,40 +8,31 @@ import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.MenuProvider;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.ceshi.world.inventory.GUISJfumoMenu;
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
-import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.List;
 import java.util.Comparator;
-
-import io.netty.buffer.Unpooled;
 
 public class Sjguifumo01sx1Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double a = 0;
+		ItemStack b = ItemStack.EMPTY;
 		entity.getPersistentData().putDouble("pgc_shijian_fumo_pinzhi", 0);
 		{
 			AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
@@ -74,25 +64,16 @@ public class Sjguifumo01sx1Procedure {
 					}
 				}
 			}
+			b = new ItemStack(PrimogemcraftModItems.SJBCQ.get());
+			b.getOrCreateTag().putDouble("shijianbuchang", (Mth.nextInt(RandomSource.create(), 1, 3)));
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, b);
+				entityToSpawn.setPickUpDelay(0);
+				entityToSpawn.setUnlimitedLifetime();
+				_level.addFreshEntity(entityToSpawn);
+			}
 			if (entity instanceof Player _player)
 				_player.closeContainer();
-			entity.getPersistentData().putDouble("pgc_shijian_fumo_pinzhi", (Mth.nextInt(RandomSource.create(), 1, 3)));
-			PrimogemcraftMod.queueServerWork(1, () -> {
-				if (entity instanceof ServerPlayer _ent) {
-					BlockPos _bpos = BlockPos.containing(x, y, z);
-					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-						@Override
-						public Component getDisplayName() {
-							return Component.literal("GUISJfumo");
-						}
-
-						@Override
-						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new GUISJfumoMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-						}
-					}, _bpos);
-				}
-			});
 		} else {
 			if (entity instanceof Player _player)
 				_player.closeContainer();
