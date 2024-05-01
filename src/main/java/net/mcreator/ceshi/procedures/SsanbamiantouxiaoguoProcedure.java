@@ -26,7 +26,7 @@ public class SsanbamiantouxiaoguoProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		YouhuayoujianfangfangzhiProcedure.execute(world, entity);
+		YouhuayoujianfangfangzhiProcedure.execute();
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PrimogemcraftModItems.SSANBAMIANTOU.get()) {
 			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
 			if (entity instanceof Player _player)

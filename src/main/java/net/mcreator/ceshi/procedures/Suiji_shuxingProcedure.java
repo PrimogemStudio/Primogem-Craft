@@ -18,7 +18,7 @@ public class Suiji_shuxingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		YouhuayoujianfangfangzhiProcedure.execute(world, entity);
+		YouhuayoujianfangfangzhiProcedure.execute();
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
 		{

@@ -11662,16 +11662,7 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/YouhuayoujianfangfangzhiProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -32156,7 +32147,7 @@
   "workspaceSettings": {
     "modid": "primogemcraft",
     "modName": "原石工艺",
-    "version": "24w15a",
+    "version": "24w17a",
     "description": "一个暂时啥也不是的mod",
     "author": "Pepper某人, MCreator",
     "websiteURL": "https://www.mcmod.cn/class/10429.html",

@@ -28,7 +28,6 @@ public class DaizihuidongProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.OFF_HAND, true);
 			}
-			YouhuayoujianfangfangzhiProcedure.execute(world, entity);
 		}
 	}
 }

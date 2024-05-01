@@ -31,7 +31,7 @@ public class Liulang_jingyan_shuxingProcedure {
 							if (entity instanceof LivingEntity _entity)
 								_entity.swing(InteractionHand.OFF_HAND, true);
 						}
-						YouhuayoujianfangfangzhiProcedure.execute(world, entity);
+						YouhuayoujianfangfangzhiProcedure.execute();
 					}
 					itemstack.setDamageValue((int) (itemstack.getMaxDamage() - itemstack.getDamageValue() + (itemstack.getMaxDamage() - 1) - (itemstack.getMaxDamage() - itemstack.getDamageValue())));
 					itemstack.getOrCreateTag().putDouble("naijiu_xianzhi", (itemstack.getMaxDamage() - itemstack.getDamageValue()));
@@ -58,7 +58,7 @@ public class Liulang_jingyan_shuxingProcedure {
 							if (entity instanceof LivingEntity _entity)
 								_entity.swing(InteractionHand.OFF_HAND, true);
 						}
-						YouhuayoujianfangfangzhiProcedure.execute(world, entity);
+						YouhuayoujianfangfangzhiProcedure.execute();
 					} else {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("\u00A7a\u7ECF\u9A8C\u4E66\u00A7c\u5DF2\u5B58\u6EE1\uFF01"), false);
