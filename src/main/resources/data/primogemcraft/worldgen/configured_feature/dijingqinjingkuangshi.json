@@ -14,15 +14,6 @@
         "state": {
           "Name": "primogemcraft:dijingqinjingkuangshi"
         }
-      },
-      {
-        "target": {
-          "predicate_type": "tag_match",
-          "tag": "minecraft:sand"
-        },
-        "state": {
-          "Name": "primogemcraft:dijingqinjingkuangshi"
-        }
       }
     ]
   }

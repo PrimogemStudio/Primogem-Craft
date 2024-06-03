@@ -160,13 +160,10 @@
     "blocksToReplace": [
       {
         "value": "Blocks.GRAVEL"
-      },
-      {
-        "value": "Blocks.SAND"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 5,
+    "frequencyPerChunks": 10,
     "frequencyOnChunk": 3,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 128
