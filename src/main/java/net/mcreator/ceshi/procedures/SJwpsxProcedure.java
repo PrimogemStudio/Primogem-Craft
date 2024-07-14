@@ -49,7 +49,7 @@ public class SJwpsxProcedure {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
 			}
-			if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PrimogemcraftModMobEffects.SHIJIANBUCHUFA.get()))) {
+			if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PrimogemcraftModMobEffects.SHIJIANBUCHUFA.get())) && entity.isShiftKeyDown()) {
 				if (a.getOrCreateTag().getBoolean("PGC_fumo_shijian_00")) {
 					if (entity instanceof ServerPlayer _ent) {
 						BlockPos _bpos = BlockPos.containing(x, y, z);
