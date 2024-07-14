@@ -18,7 +18,6 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.ceshi.procedures.Zsqsx2Procedure;
 import net.mcreator.ceshi.procedures.ZskjsxProcedure;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
@@ -126,7 +125,7 @@ public abstract class ZszstItem extends ArmorItem {
 		public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 			super.inventoryTick(itemstack, world, entity, slot, selected);
 			if (entity instanceof Player player && Iterables.contains(player.getArmorSlots(), itemstack)) {
-				Zsqsx2Procedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+				ZskjsxProcedure.execute(world, entity, itemstack);
 			}
 		}
 	}
