@@ -17638,12 +17638,12 @@
         ],
         "dependencies": [
           {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -27887,6 +27887,46 @@
           "src/main/java/net/mcreator/ceshi/potion/RykjxglqMobEffect.java"
         ]
       }
+    },
+    {
+      "name": "Ryfxgsx",
+      "type": "potioneffect",
+      "sortid": 1610,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ryfxgsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/potion/RyfxgsxMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Ryfsxxg",
+      "type": "procedure",
+      "sortid": 1611,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ryfsxxg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/RyfsxxgProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -29749,12 +29789,12 @@
       "item.primogemcraft.zstkj_boots": "§d『Vajrada Amethyst』§fIron Boots",
       "item.primogemcraft.ryc": "§c『Agnidus Agate』Hoe",
       "item.primogemcraft.ryg": "§c『Agnidus Agate』Pickaxe",
-      "item.primogemcraft.ryf": "§c『Agnidus Agate』Axe",
+      "item.primogemcraft.ryf": "§c『燃愿玛瑙』斧",
       "gui.primogemcraft.cunzheshezhi.shifou_bwd": "§a是否不稳定？",
       "advancements.gou_gou_liao_jin_zhi_fu_du.descr": "A bit of Tired",
       "item.primogemcraft.axzst_boots": "§b『Shivada Jade』Diamond Boots",
       "item.primogemcraft.gongsideguguzhong": "§5『Curio』§9IPC Cuckoo  Clock",
-      "item.primogemcraft.ryq": "§c『Agnidus Agate』Shovel",
+      "item.primogemcraft.ryq": "§c『燃愿玛瑙』锹",
       "effect.primogemcraft.wxntdmj": "无效念头代码机",
       "item.primogemcraft.axc": "§b『Shivada Jade』Hoe",
       "item.primogemcraft.zizaizuantao_boots": "§a『Vayuda Turquoise』 §bDiamond Boots",
@@ -30027,6 +30067,7 @@
       "subtitles.dashengchulan": "",
       "advancements.zhongjifeiqiu.title": "Pure Ill-Fated one",
       "item.primogemcraft.axtsj": "『Iron Upgrade』§bShivada Jade",
+      "effect.primogemcraft.ryfxgsx": "燃烧恢复",
       "subtitles.dashengchuzi01": "lalala",
       "item.primogemcraft.djq": "§b『Varunada Lazurite』 Shovel",
       "effect.primogemcraft.djppxianzhi": "泡泡限制",
@@ -30997,6 +31038,7 @@
       "subtitles.dashengchulan": "",
       "advancements.zhongjifeiqiu.title": "Pure Ill-Fated one",
       "item.primogemcraft.axtsj": "『Iron Upgrade』§bShivada Jade",
+      "effect.primogemcraft.ryfxgsx": "燃烧恢复",
       "subtitles.dashengchuzi01": "lalala",
       "item.primogemcraft.djq": "§b『Varunada Lazurite』 Shovel",
       "effect.primogemcraft.djppxianzhi": "泡泡限制",
@@ -31961,6 +32003,7 @@
       "subtitles.dashengchulan": "",
       "advancements.zhongjifeiqiu.title": "终极非酋",
       "item.primogemcraft.axtsj": "『铁质升级』§b哀叙冰玉",
+      "effect.primogemcraft.ryfxgsx": "燃烧恢复",
       "subtitles.dashengchuzi01": "lalala",
       "item.primogemcraft.djq": "§b『涤净青金』 锹",
       "effect.primogemcraft.djppxianzhi": "泡泡限制",

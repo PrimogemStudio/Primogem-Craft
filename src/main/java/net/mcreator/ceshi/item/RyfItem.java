@@ -1,7 +1,6 @@
 
 package net.mcreator.ceshi.item;
 
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
@@ -9,9 +8,10 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.procedures.RyfsxProcedure;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
@@ -48,17 +48,19 @@ public class RyfItem extends AxeItem {
 	}
 
 	@Override
-	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
-		boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
-		RyfsxProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate, entity);
-		return retval;
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		RyfsxProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
+		return ar;
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A7d\u7834\u574F\u6728\u5236\u65B9\u5757\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - 10%\u6982\u7387\u6389\u843D\u6728\u70AD"));
-		list.add(Component.literal("\u00A77 - 3%\u6982\u7387\u6389\u843D\u5143\u7D20\u7C89\u5C18"));
+		list.add(Component.literal("\u00A7d\u624B\u6301\u53F3\u952E\u65F6\uFF1A"));
+		list.add(Component.literal("\u00A77 - \u83B7\u5F97\u4E00\u4E2A\u77ED\u6682\u6062\u590D\u6548\u679C"));
+		list.add(Component.literal("\u00A77 \u6548\u679C\u671F\u95F4\uFF0C\u6BCF\u53D7\u5230\u71C3\u70E7\u4F24\u5BB3\u6062\u590D2\u70B9\u751F\u547D\u503C"));
+		list.add(Component.literal("\u00A77 \u53D7\u5230\u7194\u5CA9\u4F24\u5BB3\u6062\u590D\u6700\u5927\u751F\u547D\u503C15%\u751F\u547D\u503C"));
+		list.add(Component.literal("\u00A77 - \u5904\u4E8E\u9632\u706B\u72B6\u6001\u65F6\uFF0C\u7ACB\u523B\u63D0\u4F9B\u751F\u547D\u6062\u590D"));
 	}
 }

@@ -11,9 +11,9 @@
     "name": "§c『燃愿玛瑙』锹",
     "specialInformation": {
       "fixedValue": [
-        "§d消耗耐久§6[SHIFT+右键]§d方块时：",
-        "§7 - 概率转化粘土为红砖块",
-        "§7 - 概率转化原木为木炭块"
+        "§d消耗耐久潜行右键方块时：",
+        "§7 - 对可熔炼方块进行熔炼，并获得1~4倍产出",
+        "§c - 将有50%概率无任何产出！"
       ]
     },
     "creativeTab": {
@@ -26,6 +26,9 @@
     "damageVsEntity": 4.0,
     "usageCount": 1561,
     "blocksAffected": [],
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Yuanshi"
