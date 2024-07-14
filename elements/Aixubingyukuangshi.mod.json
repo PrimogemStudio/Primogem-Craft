@@ -2,7 +2,7 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "aixubingyu_kuangshi",
+    "texture": "aixukuangshi_xin",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -58,7 +58,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "PACKED_ICE"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -83,7 +83,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""
@@ -129,21 +129,12 @@
     ],
     "blocksToReplace": [
       {
-        "value": "Blocks.ICE"
-      },
-      {
-        "value": "Blocks.PACKED_ICE"
-      },
-      {
-        "value": "Blocks.FROSTED_ICE"
-      },
-      {
-        "value": "Blocks.BLUE_ICE"
+        "value": "Blocks.STONE"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 5,
-    "frequencyOnChunk": 3,
+    "frequencyPerChunks": 7,
+    "frequencyOnChunk": 5,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 128
   }

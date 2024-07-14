@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "primogemcraft:block/aixubingyu_kuangshi",
-    "up": "primogemcraft:block/aixubingyu_kuangshi",
-    "north": "primogemcraft:block/aixubingyu_kuangshi",
-    "east": "primogemcraft:block/aixubingyu_kuangshi",
-    "south": "primogemcraft:block/aixubingyu_kuangshi",
-    "west": "primogemcraft:block/aixubingyu_kuangshi",
-    "particle": "primogemcraft:block/aixubingyu_kuangshi"
+    "down": "primogemcraft:block/aixukuangshi_xin",
+    "up": "primogemcraft:block/aixukuangshi_xin",
+    "north": "primogemcraft:block/aixukuangshi_xin",
+    "east": "primogemcraft:block/aixukuangshi_xin",
+    "south": "primogemcraft:block/aixukuangshi_xin",
+    "west": "primogemcraft:block/aixukuangshi_xin",
+    "particle": "primogemcraft:block/aixukuangshi_xin"
   },
   "render_type": "solid"
 }

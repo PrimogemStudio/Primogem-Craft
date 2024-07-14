@@ -29721,7 +29721,7 @@
       "item.primogemcraft.zszst_leggings": "§d『最胜紫晶』§b钻石护腿",
       "item.primogemcraft.q_qu_hang_zhoullh": "Epic Enhancement Helping Hand",
       "item.primogemcraft.jlkjhj_chestplate": "§6『Prithiva Topaz』 §eNetherite Chestplate",
-      "block.primogemcraft.aixubingyukuangshi": "§bShivada Jade Ore",
+      "block.primogemcraft.aixubingyukuangshi": "§b哀叙冰玉 矿石",
       "item.primogemcraft.kjjlt_chestplate": "§6『Prithiva Topaz』 §fIron Chestplate",
       "block.primogemcraft.moladui_02": "Mora Heap",
       "gui.primogemcraft.gu_iqiwuxuanze.label_xuan_ze_ge_qi_wu": "选择一个奇物",
@@ -32268,7 +32268,7 @@
   "workspaceSettings": {
     "modid": "primogemcraft",
     "modName": "原石工艺",
-    "version": "24w26a",
+    "version": "24w28a",
     "description": "一个暂时啥也不是的mod",
     "author": "Pepper某人, MCreator",
     "websiteURL": "https://www.mcmod.cn/class/10429.html",
