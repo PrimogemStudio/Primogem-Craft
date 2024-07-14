@@ -83,7 +83,7 @@ public abstract class AxhjtItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u624B\u6301\u9539\u65F6\u63D0\u4F9B\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A7b \u2022 \u00A774x \u95F4\u6B47\u6027\u6062\u590D\u5C11\u91CF\u751F\u547D\u503C"));
-			list.add(Component.literal("\u00A7c \u2022 \u00A772x \u906D\u9047\u706B\u7130\u6216\u5CA9\u6D46\u65F6\u63D0\u4F9B\u77ED\u65F6\u95F4\u98DE\u884C\u80FD\u529B"));
+			list.add(Component.literal("\u00A7c \u2022 \u00A772x \u63D0\u4F9B\u707C\u70E7\u53CD\u51FB\u6548\u679C"));
 			list.add(Component.literal("\u00A7c\u4E0D\u6EE1\u8DB3\u6761\u4EF6\u65F6\u5C06\u53D6\u6D88\u589E\u76CA"));
 			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
 			list.add(Component.literal("\u00A7"));
