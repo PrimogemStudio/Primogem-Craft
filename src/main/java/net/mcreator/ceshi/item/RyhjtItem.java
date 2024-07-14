@@ -80,8 +80,9 @@ public abstract class RyhjtItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
-			list.add(Component.literal("\u00A77 4x \u906D\u9047\u706B\u7130\u6216\u5CA9\u6D46\u65F6\u63D0\u4F9B\u98DE\u884C\u80FD\u529B"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
+			list.add(Component.literal("\u00A77 4x \u5BF9\u653B\u51FB\u4F60\u7684\u76EE\u6807\u65BD\u52A0\u7194\u5CA9\u4F24\u5BB3\u548C\u71C3\u70E7"));
+			list.add(Component.literal("\u00A78\u4F24\u5BB3\u91CF=10*\u5957\u88C5\u6570\u503C*%\u73A9\u5BB6\u5F53\u524D\u751F\u547D\u503C"));
+			list.add(Component.literal("\u00A76\u5355\u4E2A\u751F\u72692\u79D2\u81F3\u591A\u88AB\u53CD\u51FB1\u6B21"));
 			list.add(Component.literal("\u00A7"));
 			list.add(Component.literal("\u00A79+2 \u5957\u88C5\u503C\uFF08\u739B\u7459\uFF09"));
 		}
@@ -110,8 +111,9 @@ public abstract class RyhjtItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
-			list.add(Component.literal("\u00A77 4x \u906D\u9047\u706B\u7130\u6216\u5CA9\u6D46\u65F6\u63D0\u4F9B\u98DE\u884C\u80FD\u529B"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
+			list.add(Component.literal("\u00A77 4x \u5BF9\u653B\u51FB\u4F60\u7684\u76EE\u6807\u65BD\u52A0\u7194\u5CA9\u4F24\u5BB3\u548C\u71C3\u70E7"));
+			list.add(Component.literal("\u00A78\u4F24\u5BB3\u91CF=10*\u5957\u88C5\u6570\u503C*%\u73A9\u5BB6\u5F53\u524D\u751F\u547D\u503C"));
+			list.add(Component.literal("\u00A76\u5355\u4E2A\u751F\u72692\u79D2\u81F3\u591A\u88AB\u53CD\u51FB1\u6B21"));
 			list.add(Component.literal("\u00A7"));
 			list.add(Component.literal("\u00A79+2 \u5957\u88C5\u503C\uFF08\u739B\u7459\uFF09"));
 		}
@@ -140,8 +142,9 @@ public abstract class RyhjtItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
-			list.add(Component.literal("\u00A77 4x \u906D\u9047\u706B\u7130\u6216\u5CA9\u6D46\u65F6\u63D0\u4F9B\u98DE\u884C\u80FD\u529B"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
+			list.add(Component.literal("\u00A77 4x \u5BF9\u653B\u51FB\u4F60\u7684\u76EE\u6807\u65BD\u52A0\u7194\u5CA9\u4F24\u5BB3\u548C\u71C3\u70E7"));
+			list.add(Component.literal("\u00A78\u4F24\u5BB3\u91CF=10*\u5957\u88C5\u6570\u503C*%\u73A9\u5BB6\u5F53\u524D\u751F\u547D\u503C"));
+			list.add(Component.literal("\u00A76\u5355\u4E2A\u751F\u72692\u79D2\u81F3\u591A\u88AB\u53CD\u51FB1\u6B21"));
 			list.add(Component.literal("\u00A7"));
 			list.add(Component.literal("\u00A79+2 \u5957\u88C5\u503C\uFF08\u739B\u7459\uFF09"));
 		}
@@ -170,8 +173,9 @@ public abstract class RyhjtItem extends ArmorItem {
 			super.appendHoverText(itemstack, level, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
-			list.add(Component.literal("\u00A77 4x \u906D\u9047\u706B\u7130\u6216\u5CA9\u6D46\u65F6\u63D0\u4F9B\u98DE\u884C\u80FD\u529B"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
+			list.add(Component.literal("\u00A77 4x \u5BF9\u653B\u51FB\u4F60\u7684\u76EE\u6807\u65BD\u52A0\u7194\u5CA9\u4F24\u5BB3\u548C\u71C3\u70E7"));
+			list.add(Component.literal("\u00A78\u4F24\u5BB3\u91CF=10*\u5957\u88C5\u6570\u503C*%\u73A9\u5BB6\u5F53\u524D\u751F\u547D\u503C"));
+			list.add(Component.literal("\u00A76\u5355\u4E2A\u751F\u72692\u79D2\u81F3\u591A\u88AB\u53CD\u51FB1\u6B21"));
 			list.add(Component.literal("\u00A7"));
 			list.add(Component.literal("\u00A79+2 \u5957\u88C5\u503C\uFF08\u739B\u7459\uFF09"));
 		}

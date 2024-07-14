@@ -27815,6 +27815,78 @@
           }
         ]
       }
+    },
+    {
+      "name": "Rykjxg",
+      "type": "potioneffect",
+      "sortid": 1606,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rykjxg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/potion/RykjxgMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Rykjxgsx",
+      "type": "procedure",
+      "sortid": 1607,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rykjxgsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/RykjxgsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rykj_xg_sx_xz",
+      "type": "procedure",
+      "sortid": 1608,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rykj_xg_sx_xz",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Rykj_xg_sx_xzProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rykjxglq",
+      "type": "potioneffect",
+      "sortid": 1609,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rykjxglq",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/potion/RykjxglqMobEffect.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -29266,7 +29338,7 @@
       "gui.primogemcraft.sjgu_ifumo_01.label_xiao_hao_10yu_zhou_sui_pian": "消耗10宇宙碎片。",
       "item.primogemcraft.jianglimaoxianjiajingyan": "Adventurer\u0027s Experience",
       "effect.feixing": "Flying",
-      "item.primogemcraft.ruzst_boots": "§c『Agnidus Agate』§bDiamond Boots",
+      "item.primogemcraft.ruzst_boots": "§c『燃愿玛瑙』§b钻石靴子",
       "gamerule.guizeyuanshishengcheng.description": "§cPrimogem Ore Intergrate",
       "gui.primogemcraft.ceshigui.label_wu_pin_lan": "Inventory",
       "advancements.mmolagaojindu.title": "mora Pickaxe",
@@ -29295,6 +29367,7 @@
       "advancements.cchangchangkan.descr": "Obtain§5Trash",
       "advancements.jdybdw.descr": "obtain the Netherite Upgrading element template",
       "gamerule.guizeshijianxianzhi.description": "每个游戏日至多掉落几次随机事件",
+      "effect.primogemcraft.rykjxg": "灼烧反击",
       "block.primogemcraft.lajsk": "§klsjs§rMetal block",
       "gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_zhong_pin_zhi_fu_mo": "对物品进行1次中品质附魔。",
       "item.primogemcraft.axhjt_leggings": "§b『Shivada Jade』§eNetherite leggings",
@@ -29312,7 +29385,7 @@
       "item.primogemcraft.qwlbtdgcl": "§5『奇物』§e鲁伯特帝国机械齿轮",
       "block.primogemcraft.yiyishijiemubanlouqi": "The another world\u0027s wood Stairs",
       "effect.primogemcraft.heisenlinggz": "黑森林咕咕钟",
-      "item.primogemcraft.ruzst_leggings": "§c『Agnidus Agate』§bDiamond Leggings",
+      "item.primogemcraft.ruzst_leggings": "§c『燃愿玛瑙』§b钻石护腿",
       "item.primogemcraft.djhjj": "§b『Varunada Lazurite』 §eNetherite Sword",
       "item.primogemcraft.jianglidayinxiongjingyan": "Hero\u0027s Wit",
       "item.primogemcraft.cchonggaodaodedezanxu": "§fPraise of High Morals",
@@ -29625,7 +29698,7 @@
       "item.primogemcraft.axf": "§b『Shivada Jade』Axe",
       "item.primogemcraft.pengkeluodejingshen": "Punklorde Mentality",
       "advancements.b_bao_di_ren.title": "Pity---System---Only---",
-      "item.primogemcraft.ryhjt_chestplate": "§c『Agnidus Agate』§eNetherite Chestplate",
+      "item.primogemcraft.ryhjt_chestplate": "§c『燃愿玛瑙』§e下界合金胸甲",
       "item.primogemcraft.axq": "§b『Shivada Jade』Shovel",
       "advancements.yysgj.descr": "获得任意元素工具",
       "item.primogemcraft.jlkjzs_chestplate": "§6『Prithiva Topaz』 §bDiamond Chestplate",
@@ -29647,7 +29720,7 @@
       "subtitles.chujinle02": "hahaha",
       "effect.lengquezhongguizhongju": "Implement Error Cool Down",
       "item.primogemcraft.djzst_leggings": "§b『Varunada Lazurite』Diamond Leggings",
-      "item.primogemcraft.ruzst_helmet": "§c『Vajrada Amethyst』§bDiamond Helmet",
+      "item.primogemcraft.ruzst_helmet": "§c『燃愿玛瑙』§b钻石头盔",
       "gui.primogemcraft.guiheitaxinyindao.tooltip_sscdang_qian_mei_you_zu_gou_de_sui_ji_cuo_wu_dai_ma_qiu": "§c当前没有足够的随机错误代码球！",
       "item.primogemcraft.yuanshijian": "§bPrimogem Sword",
       "advancements.jdwqqcb.descr": "获得雾切之回光精炼[1]",
@@ -29663,12 +29736,13 @@
       "item.primogemcraft.hqlei": "§5『Curio』§dSealing Wax of Eternity",
       "effect.primogemcraft.qiqiaodaimaxiufu": "§aFixed§fCode",
       "subtitles.yanziyueliang": "QAQ",
+      "effect.primogemcraft.rykjxglq": "反击冷却",
       "gui.primogemcraft.cunzheshezhi.cunzhe_shuliang": "00",
       "effect.primogemcraft.fzggzxg_0": "分裂咕咕钟",
       "item.primogemcraft.ysjbfpk": "Wind Catcher（Empty）",
       "effect.primogemcraft.fzggzxg_1": "§c分裂咕咕钟§f[复制品]",
       "item.primogemcraft.xiwangdeyitian_011.desc": "A New Day With Hope 陈致逸,HOYO-MiX",
-      "item.primogemcraft.ryhjt_helmet": "§c『Agnidus Agate』§eNetherite Helmet",
+      "item.primogemcraft.ryhjt_helmet": "§c『燃愿玛瑙』§e下界合金头盔",
       "block.primogemcraft.cangsangshizhuanweiqiang": "Vicissitude Bricks Wall",
       "gamerule.guizemoyinshengminzhi": "§bPrimogem Craft§eSpawn Mara-Struck Mob Max Health",
       "item.primogemcraft.jlliang": "§aFine Enhancement Ore",
@@ -29836,7 +29910,7 @@
       "item.primogemcraft.hqyan": "§5『Curio』§6Sealing Wax of indenture",
       "item.primogemcraft.quxgjibing": "§5『奇物』§f虚构机兵",
       "item.primogemcraft.dayingxiongdejingyan": "大英雄的经验书",
-      "item.primogemcraft.ryhjt_leggings": "§c『Agnidus Agate』§eNetherite Leggings",
+      "item.primogemcraft.ryhjt_leggings": "§c『燃愿玛瑙』§e下界合金护腿",
       "effect.primogemcraft.fengrao": "Abundance",
       "gui.primogemcraft.bwdyinhang.label_gong_xiang_ying_ping_zheng_bing_huo": "供相应凭证，并获",
       "item.primogemcraft.xixiangyuzhiyuan": "XiAquaint Fate",
@@ -29900,7 +29974,7 @@
       "item.primogemcraft.axzssj": "§b『Smith Templete』§bShivada jade",
       "advancements.jdtwtylc.descr": "获得任意元素金属",
       "item.primogemcraft.zizaizuanshijian": "§a『Vayuda Turquoise』§bDiamond Pickaxe",
-      "item.primogemcraft.ryhjt_boots": "§c『Agnidus Agate』§eNetherite Boots",
+      "item.primogemcraft.ryhjt_boots": "§c『燃愿玛瑙』§e下界合金靴子",
       "gui.primogemcraft.bwdyinhang.label_yu_dao_lei_si_she_shi_shi": "遇到类似设施时，",
       "item.primogemcraft.zizizaihejintao_leggings": "§a『Vayuda Turquoise』§eNetherite Leggings",
       "block.primogemcraft.hualiduanzao": "华丽锻造台",
@@ -30117,7 +30191,7 @@
       "item.primogemcraft.sjzst": "『Iron Upgrade』§dVajrada Amethyst",
       "subtitles.dashengchujin": "hahaha",
       "item.primogemcraft.zshjt_helmet": "§d『Vajrada Amethyst』§eNetherite Helmet",
-      "item.primogemcraft.ruzst_chestplate": "§c『Vajrada Amethyst』§bDiamond Chestplate",
+      "item.primogemcraft.ruzst_chestplate": "§c『燃愿玛瑙』§b钻石胸甲",
       "advancements.jdbfwb.descr": "获得精锻用魔矿",
       "gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_1ge_sui_ji_cuo_wu_dai_ma": "消耗1个随机错误代码。",
       "block.primogemcraft.chuangzaoxiaodengfasheqi": "§5Creative§6Igniter Of Xiao Lantern",
@@ -30263,6 +30337,7 @@
       "advancements.cchangchangkan.descr": "Obtain§5Trash",
       "advancements.jdybdw.descr": "obtain the Netherite Upgrading element template",
       "gamerule.guizeshijianxianzhi.description": "每个游戏日至多掉落几次随机事件",
+      "effect.primogemcraft.rykjxg": "灼烧反击",
       "block.primogemcraft.lajsk": "§klsjs§rMetal block",
       "gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_zhong_pin_zhi_fu_mo": "对物品进行1次中品质附魔。",
       "item.primogemcraft.axhjt_leggings": "§b『Shivada Jade』§eNetherite leggings",
@@ -30631,6 +30706,7 @@
       "item.primogemcraft.hqlei": "§5『Curio』§dSealing Wax of Eternity",
       "effect.primogemcraft.qiqiaodaimaxiufu": "§aFixed§fCode",
       "subtitles.yanziyueliang": "QAQ",
+      "effect.primogemcraft.rykjxglq": "反击冷却",
       "gui.primogemcraft.cunzheshezhi.cunzhe_shuliang": "00",
       "effect.primogemcraft.fzggzxg_0": "分裂咕咕钟",
       "item.primogemcraft.ysjbfpk": "Wind Catcher（Empty）",
@@ -31231,6 +31307,7 @@
       "advancements.cchangchangkan.descr": "获得§5垃圾",
       "advancements.jdybdw.descr": "获得钻石合金制元素模板",
       "gamerule.guizeshijianxianzhi.description": "每个游戏日至多掉落几次随机事件",
+      "effect.primogemcraft.rykjxg": "灼烧反击",
       "block.primogemcraft.lajsk": "§klsjs§r金属块",
       "gui.primogemcraft.sjgu_ifumo_00.label_dui_wu_pin_jin_xing_1ci_zhong_pin_zhi_fu_mo": "对物品进行1次中品质附魔。",
       "item.primogemcraft.axhjt_leggings": "§b『哀叙冰玉』§e下界合金护腿",
@@ -31595,6 +31672,7 @@
       "item.primogemcraft.hqlei": "§5『奇物』§d永恒火漆",
       "subtitles.yanziyueliang": "QAQ",
       "effect.primogemcraft.qiqiaodaimaxiufu": "§a已修复§f代码",
+      "effect.primogemcraft.rykjxglq": "反击冷却",
       "gui.primogemcraft.cunzheshezhi.cunzhe_shuliang": "00",
       "effect.primogemcraft.fzggzxg_0": "分裂咕咕钟",
       "item.primogemcraft.ysjbfpk": "异世界捕风瓶（空）",
