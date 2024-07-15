@@ -233,5 +233,41 @@
         "stream": false
       }
     ]
+  },
+  "hh_anzhuang": {
+    "subtitle": "subtitles.hh_anzhuang",
+    "sounds": [
+      {
+        "name": "primogemcraft:zd_anzhuang",
+        "stream": false
+      }
+    ]
+  },
+  "hh_d0": {
+    "subtitle": "subtitles.hh_d0",
+    "sounds": [
+      {
+        "name": "primogemcraft:zd_d0",
+        "stream": false
+      }
+    ]
+  },
+  "hh_d1": {
+    "subtitle": "subtitles.hh_d1",
+    "sounds": [
+      {
+        "name": "primogemcraft:zd_d1",
+        "stream": false
+      }
+    ]
+  },
+  "hh_boo": {
+    "subtitle": "subtitles.hh_boo",
+    "sounds": [
+      {
+        "name": "primogemcraft:zd_boo",
+        "stream": false
+      }
+    ]
   }
 }

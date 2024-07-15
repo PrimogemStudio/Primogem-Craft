@@ -194,6 +194,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.QWSMCL.get());
 				tabData.accept(PrimogemcraftModItems.SH_JWUPIN.get());
 				tabData.accept(PrimogemcraftModItems.SJBCQ.get());
+				tabData.accept(PrimogemcraftModBlocks.SHENMIWANOU.get().asItem());
 			})
 
 					.build());

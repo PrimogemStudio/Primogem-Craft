@@ -852,6 +852,10 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> QWSMCL = REGISTRY.register("qwsmcl", () -> new QwsmclItem());
 	public static final RegistryObject<Item> SH_JWUPIN = REGISTRY.register("sh_jwupin", () -> new SHJwupinItem());
 	public static final RegistryObject<Item> SJBCQ = REGISTRY.register("sjbcq", () -> new SjbcqItem());
+	public static final RegistryObject<Item> HHZD_0 = block(PrimogemcraftModBlocks.HHZD_0);
+	public static final RegistryObject<Item> HHZD_1 = block(PrimogemcraftModBlocks.HHZD_1);
+	public static final RegistryObject<Item> SHENMIWANOU = block(PrimogemcraftModBlocks.SHENMIWANOU);
+	public static final RegistryObject<Item> HHZDBOO = block(PrimogemcraftModBlocks.HHZDBOO);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -43,4 +43,8 @@ public class PrimogemcraftModSounds {
 	public static final RegistryObject<SoundEvent> QIANYE_CHUFA = REGISTRY.register("qianye_chufa", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("primogemcraft", "qianye_chufa")));
 	public static final RegistryObject<SoundEvent> QIANYE_SHIJIA = REGISTRY.register("qianye_shijia", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("primogemcraft", "qianye_shijia")));
 	public static final RegistryObject<SoundEvent> JINGYANSHU00 = REGISTRY.register("jingyanshu00", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("primogemcraft", "jingyanshu00")));
+	public static final RegistryObject<SoundEvent> HH_ANZHUANG = REGISTRY.register("hh_anzhuang", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("primogemcraft", "hh_anzhuang")));
+	public static final RegistryObject<SoundEvent> HH_D0 = REGISTRY.register("hh_d0", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("primogemcraft", "hh_d0")));
+	public static final RegistryObject<SoundEvent> HH_D1 = REGISTRY.register("hh_d1", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("primogemcraft", "hh_d1")));
+	public static final RegistryObject<SoundEvent> HH_BOO = REGISTRY.register("hh_boo", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("primogemcraft", "hh_boo")));
 }

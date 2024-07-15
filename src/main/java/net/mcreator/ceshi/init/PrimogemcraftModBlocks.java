@@ -41,6 +41,7 @@ import net.mcreator.ceshi.block.XinyuekuangshiBlock;
 import net.mcreator.ceshi.block.XijaieyangengdiBlock;
 import net.mcreator.ceshi.block.XiaoguanziBlock;
 import net.mcreator.ceshi.block.ShizuoyuanshikuaiBlock;
+import net.mcreator.ceshi.block.ShenmiwanouBlock;
 import net.mcreator.ceshi.block.ShengzhangkuangshiBlock;
 import net.mcreator.ceshi.block.ShengzhangbifeidakuaiBlock;
 import net.mcreator.ceshi.block.ShenbanyanyuanshikuangshiBlock;
@@ -72,6 +73,9 @@ import net.mcreator.ceshi.block.JianlaokuangshiBlock;
 import net.mcreator.ceshi.block.JianlaohuangyukuaiBlock;
 import net.mcreator.ceshi.block.JdykBlock;
 import net.mcreator.ceshi.block.HualiduanzaoBlock;
+import net.mcreator.ceshi.block.HhzdbooBlock;
+import net.mcreator.ceshi.block.Hhzd1Block;
+import net.mcreator.ceshi.block.Hhzd0Block;
 import net.mcreator.ceshi.block.GanjinglajitongxiangziBlock;
 import net.mcreator.ceshi.block.DisuishuijingtiBlock;
 import net.mcreator.ceshi.block.Disuikuai1Block;
@@ -236,6 +240,10 @@ public class PrimogemcraftModBlocks {
 	public static final RegistryObject<Block> BWDXJHPYHFH = REGISTRY.register("bwdxjhpyhfh", () -> new BwdxjhpyhfhBlock());
 	public static final RegistryObject<Block> JIANSHIJINGBAN = REGISTRY.register("jianshijingban", () -> new JianshijingbanBlock());
 	public static final RegistryObject<Block> HUALIDUANZAO = REGISTRY.register("hualiduanzao", () -> new HualiduanzaoBlock());
+	public static final RegistryObject<Block> HHZD_0 = REGISTRY.register("hhzd_0", () -> new Hhzd0Block());
+	public static final RegistryObject<Block> HHZD_1 = REGISTRY.register("hhzd_1", () -> new Hhzd1Block());
+	public static final RegistryObject<Block> SHENMIWANOU = REGISTRY.register("shenmiwanou", () -> new ShenmiwanouBlock());
+	public static final RegistryObject<Block> HHZDBOO = REGISTRY.register("hhzdboo", () -> new HhzdbooBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

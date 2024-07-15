@@ -12,12 +12,16 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.ceshi.block.entity.XjhpyhfhBlockEntity;
+import net.mcreator.ceshi.block.entity.ShenmiwanouBlockEntity;
 import net.mcreator.ceshi.block.entity.Moladui02BlockEntity;
 import net.mcreator.ceshi.block.entity.MmolazhilajitongBlockEntity;
 import net.mcreator.ceshi.block.entity.Mlxdml03BlockEntity;
 import net.mcreator.ceshi.block.entity.Mlxdml02BlockEntity;
 import net.mcreator.ceshi.block.entity.Mlxdml01BlockEntity;
 import net.mcreator.ceshi.block.entity.LajitongBlockEntity;
+import net.mcreator.ceshi.block.entity.HhzdbooBlockEntity;
+import net.mcreator.ceshi.block.entity.Hhzd1BlockEntity;
+import net.mcreator.ceshi.block.entity.Hhzd0BlockEntity;
 import net.mcreator.ceshi.block.entity.GanjinglajitongxiangziBlockEntity;
 import net.mcreator.ceshi.block.entity.DangaoliyueBlockEntity;
 import net.mcreator.ceshi.block.entity.ChuangzaoxiaodengfasheqiBlockEntity;
@@ -39,6 +43,10 @@ public class PrimogemcraftModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> DANGAOLIYUE = register("dangaoliyue", PrimogemcraftModBlocks.DANGAOLIYUE, DangaoliyueBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> XJHPYHFH = register("xjhpyhfh", PrimogemcraftModBlocks.XJHPYHFH, XjhpyhfhBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BWDXJHPYHFH = register("bwdxjhpyhfh", PrimogemcraftModBlocks.BWDXJHPYHFH, BwdxjhpyhfhBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> HHZD_0 = register("hhzd_0", PrimogemcraftModBlocks.HHZD_0, Hhzd0BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> HHZD_1 = register("hhzd_1", PrimogemcraftModBlocks.HHZD_1, Hhzd1BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> SHENMIWANOU = register("shenmiwanou", PrimogemcraftModBlocks.SHENMIWANOU, ShenmiwanouBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> HHZDBOO = register("hhzdboo", PrimogemcraftModBlocks.HHZDBOO, HhzdbooBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
