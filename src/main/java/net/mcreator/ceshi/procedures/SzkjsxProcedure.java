@@ -11,6 +11,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
+import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 public class SzkjsxProcedure {
@@ -38,9 +39,9 @@ public class SzkjsxProcedure {
 						_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 10, 0, true, false));
 				}
 			}
-			if (!(entity instanceof LivingEntity _livEnt25 && _livEnt25.hasEffect(MobEffects.HEALTH_BOOST))) {
+			if (!(entity instanceof LivingEntity _livEnt25 && _livEnt25.hasEffect(MobEffects.HEALTH_BOOST)) && !(entity instanceof LivingEntity _livEnt26 && _livEnt26.hasEffect(PrimogemcraftModMobEffects.SZTSXCWDP.get()))) {
+				entity.getPersistentData().putDouble("yuanbenshengminzhi", (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1));
 				if (a >= 4) {
-					entity.getPersistentData().putDouble("yuanbenshengminzhi", (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1));
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 200000, (int) (((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 4) * Math.round(a) * 0.1), true, false));
 				}
@@ -50,6 +51,8 @@ public class SzkjsxProcedure {
 					entity.getPersistentData().putBoolean("yuanbenshengminzhi", false);
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(MobEffects.HEALTH_BOOST);
+					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.SZTSXCWDP.get(), 20, 0, false, false));
 				}
 			}
 		}
