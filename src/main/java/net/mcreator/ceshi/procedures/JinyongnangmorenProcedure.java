@@ -23,8 +23,10 @@ public class JinyongnangmorenProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world) {
+		boolean a = false;
 		if (world.isClientSide() && world.getLevelData().getGameRules().getBoolean(PrimogemcraftModGameRules.JINYONGNANG)) {
-			world.getLevelData().getGameRules().getRule(PrimogemcraftModGameRules.JINYONGNANG).set(true, world.getServer());
+			a = true;
 		}
+		world.getLevelData().getGameRules().getRule(PrimogemcraftModGameRules.JINYONGNANG).set(a, world.getServer());
 	}
 }
