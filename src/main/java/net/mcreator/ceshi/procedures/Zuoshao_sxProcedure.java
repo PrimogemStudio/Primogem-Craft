@@ -25,8 +25,8 @@ public class Zuoshao_sxProcedure {
 			}
 		}
 		if (entity.getPersistentData().getDouble("zhuoshao") >= 40) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.LAVA)),
-					(float) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.ZHUOSHAO.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.ZHUOSHAO.get()).getAmplifier() : 0) + 1));
+			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.LAVA)), (float) Math.ceil((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
+					* ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.ZHUOSHAO.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.ZHUOSHAO.get()).getAmplifier() : 0) + 1) * 0.01));
 			entity.getPersistentData().putDouble("zhuoshao", 0);
 		}
 	}
