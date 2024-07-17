@@ -1,0 +1,9 @@
+{
+  "parent": "primogemcraft:custom/qibaoqi",
+  "textures": {
+    "all": "primogemcraft:block/hh_yinbaoqi",
+    "particle": "primogemcraft:block/hh_yinbaoqi",
+    "0": "primogemcraft:block/hh_yinbaoqi"
+  },
+  "render_type": "solid"
+}

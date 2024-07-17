@@ -10,6 +10,7 @@ import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.common.BasicItemListing;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 
@@ -17,18 +18,9 @@ import net.minecraft.world.item.ItemStack;
 public class PrimogemcraftModTrades {
 	@SubscribeEvent
 	public static void registerWanderingTrades(WandererTradesEvent event) {
-		event.getGenericTrades()
-				.add(new BasicItemListing(new ItemStack(PrimogemcraftModItems.JIJIUCHANZHIYUAN.get()), new ItemStack(PrimogemcraftModItems.XIAODAIMOLA.get(), 6), new ItemStack(PrimogemcraftModItems.XIWANGDEYITIAN_011.get()), 10, 5, 0.05f));
-		event.getGenericTrades().add(
-				new BasicItemListing(new ItemStack(PrimogemcraftModItems.JIJIUCHANZHIYUAN.get()), new ItemStack(PrimogemcraftModItems.XIAODAIMOLA.get(), 6), new ItemStack(PrimogemcraftModItems.BBUZAINIANQINGDEQINCEZHUANG_012.get()), 10, 5, 0.05f));
-		event.getGenericTrades()
-				.add(new BasicItemListing(new ItemStack(PrimogemcraftModItems.JIJIUCHANZHIYUAN.get()), new ItemStack(PrimogemcraftModItems.XIAODAIMOLA.get(), 6), new ItemStack(PrimogemcraftModItems.SSHENHUDEZHUFU_013.get()), 10, 5, 0.05f));
-		event.getGenericTrades()
-				.add(new BasicItemListing(new ItemStack(PrimogemcraftModItems.JIJIUCHANZHIYUAN.get()), new ItemStack(PrimogemcraftModItems.XIAODAIMOLA.get(), 6), new ItemStack(PrimogemcraftModItems.CCANGRUIMILINJIAN_014.get()), 10, 5, 0.05f));
-		event.getGenericTrades()
-				.add(new BasicItemListing(new ItemStack(PrimogemcraftModItems.JIJIUCHANZHIYUAN.get(), 10), new ItemStack(PrimogemcraftModItems.XIXIANGYUZHIYUAN.get()), new ItemStack(PrimogemcraftModItems.SHILIANCHOU.get()), 10, 5, 0f));
-		event.getGenericTrades().add(new BasicItemListing(new ItemStack(PrimogemcraftModBlocks.CESHIXIAODENGFASHEQI.get()), new ItemStack(PrimogemcraftModItems.CCHONGGAODAODEDEZANXU.get(), 5),
-				new ItemStack(PrimogemcraftModBlocks.CHUANGZAOXIAODENGFASHEQI.get()), 10, 5, 0.05f));
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Blocks.DIRT),
+
+				new ItemStack(PrimogemcraftModBlocks.SHENMIWANOU.get()), 10, 5, 0.05f));
 	}
 
 	@SubscribeEvent
@@ -68,6 +60,7 @@ public class PrimogemcraftModTrades {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD),
 
 					new ItemStack(PrimogemcraftModItems.YUANSHI.get()), 10, 10, 0.05f));
+			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Blocks.TNT, 9), new ItemStack(PrimogemcraftModItems.YIYINHEDALETOU.get()), new ItemStack(PrimogemcraftModBlocks.SHENMIWANOU.get()), 10, 5, 0.05f));
 		}
 	}
 }

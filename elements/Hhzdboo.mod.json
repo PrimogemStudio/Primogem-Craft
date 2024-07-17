@@ -44,7 +44,7 @@
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
       "value": "Blocks.AIR"
     },
@@ -119,6 +119,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByPlayer": {
+      "name": "Hhchai1"
+    },
+    "onStartToDestroy": {
+      "name": "Hhchai0"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

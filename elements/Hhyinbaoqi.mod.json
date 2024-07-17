@@ -2,15 +2,15 @@
   "_fv": 60,
   "_type": "block",
   "definition": {
-    "texture": "huahuo0",
+    "texture": "hh_yinbaoqi",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "huahuo0:default",
-    "rotationMode": 0,
+    "customModelName": "qibaoqi:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -20,33 +20,36 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 4.0,
+        "mx": 1.0,
         "my": 0.0,
-        "mz": 4.0,
-        "Mx": 12.0,
-        "My": 7.0,
-        "Mz": 12.0,
+        "mz": 1.0,
+        "Mx": 15.0,
+        "My": 8.0,
+        "Mz": 15.0,
         "subtract": false
       }
     ],
-    "name": "炸..弹？",
+    "name": "引爆器",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7虽然也可以通过右键来激活玩偶，但是",
+        "§7谁会拒绝更有仪式感的激活方式呢？"
+      ]
     },
-    "hardness": 10.0,
-    "resistance": 20.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:Zhenghuo"
     },
-    "destroyTool": "shovel",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -58,7 +61,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 1,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -81,7 +84,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WET_GRASS"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
@@ -102,7 +105,7 @@
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
-    "hasInventory": true,
+    "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -119,14 +122,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "Hh_sx_0"
-    },
-    "onDestroyedByPlayer": {
-      "name": "Hhchai1"
-    },
-    "onStartToDestroy": {
-      "name": "Hhchai0"
+    "onRightClicked": {
+      "name": "Hh_yinbao_1"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

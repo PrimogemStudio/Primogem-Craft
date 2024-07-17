@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone"
+    },
+    "b": {
+      "item": "primogemcraft:yishijiemuban_button"
+    },
+    "c": {
+      "item": "minecraft:redstone_block"
+    },
+    "d": {
+      "item": "primogemcraft:ranyuansuixie"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:hhyinbaoqi",
+    "count": 2
+  }
+}

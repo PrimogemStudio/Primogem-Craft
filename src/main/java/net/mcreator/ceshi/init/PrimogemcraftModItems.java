@@ -856,6 +856,7 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> HHZD_1 = block(PrimogemcraftModBlocks.HHZD_1);
 	public static final RegistryObject<Item> SHENMIWANOU = block(PrimogemcraftModBlocks.SHENMIWANOU);
 	public static final RegistryObject<Item> HHZDBOO = block(PrimogemcraftModBlocks.HHZDBOO);
+	public static final RegistryObject<Item> HHYINBAOQI = block(PrimogemcraftModBlocks.HHYINBAOQI);
 
 	// Start of user code block custom items
 	// End of user code block custom items

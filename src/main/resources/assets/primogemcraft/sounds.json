@@ -269,5 +269,23 @@
         "stream": false
       }
     ]
+  },
+  "hh_chai_0": {
+    "subtitle": "subtitles.hh_chai_0",
+    "sounds": [
+      {
+        "name": "primogemcraft:hh_chai",
+        "stream": false
+      }
+    ]
+  },
+  "hh_chai_1": {
+    "subtitle": "subtitles.hh_chai_1",
+    "sounds": [
+      {
+        "name": "primogemcraft:hh_chai_c",
+        "stream": false
+      }
+    ]
   }
 }

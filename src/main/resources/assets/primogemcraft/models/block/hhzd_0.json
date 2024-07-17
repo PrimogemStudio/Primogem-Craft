@@ -3,7 +3,7 @@
   "textures": {
     "all": "primogemcraft:block/huahuo0",
     "particle": "primogemcraft:block/huahuo0",
-    "1": "primogemcraft:block/huahuo0"
+    "2": "primogemcraft:block/huahuo0"
   },
   "render_type": "cutout"
 }

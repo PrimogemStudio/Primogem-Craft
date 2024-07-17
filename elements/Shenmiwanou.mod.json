@@ -44,7 +44,7 @@
     "creativeTab": {
       "value": "CUSTOM:Zhenghuo"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
       "value": ""
     },
@@ -119,6 +119,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Hhqibao0"
+    },
     "onBlockAdded": {
       "name": "Hh_0"
     },
