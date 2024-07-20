@@ -28639,6 +28639,14 @@
     }
   ],
   "tag_elements": {
+    "ITEMS:pgc:dzmb": [
+      "TAG:pgc:dzmb_0",
+      "TAG:pgc:dzmb_1",
+      "TAG:pgc:dzmb_2",
+      "TAG:pgc:dzmb_3",
+      "TAG:pgc:dzmb_4",
+      "TAG:pgc:dzmb_5"
+    ],
     "BLOCKS:minecraft:woodenfences": [
       "CUSTOM:Yishijiemuzhalan",
       "CUSTOM:Ceshi_mucaibaoFence",
@@ -28649,23 +28657,6 @@
       "CUSTOM:Xiumuzhalan",
       "CUSTOM:Llianjiamolakuaiqiang",
       "CUSTOM:Cangsangshizhuanweiqiang"
-    ],
-    "ITEMS:pgc:dzmb": [
-      "TAG:pgc:dzmb_0",
-      "TAG:pgc:dzmb_1",
-      "TAG:pgc:dzmb_2",
-      "TAG:pgc:dzmb_3",
-      "TAG:pgc:dzmb_4",
-      "TAG:pgc:dzmb_5"
-    ],
-    "ITEMS:forge:yszsj": [
-      "CUSTOM:Zizaizuanshijian",
-      "CUSTOM:Jljzs",
-      "CUSTOM:Zszsj",
-      "CUSTOM:Szzsj",
-      "CUSTOM:Ddjzsj",
-      "CUSTOM:Ryzsj",
-      "CUSTOM:Axzsj"
     ],
     "BLOCKS:forge:mora/block": [
       "CUSTOM:Moladui02",
@@ -28679,6 +28670,15 @@
       "CUSTOM:Mlxdml02",
       "CUSTOM:Mlxdml03"
     ],
+    "ITEMS:forge:yszsj": [
+      "CUSTOM:Zizaizuanshijian",
+      "CUSTOM:Jljzs",
+      "CUSTOM:Zszsj",
+      "CUSTOM:Szzsj",
+      "CUSTOM:Ddjzsj",
+      "CUSTOM:Ryzsj",
+      "CUSTOM:Axzsj"
+    ],
     "ITEMS:forge:ysdp_0": [
       "CUSTOM:Zziyousongshiduanpian",
       "CUSTOM:Jianlaoduanpian",
@@ -28687,37 +28687,6 @@
       "CUSTOM:Dijingduanpian",
       "CUSTOM:Ranyuanduanpian",
       "CUSTOM:Aaixubingyuduanpian"
-    ],
-    "ITEMS:primogemcraft:yuansutaozuanshi": [
-      "CUSTOM:Zizaizuantao.helmet",
-      "CUSTOM:Zizaizuantao.body",
-      "CUSTOM:Zizaizuantao.legs",
-      "CUSTOM:Zizaizuantao.boots",
-      "CUSTOM:Jlkjzs.helmet",
-      "CUSTOM:Jlkjzs.body",
-      "CUSTOM:Jlkjzs.legs",
-      "CUSTOM:Jlkjzs.boots",
-      "CUSTOM:Zszst.helmet",
-      "CUSTOM:Zszst.body",
-      "CUSTOM:Zszst.legs",
-      "CUSTOM:Zszst.boots",
-      "CUSTOM:Szzskj.helmet",
-      "CUSTOM:Szzskj.body",
-      "CUSTOM:Szzskj.legs",
-      "CUSTOM:Szzskj.boots",
-      "CUSTOM:Djzst.helmet",
-      "CUSTOM:Djzst.body",
-      "CUSTOM:Djzst.legs",
-      "CUSTOM:Djzst.boots",
-      "CUSTOM:Ruzst.helmet",
-      "CUSTOM:Ruzst.body",
-      "CUSTOM:Ruzst.legs",
-      "CUSTOM:Ruzst.boots",
-      "CUSTOM:Axzst.helmet",
-      "CUSTOM:Axzst.body",
-      "CUSTOM:Axzst.legs",
-      "CUSTOM:Axzst.boots",
-      "CUSTOM:Axzsj"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Jianshijingban",
@@ -28770,6 +28739,37 @@
       "~CUSTOM:Molakuai01",
       "~CUSTOM:Jiuchanzhiyuankuai",
       "~CUSTOM:Yuanshikuangshi"
+    ],
+    "ITEMS:primogemcraft:yuansutaozuanshi": [
+      "CUSTOM:Zizaizuantao.helmet",
+      "CUSTOM:Zizaizuantao.body",
+      "CUSTOM:Zizaizuantao.legs",
+      "CUSTOM:Zizaizuantao.boots",
+      "CUSTOM:Jlkjzs.helmet",
+      "CUSTOM:Jlkjzs.body",
+      "CUSTOM:Jlkjzs.legs",
+      "CUSTOM:Jlkjzs.boots",
+      "CUSTOM:Zszst.helmet",
+      "CUSTOM:Zszst.body",
+      "CUSTOM:Zszst.legs",
+      "CUSTOM:Zszst.boots",
+      "CUSTOM:Szzskj.helmet",
+      "CUSTOM:Szzskj.body",
+      "CUSTOM:Szzskj.legs",
+      "CUSTOM:Szzskj.boots",
+      "CUSTOM:Djzst.helmet",
+      "CUSTOM:Djzst.body",
+      "CUSTOM:Djzst.legs",
+      "CUSTOM:Djzst.boots",
+      "CUSTOM:Ruzst.helmet",
+      "CUSTOM:Ruzst.body",
+      "CUSTOM:Ruzst.legs",
+      "CUSTOM:Ruzst.boots",
+      "CUSTOM:Axzst.helmet",
+      "CUSTOM:Axzst.body",
+      "CUSTOM:Axzst.legs",
+      "CUSTOM:Axzst.boots",
+      "CUSTOM:Axzsj"
     ],
     "BLOCKS:minecraft:beacon_base_blocks": [
       "CUSTOM:Shengzhangbifeidakuai",
@@ -30442,7 +30442,7 @@
       "advancements.zhzhongjixintu.descr": "§d真搞不懂...",
       "item.primogemcraft.jljtie": "§6『Prithiva Topaz』§fIron Sword",
       "block.primogemcraft.chiyuejinshukuang": "§cRed Moon Metal Ore",
-      "enchantment.primogemcraft.fmyuzhousuipian.desc": "§7使用背包中的宇宙碎片修复主副手和身上盔甲的耐久度[消耗一个，修复附魔等级*3%]  被标记在pgc:token_mending的物品不受影响",
+      "enchantment.primogemcraft.fmyuzhousuipian.desc": "§7使用背包中的宇宙碎片修复主副手和身上盔甲的耐久度[消耗一个，修复附魔等级*2%]  被标记在pgc:token_mending的物品不受影响",
       "effect.gouyu": "Amulate",
       "block.primogemcraft.dbmlk": "§ePacked Mora pile",
       "item.primogemcraft.axzst_leggings": "§b『哀叙冰玉』钻石护腿",
@@ -31427,7 +31427,7 @@
       "advancements.zhzhongjixintu.descr": "§d真搞不懂...",
       "item.primogemcraft.jljtie": "§6『Prithiva Topaz』§fIron Sword",
       "block.primogemcraft.chiyuejinshukuang": "§cRed Moon Metal Ore",
-      "enchantment.primogemcraft.fmyuzhousuipian.desc": "§7使用背包中的宇宙碎片修复主副手和身上盔甲的耐久度[消耗一个，修复附魔等级*3%]  被标记在pgc:token_mending的物品不受影响",
+      "enchantment.primogemcraft.fmyuzhousuipian.desc": "§7使用背包中的宇宙碎片修复主副手和身上盔甲的耐久度[消耗一个，修复附魔等级*2%]  被标记在pgc:token_mending的物品不受影响",
       "effect.gouyu": "Amulate",
       "block.primogemcraft.dbmlk": "§ePacked Mora pile",
       "item.primogemcraft.axzst_leggings": "§b『Shivada Jade』Diamond Leggings",
@@ -32407,7 +32407,7 @@
       "advancements.zhzhongjixintu.descr": "§d真搞不懂...",
       "item.primogemcraft.jljtie": "§6『坚牢黄玉』§f铁剑",
       "block.primogemcraft.chiyuejinshukuang": "§c赤月金属矿石",
-      "enchantment.primogemcraft.fmyuzhousuipian.desc": "§7使用背包中的宇宙碎片修复主副手和身上盔甲的耐久度[消耗一个，修复附魔等级*3%]  被标记在pgc:token_mending的物品不受影响",
+      "enchantment.primogemcraft.fmyuzhousuipian.desc": "§7使用背包中的宇宙碎片修复主副手和身上盔甲的耐久度[消耗一个，修复附魔等级*2%]  被标记在pgc:token_mending的物品不受影响",
       "effect.gouyu": "勾玉",
       "block.primogemcraft.dbmlk": "§e打包摩拉堆",
       "item.primogemcraft.axzst_leggings": "§b『哀叙冰玉』钻石护腿",
@@ -32759,7 +32759,7 @@
   "workspaceSettings": {
     "modid": "primogemcraft",
     "modName": "原石工艺",
-    "version": "24w29a",
+    "version": "24w30a",
     "description": "一个暂时啥也不是的mod",
     "author": "Pepper某人, MCreator",
     "websiteURL": "https://www.mcmod.cn/class/10429.html",
