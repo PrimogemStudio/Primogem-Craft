@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.item.enchantment.Enchantment;
 
 import net.mcreator.ceshi.enchantment.FumoyuzheznEnchantment;
+import net.mcreator.ceshi.enchantment.FmyuzhousuipianEnchantment;
 import net.mcreator.ceshi.enchantment.Ceshifumo01Enchantment;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
@@ -18,4 +19,5 @@ public class PrimogemcraftModEnchantments {
 	public static final DeferredRegister<Enchantment> REGISTRY = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, PrimogemcraftMod.MODID);
 	public static final RegistryObject<Enchantment> CESHIFUMO_01 = REGISTRY.register("ceshifumo_01", () -> new Ceshifumo01Enchantment());
 	public static final RegistryObject<Enchantment> FUMOYUZHEZN = REGISTRY.register("fumoyuzhezn", () -> new FumoyuzheznEnchantment());
+	public static final RegistryObject<Enchantment> FMYUZHOUSUIPIAN = REGISTRY.register("fmyuzhousuipian", () -> new FmyuzhousuipianEnchantment());
 }
