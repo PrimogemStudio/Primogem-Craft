@@ -633,7 +633,7 @@
   "advancements.zhzhongjixintu.descr": "§d真搞不懂...",
   "item.primogemcraft.jljtie": "§6『坚牢黄玉』§f铁剑",
   "block.primogemcraft.chiyuejinshukuang": "§c赤月金属矿石",
-  "enchantment.primogemcraft.fmyuzhousuipian.desc": "§7使用背包中的宇宙碎片修复主副手和身上盔甲的耐久度[消耗一个，修复附魔等级*3%]  被标记在pgc:token_mending的物品不受影响",
+  "enchantment.primogemcraft.fmyuzhousuipian.desc": "§8使用背包中的宇宙碎片修复主副手和身上盔甲的耐久度[消耗一个，修复附魔等级*2%]  被标记在pgc:token_mending的物品不受影响",
   "effect.gouyu": "勾玉",
   "block.primogemcraft.dbmlk": "§e打包摩拉堆",
   "item.primogemcraft.axzst_leggings": "§b『哀叙冰玉』钻石护腿",

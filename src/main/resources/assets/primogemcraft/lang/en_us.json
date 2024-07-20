@@ -638,7 +638,7 @@
   "advancements.zhzhongjixintu.descr": "§d真搞不懂...",
   "item.primogemcraft.jljtie": "§6『Prithiva Topaz』§fIron Sword",
   "block.primogemcraft.chiyuejinshukuang": "§cRed Moon Metal Ore",
-  "enchantment.primogemcraft.fmyuzhousuipian.desc": "§7使用背包中的宇宙碎片修复主副手和身上盔甲的耐久度[消耗一个，修复附魔等级*3%]  被标记在pgc:token_mending的物品不受影响",
+  "enchantment.primogemcraft.fmyuzhousuipian.desc": "§8使用背包中的宇宙碎片修复主副手和身上盔甲的耐久度[消耗一个，修复附魔等级*2%]  被标记在pgc:token_mending的物品不受影响",
   "effect.gouyu": "Amulate",
   "block.primogemcraft.dbmlk": "§ePacked Mora pile",
   "item.primogemcraft.axzst_leggings": "§b『哀叙冰玉』钻石护腿",
