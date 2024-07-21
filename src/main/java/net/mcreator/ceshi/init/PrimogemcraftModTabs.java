@@ -196,6 +196,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.SJBCQ.get());
 				tabData.accept(PrimogemcraftModBlocks.SHENMIWANOU.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.HHYINBAOQI.get().asItem());
+				tabData.accept(PrimogemcraftModItems.YSSP.get());
 			})
 
 					.build());

@@ -28370,6 +28370,73 @@
           "src/main/resources/data/primogemcraft/advancements/jdshijian_0.json"
         ]
       }
+    },
+    {
+      "name": "Ysjfr",
+      "type": "item",
+      "sortid": 1633,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ysjfr",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/ysjfr.json",
+          "src/main/java/net/mcreator/ceshi/item/YsjfrItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Yssp",
+      "type": "item",
+      "sortid": 1634,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yssp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/yssp.json",
+          "src/main/java/net/mcreator/ceshi/item/YsspItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Yssppf0",
+      "type": "recipe",
+      "sortid": 1635,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yssppf_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/yssppf_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Yssp1",
+      "type": "recipe",
+      "sortid": 1636,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yssp_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/yssp_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Ysjfrpf",
+      "type": "recipe",
+      "sortid": 1637,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ysjfrpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/ysjfrpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -30346,6 +30413,7 @@
       "item.primogemcraft.jlkjzs_helmet": "§6『Prithiva Topaz』 §bDiamond Helmet",
       "block.primogemcraft.caomo_23": "Dendro-Core Wood Fence",
       "advancements.jdwqqcb.title": "雾切之回光§m青春版",
+      "item.primogemcraft.yssp": "§b原石碎片",
       "block.primogemcraft.mlxdml_01": "§eA pile of Mora",
       "entity.primogemcraft.caoyuanheshengwu": "§aDendro Core",
       "item.primogemcraft.xiaodeng_spawn_egg": "Xiao Lantern Spawn Egg",
@@ -30535,6 +30603,7 @@
       "block.primogemcraft.hualiduanzao": "华丽锻造台",
       "effect.primogemcraft.zhandouzhuangtai": "Combat effect",
       "advancements.kejindalao.descr": "Ascending Mistsplitter Reforged to [5]",
+      "item.primogemcraft.ysjfr": "腐肉！",
       "item.primogemcraft.qwtldhy": "§5『CUrio』§9Thalan Toxi-Flame",
       "item.primogemcraft.ysfc": "Dust of Elements Gemstone",
       "advancements.mmolachujindu.title": "mora Hoe",
@@ -31333,6 +31402,7 @@
       "item.primogemcraft.jlkjzs_helmet": "§6『Prithiva Topaz』 §bDiamond Helmet",
       "block.primogemcraft.caomo_23": "Dendro-Core Wood Fence",
       "advancements.jdwqqcb.title": "雾切之回光§m青春版",
+      "item.primogemcraft.yssp": "§b原石碎片",
       "block.primogemcraft.mlxdml_01": "§eA pile of Mora",
       "entity.primogemcraft.caoyuanheshengwu": "§aDendro Core",
       "item.primogemcraft.xiaodeng_spawn_egg": "Xiao Lantern Spawn Egg",
@@ -31522,6 +31592,7 @@
       "block.primogemcraft.hualiduanzao": "华丽锻造台",
       "effect.primogemcraft.zhandouzhuangtai": "Combat effect",
       "advancements.kejindalao.descr": "Ascending Mistsplitter Reforged to [5]",
+      "item.primogemcraft.ysjfr": "腐肉！",
       "item.primogemcraft.qwtldhy": "§5『CUrio』§9Thalan Toxi-Flame",
       "item.primogemcraft.ysfc": "Dust of Elements Gemstone",
       "advancements.mmolachujindu.title": "mora Hoe",
@@ -32315,6 +32386,7 @@
       "item.primogemcraft.jlkjzs_helmet": "§6『坚牢黄玉』 §b钻石头盔",
       "block.primogemcraft.caomo_23": "草原核化木 栅栏",
       "advancements.jdwqqcb.title": "雾切之回光§m青春版",
+      "item.primogemcraft.yssp": "§b原石碎片",
       "block.primogemcraft.mlxdml_01": "§e小堆摩拉",
       "item.primogemcraft.zizaizuantao_helmet": "§a『自在松石』 §b钻石头盔",
       "entity.primogemcraft.caoyuanheshengwu": "§a草原核",
@@ -32503,6 +32575,7 @@
       "block.primogemcraft.hualiduanzao": "华丽锻造台",
       "effect.primogemcraft.zhandouzhuangtai": "战斗状态",
       "advancements.kejindalao.descr": "精炼雾切之回光至[5]",
+      "item.primogemcraft.ysjfr": "腐肉！",
       "item.primogemcraft.qwtldhy": "§5『奇物』§9塔拉毒火焰",
       "item.primogemcraft.ysfc": "元素晶石粉尘",
       "advancements.mmolachujindu.title": "摩拉锄",

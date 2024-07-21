@@ -14,7 +14,7 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.ROTTEN_FLESH"
+              "value": "CUSTOM:Ysjfr"
             },
             "weight": 1,
             "minCount": 1,
