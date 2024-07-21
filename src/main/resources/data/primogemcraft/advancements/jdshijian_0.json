@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "primogemcraft:sh_jwupin"
+    },
+    "title": {
+      "translate": "advancements.jdshijian_0.title"
+    },
+    "description": {
+      "translate": "advancements.jdshijian_0.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "jdshijian_0_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:wanwuqiyuan"
+}
