@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "yishijiefurou",
+    "texture": "suijiwupin",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "腐肉！",
+    "name": "§kchoukachouka",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -28,9 +28,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§8无法通过正常途径获取",
-        "§0逃课将获得嘉奖！",
-        "§9逃课工艺 物品"
+        "§7抽卡以获得随机奖励"
       ]
     },
     "glowCondition": {
@@ -44,14 +42,14 @@
     "projectile": {
       "value": "Arrow"
     },
-    "isFood": true,
-    "nutritionalValue": 1,
-    "saturation": 0.1,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": true,
+    "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "eat"
+    "animation": "none"
   }
 }

@@ -26,6 +26,29 @@
             "silkTouchMode": 0
           }
         ]
+      },
+      {
+        "minrolls": 0,
+        "maxrolls": 0,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Suijiwupin"
+            },
+            "weight": 0,
+            "minCount": 0,
+            "maxCount": 0,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          }
+        ]
       }
     ],
     "name": "entities/qq_qyuanchulan_01",

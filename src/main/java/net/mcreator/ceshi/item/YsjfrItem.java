@@ -19,6 +19,8 @@ public class YsjfrItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A78\u9003\u8BFE\u5C06\u83B7\u5F97\u5609\u5956\uFF01"));
+		list.add(Component.literal("\u00A78\u65E0\u6CD5\u901A\u8FC7\u6B63\u5E38\u9014\u5F84\u83B7\u53D6"));
+		list.add(Component.literal("\u00A70\u9003\u8BFE\u5C06\u83B7\u5F97\u5609\u5956\uFF01"));
+		list.add(Component.literal("\u00A79\u9003\u8BFE\u5DE5\u827A \u7269\u54C1"));
 	}
 }

@@ -19,6 +19,25 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "primogemcraft:suijiwupin",
+          "weight": 0,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 0
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "random_sequence": "primogemcraft:entities/qq_qyuanchulan_01"
