@@ -33,6 +33,8 @@ public class SanyuezhufushuxingProcedure {
 		if (damagesource.is(DamageTypes.FALL) && entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.SYZF.get())) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
+			} else if (event != null && event.hasResult()) {
+				event.setResult(Event.Result.DENY);
 			}
 		}
 	}

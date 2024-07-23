@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,11 @@
     "states": [],
     "name": "异世界存折",
     "rarity": "EPIC",
-    "creativeTab": {
-      "value": "CUSTOM:Zhenghuo"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
@@ -44,6 +46,7 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "Arrow"
     },

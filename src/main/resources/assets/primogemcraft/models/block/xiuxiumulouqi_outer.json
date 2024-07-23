@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "primogemcraft:block/xiumu",
     "bottom": "primogemcraft:block/xiumu",
     "top": "primogemcraft:block/xiumu",
     "side": "primogemcraft:block/xiumu"

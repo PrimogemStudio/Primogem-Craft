@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class Caomu32Block extends SlabBlock {
 	public Caomu32Block() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape());
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
 	}
 
 	@Override

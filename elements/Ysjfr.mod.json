@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,7 @@
     "states": [],
     "name": "腐肉！",
     "rarity": "COMMON",
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 32,
@@ -41,6 +39,7 @@
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "Arrow"
     },

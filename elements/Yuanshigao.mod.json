@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -12,22 +12,24 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 1,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 8.5,
     "attackSpeed": 1.2,
     "enchantability": 15,
     "damageVsEntity": 5.5,
     "usageCount": 320,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Yuanshi"
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

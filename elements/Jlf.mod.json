@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -16,16 +16,16 @@
         "§7 - 小概率获得精致摩拉（1%）"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 3,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 6.0,
     "attackSpeed": 0.6,
     "enchantability": 15,
     "damageVsEntity": 12.0,
     "usageCount": 1890,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Jianransuixie"
@@ -35,6 +35,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onBlockDestroyedWithTool": {

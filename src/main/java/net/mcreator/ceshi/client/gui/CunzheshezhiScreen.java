@@ -10,6 +10,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.world.inventory.CunzheshezhiMenu;
 import net.mcreator.ceshi.network.CunzheshezhiButtonMessage;
@@ -94,6 +95,13 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 	public void containerTick() {
 		super.containerTick();
 		cunzhe_shuliang.tick();
+	}
+
+	@Override
+	public void resize(Minecraft minecraft, int width, int height) {
+		String cunzhe_shuliangValue = cunzhe_shuliang.getValue();
+		super.resize(minecraft, width, height);
+		cunzhe_shuliang.setValue(cunzhe_shuliangValue);
 	}
 
 	@Override

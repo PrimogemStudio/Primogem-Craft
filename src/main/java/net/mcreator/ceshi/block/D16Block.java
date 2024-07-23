@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class D16Block extends PressurePlateBlock {
 	public D16Block() {
-		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape().forceSolidOn(), BlockSetType.OAK);
+		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn(), BlockSetType.OAK);
 	}
 
 	@Override

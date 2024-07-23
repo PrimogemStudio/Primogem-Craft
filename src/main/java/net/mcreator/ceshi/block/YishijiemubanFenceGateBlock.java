@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class YishijiemubanFenceGateBlock extends FenceGateBlock {
 	public YishijiemubanFenceGateBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape().forceSolidOn(), WoodType.OAK);
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn(), WoodType.OAK);
 	}
 
 	@Override

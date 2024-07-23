@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "livingentity",
   "definition": {
     "mobName": "霄灯",
@@ -13,6 +13,7 @@
       {
         "model": "Default",
         "texture": "ceshixiaodeng_tietu.png",
+        "disableHurtOverlay": false,
         "glow": true
       }
     ],
@@ -29,9 +30,11 @@
       "value": -26368,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:Zhenghuo"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -132,6 +135,15 @@
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

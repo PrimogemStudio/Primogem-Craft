@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -14,22 +14,24 @@
         "有能力改变一个世界的人才能拥有它"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 1,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 4.0,
     "attackSpeed": 0.05,
     "enchantability": 15,
     "damageVsEntity": 16.599999999999998,
     "usageCount": 20,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Mmolapeiziwupin"
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": true
   }

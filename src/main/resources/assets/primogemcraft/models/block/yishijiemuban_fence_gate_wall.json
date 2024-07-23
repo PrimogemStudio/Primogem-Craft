@@ -1,6 +1,7 @@
 {
   "parent": "block/template_fence_gate_wall",
   "textures": {
+    "particle": "primogemcraft:block/yimuding",
     "texture": "primogemcraft:block/yimuding"
   },
   "render_type": "solid"

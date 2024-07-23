@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -22,9 +22,11 @@
     "onBootsTick": {
       "name": "Rytsx"
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "armorTextureFile": "rytt_",
     "helmetName": "§c『燃愿玛瑙』§f铁头盔",
     "bodyName": "§c『燃愿玛瑙』§f铁胸甲",

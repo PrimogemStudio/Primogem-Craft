@@ -1,11 +1,10 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "enchantment",
   "definition": {
     "name": "建木附着",
     "type": "BREAKABLE",
     "rarity": "UNCOMMON",
-    "minLevel": 1,
     "maxLevel": 4,
     "damageModifier": 0,
     "compatibleEnchantments": [],

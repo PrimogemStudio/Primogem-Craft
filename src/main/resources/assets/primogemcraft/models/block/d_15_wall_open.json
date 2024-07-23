@@ -1,6 +1,7 @@
 {
   "parent": "block/template_fence_gate_wall_open",
   "textures": {
+    "particle": "primogemcraft:block/yimudi",
     "texture": "primogemcraft:block/yimudi"
   },
   "render_type": "solid"

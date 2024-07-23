@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -78,9 +78,11 @@
     ],
     "name": "附魔事件补偿券",
     "rarity": "EPIC",
-    "creativeTab": {
-      "value": "CUSTOM:Zhenghuo"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
@@ -110,6 +112,7 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "projectile": {
       "value": "Arrow"
     },

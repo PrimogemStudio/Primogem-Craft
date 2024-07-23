@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -20,16 +20,16 @@
         "§7 - 触发概率10%"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 4,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 9.0,
     "attackSpeed": 2.0,
     "enchantability": 18,
     "damageVsEntity": 6.5,
     "usageCount": 2460,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Zuishengduanpian"
@@ -39,6 +39,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedInAir": {

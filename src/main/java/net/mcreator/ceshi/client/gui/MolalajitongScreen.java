@@ -59,11 +59,6 @@ public class MolalajitongScreen extends AbstractContainerScreen<MolalajitongMenu
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.molalajitong.label_wu_pin_lan"), 7, 124, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.molalajitong.label_mo_la_zhi_la_ji_tong"), 6, 5, -12829636, false);

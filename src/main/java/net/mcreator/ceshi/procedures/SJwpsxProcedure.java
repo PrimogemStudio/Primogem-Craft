@@ -51,6 +51,8 @@ public class SJwpsxProcedure {
 		if (a.getItem() == ForgeRegistries.ITEMS.getValue(new ResourceLocation("primogemcraft:sh_jwupin"))) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
+			} else if (event != null && event.hasResult()) {
+				event.setResult(Event.Result.DENY);
 			}
 			if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PrimogemcraftModMobEffects.SHIJIANBUCHUFA.get()))) {
 				if (entity.isShiftKeyDown()) {

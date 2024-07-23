@@ -1,6 +1,7 @@
 {
   "parent": "block/slab",
   "textures": {
+    "particle": "primogemcraft:block/yimuding",
     "bottom": "primogemcraft:block/yimuding",
     "top": "primogemcraft:block/yimuding",
     "side": "primogemcraft:block/yimuding"

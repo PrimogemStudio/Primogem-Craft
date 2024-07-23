@@ -59,11 +59,6 @@ public class GanjinglajitongScreen extends AbstractContainerScreen<Ganjinglajito
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.ganjinglajitong.label_gan_jing_de_la_ji_tong"), 7, 5, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.ganjinglajitong.label_wu_pin_lan"), 7, 106, -12829636, false);

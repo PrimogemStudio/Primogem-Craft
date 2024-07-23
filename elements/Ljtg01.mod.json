@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Shield",
@@ -19,16 +19,16 @@
         "§8  后被施加的冷却"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 1,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 4.0,
     "attackSpeed": 1.0,
     "enchantability": 20,
     "damageVsEntity": 4.0,
     "usageCount": 200,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -41,6 +41,8 @@
       }
     ],
     "immuneToFire": false,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onItemInInventoryTick": {

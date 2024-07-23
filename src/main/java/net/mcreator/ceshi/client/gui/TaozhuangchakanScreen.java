@@ -9,6 +9,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.world.inventory.TaozhuangchakanMenu;
 import net.mcreator.ceshi.network.TaozhuangchakanButtonMessage;
@@ -101,6 +102,25 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 		taozhuang_4.tick();
 		taozhuang_5.tick();
 		taozhuang_6.tick();
+	}
+
+	@Override
+	public void resize(Minecraft minecraft, int width, int height) {
+		String taozhuang_0Value = taozhuang_0.getValue();
+		String taozhuang_1Value = taozhuang_1.getValue();
+		String taozhuang_2Value = taozhuang_2.getValue();
+		String taozhuang_3Value = taozhuang_3.getValue();
+		String taozhuang_4Value = taozhuang_4.getValue();
+		String taozhuang_5Value = taozhuang_5.getValue();
+		String taozhuang_6Value = taozhuang_6.getValue();
+		super.resize(minecraft, width, height);
+		taozhuang_0.setValue(taozhuang_0Value);
+		taozhuang_1.setValue(taozhuang_1Value);
+		taozhuang_2.setValue(taozhuang_2Value);
+		taozhuang_3.setValue(taozhuang_3Value);
+		taozhuang_4.setValue(taozhuang_4Value);
+		taozhuang_5.setValue(taozhuang_5Value);
+		taozhuang_6.setValue(taozhuang_6Value);
 	}
 
 	@Override

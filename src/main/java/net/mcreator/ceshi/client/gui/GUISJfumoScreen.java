@@ -103,11 +103,6 @@ public class GUISJfumoScreen extends AbstractContainerScreen<GUISJfumoMenu> {
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.guis_jfumo.label_fang_ru_ke_fu_mo_wu_pin"), 6, 5, -5070724, false);
 	}

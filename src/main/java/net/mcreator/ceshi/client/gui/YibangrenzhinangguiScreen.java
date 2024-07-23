@@ -59,11 +59,6 @@ public class YibangrenzhinangguiScreen extends AbstractContainerScreen<Yibangren
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.yibangrenzhinanggui.label_wu_pin_lan"), 80, 146, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.yibangrenzhinanggui.label_jin_bu_qu_zhi_nang"), 9, 7, -12829636, false);

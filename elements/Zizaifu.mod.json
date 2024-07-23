@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -16,16 +16,16 @@
         "§7 - 游泳时获得海豚的恩惠"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 3,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 9.5,
     "attackSpeed": 1.0,
     "enchantability": 15,
     "damageVsEntity": 8.5,
     "usageCount": 1561,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Ziziyousongshisuixie"
@@ -35,6 +35,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onItemInUseTick": {

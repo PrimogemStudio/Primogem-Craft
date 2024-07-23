@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -22,9 +22,11 @@
     "onBootsTick": {
       "name": "Zizaitaoshuxing"
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "armorTextureFile": "zizaitie_",
     "helmetName": "§a『自在松石』 铁头盔",
     "bodyName": "§a『自在松石』 铁胸甲",

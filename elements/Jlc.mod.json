@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
@@ -15,22 +15,24 @@
         "§7 - 消耗耐久概率产出坚牢黄玉（0.1%）"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 3,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 8.5,
     "attackSpeed": 1.2,
     "enchantability": 15,
     "damageVsEntity": 8.0,
     "usageCount": 1200,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Jianlaoduanpian"
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {

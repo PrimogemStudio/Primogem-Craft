@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -14,16 +14,16 @@
         "§b挖掘时§f有小概率掉落§e摩拉"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 5,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 18.0,
     "attackSpeed": 1.0,
     "enchantability": 5,
     "damageVsEntity": 6.0,
     "usageCount": 800,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -33,6 +33,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onBlockDestroyedWithTool": {

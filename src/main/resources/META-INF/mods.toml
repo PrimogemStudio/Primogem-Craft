@@ -19,8 +19,11 @@ description="一个暂时啥也不是的mod"
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
 
 
 
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

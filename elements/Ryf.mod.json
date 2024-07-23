@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Axe",
@@ -18,16 +18,16 @@
         "§7 - 处于防火状态时，立刻提供生命恢复"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 3,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 10.0,
     "attackSpeed": 1.0,
     "enchantability": 15,
     "damageVsEntity": 8.0,
     "usageCount": 1561,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -40,6 +40,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedInAir": {

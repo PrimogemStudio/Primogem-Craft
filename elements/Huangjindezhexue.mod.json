@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
@@ -14,16 +14,16 @@
         "§2耕作时§f有小概率掉落§e摩拉"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 4,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 4.0,
     "attackSpeed": 2.0,
     "enchantability": 5,
     "damageVsEntity": 9.0,
     "usageCount": 800,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -33,6 +33,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

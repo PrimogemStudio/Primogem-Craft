@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -16,22 +16,24 @@
         "§7随她左右即可"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 1,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 4.0,
     "attackSpeed": 2.0,
     "enchantability": 25,
     "damageVsEntity": 15.0,
     "usageCount": 1792,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Jijiuchanzhiyuan"
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "STONE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": true
   }

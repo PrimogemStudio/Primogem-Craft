@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -9,9 +9,11 @@
     "states": [],
     "name": "§5『奇物』§e香涎干酪",
     "rarity": "COMMON",
-    "creativeTab": {
-      "value": "CUSTOM:Zhenghuo"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 32,
@@ -47,6 +49,7 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "rangedItemChargesPower": false,
     "isFood": true,
     "nutritionalValue": 0,
     "saturation": 0.0,

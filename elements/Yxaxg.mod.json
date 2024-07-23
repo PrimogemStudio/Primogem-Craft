@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -16,16 +16,16 @@
         "§c - 5%概率销毁方块"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 5,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 8.0,
     "attackSpeed": 1.0,
     "enchantability": 5,
     "damageVsEntity": 4.0,
     "usageCount": 2561,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Ysfc"
@@ -35,6 +35,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedOnBlock": {

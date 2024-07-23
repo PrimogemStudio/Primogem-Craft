@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "primogemcraft:hhzd_0",
-    "primogemcraft:hhzd_1",
-    "primogemcraft:shenmiwanou",
     "primogemcraft:hhzdboo",
+    "primogemcraft:shenmiwanou",
+    "primogemcraft:hhzd_1",
+    "primogemcraft:hhzd_0",
     "primogemcraft:dijingqinjingkuangshi",
     "primogemcraft:shengzhangkuangshi"
   ]

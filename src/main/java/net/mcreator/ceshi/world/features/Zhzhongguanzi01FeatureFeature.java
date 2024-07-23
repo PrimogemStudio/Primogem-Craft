@@ -2,7 +2,7 @@
 package net.mcreator.ceshi.world.features;
 
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import net.minecraft.world.level.Level;
+import net.minecraft.world.level.WorldGenLevel;
 
 import net.mcreator.ceshi.world.features.configurations.StructureFeatureConfiguration;
 import net.mcreator.ceshi.procedures.Jiegouxianzhi1Procedure;
@@ -13,7 +13,7 @@ public class Zhzhongguanzi01FeatureFeature extends StructureFeature {
 	}
 
 	public boolean place(FeaturePlaceContext<StructureFeatureConfiguration> context) {
-		Level world = context.level().getLevel();
+		WorldGenLevel world = context.level();
 		int x = context.origin().getX();
 		int y = context.origin().getY();
 		int z = context.origin().getZ();

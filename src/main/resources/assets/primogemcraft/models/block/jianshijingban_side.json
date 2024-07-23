@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_side",
   "textures": {
+    "particle": "primogemcraft:block/jianshijingban",
     "edge": "primogemcraft:block/jianshijingban",
     "pane": "primogemcraft:block/jianshijingban"
   },

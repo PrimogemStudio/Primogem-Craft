@@ -65,11 +65,6 @@ public class HeitayindaoyongguiScreen extends AbstractContainerScreen<Heitayinda
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.heitayindaoyonggui.label_xiao_hao_1_ge_sui_ji_cuo_wu_dai_ma_zhuang_zhi_xuan_ze_1"), 15, 16, -1, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.heitayindaoyonggui.label_xiao_hao_16_ge_yu_zhou_sui_pian_huo_de_ge_sui_ji_qi_wu"), 15, 61, -1, false);

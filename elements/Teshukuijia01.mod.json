@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,7 @@
     "textureLeggings": "pingzhang",
     "enableBoots": true,
     "textureBoots": "pingzhang",
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "armorTextureFile": "teshu01_",
     "helmetName": "特殊01",
     "bodyName": "特殊01",

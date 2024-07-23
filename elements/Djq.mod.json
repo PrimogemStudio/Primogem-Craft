@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -18,16 +18,16 @@
         "§7 - 25%转化失败"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 3,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 8.0,
     "attackSpeed": 1.0,
     "enchantability": 15,
     "damageVsEntity": 6.0,
     "usageCount": 1561,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Yuanshi"
@@ -37,6 +37,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedOnBlock": {

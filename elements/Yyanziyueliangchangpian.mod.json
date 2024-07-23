@@ -1,14 +1,16 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "musicdisc",
   "definition": {
     "name": "盐渍月亮！",
     "rarity": "RARE",
     "texture": "yanzhanyueliang",
     "description": "HOYO-MiX",
-    "creativeTab": {
-      "value": "CUSTOM:Zhenghuo"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
     "specialInformation": {
       "fixedValue": []
     },

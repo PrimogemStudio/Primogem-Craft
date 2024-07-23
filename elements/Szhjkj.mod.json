@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -22,9 +22,11 @@
     "onBootsTick": {
       "name": "Szkjsx"
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "armorTextureFile": "szhjt_",
     "helmetName": "§a『生长碧翡』§e下界合金头盔",
     "bodyName": "§a『生长碧翡』§e下界合金胸甲",

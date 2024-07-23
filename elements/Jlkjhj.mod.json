@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -22,9 +22,11 @@
     "onBootsTick": {
       "name": "Jjlkjsx"
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "armorTextureFile": "jlhj_",
     "helmetName": "§6『坚牢黄玉』 §e下界合金头盔",
     "bodyName": "§6『坚牢黄玉』 §e下界合金胸甲",

@@ -48,6 +48,8 @@ public class PrimogemcraftMod {
 	public static final String MODID = "primogemcraft";
 
 	public PrimogemcraftMod() {
+		// Start of user code block mod constructor
+		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		PrimogemcraftModSounds.REGISTRY.register(bus);

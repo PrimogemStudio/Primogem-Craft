@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class XiumuzhalanBlock extends FenceBlock {
 	public XiumuzhalanBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).forceSolidOn());
 	}
 
 	@Override

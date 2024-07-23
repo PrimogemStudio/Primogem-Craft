@@ -24,8 +24,6 @@ import javax.annotation.Nullable;
 public class GGouLiaoJinZhiFuDuHongFaProcedure {
 	@SubscribeEvent
 	public static void onLeftClickBlock(PlayerInteractEvent.LeftClickBlock event) {
-		if (event.getHand() != event.getEntity().getUsedItemHand())
-			return;
 		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
 	}
 
@@ -48,6 +46,8 @@ public class GGouLiaoJinZhiFuDuHongFaProcedure {
 			}
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
+			} else if (event != null && event.hasResult()) {
+				event.setResult(Event.Result.DENY);
 			}
 		}
 	}

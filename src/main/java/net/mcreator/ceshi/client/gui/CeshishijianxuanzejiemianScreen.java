@@ -63,11 +63,6 @@ public class CeshishijianxuanzejiemianScreen extends AbstractContainerScreen<Ces
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.ceshishijianxuanzejiemian.label_cuo_wu_dai_ma_zhuan_hua"), 10, 6, -12829636, false);
 	}

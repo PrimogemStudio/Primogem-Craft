@@ -59,11 +59,6 @@ public class MaoxianjiazhinangguiScreen extends AbstractContainerScreen<Maoxianj
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.maoxianjiazhinanggui.label_mou_xian_jia_zhi_nang"), 7, 6, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.maoxianjiazhinanggui.label_wu_pin_lan"), 7, 73, -12829636, false);

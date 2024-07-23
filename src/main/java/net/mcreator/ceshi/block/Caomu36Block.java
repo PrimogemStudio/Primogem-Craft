@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class Caomu36Block extends ButtonBlock {
 	public Caomu36Block() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape(), BlockSetType.OAK, 30, true);
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f), BlockSetType.OAK, 30, true);
 	}
 
 	@Override

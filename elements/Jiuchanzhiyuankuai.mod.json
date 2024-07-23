@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "block",
   "definition": {
     "texture": "jiuchanzhiyuankuaixiaban01",
@@ -44,9 +44,11 @@
     "resistance": 30.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshifangkuaika"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshifangkuaika"
+      }
+    ],
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
@@ -107,7 +109,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 4,
+    "vanillaToolTier": "DIAMOND",
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

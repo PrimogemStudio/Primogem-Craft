@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class YiyishijiemubanlouqiBlock extends StairBlock {
 	public YiyishijiemubanlouqiBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 10f));
 	}
 
 	@Override

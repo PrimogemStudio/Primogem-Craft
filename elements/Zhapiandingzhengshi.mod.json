@@ -1,14 +1,16 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "musicdisc",
   "definition": {
     "name": "§f下界合金锭",
     "rarity": "RARE",
     "texture": "zhapianding",
     "description": "§c！§7—§e！§7—§9！§7—§a！§7——",
-    "creativeTab": {
-      "value": "CUSTOM:Zhenghuo"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
     "specialInformation": {
       "fixedValue": [
         "§7表面留有细纹",

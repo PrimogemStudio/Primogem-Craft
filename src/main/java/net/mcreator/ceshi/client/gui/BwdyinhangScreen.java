@@ -68,11 +68,6 @@ public class BwdyinhangScreen extends AbstractContainerScreen<BwdyinhangMenu> {
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.bwdyinhang.label_cun_ru_yu_zhou_sui_pian_dang"), 47, 11, -10066330, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.bwdyinhang.label_50gai_lu_huo_de_sui_ji"), 47, 41, -10066330, false);

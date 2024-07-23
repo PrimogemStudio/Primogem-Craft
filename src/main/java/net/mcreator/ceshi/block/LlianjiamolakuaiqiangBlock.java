@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class LlianjiamolakuaiqiangBlock extends WallBlock {
 	public LlianjiamolakuaiqiangBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(3f, 30f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(3f, 30f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).forceSolidOn());
 	}
 
 	@Override

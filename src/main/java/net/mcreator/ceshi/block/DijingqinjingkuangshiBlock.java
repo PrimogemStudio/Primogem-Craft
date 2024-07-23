@@ -9,7 +9,6 @@ import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.chat.Component;
@@ -33,13 +32,6 @@ public class DijingqinjingkuangshiBlock extends FallingBlock {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
-	}
-
-	@Override
-	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof ShovelItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 2;
-		return false;
 	}
 
 	@Override

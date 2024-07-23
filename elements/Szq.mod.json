@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Spade",
@@ -16,16 +16,16 @@
         "§7 - [§6SHIFT+右键]§7改变泥土状态"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 4,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 2.0,
     "attackSpeed": 3.0,
     "enchantability": 5,
     "damageVsEntity": 2.0,
     "usageCount": 1561,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -38,6 +38,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedOnBlock": {

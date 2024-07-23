@@ -1,14 +1,16 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "musicdisc",
   "definition": {
     "name": "§6共逐星华",
     "rarity": "RARE",
     "texture": "gongzhuxinghua",
     "description": "§eHOYO-MiX",
-    "creativeTab": {
-      "value": "TOOLS"
-    },
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
     "specialInformation": {
       "fixedValue": []
     },

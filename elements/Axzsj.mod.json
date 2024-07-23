@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -17,16 +17,16 @@
         "§7 - 持续8秒"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 3,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 8.0,
     "attackSpeed": 1.6,
     "enchantability": 18,
     "damageVsEntity": 6.5,
     "usageCount": 1561,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Aixubingyusuixie"
@@ -36,6 +36,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {

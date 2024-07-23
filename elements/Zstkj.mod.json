@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -22,9 +22,11 @@
     "onBootsTick": {
       "name": "Zskjsx"
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "armorTextureFile": "zst_",
     "helmetName": "§d『最胜紫晶』§f铁头盔",
     "bodyName": "§d『最胜紫晶』§f铁胸甲",

@@ -1,6 +1,7 @@
 {
   "parent": "block/template_glass_pane_noside_alt",
   "textures": {
+    "particle": "primogemcraft:block/jianshijingban",
     "pane": "primogemcraft:block/jianshijingban"
   },
   "render_type": "translucent"

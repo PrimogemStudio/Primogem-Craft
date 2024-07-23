@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -15,16 +15,16 @@
         "§7 - 5%概率掉落一个元素晶石粉尘"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 4,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 9.0,
     "attackSpeed": 1.0,
     "enchantability": 15,
     "damageVsEntity": 4.0,
     "usageCount": 1561,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Yuanshi"
@@ -34,6 +34,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onBlockDestroyedWithTool": {

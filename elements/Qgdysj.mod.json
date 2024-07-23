@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -18,22 +18,24 @@
         "§c • 别在家里使用"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Zhenghuo"
-    },
-    "harvestLevel": 5,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
     "efficiency": 10.0,
     "attackSpeed": 1.2,
     "enchantability": 100,
     "damageVsEntity": 0.3,
     "usageCount": 20,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "Blocks.BEDROCK"
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {

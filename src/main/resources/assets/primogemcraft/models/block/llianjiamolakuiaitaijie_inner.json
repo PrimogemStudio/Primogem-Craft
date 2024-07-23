@@ -1,6 +1,7 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
+    "particle": "primogemcraft:block/121qxmlk",
     "bottom": "primogemcraft:block/121qxmlk",
     "top": "primogemcraft:block/121qxmlk",
     "side": "primogemcraft:block/121qxmlk"

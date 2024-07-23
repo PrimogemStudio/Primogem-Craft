@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "primogemcraft:block/yimudi",
     "bottom": "primogemcraft:block/yimudi",
     "top": "primogemcraft:block/yimuding",
     "side": "primogemcraft:block/yimuce"

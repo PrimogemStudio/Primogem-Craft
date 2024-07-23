@@ -1,6 +1,7 @@
 {
   "parent": "block/button_pressed",
   "textures": {
+    "particle": "primogemcraft:block/caoyuanhe_muban",
     "texture": "primogemcraft:block/caoyuanhe_muban"
   },
   "render_type": "solid"

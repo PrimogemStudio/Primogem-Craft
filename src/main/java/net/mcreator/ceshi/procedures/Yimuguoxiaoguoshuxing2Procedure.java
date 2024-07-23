@@ -38,6 +38,8 @@ public class Yimuguoxiaoguoshuxing2Procedure {
 			if (entity.getPersistentData().getDouble("ymgs_xz") < 5) {
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
+				} else if (event != null && event.hasResult()) {
+					event.setResult(Event.Result.DENY);
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

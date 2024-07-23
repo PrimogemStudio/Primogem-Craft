@@ -59,11 +59,6 @@ public class ZhangquanzhezhinangguiScreen extends AbstractContainerScreen<Zhangq
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.zhangquanzhezhinanggui.label_wu_pin_lan"), 27, 124, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.zhangquanzhezhinanggui.label_yi_bang_ren_zhi_nang"), 9, 6, -12829636, false);

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -25,16 +25,16 @@
         "§d使用摩拉§6[SHIFT+右键]§d生物可添加或删除队友"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 3,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 8.0,
     "attackSpeed": 1.2,
     "enchantability": 15,
     "damageVsEntity": 5.0,
     "usageCount": 1561,
-    "blocksAffected": [],
     "repairItems": [
       {
         "value": "CUSTOM:Dijingsuixie"
@@ -44,6 +44,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {

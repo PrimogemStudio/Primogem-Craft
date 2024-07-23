@@ -1,6 +1,7 @@
 {
   "parent": "block/button_inventory",
   "textures": {
+    "particle": "primogemcraft:block/yimuding",
     "texture": "primogemcraft:block/yimuding"
   },
   "render_type": "solid"

@@ -73,11 +73,6 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.gu_iqiwuxuanze.label_xuan_ze_ge_qi_wu"), 5, 5, -1, false);
 	}

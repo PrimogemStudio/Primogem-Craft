@@ -68,11 +68,6 @@ public class YinhangScreen extends AbstractContainerScreen<YinhangMenu> {
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.yinhang.label_cun_ru_yu_zhou_sui_pian_dang"), 47, 11, -6710887, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.yinhang.label_xia_ci_yu_dao_shi_ke_ti"), 47, 21, -6710887, false);

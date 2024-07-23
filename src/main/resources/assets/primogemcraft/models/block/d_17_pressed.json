@@ -1,6 +1,7 @@
 {
   "parent": "block/button_pressed",
   "textures": {
+    "particle": "primogemcraft:block/yimudi",
     "texture": "primogemcraft:block/yimudi"
   },
   "render_type": "solid"

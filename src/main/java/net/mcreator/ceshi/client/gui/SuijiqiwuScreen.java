@@ -63,11 +63,6 @@ public class SuijiqiwuScreen extends AbstractContainerScreen<SuijiqiwuMenu> {
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.suijiqiwu.label_sui_ji_qi_wu"), 6, 6, -12829636, false);
 	}

@@ -1,6 +1,7 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
+    "particle": "primogemcraft:block/yuanhe_muban_2",
     "bottom": "primogemcraft:block/yuanhe_muban_2",
     "top": "primogemcraft:block/yuanhe_muban_2",
     "side": "primogemcraft:block/yuanhe_muban_2"

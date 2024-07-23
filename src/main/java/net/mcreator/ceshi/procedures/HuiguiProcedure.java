@@ -56,6 +56,8 @@ public class HuiguiProcedure {
 			}
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
+			} else if (event != null && event.hasResult()) {
+				event.setResult(Event.Result.DENY);
 			}
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList()

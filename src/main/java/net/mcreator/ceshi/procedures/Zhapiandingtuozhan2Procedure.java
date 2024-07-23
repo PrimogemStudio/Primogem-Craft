@@ -32,6 +32,8 @@ public class Zhapiandingtuozhan2Procedure {
 			if (entity.getPersistentData().getBoolean("zhapianshufu")) {
 				if (event != null && event.isCancelable()) {
 					event.setCanceled(true);
+				} else if (event != null && event.hasResult()) {
+					event.setResult(Event.Result.DENY);
 				}
 			}
 		}

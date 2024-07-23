@@ -59,11 +59,6 @@ public class CeshiguiScreen extends AbstractContainerScreen<CeshiguiMenu> {
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.ceshigui.label_bao_xiang"), 7, 6, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.ceshigui.label_wu_pin_lan"), 7, 73, -12829636, false);

@@ -1,11 +1,10 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "enchantment",
   "definition": {
     "name": "愚者之怒",
     "type": "BREAKABLE",
     "rarity": "VERY_RARE",
-    "minLevel": 1,
     "maxLevel": 5,
     "damageModifier": 0,
     "compatibleEnchantments": [],

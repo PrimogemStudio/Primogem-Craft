@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "primogemcraft:block/caoyuanhe_muban",
     "bottom": "primogemcraft:block/caoyuanhe_muban",
     "top": "primogemcraft:block/caoyuanhe_muban",
     "side": "primogemcraft:block/caoyuanhe_muban"

@@ -59,11 +59,6 @@ public class LiulangzhezhinangguiScreen extends AbstractContainerScreen<Liulangz
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.liulangzhezhinanggui.label_liu_lang_zhe_zhi_nang"), 7, 7, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.liulangzhezhinanggui.label_wu_pin_lan"), 7, 59, -12829636, false);

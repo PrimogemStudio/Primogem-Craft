@@ -1,11 +1,10 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "enchantment",
   "definition": {
     "name": "宇宙碎片修补",
     "type": "BREAKABLE",
     "rarity": "UNCOMMON",
-    "minLevel": 1,
     "maxLevel": 5,
     "damageModifier": 0,
     "compatibleEnchantments": [],

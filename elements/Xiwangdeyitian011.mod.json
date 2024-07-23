@@ -1,14 +1,16 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "musicdisc",
   "definition": {
     "name": "希望的一天",
     "rarity": "RARE",
     "texture": "mengdedaibiao",
     "description": "陈致逸,HOYO-MiX",
-    "creativeTab": {
-      "value": "CUSTOM:Zhenghuo"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
     "specialInformation": {
       "fixedValue": []
     },

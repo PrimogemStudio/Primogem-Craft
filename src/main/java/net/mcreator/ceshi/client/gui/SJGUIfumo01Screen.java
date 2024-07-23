@@ -65,11 +65,6 @@ public class SJGUIfumo01Screen extends AbstractContainerScreen<SJGUIfumo01Menu> 
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.sjgu_ifumo_01.label_jin_xing_1ci_di_pin_zhi_fu_mo"), 37, 15, -5070724, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.primogemcraft.sjgu_ifumo_01.label_jin_xing_1ci_di_gao_pin_zhi_fu_mo"), 37, 63, -5070724, false);

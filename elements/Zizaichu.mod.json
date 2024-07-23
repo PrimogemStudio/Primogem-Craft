@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
@@ -15,16 +15,16 @@
         "§7 - 狠狠地击退目标！"
       ]
     },
-    "creativeTab": {
-      "value": "CUSTOM:Yuanshigongjuxuanxiangka"
-    },
-    "harvestLevel": 3,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
     "efficiency": 8.5,
     "attackSpeed": 0.4,
     "enchantability": 15,
     "damageVsEntity": 11.5,
     "usageCount": 1561,
-    "blocksAffected": [],
     "glowCondition": {
       "fixedValue": false
     },
@@ -37,6 +37,8 @@
       }
     ],
     "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onCrafted": {

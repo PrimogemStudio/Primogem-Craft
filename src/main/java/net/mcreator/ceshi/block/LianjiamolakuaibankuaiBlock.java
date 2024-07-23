@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class LianjiamolakuaibankuaiBlock extends SlabBlock {
 	public LianjiamolakuaibankuaiBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 4f).dynamicShape());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 4f));
 	}
 
 	@Override

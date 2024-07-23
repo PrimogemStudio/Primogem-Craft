@@ -1,6 +1,7 @@
 {
   "parent": "block/inner_stairs",
   "textures": {
+    "particle": "primogemcraft:block/cangsnagshizhuan",
     "bottom": "primogemcraft:block/cangsnagshizhuan",
     "top": "primogemcraft:block/cangsnagshizhuan",
     "side": "primogemcraft:block/cangsnagshizhuan"
