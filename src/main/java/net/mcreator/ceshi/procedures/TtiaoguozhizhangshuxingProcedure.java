@@ -46,17 +46,23 @@ public class TtiaoguozhizhangshuxingProcedure {
 					}
 					if (entityiterator instanceof QqiyuanJinGuangEntity) {
 						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							_level.getServer().getCommands().performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
+											.withSuppressedOutput(),
 									"loot spawn ~ ~ ~ loot primogemcraft:qqyjin");
 					}
 					if (entityiterator instanceof QQyuanchuzi01Entity) {
 						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							_level.getServer().getCommands().performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
+											.withSuppressedOutput(),
 									"loot spawn ~ ~ ~ loot primogemcraft:q_qqyzi");
 					}
 					if (entityiterator instanceof QQQyuanchulan01Entity) {
 						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							_level.getServer().getCommands().performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
+											.withSuppressedOutput(),
 									"loot spawn ~ ~ ~ loot primogemcraft:qq_qqylan");
 					}
 					if (!entityiterator.level().isClientSide())
