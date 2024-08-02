@@ -26,6 +26,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.MINGWEI_YIQIEDEKAISHI.get());
 				tabData.accept(PrimogemcraftModItems.YUANSHI.get());
 				tabData.accept(PrimogemcraftModItems.YSSP.get());
+				tabData.accept(PrimogemcraftModItems.YUANSHIF.get());
 				tabData.accept(PrimogemcraftModItems.XINGCHEN.get());
 				tabData.accept(PrimogemcraftModItems.XINGHUI.get());
 				tabData.accept(PrimogemcraftModItems.XIXIANGYUZHIYUAN.get());

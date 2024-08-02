@@ -26766,8 +26766,15 @@
       "registry_name": "yssp",
       "metadata": {
         "files": [
+          "src/main/resources/assets/primogemcraft/models/item/yssp_5.json",
           "src/main/java/net/mcreator/ceshi/item/YsspItem.java",
-          "src/main/resources/assets/primogemcraft/models/item/yssp.json"
+          "src/main/resources/assets/primogemcraft/models/item/yssp_4.json",
+          "src/main/resources/assets/primogemcraft/models/item/yssp_0.json",
+          "src/main/resources/assets/primogemcraft/models/item/yssp_1.json",
+          "src/main/resources/assets/primogemcraft/models/item/yssp_3.json",
+          "src/main/resources/assets/primogemcraft/models/item/yssp.json",
+          "src/main/resources/assets/primogemcraft/models/item/yssp_2.json",
+          "src/main/resources/assets/primogemcraft/models/item/yssp_6.json"
         ]
       }
     },
@@ -26854,6 +26861,29 @@
       "metadata": {
         "files": [
           "src/main/resources/data/primogemcraft/recipes/ysjfrpf_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Yssp_sx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yssp_sx",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Yssp_sxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -28436,6 +28466,7 @@
       "Bushizidanhe",
       "Yuanshi",
       "Yssp",
+      "Yuanshif",
       "Xingchen",
       "Xinghui",
       "Xixiangyuzhiyuan",

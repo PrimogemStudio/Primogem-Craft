@@ -1,16 +1,32 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "pattern": [
-    "aaa",
-    "aaa",
-    "aaa"
-  ],
-  "key": {
-    "a": {
+  "ingredients": [
+    {
+      "item": "primogemcraft:yssp"
+    },
+    {
+      "item": "primogemcraft:yssp"
+    },
+    {
+      "item": "primogemcraft:yssp"
+    },
+    {
+      "item": "primogemcraft:yssp"
+    },
+    {
+      "item": "primogemcraft:yssp"
+    },
+    {
+      "item": "primogemcraft:yssp"
+    },
+    {
+      "item": "primogemcraft:yssp"
+    },
+    {
       "item": "primogemcraft:yssp"
     }
-  },
+  ],
   "result": {
     "item": "primogemcraft:yuanshi",
     "count": 1

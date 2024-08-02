@@ -9,10 +9,14 @@
     "states": [],
     "name": "原石粉尘",
     "rarity": "RARE",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 10,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {

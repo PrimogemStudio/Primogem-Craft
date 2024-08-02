@@ -2,5 +2,49 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "primogemcraft:item/yuanshisuipian"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "primogemcraft:yssp_shuliang": 2
+      },
+      "model": "primogemcraft:item/yssp_0"
+    },
+    {
+      "predicate": {
+        "primogemcraft:yssp_shuliang": 3
+      },
+      "model": "primogemcraft:item/yssp_1"
+    },
+    {
+      "predicate": {
+        "primogemcraft:yssp_shuliang": 4
+      },
+      "model": "primogemcraft:item/yssp_2"
+    },
+    {
+      "predicate": {
+        "primogemcraft:yssp_shuliang": 5
+      },
+      "model": "primogemcraft:item/yssp_3"
+    },
+    {
+      "predicate": {
+        "primogemcraft:yssp_shuliang": 6
+      },
+      "model": "primogemcraft:item/yssp_4"
+    },
+    {
+      "predicate": {
+        "primogemcraft:yssp_shuliang": 7
+      },
+      "model": "primogemcraft:item/yssp_5"
+    },
+    {
+      "predicate": {
+        "primogemcraft:yssp_shuliang": 8
+      },
+      "model": "primogemcraft:item/yssp_6"
+    }
+  ]
 }

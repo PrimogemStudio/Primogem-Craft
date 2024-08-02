@@ -5,8 +5,125 @@
     "renderType": 0,
     "texture": "yuanshisuipian",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "shuliang": {
+        "name": "Yssp_sx"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "yssp_002",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "yssp_003",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 3.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "yssp_004",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 4.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "yssp_005",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 5.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "yssp_006",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 6.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "yssp_007",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 7.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "yssp_008",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 8.0
+          }
+        ]
+      }
+    ],
     "name": "§b原石碎片",
     "rarity": "COMMON",
     "creativeTabs": [
@@ -14,7 +131,7 @@
         "value": "CUSTOM:Zhenghuo"
       }
     ],
-    "stackSize": 64,
+    "stackSize": 8,
     "enchantability": 0,
     "useDuration": 32,
     "toolType": 1.0,
