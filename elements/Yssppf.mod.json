@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 9,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Yuanshif"
+        "value": "CUSTOM:Yssp"
       },
       {
-        "value": "CUSTOM:Yuanshif"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Yuanshif"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Yuanshif"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Yuanshif"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Yuanshif"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Yuanshif"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Yuanshif"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Yuanshif"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Yssp"
+      "value": "CUSTOM:Yuanshif"
     },
-    "name": "ysjfrpf",
+    "name": "yssppf",
     "namespace": "mod"
   }
 }

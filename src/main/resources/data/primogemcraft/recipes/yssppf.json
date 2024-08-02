@@ -2,17 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
-    "aaa",
-    "aaa"
+    "a"
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:yuanshif"
+      "item": "primogemcraft:yssp"
     }
   },
   "result": {
-    "item": "primogemcraft:yssp",
-    "count": 1
+    "item": "primogemcraft:yuanshif",
+    "count": 9
   }
 }

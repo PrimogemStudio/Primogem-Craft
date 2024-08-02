@@ -1,0 +1,22 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 20,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:Ysjfr"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Yuanshif"
+    },
+    "name": "ysjfrpf_1",
+    "namespace": "mod"
+  }
+}

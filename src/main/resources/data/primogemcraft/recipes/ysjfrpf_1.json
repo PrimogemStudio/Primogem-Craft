@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 0,
+  "cookingtime": 20,
+  "ingredient": {
+    "item": "primogemcraft:ysjfr"
+  },
+  "result": "primogemcraft:yuanshif"
+}
