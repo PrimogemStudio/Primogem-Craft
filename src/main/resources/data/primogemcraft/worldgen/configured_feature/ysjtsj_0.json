@@ -6,8 +6,43 @@
     "targets": [
       {
         "target": {
-          "predicate_type": "tag_match",
-          "tag": "minecraft:stone"
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:stone"
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:ysjtsj_0"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:granite"
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:ysjtsj_0"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:polished_diorite"
+          }
+        },
+        "state": {
+          "Name": "primogemcraft:ysjtsj_0"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:andesite"
+          }
         },
         "state": {
           "Name": "primogemcraft:ysjtsj_0"
