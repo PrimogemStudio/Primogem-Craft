@@ -19,6 +19,8 @@ import net.mcreator.ceshi.block.ZiyousongshikuaiBlock;
 import net.mcreator.ceshi.block.ZhjskBlock;
 import net.mcreator.ceshi.block.YuansujingshikuaiBlock;
 import net.mcreator.ceshi.block.YuanshikuangshiBlock;
+import net.mcreator.ceshi.block.Ysjtsj1Block;
+import net.mcreator.ceshi.block.Ysjtsj0Block;
 import net.mcreator.ceshi.block.YiyishijieyuanmubanzhuanBlock;
 import net.mcreator.ceshi.block.YiyishijiemuzhalanBlock;
 import net.mcreator.ceshi.block.YiyishijiemubanlouqiBlock;
@@ -246,6 +248,8 @@ public class PrimogemcraftModBlocks {
 	public static final RegistryObject<Block> SHENMIWANOU = REGISTRY.register("shenmiwanou", () -> new ShenmiwanouBlock());
 	public static final RegistryObject<Block> HHZDBOO = REGISTRY.register("hhzdboo", () -> new HhzdbooBlock());
 	public static final RegistryObject<Block> HHYINBAOQI = REGISTRY.register("hhyinbaoqi", () -> new HhyinbaoqiBlock());
+	public static final RegistryObject<Block> YSJTSJ_0 = REGISTRY.register("ysjtsj_0", () -> new Ysjtsj0Block());
+	public static final RegistryObject<Block> YSJTSJ_1 = REGISTRY.register("ysjtsj_1", () -> new Ysjtsj1Block());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

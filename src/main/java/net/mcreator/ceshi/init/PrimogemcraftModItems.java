@@ -866,6 +866,8 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> YSSP = REGISTRY.register("yssp", () -> new YsspItem());
 	public static final RegistryObject<Item> SUIJIWUPIN = REGISTRY.register("suijiwupin", () -> new SuijiwupinItem());
 	public static final RegistryObject<Item> YUANSHIF = REGISTRY.register("yuanshif", () -> new YuanshifItem());
+	public static final RegistryObject<Item> YSJTSJ_0 = block(PrimogemcraftModBlocks.YSJTSJ_0);
+	public static final RegistryObject<Item> YSJTSJ_1 = block(PrimogemcraftModBlocks.YSJTSJ_1);
 
 	// Start of user code block custom items
 	// End of user code block custom items

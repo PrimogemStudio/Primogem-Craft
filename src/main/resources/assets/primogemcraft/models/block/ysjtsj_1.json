@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/shenceng_ysjtks_zh",
+    "up": "primogemcraft:block/shenceng_ysjtks_zh",
+    "north": "primogemcraft:block/shenceng_ysjtks_zh",
+    "east": "primogemcraft:block/shenceng_ysjtks_zh",
+    "south": "primogemcraft:block/shenceng_ysjtks_zh",
+    "west": "primogemcraft:block/shenceng_ysjtks_zh",
+    "particle": "primogemcraft:block/shenceng_ysjtks_zh"
+  },
+  "render_type": "solid"
+}

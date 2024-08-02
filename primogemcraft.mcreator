@@ -26886,6 +26886,66 @@
           }
         ]
       }
+    },
+    {
+      "name": "Ysjtsj0",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ysjtsj_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/blockstates/ysjtsj_0.json",
+          "src/main/resources/data/primogemcraft/forge/biome_modifier/ysjtsj_0_biome_modifier.json",
+          "src/main/resources/data/primogemcraft/worldgen/placed_feature/ysjtsj_0.json",
+          "src/main/resources/data/primogemcraft/worldgen/configured_feature/ysjtsj_0.json",
+          "src/main/resources/assets/primogemcraft/models/block/ysjtsj_0.json",
+          "src/main/resources/assets/primogemcraft/models/item/ysjtsj_0.json",
+          "src/main/java/net/mcreator/ceshi/block/Ysjtsj0Block.java"
+        ]
+      }
+    },
+    {
+      "name": "Ysjtsj1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ysjtsj_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/ysjtsj_1.json",
+          "src/main/java/net/mcreator/ceshi/block/Ysjtsj1Block.java",
+          "src/main/resources/data/primogemcraft/forge/biome_modifier/ysjtsj_1_biome_modifier.json",
+          "src/main/resources/data/primogemcraft/worldgen/configured_feature/ysjtsj_1.json",
+          "src/main/resources/data/primogemcraft/worldgen/placed_feature/ysjtsj_1.json",
+          "src/main/resources/assets/primogemcraft/blockstates/ysjtsj_1.json",
+          "src/main/resources/assets/primogemcraft/models/block/ysjtsj_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Sjjtzlp0",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sjjtzlp_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/loot_tables/blocks/ysjtsj_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Sjjtzlp1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sjjtzlp_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/loot_tables/blocks/ysjtsj_1.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -27248,6 +27308,8 @@
       "CUSTOM:Aaixubingyuduanpian"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Ysjtsj1",
+      "~CUSTOM:Ysjtsj0",
       "~CUSTOM:Jianshijingban",
       "~CUSTOM:Jdyk",
       "~CUSTOM:Lajsk",
@@ -28158,6 +28220,8 @@
       "CUSTOM:Axtsj"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Ysjtsj1",
+      "~CUSTOM:Ysjtsj0",
       "~CUSTOM:Jdyk",
       "~CUSTOM:Shenbanjianlaohuangyukuangshi",
       "~CUSTOM:Disuikuai1",
@@ -28892,7 +28956,9 @@
       "Dangaoliyue",
       "Xjhpyhfh",
       "Bwdxjhpyhfh",
-      "Jianshijingban"
+      "Jianshijingban",
+      "Ysjtsj0",
+      "Ysjtsj1"
     ]
   },
   "language_map": {
@@ -28909,7 +28975,9 @@
       "block.primogemcraft.hhyinbaoqi": "引爆器",
       "item.primogemcraft.kkuijiaceshi_leggings": "Mora Leggings",
       "item.primogemcraft.kjjlt_helmet": "§6『Prithiva Topaz』 §fIron Helmet",
+      "block.primogemcraft.ysjtsj_1": "深层元素晶体矿石",
       "item.primogemcraft.kaifaqiangzhi_01": "§4需知",
+      "block.primogemcraft.ysjtsj_0": "元素晶体矿石",
       "item.primogemcraft.chuangshijiejing": "Genesis Crystal",
       "item.primogemcraft.wuqiezhihuiguang": "Mistsplitter Reforged",
       "advancements.jdhszly.title": "reuse",
@@ -29902,7 +29970,9 @@
       "block.primogemcraft.hhyinbaoqi": "引爆器",
       "item.primogemcraft.kkuijiaceshi_leggings": "Mora Leggings",
       "item.primogemcraft.kjjlt_helmet": "§6『Prithiva Topaz』 §fIron Helmet",
+      "block.primogemcraft.ysjtsj_1": "深层元素晶体矿石",
       "item.primogemcraft.kaifaqiangzhi_01": "§4需知",
+      "block.primogemcraft.ysjtsj_0": "元素晶体矿石",
       "item.primogemcraft.chuangshijiejing": "Genesis Crystal",
       "item.primogemcraft.wuqiezhihuiguang": "Mistsplitter Reforged",
       "advancements.jdhszly.title": "reuse",
@@ -30895,7 +30965,9 @@
       "block.primogemcraft.hhyinbaoqi": "引爆器",
       "item.primogemcraft.kkuijiaceshi_leggings": "§e摩拉 护腿",
       "item.primogemcraft.kjjlt_helmet": "§6『坚牢黄玉』 §f铁头盔",
+      "block.primogemcraft.ysjtsj_1": "深层元素晶体矿石",
       "item.primogemcraft.kaifaqiangzhi_01": "§4需知",
+      "block.primogemcraft.ysjtsj_0": "元素晶体矿石",
       "item.primogemcraft.chuangshijiejing": "创世结晶",
       "item.primogemcraft.wuqiezhihuiguang": "§5雾切之回光",
       "advancements.jdhszly.title": "回收利用",
@@ -31877,7 +31949,7 @@
   "workspaceSettings": {
     "modid": "primogemcraft",
     "modName": "原石工艺",
-    "version": "24w30b",
+    "version": "24w32a",
     "description": "这是一个无厘头的娱乐性mod，包含一些米游物品和梗",
     "author": "Pepper某人, MCreator",
     "websiteURL": "https://www.mcmod.cn/class/10429.html",

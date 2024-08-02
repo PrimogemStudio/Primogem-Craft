@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/yuansujingti_zakuangshi",
+    "up": "primogemcraft:block/yuansujingti_zakuangshi",
+    "north": "primogemcraft:block/yuansujingti_zakuangshi",
+    "east": "primogemcraft:block/yuansujingti_zakuangshi",
+    "south": "primogemcraft:block/yuansujingti_zakuangshi",
+    "west": "primogemcraft:block/yuansujingti_zakuangshi",
+    "particle": "primogemcraft:block/yuansujingti_zakuangshi"
+  },
+  "render_type": "solid"
+}
