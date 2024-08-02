@@ -26946,6 +26946,132 @@
           "src/main/resources/data/primogemcraft/loot_tables/blocks/ysjtsj_1.json"
         ]
       }
+    },
+    {
+      "name": "Yskstcqsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yskstcqsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/YskstcqsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mllp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mllp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/mllp.json",
+          "src/main/java/net/mcreator/ceshi/item/MllpItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Mllpwzsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mllpwzsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/MllpwzsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mllpwz",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mllpwz",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/MllpwzItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/mllpwz.json"
+        ]
+      }
+    },
+    {
+      "name": "Mmllppf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mmllppf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/mmllppf.json"
+        ]
+      }
+    },
+    {
+      "name": "Mmllppf1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mmllppf_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/mmllppf_1.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -28077,6 +28203,16 @@
       "CUSTOM:Mlxdml02",
       "CUSTOM:Mlxdml03"
     ],
+    "BLOCKS:pgc:ketance": [
+      "CUSTOM:Ziyousongshikuangshi",
+      "CUSTOM:Jianlaokuangshi",
+      "CUSTOM:Zuishengkuangshi",
+      "CUSTOM:Shengzhangkuangshi",
+      "CUSTOM:Dijingqinjingkuangshi",
+      "CUSTOM:Ranyuanmanaokuangshi",
+      "CUSTOM:Aixubingyukuangshi",
+      "CUSTOM:Shenbanjianlaohuangyukuangshi"
+    ],
     "ITEMS:forge:ingots": [
       "CUSTOM:Zhongkouweitieding",
       "TAG:forge:ysjinshu"
@@ -28701,7 +28837,9 @@
       "QQQyuanchulan01",
       "Caoyuanheshengwu",
       "Xiaodeng",
-      "Xiaoheita"
+      "Xiaoheita",
+      "Mllp",
+      "Mllpwz"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -29408,6 +29546,7 @@
       "item.primogemcraft.jlliang": "§aFine Enhancement Ore",
       "item.primogemcraft.zstkj_boots": "§d『Vajrada Amethyst』§fIron Boots",
       "item.primogemcraft.ryc": "§c『Agnidus Agate』Hoe",
+      "item.primogemcraft.mllpwz": "完整的摩拉罗盘",
       "item.primogemcraft.ryg": "§c『Agnidus Agate』Pickaxe",
       "item.primogemcraft.ryf": "§c『Agnidus Agate』Axe",
       "gui.primogemcraft.cunzheshezhi.shifou_bwd": "§a是否不稳定？",
@@ -29431,6 +29570,7 @@
       "enchantment.primogemcraft.fumoyuzhezn.desc": "§8攻击目标后对自己造成一次主手+副手附魔等级*2%概率的目标当前血量200%的魔法伤害",
       "item.primogemcraft.jlkjhj_boots": "§6『Prithiva Topaz』 §eNetherite Boots",
       "advancements.wanwuqiyuan.title": "Everything Original",
+      "item.primogemcraft.mllp": "摩拉罗盘",
       "item.primogemcraft.ssanbamiantou": "§5『Curio』§dShiny Trapezohedron Die",
       "effect.primogemcraft.diguixiaoguo": "§aFixed§fCurio",
       "gui.primogemcraft.liulangzhezhinanggui.label_wu_pin_lan": "Inventory",
@@ -30403,6 +30543,7 @@
       "item.primogemcraft.jlliang": "§aFine Enhancement Ore",
       "item.primogemcraft.zstkj_boots": "§d『Vajrada Amethyst』§fIron Boots",
       "item.primogemcraft.ryc": "§c『Agnidus Agate』Hoe",
+      "item.primogemcraft.mllpwz": "完整的摩拉罗盘",
       "item.primogemcraft.ryg": "§c『Agnidus Agate』Pickaxe",
       "item.primogemcraft.ryf": "§c『Agnidus Agate』Axe",
       "gui.primogemcraft.cunzheshezhi.shifou_bwd": "§a是否不稳定？",
@@ -30426,6 +30567,7 @@
       "enchantment.primogemcraft.fumoyuzhezn.desc": "§8攻击目标后对自己造成一次主手+副手附魔等级*2%概率的目标当前血量200%的魔法伤害",
       "item.primogemcraft.jlkjhj_boots": "§6『Prithiva Topaz』 §eNetherite Boots",
       "advancements.wanwuqiyuan.title": "Everything Original",
+      "item.primogemcraft.mllp": "摩拉罗盘",
       "item.primogemcraft.ssanbamiantou": "§5『Curio』§dShiny Trapezohedron Die",
       "effect.primogemcraft.diguixiaoguo": "§aFixed§fCurio",
       "gui.primogemcraft.liulangzhezhinanggui.label_wu_pin_lan": "Inventory",
@@ -31393,6 +31535,7 @@
       "item.primogemcraft.jlliang": "§a精锻用良矿",
       "item.primogemcraft.zstkj_boots": "§d『最胜紫晶』§f铁靴子",
       "item.primogemcraft.ryc": "§c『燃愿玛瑙』锄",
+      "item.primogemcraft.mllpwz": "完整的摩拉罗盘",
       "item.primogemcraft.ryg": "§c『燃愿玛瑙』 镐",
       "item.primogemcraft.ryf": "§c『燃愿玛瑙』斧",
       "gui.primogemcraft.cunzheshezhi.shifou_bwd": "§a是否不稳定？",
@@ -31416,6 +31559,7 @@
       "enchantment.primogemcraft.fumoyuzhezn.desc": "§8攻击目标后有主手+副手附魔等级*2%概率对自己造成一次等同于目标当前生命值200%的魔法伤害",
       "item.primogemcraft.jlkjhj_boots": "§6『坚牢黄玉』 §e下界合金靴子",
       "advancements.wanwuqiyuan.title": "万物起“原”",
+      "item.primogemcraft.mllp": "摩拉罗盘",
       "item.primogemcraft.ssanbamiantou": "§5『奇物』§d闪耀的偏方三八面骰",
       "effect.primogemcraft.diguixiaoguo": "§a已修复§f代码",
       "gui.primogemcraft.liulangzhezhinanggui.label_wu_pin_lan": "物品栏",

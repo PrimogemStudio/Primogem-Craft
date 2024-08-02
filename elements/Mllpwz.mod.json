@@ -3,36 +3,36 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "yuanshi",
+    "texture": "molaluopan_wanzheng",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "开发者物品",
-    "rarity": "COMMON",
+    "name": "完整的摩拉罗盘",
+    "rarity": "EPIC",
     "creativeTabs": [
       {
-        "value": "MATERIALS"
+        "value": "CUSTOM:Zhenghuo"
       }
     ],
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 0,
+    "damageCount": 2048,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "这是开发者用的",
-        "你拿着除了能看原石的初版材质以外",
-        "没有任何用途"
+        "§7潜行右键对脚下方块进行记录",
+        "§7右键寻找§d5*y*5§7范围内的记录方块",
+        "§d可以探测所有方块！"
       ]
     },
     "glowCondition": {
@@ -42,7 +42,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "Ceshi_3"
+      "name": "Mllpwzsx"
     },
     "enableRanged": false,
     "shootConstantly": false,

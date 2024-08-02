@@ -198,6 +198,8 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.CAOYUANHESHENGWU_SPAWN_EGG.get());
 				tabData.accept(PrimogemcraftModItems.XIAODENG_SPAWN_EGG.get());
 				tabData.accept(PrimogemcraftModItems.XIAOHEITA_SPAWN_EGG.get());
+				tabData.accept(PrimogemcraftModItems.MLLP.get());
+				tabData.accept(PrimogemcraftModItems.MLLPWZ.get());
 			})
 
 					.build());
