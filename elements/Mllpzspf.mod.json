@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Zziyousongshi"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Yuansujingti"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Aixubingyu"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Jianlaohuangyu"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Mllphj"
+        "value": "CUSTOM:Mllp"
       },
       {
-        "value": "CUSTOM:Diijingqingjing"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Zuishengzijing"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Shengzhangbifei"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Rranyuanmanao"
+        "value": "Items.DIAMOND"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Mllpwz"
+      "value": "CUSTOM:Mllpzs"
     },
-    "name": "mmllppf_1",
+    "name": "mllpzspf",
     "namespace": "mod"
   }
 }

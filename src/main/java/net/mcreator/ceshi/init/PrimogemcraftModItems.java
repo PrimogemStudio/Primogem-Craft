@@ -224,7 +224,9 @@ import net.mcreator.ceshi.item.MmolagaoItem;
 import net.mcreator.ceshi.item.MmolafuItem;
 import net.mcreator.ceshi.item.MmolachanItem;
 import net.mcreator.ceshi.item.Mmola01Item;
+import net.mcreator.ceshi.item.MllpzsItem;
 import net.mcreator.ceshi.item.MllpwzItem;
+import net.mcreator.ceshi.item.MllphjItem;
 import net.mcreator.ceshi.item.MllpItem;
 import net.mcreator.ceshi.item.MljnbItem;
 import net.mcreator.ceshi.item.MengyingItem;
@@ -872,6 +874,8 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> YSJTSJ_1 = block(PrimogemcraftModBlocks.YSJTSJ_1);
 	public static final RegistryObject<Item> MLLP = REGISTRY.register("mllp", () -> new MllpItem());
 	public static final RegistryObject<Item> MLLPWZ = REGISTRY.register("mllpwz", () -> new MllpwzItem());
+	public static final RegistryObject<Item> MLLPZS = REGISTRY.register("mllpzs", () -> new MllpzsItem());
+	public static final RegistryObject<Item> MLLPHJ = REGISTRY.register("mllphj", () -> new MllphjItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "mllp_wz",
+    "texture": "mllp_zs",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "完整的摩拉罗盘",
-    "rarity": "EPIC",
+    "name": "摩拉罗盘 钻石",
+    "rarity": "RARE",
     "creativeTabs": [
       {
         "value": "CUSTOM:Zhenghuo"
@@ -18,7 +18,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 2048,
+    "damageCount": 1536,
     "recipeRemainder": {
       "value": ""
     },
@@ -31,8 +31,8 @@
     "specialInformation": {
       "fixedValue": [
         "§7潜行右键对脚下方块进行记录",
-        "§7右键寻找§d5*y*5§7范围内的记录方块",
-        "§d可以探测所有方块！"
+        "§7右键寻找§b3*y*3§7范围内的记录方块",
+        "§b可以搜寻绝大部分原版矿物方块！"
       ]
     },
     "glowCondition": {
@@ -42,7 +42,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "Mllpwzsx"
+      "name": "Yskstcqsx"
     },
     "enableRanged": false,
     "shootConstantly": false,

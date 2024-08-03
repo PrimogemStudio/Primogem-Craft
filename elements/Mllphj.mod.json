@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "mllp_wz",
+    "texture": "mllp_hj",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "完整的摩拉罗盘",
-    "rarity": "EPIC",
+    "name": "摩拉罗盘 下届合金",
+    "rarity": "UNCOMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:Zhenghuo"
@@ -18,7 +18,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 2048,
+    "damageCount": 1792,
     "recipeRemainder": {
       "value": ""
     },
@@ -32,7 +32,7 @@
       "fixedValue": [
         "§7潜行右键对脚下方块进行记录",
         "§7右键寻找§d5*y*5§7范围内的记录方块",
-        "§d可以探测所有方块！"
+        "§e可以寻找所有被标记为矿物的方块！"
       ]
     },
     "glowCondition": {

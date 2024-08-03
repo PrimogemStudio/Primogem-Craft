@@ -9,9 +9,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 public class MllpwzsxProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -22,12 +25,24 @@ public class MllpwzsxProcedure {
 		double za = 0;
 		BlockState a = Blocks.AIR.defaultBlockState();
 		if (entity.isShiftKeyDown()) {
-			itemstack.getOrCreateTag().putString("fnagkuai", (ForgeRegistries.BLOCKS.getKey((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()).toString()));
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(
-						("\u00A7d\u5DF2\u5C06\u00A7f" + (new ItemStack(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(((itemstack.getOrCreateTag().getString("fnagkuai"))).toLowerCase(java.util.Locale.ENGLISH))))).getDisplayName().getString()
-								+ "\u00A7d\u8BBE\u7F6E\u4E3A\u5BFB\u627E\u76EE\u6807")),
-						false);
+			if (itemstack.getItem() == PrimogemcraftModItems.MLLPHJ.get()) {
+				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:ores")))) {
+					itemstack.getOrCreateTag().putString("fnagkuai", (ForgeRegistries.BLOCKS.getKey((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()).toString()));
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal(("\u00A7d\u5DF2\u5C06\u00A7f"
+								+ (new ItemStack(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(((itemstack.getOrCreateTag().getString("fnagkuai"))).toLowerCase(java.util.Locale.ENGLISH))))).getDisplayName().getString()
+								+ "\u00A7d\u8BBE\u7F6E\u4E3A\u5BFB\u627E\u76EE\u6807")), false);
+				} else {
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("\u00A7c\u53EA\u80FD\u63A2\u6D4B\u88AB\u6807\u8BB0\u4E3A\u77FF\u7269\u7684\u65B9\u5757\uFF01"), false);
+				}
+			} else {
+				itemstack.getOrCreateTag().putString("fnagkuai", (ForgeRegistries.BLOCKS.getKey((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()).toString()));
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal(("\u00A7d\u5DF2\u5C06\u00A7f"
+							+ (new ItemStack(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(((itemstack.getOrCreateTag().getString("fnagkuai"))).toLowerCase(java.util.Locale.ENGLISH))))).getDisplayName().getString()
+							+ "\u00A7d\u8BBE\u7F6E\u4E3A\u5BFB\u627E\u76EE\u6807")), false);
+			}
 		} else {
 			{
 				ItemStack _ist = itemstack;

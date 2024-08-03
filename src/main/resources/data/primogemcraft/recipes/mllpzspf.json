@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "primogemcraft:mllp"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:mllpzs",
+    "count": 1
+  }
+}
