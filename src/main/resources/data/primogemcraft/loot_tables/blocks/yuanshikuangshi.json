@@ -78,6 +78,20 @@
               "formula": "minecraft:ore_drops"
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "primogemcraft:yssp",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 5
+              }
+            }
+          ]
         }
       ]
     },

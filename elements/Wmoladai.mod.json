@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "da_dai_mo_la_",
+    "texture": "jingzhimoladading",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§e装满精致摩拉的摩拉袋",
-    "rarity": "COMMON",
+    "name": "大块精致摩拉",
+    "rarity": "UNCOMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:Zhenghuo"

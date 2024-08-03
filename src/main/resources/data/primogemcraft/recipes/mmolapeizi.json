@@ -3,8 +3,8 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "aca",
-    "ded"
+    "cdc",
+    "efe"
   ],
   "key": {
     "a": {
@@ -14,13 +14,16 @@
       "tag": "minecraft:sand"
     },
     "c": {
-      "item": "primogemcraft:ranyuanduanpian"
+      "item": "primogemcraft:xiaodaimola"
     },
     "d": {
-      "item": "primogemcraft:jingzhimolakuai"
+      "item": "primogemcraft:ranyuanduanpian"
     },
     "e": {
-      "item": "primogemcraft:dbmlk"
+      "item": "primogemcraft:wmoladai"
+    },
+    "f": {
+      "item": "primogemcraft:molakuai_01"
     }
   },
   "result": {

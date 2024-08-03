@@ -27122,6 +27122,139 @@
           "src/main/resources/data/primogemcraft/recipes/mllphjpf.json"
         ]
       }
+    },
+    {
+      "name": "Zssp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zssp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/zssp_0.json",
+          "src/main/java/net/mcreator/ceshi/item/ZsspItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/zssp_3.json",
+          "src/main/resources/assets/primogemcraft/models/item/zssp_7.json",
+          "src/main/resources/assets/primogemcraft/models/item/zssp_6.json",
+          "src/main/resources/assets/primogemcraft/models/item/zssp_5.json",
+          "src/main/resources/assets/primogemcraft/models/item/zssp.json",
+          "src/main/resources/assets/primogemcraft/models/item/zssp_10.json",
+          "src/main/resources/assets/primogemcraft/models/item/zssp_8.json",
+          "src/main/resources/assets/primogemcraft/models/item/zssp_2.json",
+          "src/main/resources/assets/primogemcraft/models/item/zssp_4.json",
+          "src/main/resources/assets/primogemcraft/models/item/zssp_11.json",
+          "src/main/resources/assets/primogemcraft/models/item/zssp_9.json",
+          "src/main/resources/assets/primogemcraft/models/item/zssp_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Zzsspsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zzsspsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/ZzsspsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Zsslpsx2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zsslpsx_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Zsslpsx2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Zssppf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zssppf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/zssppf.json"
+        ]
+      }
+    },
+    {
+      "name": "Zssppf0",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zssppf_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/zssppf_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Yssppf1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yssppf_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/yssppf_1.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -28915,7 +29048,8 @@
       "QQQyuanchulan01",
       "Caoyuanheshengwu",
       "Xiaodeng",
-      "Xiaoheita"
+      "Xiaoheita",
+      "Zssp"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -29298,7 +29432,7 @@
       "gamerule.cs.description": "ces",
       "item.minecraft.tipped_arrow.effect.fengraoqiongjiang": "§eAbundant Drinking Arrow",
       "item.primogemcraft.wufengjian": "Dull Blade",
-      "item.primogemcraft.wmoladai": "§eBag filled with exquisite Mora",
+      "item.primogemcraft.wmoladai": "大块精致摩拉",
       "item.primogemcraft.axzst_chestplate": "§b『Shivada Jade』Diamond Chestplate",
       "block.primogemcraft.yishijiemuban_button": "monochrome another world wood planks button",
       "block.primogemcraft.mutankuai": "Charcoal Block",
@@ -29779,7 +29913,7 @@
       "gui.primogemcraft.ceshishijianxuanzejiemian.button_shua_xin": "Shuffle",
       "advancements.jdwhhl.descr": "制作任意等级元素去除模板（保留附魔）",
       "gui.primogemcraft.sjgu_ifumo_00.label_chi_kai_zhe_li": "离开这里。",
-      "item.primogemcraft.xiaodaimola": "wallet of Mora",
+      "item.primogemcraft.xiaodaimola": "小块精致摩拉",
       "item.primogemcraft.jjljxjhj": "§6『Prithiva Topaz』§eNetherite Sword",
       "item.primogemcraft.jlkjzs_boots": "§6『Prithiva Topaz』 §bDiamond Boots",
       "advancements.huanying.descr": "Welcome to play this mod",
@@ -30092,6 +30226,7 @@
       "gui.primogemcraft.bwdyinhang.label_50gai_lu_huo_de_sui_ji": "50%概率获得随机",
       "item.primogemcraft.sanyuezhufu": "§dBlessing of March",
       "block.primogemcraft.xiaoguanzi": "Small Jar",
+      "item.primogemcraft.zssp": "钻石碎片",
       "advancements.jdybdw.title": "一步到位！",
       "item.primogemcraft.ranyuankuai": "§cVajrada Amethyst Chunk",
       "item.ceshi.chuangshijiejing": "Fruit of Genesus Crystal",
@@ -31091,6 +31226,7 @@
       "gui.primogemcraft.bwdyinhang.label_50gai_lu_huo_de_sui_ji": "50%概率获得随机",
       "item.primogemcraft.sanyuezhufu": "§dBlessing of March",
       "block.primogemcraft.xiaoguanzi": "Small Jar",
+      "item.primogemcraft.zssp": "钻石碎片",
       "advancements.jdybdw.title": "一步到位！",
       "item.primogemcraft.ranyuankuai": "§cVajrada Amethyst Chunk",
       "item.ceshi.chuangshijiejing": "Fruit of Genesus Crystal",
@@ -32084,6 +32220,7 @@
       "gui.primogemcraft.bwdyinhang.label_50gai_lu_huo_de_sui_ji": "50%概率获得随机",
       "item.primogemcraft.sanyuezhufu": "§d三月祝福",
       "block.primogemcraft.xiaoguanzi": "小罐子",
+      "item.primogemcraft.zssp": "钻石碎片",
       "advancements.jdybdw.title": "一步到位！",
       "item.primogemcraft.ranyuankuai": "§c燃愿玛瑙 块",
       "item.ceshi.chuangshijiejing": "创世结晶果",

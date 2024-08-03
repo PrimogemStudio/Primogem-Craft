@@ -1,0 +1,253 @@
+{
+  "_fv": 66,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "zssp_001",
+    "customModelName": "Normal",
+    "customProperties": {
+      "shuliang": {
+        "name": "Yssp_sx"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "zssp_002",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "zssp_003",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 3.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "zssp_004",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 4.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "zssp_005",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 5.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "zssp_006",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 6.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "zssp_007",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 7.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "zssp_008",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 8.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "zssp_009",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 9.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "zssp_0016",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 10.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "zssp_0032",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 16.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "zssp_0064",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 32.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "zssp_0065",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 64.0
+          }
+        ]
+      }
+    ],
+    "name": "钻石碎片",
+    "rarity": "RARE",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "6xiao_dai_mo_la_",
+    "texture": "xiaokuaimola",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "小袋摩拉",
+    "name": "小块精致摩拉",
     "rarity": "UNCOMMON",
     "creativeTabs": [
       {

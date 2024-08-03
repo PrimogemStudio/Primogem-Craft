@@ -1,0 +1,80 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "primogemcraft:item/zssp_001"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 2
+      },
+      "model": "primogemcraft:item/zssp_0"
+    },
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 3
+      },
+      "model": "primogemcraft:item/zssp_1"
+    },
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 4
+      },
+      "model": "primogemcraft:item/zssp_2"
+    },
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 5
+      },
+      "model": "primogemcraft:item/zssp_3"
+    },
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 6
+      },
+      "model": "primogemcraft:item/zssp_4"
+    },
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 7
+      },
+      "model": "primogemcraft:item/zssp_5"
+    },
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 8
+      },
+      "model": "primogemcraft:item/zssp_6"
+    },
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 9
+      },
+      "model": "primogemcraft:item/zssp_7"
+    },
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 10
+      },
+      "model": "primogemcraft:item/zssp_8"
+    },
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 16
+      },
+      "model": "primogemcraft:item/zssp_9"
+    },
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 32
+      },
+      "model": "primogemcraft:item/zssp_10"
+    },
+    {
+      "predicate": {
+        "primogemcraft:zssp_shuliang": 64
+      },
+      "model": "primogemcraft:item/zssp_11"
+    }
+  ]
+}

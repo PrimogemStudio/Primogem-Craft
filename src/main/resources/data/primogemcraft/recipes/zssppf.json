@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:zssp"
+    },
+    {
+      "item": "primogemcraft:zssp"
+    },
+    {
+      "item": "primogemcraft:zssp"
+    },
+    {
+      "item": "primogemcraft:zssp"
+    },
+    {
+      "item": "primogemcraft:zssp"
+    },
+    {
+      "item": "primogemcraft:zssp"
+    },
+    {
+      "item": "primogemcraft:zssp"
+    },
+    {
+      "item": "primogemcraft:zssp"
+    },
+    {
+      "item": "primogemcraft:zssp"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond",
+    "count": 1
+  }
+}

@@ -37,6 +37,7 @@ import net.mcreator.ceshi.item.ZszstItem;
 import net.mcreator.ceshi.item.ZszsjItem;
 import net.mcreator.ceshi.item.ZstkjItem;
 import net.mcreator.ceshi.item.ZstjItem;
+import net.mcreator.ceshi.item.ZsspItem;
 import net.mcreator.ceshi.item.ZsqItem;
 import net.mcreator.ceshi.item.ZshjtItem;
 import net.mcreator.ceshi.item.ZshjjItem;
@@ -876,6 +877,7 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> MLLPWZ = REGISTRY.register("mllpwz", () -> new MllpwzItem());
 	public static final RegistryObject<Item> MLLPZS = REGISTRY.register("mllpzs", () -> new MllpzsItem());
 	public static final RegistryObject<Item> MLLPHJ = REGISTRY.register("mllphj", () -> new MllphjItem());
+	public static final RegistryObject<Item> ZSSP = REGISTRY.register("zssp", () -> new ZsspItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -891,6 +893,8 @@ public class PrimogemcraftModItems {
 			ItemProperties.register(XZCFYXWZD.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
 			ItemProperties.register(SJBCQ.get(), new ResourceLocation("primogemcraft:sjbcq_pinzhi"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) FumoquanpinzhizhiProcedure.execute(itemStackToRender));
 			ItemProperties.register(YSSP.get(), new ResourceLocation("primogemcraft:yssp_shuliang"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Yssp_sxProcedure.execute(entity != null ? entity.level() : clientWorld, itemStackToRender));
+			ItemProperties.register(ZSSP.get(), new ResourceLocation("primogemcraft:zssp_shuliang"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Yssp_sxProcedure.execute(entity != null ? entity.level() : clientWorld, itemStackToRender));
 		});
 	}

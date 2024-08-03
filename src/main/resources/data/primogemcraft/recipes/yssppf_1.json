@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:zssp"
+    },
+    "b": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:yssp",
+    "count": 8
+  }
+}

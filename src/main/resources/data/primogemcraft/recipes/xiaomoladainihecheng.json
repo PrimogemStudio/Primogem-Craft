@@ -4,10 +4,19 @@
   "ingredients": [
     {
       "item": "primogemcraft:xiaodaimola"
+    },
+    {
+      "item": "primogemcraft:xiaodaimola"
+    },
+    {
+      "item": "primogemcraft:xiaodaimola"
+    },
+    {
+      "item": "primogemcraft:xiaodaimola"
     }
   ],
   "result": {
-    "item": "primogemcraft:jinzhimola",
-    "count": 3
+    "item": "primogemcraft:wmoladai",
+    "count": 1
   }
 }

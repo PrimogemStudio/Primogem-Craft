@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Zssp"
+      },
+      {
+        "value": "CUSTOM:Zssp"
+      },
+      {
+        "value": "CUSTOM:Zssp"
+      },
+      {
+        "value": "CUSTOM:Zssp"
+      },
+      {
+        "value": "Items.COAL#0"
+      },
+      {
+        "value": "CUSTOM:Zssp"
+      },
+      {
+        "value": "CUSTOM:Zssp"
+      },
+      {
+        "value": "CUSTOM:Zssp"
+      },
+      {
+        "value": "CUSTOM:Zssp"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Yssp"
+    },
+    "name": "yssppf_1",
+    "namespace": "mod"
+  }
+}

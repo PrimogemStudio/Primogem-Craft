@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 3,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -15,16 +15,16 @@
         "value": "CUSTOM:Xiaodaimola"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Xiaodaimola"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:Xiaodaimola"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Xiaodaimola"
       },
       {
         "value": ""
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Jinzhimola"
+      "value": "CUSTOM:Wmoladai"
     },
     "name": "xiaomoladainihecheng",
     "namespace": "mod"

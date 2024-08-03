@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 12,
+    "recipeRetstackSize": 4,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,19 +12,19 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Wmoladai"
+        "value": "CUSTOM:Xiaodaimola"
+      },
+      {
+        "value": "CUSTOM:Xiaodaimola"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:Xiaodaimola"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:Xiaodaimola"
       },
       {
         "value": ""
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Mmola01"
+      "value": "CUSTOM:Wmoladai"
     },
     "name": "damoladainihecheng",
     "namespace": "mod"

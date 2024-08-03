@@ -12,7 +12,7 @@ import java.util.List;
 
 public class WmoladaiItem extends Item {
 	public WmoladaiItem() {
-		super(new Item.Properties().stacksTo(16).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(16).fireResistant().rarity(Rarity.UNCOMMON));
 	}
 
 	@Override
