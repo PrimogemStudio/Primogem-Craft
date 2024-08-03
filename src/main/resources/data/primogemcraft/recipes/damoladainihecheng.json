@@ -3,20 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "primogemcraft:xiaodaimola"
-    },
-    {
-      "item": "primogemcraft:xiaodaimola"
-    },
-    {
-      "item": "primogemcraft:xiaodaimola"
-    },
-    {
-      "item": "primogemcraft:xiaodaimola"
+      "item": "primogemcraft:wmoladai"
     }
   ],
   "result": {
-    "item": "primogemcraft:wmoladai",
-    "count": 4
+    "item": "primogemcraft:xiaodaimola",
+    "count": 3
   }
 }

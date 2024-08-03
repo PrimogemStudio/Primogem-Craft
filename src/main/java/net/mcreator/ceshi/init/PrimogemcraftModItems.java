@@ -888,6 +888,8 @@ public class PrimogemcraftModItems {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
+			ItemProperties.register(MMOLA_01.get(), new ResourceLocation("primogemcraft:mmola_01_shuliang"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Yssp_sxProcedure.execute(entity != null ? entity.level() : clientWorld, itemStackToRender));
 			ItemProperties.register(LJTG_01.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
 			ItemProperties.register(LJTG_02.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));
 			ItemProperties.register(XZCFYXWZD.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(Items.SHIELD, new ResourceLocation("blocking")));

@@ -5,8 +5,77 @@
     "renderType": 0,
     "texture": "dan_hui_jiao_gai_mo_la_01",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "shuliang": {
+        "name": "Yssp_sx"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "moladai_1",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 8.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "moladai_0016",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 16.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "moladai_0032",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 32.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "moladai_0064",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 64.0
+          }
+        ]
+      }
+    ],
     "name": "摩拉",
     "rarity": "UNCOMMON",
     "creativeTabs": [
