@@ -18,31 +18,33 @@ public class ZsjgjsxProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity, ItemStack itemstack) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (!(sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.GOUYU.get()))) {
-			if (itemstack.getItem() == PrimogemcraftModItems.ZSTJ.get()) {
-				if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 0.075 : 0.05)) {
-					if (world instanceof ServerLevel _level) {
-						LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-						entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
-						_level.addFreshEntity(entityToSpawn);
+		if (!world.isClientSide()) {
+			if (!(sourceentity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.GOUYU.get()))) {
+				if (itemstack.getItem() == PrimogemcraftModItems.ZSTJ.get()) {
+					if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 0.075 : 0.05)) {
+						if (world instanceof ServerLevel _level) {
+							LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+							entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
+							_level.addFreshEntity(entityToSpawn);
+						}
 					}
 				}
-			}
-			if (itemstack.getItem() == PrimogemcraftModItems.ZSZSJ.get()) {
-				if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 0.105 : 0.07)) {
-					if (world instanceof ServerLevel _level) {
-						LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-						entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
-						_level.addFreshEntity(entityToSpawn);
+				if (itemstack.getItem() == PrimogemcraftModItems.ZSZSJ.get()) {
+					if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 0.105 : 0.07)) {
+						if (world instanceof ServerLevel _level) {
+							LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+							entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
+							_level.addFreshEntity(entityToSpawn);
+						}
 					}
 				}
-			}
-			if (itemstack.getItem() == PrimogemcraftModItems.ZSHJJ.get()) {
-				if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 0.15 : 0.1)) {
-					if (world instanceof ServerLevel _level) {
-						LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-						entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
-						_level.addFreshEntity(entityToSpawn);
+				if (itemstack.getItem() == PrimogemcraftModItems.ZSHJJ.get()) {
+					if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 0.15 : 0.1)) {
+						if (world instanceof ServerLevel _level) {
+							LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+							entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())));;
+							_level.addFreshEntity(entityToSpawn);
+						}
 					}
 				}
 			}

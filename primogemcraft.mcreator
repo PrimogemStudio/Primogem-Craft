@@ -27259,6 +27259,24 @@
           "src/main/resources/data/primogemcraft/recipes/yssppf_1.json"
         ]
       }
+    },
+    {
+      "name": "Qyystsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qyystsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QyystsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -27840,6 +27858,11 @@
       "CUSTOM:Zizaifu",
       "CUSTOM:Zizaiqiao",
       "CUSTOM:Zizaichu"
+    ],
+    "ENTITIES:pgc:qiyuan": [
+      "CUSTOM:QQyuanchuzi01",
+      "CUSTOM:QQQyuanchulan01",
+      "CUSTOM:QqiyuanJinGuang"
     ],
     "ITEMS:forge:tie_2": [
       "CUSTOM:Zizaitiejia.legs",
