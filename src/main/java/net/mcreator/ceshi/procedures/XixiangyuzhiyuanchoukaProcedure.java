@@ -11,6 +11,7 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
@@ -34,6 +35,18 @@ public class XixiangyuzhiyuanchoukaProcedure {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:choukaqianxi01")), SoundSource.BLOCKS, 70, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:choukaqianxi01")), SoundSource.BLOCKS, 70, 1, false);
+				}
+			}
+			{
+				final Vec3 _center = new Vec3(x, (y + 10), z);
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				for (Entity entityiterator : _entfound) {
+					{
+						Entity _ent = entityiterator;
+						_ent.teleportTo((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()));
+						if (_ent instanceof ServerPlayer _serverPlayer)
+							_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+					}
 				}
 			}
 			if (entity.getPersistentData().getDouble("xiangyu_baodi_zi") >= 9) {

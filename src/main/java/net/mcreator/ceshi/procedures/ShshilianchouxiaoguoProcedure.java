@@ -10,6 +10,7 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
@@ -38,6 +39,126 @@ public class ShshilianchouxiaoguoProcedure {
 				}
 			}
 			PrimogemcraftMod.queueServerWork(40, () -> {
+				{
+					final Vec3 _center = new Vec3(x, (y + 7), z);
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						{
+							Entity _ent = entityiterator;
+							_ent.teleportTo((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()));
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+						}
+					}
+				}
+				{
+					final Vec3 _center = new Vec3(x, (y + 6), z);
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						{
+							Entity _ent = entityiterator;
+							_ent.teleportTo((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()));
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+						}
+					}
+				}
+				{
+					final Vec3 _center = new Vec3((x + 3), (y + 6), z);
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						{
+							Entity _ent = entityiterator;
+							_ent.teleportTo((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()));
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+						}
+					}
+				}
+				{
+					final Vec3 _center = new Vec3(x, (y + 6), (z - 3));
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						{
+							Entity _ent = entityiterator;
+							_ent.teleportTo((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()));
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+						}
+					}
+				}
+				{
+					final Vec3 _center = new Vec3((x - 3), (y + 6), z);
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						{
+							Entity _ent = entityiterator;
+							_ent.teleportTo((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()));
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+						}
+					}
+				}
+				{
+					final Vec3 _center = new Vec3(x, (y + 6), (z + 3));
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						{
+							Entity _ent = entityiterator;
+							_ent.teleportTo((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()));
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+						}
+					}
+				}
+				{
+					final Vec3 _center = new Vec3((x + 2), (y + 6), (z + 2));
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						{
+							Entity _ent = entityiterator;
+							_ent.teleportTo((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()));
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+						}
+					}
+				}
+				{
+					final Vec3 _center = new Vec3((x - 2), (y + 6), (z - 2));
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						{
+							Entity _ent = entityiterator;
+							_ent.teleportTo((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()));
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+						}
+					}
+				}
+				{
+					final Vec3 _center = new Vec3((x - 2), (y + 6), (z + 2));
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						{
+							Entity _ent = entityiterator;
+							_ent.teleportTo((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()));
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+						}
+					}
+				}
+				{
+					final Vec3 _center = new Vec3((x + 2), (y + 6), (z - 2));
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						{
+							Entity _ent = entityiterator;
+							_ent.teleportTo((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()));
+							if (_ent instanceof ServerPlayer _serverPlayer)
+								_serverPlayer.connection.teleport((entityiterator.getX()), (entityiterator.getY() + 2), (entityiterator.getZ()), _ent.getYRot(), _ent.getXRot());
+						}
+					}
+				}
 				if (Math.random() < 0.035) {
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = PrimogemcraftModEntities.QQIYUAN_JIN_GUANG.get().spawn(_level, BlockPos.containing(x, y + 7, z), MobSpawnType.MOB_SUMMONED);
