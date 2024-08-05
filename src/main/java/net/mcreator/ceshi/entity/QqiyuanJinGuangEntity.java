@@ -134,7 +134,7 @@ public class QqiyuanJinGuangEntity extends PathfinderMob {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		Qiyuanshiti_chushengxiaoguoProcedure.execute(this);
+		Qiyuanshiti_chushengxiaoguoProcedure.execute(world, this);
 		return retval;
 	}
 
