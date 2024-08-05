@@ -15,6 +15,7 @@ import net.mcreator.ceshi.potion.ZhongguizhongjuxiaoguoMobEffect;
 import net.mcreator.ceshi.potion.ZhengchangdaimaMobEffect;
 import net.mcreator.ceshi.potion.ZhandouzhuangtaiMobEffect;
 import net.mcreator.ceshi.potion.YydggzxgMobEffect;
+import net.mcreator.ceshi.potion.YsrzxgMobEffect;
 import net.mcreator.ceshi.potion.YijiMobEffect;
 import net.mcreator.ceshi.potion.WxntdmjMobEffect;
 import net.mcreator.ceshi.potion.TldhyMobEffect;
@@ -104,4 +105,5 @@ public class PrimogemcraftModMobEffects {
 	public static final RegistryObject<MobEffect> RYKJXGLQ = REGISTRY.register("rykjxglq", () -> new RykjxglqMobEffect());
 	public static final RegistryObject<MobEffect> RYFXGSX = REGISTRY.register("ryfxgsx", () -> new RyfxgsxMobEffect());
 	public static final RegistryObject<MobEffect> SZTSXCWDP = REGISTRY.register("sztsxcwdp", () -> new SztsxcwdpMobEffect());
+	public static final RegistryObject<MobEffect> YSRZXG = REGISTRY.register("ysrzxg", () -> new YsrzxgMobEffect());
 }

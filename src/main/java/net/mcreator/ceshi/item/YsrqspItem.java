@@ -18,6 +18,6 @@ public class YsrqspItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u53EF\u7528\u4E8E\u5408\u6210\u5143\u7D20\u7194\u7403"));
+		list.add(Component.literal("\u00A77\u53EF\u7528\u4E8E\u5408\u6210\u5143\u7D20\u7194\u7403"));
 	}
 }

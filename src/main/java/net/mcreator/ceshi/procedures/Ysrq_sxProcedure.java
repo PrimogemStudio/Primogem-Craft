@@ -91,6 +91,8 @@ public class Ysrq_sxProcedure {
 					if (a >= 4) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 200000, (int) (((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 4) * Math.round(a) * 0.1), true, false));
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.YSRZXG.get(), 200000, 0, false, false));
 					}
 				} else {
 					if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HEALTH_BOOST) ? _livEnt.getEffect(MobEffects.HEALTH_BOOST).getAmplifier() : 0) != Math
@@ -106,12 +108,12 @@ public class Ysrq_sxProcedure {
 			if (itemstack.getOrCreateTag().getBoolean("shui")) {
 				e = (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQSHUI.get())) : false) ? 10 : 8;
 				if (e >= 2) {
-					if (!(entity instanceof LivingEntity _livEnt45 && _livEnt45.hasEffect(MobEffects.CONDUIT_POWER))) {
+					if (!(entity instanceof LivingEntity _livEnt46 && _livEnt46.hasEffect(MobEffects.CONDUIT_POWER))) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 80, 0, true, false));
 					}
 				}
-				if (!(entity instanceof LivingEntity _livEnt47 && _livEnt47.hasEffect(PrimogemcraftModMobEffects.DJQJKJXGXIANZHI.get())) && entity.isAlive()) {
+				if (!(entity instanceof LivingEntity _livEnt48 && _livEnt48.hasEffect(PrimogemcraftModMobEffects.DJQJKJXGXIANZHI.get())) && entity.isAlive()) {
 					if (e >= 4) {
 						if (e < 6) {
 							a1 = e * 20;
@@ -131,19 +133,19 @@ public class Ysrq_sxProcedure {
 			}
 			if (itemstack.getOrCreateTag().getBoolean("huo")) {
 				f = (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQHUO.get())) : false) ? 10 : 8;
-				if (!(entity instanceof LivingEntity _livEnt60 && _livEnt60.hasEffect(MobEffects.FIRE_RESISTANCE))) {
+				if (!(entity instanceof LivingEntity _livEnt61 && _livEnt61.hasEffect(MobEffects.FIRE_RESISTANCE))) {
 					if (f >= 2) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 80, 0, true, false));
 					}
 				}
-				if (!(entity instanceof LivingEntity _livEnt62 && _livEnt62.hasEffect(PrimogemcraftModMobEffects.RYKJXG.get()))) {
+				if (!(entity instanceof LivingEntity _livEnt63 && _livEnt63.hasEffect(PrimogemcraftModMobEffects.RYKJXG.get()))) {
 					if (f >= 4) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.RYKJXG.get(), 1200, (int) Math.round(f - 1), false, false));
 					}
 				}
-				if (entity instanceof LivingEntity _livEnt64 && _livEnt64.hasEffect(PrimogemcraftModMobEffects.RYKJXG.get())) {
+				if (entity instanceof LivingEntity _livEnt65 && _livEnt65.hasEffect(PrimogemcraftModMobEffects.RYKJXG.get())) {
 					if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.RYKJXG.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.RYKJXG.get()).getAmplifier() : 0) != Math.round(f - 1)) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.removeEffect(PrimogemcraftModMobEffects.RYKJXG.get());

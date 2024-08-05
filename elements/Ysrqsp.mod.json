@@ -60,7 +60,7 @@
         ]
       }
     ],
-    "name": "元素熔球碎片",
+    "name": "元素熔珠碎片",
     "rarity": "EPIC",
     "creativeTabs": [
       {
@@ -83,7 +83,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "可用于合成元素熔球"
+        "§7可用于合成元素熔球"
       ]
     },
     "glowCondition": {
