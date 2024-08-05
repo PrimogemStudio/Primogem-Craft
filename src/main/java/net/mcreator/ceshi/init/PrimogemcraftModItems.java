@@ -21,6 +21,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.ceshi.procedures.Yssp_sxProcedure;
+import net.mcreator.ceshi.procedures.YdyhdltsxProcedure;
 import net.mcreator.ceshi.procedures.FumoquanpinzhizhiProcedure;
 import net.mcreator.ceshi.item.ZzjsItem;
 import net.mcreator.ceshi.item.ZzjllItem;
@@ -89,7 +90,9 @@ import net.mcreator.ceshi.item.YishijiecunzheItem;
 import net.mcreator.ceshi.item.YibangrenzhinangItem;
 import net.mcreator.ceshi.item.YhjslItem;
 import net.mcreator.ceshi.item.YhjsItem;
+import net.mcreator.ceshi.item.YhdltyidieItem;
 import net.mcreator.ceshi.item.YdggzItem;
+import net.mcreator.ceshi.item.YdfmsItem;
 import net.mcreator.ceshi.item.XzcfyxwzdItem;
 import net.mcreator.ceshi.item.XixiangyuzhiyuanItem;
 import net.mcreator.ceshi.item.Xiwangdeyitian011Item;
@@ -878,6 +881,8 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> MLLPZS = REGISTRY.register("mllpzs", () -> new MllpzsItem());
 	public static final RegistryObject<Item> MLLPHJ = REGISTRY.register("mllphj", () -> new MllphjItem());
 	public static final RegistryObject<Item> ZSSP = REGISTRY.register("zssp", () -> new ZsspItem());
+	public static final RegistryObject<Item> YHDLTYIDIE = REGISTRY.register("yhdltyidie", () -> new YhdltyidieItem());
+	public static final RegistryObject<Item> YDFMS = REGISTRY.register("ydfms", () -> new YdfmsItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -898,6 +903,7 @@ public class PrimogemcraftModItems {
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Yssp_sxProcedure.execute(entity != null ? entity.level() : clientWorld, itemStackToRender));
 			ItemProperties.register(ZSSP.get(), new ResourceLocation("primogemcraft:zssp_shuliang"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Yssp_sxProcedure.execute(entity != null ? entity.level() : clientWorld, itemStackToRender));
+			ItemProperties.register(YHDLTYIDIE.get(), new ResourceLocation("primogemcraft:yhdltyidie_shuliang"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) YdyhdltsxProcedure.execute(itemStackToRender));
 		});
 	}
 }

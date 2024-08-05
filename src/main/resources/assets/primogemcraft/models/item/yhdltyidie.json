@@ -1,0 +1,32 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "primogemcraft:item/yidieletou_005"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "primogemcraft:yhdltyidie_shuliang": 0
+      },
+      "model": "primogemcraft:item/yhdltyidie_0"
+    },
+    {
+      "predicate": {
+        "primogemcraft:yhdltyidie_shuliang": 2
+      },
+      "model": "primogemcraft:item/yhdltyidie_1"
+    },
+    {
+      "predicate": {
+        "primogemcraft:yhdltyidie_shuliang": 5
+      },
+      "model": "primogemcraft:item/yhdltyidie_2"
+    },
+    {
+      "predicate": {
+        "primogemcraft:yhdltyidie_shuliang": 7
+      },
+      "model": "primogemcraft:item/yhdltyidie_3"
+    }
+  ]
+}

@@ -490,104 +490,6 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Shengzhangbifeisuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Zuishengsuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Jianransuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Ziziyousongshisuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Dijingsuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Ranyuansuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Aixubingyusuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
               "value": "CUSTOM:Shanbianzhichen"
             },
             "weight": 1,
@@ -728,11 +630,11 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.BOOK"
+              "value": "CUSTOM:Ydfms"
             },
-            "weight": 3,
+            "weight": 2,
             "minCount": 1,
-            "maxCount": 3,
+            "maxCount": 1,
             "minEnchantmentLevel": 16,
             "maxEnchantmentLevel": 28,
             "affectedByFortune": false,

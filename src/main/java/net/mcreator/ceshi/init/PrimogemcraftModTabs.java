@@ -203,6 +203,8 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.XIAODENG_SPAWN_EGG.get());
 				tabData.accept(PrimogemcraftModItems.XIAOHEITA_SPAWN_EGG.get());
 				tabData.accept(PrimogemcraftModItems.ZSSP.get());
+				tabData.accept(PrimogemcraftModItems.YHDLTYIDIE.get());
+				tabData.accept(PrimogemcraftModItems.YDFMS.get());
 			})
 
 					.build());
