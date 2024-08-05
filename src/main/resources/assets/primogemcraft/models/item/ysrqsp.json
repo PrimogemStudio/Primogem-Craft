@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "primogemcraft:item/ysrq_001"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "primogemcraft:ysrqsp_shu": 2
+      },
+      "model": "primogemcraft:item/ysrqsp_0"
+    },
+    {
+      "predicate": {
+        "primogemcraft:ysrqsp_shu": 3
+      },
+      "model": "primogemcraft:item/ysrqsp_1"
+    },
+    {
+      "predicate": {
+        "primogemcraft:ysrqsp_shu": 4
+      },
+      "model": "primogemcraft:item/ysrqsp_2"
+    }
+  ]
+}

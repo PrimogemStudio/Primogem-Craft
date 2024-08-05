@@ -1,0 +1,44 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "primogemcraft:item/yuansurongzhu"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "primogemcraft:ysrz_0_feng": 1
+      },
+      "model": "primogemcraft:item/ysrz_0_0"
+    },
+    {
+      "predicate": {
+        "primogemcraft:ysrz_0_yan": 1
+      },
+      "model": "primogemcraft:item/ysrz_0_1"
+    },
+    {
+      "predicate": {
+        "primogemcraft:ysrz_0_lei": 1
+      },
+      "model": "primogemcraft:item/ysrz_0_2"
+    },
+    {
+      "predicate": {
+        "primogemcraft:ysrz_0_cao": 1
+      },
+      "model": "primogemcraft:item/ysrz_0_3"
+    },
+    {
+      "predicate": {
+        "primogemcraft:ysrz_0_shui": 1
+      },
+      "model": "primogemcraft:item/ysrz_0_4"
+    },
+    {
+      "predicate": {
+        "primogemcraft:ysrz_0_huo": 1
+      },
+      "model": "primogemcraft:item/ysrz_0_5"
+    }
+  ]
+}

@@ -21,6 +21,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.ceshi.procedures.Yssp_sxProcedure;
+import net.mcreator.ceshi.procedures.Ysrqa5Procedure;
+import net.mcreator.ceshi.procedures.Ysrqa4Procedure;
+import net.mcreator.ceshi.procedures.Ysrqa3Procedure;
+import net.mcreator.ceshi.procedures.Ysrqa2Procedure;
+import net.mcreator.ceshi.procedures.Ysrqa1Procedure;
+import net.mcreator.ceshi.procedures.Ysrqa0Procedure;
 import net.mcreator.ceshi.procedures.YdyhdltsxProcedure;
 import net.mcreator.ceshi.procedures.FumoquanpinzhizhiProcedure;
 import net.mcreator.ceshi.item.ZzjsItem;
@@ -79,6 +85,8 @@ import net.mcreator.ceshi.item.YuanshifItem;
 import net.mcreator.ceshi.item.YuanshichutouItem;
 import net.mcreator.ceshi.item.YuanshiItem;
 import net.mcreator.ceshi.item.YsspItem;
+import net.mcreator.ceshi.item.Ysrz0Item;
+import net.mcreator.ceshi.item.YsrqspItem;
 import net.mcreator.ceshi.item.YsjfrItem;
 import net.mcreator.ceshi.item.YsjbfpkItem;
 import net.mcreator.ceshi.item.YsfcItem;
@@ -883,6 +891,8 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> ZSSP = REGISTRY.register("zssp", () -> new ZsspItem());
 	public static final RegistryObject<Item> YHDLTYIDIE = REGISTRY.register("yhdltyidie", () -> new YhdltyidieItem());
 	public static final RegistryObject<Item> YDFMS = REGISTRY.register("ydfms", () -> new YdfmsItem());
+	public static final RegistryObject<Item> YSRZ_0 = REGISTRY.register("ysrz_0", () -> new Ysrz0Item());
+	public static final RegistryObject<Item> YSRQSP = REGISTRY.register("ysrqsp", () -> new YsrqspItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -904,6 +914,14 @@ public class PrimogemcraftModItems {
 			ItemProperties.register(ZSSP.get(), new ResourceLocation("primogemcraft:zssp_shuliang"),
 					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Yssp_sxProcedure.execute(entity != null ? entity.level() : clientWorld, itemStackToRender));
 			ItemProperties.register(YHDLTYIDIE.get(), new ResourceLocation("primogemcraft:yhdltyidie_shuliang"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) YdyhdltsxProcedure.execute(itemStackToRender));
+			ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_feng"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa0Procedure.execute(itemStackToRender));
+			ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_yan"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa1Procedure.execute(itemStackToRender));
+			ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_lei"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa2Procedure.execute(itemStackToRender));
+			ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_cao"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa3Procedure.execute(itemStackToRender));
+			ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_shui"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa4Procedure.execute(itemStackToRender));
+			ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_huo"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa5Procedure.execute(itemStackToRender));
+			ItemProperties.register(YSRQSP.get(), new ResourceLocation("primogemcraft:ysrqsp_shu"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Yssp_sxProcedure.execute(entity != null ? entity.level() : clientWorld, itemStackToRender));
 		});
 	}
 }
