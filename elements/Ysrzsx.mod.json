@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 2,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Dijingduanpian"
+        "value": "CUSTOM:Ysrzspsx"
       },
       {
-        "value": "CUSTOM:Zyjs"
+        "value": "CUSTOM:Ysrzspsx"
       },
       {
-        "value": "CUSTOM:Dijingduanpian"
+        "value": "CUSTOM:Ysrzspsx"
       },
       {
-        "value": "CUSTOM:Zyjs"
+        "value": "CUSTOM:Ysrzspsx"
       },
       {
-        "value": "Items.NETHER_STAR"
+        "value": "CUSTOM:Ysrqsp"
       },
       {
-        "value": "CUSTOM:Zyjs"
+        "value": "CUSTOM:Ysrzspsx"
       },
       {
-        "value": "CUSTOM:Dijingduanpian"
+        "value": "CUSTOM:Ysrzspsx"
       },
       {
-        "value": "CUSTOM:Zyjs"
+        "value": "CUSTOM:Ysrzspsx"
       },
       {
-        "value": "CUSTOM:Dijingduanpian"
+        "value": "CUSTOM:Ysrzspsx"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Hqshui"
+      "value": "CUSTOM:Ysrqsp"
     },
-    "name": "hqpf_4",
+    "name": "ysrzsx",
     "namespace": "mod"
   }
 }
