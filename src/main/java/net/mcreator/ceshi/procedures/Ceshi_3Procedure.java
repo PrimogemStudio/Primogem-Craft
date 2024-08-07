@@ -50,23 +50,24 @@ public class Ceshi_3Procedure {
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(
-						("\u5F53\u524D\u84DD" + new java.text.DecimalFormat("##.##").format((entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).wj_ck_lan))),
+				_player.displayClientMessage(Component.literal(("\u73A9\u5BB6<" + entity.getDisplayName().getString() + ">\u7684\u62BD\u5361\u8BB0\u5F55\uFF1A")), false);
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal(("\u00A78\u5F53\u524D\u84DD\u00A7b"
+						+ new java.text.DecimalFormat("##.##").format((entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).wj_ck_lan))), false);
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal(("\u00A78\u5F53\u524D\u7D2B\u00A7d"
+						+ new java.text.DecimalFormat("##.##").format((entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).wj_ck_zi))), false);
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal(("\u00A78\u5F53\u524D\u91D1\u00A7e"
+						+ new java.text.DecimalFormat("##.##").format((entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).wj_ck_jin))), false);
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal(("\u00A78\u8DDD\u79BB\u00A7d\u51FA\u7D2B\u00A7a\u8FD8\u5269\u00A75"
+						+ new java.text.DecimalFormat("##.##").format(10 - (entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).zi_baodi) + "\u00A7a\u62BD")),
 						false);
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(
-						("\u5F53\u524D\u7D2B" + new java.text.DecimalFormat("##.##").format((entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).wj_ck_zi))),
+				_player.displayClientMessage(Component.literal(("\u00A78\u8DDD\u79BB\u00A7e\u51FA\u91D1\u00A7a\u8FD8\u5269\u00A76"
+						+ new java.text.DecimalFormat("##.##").format(50 - (entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).jin_baodi) + "\u00A7a\u62BD")),
 						false);
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(
-						("\u5F53\u524D\u91D1" + new java.text.DecimalFormat("##.##").format((entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).wj_ck_jin))),
-						false);
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("\u8DDD\u79BB\u51FA\u7D2B"
-						+ new java.text.DecimalFormat("##.##").format(10 - (entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).zi_baodi))), false);
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("\u8DDD\u79BB\u51FA\u91D1"
-						+ new java.text.DecimalFormat("##.##").format(50 - (entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).jin_baodi))), false);
 		}
 	}
 }

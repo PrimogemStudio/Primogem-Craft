@@ -27752,6 +27752,61 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qycx",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qycx",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qycx.json",
+          "src/main/java/net/mcreator/ceshi/item/QycxItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Ysdc_sx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ysdc_sx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Ysdc_sxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qysjdcpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qysjdcpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qysjdcpf.json"
+        ]
+      }
+    },
+    {
+      "name": "Qysjdcpf0",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qysjdcpf_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qysjdcpf_0.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -29586,7 +29641,8 @@
       "Ydfms",
       "Ysrz0",
       "Ysrqsp",
-      "Ysrzspsx"
+      "Ysrzspsx",
+      "Qycx"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -30033,6 +30089,7 @@
       "gui.primogemcraft.molalajitong.label_mo_la_zhi_la_ji_tong": "mora Trash Can",
       "item.primogemcraft.xzcfyxwzd": "§6Shield symbolized Wealth and Force",
       "gamerule.cs": "ces",
+      "item.primogemcraft.qycx": "祈愿数据导出.exe",
       "item.primogemcraft.shengjizizaizuan": "§b『Diamond Upgrade』§aVayuda Turquoise",
       "advancements.jdwmypszyd.descr": "§bGain the Primogem billet",
       "item.primogemcraft.jlkjhj_helmet": "§6『Prithiva Topaz』 §eHelmet",
@@ -31039,6 +31096,7 @@
       "gui.primogemcraft.molalajitong.label_mo_la_zhi_la_ji_tong": "mora Trash Can",
       "item.primogemcraft.xzcfyxwzd": "§6Shield symbolized Wealth and Force",
       "gamerule.cs": "ces",
+      "item.primogemcraft.qycx": "祈愿数据导出.exe",
       "item.primogemcraft.shengjizizaizuan": "§b『Diamond Upgrade』§aVayuda Turquoise",
       "advancements.jdwmypszyd.descr": "§bGain the Primogem billet",
       "item.primogemcraft.jlkjhj_helmet": "§6『Prithiva Topaz』 §eHelmet",
@@ -32043,6 +32101,7 @@
       "advancements.jdxxcy.descr": "§m下次一定",
       "gui.primogemcraft.molalajitong.label_mo_la_zhi_la_ji_tong": "摩拉制垃圾桶",
       "item.primogemcraft.xzcfyxwzd": "§6象征财富与希望之盾",
+      "item.primogemcraft.qycx": "祈愿数据导出.exe",
       "item.primogemcraft.shengjizizaizuan": "§b『钻石升级』§a自在松石",
       "advancements.jdwmypszyd.descr": "§b获得原石原胚",
       "item.primogemcraft.jlkjhj_helmet": "§6『坚牢黄玉』 §e下界合金头盔",
