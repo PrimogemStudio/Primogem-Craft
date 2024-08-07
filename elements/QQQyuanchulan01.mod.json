@@ -6,8 +6,20 @@
     "mobLabel": "右键出蓝",
     "mobModelName": "Modeljinguangshiti01_Converted_Converted",
     "mobModelTexture": "languang.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [],
     "modelWidth": 0.3,
@@ -62,6 +74,9 @@
     "health": 1,
     "xpAmount": 1,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -99,6 +114,9 @@
       "value": "CUSTOM:wu_sheng"
     },
     "stepSound": {
+      "value": ""
+    },
+    "raidCelebrationSound": {
       "value": ""
     },
     "entityDataEntries": [],

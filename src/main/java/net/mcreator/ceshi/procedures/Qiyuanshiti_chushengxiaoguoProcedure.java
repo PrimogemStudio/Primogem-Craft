@@ -98,6 +98,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 									});
 								}
 							} else {
+								entity.getPersistentData().putString("qiyuan_guishu", (entityiterator.getDisplayName().getString()));
 								{
 									double _setval = (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).wj_ck_lan + 1;
 									entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -134,6 +135,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator.getPersistentData().getBoolean("chouka")) {
+							entity.getPersistentData().putString("qiyuan_guishu", (entityiterator.getDisplayName().getString()));
 							entityiterator.getPersistentData().putDouble("chouka", (entityiterator.getPersistentData().getDouble("chouka") - 1));
 							entity.getPersistentData().putBoolean("chouka_jiance_1", true);
 						}
@@ -146,6 +148,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator.getPersistentData().getBoolean("chouka")) {
+							entity.getPersistentData().putString("qiyuan_guishu", (entityiterator.getDisplayName().getString()));
 							entityiterator.getPersistentData().putDouble("chouka", (entityiterator.getPersistentData().getDouble("chouka") - 1));
 							entity.getPersistentData().putBoolean("chouka_jiance_2", true);
 						}

@@ -147,7 +147,7 @@ public class QQyuanchuzi01Entity extends PathfinderMob {
 		Entity entity = this;
 		Level world = this.level();
 
-		QQyuanchuziProcedure.execute(world, x, y, z, entity);
+		QQyuanchuziProcedure.execute(world, x, y, z, entity, sourceentity);
 		return retval;
 	}
 

@@ -149,7 +149,7 @@ public class QqiyuanJinGuangEntity extends PathfinderMob {
 		Entity entity = this;
 		Level world = this.level();
 
-		QqiyuanJinGuangChuShiShiTiShengChengProcedure.execute(world, x, y, z, entity);
+		QqiyuanJinGuangChuShiShiTiShengChengProcedure.execute(world, x, y, z, entity, sourceentity);
 		return retval;
 	}
 
