@@ -7,6 +7,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -32,7 +33,16 @@ public class ShshilianchouxiaoguoProcedure {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
 			}
+			entity.getPersistentData().putDouble("shilian_x", x);
+			entity.getPersistentData().putDouble("shilian_y", y);
+			entity.getPersistentData().putDouble("shilian_z", z);
 			PrimogemcraftMod.queueServerWork(40, () -> {
+				{
+					Entity _ent = entity;
+					_ent.teleportTo((entity.getPersistentData().getDouble("shilian_x")), (entity.getPersistentData().getDouble("shilian_y")), (entity.getPersistentData().getDouble("shilian_z")));
+					if (_ent instanceof ServerPlayer _serverPlayer)
+						_serverPlayer.connection.teleport((entity.getPersistentData().getDouble("shilian_x")), (entity.getPersistentData().getDouble("shilian_y")), (entity.getPersistentData().getDouble("shilian_z")), _ent.getYRot(), _ent.getXRot());
+				}
 				entity.getPersistentData().putDouble("chouka", 10);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x, y + 7, z), MobSpawnType.MOB_SUMMONED);
