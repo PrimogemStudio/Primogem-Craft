@@ -79,6 +79,8 @@ public class PrimogemcraftModVariables {
 			clone.wj_ck_lan = original.wj_ck_lan;
 			clone.wj_ck_zi = original.wj_ck_zi;
 			clone.wj_ck_jin = original.wj_ck_jin;
+			clone.zi_baodi = original.zi_baodi;
+			clone.jin_baodi = original.jin_baodi;
 			if (!event.isWasDeath()) {
 				clone.ceshi = original.ceshi;
 				clone.wanjia_qianye = original.wanjia_qianye;
@@ -260,6 +262,8 @@ public class PrimogemcraftModVariables {
 		public double wj_ck_lan = 0;
 		public double wj_ck_zi = 0;
 		public double wj_ck_jin = 0;
+		public double zi_baodi = 0;
+		public double jin_baodi = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -275,6 +279,8 @@ public class PrimogemcraftModVariables {
 			nbt.putDouble("wj_ck_lan", wj_ck_lan);
 			nbt.putDouble("wj_ck_zi", wj_ck_zi);
 			nbt.putDouble("wj_ck_jin", wj_ck_jin);
+			nbt.putDouble("zi_baodi", zi_baodi);
+			nbt.putDouble("jin_baodi", jin_baodi);
 			return nbt;
 		}
 
@@ -287,6 +293,8 @@ public class PrimogemcraftModVariables {
 			wj_ck_lan = nbt.getDouble("wj_ck_lan");
 			wj_ck_zi = nbt.getDouble("wj_ck_zi");
 			wj_ck_jin = nbt.getDouble("wj_ck_jin");
+			zi_baodi = nbt.getDouble("zi_baodi");
+			jin_baodi = nbt.getDouble("jin_baodi");
 		}
 	}
 
@@ -318,6 +326,8 @@ public class PrimogemcraftModVariables {
 					variables.wj_ck_lan = message.data.wj_ck_lan;
 					variables.wj_ck_zi = message.data.wj_ck_zi;
 					variables.wj_ck_jin = message.data.wj_ck_jin;
+					variables.zi_baodi = message.data.zi_baodi;
+					variables.jin_baodi = message.data.jin_baodi;
 				}
 			});
 			context.setPacketHandled(true);

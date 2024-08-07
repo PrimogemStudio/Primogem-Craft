@@ -36,7 +36,15 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator.getPersistentData().getDouble("chouka") > 0) {
-							if (!entityiterator.getPersistentData().getBoolean("xiangyu") && Math.random() < 0.03) {
+							if (!entityiterator.getPersistentData().getBoolean("xiangyu")
+									&& (Math.random() < 0.03 || (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).jin_baodi >= 49)) {
+								{
+									double _setval = 0;
+									entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+										capability.jin_baodi = _setval;
+										capability.syncPlayerVariables(entityiterator);
+									});
+								}
 								if (!entity.level().isClientSide())
 									entity.discard();
 								if (world instanceof ServerLevel _level) {
@@ -52,7 +60,14 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 										capability.syncPlayerVariables(entityiterator);
 									});
 								}
-							} else if (Math.random() < 0.2) {
+								{
+									double _setval = (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).zi_baodi + 1;
+									entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+										capability.zi_baodi = _setval;
+										capability.syncPlayerVariables(entityiterator);
+									});
+								}
+							} else if (Math.random() < 0.2 || (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).zi_baodi >= 9) {
 								if (!entity.level().isClientSide())
 									entity.discard();
 								if (world instanceof ServerLevel _level) {
@@ -68,11 +83,39 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 										capability.syncPlayerVariables(entityiterator);
 									});
 								}
+								{
+									double _setval = (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).jin_baodi + 1;
+									entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+										capability.jin_baodi = _setval;
+										capability.syncPlayerVariables(entityiterator);
+									});
+								}
+								{
+									double _setval = 0;
+									entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+										capability.zi_baodi = _setval;
+										capability.syncPlayerVariables(entityiterator);
+									});
+								}
 							} else {
 								{
-									double _setval = (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).wj_ck_jin + 1;
+									double _setval = (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).wj_ck_lan + 1;
 									entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-										capability.wj_ck_jin = _setval;
+										capability.wj_ck_lan = _setval;
+										capability.syncPlayerVariables(entityiterator);
+									});
+								}
+								{
+									double _setval = (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).zi_baodi + 1;
+									entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+										capability.zi_baodi = _setval;
+										capability.syncPlayerVariables(entityiterator);
+									});
+								}
+								{
+									double _setval = (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).jin_baodi + 1;
+									entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+										capability.jin_baodi = _setval;
 										capability.syncPlayerVariables(entityiterator);
 									});
 								}
