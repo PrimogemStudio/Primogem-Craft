@@ -24,7 +24,7 @@ public class QqiyuanJinGuangChuShiShiTiShengChengProcedure {
 		if (entity == null)
 			return;
 		if (entity.onGround()) {
-			if (entity.getPersistentData().getBoolean("kechou")) {
+			if (entity.getPersistentData().getBoolean("chouka_jiance_2")) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:dashengchujin")), SoundSource.BLOCKS, 4, 1);

@@ -28,7 +28,8 @@ public class ShilianchouItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u624B\u6301\u00A7b\u957F\u6309\u53F3\u952E\u00A7f\u4EE5\u00A7e\u5341\u8FDE\u62BD\uFF01"));
+		list.add(Component.literal("\u00A77\u957F\u6309\u53F3\u952E\u4EE5\u5341\u8FDE\u62BD"));
+		list.add(Component.literal("\u00A7c\u4F7F\u7528\u8005\u5FC5\u987B\u5728\u9644\u8FD1"));
 	}
 
 	@Override
@@ -37,7 +38,7 @@ public class ShilianchouItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		ShshilianchouxiaoguoProcedure.execute(world, x, y, z);
+		ShshilianchouxiaoguoProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 }

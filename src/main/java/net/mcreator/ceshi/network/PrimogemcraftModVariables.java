@@ -76,6 +76,9 @@ public class PrimogemcraftModVariables {
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.qianye_lengque = original.qianye_lengque;
 			clone.daletou_jishu = original.daletou_jishu;
+			clone.wj_ck_lan = original.wj_ck_lan;
+			clone.wj_ck_zi = original.wj_ck_zi;
+			clone.wj_ck_jin = original.wj_ck_jin;
 			if (!event.isWasDeath()) {
 				clone.ceshi = original.ceshi;
 				clone.wanjia_qianye = original.wanjia_qianye;
@@ -254,6 +257,9 @@ public class PrimogemcraftModVariables {
 		public double wanjia_qianye = 0;
 		public double qianye_lengque = 0;
 		public double daletou_jishu = 0;
+		public double wj_ck_lan = 0;
+		public double wj_ck_zi = 0;
+		public double wj_ck_jin = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -266,6 +272,9 @@ public class PrimogemcraftModVariables {
 			nbt.putDouble("wanjia_qianye", wanjia_qianye);
 			nbt.putDouble("qianye_lengque", qianye_lengque);
 			nbt.putDouble("daletou_jishu", daletou_jishu);
+			nbt.putDouble("wj_ck_lan", wj_ck_lan);
+			nbt.putDouble("wj_ck_zi", wj_ck_zi);
+			nbt.putDouble("wj_ck_jin", wj_ck_jin);
 			return nbt;
 		}
 
@@ -275,6 +284,9 @@ public class PrimogemcraftModVariables {
 			wanjia_qianye = nbt.getDouble("wanjia_qianye");
 			qianye_lengque = nbt.getDouble("qianye_lengque");
 			daletou_jishu = nbt.getDouble("daletou_jishu");
+			wj_ck_lan = nbt.getDouble("wj_ck_lan");
+			wj_ck_zi = nbt.getDouble("wj_ck_zi");
+			wj_ck_jin = nbt.getDouble("wj_ck_jin");
 		}
 	}
 
@@ -303,6 +315,9 @@ public class PrimogemcraftModVariables {
 					variables.wanjia_qianye = message.data.wanjia_qianye;
 					variables.qianye_lengque = message.data.qianye_lengque;
 					variables.daletou_jishu = message.data.daletou_jishu;
+					variables.wj_ck_lan = message.data.wj_ck_lan;
+					variables.wj_ck_zi = message.data.wj_ck_zi;
+					variables.wj_ck_jin = message.data.wj_ck_jin;
 				}
 			});
 			context.setPacketHandled(true);

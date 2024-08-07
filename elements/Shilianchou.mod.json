@@ -30,8 +30,12 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "手持§b长按右键§f以§e十连抽！"
+        "§7长按右键以十连抽",
+        "§c使用者必须在附近"
       ]
+    },
+    "glowCondition": {
+      "fixedValue": false
     },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -42,6 +46,9 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "isFood": true,
     "nutritionalValue": 0,
     "saturation": 0.0,
