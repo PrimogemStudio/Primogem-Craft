@@ -30,7 +30,8 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7右键后向玩家自己播报祈愿详情"
+        "§7右键后向玩家播报内涵的祈愿详情",
+        "§7潜行+右键查询/重置"
       ]
     },
     "glowCondition": {
