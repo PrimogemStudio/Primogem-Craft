@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "thorns",
+    "normalDeathMessage": "%1$s 被持续物理伤害撕裂！",
+    "itemDeathMessage": "%1$s 无法抵御物理撕裂！",
+    "playerDeathMessage": "%1$s 无法摆脱%2$s赠与的物理撕裂，惨死"
+  }
+}

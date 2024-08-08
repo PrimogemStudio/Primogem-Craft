@@ -39,7 +39,7 @@ public class SmclxgzfsxProcedure {
 		ItemStack a = ItemStack.EMPTY;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.SMCLZF.get()) && entity instanceof LivingEntity _livEnt1 && _livEnt1.getMobType() == MobType.UNDEAD) {
 			a = new ItemStack(PrimogemcraftModItems.YUZHOUSUIPIAN.get());
-			a.setCount(Mth.nextInt(RandomSource.create(), 1, 20));
+			a.setCount(Mth.nextInt(RandomSource.create(), 2, 20));
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, a);
 				entityToSpawn.setPickUpDelay(10);

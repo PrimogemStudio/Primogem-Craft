@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
@@ -74,21 +75,25 @@ public class SmclstsxProcedure {
 								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.enchantment_table.use")), SoundSource.PLAYERS, 1, 20, false);
 							}
 						}
-						{
-							Entity _entity = entity;
-							if (_entity instanceof Player _player) {
-								_player.getInventory().armor.set(3, new ItemStack(Items.GOLDEN_HELMET));
-								_player.getInventory().setChanged();
-							} else if (_entity instanceof LivingEntity _living) {
-								_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.GOLDEN_HELMET));
+						if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
+							{
+								Entity _entity = entity;
+								if (_entity instanceof Player _player) {
+									_player.getInventory().armor.set(3, new ItemStack(Items.GOLDEN_HELMET));
+									_player.getInventory().setChanged();
+								} else if (_entity instanceof LivingEntity _living) {
+									_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.GOLDEN_HELMET));
+								}
 							}
 						}
-						if (entity instanceof LivingEntity _entity) {
-							ItemStack _setstack = new ItemStack(Items.GOLDEN_SWORD).copy();
-							_setstack.setCount(1);
-							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-							if (_entity instanceof Player _player)
-								_player.getInventory().setChanged();
+						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
+							if (entity instanceof LivingEntity _entity) {
+								ItemStack _setstack = (Math.random() < 0.5 ? new ItemStack(PrimogemcraftModItems.ZSF.get()) : new ItemStack(PrimogemcraftModItems.AXTJ.get())).copy();
+								_setstack.setCount(1);
+								_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+								if (_entity instanceof Player _player)
+									_player.getInventory().setChanged();
+							}
 						}
 					}
 				}

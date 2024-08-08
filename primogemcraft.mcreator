@@ -27823,6 +27823,70 @@
           "src/main/resources/data/primogemcraft/recipes/qysjdcpf_0.json"
         ]
       }
+    },
+    {
+      "name": "Chiwuwuli",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiwuwuli",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/damage_type/chiwuwuli.json"
+        ]
+      }
+    },
+    {
+      "name": "Shwulisiliesx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shwulisiliesx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/ShwulisiliesxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Smclsxxin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smclsxxin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/SmclsxxinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -28174,14 +28238,6 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:pgc:dzmb": [
-      "TAG:pgc:dzmb_0",
-      "TAG:pgc:dzmb_1",
-      "TAG:pgc:dzmb_2",
-      "TAG:pgc:dzmb_3",
-      "TAG:pgc:dzmb_4",
-      "TAG:pgc:dzmb_5"
-    ],
     "BLOCKS:minecraft:woodenfences": [
       "CUSTOM:Yishijiemuzhalan",
       "CUSTOM:Ceshi_mucaibaoFence",
@@ -28192,6 +28248,14 @@
       "CUSTOM:Xiumuzhalan",
       "CUSTOM:Llianjiamolakuaiqiang",
       "CUSTOM:Cangsangshizhuanweiqiang"
+    ],
+    "ITEMS:pgc:dzmb": [
+      "TAG:pgc:dzmb_0",
+      "TAG:pgc:dzmb_1",
+      "TAG:pgc:dzmb_2",
+      "TAG:pgc:dzmb_3",
+      "TAG:pgc:dzmb_4",
+      "TAG:pgc:dzmb_5"
     ],
     "BLOCKS:forge:mora/block": [
       "CUSTOM:Moladui02",
@@ -28458,15 +28522,6 @@
       "CUSTOM:Rytt.boots",
       "CUSTOM:Axtt.boots"
     ],
-    "ITEMS:forge:tie_0": [
-      "CUSTOM:Zizaitiejia.helmet",
-      "CUSTOM:Zstkj.helmet",
-      "CUSTOM:Kjjlt.helmet",
-      "CUSTOM:Szkjtie.helmet",
-      "CUSTOM:Djtt.helmet",
-      "CUSTOM:Rytt.helmet",
-      "CUSTOM:Axtt.helmet"
-    ],
     "ITEMS:forge:hejin_1": [
       "CUSTOM:Zizizaihejintao.body",
       "CUSTOM:Jlkjhj.body",
@@ -28475,6 +28530,15 @@
       "CUSTOM:Djhjt.body",
       "CUSTOM:Ryhjt.body",
       "CUSTOM:Axhjt.body"
+    ],
+    "ITEMS:forge:tie_0": [
+      "CUSTOM:Zizaitiejia.helmet",
+      "CUSTOM:Zstkj.helmet",
+      "CUSTOM:Kjjlt.helmet",
+      "CUSTOM:Szkjtie.helmet",
+      "CUSTOM:Djtt.helmet",
+      "CUSTOM:Rytt.helmet",
+      "CUSTOM:Axtt.helmet"
     ],
     "ITEMS:forge:tie_1": [
       "CUSTOM:Zizaitiejia.body",
@@ -30261,6 +30325,7 @@
       "advancements.nnizhiguanchou.descr": "Obtain one Intertwined Fate",
       "subtitles.nomusic": "~~~",
       "subtitles.sanyuehee": "emm",
+      "death.attack.chiwuwuli.item": "%1$s 无法抵御物理撕裂！",
       "item.primogemcraft.axtt_chestplate": "§b『Shivada Jade』§fIron Chestplate",
       "item.primogemcraft.zuishengzijing": "§dVajrada Amethyst",
       "block.primogemcraft.ceshi_mucaibao_pressure_plate": "Dendro Core Wood Pressure Plate",
@@ -30649,6 +30714,7 @@
       "item.primogemcraft.zszst_chestplate": "§d『Vajrada Amethyst』§bDiamond Chestplate",
       "item.primogemcraft.xiangdanganlao": "§5『Curio』§eAmbergirs Cheese",
       "block.primogemcraft.daguanzi": "Large Jar",
+      "death.attack.chiwuwuli.player": "%1$s 无法摆脱%2$s赠与的物理撕裂，惨死",
       "subtitles.mengdeyewai001": "~",
       "advancements.nibaodimeila.title": "Your Pity Vanished！",
       "item.primogemcraft.wanshinang": "§5『CUrio』§eOmniscient Capsule",
@@ -30713,6 +30779,7 @@
       "item.minecraft.splash_potion.effect.fengraoqiongjiang": "§eSplash Abundance Drinking",
       "item.primogemcraft.mmolafu": "§eMora Axe",
       "block.primogemcraft.shenbanyanyuanshikuangshi": "Deep Slate Priomogem Ore",
+      "death.attack.chiwuwuli": "%1$s 被持续物理伤害撕裂！",
       "item.primogemcraft.djtt_helmet": "§b『Varunada Lazurite』§fIron Helmet",
       "item.primogemcraft.wawanxiangwuchangtou": "§5『Curio』§2Entropic Die",
       "block.primogemcraft.yuansujingshikuai": "§kaha§fElements Crystal Gemstone§kaha",
@@ -31268,6 +31335,7 @@
       "advancements.nnizhiguanchou.descr": "Obtain one Intertwined Fate",
       "subtitles.nomusic": "~~~",
       "subtitles.sanyuehee": "emm",
+      "death.attack.chiwuwuli.item": "%1$s 无法抵御物理撕裂！",
       "item.primogemcraft.axtt_chestplate": "§b『Shivada Jade』§fIron Chestplate",
       "item.primogemcraft.zuishengzijing": "§dVajrada Amethyst",
       "block.primogemcraft.ceshi_mucaibao_pressure_plate": "Dendro Core Wood Pressure Plate",
@@ -31656,6 +31724,7 @@
       "item.primogemcraft.zszst_chestplate": "§d『Vajrada Amethyst』§bDiamond Chestplate",
       "item.primogemcraft.xiangdanganlao": "§5『Curio』§eAmbergirs Cheese",
       "block.primogemcraft.daguanzi": "Large Jar",
+      "death.attack.chiwuwuli.player": "%1$s 无法摆脱%2$s赠与的物理撕裂，惨死",
       "subtitles.mengdeyewai001": "~",
       "advancements.nibaodimeila.title": "Your Pity Vanished！",
       "item.primogemcraft.wanshinang": "§5『CUrio』§eOmniscient Capsule",
@@ -31720,6 +31789,7 @@
       "item.minecraft.splash_potion.effect.fengraoqiongjiang": "§eSplash Abundance Drinking",
       "item.primogemcraft.mmolafu": "§eMora Axe",
       "block.primogemcraft.shenbanyanyuanshikuangshi": "Deep Slate Priomogem Ore",
+      "death.attack.chiwuwuli": "%1$s 被持续物理伤害撕裂！",
       "item.primogemcraft.djtt_helmet": "§b『Varunada Lazurite』§fIron Helmet",
       "item.primogemcraft.wawanxiangwuchangtou": "§5『Curio』§2Entropic Die",
       "block.primogemcraft.yuansujingshikuai": "§kaha§fElements Crystal Gemstone§kaha",
@@ -32272,6 +32342,7 @@
       "item.primogemcraft.zhuangmanlajidelajitong": "恶臭溶液",
       "advancements.nnizhiguanchou.descr": "获得一枚纠缠之缘",
       "subtitles.sanyuehee": "呵呃~",
+      "death.attack.chiwuwuli.item": "%1$s 无法抵御物理撕裂！",
       "item.primogemcraft.axtt_chestplate": "§b『哀叙冰玉』§f铁胸甲",
       "item.primogemcraft.zuishengzijing": "§d最胜紫晶",
       "block.primogemcraft.ceshi_mucaibao_pressure_plate": "草原核化木 压力板",
@@ -32657,6 +32728,7 @@
       "item.primogemcraft.zszst_chestplate": "§d『最胜紫晶』§b钻石胸甲",
       "item.primogemcraft.xiangdanganlao": "§5『奇物』§e香涎干酪",
       "block.primogemcraft.daguanzi": "大罐子",
+      "death.attack.chiwuwuli.player": "%1$s 无法摆脱%2$s赠与的物理撕裂，惨死",
       "subtitles.mengdeyewai001": "~",
       "advancements.nibaodimeila.title": "你保底没啦！",
       "item.primogemcraft.wanshinang": "§5『奇物』§e万识囊",
@@ -32721,6 +32793,7 @@
       "item.minecraft.splash_potion.effect.fengraoqiongjiang": "§e喷溅型丰饶琼浆",
       "item.primogemcraft.mmolafu": "§e摩拉 斧",
       "block.primogemcraft.shenbanyanyuanshikuangshi": "深层原石矿石",
+      "death.attack.chiwuwuli": "%1$s 被持续物理伤害撕裂！",
       "item.primogemcraft.djtt_helmet": "§b『涤净青金』§f铁头盔",
       "item.primogemcraft.wawanxiangwuchangtou": "§5『奇物』§2万象无常骰",
       "block.primogemcraft.yuansujingshikuai": "§d§kaha§f元素晶体 块§d§kaha",

@@ -29,7 +29,7 @@ public class ZsfsxProcedure {
 			});
 			if (sourceentity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(),
-						(int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false)
+						(int) ((sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false)
 								? itemstack.getOrCreateTag().getDouble("zsq_sx") * 20 * 0.5 * 0.5
 								: itemstack.getOrCreateTag().getDouble("zsq_sx") * 20 * 0.5));
 		}
