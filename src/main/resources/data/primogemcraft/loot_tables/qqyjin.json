@@ -8,7 +8,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:yhdltyidie",
-          "weight": 4,
+          "weight": 8,
           "functions": [
             {
               "function": "set_count",
@@ -430,7 +430,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:ydfms",
-          "weight": 4,
+          "weight": 8,
           "functions": [
             {
               "function": "set_count",
@@ -444,7 +444,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:ysrqsp",
-          "weight": 8,
+          "weight": 10,
           "functions": [
             {
               "function": "set_count",
