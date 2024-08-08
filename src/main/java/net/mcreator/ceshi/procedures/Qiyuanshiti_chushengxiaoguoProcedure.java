@@ -153,9 +153,13 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 					final Vec3 _center = new Vec3(x, (y - 10), z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
-						if (entityiterator.getPersistentData().getBoolean("chouka")) {
+						if (entityiterator.getPersistentData().getBoolean("chouka") || entityiterator.getPersistentData().getBoolean("baodi_shoudong")) {
 							entity.getPersistentData().putString("qiyuan_guishu", (entityiterator.getDisplayName().getString()));
-							entityiterator.getPersistentData().putDouble("chouka", (entityiterator.getPersistentData().getDouble("chouka") - 1));
+							if (entityiterator.getPersistentData().getBoolean("baodi_shoudong")) {
+								entityiterator.getPersistentData().putBoolean("baodi_shoudong", false);
+							} else {
+								entityiterator.getPersistentData().putDouble("chouka", (entityiterator.getPersistentData().getDouble("chouka") - 1));
+							}
 							entity.getPersistentData().putBoolean("chouka_jiance_2", true);
 						}
 					}
