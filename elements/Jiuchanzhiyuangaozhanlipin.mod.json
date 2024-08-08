@@ -16,7 +16,7 @@
             "item": {
               "value": "CUSTOM:Mmola01"
             },
-            "weight": 1000,
+            "weight": 10,
             "minCount": 0,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
@@ -30,23 +30,9 @@
             "item": {
               "value": "CUSTOM:Yuanshi"
             },
-            "weight": 100,
+            "weight": 3,
             "minCount": 0,
             "maxCount": 2,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Laoshi"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
