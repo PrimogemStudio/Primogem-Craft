@@ -61,6 +61,7 @@ public class PrimogemcraftModTrades {
 
 					new ItemStack(PrimogemcraftModItems.YUANSHI.get()), 10, 10, 0.05f));
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Blocks.TNT, 9), new ItemStack(PrimogemcraftModItems.YIYINHEDALETOU.get()), new ItemStack(PrimogemcraftModBlocks.SHENMIWANOU.get()), 10, 5, 0.05f));
+			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(PrimogemcraftModItems.JINGUANGBAODI_01.get(), 6), new ItemStack(PrimogemcraftModItems.YSRQSP.get()), new ItemStack(PrimogemcraftModItems.YSRQSP.get(), 2), 1, 5, 0f));
 		}
 	}
 }

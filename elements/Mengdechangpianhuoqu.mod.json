@@ -295,6 +295,24 @@
             "maxTrades": 10,
             "xp": 5,
             "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:Jinguangbaodi01"
+            },
+            "countPrice1": 6,
+            "price2": {
+              "value": "CUSTOM:Ysrqsp"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:Ysrqsp"
+            },
+            "countOffer": 2,
+            "level": 5,
+            "maxTrades": 1,
+            "xp": 5,
+            "priceMultiplier": 0.0
           }
         ]
       }
