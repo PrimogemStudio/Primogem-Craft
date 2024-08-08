@@ -7,6 +7,7 @@ import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -15,12 +16,14 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
@@ -43,54 +46,88 @@ public class TtiaoguozhizhangshuxingProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof QQyuanchuzi01Entity || entityiterator instanceof QQQyuanchulan01Entity || entityiterator instanceof QqiyuanJinGuangEntity) {
 						if (!(entityiterator instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PrimogemcraftModMobEffects.DJQJKJXGXIANZHI.get()))) {
-							if (!(entityiterator.getPersistentData().getString("qiyuan_guishu")).equals(entity.getDisplayName().getString())) {
-								if (entity instanceof Player _player && !_player.level().isClientSide())
-									_player.displayClientMessage(Component.literal("\u00A76\u5305\u542B\u4E00\u4E9B\u4E0D\u5C5E\u4E8E\u4F60\u7684\u7948\u613F\u7ED3\u679C\uFF0C\u5B83\u5C5E\u4E8E\u5176\u4ED6\u4EBA"), false);
-							} else {
-								if (world instanceof Level _level) {
-									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9);
-									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9, false);
+							if (new Object() {
+								public boolean checkGamemode(Entity _ent) {
+									if (_ent instanceof ServerPlayer _serverPlayer) {
+										return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+									} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+										return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+												&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
 									}
+									return false;
 								}
-								if (entityiterator instanceof QqiyuanJinGuangEntity && entityiterator.getPersistentData().getBoolean("chouka_jiance_2")) {
+							}.checkGamemode(entity)) {
+								if (entityiterator instanceof QqiyuanJinGuangEntity) {
 									if (world instanceof ServerLevel _level)
 										_level.getServer().getCommands().performPrefixedCommand(
 												new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
 														.withSuppressedOutput(),
 												"loot spawn ~ ~ ~ loot primogemcraft:qqyjin");
 								}
-								if (entityiterator instanceof QQyuanchuzi01Entity && entityiterator.getPersistentData().getBoolean("chouka_jiance_1")) {
+								if (entityiterator instanceof QQyuanchuzi01Entity) {
 									if (world instanceof ServerLevel _level)
 										_level.getServer().getCommands().performPrefixedCommand(
 												new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
 														.withSuppressedOutput(),
 												"loot spawn ~ ~ ~ loot primogemcraft:q_qqyzi");
 								}
-								if (entityiterator instanceof QQQyuanchulan01Entity && entityiterator.getPersistentData().getBoolean("chouka_jiance_0")) {
+								if (entityiterator instanceof QQQyuanchulan01Entity) {
 									if (world instanceof ServerLevel _level)
 										_level.getServer().getCommands().performPrefixedCommand(
 												new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
 														.withSuppressedOutput(),
 												"loot spawn ~ ~ ~ loot primogemcraft:qq_qqylan");
 								}
-								if (!(entityiterator.getPersistentData().getBoolean("chouka_jiance_2") || entityiterator.getPersistentData().getBoolean("chouka_jiance_1") || entityiterator.getPersistentData().getBoolean("chouka_jiance_0"))) {
-									if (world instanceof ServerLevel _level) {
-										ItemEntity entityToSpawn = new ItemEntity(_level, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), new ItemStack(PrimogemcraftModItems.YSJFR.get()));
-										entityToSpawn.setPickUpDelay(10);
-										_level.addFreshEntity(entityToSpawn);
-									}
-									if (entity instanceof Player _player && !_player.level().isClientSide())
-										_player.displayClientMessage(Component.literal("\u00A7c\u68C0\u6D4B\u5230\u4E0D\u5E94\u8BE5\u5B58\u5728\u7684\u62BD\u5361\u5B9E\u4F53\uFF0C\u5DF2\u5C06\u5176\u9500\u6BC1"), false);
-								}
 								if (!entityiterator.level().isClientSide())
 									entityiterator.discard();
-								{
-									ItemStack _ist = itemstack;
-									if (_ist.hurt(1, RandomSource.create(), null)) {
-										_ist.shrink(1);
-										_ist.setDamageValue(0);
+								if (entity instanceof Player _player && !_player.level().isClientSide())
+									_player.displayClientMessage(Component.literal(
+											"\u60A8\u662F\u521B\u9020\u6A21\u5F0F\uFF0C\u5DF2\u5C06\u6240\u6709\u7ED3\u679C\u6B63\u5E38\u8F93\u51FA\u5956\u52B1\uFF01\u00A78\u5305\u62EC\u522B\u4EBA\u7684\u4EE5\u53CA\u4E0D\u5E94\u5F53\u5B58\u5728\u7684\uFF09"),
+											false);
+							} else {
+								if (!(entityiterator.getPersistentData().getString("qiyuan_guishu")).equals(entity.getDisplayName().getString())) {
+									if (entity instanceof Player _player && !_player.level().isClientSide())
+										_player.displayClientMessage(Component.literal("\u00A76\u5305\u542B\u4E00\u4E9B\u4E0D\u5C5E\u4E8E\u4F60\u7684\u7948\u613F\u7ED3\u679C\uFF0C\u5B83\u5C5E\u4E8E\u5176\u4ED6\u4EBA"), false);
+								} else {
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9);
+										} else {
+											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9, false);
+										}
+									}
+									if (entityiterator instanceof QqiyuanJinGuangEntity && entityiterator.getPersistentData().getBoolean("chouka_jiance_2")) {
+										if (world instanceof ServerLevel _level)
+											_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4,
+													"", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "loot spawn ~ ~ ~ loot primogemcraft:qqyjin");
+									}
+									if (entityiterator instanceof QQyuanchuzi01Entity && entityiterator.getPersistentData().getBoolean("chouka_jiance_1")) {
+										if (world instanceof ServerLevel _level)
+											_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4,
+													"", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "loot spawn ~ ~ ~ loot primogemcraft:q_qqyzi");
+									}
+									if (entityiterator instanceof QQQyuanchulan01Entity && entityiterator.getPersistentData().getBoolean("chouka_jiance_0")) {
+										if (world instanceof ServerLevel _level)
+											_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4,
+													"", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "loot spawn ~ ~ ~ loot primogemcraft:qq_qqylan");
+									}
+									if (!(entityiterator.getPersistentData().getBoolean("chouka_jiance_2") || entityiterator.getPersistentData().getBoolean("chouka_jiance_1") || entityiterator.getPersistentData().getBoolean("chouka_jiance_0"))) {
+										if (world instanceof ServerLevel _level) {
+											ItemEntity entityToSpawn = new ItemEntity(_level, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), new ItemStack(PrimogemcraftModItems.YSJFR.get()));
+											entityToSpawn.setPickUpDelay(10);
+											_level.addFreshEntity(entityToSpawn);
+										}
+										if (entity instanceof Player _player && !_player.level().isClientSide())
+											_player.displayClientMessage(Component.literal("\u00A7c\u68C0\u6D4B\u5230\u4E0D\u5E94\u8BE5\u5B58\u5728\u7684\u62BD\u5361\u5B9E\u4F53\uFF0C\u5DF2\u5C06\u5176\u9500\u6BC1"), false);
+									}
+									if (!entityiterator.level().isClientSide())
+										entityiterator.discard();
+									{
+										ItemStack _ist = itemstack;
+										if (_ist.hurt(1, RandomSource.create(), null)) {
+											_ist.shrink(1);
+											_ist.setDamageValue(0);
+										}
 									}
 								}
 							}
