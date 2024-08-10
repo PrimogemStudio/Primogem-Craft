@@ -16,8 +16,9 @@ public class Qyhxsx0Procedure {
 			return;
 		double a = 0;
 		if (!world.isClientSide()) {
-			if (!(itemstack.getOrCreateTag().getDouble("qyhx_cishu") > 9)) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem())) {
+			if (!(itemstack.getOrCreateTag().getDouble("qyhx_cishu") > 19)) {
+				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem())
+						&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem())) {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("pgc:qysz_10")))) {
 						a = 10;
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("pgc:qysz_7")))) {
@@ -26,8 +27,6 @@ public class Qyhxsx0Procedure {
 						a = 5;
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("pgc:qysz_3")))) {
 						a = 3;
-					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
-						a = 0;
 					} else {
 						a = 1;
 					}

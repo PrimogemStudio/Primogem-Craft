@@ -19,7 +19,7 @@ import java.util.List;
 
 public class QyhxItem extends Item {
 	public QyhxItem() {
-		super(new Item.Properties().durability(11).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().durability(21).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

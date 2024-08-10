@@ -25,6 +25,8 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		double a = 0;
+		double b = 0;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.DJQJKJXGXIANZHI.get(), (int) (entity instanceof QQQyuanchulan01Entity ? 40 : 20), 0, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -36,8 +38,10 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator.getPersistentData().getDouble("chouka") > 0) {
+							a = 0.03 + (entityiterator.getPersistentData().getDouble("chouka_jiacheng") > 0 ? (entityiterator.getPersistentData().getDouble("Prayers_strengthen") / 10) * 0.01 : 0);
+							b = 0.2 + (entityiterator.getPersistentData().getDouble("chouka_jiacheng") > 0 ? (entityiterator.getPersistentData().getDouble("Prayers_strengthen") / 5) * 0.01 : 0);
 							if (!entityiterator.getPersistentData().getBoolean("xiangyu")
-									&& (Math.random() < 0.03 || (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).jin_baodi >= 49)) {
+									&& (Math.random() < a || (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).jin_baodi >= 49)) {
 								{
 									double _setval = 0;
 									entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -67,7 +71,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 										capability.syncPlayerVariables(entityiterator);
 									});
 								}
-							} else if (Math.random() < 0.2 || (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).zi_baodi >= 9) {
+							} else if (Math.random() < b || (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).zi_baodi >= 9) {
 								if (!entity.level().isClientSide())
 									entity.discard();
 								if (world instanceof ServerLevel _level) {
@@ -126,6 +130,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 									});
 								}
 								entityiterator.getPersistentData().putDouble("chouka", (entityiterator.getPersistentData().getDouble("chouka") - 1));
+								entityiterator.getPersistentData().putDouble("chouka_jiacheng", (entityiterator.getPersistentData().getDouble("chouka_jiacheng") - 1));
 								entity.getPersistentData().putBoolean("chouka_jiance_0", true);
 								entityiterator.getPersistentData().putBoolean("xiangyu", false);
 							}
@@ -143,6 +148,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 						if (entityiterator.getPersistentData().getBoolean("chouka")) {
 							entity.getPersistentData().putString("qiyuan_guishu", (entityiterator.getDisplayName().getString()));
 							entityiterator.getPersistentData().putDouble("chouka", (entityiterator.getPersistentData().getDouble("chouka") - 1));
+							entityiterator.getPersistentData().putDouble("chouka_jiacheng", (entityiterator.getPersistentData().getDouble("chouka_jiacheng") - 1));
 							entity.getPersistentData().putBoolean("chouka_jiance_1", true);
 						}
 					}
@@ -159,6 +165,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 								entityiterator.getPersistentData().putBoolean("baodi_shoudong", false);
 							} else {
 								entityiterator.getPersistentData().putDouble("chouka", (entityiterator.getPersistentData().getDouble("chouka") - 1));
+								entityiterator.getPersistentData().putDouble("chouka_jiacheng", (entityiterator.getPersistentData().getDouble("chouka_jiacheng") - 1));
 							}
 							entity.getPersistentData().putBoolean("chouka_jiance_2", true);
 						}

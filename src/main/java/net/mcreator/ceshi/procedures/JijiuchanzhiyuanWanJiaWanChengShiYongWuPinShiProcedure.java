@@ -16,11 +16,13 @@ import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.init.PrimogemcraftModEntities;
 
 public class JijiuchanzhiyuanWanJiaWanChengShiYongWuPinShiProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
 			entity.getPersistentData().putDouble("chouka", 1);
+			entity.getPersistentData().putDouble("chouka_jiacheng", 1);
+			entity.getPersistentData().putDouble("Prayers_strengthen", (itemstack.getOrCreateTag().getDouble("Prayers_strengthen")));
 			new ItemStack(PrimogemcraftModItems.JIJIUCHANZHIYUAN.get()).shrink(1);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
