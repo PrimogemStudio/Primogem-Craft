@@ -19422,9 +19422,9 @@
       "registry_name": "molayiji_01_feature",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/ceshi/world/features/Molayiji01FeatureFeature.java",
           "src/main/resources/data/primogemcraft/worldgen/configured_feature/molayiji_01_feature.json",
           "src/main/resources/data/primogemcraft/worldgen/placed_feature/molayiji_01_feature.json",
-          "src/main/java/net/mcreator/ceshi/world/features/Molayiji01FeatureFeature.java",
           "src/main/resources/data/primogemcraft/forge/biome_modifier/molayiji_01_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
@@ -19438,7 +19438,6 @@
       "registry_name": "dibiaomola_01_feature",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ceshi/world/features/Dibiaomola01FeatureFeature.java",
           "src/main/resources/data/primogemcraft/forge/biome_modifier/dibiaomola_01_feature_biome_modifier.json",
           "src/main/resources/data/primogemcraft/worldgen/configured_feature/dibiaomola_01_feature.json",
           "src/main/resources/data/primogemcraft/worldgen/placed_feature/dibiaomola_01_feature.json"

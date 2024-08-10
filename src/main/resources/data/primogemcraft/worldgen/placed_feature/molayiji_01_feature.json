@@ -25,9 +25,6 @@
       "heightmap": "OCEAN_FLOOR_WG",
       "min_inclusive": -192,
       "max_inclusive": -8
-    },
-    {
-      "type": "minecraft:biome"
     }
   ]
 }

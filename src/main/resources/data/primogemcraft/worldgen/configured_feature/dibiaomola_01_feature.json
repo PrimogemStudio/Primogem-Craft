@@ -1,5 +1,5 @@
 {
-  "type": "primogemcraft:dibiaomola_01_feature",
+  "type": "primogemcraft:structure_feature",
   "config": {
     "structure": "primogemcraft:molayiji_05",
     "random_rotation": true,
