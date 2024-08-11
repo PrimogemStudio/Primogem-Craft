@@ -15,11 +15,15 @@ public class Qyhxsx0Procedure {
 		if (entity == null)
 			return;
 		double a = 0;
+		double b = 0;
+		double c = 0;
 		if (!world.isClientSide()) {
-			if (!(itemstack.getOrCreateTag().getDouble("qyhx_cishu") > 19)) {
+			if (!(itemstack.getOrCreateTag().getDouble("qyhx_cishu") > 29)) {
 				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem())
 						&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem())) {
-					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("pgc:qysz_10")))) {
+					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Blocks.COMMAND_BLOCK.asItem()) {
+						a = 1000;
+					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("pgc:qysz_10")))) {
 						a = 10;
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("pgc:qysz_7")))) {
 						a = 7;
@@ -31,8 +35,19 @@ public class Qyhxsx0Procedure {
 						a = 1;
 					}
 					if (entity.isShiftKeyDown()) {
-						if (entity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal(("\u00A7d\u526F\u624B\u7269\u54C1\u6BCF\u4EF6\u5305\u542B\u00A76" + new java.text.DecimalFormat("##.##").format(a) + "\u00A7d\u70B9\u7948\u613F\u503C")), false);
+						c = itemstack.getMaxDamage() - (itemstack.getOrCreateTag().getDouble("qyhx_cishu") + 1);
+						b = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getCount();
+						if (c > b) {
+							(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).shrink((int) b);
+							itemstack.getOrCreateTag().putDouble("Prayers_strengthen", (itemstack.getOrCreateTag().getDouble("Prayers_strengthen") + b * a));
+							itemstack.getOrCreateTag().putDouble("qyhx_cishu", (itemstack.getOrCreateTag().getDouble("qyhx_cishu") + b));
+							itemstack.setDamageValue((int) (itemstack.getMaxDamage() - (itemstack.getOrCreateTag().getDouble("qyhx_cishu") + 1)));
+						} else {
+							(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).shrink((int) c);
+							itemstack.getOrCreateTag().putDouble("Prayers_strengthen", (itemstack.getOrCreateTag().getDouble("Prayers_strengthen") + c * a));
+							itemstack.getOrCreateTag().putDouble("qyhx_cishu", (itemstack.getOrCreateTag().getDouble("qyhx_cishu") + c));
+							itemstack.setDamageValue((int) (itemstack.getMaxDamage() - (itemstack.getOrCreateTag().getDouble("qyhx_cishu") + 1)));
+						}
 					} else {
 						(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).shrink(1);
 						itemstack.getOrCreateTag().putDouble("Prayers_strengthen", (itemstack.getOrCreateTag().getDouble("Prayers_strengthen") + a));

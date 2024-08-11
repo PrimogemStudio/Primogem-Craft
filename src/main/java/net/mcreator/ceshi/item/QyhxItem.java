@@ -7,6 +7,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
@@ -14,12 +15,13 @@ import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.QyhxsxProcedure;
 import net.mcreator.ceshi.procedures.Qyhxsx0Procedure;
+import net.mcreator.ceshi.procedures.Qyhx_sx_1Procedure;
 
 import java.util.List;
 
 public class QyhxItem extends Item {
 	public QyhxItem() {
-		super(new Item.Properties().durability(21).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().durability(31).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override
@@ -34,5 +36,12 @@ public class QyhxItem extends Item {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		Qyhxsx0Procedure.execute(world, entity, ar.getObject());
 		return ar;
+	}
+
+	@Override
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
+		boolean retval = super.onEntitySwing(itemstack, entity);
+		Qyhx_sx_1Procedure.execute(entity.level(), entity, itemstack);
+		return retval;
 	}
 }

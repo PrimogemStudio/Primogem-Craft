@@ -45,7 +45,9 @@ public class Ysdc_sxProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal(("\u00A77\u8DDD\u79BB\u51FA\u91D1\u00A7a\u8FD8\u5269\u00A77" + itemstack.getOrCreateTag().getDouble("vhoukajiance_jin_1") + "\u00A7a\u62BD")), false);
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("\u00A7e\u5E73\u5747\u6BCF" + itemstack.getOrCreateTag().getDouble("vhoukajiance_pinjun") + "\u53D1\u51FA\u73B0\u00A7b1\u4E2A\u00A7e\u91D1\u5149\uFF01")), false);
+				_player.displayClientMessage(
+						Component.literal(("\u00A7e\u5E73\u5747\u7EA6" + new java.text.DecimalFormat("").format(Math.round(itemstack.getOrCreateTag().getDouble("vhoukajiance_pinjun"))) + "\u53D1\u51FA\u73B0\u00A7b1\u4E2A\u00A7e\u91D1\u5149\uFF01")),
+						false);
 		}
 	}
 }

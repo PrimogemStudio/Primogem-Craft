@@ -58,6 +58,18 @@
     "primogemcraft:mzsj",
     "primogemcraft:qhzlh",
     "primogemcraft:ljtg_02",
-    "primogemcraft:xingchen"
+    "primogemcraft:xingchen",
+    "minecraft:amethyst_block",
+    "minecraft:budding_amethyst",
+    "minecraft:tnt",
+    "minecraft:bookshelf",
+    "minecraft:repeater",
+    "minecraft:comparator",
+    "minecraft:lightning_rod",
+    "minecraft:sculk_sensor",
+    "minecraft:calibrated_sculk_sensor",
+    "minecraft:sculk_shrieker",
+    "minecraft:piston",
+    "minecraft:sticky_piston"
   ]
 }
