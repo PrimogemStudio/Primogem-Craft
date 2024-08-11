@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:mmola_01"
+    },
+    "b": {
+      "item": "primogemcraft:yuanshi"
+    }
+  },
+  "result": {
+    "item": "primogemcraft:qyhx",
+    "count": 1
+  }
+}

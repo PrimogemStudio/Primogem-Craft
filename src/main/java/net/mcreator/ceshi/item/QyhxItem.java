@@ -15,7 +15,7 @@ import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.QyhxsxProcedure;
 import net.mcreator.ceshi.procedures.Qyhxsx0Procedure;
-import net.mcreator.ceshi.procedures.Qyhx_sx_1Procedure;
+import net.mcreator.ceshi.procedures.QyhxcxProcedure;
 
 import java.util.List;
 
@@ -41,7 +41,7 @@ public class QyhxItem extends Item {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
 		boolean retval = super.onEntitySwing(itemstack, entity);
-		Qyhx_sx_1Procedure.execute(entity.level(), entity, itemstack);
+		QyhxcxProcedure.execute(entity.level(), entity, itemstack);
 		return retval;
 	}
 }

@@ -27950,18 +27950,6 @@
       }
     },
     {
-      "name": "Cspf",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cspf",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipes/cspf.json"
-        ]
-      }
-    },
-    {
       "name": "Jcsxcxsx",
       "type": "procedure",
       "compiles": true,
@@ -27984,14 +27972,14 @@
       }
     },
     {
-      "name": "Qyhx_sx_1",
+      "name": "Qyhxcx",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "qyhx_sx_1",
+      "registry_name": "qyhxcx",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/Qyhx_sx_1Procedure.java"
+          "src/main/java/net/mcreator/ceshi/procedures/QyhxcxProcedure.java"
         ],
         "dependencies": [
           {
@@ -28006,6 +27994,18 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "Qyhxpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qyhxpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qyhxpf.json"
         ]
       }
     }
@@ -28643,7 +28643,7 @@
       "CUSTOM:Yuansujingshikuai",
       "CUSTOM:Kongyuezhufu",
       "CUSTOM:Jianglidayinxiongjingyan",
-      "Items.NETHER_STAR",
+      "CUSTOM:Ysrzspsx",
       "CUSTOM:Zziyousongshi",
       "CUSTOM:Jianlaohuangyu",
       "CUSTOM:Zuishengzijing",
@@ -28651,9 +28651,20 @@
       "CUSTOM:Diijingqingjing",
       "CUSTOM:Rranyuanmanao",
       "CUSTOM:Aixubingyu",
-      "CUSTOM:Ysrzspsx",
+      "CUSTOM:Zhaiquan",
       "Blocks.DRAGON_EGG",
-      "Blocks.SKULL#5"
+      "Blocks.SKULL#5",
+      "Items.NETHER_STAR",
+      "Items.NETHERITE_SWORD",
+      "Items.NETHERITE_SHOVEL",
+      "Items.NETHERITE_PICKAXE",
+      "Items.NETHERITE_AXE",
+      "Items.NETHERITE_HOE",
+      "Items.NETHERITE_HELMET",
+      "Items.NETHERITE_CHESTPLATE",
+      "Items.NETHERITE_LEGGINGS",
+      "Items.NETHERITE_BOOTS",
+      "CUSTOM:Yibangrenzhinang"
     ],
     "ITEMS:forge:tie_3": [
       "CUSTOM:Zizaitiejia.boots",
@@ -29105,7 +29116,8 @@
       "CUSTOM:Jianglimaoxianjiajingyan",
       "CUSTOM:Qinlaodezhexue",
       "CUSTOM:Huangjindezhexue",
-      "CUSTOM:Ffanrongdezhexue"
+      "CUSTOM:Ffanrongdezhexue",
+      "CUSTOM:Zhangquanzhezhinang"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:Lajsk",
@@ -29169,9 +29181,13 @@
       "CUSTOM:Jiangliliulangzhejingyan",
       "CUSTOM:Xzcfyxwzd",
       "CUSTOM:Xinghui",
-      "Blocks.ENDER_CHEST",
-      "Blocks.ENCHANTING_TABLE",
-      "Blocks.END_ROD"
+      "Blocks.PISTON",
+      "Blocks.STICKY_PISTON",
+      "Items.CHAINMAIL_HELMET",
+      "Items.CHAINMAIL_CHESTPLATE",
+      "Items.CHAINMAIL_LEGGINGS",
+      "Items.CHAINMAIL_BOOTS",
+      "CUSTOM:Maoxianjiazhinang"
     ],
     "ITEMS:forge:ysk_0": [
       "CUSTOM:Zziyousongshikuai",
@@ -29241,18 +29257,23 @@
       "CUSTOM:Qhzlh",
       "CUSTOM:Ljtg02",
       "CUSTOM:Xingchen",
-      "Blocks.AMETHYST_BLOCK",
-      "Blocks.BUDDING_AMETHYST",
-      "Blocks.TNT",
-      "Blocks.BOOKSHELF",
+      "CUSTOM:Mmola01",
+      "CUSTOM:Yuzhousuipian",
+      "Blocks.TRIPWIRE_HOOK",
+      "Blocks.DAYLIGHT_DETECTOR",
       "Blocks.UNPOWERED_REPEATER",
       "Blocks.UNPOWERED_COMPARATOR",
-      "Blocks.LIGHTNING_ROD",
-      "Blocks.SCULK_SENSOR",
-      "Blocks.CALIBRATED_SCULK_SENSOR",
-      "Blocks.SCULK_SHRIEKER",
-      "Blocks.PISTON",
-      "Blocks.STICKY_PISTON"
+      "Blocks.REDSTONE_LAMP",
+      "Items.GOLDEN_SWORD",
+      "Items.GOLDEN_SHOVEL",
+      "Items.GOLDEN_PICKAXE",
+      "Items.GOLDEN_AXE",
+      "Items.GOLDEN_HOE",
+      "Items.GOLDEN_HELMET",
+      "Items.GOLDEN_CHESTPLATE",
+      "Items.GOLDEN_LEGGINGS",
+      "Items.GOLDEN_BOOTS",
+      "CUSTOM:Liulangzhezhinang"
     ],
     "ITEMS:forge:curio/bad": [
       "CUSTOM:Shqwyhdlt",

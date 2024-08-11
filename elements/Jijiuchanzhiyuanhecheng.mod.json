@@ -11,13 +11,13 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "CUSTOM:Xingchen"
+      "value": "CUSTOM:Qyhx"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:Xinghui"
     },
     "smithingInputTemplateStack": {
-      "value": "CUSTOM:Yuanshi"
+      "value": "CUSTOM:Xixiangyuzhiyuan"
     },
     "smithingReturnStack": {
       "value": "CUSTOM:Jijiuchanzhiyuan"
