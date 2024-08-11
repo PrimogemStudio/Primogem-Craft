@@ -19,7 +19,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -145,13 +144,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 											_player.getFoodData().setSaturation(0);
 										if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 											_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 100, 127));
-										{
-											ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
-											if (_ist.hurt((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getMaxDamage(), RandomSource.create(), null)) {
-												_ist.shrink(1);
-												_ist.setDamageValue(0);
-											}
-										}
+										(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).shrink(1);
 										if (entity instanceof Player _player) {
 											ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SHQWYHDLT.get()).copy();
 											_setstack.setCount(1);
@@ -166,8 +159,8 @@ public class DadaletoushibiezhuangtaiProcedure {
 												capability.syncPlayerVariables(entity);
 											});
 										}
-										if (!(entity instanceof ServerPlayer _plr48 && _plr48.level() instanceof ServerLevel
-												&& _plr48.getAdvancements().getOrStartProgress(_plr48.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"))).isDone())
+										if (!(entity instanceof ServerPlayer _plr46 && _plr46.level() instanceof ServerLevel
+												&& _plr46.getAdvancements().getOrStartProgress(_plr46.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"))).isDone())
 												&& (entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).daletou_jishu >= 100) {
 											if (entity instanceof ServerPlayer _player) {
 												Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"));
@@ -187,8 +180,8 @@ public class DadaletoushibiezhuangtaiProcedure {
 					}
 				} else {
 					if (Math.random() < 0.4) {
-						if (Math.random() < 0.006 && !(entity instanceof ServerPlayer _plr51 && _plr51.level() instanceof ServerLevel
-								&& _plr51.getAdvancements().getOrStartProgress(_plr51.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:nibaodimeila"))).isDone())) {
+						if (Math.random() < 0.006 && !(entity instanceof ServerPlayer _plr49 && _plr49.level() instanceof ServerLevel
+								&& _plr49.getAdvancements().getOrStartProgress(_plr49.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:nibaodimeila"))).isDone())) {
 							if (entity instanceof ServerPlayer _player) {
 								Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:nibaodimeila"));
 								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -229,8 +222,8 @@ public class DadaletoushibiezhuangtaiProcedure {
 											_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.launch")), SoundSource.PLAYERS, 1, 1, false);
 										}
 									}
-									if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.FEIQIUPINGZHENG.get())) : false) || entity instanceof ServerPlayer _plr68
-											&& _plr68.level() instanceof ServerLevel && _plr68.getAdvancements().getOrStartProgress(_plr68.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"))).isDone()) {
+									if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.FEIQIUPINGZHENG.get())) : false) || entity instanceof ServerPlayer _plr66
+											&& _plr66.level() instanceof ServerLevel && _plr66.getAdvancements().getOrStartProgress(_plr66.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"))).isDone()) {
 										if (world instanceof ServerLevel _level)
 											_level.getServer().getCommands().performPrefixedCommand(
 													new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
@@ -248,8 +241,8 @@ public class DadaletoushibiezhuangtaiProcedure {
 											_player.displayClientMessage(Component.literal("\u00A75\u7CFB\u7EDF\uFF1A\u00A7b\u5C0F\u8D5A\u4E00\u7B14"), false);
 									}
 								} else {
-									if (Math.random() < 0.01 && !(entity instanceof ServerPlayer _plr79 && _plr79.level() instanceof ServerLevel
-											&& _plr79.getAdvancements().getOrStartProgress(_plr79.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:zhongjifeiqiu"))).isDone())) {
+									if (Math.random() < 0.01 && !(entity instanceof ServerPlayer _plr77 && _plr77.level() instanceof ServerLevel
+											&& _plr77.getAdvancements().getOrStartProgress(_plr77.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:zhongjifeiqiu"))).isDone())) {
 										if (entity instanceof Player _player) {
 											ItemStack _setstack = new ItemStack(PrimogemcraftModItems.FEIQIUPINGZHENG.get()).copy();
 											_setstack.setCount(1);
@@ -276,13 +269,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 											_player.getFoodData().setSaturation(0);
 										if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 											_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 100, 127));
-										{
-											ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
-											if (_ist.hurt((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getMaxDamage(), RandomSource.create(), null)) {
-												_ist.shrink(1);
-												_ist.setDamageValue(0);
-											}
-										}
+										(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).shrink(1);
 										if (entity instanceof Player _player) {
 											ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SHQWYHDLT.get()).copy();
 											_setstack.setCount(1);
@@ -297,8 +284,8 @@ public class DadaletoushibiezhuangtaiProcedure {
 												capability.syncPlayerVariables(entity);
 											});
 										}
-										if (!(entity instanceof ServerPlayer _plr95 && _plr95.level() instanceof ServerLevel
-												&& _plr95.getAdvancements().getOrStartProgress(_plr95.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"))).isDone())
+										if (!(entity instanceof ServerPlayer _plr91 && _plr91.level() instanceof ServerLevel
+												&& _plr91.getAdvancements().getOrStartProgress(_plr91.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"))).isDone())
 												&& (entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).daletou_jishu >= 100) {
 											if (entity instanceof ServerPlayer _player) {
 												Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"));
