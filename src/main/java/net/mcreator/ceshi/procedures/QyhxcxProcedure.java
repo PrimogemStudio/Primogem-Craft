@@ -30,7 +30,19 @@ public class QyhxcxProcedure {
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("pgc:qysz_3")))) {
 						a = 3;
 					} else {
-						a = 1;
+						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:beacon_payment_items")))) {
+							a = 4;
+						} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:trim_materials")))) {
+							a = 2;
+						} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:trimmable_armor")))) {
+							a = 6;
+						} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:breaks_decorated_pots")))) {
+							a = 4;
+						} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:storage_blocks")))) {
+							a = 6;
+						} else {
+							a = 1;
+						}
 					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal(("\u00A75\u5F53\u524D\u526F\u624B\u7269\u54C1\u53EF\u63D0\u4F9B\u00A7b" + new java.text.DecimalFormat("").format(a) + "\u00A75\u70B9\u7948\u613F\u503C")), false);

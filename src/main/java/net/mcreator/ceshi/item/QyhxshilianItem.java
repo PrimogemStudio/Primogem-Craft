@@ -19,9 +19,9 @@ import net.mcreator.ceshi.procedures.QyhxcxProcedure;
 
 import java.util.List;
 
-public class QyhxItem extends Item {
-	public QyhxItem() {
-		super(new Item.Properties().durability(31).rarity(Rarity.UNCOMMON));
+public class QyhxshilianItem extends Item {
+	public QyhxshilianItem() {
+		super(new Item.Properties().durability(301).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

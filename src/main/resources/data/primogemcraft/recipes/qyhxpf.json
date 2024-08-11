@@ -3,15 +3,12 @@
   "category": "misc",
   "pattern": [
     "aaa",
-    "aba",
+    "aaa",
     "aaa"
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:mmola_01"
-    },
-    "b": {
-      "item": "primogemcraft:yuanshi"
+      "tag": "pgc:qyhx_hc"
     }
   },
   "result": {

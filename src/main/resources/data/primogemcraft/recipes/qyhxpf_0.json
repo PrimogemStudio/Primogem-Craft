@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:shilianchou"
+  },
+  "base": {
+    "item": "primogemcraft:qyhxshilian"
+  },
+  "addition": {
+    "item": "primogemcraft:yuanshi"
+  },
+  "result": {
+    "item": "primogemcraft:shilianchou"
+  }
+}

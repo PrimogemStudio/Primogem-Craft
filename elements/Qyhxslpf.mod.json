@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:pgc:qyhx_hc"
+        "value": "CUSTOM:Qyhx"
       },
       {
-        "value": "TAG:pgc:qyhx_hc"
+        "value": "CUSTOM:Qyhx"
       },
       {
-        "value": "TAG:pgc:qyhx_hc"
+        "value": "CUSTOM:Qyhx"
       },
       {
-        "value": "TAG:pgc:qyhx_hc"
+        "value": "CUSTOM:Qyhx"
       },
       {
-        "value": "TAG:pgc:qyhx_hc"
+        "value": "CUSTOM:Qyhx"
       },
       {
-        "value": "TAG:pgc:qyhx_hc"
+        "value": "CUSTOM:Qyhx"
       },
       {
-        "value": "TAG:pgc:qyhx_hc"
+        "value": "CUSTOM:Qyhx"
       },
       {
-        "value": "TAG:pgc:qyhx_hc"
+        "value": "CUSTOM:Qyhx"
       },
       {
-        "value": "TAG:pgc:qyhx_hc"
+        "value": "CUSTOM:Qyhx"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Qyhx"
+      "value": "CUSTOM:Qyhxshilian"
     },
-    "name": "qyhxpf",
+    "name": "qyhxslpf",
     "namespace": "mod"
   }
 }
