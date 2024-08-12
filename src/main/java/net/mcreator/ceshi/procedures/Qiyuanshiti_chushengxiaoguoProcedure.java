@@ -38,10 +38,13 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator.getPersistentData().getDouble("chouka") > 0) {
-							a = 0.03 + (entityiterator.getPersistentData().getDouble("chouka_jiacheng") > 0 ? (entityiterator.getPersistentData().getDouble("Prayers_strengthen") / 10) * 0.01 : 0);
-							b = 0.2 + (entityiterator.getPersistentData().getDouble("chouka_jiacheng") > 0 ? (entityiterator.getPersistentData().getDouble("Prayers_strengthen") / 5) * 0.01 : 0);
-							if (!entityiterator.getPersistentData().getBoolean("xiangyu")
-									&& (Math.random() < a || (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).jin_baodi >= 49)) {
+							a = entityiterator.getPersistentData().getBoolean("xiangyu")
+									? 0.01
+									: 0.03 + (entityiterator.getPersistentData().getDouble("chouka_jiacheng") > 0 ? (entityiterator.getPersistentData().getDouble("Prayers_strengthen") / 10) * 0.01 : 0);
+							b = entityiterator.getPersistentData().getBoolean("xiangyu")
+									? 0.1
+									: 0.2 + (entityiterator.getPersistentData().getDouble("chouka_jiacheng") > 0 ? (entityiterator.getPersistentData().getDouble("Prayers_strengthen") / 5) * 0.01 : 0);
+							if (Math.random() < a || (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).jin_baodi >= 49) {
 								{
 									double _setval = 0;
 									entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -71,6 +74,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 										capability.syncPlayerVariables(entityiterator);
 									});
 								}
+								entityiterator.getPersistentData().putBoolean("xiangyu", false);
 							} else if (Math.random() < b || (entityiterator.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).zi_baodi >= 9) {
 								if (!entity.level().isClientSide())
 									entity.discard();
