@@ -31,7 +31,7 @@
     "specialInformation": {
       "fixedValue": [
         "§7长按右键使用",
-        "§6潜行右键§5获取祈愿加成信息",
+        "§6潜行+左键§5获取祈愿加成信息",
         "§c使用者必须在附近",
         "§520%§7、§63%"
       ]
@@ -42,11 +42,11 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "Jcsxcxsx"
-    },
     "onItemInUseTick": {
       "name": "JijiuchanzhiyuanDangWuPinZaiShouShangMeiKeFaSheng"
+    },
+    "onEntitySwing": {
+      "name": "Jcsxcxsx"
     },
     "onFinishUsingItem": {
       "name": "JijiuchanzhiyuanWanJiaWanChengShiYongWuPinShi"
