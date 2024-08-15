@@ -8,7 +8,6 @@ import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.EntityType;
@@ -20,7 +19,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
@@ -48,12 +46,8 @@ public class TiankongsxProcedure {
 					if (Math.random() < 0.14) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 40, 0, false, false));
-						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal("1"), false);
 					} else if (Math.random() < 0.14) {
 						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.CRAMMING), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
-						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal("2"), false);
 					} else if (Math.random() < 0.14) {
 						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.LIGHTNING_BOLT), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
 						if (world instanceof ServerLevel _level) {
@@ -62,25 +56,15 @@ public class TiankongsxProcedure {
 							entityToSpawn.setVisualOnly(true);
 							_level.addFreshEntity(entityToSpawn);
 						}
-						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal("3"), false);
 					} else if (Math.random() < 0.14) {
-						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal("4"), false);
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 40, 0, false, false));
 					} else if (Math.random() < 0.14) {
-						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal("5"), false);
 						entity.setAirSupply(-20);
 						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_WALL), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
 					} else if (Math.random() < 0.14) {
-						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal("6"), false);
 						entity.setSecondsOnFire(3);
 					} else {
-						if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal("7"), false);
 						entity.setTicksFrozen(60);
 					}
 				}
