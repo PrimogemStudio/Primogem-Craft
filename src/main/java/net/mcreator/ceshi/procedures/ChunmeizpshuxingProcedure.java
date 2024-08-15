@@ -61,7 +61,7 @@ public class ChunmeizpshuxingProcedure {
 			entity.getPersistentData().putDouble("chunmei_zp_shuxing1", Math.round((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.016 * b));
 			PrimogemcraftMod.queueServerWork((int) ((sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWYBTZDYPJ.get())) : false)
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.8 ? 20 : 10), () -> {
-						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) entity.getPersistentData().getDouble("chunmei_zp_shuxing1"));
+						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK), sourceentity), (float) entity.getPersistentData().getDouble("chunmei_zp_shuxing1"));
 					});
 			if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.CHUNMEIPAOXIANZHIXIAOGUO.get(), 40, 0, false, false));
@@ -84,7 +84,8 @@ public class ChunmeizpshuxingProcedure {
 			entity.getPersistentData().putDouble("chunmei_zp_shuxing", Math.round((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.016 * b));
 			PrimogemcraftMod.queueServerWork((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.8
 					&& (immediatesourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWYBTZDYPJ.get())) : false) ? 20 : 10), () -> {
-						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK)), (float) entity.getPersistentData().getDouble("chunmei_zp_shuxing"));
+						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK), immediatesourceentity),
+								(float) entity.getPersistentData().getDouble("chunmei_zp_shuxing"));
 					});
 			if (immediatesourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.CHUNMEIPAOXIANZHIXIAOGUO.get(), 40, 0, false, false));
