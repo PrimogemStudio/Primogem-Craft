@@ -125,6 +125,7 @@ import net.mcreator.ceshi.item.WeizhiyepianItem;
 import net.mcreator.ceshi.item.WawanxiangwuchangtouItem;
 import net.mcreator.ceshi.item.WanshinangItem;
 import net.mcreator.ceshi.item.TiaoguozhangItem;
+import net.mcreator.ceshi.item.TiankongspItem;
 import net.mcreator.ceshi.item.TezhidieyingqiItem;
 import net.mcreator.ceshi.item.Teshukuijia01Item;
 import net.mcreator.ceshi.item.TashanglvtuchangpianItem;
@@ -901,6 +902,7 @@ public class PrimogemcraftModItems {
 	public static final RegistryObject<Item> QYCX = REGISTRY.register("qycx", () -> new QycxItem());
 	public static final RegistryObject<Item> QYHX = REGISTRY.register("qyhx", () -> new QyhxItem());
 	public static final RegistryObject<Item> QYHXSHILIAN = REGISTRY.register("qyhxshilian", () -> new QyhxshilianItem());
+	public static final RegistryObject<Item> TIANKONGSP = REGISTRY.register("tiankongsp", () -> new TiankongspItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
