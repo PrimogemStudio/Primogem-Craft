@@ -1,0 +1,14 @@
+{
+  "materials": [
+    {
+      "item": {
+        "item": "primogemcraft:tiankongsp"
+      },
+      "count": 30
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "pgfs:tiankong"
+  }
+}
