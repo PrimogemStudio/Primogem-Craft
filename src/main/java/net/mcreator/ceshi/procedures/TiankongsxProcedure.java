@@ -43,19 +43,27 @@ public class TiankongsxProcedure {
 		if (!world.isClientSide()) {
 			if (entity.isAlive()) {
 				if (((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getString("GunId")).equals("pgfs:tiankong")) {
-					if (Math.random() < 0.14) {
+					if (Math.random() < 1 / 7) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 40, 0, false, false));
+<<<<<<< HEAD
 					} else if (Math.random() < 0.14) {
 						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.CRAMMING), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
 					} else if (Math.random() < 0.14) {
 						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.LIGHTNING_BOLT), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
+=======
+					} else if (Math.random() < 1 / 7) {
+						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.CRAMMING)), Mth.nextInt(RandomSource.create(), 1, 10));
+					} else if (Math.random() < 1 / 7) {
+						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.LIGHTNING_BOLT)), Mth.nextInt(RandomSource.create(), 1, 10));
+>>>>>>> parent of ece4629 (修正伤害原实体)
 						if (world instanceof ServerLevel _level) {
 							LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 							entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
 							entityToSpawn.setVisualOnly(true);
 							_level.addFreshEntity(entityToSpawn);
 						}
+<<<<<<< HEAD
 					} else if (Math.random() < 0.14) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 40, 0, false, false));
@@ -63,6 +71,15 @@ public class TiankongsxProcedure {
 						entity.setAirSupply(-20);
 						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_WALL), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
 					} else if (Math.random() < 0.14) {
+=======
+					} else if (Math.random() < 1 / 7) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 40, 0, false, false));
+					} else if (Math.random() < 1 / 7) {
+						entity.setAirSupply(-20);
+						entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_WALL)), Mth.nextInt(RandomSource.create(), 1, 10));
+					} else if (Math.random() < 1 / 7) {
+>>>>>>> parent of ece4629 (修正伤害原实体)
 						entity.setSecondsOnFire(3);
 					} else {
 						entity.setTicksFrozen(60);

@@ -65,20 +65,18 @@ public class JiasuyuanjieshuxingProcedure {
 							: Math.round((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.003 * a)));
 			if (!(sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWYBTZDYPJ.get())) : false)) {
 				PrimogemcraftMod.queueServerWork((int) (!(sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.CHUNMEIZHIPAO.get())) : false) ? 10 : 20), () -> {
-					entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL), sourceentity), (float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
+					entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL)), (float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
 				});
 			} else {
 				if (sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.CHUNMEIZHIPAO.get())) : false) {
 					PrimogemcraftMod.queueServerWork((int) ((sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWYBTZDYPJ.get())) : false)
 							&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.8 ? 30 : 20), () -> {
-								entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL), sourceentity),
-										(float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
+								entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL)), (float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
 							});
 				} else {
 					PrimogemcraftMod.queueServerWork((int) ((sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWYBTZDYPJ.get())) : false)
 							&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.8 ? 20 : 10), () -> {
-								entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL), sourceentity),
-										(float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
+								entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL)), (float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
 							});
 				}
 			}
@@ -105,21 +103,18 @@ public class JiasuyuanjieshuxingProcedure {
 							: Math.round((immediatesourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.005 * a)));
 			if (!(immediatesourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWYBTZDYPJ.get())) : false)) {
 				PrimogemcraftMod.queueServerWork((int) (!(immediatesourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.CHUNMEIZHIPAO.get())) : false) ? 10 : 20), () -> {
-					entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL), immediatesourceentity),
-							(float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
+					entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL)), (float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
 				});
 			} else {
 				if (immediatesourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.CHUNMEIZHIPAO.get())) : false) {
 					PrimogemcraftMod.queueServerWork((int) ((immediatesourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWYBTZDYPJ.get())) : false)
 							&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.8 ? 30 : 20), () -> {
-								entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL), immediatesourceentity),
-										(float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
+								entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL)), (float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
 							});
 				} else {
 					PrimogemcraftMod.queueServerWork((int) ((immediatesourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWYBTZDYPJ.get())) : false)
 							&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.8 ? 20 : 10), () -> {
-								entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL), immediatesourceentity),
-										(float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
+								entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC_KILL)), (float) entity.getPersistentData().getDouble("jiazu_shengjie_shuxing"));
 							});
 				}
 			}
