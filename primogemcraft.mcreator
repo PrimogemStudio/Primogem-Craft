@@ -7495,10 +7495,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "itemstack",
             "type": "itemstack"
           }
@@ -7591,8 +7587,8 @@
       "registry_name": "sanyuezhufu",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ceshi/item/SanyuezhufuItem.java",
-          "src/main/resources/assets/primogemcraft/models/item/sanyuezhufu.json"
+          "src/main/resources/assets/primogemcraft/models/item/sanyuezhufu.json",
+          "src/main/java/net/mcreator/ceshi/item/SanyuezhufuItem.java"
         ]
       }
     },
@@ -21571,6 +21567,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -28683,7 +28683,7 @@
       "CUSTOM:Sanyuezhufu",
       "CUSTOM:Ysrz0",
       "CUSTOM:Feiqiupingzheng",
-      "TAG:forge:curio"
+      "TAG:forge:curio/curios"
     ],
     "ITEMS:forge:tie_2": [
       "CUSTOM:Zizaitiejia.legs",
@@ -29501,6 +29501,47 @@
     "ITEMS:forge:ingots": [
       "CUSTOM:Zhongkouweitieding",
       "TAG:forge:ysjinshu"
+    ],
+    "ITEMS:forge:curio/curios": [
+      "CUSTOM:Pengkeluodejingshen",
+      "CUSTOM:Zhongguizhongjudedaima",
+      "CUSTOM:Jingqueyouyadaima",
+      "CUSTOM:Meiyouzhushidaima",
+      "CUSTOM:Wuxiandiguidedaima",
+      "CUSTOM:Xiangdanganlao",
+      "CUSTOM:Qiwuchongwang",
+      "CUSTOM:Mengying",
+      "CUSTOM:Luanqibazaodedaima",
+      "CUSTOM:Youdianqiqiaodedaima",
+      "CUSTOM:Fenliejinbi",
+      "CUSTOM:Yiyimuguoshi",
+      "CUSTOM:Wanshinang",
+      "CUSTOM:Qwtldhy",
+      "CUSTOM:Qwhdlz",
+      "CUSTOM:Jlbj",
+      "CUSTOM:Qwybtzdypj",
+      "CUSTOM:Qwxyzq",
+      "CUSTOM:Qwymzj",
+      "CUSTOM:Qwxbzsq",
+      "CUSTOM:Chunmeizhipao",
+      "CUSTOM:Qwjzyj",
+      "CUSTOM:Hqfeng",
+      "CUSTOM:Hqyan",
+      "CUSTOM:Hqlei",
+      "CUSTOM:Hqcao",
+      "CUSTOM:Hqshui",
+      "CUSTOM:Hqhuo",
+      "CUSTOM:Hqbing",
+      "CUSTOM:Qiwuheisenlinggz",
+      "CUSTOM:QwggzfenlieA",
+      "CUSTOM:Ydggz",
+      "CUSTOM:Shenmilihe",
+      "CUSTOM:Qwtcjlbptbg",
+      "CUSTOM:Qwlbtdgcl",
+      "CUSTOM:Quxgjibing",
+      "CUSTOM:Qwwxntdmj",
+      "CUSTOM:Qwqskxjxt",
+      "CUSTOM:Qwsmcl"
     ],
     "ITEMS:forge:ystj": [
       "CUSTOM:Zizaitiejian",
