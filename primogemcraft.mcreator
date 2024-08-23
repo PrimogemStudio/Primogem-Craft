@@ -19018,10 +19018,6 @@
             "type": "entity"
           },
           {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           },
@@ -21644,10 +21640,6 @@
             "type": "entity"
           },
           {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           },
@@ -21696,10 +21688,6 @@
         "dependencies": [
           {
             "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "immediatesourceentity",
             "type": "entity"
           },
           {
@@ -28001,28 +27989,6 @@
       }
     },
     {
-      "name": "Tiankongsx",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tiankongsx",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/TiankongsxProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "Tiankongsp",
       "type": "item",
       "compiles": true,
@@ -28056,6 +28022,44 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ceshi/DefaultGunPack.java"
+        ]
+      }
+    },
+    {
+      "name": "Tiankongsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiankongsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/TiankongsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -28674,6 +28678,12 @@
       "CUSTOM:QQyuanchuzi01",
       "CUSTOM:QQQyuanchulan01",
       "CUSTOM:QqiyuanJinGuang"
+    ],
+    "ITEMS:curios:curio": [
+      "CUSTOM:Sanyuezhufu",
+      "CUSTOM:Ysrz0",
+      "CUSTOM:Feiqiupingzheng",
+      "TAG:forge:curio"
     ],
     "ITEMS:forge:tie_2": [
       "CUSTOM:Zizaitiejia.legs",
@@ -33427,7 +33437,7 @@
   "workspaceSettings": {
     "modid": "primogemcraft",
     "modName": "原石工艺",
-    "version": "24w34b",
+    "version": "24w34c",
     "description": "这是一个无厘头的娱乐性mod，包含一些米游物品和梗",
     "author": "Pepper某人, MCreator",
     "websiteURL": "https://www.mcmod.cn/class/10429.html",
