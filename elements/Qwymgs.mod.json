@@ -3,14 +3,14 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "§e药王慈怀",
-    "icon": "yimuguoshi.png",
+    "icon": "yimuguoshi",
     "color": {
       "value": -154,
       "falpha": 0.0
     },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
-    "renderStatusInInventory": true,
-    "renderStatusInHUD": true
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false
   }
 }

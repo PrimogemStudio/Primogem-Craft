@@ -3,14 +3,14 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "§b三月祝福",
-    "icon": "sanyuezhufu.png",
+    "icon": "sanyuezhufu",
     "color": {
       "value": -3368449,
       "falpha": 0.0
     },
     "isInstant": false,
     "mobEffectCategory": "NEUTRAL",
-    "renderStatusInInventory": true,
-    "renderStatusInHUD": true
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false
   }
 }
