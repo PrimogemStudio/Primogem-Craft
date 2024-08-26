@@ -45,7 +45,7 @@ public class TiankongsxProcedure {
 		if (!world.isClientSide()) {
 			if (entity.isAlive()) {
 				if (((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().getString("GunId")).equals("pgfs:tiankong")) {
-					PrimogemcraftMod.queueServerWork(10, () -> {
+					PrimogemcraftMod.queueServerWork(11, () -> {
 						if (Math.random() < 0.14) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 40, 0, false, false));
