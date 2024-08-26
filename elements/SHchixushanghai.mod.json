@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s 被持续伤害杀死",
+    "itemDeathMessage": "%1$s 被 %2$s 使用 %3$s触发反伤死了",
+    "playerDeathMessage": "%1$s 无法抵御 %2$s的反伤效果"
+  }
+}
