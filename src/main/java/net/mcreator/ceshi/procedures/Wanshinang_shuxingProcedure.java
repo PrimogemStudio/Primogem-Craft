@@ -4,43 +4,32 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 public class Wanshinang_shuxingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
+			if (!(entity instanceof Player _plrCldCheck2 && _plrCldCheck2.getCooldowns().isOnCooldown(itemstack.getItem()))) {
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 200);
+			}
 			if (entity.getPersistentData().getBoolean("wanshinang_naijiu")) {
-				if (!(new Object() {
-					public boolean checkGamemode(Entity _ent) {
-						if (_ent instanceof ServerPlayer _serverPlayer) {
-							return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-						} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-							return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-									&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-						}
-						return false;
+				entity.getPersistentData().putBoolean("wanshinang_naijiu", false);
+				{
+					ItemStack _ist = itemstack;
+					if (_ist.hurt(1, RandomSource.create(), null)) {
+						_ist.shrink(1);
+						_ist.setDamageValue(0);
 					}
-				}.checkGamemode(entity))) {
-					{
-						ItemStack _ist = itemstack;
-						if (_ist.hurt(1, RandomSource.create(), null)) {
-							_ist.shrink(1);
-							_ist.setDamageValue(0);
-						}
-					}
-					entity.getPersistentData().putBoolean("wanshinang_naijiu", false);
 				}
 			}
 			if (itemstack.getDamageValue() == itemstack.getMaxDamage()) {

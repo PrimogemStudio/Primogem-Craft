@@ -1,14 +1,10 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -23,70 +19,52 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 
-import java.util.concurrent.atomic.AtomicReference;
-
 public class Guanzi_wanshinang_shuxingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
 			if (blockstate.getBlock() == PrimogemcraftModBlocks.DAGUANZI.get()) {
-				{
-					AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-					entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
-					if (_iitemhandlerref.get() != null) {
-						for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-							ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-							if (itemstackiterator.getItem() == PrimogemcraftModItems.WANSHINANG.get()) {
-								if (!(new Object() {
-									public boolean checkGamemode(Entity _ent) {
-										if (_ent instanceof ServerPlayer _serverPlayer) {
-											return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-										} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-											return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-													&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-										}
-										return false;
-									}
-								}.checkGamemode(entity)) && !(entity instanceof LivingEntity _livEnt6 && _livEnt6.hasEffect(MobEffects.DIG_SLOWDOWN))) {
-									if (world instanceof ServerLevel _level)
-										_level.getServer().getCommands().performPrefixedCommand(
-												new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-												"loot spawn ~ ~ ~ loot primogemcraft:blocks/daguanzi");
-									entity.getPersistentData().putBoolean("wanshinang_naijiu", true);
-								}
+				if (entity instanceof Player _plrCldCheck3 && _plrCldCheck3.getCooldowns().isOnCooldown(PrimogemcraftModItems.WANSHINANG.get())) {
+					if (!(new Object() {
+						public boolean checkGamemode(Entity _ent) {
+							if (_ent instanceof ServerPlayer _serverPlayer) {
+								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+							} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
 							}
+							return false;
 						}
+					}.checkGamemode(entity)) && !(entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(MobEffects.DIG_SLOWDOWN))) {
+						entity.getPersistentData().putBoolean("wanshinang_naijiu", true);
+						if (entity instanceof Player _player)
+							_player.getCooldowns().addCooldown(PrimogemcraftModItems.WANSHINANG.get(), 1);
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"loot spawn ~ ~ ~ loot primogemcraft:blocks/daguanzi");
 					}
 				}
 			}
 			if (blockstate.getBlock() == PrimogemcraftModBlocks.XIAOGUANZI.get()) {
-				{
-					AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-					entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
-					if (_iitemhandlerref.get() != null) {
-						for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-							ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-							if (itemstackiterator.getItem() == PrimogemcraftModItems.WANSHINANG.get()) {
-								if (!(new Object() {
-									public boolean checkGamemode(Entity _ent) {
-										if (_ent instanceof ServerPlayer _serverPlayer) {
-											return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-										} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-											return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-													&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-										}
-										return false;
-									}
-								}.checkGamemode(entity)) && !(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(MobEffects.DIG_SLOWDOWN))) {
-									if (world instanceof ServerLevel _level)
-										_level.getServer().getCommands().performPrefixedCommand(
-												new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-												"loot spawn ~ ~ ~ loot primogemcraft:blocks/xiaoguanzi");
-									entity.getPersistentData().putBoolean("wanshinang_naijiu", true);
-								}
+				if (entity instanceof Player _plrCldCheck11 && _plrCldCheck11.getCooldowns().isOnCooldown(PrimogemcraftModItems.WANSHINANG.get())) {
+					if (!(new Object() {
+						public boolean checkGamemode(Entity _ent) {
+							if (_ent instanceof ServerPlayer _serverPlayer) {
+								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+							} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
 							}
+							return false;
 						}
+					}.checkGamemode(entity)) && !(entity instanceof LivingEntity _livEnt13 && _livEnt13.hasEffect(MobEffects.DIG_SLOWDOWN))) {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"loot spawn ~ ~ ~ loot primogemcraft:blocks/xiaoguanzi");
+						if (entity instanceof Player _player)
+							_player.getCooldowns().addCooldown(PrimogemcraftModItems.WANSHINANG.get(), 1);
+						entity.getPersistentData().putBoolean("wanshinang_naijiu", true);
 					}
 				}
 			}
