@@ -22186,9 +22186,9 @@
       "registry_name": "cunzheshezhi",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ceshi/client/gui/CunzheshezhiScreen.java",
           "src/main/java/net/mcreator/ceshi/world/inventory/CunzheshezhiMenu.java",
-          "src/main/java/net/mcreator/ceshi/network/CunzheshezhiButtonMessage.java"
+          "src/main/java/net/mcreator/ceshi/network/CunzheshezhiButtonMessage.java",
+          "src/main/java/net/mcreator/ceshi/client/gui/CunzheshezhiScreen.java"
         ]
       }
     },
@@ -22210,6 +22210,10 @@
           {
             "name": "guistate",
             "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -22224,16 +22228,7 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/Cunzheshuxing2Procedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "guistate",
-            "type": "map"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -24575,6 +24570,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -30678,6 +30681,7 @@
       "subtitles.xumimozhuang": "",
       "gui.primogemcraft.yinhang.label_ti_gong_ping_zheng_hou_jiang_huo_de": "gain after the voucher submitted",
       "advancements.zzenmezhemechoua.title": "How Stinky！",
+      "gui.primogemcraft.cunzheshezhi.tooltip_dian_ci_huo_qu_bu_wen_ding_ban_ben": "点此获取不稳定版本",
       "gui.primogemcraft.cunzheshezhi.button_qing_ling": "reset",
       "effect.primogemcraft.tldhy": "Thalan Toxi-Flame",
       "advancements.gyyz.title": "光耀意志！",
@@ -31615,6 +31619,7 @@
       "item.primogemcraft.qwqcxxmx": "§5『奇物』§f龋齿星系模型",
       "advancements.sierfusheng.title": "Revive",
       "advancements.xdfsqczjd.descr": "为什么不问问神奇的村民呢",
+      "gui.primogemcraft.cunzheshezhi.tooltip_huo_qu": "获取",
       "item.primogemcraft.jianransuixie": "§6Prithiva Topaz Sliver",
       "effect.primogemcraft.zhengchangdaima": "§aFixed§fCode",
       "block.ceshi.yishijieyuanmumuban": "Tewatt Plank",
@@ -31694,6 +31699,7 @@
       "subtitles.xumimozhuang": "",
       "gui.primogemcraft.yinhang.label_ti_gong_ping_zheng_hou_jiang_huo_de": "gain after the voucher submitted",
       "advancements.zzenmezhemechoua.title": "How Stinky！",
+      "gui.primogemcraft.cunzheshezhi.tooltip_dian_ci_huo_qu_bu_wen_ding_ban_ben": "点此获取不稳定版本",
       "gui.primogemcraft.cunzheshezhi.button_qing_ling": "reset",
       "effect.primogemcraft.tldhy": "Thalan Toxi-Flame",
       "advancements.gyyz.title": "光耀意志！",
@@ -32631,6 +32637,7 @@
       "item.primogemcraft.qwqcxxmx": "§5『奇物』§f龋齿星系模型",
       "advancements.sierfusheng.title": "Revive",
       "advancements.xdfsqczjd.descr": "为什么不问问神奇的村民呢",
+      "gui.primogemcraft.cunzheshezhi.tooltip_huo_qu": "获取",
       "item.primogemcraft.jianransuixie": "§6Prithiva Topaz Sliver",
       "effect.primogemcraft.zhengchangdaima": "§aFixed§fCode",
       "block.ceshi.yishijieyuanmumuban": "Tewatt Plank",
@@ -32710,6 +32717,7 @@
       "subtitles.xumimozhuang": "",
       "gui.primogemcraft.yinhang.label_ti_gong_ping_zheng_hou_jiang_huo_de": "提供凭证后将获得",
       "advancements.zzenmezhemechoua.title": "怎么这么臭啊！",
+      "gui.primogemcraft.cunzheshezhi.tooltip_dian_ci_huo_qu_bu_wen_ding_ban_ben": "点此获取不稳定版本",
       "gui.primogemcraft.cunzheshezhi.button_qing_ling": "重置",
       "effect.primogemcraft.tldhy": "塔拉毒火焰",
       "subtitles.cp_fengdandaibiao": "",
@@ -33641,6 +33649,7 @@
       "item.primogemcraft.qwqcxxmx": "§5『奇物』§f龋齿星系模型",
       "advancements.sierfusheng.title": "死而复生",
       "advancements.xdfsqczjd.descr": "为什么不问问神奇的村民呢",
+      "gui.primogemcraft.cunzheshezhi.tooltip_huo_qu": "获取",
       "item.primogemcraft.jianransuixie": "§6坚牢黄玉 碎屑",
       "effect.primogemcraft.zhengchangdaima": "§a已修复§f代码",
       "block.ceshi.yishijieyuanmumuban": "异世界原木木板",

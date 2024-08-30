@@ -24,9 +24,6 @@ import net.mcreator.ceshi.procedures.GUIsxp1Procedure;
 import net.mcreator.ceshi.procedures.GUIsxp10Procedure;
 import net.mcreator.ceshi.procedures.GUIsxp100Procedure;
 import net.mcreator.ceshi.procedures.CunzheshuxingProcedure;
-import net.mcreator.ceshi.procedures.Cunzheshuxing3Procedure;
-import net.mcreator.ceshi.procedures.Cunzheshuxing2Procedure;
-import net.mcreator.ceshi.procedures.Cunzheshuxing02Procedure;
 import net.mcreator.ceshi.procedures.CunzheguibwdProcedure;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
@@ -71,47 +68,35 @@ public record CunzheshezhiButtonMessage(int buttonID, int x, int y, int z) imple
 			return;
 		if (buttonID == 0) {
 
-			Cunzheshuxing02Procedure.execute(entity);
+			GUIsxp1Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 1) {
 
-			GUIsxp1Procedure.execute(entity, guistate);
+			GUIsxp10Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 2) {
 
-			GUIsxp10Procedure.execute(entity, guistate);
+			GUIsxp100Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 3) {
 
-			GUIsxp100Procedure.execute(entity, guistate);
+			GUIsxr1Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 4) {
 
-			GUIsxr1Procedure.execute(entity, guistate);
+			GUIsxr10Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 5) {
 
-			GUIsxr10Procedure.execute(entity, guistate);
+			GUIsxr100Procedure.execute(entity, guistate);
 		}
 		if (buttonID == 6) {
 
-			GUIsxr100Procedure.execute(entity, guistate);
+			CunzheshuxingProcedure.execute(world, entity, guistate);
 		}
 		if (buttonID == 7) {
 
-			CunzheshuxingProcedure.execute(entity, guistate);
-		}
-		if (buttonID == 8) {
-
-			Cunzheshuxing3Procedure.execute(entity, guistate);
-		}
-		if (buttonID == 9) {
-
-			CunzheguibwdProcedure.execute(entity);
-		}
-		if (buttonID == 10) {
-
-			Cunzheshuxing2Procedure.execute(entity, guistate);
+			CunzheguibwdProcedure.execute(world, entity, guistate);
 		}
 	}
 

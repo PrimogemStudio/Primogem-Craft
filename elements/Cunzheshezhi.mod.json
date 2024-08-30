@@ -11,47 +11,14 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": "CUSTOM:Cunqupingzheng"
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 0,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 159,
-          "y": 52
-        }
-      },
-      {
         "type": "textfield",
         "data": {
           "placeholder": "00",
           "name": "cunzhe_shuliang",
           "width": 47,
           "height": 20,
-          "x": 191,
-          "y": 72
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_empty",
-          "text": "v",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "Cunzheshuxing02"
-          },
-          "width": 10,
-          "height": 20,
-          "x": 148,
-          "y": 51
+          "x": 190,
+          "y": 50
         }
       },
       {
@@ -66,7 +33,7 @@
             "falpha": 0.0
           },
           "x": 215,
-          "y": 103
+          "y": 78
         }
       },
       {
@@ -80,8 +47,8 @@
             "value": -10066330,
             "falpha": 0.0
           },
-          "x": 205,
-          "y": 103
+          "x": 206,
+          "y": 78
         }
       },
       {
@@ -96,7 +63,7 @@
           "width": 14,
           "height": 20,
           "x": 223,
-          "y": 98
+          "y": 72
         }
       },
       {
@@ -111,7 +78,7 @@
           "width": 17,
           "height": 20,
           "x": 239,
-          "y": 98
+          "y": 72
         }
       },
       {
@@ -126,7 +93,7 @@
           "width": 23,
           "height": 20,
           "x": 258,
-          "y": 98
+          "y": 72
         }
       },
       {
@@ -140,8 +107,8 @@
           },
           "width": 13,
           "height": 20,
-          "x": 191,
-          "y": 98
+          "x": 192,
+          "y": 72
         }
       },
       {
@@ -156,7 +123,7 @@
           "width": 16,
           "height": 20,
           "x": 173,
-          "y": 98
+          "y": 72
         }
       },
       {
@@ -170,107 +137,8 @@
           },
           "width": 23,
           "height": 20,
-          "x": 148,
-          "y": 98
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_empty1",
-          "text": "︽",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "Cunzheshuxing"
-          },
-          "width": 12,
-          "height": 20,
-          "x": 241,
+          "x": 147,
           "y": 72
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_empty2",
-          "text": "︾",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "Cunzheshuxing3"
-          },
-          "width": 12,
-          "height": 20,
-          "x": 256,
-          "y": 72
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_qi_yong_guan_bi_bu_wen_ding",
-          "text": {
-            "fixedValue": "启用/关闭 不稳定？"
-          },
-          "color": {
-            "value": -3407872,
-            "falpha": 0.0
-          },
-          "x": 214,
-          "y": 55
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_empty3",
-          "text": "？",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "Cunzheguibwd"
-          },
-          "width": 19,
-          "height": 20,
-          "x": 194,
-          "y": 50
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_shi_shu_liang_zeng_jia",
-          "text": {
-            "fixedValue": "使数量增加"
-          },
-          "width": 13,
-          "height": 20,
-          "x": 241,
-          "y": 72
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_shi_shu_liang_jian_shao",
-          "text": {
-            "fixedValue": "使数量减少"
-          },
-          "width": 11,
-          "height": 20,
-          "x": 257,
-          "y": 72
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_qu_chu_shi_you_gu_ding_shu_liang_zhuan_bian_wei_0240",
-          "text": {
-            "fixedValue": "取出时由固定数量转变为0~240%"
-          },
-          "width": 19,
-          "height": 19,
-          "x": 194,
-          "y": 50
         }
       },
       {
@@ -283,20 +151,46 @@
           "width": 45,
           "height": 18,
           "x": 192,
-          "y": 73
+          "y": 51
         }
       },
       {
         "type": "tooltip",
         "data": {
-          "name": "tooltip_fang_ru_bei_bao",
+          "name": "tooltip_dian_ci_huo_qu_bu_wen_ding_ban_ben",
           "text": {
-            "fixedValue": "放入背包"
+            "fixedValue": "点此获取不稳定版本"
           },
-          "width": 10,
-          "height": 20,
-          "x": 148,
-          "y": 51
+          "width": 24,
+          "height": 24,
+          "x": 188,
+          "y": 94
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_huo_qu",
+          "text": {
+            "fixedValue": "获取"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 224,
+          "y": 94
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_dui",
+          "image": "dui.png",
+          "hoveredImage": "dui.png",
+          "onClick": {
+            "name": "Cunzheshuxing"
+          },
+          "x": 222,
+          "y": 94
         }
       },
       {
@@ -306,23 +200,10 @@
           "image": "cuo.png",
           "hoveredImage": "cuo.png",
           "onClick": {
-            "name": "Cunzheshuxing2"
+            "name": "Cunzheguibwd"
           },
-          "x": 157,
-          "y": 72
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_ssczhong_zhi_she_ding_shu_liang_he_ping_zheng",
-          "text": {
-            "fixedValue": "§c重置设定数量和凭证"
-          },
-          "width": 21,
-          "height": 22,
-          "x": 157,
-          "y": 72
+          "x": 188,
+          "y": 94
         }
       }
     ],
