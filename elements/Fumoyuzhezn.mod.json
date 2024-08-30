@@ -1,19 +1,21 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "enchantment",
   "definition": {
     "name": "愚者之怒",
-    "type": "BREAKABLE",
-    "rarity": "VERY_RARE",
+    "supportedSlots": "any",
+    "weight": 1,
+    "anvilCost": 8,
     "maxLevel": 5,
     "damageModifier": 0,
-    "compatibleEnchantments": [],
-    "excludeEnchantments": false,
-    "compatibleItems": [],
-    "excludeItems": false,
+    "incompatibleEnchantments": [],
+    "supportedItems": [
+      {
+        "value": "TAG:enchantable/durability"
+      }
+    ],
     "isTreasureEnchantment": true,
     "isCurse": true,
-    "isAllowedOnBooks": true,
     "canGenerateInLootTables": true,
     "canVillagerTrade": true
   }

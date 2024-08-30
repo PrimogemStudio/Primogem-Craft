@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:mengying"
+      "id": "primogemcraft:mengying"
     },
     "title": {
       "translate": "advancements.sierfusheng.title"

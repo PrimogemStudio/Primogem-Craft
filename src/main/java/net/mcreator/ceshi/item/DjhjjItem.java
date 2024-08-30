@@ -1,7 +1,10 @@
 
 package net.mcreator.ceshi.item;
 
-import net.minecraft.world.level.Level;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
@@ -10,6 +13,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.tags.TagKey;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.DjjsxProcedure;
@@ -18,32 +23,40 @@ import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import java.util.List;
 
 public class DjhjjItem extends SwordItem {
+	private static final Tier TOOL_TIER = new Tier() {
+		@Override
+		public int getUses() {
+			return 2561;
+		}
+
+		@Override
+		public float getSpeed() {
+			return 10f;
+		}
+
+		@Override
+		public float getAttackDamageBonus() {
+			return 0;
+		}
+
+		@Override
+		public TagKey<Block> getIncorrectBlocksForDrops() {
+			return BlockTags.INCORRECT_FOR_NETHERITE_TOOL;
+		}
+
+		@Override
+		public int getEnchantmentValue() {
+			return 20;
+		}
+
+		@Override
+		public Ingredient getRepairIngredient() {
+			return Ingredient.of(new ItemStack(PrimogemcraftModItems.DIJINGDUANPIAN.get()), new ItemStack(Items.NETHERITE_INGOT));
+		}
+	};
+
 	public DjhjjItem() {
-		super(new Tier() {
-			public int getUses() {
-				return 2561;
-			}
-
-			public float getSpeed() {
-				return 10f;
-			}
-
-			public float getAttackDamageBonus() {
-				return 2f;
-			}
-
-			public int getLevel() {
-				return 4;
-			}
-
-			public int getEnchantmentValue() {
-				return 20;
-			}
-
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PrimogemcraftModItems.DIJINGDUANPIAN.get()), new ItemStack(Items.NETHERITE_INGOT));
-			}
-		}, 3, -2.8f, new Item.Properties().fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 5f, -2.8f)).fireResistant());
 	}
 
 	@Override
@@ -54,8 +67,9 @@ public class DjhjjItem extends SwordItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal("\u00A7d\u653B\u51FB\u76EE\u6807\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A77 - \u670910%\u6982\u7387\u5BF9\u81EA\u8EAB\u65BD\u52A0\u4E00\u4E2A\u6CE1\u6CE1\u589E\u76CA"));
 		list.add(Component.literal("\u00A77 - \u6301\u7EED16\u79D2"));

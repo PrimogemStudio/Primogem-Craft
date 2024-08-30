@@ -11,6 +11,6 @@ public class Hslggz_xiaoguo_sx_2Procedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.HSLGGZFUZHIPIN.get(), 1200, 0));
+			_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.HSLGGZFUZHIPIN, 1200, 0));
 	}
 }

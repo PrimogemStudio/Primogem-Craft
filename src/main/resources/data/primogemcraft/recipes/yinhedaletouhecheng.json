@@ -15,11 +15,11 @@
       "item": "primogemcraft:jijiuchanzhiyuan"
     },
     "c": {
-      "tag": "minecraft:coals"
+      "item": "minecraft:air"
     }
   },
   "result": {
-    "item": "primogemcraft:yiyinhedaletou",
+    "id": "primogemcraft:yiyinhedaletou",
     "count": 1
   }
 }

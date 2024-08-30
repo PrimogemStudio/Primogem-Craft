@@ -1,9 +1,9 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -14,11 +14,11 @@ import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class ZhzhandouzhuangtaiProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity(), event.getSource().getDirectEntity(), event.getSource().getEntity());
 		}
 	}
@@ -30,7 +30,7 @@ public class ZhzhandouzhuangtaiProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity immediatesourceentity, Entity sourceentity) {
 		if (entity == null || immediatesourceentity == null || sourceentity == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.ZHANDOUZHUANGTAI.get())) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.ZHANDOUZHUANGTAI)) {
 			if (Math.random() < 0.5) {
 				if (Math.random() < 0.25) {
 					if (!(entity == sourceentity)) {

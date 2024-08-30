@@ -25,10 +25,10 @@ public class SzcsxProcedure {
 		}
 		{
 			ItemStack _ist = itemstack;
-			if (_ist.hurt(1, RandomSource.create(), null)) {
+			_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
 				_ist.shrink(1);
 				_ist.setDamageValue(0);
-			}
+			});
 		}
 	}
 }

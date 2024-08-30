@@ -30,7 +30,7 @@ public class Heisenlin_ggz_xiaoguo_sx_1Procedure {
 		}.checkGamemode(entity))) {
 			PrimogemcraftMod.queueServerWork(1, () -> {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.HEISENLINGGZ.get(), (int) entity.getPersistentData().getDouble("heisenlin_ggz"), 0, true, false));
+					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.HEISENLINGGZ, (int) entity.getPersistentData().getDouble("heisenlin_ggz"), 0, true, false));
 			});
 		}
 	}

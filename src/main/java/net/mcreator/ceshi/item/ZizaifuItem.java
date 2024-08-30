@@ -1,14 +1,21 @@
 
 package net.mcreator.ceshi.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.TagKey;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.ZizaifushuxingProcedure;
@@ -17,37 +24,46 @@ import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import java.util.List;
 
 public class ZizaifuItem extends AxeItem {
+	private static final Tier TOOL_TIER = new Tier() {
+		@Override
+		public int getUses() {
+			return 1561;
+		}
+
+		@Override
+		public float getSpeed() {
+			return 9.5f;
+		}
+
+		@Override
+		public float getAttackDamageBonus() {
+			return 0;
+		}
+
+		@Override
+		public TagKey<Block> getIncorrectBlocksForDrops() {
+			return BlockTags.INCORRECT_FOR_DIAMOND_TOOL;
+		}
+
+		@Override
+		public int getEnchantmentValue() {
+			return 15;
+		}
+
+		@Override
+		public Ingredient getRepairIngredient() {
+			return Ingredient.of(new ItemStack(PrimogemcraftModItems.ZIZIYOUSONGSHISUIXIE.get()), new ItemStack(PrimogemcraftModItems.YUANSHI.get()));
+		}
+	};
+
 	public ZizaifuItem() {
-		super(new Tier() {
-			public int getUses() {
-				return 1561;
-			}
-
-			public float getSpeed() {
-				return 9.5f;
-			}
-
-			public float getAttackDamageBonus() {
-				return 6.5f;
-			}
-
-			public int getLevel() {
-				return 3;
-			}
-
-			public int getEnchantmentValue() {
-				return 15;
-			}
-
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PrimogemcraftModItems.ZIZIYOUSONGSHISUIXIE.get()), new ItemStack(PrimogemcraftModItems.YUANSHI.get()));
-			}
-		}, 1, -3f, new Item.Properties().fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 7.5f, -3f)).fireResistant());
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal("\u00A7d\u624B\u6301\u5DE5\u5177\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A77 - \u6B65\u884C\u65F6\u83B7\u5F97\u6025\u901F"));
 		list.add(Component.literal("\u00A77 - \u6E38\u6CF3\u65F6\u83B7\u5F97\u6D77\u8C5A\u7684\u6069\u60E0"));
@@ -57,6 +73,6 @@ public class ZizaifuItem extends AxeItem {
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
 		if (selected)
-			ZizaifushuxingProcedure.execute(entity, itemstack);
+			ZizaifushuxingProcedure.execute(world, entity, itemstack);
 	}
 }

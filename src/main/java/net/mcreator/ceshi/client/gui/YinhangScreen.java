@@ -1,17 +1,19 @@
 package net.mcreator.ceshi.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.world.inventory.YinhangMenu;
 import net.mcreator.ceshi.network.YinhangButtonMessage;
-import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.HashMap;
 
@@ -40,7 +42,7 @@ public class YinhangScreen extends AbstractContainerScreen<YinhangMenu> {
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (mouseX > leftPos + 126 && mouseX < leftPos + 147 && mouseY > topPos + 26 && mouseY < topPos + 47)
@@ -78,20 +80,30 @@ public class YinhangScreen extends AbstractContainerScreen<YinhangMenu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_dui = new ImageButton(this.leftPos + 126, this.topPos + 26, 21, 21, 0, 0, 21, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_dui.png"), 21, 42, e -> {
+		imagebutton_dui = new ImageButton(this.leftPos + 126, this.topPos + 26, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/dui.png"), new ResourceLocation("primogemcraft:textures/screens/dui.png")), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new YinhangButtonMessage(0, x, y, z));
+				PacketDistributor.sendToServer(new YinhangButtonMessage(0, x, y, z));
 				YinhangButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		});
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
 		guistate.put("button:imagebutton_dui", imagebutton_dui);
 		this.addRenderableWidget(imagebutton_dui);
-		imagebutton_cuo = new ImageButton(this.leftPos + 126, this.topPos + 53, 21, 21, 0, 0, 21, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_cuo.png"), 21, 42, e -> {
+		imagebutton_cuo = new ImageButton(this.leftPos + 126, this.topPos + 53, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/cuo.png"), new ResourceLocation("primogemcraft:textures/screens/cuo.png")), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new YinhangButtonMessage(1, x, y, z));
+				PacketDistributor.sendToServer(new YinhangButtonMessage(1, x, y, z));
 				YinhangButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		});
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
 		guistate.put("button:imagebutton_cuo", imagebutton_cuo);
 		this.addRenderableWidget(imagebutton_cuo);
 	}

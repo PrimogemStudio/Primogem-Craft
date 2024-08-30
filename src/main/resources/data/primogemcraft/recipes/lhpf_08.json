@@ -4,5 +4,7 @@
   "ingredient": {
     "tag": "forge:yshjj"
   },
-  "result": "primogemcraft:qhzllh_2"
+  "result": {
+    "id": "primogemcraft:qhzllh_2"
+  }
 }

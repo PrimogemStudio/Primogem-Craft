@@ -12,17 +12,12 @@ import net.minecraft.core.BlockPos;
 
 public class LlianjiamolakuiaitaijieBlock extends StairBlock {
 	public LlianjiamolakuiaitaijieBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 4f).requiresCorrectToolForDrops());
+		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 4f).requiresCorrectToolForDrops());
 	}
 
 	@Override
 	public float getExplosionResistance() {
 		return 4f;
-	}
-
-	@Override
-	public boolean isRandomlyTicking(BlockState state) {
-		return false;
 	}
 
 	@Override

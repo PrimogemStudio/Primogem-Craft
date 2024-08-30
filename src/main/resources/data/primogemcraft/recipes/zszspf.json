@@ -10,6 +10,6 @@
     "item": "minecraft:water_bucket"
   },
   "result": {
-    "item": "primogemcraft:fengdandaibiao"
+    "id": "primogemcraft:fengdandaibiao"
   }
 }

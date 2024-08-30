@@ -1,7 +1,5 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
@@ -16,6 +14,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -41,9 +40,9 @@ public class QQQyuanchulantiaoshiProcedure {
 			}.checkGamemode(sourceentity)) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:dashengchujin")), SoundSource.BLOCKS, 4, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:dashengchujin")), SoundSource.BLOCKS, 4, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:dashengchujin")), SoundSource.BLOCKS, 4, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:dashengchujin")), SoundSource.BLOCKS, 4, 1, false);
 					}
 				}
 				if (world instanceof ServerLevel _level)
@@ -56,9 +55,9 @@ public class QQQyuanchulantiaoshiProcedure {
 					if (entity.getPersistentData().getBoolean("chouka_jiance_0")) {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.BLOCKS, 4, 1);
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.BLOCKS, 4, 1);
 							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.BLOCKS, 4, 1, false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.BLOCKS, 4, 1, false);
 							}
 						}
 						if (world instanceof ServerLevel _level)

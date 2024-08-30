@@ -15,9 +15,9 @@ public class Tldhy_sx_2Procedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0));
 		}
-		if (!(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PrimogemcraftModMobEffects.TLDHY.get()))) {
+		if (!(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PrimogemcraftModMobEffects.TLDHY))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.TLDHY.get(), 600, 0));
+				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.TLDHY, 600, 0));
 		}
 	}
 }

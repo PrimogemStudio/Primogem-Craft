@@ -1,8 +1,7 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -20,8 +19,6 @@ import net.mcreator.ceshi.world.inventory.GUIqiwuxuanzeMenu;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
-import java.util.concurrent.atomic.AtomicReference;
-
 import io.netty.buffer.Unpooled;
 
 public class GuixinheitaqiwuProcedure {
@@ -31,15 +28,11 @@ public class GuixinheitaqiwuProcedure {
 		double a = 0;
 		if (!world.isClientSide()) {
 			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.YUZHOUSUIPIAN.get())) : false) {
-				{
-					AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-					entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
-					if (_iitemhandlerref.get() != null) {
-						for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-							ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-							if (itemstackiterator.getItem() == PrimogemcraftModItems.YUZHOUSUIPIAN.get()) {
-								a = a + itemstackiterator.getCount();
-							}
+				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+					for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+						ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
+						if (itemstackiterator.getItem() == PrimogemcraftModItems.YUZHOUSUIPIAN.get()) {
+							a = a + itemstackiterator.getCount();
 						}
 					}
 				}
@@ -55,10 +48,15 @@ public class GuixinheitaqiwuProcedure {
 					PrimogemcraftMod.queueServerWork(1, () -> {
 						if (entity instanceof ServerPlayer _ent) {
 							BlockPos _bpos = BlockPos.containing(x, y, z);
-							NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+							_ent.openMenu(new MenuProvider() {
 								@Override
 								public Component getDisplayName() {
 									return Component.literal("GUIqiwuxuanze");
+								}
+
+								@Override
+								public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+									return false;
 								}
 
 								@Override

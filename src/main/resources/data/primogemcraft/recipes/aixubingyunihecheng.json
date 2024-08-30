@@ -4,5 +4,7 @@
   "ingredient": {
     "item": "primogemcraft:aixubingyu"
   },
-  "result": "primogemcraft:aixubingyusuixie"
+  "result": {
+    "id": "primogemcraft:aixubingyusuixie"
+  }
 }

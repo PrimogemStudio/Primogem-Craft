@@ -1,7 +1,6 @@
 
 package net.mcreator.ceshi.potion;
 
-import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
@@ -15,17 +14,18 @@ public class GouyuMobEffect extends MobEffect {
 	}
 
 	@Override
-	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
+	public void onEffectStarted(LivingEntity entity, int amplifier) {
 		GouyukaishiProcedure.execute(entity.level(), entity);
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		Gouyu_shuxingProcedure.execute(entity);
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
+		return true;
 	}
 
 	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
+		Gouyu_shuxingProcedure.execute(entity);
+		return super.applyEffectTick(entity, amplifier);
 	}
 }

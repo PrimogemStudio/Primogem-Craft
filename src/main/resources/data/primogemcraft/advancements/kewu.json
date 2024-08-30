@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:zhapiandingzhengshi"
+      "id": "primogemcraft:zhapiandingzhengshi"
     },
     "title": {
       "translate": "advancements.kewu.title"

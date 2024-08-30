@@ -10,6 +10,6 @@ public class DjqjkaishiProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.removeEffect(PrimogemcraftModMobEffects.DJPPXIANZHI.get());
+			_entity.removeEffect(PrimogemcraftModMobEffects.DJPPXIANZHI);
 	}
 }

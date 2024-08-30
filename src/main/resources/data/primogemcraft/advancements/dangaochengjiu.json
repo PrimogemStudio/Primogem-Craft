@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:dangaoliyue"
+      "id": "primogemcraft:dangaoliyue"
     },
     "title": {
       "translate": "advancements.dangaochengjiu.title"

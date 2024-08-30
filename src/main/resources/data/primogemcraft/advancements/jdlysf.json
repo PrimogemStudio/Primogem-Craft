@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:dbmlk"
+      "id": "primogemcraft:dbmlk"
     },
     "title": {
       "translate": "advancements.jdlysf.title"

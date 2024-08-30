@@ -1,6 +1,9 @@
 
 package net.mcreator.ceshi.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
@@ -39,8 +42,9 @@ public class SanyuezhufuItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal("\u00A77\u643A\u5E26\u540E\u514D\u75AB\u6454\u843D\u4F24\u5BB3\uFF01"));
 		list.add(Component.literal("\u00A77\u6BCF\u4E2A\u6E38\u620F\u65E5\u635F\u59311\u70B9\u8010\u4E45"));
 	}
@@ -48,6 +52,6 @@ public class SanyuezhufuItem extends Item {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		CeshihufuProcedure.execute(entity, itemstack);
+		CeshihufuProcedure.execute(world, entity, itemstack);
 	}
 }

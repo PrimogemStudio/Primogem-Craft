@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:zhongkouweitieding"
+      "id": "primogemcraft:zhongkouweitieding"
     },
     "title": {
       "translate": "advancements.zhzhongkouwei.title"

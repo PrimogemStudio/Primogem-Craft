@@ -1,5 +1,7 @@
 package net.mcreator.ceshi.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -11,7 +13,6 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.world.inventory.CeshishijianxuanzejiemianMenu;
 import net.mcreator.ceshi.network.CeshishijianxuanzejiemianButtonMessage;
-import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.HashMap;
 
@@ -39,7 +40,7 @@ public class CeshishijianxuanzejiemianScreen extends AbstractContainerScreen<Ces
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -72,7 +73,7 @@ public class CeshishijianxuanzejiemianScreen extends AbstractContainerScreen<Ces
 		super.init();
 		button_shua_xin = Button.builder(Component.translatable("gui.primogemcraft.ceshishijianxuanzejiemian.button_shua_xin"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CeshishijianxuanzejiemianButtonMessage(0, x, y, z));
+				PacketDistributor.sendToServer(new CeshishijianxuanzejiemianButtonMessage(0, x, y, z));
 				CeshishijianxuanzejiemianButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 98, this.topPos + 64, 35, 20).build();

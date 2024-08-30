@@ -1,5 +1,7 @@
 package net.mcreator.ceshi.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -13,7 +15,6 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.world.inventory.TaozhuangchakanMenu;
 import net.mcreator.ceshi.network.TaozhuangchakanButtonMessage;
-import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.HashMap;
 
@@ -48,7 +49,7 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		taozhuang_0.render(guiGraphics, mouseX, mouseY, partialTicks);
 		taozhuang_1.render(guiGraphics, mouseX, mouseY, partialTicks);
@@ -90,18 +91,6 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 		if (taozhuang_6.isFocused())
 			return taozhuang_6.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
-	}
-
-	@Override
-	public void containerTick() {
-		super.containerTick();
-		taozhuang_0.tick();
-		taozhuang_1.tick();
-		taozhuang_2.tick();
-		taozhuang_3.tick();
-		taozhuang_4.tick();
-		taozhuang_5.tick();
-		taozhuang_6.tick();
 	}
 
 	@Override
@@ -149,16 +138,16 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 			}
 
 			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
+			public void moveCursorTo(int pos, boolean flag) {
+				super.moveCursorTo(pos, flag);
 				if (getValue().isEmpty())
 					setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_0").getString());
 				else
 					setSuggestion(null);
 			}
 		};
-		taozhuang_0.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_0").getString());
 		taozhuang_0.setMaxLength(32767);
+		taozhuang_0.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_0").getString());
 		guistate.put("text:taozhuang_0", taozhuang_0);
 		this.addWidget(this.taozhuang_0);
 		taozhuang_1 = new EditBox(this.font, this.leftPos + 79, this.topPos + 26, 25, 18, Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_1")) {
@@ -172,16 +161,16 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 			}
 
 			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
+			public void moveCursorTo(int pos, boolean flag) {
+				super.moveCursorTo(pos, flag);
 				if (getValue().isEmpty())
 					setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_1").getString());
 				else
 					setSuggestion(null);
 			}
 		};
-		taozhuang_1.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_1").getString());
 		taozhuang_1.setMaxLength(32767);
+		taozhuang_1.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_1").getString());
 		guistate.put("text:taozhuang_1", taozhuang_1);
 		this.addWidget(this.taozhuang_1);
 		taozhuang_2 = new EditBox(this.font, this.leftPos + 133, this.topPos + 26, 25, 18, Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_2")) {
@@ -195,16 +184,16 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 			}
 
 			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
+			public void moveCursorTo(int pos, boolean flag) {
+				super.moveCursorTo(pos, flag);
 				if (getValue().isEmpty())
 					setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_2").getString());
 				else
 					setSuggestion(null);
 			}
 		};
-		taozhuang_2.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_2").getString());
 		taozhuang_2.setMaxLength(32767);
+		taozhuang_2.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_2").getString());
 		guistate.put("text:taozhuang_2", taozhuang_2);
 		this.addWidget(this.taozhuang_2);
 		taozhuang_3 = new EditBox(this.font, this.leftPos + 25, this.topPos + 53, 25, 18, Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_3")) {
@@ -218,16 +207,16 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 			}
 
 			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
+			public void moveCursorTo(int pos, boolean flag) {
+				super.moveCursorTo(pos, flag);
 				if (getValue().isEmpty())
 					setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_3").getString());
 				else
 					setSuggestion(null);
 			}
 		};
-		taozhuang_3.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_3").getString());
 		taozhuang_3.setMaxLength(32767);
+		taozhuang_3.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_3").getString());
 		guistate.put("text:taozhuang_3", taozhuang_3);
 		this.addWidget(this.taozhuang_3);
 		taozhuang_4 = new EditBox(this.font, this.leftPos + 79, this.topPos + 53, 25, 18, Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_4")) {
@@ -241,16 +230,16 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 			}
 
 			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
+			public void moveCursorTo(int pos, boolean flag) {
+				super.moveCursorTo(pos, flag);
 				if (getValue().isEmpty())
 					setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_4").getString());
 				else
 					setSuggestion(null);
 			}
 		};
-		taozhuang_4.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_4").getString());
 		taozhuang_4.setMaxLength(32767);
+		taozhuang_4.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_4").getString());
 		guistate.put("text:taozhuang_4", taozhuang_4);
 		this.addWidget(this.taozhuang_4);
 		taozhuang_5 = new EditBox(this.font, this.leftPos + 133, this.topPos + 53, 25, 18, Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_5")) {
@@ -264,16 +253,16 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 			}
 
 			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
+			public void moveCursorTo(int pos, boolean flag) {
+				super.moveCursorTo(pos, flag);
 				if (getValue().isEmpty())
 					setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_5").getString());
 				else
 					setSuggestion(null);
 			}
 		};
-		taozhuang_5.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_5").getString());
 		taozhuang_5.setMaxLength(32767);
+		taozhuang_5.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_5").getString());
 		guistate.put("text:taozhuang_5", taozhuang_5);
 		this.addWidget(this.taozhuang_5);
 		taozhuang_6 = new EditBox(this.font, this.leftPos + 25, this.topPos + 80, 25, 18, Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_6")) {
@@ -287,21 +276,21 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 			}
 
 			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
+			public void moveCursorTo(int pos, boolean flag) {
+				super.moveCursorTo(pos, flag);
 				if (getValue().isEmpty())
 					setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_6").getString());
 				else
 					setSuggestion(null);
 			}
 		};
-		taozhuang_6.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_6").getString());
 		taozhuang_6.setMaxLength(32767);
+		taozhuang_6.setSuggestion(Component.translatable("gui.primogemcraft.taozhuangchakan.taozhuang_6").getString());
 		guistate.put("text:taozhuang_6", taozhuang_6);
 		this.addWidget(this.taozhuang_6);
 		button_shua_xin = Button.builder(Component.translatable("gui.primogemcraft.taozhuangchakan.button_shua_xin"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new TaozhuangchakanButtonMessage(0, x, y, z));
+				PacketDistributor.sendToServer(new TaozhuangchakanButtonMessage(0, x, y, z));
 				TaozhuangchakanButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 13, this.topPos + 113, 35, 20).build();

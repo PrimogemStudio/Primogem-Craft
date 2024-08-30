@@ -10,9 +10,9 @@ public class Luodejingshe_shuxingProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.ZHANDOUZHUANGTAI.get()))) {
+		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.ZHANDOUZHUANGTAI))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.ZHANDOUZHUANGTAI.get(), 60, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.ZHANDOUZHUANGTAI, 60, 0, false, false));
 		}
 	}
 }

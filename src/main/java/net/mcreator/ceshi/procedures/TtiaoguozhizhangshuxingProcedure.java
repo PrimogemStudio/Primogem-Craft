@@ -1,7 +1,5 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
@@ -20,6 +18,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -45,7 +44,7 @@ public class TtiaoguozhizhangshuxingProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof QQyuanchuzi01Entity || entityiterator instanceof QQQyuanchulan01Entity || entityiterator instanceof QqiyuanJinGuangEntity) {
-						if (!(entityiterator instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PrimogemcraftModMobEffects.DJQJKJXGXIANZHI.get()))) {
+						if (!(entityiterator instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PrimogemcraftModMobEffects.DJQJKJXGXIANZHI))) {
 							if (new Object() {
 								public boolean checkGamemode(Entity _ent) {
 									if (_ent instanceof ServerPlayer _serverPlayer) {
@@ -91,9 +90,9 @@ public class TtiaoguozhizhangshuxingProcedure {
 								} else {
 									if (world instanceof Level _level) {
 										if (!_level.isClientSide()) {
-											_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9);
+											_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9);
 										} else {
-											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9, false);
+											_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9, false);
 										}
 									}
 									if (entityiterator instanceof QqiyuanJinGuangEntity && entityiterator.getPersistentData().getBoolean("chouka_jiance_2")) {
@@ -124,10 +123,10 @@ public class TtiaoguozhizhangshuxingProcedure {
 										entityiterator.discard();
 									{
 										ItemStack _ist = itemstack;
-										if (_ist.hurt(1, RandomSource.create(), null)) {
+										_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
 											_ist.shrink(1);
 											_ist.setDamageValue(0);
-										}
+										});
 									}
 								}
 							}

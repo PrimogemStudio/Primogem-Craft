@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "primogemcraft:ysjfr"
   },
-  "result": "primogemcraft:yuanshif"
+  "result": {
+    "id": "primogemcraft:yuanshif"
+  }
 }

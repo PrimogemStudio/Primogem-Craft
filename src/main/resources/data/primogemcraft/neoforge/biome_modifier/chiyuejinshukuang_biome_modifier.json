@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#is_nether",
+  "features": "primogemcraft:chiyuejinshukuang",
+  "step": "underground_ores"
+}

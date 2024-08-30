@@ -16,7 +16,7 @@ public class Qianye_shuxingProcedure {
 		entity.getPersistentData().putDouble("qianye_shuxing", (entity.getPersistentData().getDouble("qianye_shuxing") + 1));
 		if (entity.getPersistentData().getDouble("qianye_shuxing") >= 40) {
 			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.INDIRECT_MAGIC)),
-					entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.QIANYE.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.QIANYE.get()).getAmplifier() : 0);
+					entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.QIANYE) ? _livEnt.getEffect(PrimogemcraftModMobEffects.QIANYE).getAmplifier() : 0);
 			entity.getPersistentData().putDouble("qianye_shuxing", 0);
 		}
 	}

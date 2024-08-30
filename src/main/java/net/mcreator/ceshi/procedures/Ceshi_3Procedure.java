@@ -1,15 +1,14 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-
-import java.util.concurrent.atomic.AtomicReference;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 public class Ceshi_3Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -21,13 +20,12 @@ public class Ceshi_3Procedure {
 			MllpwzsxProcedure.execute(world, x, y, z, entity, itemstack);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((ForgeRegistries.ITEMS.getKey((new Object() {
+				_player.displayClientMessage(Component.literal((BuiltInRegistries.ITEM.getKey((new Object() {
 					public ItemStack getItemStack(int sltid, Entity entity) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-						return _retval.get();
+						if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
+							return _modHandler.getStackInSlot(sltid).copy();
+						}
+						return ItemStack.EMPTY;
 					}
 				}.getItemStack(0, entity)).getItem()).toString())), false);
 		}

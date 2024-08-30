@@ -1,6 +1,9 @@
 
 package net.mcreator.ceshi.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
@@ -21,8 +24,9 @@ public class CeshiyongwupinItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal("\u8FD9\u662F\u5F00\u53D1\u8005\u7528\u7684"));
 		list.add(Component.literal("\u4F60\u62FF\u7740\u9664\u4E86\u80FD\u770B\u539F\u77F3\u7684\u521D\u7248\u6750\u8D28\u4EE5\u5916"));
 		list.add(Component.literal("\u6CA1\u6709\u4EFB\u4F55\u7528\u9014"));

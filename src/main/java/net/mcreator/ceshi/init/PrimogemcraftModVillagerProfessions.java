@@ -4,12 +4,11 @@
  */
 package net.mcreator.ceshi.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.RegisterEvent;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.entity.npc.VillagerProfession;
@@ -17,6 +16,8 @@ import net.minecraft.world.entity.ai.village.poi.PoiTypes;
 import net.minecraft.world.entity.ai.village.poi.PoiType;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Holder;
 
 import net.mcreator.ceshi.PrimogemcraftMod;
@@ -29,23 +30,24 @@ import java.util.HashMap;
 
 import com.google.common.collect.ImmutableSet;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class PrimogemcraftModVillagerProfessions {
 	private static final Map<String, ProfessionPoiType> POI_TYPES = new HashMap<>();
-	public static final DeferredRegister<VillagerProfession> PROFESSIONS = DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, PrimogemcraftMod.MODID);
-	public static final RegistryObject<VillagerProfession> CESYSXJ = registerProfession("cesysxj", () -> PrimogemcraftModBlocks.HUALIDUANZAO.get(), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:jingyanshu00")));
+	public static final DeferredRegister<VillagerProfession> PROFESSIONS = DeferredRegister.create(Registries.VILLAGER_PROFESSION, PrimogemcraftMod.MODID);
+	public static final DeferredHolder<VillagerProfession, VillagerProfession> CESYSXJ = registerProfession("cesysxj", () -> PrimogemcraftModBlocks.HUALIDUANZAO.get(),
+			() -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:jingyanshu00")));
 
-	private static RegistryObject<VillagerProfession> registerProfession(String name, Supplier<Block> block, Supplier<SoundEvent> soundEvent) {
+	private static DeferredHolder<VillagerProfession, VillagerProfession> registerProfession(String name, Supplier<Block> block, Supplier<SoundEvent> soundEvent) {
 		POI_TYPES.put(name, new ProfessionPoiType(block, null));
 		return PROFESSIONS.register(name, () -> {
-			Predicate<Holder<PoiType>> poiPredicate = poiTypeHolder -> (POI_TYPES.get(name).poiType != null) && (poiTypeHolder.get() == POI_TYPES.get(name).poiType.get());
+			Predicate<Holder<PoiType>> poiPredicate = poiTypeHolder -> (POI_TYPES.get(name).poiType != null) && (poiTypeHolder.value() == POI_TYPES.get(name).poiType.value());
 			return new VillagerProfession(PrimogemcraftMod.MODID + ":" + name, poiPredicate, poiPredicate, ImmutableSet.of(), ImmutableSet.of(), soundEvent.get());
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerProfessionPointsOfInterest(RegisterEvent event) {
-		event.register(ForgeRegistries.Keys.POI_TYPES, registerHelper -> {
+		event.register(Registries.POINT_OF_INTEREST_TYPE, registerHelper -> {
 			for (Map.Entry<String, ProfessionPoiType> entry : POI_TYPES.entrySet()) {
 				Block block = entry.getValue().block.get();
 				String name = entry.getKey();
@@ -55,8 +57,8 @@ public class PrimogemcraftModVillagerProfessions {
 					continue;
 				}
 				PoiType poiType = new PoiType(ImmutableSet.copyOf(block.getStateDefinition().getPossibleStates()), 1, 1);
-				registerHelper.register(name, poiType);
-				entry.getValue().poiType = ForgeRegistries.POI_TYPES.getHolder(poiType).get();
+				registerHelper.register(new ResourceLocation("primogemcraft", name), poiType);
+				entry.getValue().poiType = BuiltInRegistries.POINT_OF_INTEREST_TYPE.wrapAsHolder(poiType);
 			}
 		});
 	}

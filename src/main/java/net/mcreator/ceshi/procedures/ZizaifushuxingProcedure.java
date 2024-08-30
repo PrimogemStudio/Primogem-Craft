@@ -1,5 +1,6 @@
 package net.mcreator.ceshi.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -9,7 +10,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 
 public class ZizaifushuxingProcedure {
-	public static void execute(Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (entity.isInWaterOrBubble()) {
@@ -18,10 +19,10 @@ public class ZizaifushuxingProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 240, 1, false, false));
 				{
 					ItemStack _ist = itemstack;
-					if (_ist.hurt(Mth.nextInt(RandomSource.create(), 4, 8), RandomSource.create(), null)) {
+					_ist.hurtAndBreak(Mth.nextInt(RandomSource.create(), 4, 8), RandomSource.create(), null, () -> {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
-					}
+					});
 				}
 			}
 		} else {
@@ -30,10 +31,10 @@ public class ZizaifushuxingProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 240, 1, false, false));
 				{
 					ItemStack _ist = itemstack;
-					if (_ist.hurt(4, RandomSource.create(), null)) {
+					_ist.hurtAndBreak(4, RandomSource.create(), null, () -> {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
-					}
+					});
 				}
 			}
 		}

@@ -27,7 +27,7 @@
     }
   },
   "result": {
-    "item": "minecraft:sculk",
+    "id": "minecraft:sculk",
     "count": 1
   }
 }

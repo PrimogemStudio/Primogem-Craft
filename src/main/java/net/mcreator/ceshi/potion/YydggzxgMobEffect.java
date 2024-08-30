@@ -1,12 +1,10 @@
 
 package net.mcreator.ceshi.potion;
 
-import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
-import net.mcreator.ceshi.procedures.YdggzxgsxProcedure;
 import net.mcreator.ceshi.procedures.Ydggzxgsx0Procedure;
 
 public class YydggzxgMobEffect extends MobEffect {
@@ -15,18 +13,13 @@ public class YydggzxgMobEffect extends MobEffect {
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		Ydggzxgsx0Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
-	}
-
-	@Override
-	public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-		super.removeAttributeModifiers(entity, attributeMap, amplifier);
-		YdggzxgsxProcedure.execute(entity.level(), entity);
-	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
 		return true;
+	}
+
+	@Override
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
+		Ydggzxgsx0Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		return super.applyEffectTick(entity, amplifier);
 	}
 }

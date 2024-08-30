@@ -1,17 +1,18 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import org.checkerframework.checker.units.qual.t;
+
+import net.neoforged.neoforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -19,18 +20,21 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
+import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class FenlieggzsxProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getEntity());
 		}
 	}
@@ -50,17 +54,17 @@ public class FenlieggzsxProcedure {
 		ItemStack c1 = ItemStack.EMPTY;
 		ItemStack c2 = ItemStack.EMPTY;
 		ItemStack c3 = ItemStack.EMPTY;
-		if (sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_0.get()) && sourceentity instanceof Player && entity instanceof LivingEntity _livEnt2 && _livEnt2.getMobType() == MobType.UNDEAD
+		if (sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_0) && sourceentity instanceof Player && entity.getType().is(EntityTypeTags.UNDEAD)
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) <= (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)
-				&& Math.random() <= ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.FZGGZXG_1.get()).getAmplifier() : 0) + 2) * 0.05) {
+				&& Math.random() <= ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1) ? _livEnt.getEffect(PrimogemcraftModMobEffects.FZGGZXG_1).getAmplifier() : 0) + 2) * 0.05) {
 			if (!world.isClientSide()) {
-				s1 = ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString();
+				s1 = BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString();
 				var t = entity.getType();
 				var p = entity.blockPosition();
 				var sw = (ServerLevel) world;
 				e1 = t.spawn(sw, p, MobSpawnType.MOB_SUMMONED);
 				if (e1 instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.HSLGGZFUZHIPIN.get(), 60, 0));
+					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.HSLGGZFUZHIPIN, 60, 0));
 				{
 					Entity _entity = e1;
 					if (_entity instanceof Player _player) {
@@ -77,8 +81,8 @@ public class FenlieggzsxProcedure {
 					if (_entity instanceof Player _player)
 						_player.getInventory().setChanged();
 				}
-				if (sourceentity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1.get())) {
-					if ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.FZGGZXG_1.get()).getAmplifier() : 0) == 0) {
+				if (sourceentity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1)) {
+					if ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1) ? _livEnt.getEffect(PrimogemcraftModMobEffects.FZGGZXG_1).getAmplifier() : 0) == 0) {
 						{
 							Entity _entity = e1;
 							if (_entity instanceof Player _player) {
@@ -114,7 +118,7 @@ public class FenlieggzsxProcedure {
 								_player.getInventory().setChanged();
 						}
 					}
-					if ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.FZGGZXG_1.get()).getAmplifier() : 0) == 1) {
+					if ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1) ? _livEnt.getEffect(PrimogemcraftModMobEffects.FZGGZXG_1).getAmplifier() : 0) == 1) {
 						{
 							Entity _entity = e1;
 							if (_entity instanceof Player _player) {
@@ -150,7 +154,7 @@ public class FenlieggzsxProcedure {
 								_player.getInventory().setChanged();
 						}
 					}
-					if ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.FZGGZXG_1.get()).getAmplifier() : 0) == 2) {
+					if ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1) ? _livEnt.getEffect(PrimogemcraftModMobEffects.FZGGZXG_1).getAmplifier() : 0) == 2) {
 						{
 							Entity _entity = e1;
 							if (_entity instanceof Player _player) {
@@ -193,12 +197,36 @@ public class FenlieggzsxProcedure {
 				c1 = (e1 instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY);
 				c2 = (e1 instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY);
 				c3 = (e1 instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY);
-				a.getOrCreateTag().putBoolean("bukeshiquwupin", true);
-				b.getOrCreateTag().putBoolean("bukeshiquwupin", true);
-				c0.getOrCreateTag().putBoolean("bukeshiquwupin", true);
-				c1.getOrCreateTag().putBoolean("bukeshiquwupin", true);
-				c2.getOrCreateTag().putBoolean("bukeshiquwupin", true);
-				c3.getOrCreateTag().putBoolean("bukeshiquwupin", true);
+				{
+					final String _tagName = "bukeshiquwupin";
+					final boolean _tagValue = true;
+					CustomData.update(DataComponents.CUSTOM_DATA, a, tag -> tag.putBoolean(_tagName, _tagValue));
+				}
+				{
+					final String _tagName = "bukeshiquwupin";
+					final boolean _tagValue = true;
+					CustomData.update(DataComponents.CUSTOM_DATA, b, tag -> tag.putBoolean(_tagName, _tagValue));
+				}
+				{
+					final String _tagName = "bukeshiquwupin";
+					final boolean _tagValue = true;
+					CustomData.update(DataComponents.CUSTOM_DATA, c0, tag -> tag.putBoolean(_tagName, _tagValue));
+				}
+				{
+					final String _tagName = "bukeshiquwupin";
+					final boolean _tagValue = true;
+					CustomData.update(DataComponents.CUSTOM_DATA, c1, tag -> tag.putBoolean(_tagName, _tagValue));
+				}
+				{
+					final String _tagName = "bukeshiquwupin";
+					final boolean _tagValue = true;
+					CustomData.update(DataComponents.CUSTOM_DATA, c2, tag -> tag.putBoolean(_tagName, _tagValue));
+				}
+				{
+					final String _tagName = "bukeshiquwupin";
+					final boolean _tagValue = true;
+					CustomData.update(DataComponents.CUSTOM_DATA, c3, tag -> tag.putBoolean(_tagName, _tagValue));
+				}
 				a.enchant(Enchantments.VANISHING_CURSE, 1);
 				c0.enchant(Enchantments.VANISHING_CURSE, 1);
 				c1.enchant(Enchantments.VANISHING_CURSE, 1);
@@ -206,38 +234,38 @@ public class FenlieggzsxProcedure {
 				c3.enchant(Enchantments.VANISHING_CURSE, 1);
 				{
 					ItemStack _ist = a;
-					if (_ist.hurt((int) (a.getMaxDamage() * 0.8), RandomSource.create(), null)) {
+					_ist.hurtAndBreak((int) (a.getMaxDamage() * 0.8), RandomSource.create(), null, () -> {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
-					}
+					});
 				}
 				{
 					ItemStack _ist = c0;
-					if (_ist.hurt((int) (c0.getMaxDamage() * 0.8), RandomSource.create(), null)) {
+					_ist.hurtAndBreak((int) (c0.getMaxDamage() * 0.8), RandomSource.create(), null, () -> {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
-					}
+					});
 				}
 				{
 					ItemStack _ist = c1;
-					if (_ist.hurt((int) (c1.getMaxDamage() * 0.8), RandomSource.create(), null)) {
+					_ist.hurtAndBreak((int) (c1.getMaxDamage() * 0.8), RandomSource.create(), null, () -> {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
-					}
+					});
 				}
 				{
 					ItemStack _ist = c2;
-					if (_ist.hurt((int) (c2.getMaxDamage() * 0.8), RandomSource.create(), null)) {
+					_ist.hurtAndBreak((int) (c2.getMaxDamage() * 0.8), RandomSource.create(), null, () -> {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
-					}
+					});
 				}
 				{
 					ItemStack _ist = c3;
-					if (_ist.hurt((int) (c3.getMaxDamage() * 0.8), RandomSource.create(), null)) {
+					_ist.hurtAndBreak((int) (c3.getMaxDamage() * 0.8), RandomSource.create(), null, () -> {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
-					}
+					});
 				}
 			}
 		}

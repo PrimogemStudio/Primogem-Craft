@@ -8,9 +8,4 @@ public class LengquezhongguizhongjuMobEffect extends MobEffect {
 	public LengquezhongguizhongjuMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
 	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
-	}
 }

@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "plains",
-  "features": "primogemcraft:ziyousongshikuangshi",
-  "step": "underground_ores"
-}

@@ -13,23 +13,23 @@ public class DjjsxProcedure {
 	public static void execute(Entity entity, Entity sourceentity, ItemStack itemstack) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (!(sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.DJPP.get()))) {
+		if (!(sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.DJPP))) {
 			if (itemstack.getItem() == PrimogemcraftModItems.DJTJ.get()) {
 				if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQSHUI.get())) : false) ? 0.75 : 0.5)) {
 					if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.DJPP.get(), 120, 0));
+						_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.DJPP, 120, 0));
 				}
 			}
 			if (itemstack.getItem() == PrimogemcraftModItems.DDJZSJ.get()) {
 				if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQSHUI.get())) : false) ? 0.15 : 0.1)) {
 					if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.DJPP.get(), 200, 1));
+						_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.DJPP, 200, 1));
 				}
 			}
 			if (itemstack.getItem() == PrimogemcraftModItems.DJHJJ.get()) {
 				if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQSHUI.get())) : false) ? 0.15 : 0.1)) {
 					if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.DJPP.get(), 320, 2));
+						_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.DJPP, 320, 2));
 				}
 			}
 		}

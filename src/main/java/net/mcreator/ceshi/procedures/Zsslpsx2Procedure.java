@@ -30,8 +30,8 @@ public class Zsslpsx2Procedure {
 			for (Entity entityiterator : _entfound) {
 				if ((entityiterator instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND) {
 					a = new ItemStack(PrimogemcraftModItems.ZSSP.get());
-					a.setCount((int) (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
-							? Mth.nextInt(RandomSource.create(), 0, (int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.BLOCK_FORTUNE) * 6))
+					a.setCount((int) (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FORTUNE, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0
+							? Mth.nextInt(RandomSource.create(), 0, (int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.FORTUNE) * 6))
 							: Mth.nextInt(RandomSource.create(), 0, 6)));
 					if (world instanceof ServerLevel _level) {
 						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, a);

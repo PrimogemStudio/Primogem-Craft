@@ -1,9 +1,8 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -12,6 +11,8 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
@@ -24,10 +25,18 @@ public class FenliejinbishuxingProcedure {
 		if (itemstack.getDamageValue() == 0) {
 			itemstack.setDamageValue(11);
 		}
-		itemstack.getOrCreateTag().putDouble("jishu", (itemstack.getOrCreateTag().getDouble("jishu") + 1));
-		if (itemstack.getOrCreateTag().getDouble("jishu") >= 120) {
+		{
+			final String _tagName = "jishu";
+			final double _tagValue = (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jishu") + 1);
+			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+		}
+		if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jishu") >= 120) {
 			itemstack.setDamageValue((int) (itemstack.getDamageValue() - 1));
-			itemstack.getOrCreateTag().putDouble("jishu", 0);
+			{
+				final String _tagName = "jishu";
+				final double _tagValue = 0;
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+			}
 		}
 		if (itemstack.getDamageValue() == 1) {
 			if (world instanceof ServerLevel _level) {
@@ -37,16 +46,20 @@ public class FenliejinbishuxingProcedure {
 			}
 			itemstack.setDamageValue(11);
 			if (Math.random() < 0.5) {
-				itemstack.getOrCreateTag().putDouble("shouming", (itemstack.getOrCreateTag().getDouble("shouming") + 1));
+				{
+					final String _tagName = "shouming";
+					final double _tagValue = (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("shouming") + 1);
+					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+				}
 			}
 		}
-		if (!itemstack.getOrCreateTag().getBoolean("daishanchu") && itemstack.getOrCreateTag().getDouble("shouming") == 10) {
+		if (!itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("daishanchu") && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("shouming") == 10) {
 			itemstack.shrink(1);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())

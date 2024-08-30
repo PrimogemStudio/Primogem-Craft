@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "primogemcraft:mmolagao"
   },
-  "result": "primogemcraft:mmola_01"
+  "result": {
+    "id": "primogemcraft:mmola_01"
+  }
 }

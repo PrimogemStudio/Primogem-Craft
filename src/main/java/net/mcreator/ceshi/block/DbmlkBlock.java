@@ -13,7 +13,15 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.procedures.DbmlksxProcedure;
 
+import com.mojang.serialization.MapCodec;
+
 public class DbmlkBlock extends FallingBlock {
+	public static final MapCodec<DbmlkBlock> CODEC = simpleCodec(properties -> new DbmlkBlock());
+
+	public MapCodec<DbmlkBlock> codec() {
+		return CODEC;
+	}
+
 	public DbmlkBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.ANVIL).strength(10f, 20f).requiresCorrectToolForDrops());
 	}

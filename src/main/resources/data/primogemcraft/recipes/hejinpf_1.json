@@ -10,6 +10,6 @@
     "item": "primogemcraft:mzsj_3"
   },
   "result": {
-    "item": "minecraft:netherite_chestplate"
+    "id": "minecraft:netherite_chestplate"
   }
 }

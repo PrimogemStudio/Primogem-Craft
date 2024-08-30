@@ -4,11 +4,11 @@
  */
 package net.mcreator.ceshi.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -18,10 +18,10 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ceshi.PrimogemcraftMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class PrimogemcraftModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PrimogemcraftMod.MODID);
-	public static final RegistryObject<CreativeModeTab> ZHENGHUO = REGISTRY.register("zhenghuo",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ZHENGHUO = REGISTRY.register("zhenghuo",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.primogemcraft.zhenghuo")).icon(() -> new ItemStack(PrimogemcraftModItems.YUANSHI.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(PrimogemcraftModItems.MINGWEI_YIQIEDEKAISHI.get());
 				tabData.accept(PrimogemcraftModItems.YUANSHI.get());
@@ -214,7 +214,7 @@ public class PrimogemcraftModTabs {
 			})
 
 					.build());
-	public static final RegistryObject<CreativeModeTab> YUANSHIGONGJUXUANXIANGKA = REGISTRY.register("yuanshigongjuxuanxiangka",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> YUANSHIGONGJUXUANXIANGKA = REGISTRY.register("yuanshigongjuxuanxiangka",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.primogemcraft.yuanshigongjuxuanxiangka")).icon(() -> new ItemStack(PrimogemcraftModItems.WUFENGJIAN.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(PrimogemcraftModItems.JIUCHANZHIYUANGAO.get());
 				tabData.accept(PrimogemcraftModItems.WUQIE_5.get());
@@ -442,7 +442,7 @@ public class PrimogemcraftModTabs {
 			})
 
 					.build());
-	public static final RegistryObject<CreativeModeTab> YUANSHIFANGKUAIKA = REGISTRY.register("yuanshifangkuaika",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> YUANSHIFANGKUAIKA = REGISTRY.register("yuanshifangkuaika",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.primogemcraft.yuanshifangkuaika")).icon(() -> new ItemStack(PrimogemcraftModBlocks.YUANSHIKUANGSHI.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(PrimogemcraftModBlocks.YUANSHIKUANGSHI.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.SHENBANYANYUANSHIKUANGSHI.get().asItem());

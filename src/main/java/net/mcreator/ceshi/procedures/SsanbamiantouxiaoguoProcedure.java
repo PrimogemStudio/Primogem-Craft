@@ -1,11 +1,11 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.MobSpawnType;
@@ -15,12 +15,12 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.init.PrimogemcraftModEntities;
-
-import java.util.concurrent.atomic.AtomicReference;
 
 public class SsanbamiantouxiaoguoProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -41,9 +41,9 @@ public class SsanbamiantouxiaoguoProcedure {
 				_player.displayClientMessage(Component.literal("\u00A75\u300E\u5947\u7269\u300F\u00A7d\u95EA\u8000\u7684\u504F\u65B9\u4E09\u516B\u9762\u9AB0\u00A74\u5DF2\u635F\u574F"), true);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
 			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.YIYINHEDALETOU.get())) : false) {
@@ -298,17 +298,119 @@ public class SsanbamiantouxiaoguoProcedure {
 					}
 				}
 			}
-			{
-				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-				entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
-				if (_iitemhandlerref.get() != null) {
-					for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-						ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.FENLIEJINBI.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+			if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+				for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+					ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.FENLIEJINBI.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
+						}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.PENGKELUODEJINGSHEN.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
+						}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.LUANQIBAZAODEDAIMA.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
+						}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.YOUDIANQIQIAODEDAIMA.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
+						}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.ZHONGGUIZHONGJUDEDAIMA.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
+						}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.JINGQUEYOUYADAIMA.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
+						}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.MEIYOUZHUSHIDAIMA.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
+						}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.WUXIANDIGUIDEDAIMA.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
+						}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.QWGGZFENLIE_A.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
+						}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.QWGGZFENLIE_B.get() && !itemstackiterator.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("bukeshiquwupin")) {
+						for (int index0 = 0; index0 < itemstackiterator.getCount(); index0++) {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 								if (entityToSpawn != null) {
@@ -316,210 +418,104 @@ public class SsanbamiantouxiaoguoProcedure {
 								}
 							}
 						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.PENGKELUODEJINGSHEN.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), itemstackiterator.getCount(), _player.inventoryMenu.getCraftSlots());
+						}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.YDGGZ.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
 						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.LUANQIBAZAODEDAIMA.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.QWLBTDGCL.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
 						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.YOUDIANQIQIAODEDAIMA.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.QWQCXXMX.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
 						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.ZHONGGUIZHONGJUDEDAIMA.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.QWTCJLBPTBG.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
 						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.JINGQUEYOUYADAIMA.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.QWWXNTDMJ.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
 						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.MEIYOUZHUSHIDAIMA.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.QWHDLZ.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
 						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.WUXIANDIGUIDEDAIMA.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.QWSMCL.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
 						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.QWGGZFENLIE_A.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
-							}
+					}
+					if (itemstackiterator.getItem() == PrimogemcraftModItems.QWQSKXJXT.get()) {
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = itemstackiterator;
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.QWGGZFENLIE_B.get() && !itemstackiterator.getOrCreateTag().getBoolean("bukeshiquwupin")) {
-							for (int index0 = 0; index0 < itemstackiterator.getCount(); index0++) {
-								if (world instanceof ServerLevel _level) {
-									Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-									if (entityToSpawn != null) {
-										entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-									}
-								}
-							}
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), itemstackiterator.getCount(), _player.inventoryMenu.getCraftSlots());
-							}
-						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.YDGGZ.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
-							}
-						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.QWLBTDGCL.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
-							}
-						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.QWQCXXMX.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
-							}
-						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.QWTCJLBPTBG.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
-							}
-						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.QWWXNTDMJ.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
-							}
-						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.QWHDLZ.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
-							}
-						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.QWSMCL.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
-							}
-						}
-						if (itemstackiterator.getItem() == PrimogemcraftModItems.QWQSKXJXT.get()) {
-							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = itemstackiterator;
-								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-							}
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-								}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
 						}
 					}

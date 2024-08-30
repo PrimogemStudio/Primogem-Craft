@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:llianjiamolakuai"
+      "id": "primogemcraft:llianjiamolakuai"
     },
     "title": {
       "translate": "advancements.huhuangjinwu_2.title"

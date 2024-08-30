@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#is_overworld",
+  "features": "primogemcraft:disuikuai_1_feature",
+  "step": "underground_ores"
+}

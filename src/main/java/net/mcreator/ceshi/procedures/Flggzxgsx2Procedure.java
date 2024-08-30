@@ -16,7 +16,7 @@ public class Flggzxgsx2Procedure {
 			PrimogemcraftMod.queueServerWork(1, () -> {
 				if (entity.getPersistentData().getBoolean("fenlie_ggz_c")) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.FZGGZXG_1.get(), 100, (int) (entity.getPersistentData().getDouble("fenlie_ggz_c") - 1), false, false));
+						_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.FZGGZXG_1, 100, (int) (entity.getPersistentData().getDouble("fenlie_ggz_c") - 1), false, false));
 				}
 			});
 		}

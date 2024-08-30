@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:kkuijiaceshi_chestplate"
+      "id": "primogemcraft:kkuijiaceshi_chestplate"
     },
     "title": {
       "translate": "advancements.mmowangwuzhuang.title"

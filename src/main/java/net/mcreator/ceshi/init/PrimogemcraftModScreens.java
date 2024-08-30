@@ -4,12 +4,10 @@
  */
 package net.mcreator.ceshi.init;
 
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.client.gui.screens.MenuScreens;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.ceshi.client.gui.ZhangquanzhezhinangguiScreen;
 import net.mcreator.ceshi.client.gui.YinhangScreen;
@@ -33,32 +31,30 @@ import net.mcreator.ceshi.client.gui.CeshiguiScreen;
 import net.mcreator.ceshi.client.gui.CeshifumoguiScreen;
 import net.mcreator.ceshi.client.gui.BwdyinhangScreen;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class PrimogemcraftModScreens {
 	@SubscribeEvent
-	public static void clientLoad(FMLClientSetupEvent event) {
-		event.enqueueWork(() -> {
-			MenuScreens.register(PrimogemcraftModMenus.CESHIGUI.get(), CeshiguiScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.GANJINGLAJITONG.get(), GanjinglajitongScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.MOLALAJITONG.get(), MolalajitongScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.LIULANGZHEZHINANGGUI.get(), LiulangzhezhinangguiScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.MAOXIANJIAZHINANGGUI.get(), MaoxianjiazhinangguiScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.ZHANGQUANZHEZHINANGGUI.get(), ZhangquanzhezhinangguiScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.YIBANGRENZHINANGGUI.get(), YibangrenzhinangguiScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.CESHISHIJIANXUANZEJIEMIAN.get(), CeshishijianxuanzejiemianScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.SUIJIQIWU.get(), SuijiqiwuScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.CESHIFUMOGUI.get(), CeshifumoguiScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.HEITAYINDAOYONGGUI.get(), HeitayindaoyongguiScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.GU_IMOLADUI.get(), GUImoladuiScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.YINHANG.get(), YinhangScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.BWDYINHANG.get(), BwdyinhangScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.CUNZHESHEZHI.get(), CunzheshezhiScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.TAOZHUANGCHAKAN.get(), TaozhuangchakanScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.GU_IQIWUXUANZE.get(), GUIqiwuxuanzeScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.GUIHEITAXINYINDAO.get(), GuiheitaxinyindaoScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.GUIS_JFUMO.get(), GUISJfumoScreen::new);
-			MenuScreens.register(PrimogemcraftModMenus.SJGU_IFUMO_00.get(), SJGUIfumo00Screen::new);
-			MenuScreens.register(PrimogemcraftModMenus.SJGU_IFUMO_01.get(), SJGUIfumo01Screen::new);
-		});
+	public static void clientLoad(RegisterMenuScreensEvent event) {
+		event.register(PrimogemcraftModMenus.CESHIGUI.get(), CeshiguiScreen::new);
+		event.register(PrimogemcraftModMenus.GANJINGLAJITONG.get(), GanjinglajitongScreen::new);
+		event.register(PrimogemcraftModMenus.MOLALAJITONG.get(), MolalajitongScreen::new);
+		event.register(PrimogemcraftModMenus.LIULANGZHEZHINANGGUI.get(), LiulangzhezhinangguiScreen::new);
+		event.register(PrimogemcraftModMenus.MAOXIANJIAZHINANGGUI.get(), MaoxianjiazhinangguiScreen::new);
+		event.register(PrimogemcraftModMenus.ZHANGQUANZHEZHINANGGUI.get(), ZhangquanzhezhinangguiScreen::new);
+		event.register(PrimogemcraftModMenus.YIBANGRENZHINANGGUI.get(), YibangrenzhinangguiScreen::new);
+		event.register(PrimogemcraftModMenus.CESHISHIJIANXUANZEJIEMIAN.get(), CeshishijianxuanzejiemianScreen::new);
+		event.register(PrimogemcraftModMenus.SUIJIQIWU.get(), SuijiqiwuScreen::new);
+		event.register(PrimogemcraftModMenus.CESHIFUMOGUI.get(), CeshifumoguiScreen::new);
+		event.register(PrimogemcraftModMenus.HEITAYINDAOYONGGUI.get(), HeitayindaoyongguiScreen::new);
+		event.register(PrimogemcraftModMenus.GU_IMOLADUI.get(), GUImoladuiScreen::new);
+		event.register(PrimogemcraftModMenus.YINHANG.get(), YinhangScreen::new);
+		event.register(PrimogemcraftModMenus.BWDYINHANG.get(), BwdyinhangScreen::new);
+		event.register(PrimogemcraftModMenus.CUNZHESHEZHI.get(), CunzheshezhiScreen::new);
+		event.register(PrimogemcraftModMenus.TAOZHUANGCHAKAN.get(), TaozhuangchakanScreen::new);
+		event.register(PrimogemcraftModMenus.GU_IQIWUXUANZE.get(), GUIqiwuxuanzeScreen::new);
+		event.register(PrimogemcraftModMenus.GUIHEITAXINYINDAO.get(), GuiheitaxinyindaoScreen::new);
+		event.register(PrimogemcraftModMenus.GUIS_JFUMO.get(), GUISJfumoScreen::new);
+		event.register(PrimogemcraftModMenus.SJGU_IFUMO_00.get(), SJGUIfumo00Screen::new);
+		event.register(PrimogemcraftModMenus.SJGU_IFUMO_01.get(), SJGUIfumo01Screen::new);
 	}
 }

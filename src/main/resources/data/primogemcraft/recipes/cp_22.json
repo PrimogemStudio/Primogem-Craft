@@ -4,5 +4,7 @@
   "ingredient": {
     "item": "primogemcraft:cangsangshizhuan"
   },
-  "result": "primogemcraft:cangsangshizhuantaijie"
+  "result": {
+    "id": "primogemcraft:cangsangshizhuantaijie"
+  }
 }

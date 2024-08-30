@@ -13,12 +13,13 @@ public class ZhuoshaoMobEffect extends MobEffect {
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		Zuoshao_sxProcedure.execute(entity.level(), entity);
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
+		return true;
 	}
 
 	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
+		Zuoshao_sxProcedure.execute(entity.level(), entity);
+		return super.applyEffectTick(entity, amplifier);
 	}
 }

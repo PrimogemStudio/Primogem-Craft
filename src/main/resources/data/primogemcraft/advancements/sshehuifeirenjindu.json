@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:molakuai_01"
+      "id": "primogemcraft:molakuai_01"
     },
     "title": {
       "translate": "advancements.sshehuifeirenjindu.title"

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:jinguangbaodi_01"
+      "id": "primogemcraft:jinguangbaodi_01"
     },
     "title": {
       "translate": "advancements.b_bao_di_ren.title"

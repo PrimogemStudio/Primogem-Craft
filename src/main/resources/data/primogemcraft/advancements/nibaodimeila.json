@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:jijiuchanzhiyuan"
+      "id": "primogemcraft:jijiuchanzhiyuan"
     },
     "title": {
       "translate": "advancements.nibaodimeila.title"

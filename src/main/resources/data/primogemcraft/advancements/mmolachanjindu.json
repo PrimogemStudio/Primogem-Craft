@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:mmolachan"
+      "id": "primogemcraft:mmolachan"
     },
     "title": {
       "translate": "advancements.mmolachanjindu.title"

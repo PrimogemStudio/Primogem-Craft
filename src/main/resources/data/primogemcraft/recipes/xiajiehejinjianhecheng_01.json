@@ -10,6 +10,6 @@
     "item": "minecraft:netherite_scrap"
   },
   "result": {
-    "item": "minecraft:netherite_sword"
+    "id": "minecraft:netherite_sword"
   }
 }

@@ -1,10 +1,9 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
@@ -12,6 +11,8 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
@@ -27,31 +28,41 @@ public class MllpwzsxProcedure {
 		if (entity.isShiftKeyDown()) {
 			if (itemstack.getItem() == PrimogemcraftModItems.MLLPHJ.get()) {
 				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:ores")))) {
-					itemstack.getOrCreateTag().putString("fnagkuai", (ForgeRegistries.BLOCKS.getKey((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()).toString()));
+					{
+						final String _tagName = "fnagkuai";
+						final String _tagValue = (BuiltInRegistries.BLOCK.getKey((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()).toString());
+						CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putString(_tagName, _tagValue));
+					}
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal(("\u00A7d\u5DF2\u5C06\u00A7f"
-								+ (new ItemStack(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(((itemstack.getOrCreateTag().getString("fnagkuai"))).toLowerCase(java.util.Locale.ENGLISH))))).getDisplayName().getString()
+								+ (new ItemStack(BuiltInRegistries.BLOCK.get(new ResourceLocation(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("fnagkuai"))).toLowerCase(java.util.Locale.ENGLISH)))))
+										.getDisplayName().getString()
 								+ "\u00A7d\u8BBE\u7F6E\u4E3A\u5BFB\u627E\u76EE\u6807")), false);
 				} else {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("\u00A7c\u53EA\u80FD\u63A2\u6D4B\u88AB\u6807\u8BB0\u4E3A\u77FF\u7269\u7684\u65B9\u5757\uFF01"), false);
 				}
 			} else {
-				itemstack.getOrCreateTag().putString("fnagkuai", (ForgeRegistries.BLOCKS.getKey((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()).toString()));
+				{
+					final String _tagName = "fnagkuai";
+					final String _tagValue = (BuiltInRegistries.BLOCK.getKey((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()).toString());
+					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putString(_tagName, _tagValue));
+				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal(("\u00A7d\u5DF2\u5C06\u00A7f"
-							+ (new ItemStack(ForgeRegistries.BLOCKS.getValue(new ResourceLocation(((itemstack.getOrCreateTag().getString("fnagkuai"))).toLowerCase(java.util.Locale.ENGLISH))))).getDisplayName().getString()
+							+ (new ItemStack(BuiltInRegistries.BLOCK.get(new ResourceLocation(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("fnagkuai"))).toLowerCase(java.util.Locale.ENGLISH)))))
+									.getDisplayName().getString()
 							+ "\u00A7d\u8BBE\u7F6E\u4E3A\u5BFB\u627E\u76EE\u6807")), false);
 			}
 		} else {
 			{
 				ItemStack _ist = itemstack;
-				if (_ist.hurt(1, RandomSource.create(), null)) {
+				_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
 					_ist.shrink(1);
 					_ist.setDamageValue(0);
-				}
+				});
 			}
-			a = ForgeRegistries.BLOCKS.getValue(new ResourceLocation(((itemstack.getOrCreateTag().getString("fnagkuai"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState();
+			a = BuiltInRegistries.BLOCK.get(new ResourceLocation(((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("fnagkuai"))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState();
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("\u00A77\u6B63\u5728\u641C\u7D22\u9644\u8FD15*y*5\u8303\u56F4\u7684\u6307\u5B9A\u65B9\u5757"), false);
 			if (entity instanceof Player _player && !_player.level().isClientSide())

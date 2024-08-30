@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class Ceshi_mucaibaoButtonBlock extends ButtonBlock {
 	public Ceshi_mucaibaoButtonBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f), BlockSetType.OAK, 30, true);
+		super(BlockSetType.OAK, 30, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
 	}
 
 	@Override

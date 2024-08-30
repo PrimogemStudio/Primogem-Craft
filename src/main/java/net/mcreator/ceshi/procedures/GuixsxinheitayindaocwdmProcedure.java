@@ -1,7 +1,5 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.network.NetworkHooks;
-
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -36,10 +34,15 @@ public class GuixsxinheitayindaocwdmProcedure {
 				PrimogemcraftMod.queueServerWork(1, () -> {
 					if (entity instanceof ServerPlayer _ent) {
 						BlockPos _bpos = BlockPos.containing(x, y, z);
-						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+						_ent.openMenu(new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
 								return Component.literal("GUIqiwuxuanze");
+							}
+
+							@Override
+							public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+								return false;
 							}
 
 							@Override

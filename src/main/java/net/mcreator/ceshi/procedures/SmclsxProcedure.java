@@ -1,9 +1,8 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,6 +12,8 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
@@ -21,29 +22,33 @@ public class SmclsxProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.SMCLXG.get()))) {
+		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.SMCLXG))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.SMCLXG.get(), 80, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.SMCLXG, 80, 0, false, false));
 		}
 		if (entity.getPersistentData().getBoolean("smcl_cf")) {
 			entity.getPersistentData().putBoolean("smcl_cf", false);
-			itemstack.getOrCreateTag().putDouble("smcl_sx", (itemstack.getOrCreateTag().getDouble("smcl_sx") + 1));
+			{
+				final String _tagName = "smcl_sx";
+				final double _tagValue = (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("smcl_sx") + 1);
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+			}
 		}
-		if (itemstack.getOrCreateTag().getDouble("smcl_sx") < 5) {
-			itemstack.setDamageValue((int) itemstack.getOrCreateTag().getDouble("smcl_sx"));
+		if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("smcl_sx") < 5) {
+			itemstack.setDamageValue((int) itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("smcl_sx"));
 		} else {
 			{
 				ItemStack _ist = itemstack;
-				if (_ist.hurt(100, RandomSource.create(), null)) {
+				_ist.hurtAndBreak(100, RandomSource.create(), null, () -> {
 					_ist.shrink(1);
 					_ist.setDamageValue(0);
-				}
+				});
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())

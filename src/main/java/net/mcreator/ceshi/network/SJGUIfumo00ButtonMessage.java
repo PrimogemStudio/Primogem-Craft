@@ -1,14 +1,19 @@
 
 package net.mcreator.ceshi.network;
 
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.world.inventory.SJGUIfumo00Menu;
@@ -17,45 +22,37 @@ import net.mcreator.ceshi.procedures.Sjguifumo00sx1Procedure;
 import net.mcreator.ceshi.procedures.Sjguifumo00sx0Procedure;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
-import java.util.function.Supplier;
 import java.util.HashMap;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class SJGUIfumo00ButtonMessage {
-	private final int buttonID, x, y, z;
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+public record SJGUIfumo00ButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public SJGUIfumo00ButtonMessage(FriendlyByteBuf buffer) {
-		this.buttonID = buffer.readInt();
-		this.x = buffer.readInt();
-		this.y = buffer.readInt();
-		this.z = buffer.readInt();
-	}
-
-	public SJGUIfumo00ButtonMessage(int buttonID, int x, int y, int z) {
-		this.buttonID = buttonID;
-		this.x = x;
-		this.y = y;
-		this.z = z;
-	}
-
-	public static void buffer(SJGUIfumo00ButtonMessage message, FriendlyByteBuf buffer) {
+	public static final Type<SJGUIfumo00ButtonMessage> TYPE = new Type<>(new ResourceLocation(PrimogemcraftMod.MODID, "sjgu_ifumo_00_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, SJGUIfumo00ButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SJGUIfumo00ButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
+	}, (RegistryFriendlyByteBuf buffer) -> new SJGUIfumo00ButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	@Override
+	public Type<SJGUIfumo00ButtonMessage> type() {
+		return TYPE;
 	}
 
-	public static void handler(SJGUIfumo00ButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-		NetworkEvent.Context context = contextSupplier.get();
-		context.enqueueWork(() -> {
-			Player entity = context.getSender();
-			int buttonID = message.buttonID;
-			int x = message.x;
-			int y = message.y;
-			int z = message.z;
-			handleButtonAction(entity, buttonID, x, y, z);
-		});
-		context.setPacketHandled(true);
+	public static void handleData(final SJGUIfumo00ButtonMessage message, final IPayloadContext context) {
+		if (context.flow() == PacketFlow.SERVERBOUND) {
+			context.enqueueWork(() -> {
+				Player entity = context.player();
+				int buttonID = message.buttonID;
+				int x = message.x;
+				int y = message.y;
+				int z = message.z;
+				handleButtonAction(entity, buttonID, x, y, z);
+			}).exceptionally(e -> {
+				context.connection().disconnect(Component.literal(e.getMessage()));
+				return null;
+			});
+		}
 	}
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
@@ -80,6 +77,6 @@ public class SJGUIfumo00ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		PrimogemcraftMod.addNetworkMessage(SJGUIfumo00ButtonMessage.class, SJGUIfumo00ButtonMessage::buffer, SJGUIfumo00ButtonMessage::new, SJGUIfumo00ButtonMessage::handler);
+		PrimogemcraftMod.addNetworkMessage(SJGUIfumo00ButtonMessage.TYPE, SJGUIfumo00ButtonMessage.STREAM_CODEC, SJGUIfumo00ButtonMessage::handleData);
 	}
 }

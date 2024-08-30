@@ -40,7 +40,7 @@ public class ZLetouchengfahenshuxingProcedure {
 			}
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 1) {
 				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(PrimogemcraftModMobEffects.LETOUDECHENGFA.get());
+					_entity.removeEffect(PrimogemcraftModMobEffects.LETOUDECHENGFA);
 			}
 		}
 	}

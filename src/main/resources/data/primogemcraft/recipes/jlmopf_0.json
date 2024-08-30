@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "minecraft:netherite_scrap"
   },
-  "result": "primogemcraft:jlmo"
+  "result": {
+    "id": "primogemcraft:jlmo"
+  }
 }

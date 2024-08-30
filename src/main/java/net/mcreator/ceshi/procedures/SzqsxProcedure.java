@@ -1,7 +1,5 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
@@ -15,6 +13,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
@@ -36,16 +35,16 @@ public class SzqsxProcedure {
 				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQCAO.get())) : false) ? 5 : 10));
 			{
 				ItemStack _ist = itemstack;
-				if (_ist.hurt(1, RandomSource.create(), null)) {
+				_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
 					_ist.shrink(1);
 					_ist.setDamageValue(0);
-				}
+				});
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qianye_chufa")), SoundSource.NEUTRAL, (float) 0.3, 5);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qianye_chufa")), SoundSource.NEUTRAL, (float) 0.3, 5);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qianye_chufa")), SoundSource.NEUTRAL, (float) 0.3, 5, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qianye_chufa")), SoundSource.NEUTRAL, (float) 0.3, 5, false);
 				}
 			}
 			if (Math.random() < 0.2) {

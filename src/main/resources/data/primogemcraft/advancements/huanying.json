@@ -2,7 +2,7 @@
   "display": {
     "background": "minecraft:textures/block/stone.png",
     "icon": {
-      "item": "primogemcraft:ceshiyongwupin"
+      "id": "primogemcraft:ceshiyongwupin"
     },
     "title": {
       "translate": "advancements.huanying.title"

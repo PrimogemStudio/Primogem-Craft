@@ -12,7 +12,7 @@ import net.mcreator.ceshi.procedures.Chonggaodaode_shuxingProcedure;
 
 public class CchonggaodaodedezanxuItem extends Item {
 	public CchonggaodaodedezanxuItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0f).alwaysEdible().build()));
 	}
 
 	@Override

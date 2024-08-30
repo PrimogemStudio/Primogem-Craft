@@ -11,6 +11,6 @@ public class ZchongwangzengyiProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.JISHENG.get(), 100, 0, false, true));
+			_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.JISHENG, 100, 0, false, true));
 	}
 }

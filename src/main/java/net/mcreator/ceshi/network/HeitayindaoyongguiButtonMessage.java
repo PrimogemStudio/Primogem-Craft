@@ -1,14 +1,19 @@
 
 package net.mcreator.ceshi.network;
 
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.world.inventory.HeitayindaoyongguiMenu;
@@ -17,45 +22,37 @@ import net.mcreator.ceshi.procedures.Htyd02Procedure;
 import net.mcreator.ceshi.procedures.Htyd01Procedure;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
-import java.util.function.Supplier;
 import java.util.HashMap;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class HeitayindaoyongguiButtonMessage {
-	private final int buttonID, x, y, z;
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+public record HeitayindaoyongguiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public HeitayindaoyongguiButtonMessage(FriendlyByteBuf buffer) {
-		this.buttonID = buffer.readInt();
-		this.x = buffer.readInt();
-		this.y = buffer.readInt();
-		this.z = buffer.readInt();
-	}
-
-	public HeitayindaoyongguiButtonMessage(int buttonID, int x, int y, int z) {
-		this.buttonID = buttonID;
-		this.x = x;
-		this.y = y;
-		this.z = z;
-	}
-
-	public static void buffer(HeitayindaoyongguiButtonMessage message, FriendlyByteBuf buffer) {
+	public static final Type<HeitayindaoyongguiButtonMessage> TYPE = new Type<>(new ResourceLocation(PrimogemcraftMod.MODID, "heitayindaoyonggui_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, HeitayindaoyongguiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, HeitayindaoyongguiButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
+	}, (RegistryFriendlyByteBuf buffer) -> new HeitayindaoyongguiButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	@Override
+	public Type<HeitayindaoyongguiButtonMessage> type() {
+		return TYPE;
 	}
 
-	public static void handler(HeitayindaoyongguiButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-		NetworkEvent.Context context = contextSupplier.get();
-		context.enqueueWork(() -> {
-			Player entity = context.getSender();
-			int buttonID = message.buttonID;
-			int x = message.x;
-			int y = message.y;
-			int z = message.z;
-			handleButtonAction(entity, buttonID, x, y, z);
-		});
-		context.setPacketHandled(true);
+	public static void handleData(final HeitayindaoyongguiButtonMessage message, final IPayloadContext context) {
+		if (context.flow() == PacketFlow.SERVERBOUND) {
+			context.enqueueWork(() -> {
+				Player entity = context.player();
+				int buttonID = message.buttonID;
+				int x = message.x;
+				int y = message.y;
+				int z = message.z;
+				handleButtonAction(entity, buttonID, x, y, z);
+			}).exceptionally(e -> {
+				context.connection().disconnect(Component.literal(e.getMessage()));
+				return null;
+			});
+		}
 	}
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
@@ -80,6 +77,6 @@ public class HeitayindaoyongguiButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		PrimogemcraftMod.addNetworkMessage(HeitayindaoyongguiButtonMessage.class, HeitayindaoyongguiButtonMessage::buffer, HeitayindaoyongguiButtonMessage::new, HeitayindaoyongguiButtonMessage::handler);
+		PrimogemcraftMod.addNetworkMessage(HeitayindaoyongguiButtonMessage.TYPE, HeitayindaoyongguiButtonMessage.STREAM_CODEC, HeitayindaoyongguiButtonMessage::handleData);
 	}
 }

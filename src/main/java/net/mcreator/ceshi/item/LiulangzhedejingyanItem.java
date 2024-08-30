@@ -1,8 +1,8 @@
 
 package net.mcreator.ceshi.item;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
@@ -35,8 +35,9 @@ public class LiulangzhedejingyanItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal("\u00A78\u53EF\u4EE5\u50A8\u5B58\u00A7720\u00A78\u7ECF\u9A8C\u7B49\u7EA7\u7684\u00A78\u7ECF\u9A8C\u503C\uFF01"));
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A7c \u5347\u7EA7\u540E\u4E0D\u4FDD\u7559\u7ECF\u9A8C"));

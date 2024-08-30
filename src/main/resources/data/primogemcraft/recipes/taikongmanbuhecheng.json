@@ -10,6 +10,6 @@
     "item": "minecraft:iron_ingot"
   },
   "result": {
-    "item": "primogemcraft:taikongmanbuchangpian"
+    "id": "primogemcraft:taikongmanbuchangpian"
   }
 }

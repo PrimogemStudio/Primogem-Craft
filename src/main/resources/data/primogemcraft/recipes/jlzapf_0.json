@@ -6,5 +6,7 @@
   "ingredient": {
     "tag": "minecraft:beacon_payment_items"
   },
-  "result": "primogemcraft:jlza"
+  "result": {
+    "id": "primogemcraft:jlza"
+  }
 }

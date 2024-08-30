@@ -1,7 +1,5 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.network.NetworkHooks;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
@@ -62,10 +60,15 @@ public class Sjguifumo00sx1Procedure {
 			PrimogemcraftMod.queueServerWork(1, () -> {
 				if (entity instanceof ServerPlayer _ent) {
 					BlockPos _bpos = BlockPos.containing(x, y, z);
-					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+					_ent.openMenu(new MenuProvider() {
 						@Override
 						public Component getDisplayName() {
 							return Component.literal("GUISJfumo");
+						}
+
+						@Override
+						public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+							return false;
 						}
 
 						@Override
@@ -81,7 +84,7 @@ public class Sjguifumo00sx1Procedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("\u00A7c\u6761\u4EF6\u4E0D\u8DB3"), false);
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.SHIJIANBUCHUFA.get(), 100, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.SHIJIANBUCHUFA, 100, 0, false, false));
 		}
 	}
 }

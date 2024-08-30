@@ -1,11 +1,14 @@
 package net.mcreator.ceshi.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.Button;
@@ -14,7 +17,6 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.world.inventory.CunzheshezhiMenu;
 import net.mcreator.ceshi.network.CunzheshezhiButtonMessage;
-import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.HashMap;
 
@@ -53,7 +55,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		cunzhe_shuliang.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
@@ -92,12 +94,6 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-		cunzhe_shuliang.tick();
-	}
-
-	@Override
 	public void resize(Minecraft minecraft, int width, int height) {
 		String cunzhe_shuliangValue = cunzhe_shuliang.getValue();
 		super.resize(minecraft, width, height);
@@ -125,21 +121,21 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 			}
 
 			@Override
-			public void moveCursorTo(int pos) {
-				super.moveCursorTo(pos);
+			public void moveCursorTo(int pos, boolean flag) {
+				super.moveCursorTo(pos, flag);
 				if (getValue().isEmpty())
 					setSuggestion(Component.translatable("gui.primogemcraft.cunzheshezhi.cunzhe_shuliang").getString());
 				else
 					setSuggestion(null);
 			}
 		};
-		cunzhe_shuliang.setSuggestion(Component.translatable("gui.primogemcraft.cunzheshezhi.cunzhe_shuliang").getString());
 		cunzhe_shuliang.setMaxLength(32767);
+		cunzhe_shuliang.setSuggestion(Component.translatable("gui.primogemcraft.cunzheshezhi.cunzhe_shuliang").getString());
 		guistate.put("text:cunzhe_shuliang", cunzhe_shuliang);
 		this.addWidget(this.cunzhe_shuliang);
 		button_empty = Button.builder(Component.translatable("gui.primogemcraft.cunzheshezhi.button_empty"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CunzheshezhiButtonMessage(0, x, y, z));
+				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(0, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 22, this.topPos + 14, 10, 20).build();
@@ -147,7 +143,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		this.addRenderableWidget(button_empty);
 		button_10 = Button.builder(Component.translatable("gui.primogemcraft.cunzheshezhi.button_10"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CunzheshezhiButtonMessage(1, x, y, z));
+				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(1, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}).bounds(this.leftPos + 97, this.topPos + 61, 14, 20).build();
@@ -155,7 +151,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		this.addRenderableWidget(button_10);
 		button_100 = Button.builder(Component.translatable("gui.primogemcraft.cunzheshezhi.button_100"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CunzheshezhiButtonMessage(2, x, y, z));
+				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(2, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}).bounds(this.leftPos + 113, this.topPos + 61, 17, 20).build();
@@ -163,7 +159,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		this.addRenderableWidget(button_100);
 		button_1000 = Button.builder(Component.translatable("gui.primogemcraft.cunzheshezhi.button_1000"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CunzheshezhiButtonMessage(3, x, y, z));
+				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(3, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}).bounds(this.leftPos + 132, this.topPos + 61, 23, 20).build();
@@ -171,7 +167,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		this.addRenderableWidget(button_1000);
 		button_11 = Button.builder(Component.translatable("gui.primogemcraft.cunzheshezhi.button_11"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CunzheshezhiButtonMessage(4, x, y, z));
+				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(4, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		}).bounds(this.leftPos + 65, this.topPos + 61, 13, 20).build();
@@ -179,7 +175,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		this.addRenderableWidget(button_11);
 		button_101 = Button.builder(Component.translatable("gui.primogemcraft.cunzheshezhi.button_101"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CunzheshezhiButtonMessage(5, x, y, z));
+				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(5, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 5, x, y, z);
 			}
 		}).bounds(this.leftPos + 47, this.topPos + 61, 16, 20).build();
@@ -187,7 +183,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		this.addRenderableWidget(button_101);
 		button_1001 = Button.builder(Component.translatable("gui.primogemcraft.cunzheshezhi.button_1001"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CunzheshezhiButtonMessage(6, x, y, z));
+				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(6, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 6, x, y, z);
 			}
 		}).bounds(this.leftPos + 22, this.topPos + 61, 23, 20).build();
@@ -195,7 +191,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		this.addRenderableWidget(button_1001);
 		button_empty1 = Button.builder(Component.translatable("gui.primogemcraft.cunzheshezhi.button_empty1"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CunzheshezhiButtonMessage(7, x, y, z));
+				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(7, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 7, x, y, z);
 			}
 		}).bounds(this.leftPos + 115, this.topPos + 35, 12, 20).build();
@@ -203,7 +199,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		this.addRenderableWidget(button_empty1);
 		button_empty2 = Button.builder(Component.translatable("gui.primogemcraft.cunzheshezhi.button_empty2"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CunzheshezhiButtonMessage(8, x, y, z));
+				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(8, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 8, x, y, z);
 			}
 		}).bounds(this.leftPos + 130, this.topPos + 35, 12, 20).build();
@@ -211,18 +207,23 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		this.addRenderableWidget(button_empty2);
 		button_empty3 = Button.builder(Component.translatable("gui.primogemcraft.cunzheshezhi.button_empty3"), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CunzheshezhiButtonMessage(9, x, y, z));
+				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(9, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 9, x, y, z);
 			}
 		}).bounds(this.leftPos + 68, this.topPos + 13, 19, 20).build();
 		guistate.put("button:button_empty3", button_empty3);
 		this.addRenderableWidget(button_empty3);
-		imagebutton_cuo = new ImageButton(this.leftPos + 31, this.topPos + 35, 21, 21, 0, 0, 21, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_cuo.png"), 21, 42, e -> {
+		imagebutton_cuo = new ImageButton(this.leftPos + 31, this.topPos + 35, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/cuo.png"), new ResourceLocation("primogemcraft:textures/screens/cuo.png")), e -> {
 			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new CunzheshezhiButtonMessage(10, x, y, z));
+				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(10, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 10, x, y, z);
 			}
-		});
+		}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
 		guistate.put("button:imagebutton_cuo", imagebutton_cuo);
 		this.addRenderableWidget(imagebutton_cuo);
 	}

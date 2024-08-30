@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "tag": "minecraft:fishes"
+      "item": "minecraft:air"
     },
     "b": {
       "item": "minecraft:baked_potato"
@@ -36,7 +36,7 @@
     }
   },
   "result": {
-    "item": "primogemcraft:xiantiaoqiang",
+    "id": "primogemcraft:xiantiaoqiang",
     "count": 1
   }
 }

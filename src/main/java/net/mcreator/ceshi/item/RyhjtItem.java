@@ -1,7 +1,12 @@
 
 package net.mcreator.ceshi.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.neoforge.registries.RegisterEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -12,72 +17,55 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.Util;
 
 import net.mcreator.ceshi.procedures.RytsxProcedure;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 import java.util.List;
+import java.util.EnumMap;
 
 import com.google.common.collect.Iterables;
 
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public abstract class RyhjtItem extends ArmorItem {
+	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
+
+	@SubscribeEvent
+	public static void registerArmorMaterial(RegisterEvent event) {
+		event.register(Registries.ARMOR_MATERIAL, registerHelper -> {
+			ArmorMaterial armorMaterial = new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+				map.put(ArmorItem.Type.BOOTS, 5);
+				map.put(ArmorItem.Type.LEGGINGS, 7);
+				map.put(ArmorItem.Type.CHESTPLATE, 9);
+				map.put(ArmorItem.Type.HELMET, 5);
+				map.put(ArmorItem.Type.BODY, 9);
+			}), 10, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("item.armor.equip_netherite")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.RANYUANDUANPIAN.get()), new ItemStack(Items.NETHERITE_INGOT)),
+					List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:ryhjt_"))), 1f, 0.2f);
+			registerHelper.register(new ResourceLocation("primogemcraft:ryhjt"), armorMaterial);
+			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
+		});
+	}
+
 	public RyhjtItem(ArmorItem.Type type, Item.Properties properties) {
-		super(new ArmorMaterial() {
-			@Override
-			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 233;
-			}
-
-			@Override
-			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{5, 7, 9, 5}[type.getSlot().getIndex()];
-			}
-
-			@Override
-			public int getEnchantmentValue() {
-				return 10;
-			}
-
-			@Override
-			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.armor.equip_netherite"));
-			}
-
-			@Override
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PrimogemcraftModItems.RANYUANDUANPIAN.get()), new ItemStack(Items.NETHERITE_INGOT));
-			}
-
-			@Override
-			public String getName() {
-				return "ryhjt";
-			}
-
-			@Override
-			public float getToughness() {
-				return 1f;
-			}
-
-			@Override
-			public float getKnockbackResistance() {
-				return 0.2f;
-			}
-		}, type, properties);
+		super(ARMOR_MATERIAL, type, properties);
 	}
 
 	public static class Helmet extends RyhjtItem {
 		public Helmet() {
-			super(ArmorItem.Type.HELMET, new Item.Properties().fireResistant());
+			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(233)).fireResistant());
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, level, list, flag);
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
 			list.add(Component.literal("\u00A77 4x \u5BF9\u653B\u51FB\u4F60\u7684\u76EE\u6807\u65BD\u52A0\u7194\u5CA9\u4F24\u5BB3\u548C\u71C3\u70E7"));
@@ -85,11 +73,6 @@ public abstract class RyhjtItem extends ArmorItem {
 			list.add(Component.literal("\u00A76\u5355\u4E2A\u751F\u72692\u79D2\u81F3\u591A\u88AB\u53CD\u51FB1\u6B21"));
 			list.add(Component.literal("\u00A7"));
 			list.add(Component.literal("\u00A79+2 \u5957\u88C5\u503C\uFF08\u739B\u7459\uFF09"));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "primogemcraft:textures/models/armor/ryhjt__layer_1.png";
 		}
 
 		@Override
@@ -103,12 +86,13 @@ public abstract class RyhjtItem extends ArmorItem {
 
 	public static class Chestplate extends RyhjtItem {
 		public Chestplate() {
-			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant());
+			super(ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(233)).fireResistant());
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, level, list, flag);
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
 			list.add(Component.literal("\u00A77 4x \u5BF9\u653B\u51FB\u4F60\u7684\u76EE\u6807\u65BD\u52A0\u7194\u5CA9\u4F24\u5BB3\u548C\u71C3\u70E7"));
@@ -116,11 +100,6 @@ public abstract class RyhjtItem extends ArmorItem {
 			list.add(Component.literal("\u00A76\u5355\u4E2A\u751F\u72692\u79D2\u81F3\u591A\u88AB\u53CD\u51FB1\u6B21"));
 			list.add(Component.literal("\u00A7"));
 			list.add(Component.literal("\u00A79+2 \u5957\u88C5\u503C\uFF08\u739B\u7459\uFF09"));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "primogemcraft:textures/models/armor/ryhjt__layer_1.png";
 		}
 
 		@Override
@@ -134,12 +113,13 @@ public abstract class RyhjtItem extends ArmorItem {
 
 	public static class Leggings extends RyhjtItem {
 		public Leggings() {
-			super(ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant());
+			super(ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(233)).fireResistant());
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, level, list, flag);
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
 			list.add(Component.literal("\u00A77 4x \u5BF9\u653B\u51FB\u4F60\u7684\u76EE\u6807\u65BD\u52A0\u7194\u5CA9\u4F24\u5BB3\u548C\u71C3\u70E7"));
@@ -147,11 +127,6 @@ public abstract class RyhjtItem extends ArmorItem {
 			list.add(Component.literal("\u00A76\u5355\u4E2A\u751F\u72692\u79D2\u81F3\u591A\u88AB\u53CD\u51FB1\u6B21"));
 			list.add(Component.literal("\u00A7"));
 			list.add(Component.literal("\u00A79+2 \u5957\u88C5\u503C\uFF08\u739B\u7459\uFF09"));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "primogemcraft:textures/models/armor/ryhjt__layer_2.png";
 		}
 
 		@Override
@@ -165,12 +140,13 @@ public abstract class RyhjtItem extends ArmorItem {
 
 	public static class Boots extends RyhjtItem {
 		public Boots() {
-			super(ArmorItem.Type.BOOTS, new Item.Properties().fireResistant());
+			super(ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(233)).fireResistant());
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, level, list, flag);
+		@OnlyIn(Dist.CLIENT)
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, list, flag);
 			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
 			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6297\u706B\u6548\u679C"));
 			list.add(Component.literal("\u00A77 4x \u5BF9\u653B\u51FB\u4F60\u7684\u76EE\u6807\u65BD\u52A0\u7194\u5CA9\u4F24\u5BB3\u548C\u71C3\u70E7"));
@@ -178,11 +154,6 @@ public abstract class RyhjtItem extends ArmorItem {
 			list.add(Component.literal("\u00A76\u5355\u4E2A\u751F\u72692\u79D2\u81F3\u591A\u88AB\u53CD\u51FB1\u6B21"));
 			list.add(Component.literal("\u00A7"));
 			list.add(Component.literal("\u00A79+2 \u5957\u88C5\u503C\uFF08\u739B\u7459\uFF09"));
-		}
-
-		@Override
-		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "primogemcraft:textures/models/armor/ryhjt__layer_1.png";
 		}
 
 		@Override

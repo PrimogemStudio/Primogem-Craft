@@ -11,6 +11,6 @@ public class SJGUIfumo00guanbiProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.SHIJIANBUCHUFA.get(), 100, 0, false, false));
+			_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.SHIJIANBUCHUFA, 100, 0, false, false));
 	}
 }

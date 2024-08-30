@@ -4,5 +4,7 @@
   "ingredient": {
     "tag": "primogemcraft:yuansutaoxiajiehejin"
   },
-  "result": "primogemcraft:qhzlh"
+  "result": {
+    "id": "primogemcraft:qhzlh"
+  }
 }

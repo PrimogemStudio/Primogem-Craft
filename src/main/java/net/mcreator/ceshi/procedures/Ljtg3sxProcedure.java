@@ -1,5 +1,6 @@
 package net.mcreator.ceshi.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -7,7 +8,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 
 public class Ljtg3sxProcedure {
-	public static void execute(Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.DAMAGE_RESISTANCE))) {
@@ -17,6 +18,6 @@ public class Ljtg3sxProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 0, false, false));
 			}
 		}
-		LjtchenshouProcedure.execute(entity, itemstack);
+		LjtchenshouProcedure.execute(world, entity, itemstack);
 	}
 }

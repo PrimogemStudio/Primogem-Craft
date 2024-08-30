@@ -6,19 +6,19 @@ package net.mcreator.ceshi.init;
 
 import org.lwjgl.glfw.GLFW;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
+import net.neoforged.neoforge.client.event.ClientTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.ceshi.network.ZzkjxgkgMessage;
-import net.mcreator.ceshi.PrimogemcraftMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class PrimogemcraftModKeyMappings {
 	public static final KeyMapping ZZKJXGKG = new KeyMapping("key.primogemcraft.zzkjxgkg", GLFW.GLFW_KEY_UNKNOWN, "key.categories.gameplay") {
 		private boolean isDownOld = false;
@@ -27,7 +27,7 @@ public class PrimogemcraftModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new ZzkjxgkgMessage(0, 0));
+				PacketDistributor.sendToServer(new ZzkjxgkgMessage(0, 0));
 				ZzkjxgkgMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
@@ -39,10 +39,10 @@ public class PrimogemcraftModKeyMappings {
 		event.register(ZZKJXGKG);
 	}
 
-	@Mod.EventBusSubscriber({Dist.CLIENT})
+	@EventBusSubscriber({Dist.CLIENT})
 	public static class KeyEventListener {
 		@SubscribeEvent
-		public static void onClientTick(TickEvent.ClientTickEvent event) {
+		public static void onClientTick(ClientTickEvent.Post event) {
 			if (Minecraft.getInstance().screen == null) {
 				ZZKJXGKG.consumeClick();
 			}

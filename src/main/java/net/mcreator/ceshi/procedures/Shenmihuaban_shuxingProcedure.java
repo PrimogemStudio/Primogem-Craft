@@ -1,10 +1,9 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LivingEntity;
@@ -15,6 +14,8 @@ import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModEntities;
@@ -32,7 +33,11 @@ public class Shenmihuaban_shuxingProcedure {
 					}
 				}
 				itemstack.setDamageValue(99);
-				itemstack.getOrCreateTag().putBoolean("kaiqi", false);
+				{
+					final String _tagName = "kaiqi";
+					final boolean _tagValue = false;
+					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
+				}
 			}
 			if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
 				if (entity instanceof LivingEntity _entity)
@@ -44,10 +49,9 @@ public class Shenmihuaban_shuxingProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, (float) 0.3,
-							(float) Mth.nextDouble(RandomSource.create(), 0.9, 1.2));
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, (float) 0.3, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.2));
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, (float) 0.3, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.2), false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, (float) 0.3, (float) Mth.nextDouble(RandomSource.create(), 0.9, 1.2), false);
 				}
 			}
 		}

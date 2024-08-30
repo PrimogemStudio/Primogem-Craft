@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class Ceshi_mucaibaoPressurePlateBlock extends PressurePlateBlock {
 	public Ceshi_mucaibaoPressurePlateBlock() {
-		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn(), BlockSetType.OAK);
+		super(BlockSetType.OAK, BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn());
 	}
 
 	@Override

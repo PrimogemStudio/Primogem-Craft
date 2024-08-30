@@ -1,6 +1,9 @@
 
 package net.mcreator.ceshi.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
@@ -18,12 +21,13 @@ import java.util.List;
 
 public class XiangdanganlaoItem extends Item {
 	public XiangdanganlaoItem() {
-		super(new Item.Properties().durability(1).fireResistant().rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
+		super(new Item.Properties().durability(1).fireResistant().rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0f).alwaysEdible().build()));
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal("\u00A77\u5B58\u5728\u7269\u54C1\u680F\u65F6\uFF1A"));
 		list.add(Component.literal("\u00A7a\u62FE\u53D6\u7ECF\u9A8C\u7403\u65F6\u6062\u590D\u5C11\u91CF\u751F\u547D\u503C"));
 		list.add(Component.literal("\u00A7a\u5C0F\u6982\u7387\u00A7c\u635F\u574F\uFF01"));

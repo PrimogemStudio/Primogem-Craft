@@ -8,9 +8,4 @@ public class QskxjxtxgMobEffect extends MobEffect {
 	public QskxjxtxgMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
 	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
-	}
 }

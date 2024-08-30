@@ -24,7 +24,7 @@ public class Fengrao_lizishuxingProcedure {
 			}
 		}
 		if (Math.random() < 0.2) {
-			if (entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(PrimogemcraftModMobEffects.FENGRAO.get())) {
+			if (entity instanceof LivingEntity _livEnt3 && _livEnt3.hasEffect(PrimogemcraftModMobEffects.FENGRAO)) {
 				{
 					Entity _ent = entity;
 					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
@@ -36,9 +36,9 @@ public class Fengrao_lizishuxingProcedure {
 				}
 			}
 		}
-		if (entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(PrimogemcraftModMobEffects.HSLGGZFUZHIPIN.get()) && !(entity instanceof Player)) {
+		if (entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(PrimogemcraftModMobEffects.HSLGGZFUZHIPIN) && !(entity instanceof Player)) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(PrimogemcraftModMobEffects.FENGRAO.get());
+				_entity.removeEffect(PrimogemcraftModMobEffects.FENGRAO);
 		}
 	}
 }

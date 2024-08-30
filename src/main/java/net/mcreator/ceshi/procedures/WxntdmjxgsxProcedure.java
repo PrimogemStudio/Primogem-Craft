@@ -15,7 +15,7 @@ public class WxntdmjxgsxProcedure {
 		if (entity.getPersistentData().getBoolean("wxntdmj_sx")) {
 			PrimogemcraftMod.queueServerWork(1, () -> {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.WXNTDMJ.get(), 80, 0, false, false));
+					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.WXNTDMJ, 80, 0, false, false));
 			});
 		}
 	}

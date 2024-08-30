@@ -31,8 +31,15 @@ import net.mcreator.ceshi.procedures.MoladuixianzhiProcedure;
 import net.mcreator.ceshi.procedures.MldsxProcedure;
 import net.mcreator.ceshi.block.entity.Mlxdml02BlockEntity;
 
+import com.mojang.serialization.MapCodec;
+
 public class Mlxdml02Block extends FallingBlock implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final MapCodec<Mlxdml02Block> CODEC = simpleCodec(properties -> new Mlxdml02Block());
+
+	public MapCodec<Mlxdml02Block> codec() {
+		return CODEC;
+	}
 
 	public Mlxdml02Block() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.CHAIN).strength(1f, 4f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));

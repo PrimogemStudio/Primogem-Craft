@@ -12,6 +12,8 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
@@ -54,7 +56,7 @@ public class SuijiqiwuguishuxingProcedure {
 				}
 				a = Mth.nextInt(RandomSource.create(), 0, 2);
 				if (!world.isClientSide() && world.getServer() != null) {
-					for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation("primogemcraft:entities/heitaqiwu_01"))
+					for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, new ResourceLocation("primogemcraft:entities/heitaqiwu_01")))
 							.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
 						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 							ItemStack _setstack = itemstackiterator.copy();
@@ -91,7 +93,7 @@ public class SuijiqiwuguishuxingProcedure {
 					b = b;
 				}
 				if (!world.isClientSide() && world.getServer() != null) {
-					for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation("primogemcraft:entities/heitaqiwu_02"))
+					for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, new ResourceLocation("primogemcraft:entities/heitaqiwu_02")))
 							.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
 						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 							ItemStack _setstack = itemstackiterator.copy();
@@ -111,7 +113,7 @@ public class SuijiqiwuguishuxingProcedure {
 					}
 				}
 				if (!world.isClientSide() && world.getServer() != null) {
-					for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation("primogemcraft:entities/heitaqiwu_03"))
+					for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, new ResourceLocation("primogemcraft:entities/heitaqiwu_03")))
 							.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
 						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 							ItemStack _setstack = itemstackiterator.copy();

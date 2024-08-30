@@ -17,13 +17,13 @@ public class Gouyu_shuxingProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:zuishengjian")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 60,
-						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.GOUYU.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.GOUYU.get()).getAmplifier() : 0) * 2), false, false));
+						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.GOUYU) ? _livEnt.getEffect(PrimogemcraftModMobEffects.GOUYU).getAmplifier() : 0) * 2), false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60,
-						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.GOUYU.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.GOUYU.get()).getAmplifier() : 0) * 3), false, false));
+						(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.GOUYU) ? _livEnt.getEffect(PrimogemcraftModMobEffects.GOUYU).getAmplifier() : 0) * 3), false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 60,
-						entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.GOUYU.get()) ? _livEnt.getEffect(PrimogemcraftModMobEffects.GOUYU.get()).getAmplifier() : 0, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 60, entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.GOUYU) ? _livEnt.getEffect(PrimogemcraftModMobEffects.GOUYU).getAmplifier() : 0,
+						false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 60, 1, false, false));
 		}

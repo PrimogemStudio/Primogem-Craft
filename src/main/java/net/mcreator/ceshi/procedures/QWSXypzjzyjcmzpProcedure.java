@@ -1,11 +1,11 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -24,15 +24,14 @@ import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 import javax.annotation.Nullable;
 
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.List;
 import java.util.Comparator;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class QWSXypzjzyjcmzpProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getSource(), event.getEntity(), event.getSource().getEntity());
 		}
 	}
@@ -50,16 +49,12 @@ public class QWSXypzjzyjcmzpProcedure {
 			if (!damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("primogemcraft:s_hchixushanghai")))) {
 				if ((sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.CHUNMEIZHIPAO.get())) : false)
 						&& !(sourceentity instanceof Player _plrCldCheck3 && _plrCldCheck3.getCooldowns().isOnCooldown(PrimogemcraftModItems.CHUNMEIZHIPAO.get()))) {
-					{
-						AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-						sourceentity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
-						if (_iitemhandlerref.get() != null) {
-							for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-								ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-								if (itemstackiterator.getItem() == PrimogemcraftModItems.YUZHOUSUIPIAN.get()) {
-									a = a + itemstackiterator.getCount();
-									b = a * 0.015625;
-								}
+					if (sourceentity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+						for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+							ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
+							if (itemstackiterator.getItem() == PrimogemcraftModItems.YUZHOUSUIPIAN.get()) {
+								a = a + itemstackiterator.getCount();
+								b = a * 0.015625;
 							}
 						}
 					}
@@ -70,15 +65,11 @@ public class QWSXypzjzyjcmzpProcedure {
 				}
 				if ((sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWJZYJ.get())) : false)
 						&& !(sourceentity instanceof Player _plrCldCheck14 && _plrCldCheck14.getCooldowns().isOnCooldown(PrimogemcraftModItems.QWJZYJ.get()))) {
-					{
-						AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-						sourceentity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
-						if (_iitemhandlerref.get() != null) {
-							for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-								ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-								if (itemstackiterator.is(ItemTags.create(new ResourceLocation("forge:curio/bad")))) {
-									a = a + itemstackiterator.getCount();
-								}
+					if (sourceentity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+						for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+							ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
+							if (itemstackiterator.is(ItemTags.create(new ResourceLocation("forge:curio/bad")))) {
+								a = a + itemstackiterator.getCount();
 							}
 						}
 					}

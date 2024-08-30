@@ -4,16 +4,16 @@
  */
 package net.mcreator.ceshi.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleType;
 
 import net.mcreator.ceshi.PrimogemcraftMod;
 
 public class PrimogemcraftModParticleTypes {
-	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, PrimogemcraftMod.MODID);
-	public static final RegistryObject<SimpleParticleType> MOYIN = REGISTRY.register("moyin", () -> new SimpleParticleType(true));
+	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(Registries.PARTICLE_TYPE, PrimogemcraftMod.MODID);
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> MOYIN = REGISTRY.register("moyin", () -> new SimpleParticleType(true));
 }

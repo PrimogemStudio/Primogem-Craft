@@ -1,12 +1,12 @@
 
 package net.mcreator.ceshi.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.common.ForgeMod;
+import net.neoforged.neoforge.fluids.FluidType;
+import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.common.NeoForgeMod;
 
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
@@ -16,7 +16,6 @@ import net.minecraft.world.entity.ai.control.MoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.PathfinderMob;
-import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
@@ -24,25 +23,18 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.procedures.QqiwushitisiwangluojiProcedure;
-import net.mcreator.ceshi.init.PrimogemcraftModEntities;
 
 public class QqiwuzhanlipinshitiEntity extends PathfinderMob {
-	public QqiwuzhanlipinshitiEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get(), world);
-	}
-
 	public QqiwuzhanlipinshitiEntity(EntityType<QqiwuzhanlipinshitiEntity> type, Level world) {
 		super(type, world);
-		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(true);
 		setPersistenceRequired();
-		this.setPathfindingMalus(BlockPathTypes.WATER, 0);
+		this.setPathfindingMalus(PathType.WATER, 0);
 		this.moveControl = new MoveControl(this) {
 			@Override
 			public void tick() {
@@ -78,18 +70,8 @@ public class QqiwuzhanlipinshitiEntity extends PathfinderMob {
 	}
 
 	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
-	}
-
-	@Override
 	protected PathNavigation createNavigation(Level world) {
 		return new WaterBoundPathNavigation(this, world);
-	}
-
-	@Override
-	public MobType getMobType() {
-		return MobType.UNDEFINED;
 	}
 
 	@Override
@@ -98,28 +80,28 @@ public class QqiwuzhanlipinshitiEntity extends PathfinderMob {
 	}
 
 	@Override
-	public double getMyRidingOffset() {
-		return -0.35D;
+	public Vec3 getPassengerRidingPosition(Entity entity) {
+		return super.getPassengerRidingPosition(entity).add(0, -0.35F, 0);
 	}
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:wu_sheng"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
 	}
 
 	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:wu_sheng")), 0.15f, 1);
+		this.playSound(BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng")), 0.15f, 1);
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:wu_sheng"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:wu_sheng"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
 	}
 
 	@Override
@@ -134,16 +116,16 @@ public class QqiwuzhanlipinshitiEntity extends PathfinderMob {
 	}
 
 	@Override
-	public boolean canBreatheUnderwater() {
+	public boolean canDrownInFluidType(FluidType type) {
 		double x = this.getX();
 		double y = this.getY();
 		double z = this.getZ();
 		Level world = this.level();
 		Entity entity = this;
-		return true;
+		return false;
 	}
 
-	public static void init() {
+	public static void init(SpawnPlacementRegisterEvent event) {
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -153,7 +135,8 @@ public class QqiwuzhanlipinshitiEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 0);
-		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 0);
+		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
+		builder = builder.add(NeoForgeMod.SWIM_SPEED, 0);
 		return builder;
 	}
 }

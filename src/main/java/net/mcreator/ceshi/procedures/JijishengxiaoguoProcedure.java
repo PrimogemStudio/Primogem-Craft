@@ -23,7 +23,7 @@ public class JijishengxiaoguoProcedure {
 				_player.displayClientMessage(Component.literal("\u00A74\u5B83\u4EEC\u997F\u4E86\u5E76\u51C6\u5907\u5543\u98DF\u4F60"), true);
 			PrimogemcraftMod.queueServerWork(100, () -> {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.JIJISHENGCHONGDEFENNU.get(), 60, 1, true, true));
+					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.JIJISHENGCHONGDEFENNU, 60, 1, true, true));
 			});
 		} else {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) >= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.95) {

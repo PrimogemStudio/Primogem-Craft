@@ -10,6 +10,6 @@
     "item": "minecraft:iron_ingot"
   },
   "result": {
-    "item": "primogemcraft:zhongkouweitieding"
+    "id": "primogemcraft:zhongkouweitieding"
   }
 }

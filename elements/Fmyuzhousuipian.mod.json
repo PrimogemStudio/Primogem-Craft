@@ -1,23 +1,21 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "enchantment",
   "definition": {
     "name": "宇宙碎片修补",
-    "type": "BREAKABLE",
-    "rarity": "UNCOMMON",
+    "supportedSlots": "any",
+    "weight": 5,
+    "anvilCost": 2,
     "maxLevel": 5,
     "damageModifier": 0,
-    "compatibleEnchantments": [],
-    "excludeEnchantments": false,
-    "compatibleItems": [
+    "incompatibleEnchantments": [],
+    "supportedItems": [
       {
-        "value": "TAG:pgc:token_mending"
+        "value": "TAG:enchantable/durability"
       }
     ],
-    "excludeItems": true,
     "isTreasureEnchantment": false,
     "isCurse": false,
-    "isAllowedOnBooks": true,
     "canGenerateInLootTables": true,
     "canVillagerTrade": true
   }

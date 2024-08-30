@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:yhjs"
+      "id": "primogemcraft:yhjs"
     },
     "title": {
       "translate": "advancements.jdyhjs.title"

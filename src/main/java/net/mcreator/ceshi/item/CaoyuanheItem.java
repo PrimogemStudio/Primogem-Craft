@@ -7,6 +7,6 @@ import net.minecraft.world.food.FoodProperties;
 
 public class CaoyuanheItem extends Item {
 	public CaoyuanheItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(2f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(2f).alwaysEdible().build()));
 	}
 }

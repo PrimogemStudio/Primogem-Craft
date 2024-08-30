@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:hhaokandelaji"
+      "id": "primogemcraft:hhaokandelaji"
     },
     "title": {
       "translate": "advancements.bbaozang.title"

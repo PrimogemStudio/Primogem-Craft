@@ -1,7 +1,9 @@
 
 package net.mcreator.ceshi.item;
 
-import net.minecraft.world.level.Level;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -16,8 +18,9 @@ public class LaoshiItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal("\u00A77\u534E\u4E3D\u7684\u77F3\u5934\uFF0C\u4F3C\u4E4E\u6CA1\u4EC0\u4E48\u7528"));
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A7d\u73CD\u60DC\u6750\u6599"));

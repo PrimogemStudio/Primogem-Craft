@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:mmolazhilajitong"
+      "id": "primogemcraft:mmolazhilajitong"
     },
     "title": {
       "translate": "advancements.zhzhongjixintu.title"

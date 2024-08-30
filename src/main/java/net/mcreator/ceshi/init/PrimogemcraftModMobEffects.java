@@ -4,12 +4,33 @@
  */
 package net.mcreator.ceshi.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffect;
+import net.minecraft.core.registries.Registries;
 
+import net.mcreator.ceshi.procedures.Yimuguo_shuxingProcedure;
+import net.mcreator.ceshi.procedures.YdggzxgsxProcedure;
+import net.mcreator.ceshi.procedures.WxntdmjxgsxProcedure;
+import net.mcreator.ceshi.procedures.Tldhy_sxProcedure;
+import net.mcreator.ceshi.procedures.Smcl_zf_sx_0Procedure;
+import net.mcreator.ceshi.procedures.QylqsxProcedure;
+import net.mcreator.ceshi.procedures.Hslggz_xiaoguo_sx_2Procedure;
+import net.mcreator.ceshi.procedures.Heisenlin_ggz_xiaoguo_sx_1Procedure;
+import net.mcreator.ceshi.procedures.Guoqu_jieshuProcedure;
+import net.mcreator.ceshi.procedures.Gongjixiangzengyi_shuxingProcedure;
+import net.mcreator.ceshi.procedures.Flggzxgsx2Procedure;
+import net.mcreator.ceshi.procedures.Flggzxgsx1Procedure;
+import net.mcreator.ceshi.procedures.Fengrao_shuxing_4Procedure;
+import net.mcreator.ceshi.procedures.Feixing_shuxinG_2Procedure;
+import net.mcreator.ceshi.procedures.DjpppolieProcedure;
+import net.mcreator.ceshi.procedures.ChongwangjueshanhaiProcedure;
 import net.mcreator.ceshi.potion.ZhuoshaoMobEffect;
 import net.mcreator.ceshi.potion.ZhongguizhongjuxiaoguoMobEffect;
 import net.mcreator.ceshi.potion.ZhengchangdaimaMobEffect;
@@ -58,52 +79,105 @@ import net.mcreator.ceshi.potion.DiguixiaoguoMobEffect;
 import net.mcreator.ceshi.potion.ChunmeipaoxianzhixiaoguoMobEffect;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
+@EventBusSubscriber
 public class PrimogemcraftModMobEffects {
-	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, PrimogemcraftMod.MODID);
-	public static final RegistryObject<MobEffect> JISHENG = REGISTRY.register("jisheng", () -> new JishengMobEffect());
-	public static final RegistryObject<MobEffect> JIJISHENGCHONGDEFENNU = REGISTRY.register("jijishengchongdefennu", () -> new JijishengchongdefennuMobEffect());
-	public static final RegistryObject<MobEffect> GONGJITISHENG = REGISTRY.register("gongjitisheng", () -> new GongjitishengMobEffect());
-	public static final RegistryObject<MobEffect> LETOUDECHENGFA = REGISTRY.register("letoudechengfa", () -> new LetoudechengfaMobEffect());
-	public static final RegistryObject<MobEffect> GOUYU = REGISTRY.register("gouyu", () -> new GouyuMobEffect());
-	public static final RegistryObject<MobEffect> GUOQU = REGISTRY.register("guoqu", () -> new GuoquMobEffect());
-	public static final RegistryObject<MobEffect> ZHANDOUZHUANGTAI = REGISTRY.register("zhandouzhuangtai", () -> new ZhandouzhuangtaiMobEffect());
-	public static final RegistryObject<MobEffect> FENGRAO = REGISTRY.register("fengrao", () -> new FengraoMobEffect());
-	public static final RegistryObject<MobEffect> ZHENGCHANGDAIMA = REGISTRY.register("zhengchangdaima", () -> new ZhengchangdaimaMobEffect());
-	public static final RegistryObject<MobEffect> QIQIAODAIMAXIUFU = REGISTRY.register("qiqiaodaimaxiufu", () -> new QiqiaodaimaxiufuMobEffect());
-	public static final RegistryObject<MobEffect> ZHONGGUIZHONGJUXIAOGUO = REGISTRY.register("zhongguizhongjuxiaoguo", () -> new ZhongguizhongjuxiaoguoMobEffect());
-	public static final RegistryObject<MobEffect> LENGQUEZHONGGUIZHONGJU = REGISTRY.register("lengquezhongguizhongju", () -> new LengquezhongguizhongjuMobEffect());
-	public static final RegistryObject<MobEffect> JINGQUEDAIMA = REGISTRY.register("jingquedaima", () -> new JingquedaimaMobEffect());
-	public static final RegistryObject<MobEffect> QUEZHUSHIXIAOGUO = REGISTRY.register("quezhushixiaoguo", () -> new QuezhushixiaoguoMobEffect());
-	public static final RegistryObject<MobEffect> DIGUIXIAOGUO = REGISTRY.register("diguixiaoguo", () -> new DiguixiaoguoMobEffect());
-	public static final RegistryObject<MobEffect> LINZHONG = REGISTRY.register("linzhong", () -> new LinzhongMobEffect());
-	public static final RegistryObject<MobEffect> QIANYE = REGISTRY.register("qianye", () -> new QianyeMobEffect());
-	public static final RegistryObject<MobEffect> QIANYELENGQUE = REGISTRY.register("qianyelengque", () -> new QianyelengqueMobEffect());
-	public static final RegistryObject<MobEffect> DJPP = REGISTRY.register("djpp", () -> new DjppMobEffect());
-	public static final RegistryObject<MobEffect> YIJI = REGISTRY.register("yiji", () -> new YijiMobEffect());
-	public static final RegistryObject<MobEffect> ZHUOSHAO = REGISTRY.register("zhuoshao", () -> new ZhuoshaoMobEffect());
-	public static final RegistryObject<MobEffect> FEIXING = REGISTRY.register("feixing", () -> new FeixingMobEffect());
-	public static final RegistryObject<MobEffect> QWYMGS = REGISTRY.register("qwymgs", () -> new QwymgsMobEffect());
-	public static final RegistryObject<MobEffect> TLDHY = REGISTRY.register("tldhy", () -> new TldhyMobEffect());
-	public static final RegistryObject<MobEffect> LJTDWQ = REGISTRY.register("ljtdwq", () -> new LjtdwqMobEffect());
-	public static final RegistryObject<MobEffect> SYZF = REGISTRY.register("syzf", () -> new SyzfMobEffect());
-	public static final RegistryObject<MobEffect> CHUNMEIPAOXIANZHIXIAOGUO = REGISTRY.register("chunmeipaoxianzhixiaoguo", () -> new ChunmeipaoxianzhixiaoguoMobEffect());
-	public static final RegistryObject<MobEffect> JIAZUXIANZHI = REGISTRY.register("jiazuxianzhi", () -> new JiazuxianzhiMobEffect());
-	public static final RegistryObject<MobEffect> DJPPXIANZHI = REGISTRY.register("djppxianzhi", () -> new DjppxianzhiMobEffect());
-	public static final RegistryObject<MobEffect> DJQJKJXGXIANZHI = REGISTRY.register("djqjkjxgxianzhi", () -> new DjqjkjxgxianzhiMobEffect());
-	public static final RegistryObject<MobEffect> HEISENLINGGZ = REGISTRY.register("heisenlinggz", () -> new HeisenlinggzMobEffect());
-	public static final RegistryObject<MobEffect> HSLGGZFUZHIPIN = REGISTRY.register("hslggzfuzhipin", () -> new HslggzfuzhipinMobEffect());
-	public static final RegistryObject<MobEffect> FZGGZXG_0 = REGISTRY.register("fzggzxg_0", () -> new Fzggzxg0MobEffect());
-	public static final RegistryObject<MobEffect> FZGGZXG_1 = REGISTRY.register("fzggzxg_1", () -> new Fzggzxg1MobEffect());
-	public static final RegistryObject<MobEffect> YYDGGZXG = REGISTRY.register("yydggzxg", () -> new YydggzxgMobEffect());
-	public static final RegistryObject<MobEffect> QWJLBBGSX_2 = REGISTRY.register("qwjlbbgsx_2", () -> new Qwjlbbgsx2MobEffect());
-	public static final RegistryObject<MobEffect> WXNTDMJ = REGISTRY.register("wxntdmj", () -> new WxntdmjMobEffect());
-	public static final RegistryObject<MobEffect> QSKXJXTXG = REGISTRY.register("qskxjxtxg", () -> new QskxjxtxgMobEffect());
-	public static final RegistryObject<MobEffect> SMCLXG = REGISTRY.register("smclxg", () -> new SmclxgMobEffect());
-	public static final RegistryObject<MobEffect> SMCLZF = REGISTRY.register("smclzf", () -> new SmclzfMobEffect());
-	public static final RegistryObject<MobEffect> SHIJIANBUCHUFA = REGISTRY.register("shijianbuchufa", () -> new ShijianbuchufaMobEffect());
-	public static final RegistryObject<MobEffect> RYKJXG = REGISTRY.register("rykjxg", () -> new RykjxgMobEffect());
-	public static final RegistryObject<MobEffect> RYKJXGLQ = REGISTRY.register("rykjxglq", () -> new RykjxglqMobEffect());
-	public static final RegistryObject<MobEffect> RYFXGSX = REGISTRY.register("ryfxgsx", () -> new RyfxgsxMobEffect());
-	public static final RegistryObject<MobEffect> SZTSXCWDP = REGISTRY.register("sztsxcwdp", () -> new SztsxcwdpMobEffect());
-	public static final RegistryObject<MobEffect> YSRZXG = REGISTRY.register("ysrzxg", () -> new YsrzxgMobEffect());
+	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(Registries.MOB_EFFECT, PrimogemcraftMod.MODID);
+	public static final DeferredHolder<MobEffect, MobEffect> JISHENG = REGISTRY.register("jisheng", () -> new JishengMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> JIJISHENGCHONGDEFENNU = REGISTRY.register("jijishengchongdefennu", () -> new JijishengchongdefennuMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> GONGJITISHENG = REGISTRY.register("gongjitisheng", () -> new GongjitishengMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> LETOUDECHENGFA = REGISTRY.register("letoudechengfa", () -> new LetoudechengfaMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> GOUYU = REGISTRY.register("gouyu", () -> new GouyuMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> GUOQU = REGISTRY.register("guoqu", () -> new GuoquMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> ZHANDOUZHUANGTAI = REGISTRY.register("zhandouzhuangtai", () -> new ZhandouzhuangtaiMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> FENGRAO = REGISTRY.register("fengrao", () -> new FengraoMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> ZHENGCHANGDAIMA = REGISTRY.register("zhengchangdaima", () -> new ZhengchangdaimaMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> QIQIAODAIMAXIUFU = REGISTRY.register("qiqiaodaimaxiufu", () -> new QiqiaodaimaxiufuMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> ZHONGGUIZHONGJUXIAOGUO = REGISTRY.register("zhongguizhongjuxiaoguo", () -> new ZhongguizhongjuxiaoguoMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> LENGQUEZHONGGUIZHONGJU = REGISTRY.register("lengquezhongguizhongju", () -> new LengquezhongguizhongjuMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> JINGQUEDAIMA = REGISTRY.register("jingquedaima", () -> new JingquedaimaMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> QUEZHUSHIXIAOGUO = REGISTRY.register("quezhushixiaoguo", () -> new QuezhushixiaoguoMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> DIGUIXIAOGUO = REGISTRY.register("diguixiaoguo", () -> new DiguixiaoguoMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> LINZHONG = REGISTRY.register("linzhong", () -> new LinzhongMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> QIANYE = REGISTRY.register("qianye", () -> new QianyeMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> QIANYELENGQUE = REGISTRY.register("qianyelengque", () -> new QianyelengqueMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> DJPP = REGISTRY.register("djpp", () -> new DjppMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> YIJI = REGISTRY.register("yiji", () -> new YijiMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> ZHUOSHAO = REGISTRY.register("zhuoshao", () -> new ZhuoshaoMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> FEIXING = REGISTRY.register("feixing", () -> new FeixingMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> QWYMGS = REGISTRY.register("qwymgs", () -> new QwymgsMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> TLDHY = REGISTRY.register("tldhy", () -> new TldhyMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> LJTDWQ = REGISTRY.register("ljtdwq", () -> new LjtdwqMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SYZF = REGISTRY.register("syzf", () -> new SyzfMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> CHUNMEIPAOXIANZHIXIAOGUO = REGISTRY.register("chunmeipaoxianzhixiaoguo", () -> new ChunmeipaoxianzhixiaoguoMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> JIAZUXIANZHI = REGISTRY.register("jiazuxianzhi", () -> new JiazuxianzhiMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> DJPPXIANZHI = REGISTRY.register("djppxianzhi", () -> new DjppxianzhiMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> DJQJKJXGXIANZHI = REGISTRY.register("djqjkjxgxianzhi", () -> new DjqjkjxgxianzhiMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> HEISENLINGGZ = REGISTRY.register("heisenlinggz", () -> new HeisenlinggzMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> HSLGGZFUZHIPIN = REGISTRY.register("hslggzfuzhipin", () -> new HslggzfuzhipinMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> FZGGZXG_0 = REGISTRY.register("fzggzxg_0", () -> new Fzggzxg0MobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> FZGGZXG_1 = REGISTRY.register("fzggzxg_1", () -> new Fzggzxg1MobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> YYDGGZXG = REGISTRY.register("yydggzxg", () -> new YydggzxgMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> QWJLBBGSX_2 = REGISTRY.register("qwjlbbgsx_2", () -> new Qwjlbbgsx2MobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> WXNTDMJ = REGISTRY.register("wxntdmj", () -> new WxntdmjMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> QSKXJXTXG = REGISTRY.register("qskxjxtxg", () -> new QskxjxtxgMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SMCLXG = REGISTRY.register("smclxg", () -> new SmclxgMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SMCLZF = REGISTRY.register("smclzf", () -> new SmclzfMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SHIJIANBUCHUFA = REGISTRY.register("shijianbuchufa", () -> new ShijianbuchufaMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> RYKJXG = REGISTRY.register("rykjxg", () -> new RykjxgMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> RYKJXGLQ = REGISTRY.register("rykjxglq", () -> new RykjxglqMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> RYFXGSX = REGISTRY.register("ryfxgsx", () -> new RyfxgsxMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> SZTSXCWDP = REGISTRY.register("sztsxcwdp", () -> new SztsxcwdpMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> YSRZXG = REGISTRY.register("ysrzxg", () -> new YsrzxgMobEffect());
+
+	@SubscribeEvent
+	public static void onEffectRemoved(MobEffectEvent.Remove event) {
+		MobEffectInstance effectInstance = event.getEffectInstance();
+		if (effectInstance != null) {
+			expireEffects(event.getEntity(), effectInstance);
+		}
+	}
+
+	@SubscribeEvent
+	public static void onEffectExpired(MobEffectEvent.Expired event) {
+		MobEffectInstance effectInstance = event.getEffectInstance();
+		if (effectInstance != null) {
+			expireEffects(event.getEntity(), effectInstance);
+		}
+	}
+
+	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
+		if (effectInstance.getEffect().is(JISHENG)) {
+			ChongwangjueshanhaiProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(GONGJITISHENG)) {
+			Gongjixiangzengyi_shuxingProcedure.execute(entity);
+		} else if (effectInstance.getEffect().is(GUOQU)) {
+			Guoqu_jieshuProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(FENGRAO)) {
+			Fengrao_shuxing_4Procedure.execute(entity);
+		} else if (effectInstance.getEffect().is(LINZHONG)) {
+			Yimuguo_shuxingProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(QIANYELENGQUE)) {
+			QylqsxProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ());
+		} else if (effectInstance.getEffect().is(DJPP)) {
+			DjpppolieProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		} else if (effectInstance.getEffect().is(FEIXING)) {
+			Feixing_shuxinG_2Procedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(TLDHY)) {
+			Tldhy_sxProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(HEISENLINGGZ)) {
+			Heisenlin_ggz_xiaoguo_sx_1Procedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(HSLGGZFUZHIPIN)) {
+			Hslggz_xiaoguo_sx_2Procedure.execute(entity);
+		} else if (effectInstance.getEffect().is(FZGGZXG_0)) {
+			Flggzxgsx1Procedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(FZGGZXG_1)) {
+			Flggzxgsx2Procedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(YYDGGZXG)) {
+			YdggzxgsxProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(WXNTDMJ)) {
+			WxntdmjxgsxProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(SMCLZF)) {
+			Smcl_zf_sx_0Procedure.execute(entity.level(), entity);
+		}
+	}
 }

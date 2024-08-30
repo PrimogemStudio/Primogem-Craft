@@ -1,11 +1,13 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.items.ItemHandlerHelper;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.core.component.DataComponents;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
@@ -14,8 +16,12 @@ public class Qhlh3sxProcedure {
 		if (entity == null)
 			return;
 		double a = 0;
-		if (!world.isClientSide() && !itemstack.getOrCreateTag().getBoolean("lihe_zhuanhua")) {
-			itemstack.getOrCreateTag().putBoolean("lihe_zhuanhua", true);
+		if (!world.isClientSide() && !itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("lihe_zhuanhua")) {
+			{
+				final String _tagName = "lihe_zhuanhua";
+				final boolean _tagValue = true;
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
+			}
 			if (itemstack.getCount() > 1) {
 				a = 0;
 				for (int index0 = 0; index0 < itemstack.getCount(); index0++) {

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:shengjizizaitie"
+      "id": "primogemcraft:shengjizizaitie"
     },
     "title": {
       "translate": "advancements.jdhszly.title"

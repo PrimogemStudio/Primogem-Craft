@@ -15,7 +15,7 @@ public class YdggzxgsxProcedure {
 		if (entity.getPersistentData().getBoolean("yongdongguguzhong")) {
 			PrimogemcraftMod.queueServerWork(1, () -> {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.YYDGGZXG.get(), 60, 0, false, false));
+					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.YYDGGZXG, 60, 0, false, false));
 			});
 		}
 	}

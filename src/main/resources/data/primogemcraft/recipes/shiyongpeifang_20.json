@@ -36,7 +36,7 @@
     }
   },
   "result": {
-    "item": "minecraft:echo_shard",
+    "id": "minecraft:echo_shard",
     "count": 1
   }
 }

@@ -1,12 +1,11 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
@@ -18,6 +17,8 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
@@ -64,9 +65,17 @@ public class GUIbwdyinhang01Procedure {
 				}
 			}.getAmount(2);
 			b = new ItemStack(PrimogemcraftModItems.CUNQUPINGZHENG.get());
-			b.getOrCreateTag().putDouble("pgc_cunchu", a);
-			b.getOrCreateTag().putBoolean("bwd_yinhang", true);
-			b.setHoverName(Component.literal("\u00A7e\u00A7kbw\u00A7e\u5B58\u53D6\u51ED...\u8BC1\uFF1F\u00A7kwd"));
+			{
+				final String _tagName = "pgc_cunchu";
+				final double _tagValue = a;
+				CustomData.update(DataComponents.CUSTOM_DATA, b, tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			{
+				final String _tagName = "bwd_yinhang";
+				final boolean _tagValue = true;
+				CustomData.update(DataComponents.CUSTOM_DATA, b, tag -> tag.putBoolean(_tagName, _tagValue));
+			}
+			b.set(DataComponents.CUSTOM_NAME, Component.literal("\u00A7e\u00A7kbw\u00A7e\u5B58\u53D6\u51ED...\u8BC1\uFF1F\u00A7kwd"));
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(0)).set(ItemStack.EMPTY);
 				_player.containerMenu.broadcastChanges();
@@ -83,9 +92,9 @@ public class GUIbwdyinhang01Procedure {
 				_player.closeContainer();
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chest.close")), SoundSource.BLOCKS, 1, (float) 0.5);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.chest.close")), SoundSource.BLOCKS, 1, (float) 0.5);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chest.close")), SoundSource.BLOCKS, 1, (float) 0.5, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.chest.close")), SoundSource.BLOCKS, 1, (float) 0.5, false);
 				}
 			}
 			if (!(new Object() {

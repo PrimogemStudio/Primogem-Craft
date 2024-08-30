@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:yiyinhedaletou"
+      "id": "primogemcraft:yiyinhedaletou"
     },
     "title": {
       "translate": "advancements.d_du_tu_de_kai_shi.title"

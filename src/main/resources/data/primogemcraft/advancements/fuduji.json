@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:sanyueqidiaoxiang_01"
+      "id": "primogemcraft:sanyueqidiaoxiang_01"
     },
     "title": {
       "translate": "advancements.fuduji.title"

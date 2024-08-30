@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#is_overworld",
-  "features": "primogemcraft:dibiaomola_01_feature",
-  "step": "surface_structures"
-}

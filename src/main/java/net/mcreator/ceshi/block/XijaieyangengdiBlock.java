@@ -3,7 +3,7 @@ package net.mcreator.ceshi.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.common.IPlantable;
+import net.neoforged.neoforge.common.IPlantable;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;

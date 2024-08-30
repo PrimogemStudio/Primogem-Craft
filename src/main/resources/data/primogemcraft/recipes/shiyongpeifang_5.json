@@ -13,7 +13,7 @@
     }
   ],
   "result": {
-    "item": "minecraft:cherry_sapling",
+    "id": "minecraft:cherry_sapling",
     "count": 1
   }
 }

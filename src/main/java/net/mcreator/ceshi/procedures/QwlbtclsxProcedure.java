@@ -1,12 +1,12 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.ItemHandlerHelper;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -19,11 +19,11 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
-
-import java.util.concurrent.atomic.AtomicReference;
 
 public class QwlbtclsxProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -33,22 +33,26 @@ public class QwlbtclsxProcedure {
 		double a = 0;
 		double c = 0;
 		b = (new ItemStack(PrimogemcraftModItems.YUZHOUSUIPIAN.get()).copy());
-		{
-			AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-			entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
-			if (_iitemhandlerref.get() != null) {
-				for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-					ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-					if (itemstackiterator.getItem() == b.getItem()) {
-						a = a + itemstackiterator.getCount();
-					}
+		if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+			for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+				ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
+				if (itemstackiterator.getItem() == b.getItem()) {
+					a = a + itemstackiterator.getCount();
 				}
 			}
 		}
 		if (a >= 45 && !world.isClientSide()) {
-			itemstack.getOrCreateTag().putDouble("lubotechilun", (itemstack.getOrCreateTag().getDouble("lubotechilun") + 1));
-			if (itemstack.getOrCreateTag().getDouble("lubotechilun") >= 24000) {
-				itemstack.getOrCreateTag().putDouble("lubotechilun", 0);
+			{
+				final String _tagName = "lubotechilun";
+				final double _tagValue = (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("lubotechilun") + 1);
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("lubotechilun") >= 24000) {
+				{
+					final String _tagName = "lubotechilun";
+					final double _tagValue = 0;
+					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+				}
 				c = Math.round(Mth.nextInt(RandomSource.create(), 10, 20));
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component
@@ -61,15 +65,11 @@ public class QwlbtclsxProcedure {
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
 				a = 0;
-				{
-					AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-					entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
-					if (_iitemhandlerref.get() != null) {
-						for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-							ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-							if (itemstackiterator.getItem() == b.getItem()) {
-								a = a + itemstackiterator.getCount();
-							}
+				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+					for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+						ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
+						if (itemstackiterator.getItem() == b.getItem()) {
+							a = a + itemstackiterator.getCount();
 						}
 					}
 				}
@@ -82,16 +82,16 @@ public class QwlbtclsxProcedure {
 						_player.displayClientMessage(Component.literal("\u00A75\u300E\u5947\u7269\u300F\u00A7e\u9C81\u4F2F\u7279\u5E1D\u56FD\u673A\u68B0\u9F7F\u8F6E\u00A7c\u89C9\u5F97\u4F60\u62E5\u6709\u7684\u592A\u591A\u4E86"), false);
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5);
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5);
 						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5, false);
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, (float) 0.5, false);
 						}
 					}
 					itemstack.shrink(1);
 					for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 1, 2); index0++) {
 						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-									new ItemStack((ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation("pgc:lbtjxclzlp"))).getRandomElement(RandomSource.create()).orElseGet(() -> Items.AIR))));
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(
+									(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("pgc:lbtjxclzlp"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())));
 							entityToSpawn.setPickUpDelay(0);
 							_level.addFreshEntity(entityToSpawn);
 						}

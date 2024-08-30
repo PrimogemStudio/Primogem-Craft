@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:sanyueqidiaoxiang_01"
+      "id": "primogemcraft:sanyueqidiaoxiang_01"
     },
     "title": {
       "translate": "advancements.gou_gou_liao_jin_zhi_fu_du.title"

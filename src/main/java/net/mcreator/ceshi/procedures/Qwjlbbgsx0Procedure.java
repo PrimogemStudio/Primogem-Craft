@@ -1,9 +1,9 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.PlayerXpEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerXpEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -16,11 +16,11 @@ import net.mcreator.ceshi.PrimogemcraftMod;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class Qwjlbbgsx0Procedure {
 	@SubscribeEvent
 	public static void onPickupXP(PlayerXpEvent.PickupXp event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity());
 		}
 	}
@@ -34,7 +34,7 @@ public class Qwjlbbgsx0Procedure {
 			return;
 		double a = 0;
 		ItemStack b = ItemStack.EMPTY;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.QWJLBBGSX_2.get()) && !world.isClientSide()) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.QWJLBBGSX_2) && !world.isClientSide()) {
 			entity.getPersistentData().putDouble("tcptbg_0", DiaoyongjisuanjingyanzhiProcedure.execute(entity));
 			PrimogemcraftMod.queueServerWork(1, () -> {
 				entity.getPersistentData().putDouble("tcptbg_1", DiaoyongjisuanjingyanzhiProcedure.execute(entity));

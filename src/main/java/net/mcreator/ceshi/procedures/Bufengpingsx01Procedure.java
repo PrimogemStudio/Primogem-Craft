@@ -1,7 +1,5 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -16,6 +14,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
@@ -28,9 +27,9 @@ public class Bufengpingsx01Procedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == itemstack.getItem() && !entity.isShiftKeyDown()) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.riptide_2")), SoundSource.PLAYERS, (float) 0.5, Mth.nextInt(RandomSource.create(), (int) 1.5, 3));
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.trident.riptide_2")), SoundSource.PLAYERS, (float) 0.5, Mth.nextInt(RandomSource.create(), (int) 1.5, 3));
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.riptide_2")), SoundSource.PLAYERS, (float) 0.5, Mth.nextInt(RandomSource.create(), (int) 1.5, 3), false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.trident.riptide_2")), SoundSource.PLAYERS, (float) 0.5, Mth.nextInt(RandomSource.create(), (int) 1.5, 3), false);
 				}
 			}
 			entity.setDeltaMovement(new Vec3(0, 1.35, 0));

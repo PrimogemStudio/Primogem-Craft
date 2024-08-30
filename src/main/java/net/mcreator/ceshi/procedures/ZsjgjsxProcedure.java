@@ -19,7 +19,7 @@ public class ZsjgjsxProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (!world.isClientSide()) {
-			if (!(sourceentity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.GOUYU.get()))) {
+			if (!(sourceentity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.GOUYU))) {
 				if (itemstack.getItem() == PrimogemcraftModItems.ZSTJ.get()) {
 					if (Math.random() < ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQLEI.get())) : false) ? 0.075 : 0.05)) {
 						if (world instanceof ServerLevel _level) {

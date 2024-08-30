@@ -1,17 +1,19 @@
 package net.mcreator.ceshi.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.world.inventory.GUIqiwuxuanzeMenu;
 import net.mcreator.ceshi.network.GUIqiwuxuanzeButtonMessage;
-import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.HashMap;
 
@@ -41,7 +43,7 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (mouseX > leftPos + 32 && mouseX < leftPos + 48 && mouseY > topPos + 52 && mouseY < topPos + 68)
@@ -80,28 +82,46 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_xuanze0 = new ImageButton(this.leftPos + 35, this.topPos + 53, 16, 16, 0, 0, 16, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_xuanze0.png"), 16, 32, e -> {
-			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new GUIqiwuxuanzeButtonMessage(0, x, y, z));
-				GUIqiwuxuanzeButtonMessage.handleButtonAction(entity, 0, x, y, z);
+		imagebutton_xuanze0 = new ImageButton(this.leftPos + 35, this.topPos + 53, 16, 16, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/xuanze0.png"), new ResourceLocation("primogemcraft:textures/screens/xuanze1.png")),
+				e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new GUIqiwuxuanzeButtonMessage(0, x, y, z));
+						GUIqiwuxuanzeButtonMessage.handleButtonAction(entity, 0, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_xuanze0", imagebutton_xuanze0);
 		this.addRenderableWidget(imagebutton_xuanze0);
-		imagebutton_xuanze01 = new ImageButton(this.leftPos + 79, this.topPos + 53, 16, 16, 0, 0, 16, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_xuanze01.png"), 16, 32, e -> {
-			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new GUIqiwuxuanzeButtonMessage(1, x, y, z));
-				GUIqiwuxuanzeButtonMessage.handleButtonAction(entity, 1, x, y, z);
+		imagebutton_xuanze01 = new ImageButton(this.leftPos + 79, this.topPos + 53, 16, 16, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/xuanze0.png"), new ResourceLocation("primogemcraft:textures/screens/xuanze1.png")),
+				e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new GUIqiwuxuanzeButtonMessage(1, x, y, z));
+						GUIqiwuxuanzeButtonMessage.handleButtonAction(entity, 1, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_xuanze01", imagebutton_xuanze01);
 		this.addRenderableWidget(imagebutton_xuanze01);
-		imagebutton_xuanze02 = new ImageButton(this.leftPos + 124, this.topPos + 53, 16, 16, 0, 0, 16, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_xuanze02.png"), 16, 32, e -> {
-			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new GUIqiwuxuanzeButtonMessage(2, x, y, z));
-				GUIqiwuxuanzeButtonMessage.handleButtonAction(entity, 2, x, y, z);
+		imagebutton_xuanze02 = new ImageButton(this.leftPos + 124, this.topPos + 53, 16, 16, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/xuanze0.png"), new ResourceLocation("primogemcraft:textures/screens/xuanze1.png")),
+				e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new GUIqiwuxuanzeButtonMessage(2, x, y, z));
+						GUIqiwuxuanzeButtonMessage.handleButtonAction(entity, 2, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_xuanze02", imagebutton_xuanze02);
 		this.addRenderableWidget(imagebutton_xuanze02);
 	}

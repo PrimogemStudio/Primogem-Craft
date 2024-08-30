@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:yuanshigao"
+      "id": "primogemcraft:yuanshigao"
     },
     "title": {
       "translate": "advancements.jdyszb.title"

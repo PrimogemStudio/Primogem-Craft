@@ -8,7 +8,7 @@ import net.minecraft.world.food.FoodProperties;
 
 public class YuanshifItem extends Item {
 	public YuanshifItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0.1f).build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0.1f).build()));
 	}
 
 	@Override

@@ -1,41 +1,53 @@
 
 package net.mcreator.ceshi.item;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.DiggerItem;
+import net.minecraft.tags.TagKey;
+import net.minecraft.tags.BlockTags;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 public class MmolagaoItem extends PickaxeItem {
+	private static final Tier TOOL_TIER = new Tier() {
+		@Override
+		public int getUses() {
+			return 560;
+		}
+
+		@Override
+		public float getSpeed() {
+			return 7f;
+		}
+
+		@Override
+		public float getAttackDamageBonus() {
+			return 0;
+		}
+
+		@Override
+		public TagKey<Block> getIncorrectBlocksForDrops() {
+			return BlockTags.INCORRECT_FOR_IRON_TOOL;
+		}
+
+		@Override
+		public int getEnchantmentValue() {
+			return 20;
+		}
+
+		@Override
+		public Ingredient getRepairIngredient() {
+			return Ingredient.of(new ItemStack(PrimogemcraftModItems.MMOLA_01.get()));
+		}
+	};
+
 	public MmolagaoItem() {
-		super(new Tier() {
-			public int getUses() {
-				return 560;
-			}
-
-			public float getSpeed() {
-				return 7f;
-			}
-
-			public float getAttackDamageBonus() {
-				return 2.5f;
-			}
-
-			public int getLevel() {
-				return 2;
-			}
-
-			public int getEnchantmentValue() {
-				return 20;
-			}
-
-			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(PrimogemcraftModItems.MMOLA_01.get()));
-			}
-		}, 1, -2.8f, new Item.Properties());
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 3.5f, -2.8f)));
 	}
 
 	@Override

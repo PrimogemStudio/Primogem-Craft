@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:zzjs"
+      "id": "primogemcraft:zzjs"
     },
     "title": {
       "translate": "advancements.jdtwtylc.title"

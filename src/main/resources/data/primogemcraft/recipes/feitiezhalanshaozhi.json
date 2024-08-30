@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "primogemcraft:cshixiutiezhalan"
   },
-  "result": "minecraft:iron_nugget"
+  "result": {
+    "id": "minecraft:iron_nugget"
+  }
 }

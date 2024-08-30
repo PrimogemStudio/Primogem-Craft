@@ -13,17 +13,12 @@ import net.minecraft.core.BlockPos;
 
 public class YiyishijiemubanlouqiBlock extends StairBlock {
 	public YiyishijiemubanlouqiBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 10f));
+		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 10f));
 	}
 
 	@Override
 	public float getExplosionResistance() {
 		return 10f;
-	}
-
-	@Override
-	public boolean isRandomlyTicking(BlockState state) {
-		return false;
 	}
 
 	@Override

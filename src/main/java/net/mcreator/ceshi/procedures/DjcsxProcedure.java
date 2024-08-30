@@ -1,7 +1,5 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -13,6 +11,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 public class DjcsxProcedure {
@@ -22,19 +21,19 @@ public class DjcsxProcedure {
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:dirt"))) && (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.AIR) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.hoe.till")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.hoe.till")), SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.hoe.till")), SoundSource.NEUTRAL, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.hoe.till")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.COARSE_DIRT) {
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.DIRT.defaultBlockState(), 3);
 				{
 					ItemStack _ist = itemstack;
-					if (_ist.hurt(1, RandomSource.create(), null)) {
+					_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
-					}
+					});
 				}
 				if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
 					if (entity instanceof LivingEntity _entity)
@@ -48,10 +47,10 @@ public class DjcsxProcedure {
 					world.setBlock(BlockPos.containing(x, y, z), Blocks.FARMLAND.defaultBlockState(), 3);
 					{
 						ItemStack _ist = itemstack;
-						if (_ist.hurt(1, RandomSource.create(), null)) {
+						_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
 							_ist.shrink(1);
 							_ist.setDamageValue(0);
-						}
+						});
 					}
 					if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
 						if (entity instanceof LivingEntity _entity)

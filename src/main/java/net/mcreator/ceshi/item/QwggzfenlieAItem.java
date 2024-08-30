@@ -1,6 +1,9 @@
 
 package net.mcreator.ceshi.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
@@ -21,8 +24,9 @@ public class QwggzfenlieAItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal("\u00A76\u624B\u6301\u53F3\u952E\u652F\u4ED8\u00A7b1395\u00A76\u7ECF\u9A8C\u503C[\u00A7b30\u7ECF\u9A8C\u7B49\u7EA7\u00A76]"));
 		list.add(Component.literal("\u00A76\u4EE5\u89E3\u9664\u8D1F\u9762\u6548\u679C\uFF01"));
 		list.add(Component.literal("\u00A77\u653B\u51FB\u6700\u5927\u751F\u547D\u503C\u5C0F\u6216\u7B49\u4E8E\u81EA\u8EAB\u6700\u5927\u751F\u547D\u503C"));

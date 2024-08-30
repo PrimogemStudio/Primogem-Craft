@@ -17,7 +17,7 @@ public class XiantiaoqiangjixuxiaoguoProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.GONGJITISHENG.get(), 5999, 0));
+			_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.GONGJITISHENG, 5999, 0));
 		if (!(new Object() {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayer _serverPlayer) {

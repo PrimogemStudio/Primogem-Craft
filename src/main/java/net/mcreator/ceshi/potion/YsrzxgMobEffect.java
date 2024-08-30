@@ -1,7 +1,7 @@
 
 package net.mcreator.ceshi.potion;
 
-import net.minecraftforge.client.extensions.common.IClientMobEffectExtensions;
+import net.neoforged.neoforge.client.extensions.common.IClientMobEffectExtensions;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -12,23 +12,26 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.procedures.YsrzxgcsxProcedure;
 
+import java.util.function.Consumer;
+
 public class YsrzxgMobEffect extends MobEffect {
 	public YsrzxgMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		YsrzxgcsxProcedure.execute(entity);
-	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
 		return true;
 	}
 
 	@Override
-	public void initializeClient(java.util.function.Consumer<IClientMobEffectExtensions> consumer) {
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
+		YsrzxgcsxProcedure.execute(entity);
+		return super.applyEffectTick(entity, amplifier);
+	}
+
+	@Override
+	public void initializeClient(Consumer<IClientMobEffectExtensions> consumer) {
 		consumer.accept(new IClientMobEffectExtensions() {
 			@Override
 			public boolean isVisibleInInventory(MobEffectInstance effect) {

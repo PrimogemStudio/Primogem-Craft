@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:ffanrongdezhexue"
+      "id": "primogemcraft:ffanrongdezhexue"
     },
     "title": {
       "translate": "advancements.ffanrongjindu_1.title"

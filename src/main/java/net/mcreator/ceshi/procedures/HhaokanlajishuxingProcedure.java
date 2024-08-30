@@ -17,9 +17,9 @@ public class HhaokanlajishuxingProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1200, 1));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 10, 1));
-		if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PrimogemcraftModMobEffects.LETOUDECHENGFA.get())) {
+		if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PrimogemcraftModMobEffects.LETOUDECHENGFA)) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(PrimogemcraftModMobEffects.LETOUDECHENGFA.get());
+				_entity.removeEffect(PrimogemcraftModMobEffects.LETOUDECHENGFA);
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(Items.MILK_BUCKET, 1);
 		}

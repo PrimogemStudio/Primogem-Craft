@@ -1,17 +1,19 @@
 package net.mcreator.ceshi.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.world.inventory.HeitayindaoyongguiMenu;
 import net.mcreator.ceshi.network.HeitayindaoyongguiButtonMessage;
-import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.HashMap;
 
@@ -41,7 +43,7 @@ public class HeitayindaoyongguiScreen extends AbstractContainerScreen<Heitayinda
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -76,28 +78,46 @@ public class HeitayindaoyongguiScreen extends AbstractContainerScreen<Heitayinda
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_heitaanniu = new ImageButton(this.leftPos + 96, this.topPos + 34, 56, 20, 0, 0, 20, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_heitaanniu.png"), 56, 40, e -> {
-			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new HeitayindaoyongguiButtonMessage(0, x, y, z));
-				HeitayindaoyongguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+		imagebutton_heitaanniu = new ImageButton(this.leftPos + 96, this.topPos + 34, 56, 20,
+				new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png"), new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new HeitayindaoyongguiButtonMessage(0, x, y, z));
+						HeitayindaoyongguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_heitaanniu", imagebutton_heitaanniu);
 		this.addRenderableWidget(imagebutton_heitaanniu);
-		imagebutton_heitaanniu1 = new ImageButton(this.leftPos + 96, this.topPos + 79, 56, 20, 0, 0, 20, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_heitaanniu1.png"), 56, 40, e -> {
-			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new HeitayindaoyongguiButtonMessage(1, x, y, z));
-				HeitayindaoyongguiButtonMessage.handleButtonAction(entity, 1, x, y, z);
+		imagebutton_heitaanniu1 = new ImageButton(this.leftPos + 96, this.topPos + 79, 56, 20,
+				new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png"), new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new HeitayindaoyongguiButtonMessage(1, x, y, z));
+						HeitayindaoyongguiButtonMessage.handleButtonAction(entity, 1, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_heitaanniu1", imagebutton_heitaanniu1);
 		this.addRenderableWidget(imagebutton_heitaanniu1);
-		imagebutton_heitaanniu2 = new ImageButton(this.leftPos + 96, this.topPos + 124, 56, 20, 0, 0, 20, new ResourceLocation("primogemcraft:textures/screens/atlas/imagebutton_heitaanniu2.png"), 56, 40, e -> {
-			if (true) {
-				PrimogemcraftMod.PACKET_HANDLER.sendToServer(new HeitayindaoyongguiButtonMessage(2, x, y, z));
-				HeitayindaoyongguiButtonMessage.handleButtonAction(entity, 2, x, y, z);
+		imagebutton_heitaanniu2 = new ImageButton(this.leftPos + 96, this.topPos + 124, 56, 20,
+				new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png"), new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new HeitayindaoyongguiButtonMessage(2, x, y, z));
+						HeitayindaoyongguiButtonMessage.handleButtonAction(entity, 2, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_heitaanniu2", imagebutton_heitaanniu2);
 		this.addRenderableWidget(imagebutton_heitaanniu2);
 	}

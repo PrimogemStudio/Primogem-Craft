@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "primogemcraft:zhongkouweitieding"
   },
-  "result": "primogemcraft:lajitongzunyan"
+  "result": {
+    "id": "primogemcraft:lajitongzunyan"
+  }
 }

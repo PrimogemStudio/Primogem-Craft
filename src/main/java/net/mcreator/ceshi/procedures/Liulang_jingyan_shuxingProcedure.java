@@ -1,12 +1,14 @@
 package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.component.DataComponents;
 
 public class Liulang_jingyan_shuxingProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
@@ -34,7 +36,11 @@ public class Liulang_jingyan_shuxingProcedure {
 						YouhuayoujianfangfangzhiProcedure.execute();
 					}
 					itemstack.setDamageValue((int) (itemstack.getMaxDamage() - itemstack.getDamageValue() + (itemstack.getMaxDamage() - 1) - (itemstack.getMaxDamage() - itemstack.getDamageValue())));
-					itemstack.getOrCreateTag().putDouble("naijiu_xianzhi", (itemstack.getMaxDamage() - itemstack.getDamageValue()));
+					{
+						final String _tagName = "naijiu_xianzhi";
+						final double _tagValue = (itemstack.getMaxDamage() - itemstack.getDamageValue());
+						CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+					}
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
 				}
@@ -45,7 +51,11 @@ public class Liulang_jingyan_shuxingProcedure {
 						if (entity instanceof Player _player)
 							_player.giveExperiencePoints(-(itemstack.getDamageValue()));
 						itemstack.setDamageValue((int) ((itemstack.getMaxDamage() - jingyan) - (itemstack.getMaxDamage() - itemstack.getDamageValue())));
-						itemstack.getOrCreateTag().putDouble("naijiu_xianzhi", (itemstack.getMaxDamage() - itemstack.getDamageValue()));
+						{
+							final String _tagName = "naijiu_xianzhi";
+							final double _tagValue = (itemstack.getMaxDamage() - itemstack.getDamageValue());
+							CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+						}
 						if (entity instanceof Player _player)
 							_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
 						jingyan = 0;

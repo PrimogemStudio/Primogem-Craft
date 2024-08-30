@@ -1,32 +1,34 @@
 package net.mcreator.ceshi.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
-
-import java.util.Map;
+import net.minecraft.core.component.DataComponents;
 
 public class GongzhuxinghuacaidanchufaProcedure {
-	public static void execute(Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (entity.isShiftKeyDown()) {
-			if (itemstack.getOrCreateTag().getBoolean("yanhuaxiaocaidan")) {
-				itemstack.getOrCreateTag().putBoolean("yanhuaxiaocaidan", false);
+			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("yanhuaxiaocaidan")) {
 				{
-					Map<Enchantment, Integer> _enchantments = EnchantmentHelper.getEnchantments(itemstack);
-					if (_enchantments.containsKey(Enchantments.FLAMING_ARROWS)) {
-						_enchantments.remove(Enchantments.FLAMING_ARROWS);
-						EnchantmentHelper.setEnchantments(_enchantments, itemstack);
-					}
+					final String _tagName = "yanhuaxiaocaidan";
+					final boolean _tagValue = false;
+					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
 				}
+				EnchantmentHelper.updateEnchantments(itemstack, mutableEnchantments -> mutableEnchantments.removeIf(enchantment -> enchantment.value() == Enchantments.FLAME));
 			} else {
-				itemstack.getOrCreateTag().putBoolean("yanhuaxiaocaidan", true);
-				itemstack.enchant(Enchantments.FLAMING_ARROWS, 1);
+				{
+					final String _tagName = "yanhuaxiaocaidan";
+					final boolean _tagValue = true;
+					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
+				}
+				itemstack.enchant(Enchantments.FLAME, 1);
 			}
 			if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
 				if (entity instanceof LivingEntity _entity)

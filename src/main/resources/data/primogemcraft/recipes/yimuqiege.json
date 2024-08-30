@@ -4,5 +4,7 @@
   "ingredient": {
     "item": "primogemcraft:yishijieyuanmumuban"
   },
-  "result": "primogemcraft:yishijiemuban_planks"
+  "result": {
+    "id": "primogemcraft:yishijiemuban_planks"
+  }
 }

@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "primogemcraft:jianshijingban"
   },
-  "result": "primogemcraft:jlmo"
+  "result": {
+    "id": "primogemcraft:jlmo"
+  }
 }

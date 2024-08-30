@@ -28,8 +28,15 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.ceshi.procedures.MoladuixianzhiProcedure;
 import net.mcreator.ceshi.block.entity.Moladui02BlockEntity;
 
+import com.mojang.serialization.MapCodec;
+
 public class Moladui02Block extends FallingBlock implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final MapCodec<Moladui02Block> CODEC = simpleCodec(properties -> new Moladui02Block());
+
+	public MapCodec<Moladui02Block> codec() {
+		return CODEC;
+	}
 
 	public Moladui02Block() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.CHAIN).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));

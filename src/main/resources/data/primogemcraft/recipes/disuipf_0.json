@@ -4,5 +4,7 @@
   "ingredient": {
     "item": "primogemcraft:disuishuijingti"
   },
-  "result": "primogemcraft:disui"
+  "result": {
+    "id": "primogemcraft:disui"
+  }
 }

@@ -4,12 +4,12 @@
  */
 package net.mcreator.ceshi.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.common.extensions.IForgeMenuType;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
 
 import net.minecraft.world.inventory.MenuType;
+import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ceshi.world.inventory.ZhangquanzhezhinangguiMenu;
 import net.mcreator.ceshi.world.inventory.YinhangMenu;
@@ -35,26 +35,26 @@ import net.mcreator.ceshi.world.inventory.BwdyinhangMenu;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
 public class PrimogemcraftModMenus {
-	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, PrimogemcraftMod.MODID);
-	public static final RegistryObject<MenuType<CeshiguiMenu>> CESHIGUI = REGISTRY.register("ceshigui", () -> IForgeMenuType.create(CeshiguiMenu::new));
-	public static final RegistryObject<MenuType<GanjinglajitongMenu>> GANJINGLAJITONG = REGISTRY.register("ganjinglajitong", () -> IForgeMenuType.create(GanjinglajitongMenu::new));
-	public static final RegistryObject<MenuType<MolalajitongMenu>> MOLALAJITONG = REGISTRY.register("molalajitong", () -> IForgeMenuType.create(MolalajitongMenu::new));
-	public static final RegistryObject<MenuType<LiulangzhezhinangguiMenu>> LIULANGZHEZHINANGGUI = REGISTRY.register("liulangzhezhinanggui", () -> IForgeMenuType.create(LiulangzhezhinangguiMenu::new));
-	public static final RegistryObject<MenuType<MaoxianjiazhinangguiMenu>> MAOXIANJIAZHINANGGUI = REGISTRY.register("maoxianjiazhinanggui", () -> IForgeMenuType.create(MaoxianjiazhinangguiMenu::new));
-	public static final RegistryObject<MenuType<ZhangquanzhezhinangguiMenu>> ZHANGQUANZHEZHINANGGUI = REGISTRY.register("zhangquanzhezhinanggui", () -> IForgeMenuType.create(ZhangquanzhezhinangguiMenu::new));
-	public static final RegistryObject<MenuType<YibangrenzhinangguiMenu>> YIBANGRENZHINANGGUI = REGISTRY.register("yibangrenzhinanggui", () -> IForgeMenuType.create(YibangrenzhinangguiMenu::new));
-	public static final RegistryObject<MenuType<CeshishijianxuanzejiemianMenu>> CESHISHIJIANXUANZEJIEMIAN = REGISTRY.register("ceshishijianxuanzejiemian", () -> IForgeMenuType.create(CeshishijianxuanzejiemianMenu::new));
-	public static final RegistryObject<MenuType<SuijiqiwuMenu>> SUIJIQIWU = REGISTRY.register("suijiqiwu", () -> IForgeMenuType.create(SuijiqiwuMenu::new));
-	public static final RegistryObject<MenuType<CeshifumoguiMenu>> CESHIFUMOGUI = REGISTRY.register("ceshifumogui", () -> IForgeMenuType.create(CeshifumoguiMenu::new));
-	public static final RegistryObject<MenuType<HeitayindaoyongguiMenu>> HEITAYINDAOYONGGUI = REGISTRY.register("heitayindaoyonggui", () -> IForgeMenuType.create(HeitayindaoyongguiMenu::new));
-	public static final RegistryObject<MenuType<GUImoladuiMenu>> GU_IMOLADUI = REGISTRY.register("gu_imoladui", () -> IForgeMenuType.create(GUImoladuiMenu::new));
-	public static final RegistryObject<MenuType<YinhangMenu>> YINHANG = REGISTRY.register("yinhang", () -> IForgeMenuType.create(YinhangMenu::new));
-	public static final RegistryObject<MenuType<BwdyinhangMenu>> BWDYINHANG = REGISTRY.register("bwdyinhang", () -> IForgeMenuType.create(BwdyinhangMenu::new));
-	public static final RegistryObject<MenuType<CunzheshezhiMenu>> CUNZHESHEZHI = REGISTRY.register("cunzheshezhi", () -> IForgeMenuType.create(CunzheshezhiMenu::new));
-	public static final RegistryObject<MenuType<TaozhuangchakanMenu>> TAOZHUANGCHAKAN = REGISTRY.register("taozhuangchakan", () -> IForgeMenuType.create(TaozhuangchakanMenu::new));
-	public static final RegistryObject<MenuType<GUIqiwuxuanzeMenu>> GU_IQIWUXUANZE = REGISTRY.register("gu_iqiwuxuanze", () -> IForgeMenuType.create(GUIqiwuxuanzeMenu::new));
-	public static final RegistryObject<MenuType<GuiheitaxinyindaoMenu>> GUIHEITAXINYINDAO = REGISTRY.register("guiheitaxinyindao", () -> IForgeMenuType.create(GuiheitaxinyindaoMenu::new));
-	public static final RegistryObject<MenuType<GUISJfumoMenu>> GUIS_JFUMO = REGISTRY.register("guis_jfumo", () -> IForgeMenuType.create(GUISJfumoMenu::new));
-	public static final RegistryObject<MenuType<SJGUIfumo00Menu>> SJGU_IFUMO_00 = REGISTRY.register("sjgu_ifumo_00", () -> IForgeMenuType.create(SJGUIfumo00Menu::new));
-	public static final RegistryObject<MenuType<SJGUIfumo01Menu>> SJGU_IFUMO_01 = REGISTRY.register("sjgu_ifumo_01", () -> IForgeMenuType.create(SJGUIfumo01Menu::new));
+	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, PrimogemcraftMod.MODID);
+	public static final DeferredHolder<MenuType<?>, MenuType<CeshiguiMenu>> CESHIGUI = REGISTRY.register("ceshigui", () -> IMenuTypeExtension.create(CeshiguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GanjinglajitongMenu>> GANJINGLAJITONG = REGISTRY.register("ganjinglajitong", () -> IMenuTypeExtension.create(GanjinglajitongMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<MolalajitongMenu>> MOLALAJITONG = REGISTRY.register("molalajitong", () -> IMenuTypeExtension.create(MolalajitongMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<LiulangzhezhinangguiMenu>> LIULANGZHEZHINANGGUI = REGISTRY.register("liulangzhezhinanggui", () -> IMenuTypeExtension.create(LiulangzhezhinangguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<MaoxianjiazhinangguiMenu>> MAOXIANJIAZHINANGGUI = REGISTRY.register("maoxianjiazhinanggui", () -> IMenuTypeExtension.create(MaoxianjiazhinangguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<ZhangquanzhezhinangguiMenu>> ZHANGQUANZHEZHINANGGUI = REGISTRY.register("zhangquanzhezhinanggui", () -> IMenuTypeExtension.create(ZhangquanzhezhinangguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<YibangrenzhinangguiMenu>> YIBANGRENZHINANGGUI = REGISTRY.register("yibangrenzhinanggui", () -> IMenuTypeExtension.create(YibangrenzhinangguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CeshishijianxuanzejiemianMenu>> CESHISHIJIANXUANZEJIEMIAN = REGISTRY.register("ceshishijianxuanzejiemian", () -> IMenuTypeExtension.create(CeshishijianxuanzejiemianMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SuijiqiwuMenu>> SUIJIQIWU = REGISTRY.register("suijiqiwu", () -> IMenuTypeExtension.create(SuijiqiwuMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CeshifumoguiMenu>> CESHIFUMOGUI = REGISTRY.register("ceshifumogui", () -> IMenuTypeExtension.create(CeshifumoguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<HeitayindaoyongguiMenu>> HEITAYINDAOYONGGUI = REGISTRY.register("heitayindaoyonggui", () -> IMenuTypeExtension.create(HeitayindaoyongguiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GUImoladuiMenu>> GU_IMOLADUI = REGISTRY.register("gu_imoladui", () -> IMenuTypeExtension.create(GUImoladuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<YinhangMenu>> YINHANG = REGISTRY.register("yinhang", () -> IMenuTypeExtension.create(YinhangMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<BwdyinhangMenu>> BWDYINHANG = REGISTRY.register("bwdyinhang", () -> IMenuTypeExtension.create(BwdyinhangMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CunzheshezhiMenu>> CUNZHESHEZHI = REGISTRY.register("cunzheshezhi", () -> IMenuTypeExtension.create(CunzheshezhiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<TaozhuangchakanMenu>> TAOZHUANGCHAKAN = REGISTRY.register("taozhuangchakan", () -> IMenuTypeExtension.create(TaozhuangchakanMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GUIqiwuxuanzeMenu>> GU_IQIWUXUANZE = REGISTRY.register("gu_iqiwuxuanze", () -> IMenuTypeExtension.create(GUIqiwuxuanzeMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GuiheitaxinyindaoMenu>> GUIHEITAXINYINDAO = REGISTRY.register("guiheitaxinyindao", () -> IMenuTypeExtension.create(GuiheitaxinyindaoMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GUISJfumoMenu>> GUIS_JFUMO = REGISTRY.register("guis_jfumo", () -> IMenuTypeExtension.create(GUISJfumoMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SJGUIfumo00Menu>> SJGU_IFUMO_00 = REGISTRY.register("sjgu_ifumo_00", () -> IMenuTypeExtension.create(SJGUIfumo00Menu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SJGUIfumo01Menu>> SJGU_IFUMO_01 = REGISTRY.register("sjgu_ifumo_01", () -> IMenuTypeExtension.create(SJGUIfumo01Menu::new));
 }

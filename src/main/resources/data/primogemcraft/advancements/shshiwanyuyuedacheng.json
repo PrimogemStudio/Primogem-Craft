@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:xixiangyuzhiyuan"
+      "id": "primogemcraft:xixiangyuzhiyuan"
     },
     "title": {
       "translate": "advancements.shshiwanyuyuedacheng.title"

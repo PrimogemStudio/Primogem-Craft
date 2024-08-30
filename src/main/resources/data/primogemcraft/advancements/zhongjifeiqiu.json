@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:feiqiupingzheng"
+      "id": "primogemcraft:feiqiupingzheng"
     },
     "title": {
       "translate": "advancements.zhongjifeiqiu.title"

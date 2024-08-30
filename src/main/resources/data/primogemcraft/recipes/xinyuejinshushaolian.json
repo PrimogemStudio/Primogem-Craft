@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "primogemcraft:cukuangkongyue"
   },
-  "result": "primogemcraft:xinyuejinshu"
+  "result": {
+    "id": "primogemcraft:xinyuejinshu"
+  }
 }

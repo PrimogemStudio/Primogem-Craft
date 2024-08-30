@@ -26,7 +26,7 @@ public class Jijishengdefennu01Procedure {
 		} else {
 			if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 12) {
 				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(PrimogemcraftModMobEffects.JIJISHENGCHONGDEFENNU.get());
+					_entity.removeEffect(PrimogemcraftModMobEffects.JIJISHENGCHONGDEFENNU);
 			}
 		}
 	}

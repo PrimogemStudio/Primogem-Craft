@@ -7,7 +7,7 @@
     }
   ],
   "result": {
-    "item": "minecraft:netherite_scrap",
+    "id": "minecraft:netherite_scrap",
     "count": 1
   }
 }

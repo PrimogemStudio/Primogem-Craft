@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:sh_jwupin"
+      "id": "primogemcraft:sh_jwupin"
     },
     "title": {
       "translate": "advancements.jdshijian_0.title"

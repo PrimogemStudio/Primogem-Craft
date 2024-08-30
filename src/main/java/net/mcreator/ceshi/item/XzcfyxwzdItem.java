@@ -1,6 +1,9 @@
 
 package net.mcreator.ceshi.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
@@ -26,8 +29,9 @@ public class XzcfyxwzdItem extends ShieldItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal("\u00A77\u66F4\u534E\u4E3D\u7684\u5783\u573E\u6876\u76D6\u7F62\u4E86\uFF01"));
 		list.add(Component.literal(""));
 		list.add(Component.literal("\u00A76 \u2022 \u6297\u6027\u63D0\u5347"));
@@ -40,6 +44,6 @@ public class XzcfyxwzdItem extends ShieldItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		Ljtg3sxProcedure.execute(entity, itemstack);
+		Ljtg3sxProcedure.execute(world, entity, itemstack);
 	}
 }

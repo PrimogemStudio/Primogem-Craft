@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:yingjicunchunang"
+      "id": "primogemcraft:yingjicunchunang"
     },
     "title": {
       "translate": "advancements.shenjinqukk.title"

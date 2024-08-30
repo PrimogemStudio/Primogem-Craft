@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:qinlaodezhexue"
+      "id": "primogemcraft:qinlaodezhexue"
     },
     "title": {
       "translate": "advancements.qinlaodezhexuejindu.title"

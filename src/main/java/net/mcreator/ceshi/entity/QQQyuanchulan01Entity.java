@@ -1,12 +1,12 @@
 
 package net.mcreator.ceshi.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
+import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.common.NeoForgeMod;
 
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -15,7 +15,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.PathfinderMob;
-import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
@@ -28,35 +27,22 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
-import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
-import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.ceshi.procedures.Qiyuanshiti_chushengxiaoguoProcedure;
 import net.mcreator.ceshi.procedures.QQQyuanchulantiaoshiProcedure;
-import net.mcreator.ceshi.init.PrimogemcraftModEntities;
 
 import javax.annotation.Nullable;
 
 public class QQQyuanchulan01Entity extends PathfinderMob {
-	public QQQyuanchulan01Entity(PlayMessages.SpawnEntity packet, Level world) {
-		this(PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get(), world);
-	}
-
 	public QQQyuanchulan01Entity(EntityType<QQQyuanchulan01Entity> type, Level world) {
 		super(type, world);
-		setMaxUpStep(0.6f);
 		xpReward = 1;
 		setNoAi(false);
 		setCustomName(Component.literal("右键出蓝"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
-	}
-
-	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
-		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
 	@Override
@@ -66,28 +52,23 @@ public class QQQyuanchulan01Entity extends PathfinderMob {
 	}
 
 	@Override
-	public MobType getMobType() {
-		return MobType.UNDEFINED;
-	}
-
-	@Override
 	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
 		return false;
 	}
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:choukatiaoguo.1"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:choukatiaoguo.1"));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:wu_sheng"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:wu_sheng"));
+		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
 	}
 
 	@Override
@@ -98,7 +79,7 @@ public class QQQyuanchulan01Entity extends PathfinderMob {
 			return false;
 		if (damagesource.getDirectEntity() instanceof Player)
 			return false;
-		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud)
+		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
 			return false;
 		if (damagesource.is(DamageTypes.FALL))
 			return false;
@@ -120,7 +101,7 @@ public class QQQyuanchulan01Entity extends PathfinderMob {
 	}
 
 	@Override
-	public boolean ignoreExplosion() {
+	public boolean ignoreExplosion(Explosion explosion) {
 		return true;
 	}
 
@@ -130,8 +111,8 @@ public class QQQyuanchulan01Entity extends PathfinderMob {
 	}
 
 	@Override
-	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
-		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
 		Qiyuanshiti_chushengxiaoguoProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
 	}
@@ -151,7 +132,7 @@ public class QQQyuanchulan01Entity extends PathfinderMob {
 		return retval;
 	}
 
-	public static void init() {
+	public static void init(SpawnPlacementRegisterEvent event) {
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -161,6 +142,7 @@ public class QQQyuanchulan01Entity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 1);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 1);
+		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
 		return builder;

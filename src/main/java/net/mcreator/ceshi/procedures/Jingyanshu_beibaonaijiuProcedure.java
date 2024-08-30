@@ -2,12 +2,14 @@ package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
@@ -16,7 +18,7 @@ public class Jingyanshu_beibaonaijiuProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (!itemstack.getOrCreateTag().getBoolean("jingyanshu_naijiu")) {
+		if (!itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("jingyanshu_naijiu")) {
 			if (!(new Object() {
 				public boolean checkGamemode(Entity _ent) {
 					if (_ent instanceof ServerPlayer _serverPlayer) {
@@ -30,8 +32,16 @@ public class Jingyanshu_beibaonaijiuProcedure {
 			}.checkGamemode(entity))) {
 				itemstack.setDamageValue((int) (itemstack.getMaxDamage() - 1));
 			}
-			itemstack.getOrCreateTag().putDouble("naijiu_xianzhi", (itemstack.getMaxDamage() - itemstack.getDamageValue()));
-			itemstack.getOrCreateTag().putBoolean("jingyanshu_naijiu", true);
+			{
+				final String _tagName = "naijiu_xianzhi";
+				final double _tagValue = (itemstack.getMaxDamage() - itemstack.getDamageValue());
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			{
+				final String _tagName = "jingyanshu_naijiu";
+				final boolean _tagValue = true;
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
+			}
 		}
 		if (itemstack.isEnchanted()) {
 			if (itemstack.getItem() == PrimogemcraftModItems.LIULANGZHEDEJINGYAN.get()) {
@@ -68,8 +78,8 @@ public class Jingyanshu_beibaonaijiuProcedure {
 				}
 			}
 		}
-		if (itemstack.getMaxDamage() - itemstack.getDamageValue() != itemstack.getOrCreateTag().getDouble("naijiu_xianzhi")) {
-			itemstack.setDamageValue((int) (itemstack.getMaxDamage() - itemstack.getOrCreateTag().getDouble("naijiu_xianzhi")));
+		if (itemstack.getMaxDamage() - itemstack.getDamageValue() != itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("naijiu_xianzhi")) {
+			itemstack.setDamageValue((int) (itemstack.getMaxDamage() - itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("naijiu_xianzhi")));
 		}
 	}
 }

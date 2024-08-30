@@ -1,11 +1,10 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.ItemHandlerHelper;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
@@ -24,11 +23,12 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.ceshi.network.PrimogemcraftModVariables;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
@@ -36,7 +36,7 @@ import net.mcreator.ceshi.init.PrimogemcraftModEntities;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class DadaletoushibiezhuangtaiProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
@@ -52,17 +52,18 @@ public class DadaletoushibiezhuangtaiProcedure {
 			return;
 		if (!world.isClientSide()) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == PrimogemcraftModItems.YIYINHEDALETOU.get()) {
-				if (entity instanceof ServerPlayer _plr3 && _plr3.level() instanceof ServerLevel
-						&& _plr3.getAdvancements().getOrStartProgress(_plr3.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"))).isDone()) {
+				if (entity instanceof ServerPlayer _plr3 && _plr3.level() instanceof ServerLevel && _plr3.getAdvancements().getOrStartProgress(_plr3.server.getAdvancements().get(new ResourceLocation("primogemcraft:lletouderenke"))).isDone()) {
 					if (Math.random() < 0.8) {
 						if (Math.random() < 0.006 && !(entity instanceof ServerPlayer _plr4 && _plr4.level() instanceof ServerLevel
-								&& _plr4.getAdvancements().getOrStartProgress(_plr4.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:nibaodimeila"))).isDone())) {
+								&& _plr4.getAdvancements().getOrStartProgress(_plr4.server.getAdvancements().get(new ResourceLocation("primogemcraft:nibaodimeila"))).isDone())) {
 							if (entity instanceof ServerPlayer _player) {
-								Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:nibaodimeila"));
-								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-								if (!_ap.isDone()) {
-									for (String criteria : _ap.getRemainingCriteria())
-										_player.getAdvancements().award(_adv, criteria);
+								AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:nibaodimeila"));
+								if (_adv != null) {
+									AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+									if (!_ap.isDone()) {
+										for (String criteria : _ap.getRemainingCriteria())
+											_player.getAdvancements().award(_adv, criteria);
+									}
 								}
 							}
 							if (entity instanceof Player _player) {
@@ -80,9 +81,9 @@ public class DadaletoushibiezhuangtaiProcedure {
 								}
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
+										_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
 									} else {
-										_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
+										_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
 									}
 								}
 								if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -91,14 +92,13 @@ public class DadaletoushibiezhuangtaiProcedure {
 								if (Math.random() < 0.5) {
 									if (world instanceof Level _level) {
 										if (!_level.isClientSide()) {
-											_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.launch")), SoundSource.PLAYERS, 1,
-													1);
+											_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.firework_rocket.launch")), SoundSource.PLAYERS, 1, 1);
 										} else {
-											_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.launch")), SoundSource.PLAYERS, 1, 1, false);
+											_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.firework_rocket.launch")), SoundSource.PLAYERS, 1, 1, false);
 										}
 									}
 									if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.FEIQIUPINGZHENG.get())) : false) || entity instanceof ServerPlayer _plr21
-											&& _plr21.level() instanceof ServerLevel && _plr21.getAdvancements().getOrStartProgress(_plr21.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"))).isDone()) {
+											&& _plr21.level() instanceof ServerLevel && _plr21.getAdvancements().getOrStartProgress(_plr21.server.getAdvancements().get(new ResourceLocation("primogemcraft:lletouderenke"))).isDone()) {
 										if (world instanceof ServerLevel _level)
 											_level.getServer().getCommands().performPrefixedCommand(
 													new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
@@ -117,7 +117,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 									}
 								} else {
 									if (Math.random() < 0.01 && !(entity instanceof ServerPlayer _plr32 && _plr32.level() instanceof ServerLevel
-											&& _plr32.getAdvancements().getOrStartProgress(_plr32.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:zhongjifeiqiu"))).isDone())) {
+											&& _plr32.getAdvancements().getOrStartProgress(_plr32.server.getAdvancements().get(new ResourceLocation("primogemcraft:zhongjifeiqiu"))).isDone())) {
 										if (entity instanceof Player _player) {
 											ItemStack _setstack = new ItemStack(PrimogemcraftModItems.FEIQIUPINGZHENG.get()).copy();
 											_setstack.setCount(1);
@@ -126,9 +126,9 @@ public class DadaletoushibiezhuangtaiProcedure {
 									} else {
 										if (world instanceof Level _level) {
 											if (!_level.isClientSide()) {
-												_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 7, 1);
+												_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 7, 1);
 											} else {
-												_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 7, 1, false);
+												_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 7, 1, false);
 											}
 										}
 										if (entity instanceof LivingEntity _entity)
@@ -153,21 +153,21 @@ public class DadaletoushibiezhuangtaiProcedure {
 										if (entity instanceof Player _player && !_player.level().isClientSide())
 											_player.displayClientMessage(Component.literal("\u00A7b\u300E\u5947\u7269\u300F\u94F6\u6CB3\u5927\u4E50\u900F\u00A74\u5DF2\u635F\u574F\uFF01"), true);
 										{
-											double _setval = (entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).daletou_jishu + 1;
-											entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-												capability.daletou_jishu = _setval;
-												capability.syncPlayerVariables(entity);
-											});
+											PrimogemcraftModVariables.PlayerVariables _vars = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES);
+											_vars.daletou_jishu = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).daletou_jishu + 1;
+											_vars.syncPlayerVariables(entity);
 										}
 										if (!(entity instanceof ServerPlayer _plr46 && _plr46.level() instanceof ServerLevel
-												&& _plr46.getAdvancements().getOrStartProgress(_plr46.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"))).isDone())
-												&& (entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).daletou_jishu >= 100) {
+												&& _plr46.getAdvancements().getOrStartProgress(_plr46.server.getAdvancements().get(new ResourceLocation("primogemcraft:lletouderenke"))).isDone())
+												&& entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).daletou_jishu >= 100) {
 											if (entity instanceof ServerPlayer _player) {
-												Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"));
-												AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-												if (!_ap.isDone()) {
-													for (String criteria : _ap.getRemainingCriteria())
-														_player.getAdvancements().award(_adv, criteria);
+												AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:lletouderenke"));
+												if (_adv != null) {
+													AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+													if (!_ap.isDone()) {
+														for (String criteria : _ap.getRemainingCriteria())
+															_player.getAdvancements().award(_adv, criteria);
+													}
 												}
 											}
 											if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -181,13 +181,15 @@ public class DadaletoushibiezhuangtaiProcedure {
 				} else {
 					if (Math.random() < 0.4) {
 						if (Math.random() < 0.006 && !(entity instanceof ServerPlayer _plr49 && _plr49.level() instanceof ServerLevel
-								&& _plr49.getAdvancements().getOrStartProgress(_plr49.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:nibaodimeila"))).isDone())) {
+								&& _plr49.getAdvancements().getOrStartProgress(_plr49.server.getAdvancements().get(new ResourceLocation("primogemcraft:nibaodimeila"))).isDone())) {
 							if (entity instanceof ServerPlayer _player) {
-								Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:nibaodimeila"));
-								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-								if (!_ap.isDone()) {
-									for (String criteria : _ap.getRemainingCriteria())
-										_player.getAdvancements().award(_adv, criteria);
+								AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:nibaodimeila"));
+								if (_adv != null) {
+									AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+									if (!_ap.isDone()) {
+										for (String criteria : _ap.getRemainingCriteria())
+											_player.getAdvancements().award(_adv, criteria);
+									}
 								}
 							}
 							if (entity instanceof Player _player) {
@@ -205,9 +207,9 @@ public class DadaletoushibiezhuangtaiProcedure {
 								}
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
+										_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
 									} else {
-										_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
+										_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
 									}
 								}
 								if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -216,14 +218,13 @@ public class DadaletoushibiezhuangtaiProcedure {
 								if (Math.random() < 0.4) {
 									if (world instanceof Level _level) {
 										if (!_level.isClientSide()) {
-											_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.launch")), SoundSource.PLAYERS, 1,
-													1);
+											_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.firework_rocket.launch")), SoundSource.PLAYERS, 1, 1);
 										} else {
-											_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.launch")), SoundSource.PLAYERS, 1, 1, false);
+											_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.firework_rocket.launch")), SoundSource.PLAYERS, 1, 1, false);
 										}
 									}
 									if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.FEIQIUPINGZHENG.get())) : false) || entity instanceof ServerPlayer _plr66
-											&& _plr66.level() instanceof ServerLevel && _plr66.getAdvancements().getOrStartProgress(_plr66.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"))).isDone()) {
+											&& _plr66.level() instanceof ServerLevel && _plr66.getAdvancements().getOrStartProgress(_plr66.server.getAdvancements().get(new ResourceLocation("primogemcraft:lletouderenke"))).isDone()) {
 										if (world instanceof ServerLevel _level)
 											_level.getServer().getCommands().performPrefixedCommand(
 													new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
@@ -242,7 +243,7 @@ public class DadaletoushibiezhuangtaiProcedure {
 									}
 								} else {
 									if (Math.random() < 0.01 && !(entity instanceof ServerPlayer _plr77 && _plr77.level() instanceof ServerLevel
-											&& _plr77.getAdvancements().getOrStartProgress(_plr77.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:zhongjifeiqiu"))).isDone())) {
+											&& _plr77.getAdvancements().getOrStartProgress(_plr77.server.getAdvancements().get(new ResourceLocation("primogemcraft:zhongjifeiqiu"))).isDone())) {
 										if (entity instanceof Player _player) {
 											ItemStack _setstack = new ItemStack(PrimogemcraftModItems.FEIQIUPINGZHENG.get()).copy();
 											_setstack.setCount(1);
@@ -251,9 +252,9 @@ public class DadaletoushibiezhuangtaiProcedure {
 									} else {
 										if (world instanceof Level _level) {
 											if (!_level.isClientSide()) {
-												_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 7, 1);
+												_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 7, 1);
 											} else {
-												_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 7, 1, false);
+												_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 7, 1, false);
 											}
 										}
 										if (entity instanceof LivingEntity _entity)
@@ -278,21 +279,21 @@ public class DadaletoushibiezhuangtaiProcedure {
 										if (entity instanceof Player _player && !_player.level().isClientSide())
 											_player.displayClientMessage(Component.literal("\u00A7b\u300E\u5947\u7269\u300F\u94F6\u6CB3\u5927\u4E50\u900F\u00A74\u5DF2\u635F\u574F\uFF01"), true);
 										{
-											double _setval = (entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).daletou_jishu + 1;
-											entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-												capability.daletou_jishu = _setval;
-												capability.syncPlayerVariables(entity);
-											});
+											PrimogemcraftModVariables.PlayerVariables _vars = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES);
+											_vars.daletou_jishu = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).daletou_jishu + 1;
+											_vars.syncPlayerVariables(entity);
 										}
 										if (!(entity instanceof ServerPlayer _plr91 && _plr91.level() instanceof ServerLevel
-												&& _plr91.getAdvancements().getOrStartProgress(_plr91.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"))).isDone())
-												&& (entity.getCapability(PrimogemcraftModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PrimogemcraftModVariables.PlayerVariables())).daletou_jishu >= 100) {
+												&& _plr91.getAdvancements().getOrStartProgress(_plr91.server.getAdvancements().get(new ResourceLocation("primogemcraft:lletouderenke"))).isDone())
+												&& entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).daletou_jishu >= 100) {
 											if (entity instanceof ServerPlayer _player) {
-												Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:lletouderenke"));
-												AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-												if (!_ap.isDone()) {
-													for (String criteria : _ap.getRemainingCriteria())
-														_player.getAdvancements().award(_adv, criteria);
+												AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:lletouderenke"));
+												if (_adv != null) {
+													AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+													if (!_ap.isDone()) {
+														for (String criteria : _ap.getRemainingCriteria())
+															_player.getAdvancements().award(_adv, criteria);
+													}
 												}
 											}
 											if (entity instanceof Player _player && !_player.level().isClientSide())

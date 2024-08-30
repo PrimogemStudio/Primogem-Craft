@@ -1,7 +1,5 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
@@ -11,6 +9,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.PrimogemcraftMod;
@@ -22,9 +21,9 @@ public class DbmlksxProcedure {
 			PrimogemcraftMod.queueServerWork(60, () -> {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.1, 0.5));
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.1, 0.5));
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.1, 0.5), false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.1, 0.5), false);
 					}
 				}
 				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:glass")))
@@ -32,16 +31,16 @@ public class DbmlksxProcedure {
 					PrimogemcraftMod.queueServerWork(60, () -> {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.1, 0.5));
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.1, 0.5));
 							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.1, 0.5), false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.1, 0.5), false);
 							}
 						}
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.5, 0.8));
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.5, 0.8));
 							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.5, 0.8), false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.5, 0.8), false);
 							}
 						}
 						if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:glass")))
@@ -49,18 +48,16 @@ public class DbmlksxProcedure {
 							PrimogemcraftMod.queueServerWork(60, () -> {
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1,
-												(float) Mth.nextDouble(RandomSource.create(), 0.5, 0.8));
+										_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.5, 0.8));
 									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.5, 0.8), false);
+										_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 0.5, 0.8), false);
 									}
 								}
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
-										_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1,
-												(float) Mth.nextDouble(RandomSource.create(), 1, 1.5));
+										_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 1, 1.5));
 									} else {
-										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 1, 1.5), false);
+										_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.hit")), SoundSource.NEUTRAL, 1, (float) Mth.nextDouble(RandomSource.create(), 1, 1.5), false);
 									}
 								}
 								if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:glass")))

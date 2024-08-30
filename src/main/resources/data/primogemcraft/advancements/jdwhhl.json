@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "primogemcraft:mzsj"
+      "id": "primogemcraft:mzsj"
     },
     "title": {
       "translate": "advancements.jdwhhl.title"

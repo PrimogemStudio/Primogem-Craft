@@ -8,9 +8,4 @@ public class LjtdwqMobEffect extends MobEffect {
 	public LjtdwqMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -9013642);
 	}
-
-	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
-	}
 }

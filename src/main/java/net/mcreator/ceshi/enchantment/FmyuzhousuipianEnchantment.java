@@ -1,7 +1,6 @@
 
 package net.mcreator.ceshi.enchantment;
 
-import net.minecraft.world.item.enchantment.EnchantmentCategory;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
@@ -10,17 +9,14 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
 public class FmyuzhousuipianEnchantment extends Enchantment {
-	public FmyuzhousuipianEnchantment(EquipmentSlot... slots) {
-		super(Enchantment.Rarity.UNCOMMON, EnchantmentCategory.BREAKABLE, slots);
-	}
+	public FmyuzhousuipianEnchantment() {
+		super(Enchantment.definition(ItemTags.create(new ResourceLocation("enchantable/durability")), 5, 5, Enchantment.dynamicCost(1, 10), Enchantment.dynamicCost(6, 10), 2, EquipmentSlot.values()
 
-	@Override
-	public int getMaxLevel() {
-		return 5;
+		));
 	}
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack itemstack) {
-		return !Ingredient.of(ItemTags.create(new ResourceLocation("pgc:token_mending"))).test(itemstack);
+		return Ingredient.of(ItemTags.create(new ResourceLocation("enchantable/durability"))).test(itemstack);
 	}
 }

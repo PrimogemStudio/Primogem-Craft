@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#is_overworld",
-  "features": "primogemcraft:xxiaoguanzi_02_feature",
-  "step": "surface_structures"
-}

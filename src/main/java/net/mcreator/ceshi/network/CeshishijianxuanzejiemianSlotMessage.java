@@ -1,67 +1,60 @@
 
 package net.mcreator.ceshi.network;
 
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.world.inventory.CeshishijianxuanzejiemianMenu;
 import net.mcreator.ceshi.procedures.SscsProcedure;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
-import java.util.function.Supplier;
 import java.util.HashMap;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class CeshishijianxuanzejiemianSlotMessage {
-	private final int slotID, x, y, z, changeType, meta;
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+public record CeshishijianxuanzejiemianSlotMessage(int slotID, int x, int y, int z, int changeType, int meta) implements CustomPacketPayload {
 
-	public CeshishijianxuanzejiemianSlotMessage(int slotID, int x, int y, int z, int changeType, int meta) {
-		this.slotID = slotID;
-		this.x = x;
-		this.y = y;
-		this.z = z;
-		this.changeType = changeType;
-		this.meta = meta;
-	}
-
-	public CeshishijianxuanzejiemianSlotMessage(FriendlyByteBuf buffer) {
-		this.slotID = buffer.readInt();
-		this.x = buffer.readInt();
-		this.y = buffer.readInt();
-		this.z = buffer.readInt();
-		this.changeType = buffer.readInt();
-		this.meta = buffer.readInt();
-	}
-
-	public static void buffer(CeshishijianxuanzejiemianSlotMessage message, FriendlyByteBuf buffer) {
+	public static final Type<CeshishijianxuanzejiemianSlotMessage> TYPE = new Type<>(new ResourceLocation(PrimogemcraftMod.MODID, "ceshishijianxuanzejiemian_slots"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, CeshishijianxuanzejiemianSlotMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, CeshishijianxuanzejiemianSlotMessage message) -> {
 		buffer.writeInt(message.slotID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 		buffer.writeInt(message.changeType);
 		buffer.writeInt(message.meta);
+	}, (RegistryFriendlyByteBuf buffer) -> new CeshishijianxuanzejiemianSlotMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	@Override
+	public Type<CeshishijianxuanzejiemianSlotMessage> type() {
+		return TYPE;
 	}
 
-	public static void handler(CeshishijianxuanzejiemianSlotMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-		NetworkEvent.Context context = contextSupplier.get();
-		context.enqueueWork(() -> {
-			Player entity = context.getSender();
-			int slotID = message.slotID;
-			int changeType = message.changeType;
-			int meta = message.meta;
-			int x = message.x;
-			int y = message.y;
-			int z = message.z;
-			handleSlotAction(entity, slotID, changeType, meta, x, y, z);
-		});
-		context.setPacketHandled(true);
+	public static void handleData(final CeshishijianxuanzejiemianSlotMessage message, final IPayloadContext context) {
+		if (context.flow() == PacketFlow.SERVERBOUND) {
+			context.enqueueWork(() -> {
+				Player entity = context.player();
+				int slotID = message.slotID;
+				int changeType = message.changeType;
+				int meta = message.meta;
+				int x = message.x;
+				int y = message.y;
+				int z = message.z;
+				handleSlotAction(entity, slotID, changeType, meta, x, y, z);
+			}).exceptionally(e -> {
+				context.connection().disconnect(Component.literal(e.getMessage()));
+				return null;
+			});
+		}
 	}
 
 	public static void handleSlotAction(Player entity, int slot, int changeType, int meta, int x, int y, int z) {
@@ -86,6 +79,6 @@ public class CeshishijianxuanzejiemianSlotMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		PrimogemcraftMod.addNetworkMessage(CeshishijianxuanzejiemianSlotMessage.class, CeshishijianxuanzejiemianSlotMessage::buffer, CeshishijianxuanzejiemianSlotMessage::new, CeshishijianxuanzejiemianSlotMessage::handler);
+		PrimogemcraftMod.addNetworkMessage(CeshishijianxuanzejiemianSlotMessage.TYPE, CeshishijianxuanzejiemianSlotMessage.STREAM_CODEC, CeshishijianxuanzejiemianSlotMessage::handleData);
 	}
 }

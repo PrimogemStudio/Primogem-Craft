@@ -13,12 +13,13 @@ public class LetoudechengfaMobEffect extends MobEffect {
 	}
 
 	@Override
-	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		ZLetouchengfahenshuxingProcedure.execute(entity);
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
+		return true;
 	}
 
 	@Override
-	public boolean isDurationEffectTick(int duration, int amplifier) {
-		return true;
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
+		ZLetouchengfahenshuxingProcedure.execute(entity);
+		return super.applyEffectTick(entity, amplifier);
 	}
 }

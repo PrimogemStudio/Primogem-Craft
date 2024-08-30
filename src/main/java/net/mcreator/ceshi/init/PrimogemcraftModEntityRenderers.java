@@ -4,10 +4,10 @@
  */
 package net.mcreator.ceshi.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.ceshi.client.renderer.XiaoheitaRenderer;
 import net.mcreator.ceshi.client.renderer.XiaodengRenderer;
@@ -18,7 +18,7 @@ import net.mcreator.ceshi.client.renderer.QQQyuanchulan01Renderer;
 import net.mcreator.ceshi.client.renderer.CaoyuanheshengwuRenderer;
 import net.mcreator.ceshi.client.renderer.BaiguangguodushengwuRenderer;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class PrimogemcraftModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {

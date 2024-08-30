@@ -1,13 +1,13 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
+import net.neoforged.neoforge.event.entity.player.ItemEntityPickupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.ICancellableEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
@@ -20,9 +20,11 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.ceshi.world.inventory.SJGUIfumo01Menu;
 import net.mcreator.ceshi.world.inventory.SJGUIfumo00Menu;
@@ -32,11 +34,11 @@ import javax.annotation.Nullable;
 
 import io.netty.buffer.Unpooled;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class SJwpsxProcedure {
 	@SubscribeEvent
-	public static void onPickup(EntityItemPickupEvent event) {
-		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getItem().getItem());
+	public static void onPickup(ItemEntityPickupEvent.Pre event) {
+		execute(event, event.getPlayer().level(), event.getPlayer().getX(), event.getPlayer().getY(), event.getPlayer().getZ(), event.getPlayer(), event.getItemEntity().getItem());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -48,21 +50,24 @@ public class SJwpsxProcedure {
 			return;
 		ItemStack a = ItemStack.EMPTY;
 		a = (itemstack.copy());
-		if (a.getItem() == ForgeRegistries.ITEMS.getValue(new ResourceLocation("primogemcraft:sh_jwupin"))) {
-			if (event != null && event.isCancelable()) {
-				event.setCanceled(true);
-			} else if (event != null && event.hasResult()) {
-				event.setResult(Event.Result.DENY);
+		if (a.getItem() == BuiltInRegistries.ITEM.get(new ResourceLocation("primogemcraft:sh_jwupin"))) {
+			if (event instanceof ICancellableEvent _cancellable) {
+				_cancellable.setCanceled(true);
 			}
-			if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PrimogemcraftModMobEffects.SHIJIANBUCHUFA.get()))) {
+			if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PrimogemcraftModMobEffects.SHIJIANBUCHUFA))) {
 				if (entity.isShiftKeyDown()) {
-					if (a.getOrCreateTag().getBoolean("PGC_fumo_shijian_00")) {
+					if (a.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("PGC_fumo_shijian_00")) {
 						if (entity instanceof ServerPlayer _ent) {
 							BlockPos _bpos = BlockPos.containing(x, y, z);
-							NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+							_ent.openMenu(new MenuProvider() {
 								@Override
 								public Component getDisplayName() {
 									return Component.literal("SJGUIfumo00");
+								}
+
+								@Override
+								public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+									return false;
 								}
 
 								@Override
@@ -72,13 +77,18 @@ public class SJwpsxProcedure {
 							}, _bpos);
 						}
 					}
-					if (a.getOrCreateTag().getBoolean("PGC_fumo_shijian_01")) {
+					if (a.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("PGC_fumo_shijian_01")) {
 						if (entity instanceof ServerPlayer _ent) {
 							BlockPos _bpos = BlockPos.containing(x, y, z);
-							NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+							_ent.openMenu(new MenuProvider() {
 								@Override
 								public Component getDisplayName() {
 									return Component.literal("SJGUIfumo01");
+								}
+
+								@Override
+								public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+									return false;
 								}
 
 								@Override
@@ -89,15 +99,17 @@ public class SJwpsxProcedure {
 						}
 					}
 				} else if (!(entity instanceof ServerPlayer _plr10 && _plr10.level() instanceof ServerLevel
-						&& _plr10.getAdvancements().getOrStartProgress(_plr10.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:jdshijian_0"))).isDone())) {
+						&& _plr10.getAdvancements().getOrStartProgress(_plr10.server.getAdvancements().get(new ResourceLocation("primogemcraft:jdshijian_0"))).isDone())) {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("\u00A75\u6F5C\u884C\u4EE5\u62FE\u53D6\u4E8B\u4EF6\uFF01"), false);
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("primogemcraft:jdshijian_0"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							for (String criteria : _ap.getRemainingCriteria())
-								_player.getAdvancements().award(_adv, criteria);
+						AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:jdshijian_0"));
+						if (_adv != null) {
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
 						}
 					}
 				}

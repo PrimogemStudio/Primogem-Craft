@@ -10,6 +10,6 @@
     "item": "primogemcraft:mzsj"
   },
   "result": {
-    "item": "minecraft:iron_chestplate"
+    "id": "minecraft:iron_chestplate"
   }
 }

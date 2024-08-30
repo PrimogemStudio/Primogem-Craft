@@ -1,10 +1,9 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.level.BlockEvent;
+import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
@@ -34,7 +34,7 @@ import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class XxiaoguanziletoshuxingProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
@@ -60,7 +60,7 @@ public class XxiaoguanziletoshuxingProcedure {
 						}
 						return false;
 					}
-				}.checkGamemode(entity) || !(entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(PrimogemcraftModMobEffects.LETOUDECHENGFA.get()))) {
+				}.checkGamemode(entity) || !(entity instanceof LivingEntity _livEnt7 && _livEnt7.hasEffect(PrimogemcraftModMobEffects.LETOUDECHENGFA))) {
 					if (Math.random() < 0.4) {
 						if (world instanceof ServerLevel _level) {
 							Entity entityToSpawn = PrimogemcraftModEntities.QQIWUZHANLIPINSHITI.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), MobSpawnType.MOB_SUMMONED);
@@ -73,20 +73,20 @@ public class XxiaoguanziletoshuxingProcedure {
 					} else {
 						{
 							ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
-							if (_ist.hurt(10, RandomSource.create(), null)) {
+							_ist.hurtAndBreak(10, RandomSource.create(), null, () -> {
 								_ist.shrink(1);
 								_ist.setDamageValue(0);
-							}
+							});
 						}
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.LETOUDECHENGFA.get(), 20000000, 0));
+							_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.LETOUDECHENGFA, 20000000, 0));
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("\u00A75\u7CFB\u7EDF\uFF1A\u300E\u771F\u300F\u00A7b\u94F6\u6CB3\u5927\u4E50\u900F\u00A7c\u5DF2\u635F\u574F"), false);
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 5, 1);
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 5, 1);
 							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 5, 1, false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 5, 1, false);
 							}
 						}
 					}

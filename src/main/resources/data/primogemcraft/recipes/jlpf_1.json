@@ -4,5 +4,7 @@
   "ingredient": {
     "item": "primogemcraft:jlmo"
   },
-  "result": "primogemcraft:jlza"
+  "result": {
+    "id": "primogemcraft:jlza"
+  }
 }

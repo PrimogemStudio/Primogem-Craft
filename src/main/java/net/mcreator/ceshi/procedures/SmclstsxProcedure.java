@@ -1,12 +1,11 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
@@ -14,14 +13,15 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
@@ -29,13 +29,11 @@ import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 import javax.annotation.Nullable;
 
-import java.util.concurrent.atomic.AtomicReference;
-
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class SmclstsxProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
-		if (event != null && event.getEntity() != null) {
+		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getSource().getEntity());
 		}
 	}
@@ -49,30 +47,26 @@ public class SmclstsxProcedure {
 			return;
 		double a = 0;
 		if (!world.isClientSide()) {
-			if (sourceentity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.SMCLXG.get()) && !(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PrimogemcraftModMobEffects.SMCLZF.get()))
-					&& entity instanceof LivingEntity _livEnt3 && _livEnt3.getMobType() == MobType.UNDEAD) {
+			if (sourceentity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.SMCLXG) && !(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PrimogemcraftModMobEffects.SMCLZF))
+					&& entity.getType().is(EntityTypeTags.UNDEAD)) {
 				if (Math.random() <= 0.3) {
-					{
-						AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
-						sourceentity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(_iitemhandlerref::set);
-						if (_iitemhandlerref.get() != null) {
-							for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
-								ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-								if (itemstackiterator.getItem() == PrimogemcraftModItems.QWSMCL.get()) {
-									a = a + 1;
-								}
+					if (sourceentity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+						for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+							ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
+							if (itemstackiterator.getItem() == PrimogemcraftModItems.QWSMCL.get()) {
+								a = a + 1;
 							}
 						}
 					}
 					if (a != 0) {
 						sourceentity.getPersistentData().putBoolean("smcl_cf", true);
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.SMCLZF.get(), 80, 0, false, false));
+							_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.SMCLZF, 80, 0, false, false));
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.enchantment_table.use")), SoundSource.PLAYERS, 1, 20);
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.enchantment_table.use")), SoundSource.PLAYERS, 1, 20);
 							} else {
-								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.enchantment_table.use")), SoundSource.PLAYERS, 1, 20, false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.enchantment_table.use")), SoundSource.PLAYERS, 1, 20, false);
 							}
 						}
 						if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {

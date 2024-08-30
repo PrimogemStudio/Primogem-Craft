@@ -21,10 +21,10 @@ public class JjlcjlqsxProcedure {
 				_level.explode(null, x, y, z, Mth.nextInt(RandomSource.create(), 2, 8), Level.ExplosionInteraction.TNT);
 			{
 				ItemStack _ist = itemstack;
-				if (_ist.hurt(Mth.nextInt(RandomSource.create(), 10, 40), RandomSource.create(), null)) {
+				_ist.hurtAndBreak(Mth.nextInt(RandomSource.create(), 10, 40), RandomSource.create(), null, () -> {
 					_ist.shrink(1);
 					_ist.setDamageValue(0);
-				}
+				});
 			}
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(),

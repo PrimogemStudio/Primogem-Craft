@@ -21,7 +21,7 @@
     }
   },
   "result": {
-    "item": "minecraft:trident",
+    "id": "minecraft:trident",
     "count": 1
   }
 }
