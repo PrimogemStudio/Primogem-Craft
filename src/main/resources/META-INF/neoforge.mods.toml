@@ -13,21 +13,23 @@ authors="Pepper某人, MCreator"
 description="这是一个无厘头的娱乐性mod，包含一些米游物品和梗"
 
 # Start of user code block mod configuration
+[[mixins]]
+config = "pgc.mixins.json"
 # End of user code block mod configuration
 
 [[dependencies.primogemcraft]]
-    modId="neoforge"
-    type="required"
-    versionRange="[20.6.119,)"
-    ordering="AFTER"
-    side="BOTH"
+modId="neoforge"
+type="required"
+versionRange="[20.6.119,)"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.primogemcraft]]
-    modId="minecraft"
-    type="required"
-    versionRange="[1.20.6]"
-    ordering="AFTER"
-    side="BOTH"
+modId="minecraft"
+type="required"
+versionRange="[1.20.6]"
+ordering="AFTER"
+side="BOTH"
 
 
 

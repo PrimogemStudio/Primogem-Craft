@@ -28108,6 +28108,18 @@
           }
         ]
       }
+    },
+    {
+      "name": "PGCEventHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pgc_event_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/PGCEventHandler.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -33672,7 +33684,7 @@
     "modName": "原石工艺",
     "version": "24w35b",
     "description": "这是一个无厘头的娱乐性mod，包含一些米游物品和梗",
-    "author": "Pepper某人, MCreator",
+    "author": "Pepper某人, hackerm大神, MCreator",
     "websiteURL": "https://www.mcmod.cn/class/10429.html",
     "license": "MIT",
     "serverSideOnly": false,
