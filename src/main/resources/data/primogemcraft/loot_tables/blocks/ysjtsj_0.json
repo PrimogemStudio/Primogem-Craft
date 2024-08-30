@@ -2,7 +2,10 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
       "bonus_rolls": {
         "min": 0,
         "max": 2
@@ -11,7 +14,27 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:ziziyousongshisuixie",
-          "weight": 1,
+          "weight": 20,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -19,13 +42,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:zziyousongshiduanpian",
-          "weight": 1,
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -33,13 +81,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:zziyousongshikuai",
-          "weight": 1,
+          "weight": 5,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -47,6 +120,11 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
@@ -54,6 +132,26 @@
           "type": "minecraft:item",
           "name": "primogemcraft:zziyousongshi",
           "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -61,13 +159,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:jianransuixie",
-          "weight": 1,
+          "weight": 20,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -75,13 +198,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:jianlaoduanpian",
-          "weight": 1,
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -89,13 +237,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:jianlaokuaiwupin",
-          "weight": 1,
+          "weight": 5,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -103,6 +276,11 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
@@ -110,6 +288,26 @@
           "type": "minecraft:item",
           "name": "primogemcraft:jianlaohuangyu",
           "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -117,13 +315,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:zuishengsuixie",
-          "weight": 1,
+          "weight": 20,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -131,13 +354,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:zuishengduanpian",
-          "weight": 1,
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -145,13 +393,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:zuishengkuai",
-          "weight": 1,
+          "weight": 5,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -159,6 +432,11 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
@@ -166,6 +444,26 @@
           "type": "minecraft:item",
           "name": "primogemcraft:zuishengzijing",
           "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -173,13 +471,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:shengzhangbifeisuixie",
-          "weight": 1,
+          "weight": 20,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -187,13 +510,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:shengzhangduanpian",
-          "weight": 1,
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -201,13 +549,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:shengzhangkuai",
-          "weight": 1,
+          "weight": 5,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -215,6 +588,11 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
@@ -222,6 +600,26 @@
           "type": "minecraft:item",
           "name": "primogemcraft:shengzhangbifei",
           "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -229,13 +627,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:dijingsuixie",
-          "weight": 1,
+          "weight": 20,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -243,13 +666,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:dijingduanpian",
-          "weight": 1,
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -257,13 +705,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:dijingkuai",
-          "weight": 1,
+          "weight": 5,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -271,6 +744,11 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
@@ -278,6 +756,26 @@
           "type": "minecraft:item",
           "name": "primogemcraft:diijingqingjing",
           "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -285,13 +783,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:ranyuansuixie",
-          "weight": 1,
+          "weight": 20,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -299,13 +822,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:ranyuanduanpian",
-          "weight": 1,
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -313,13 +861,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:ranyuankuai",
-          "weight": 1,
+          "weight": 5,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -327,6 +900,11 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
@@ -334,6 +912,26 @@
           "type": "minecraft:item",
           "name": "primogemcraft:rranyuanmanao",
           "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -341,13 +939,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:aixubingyusuixie",
-          "weight": 1,
+          "weight": 20,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -355,13 +978,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:aaixubingyuduanpian",
-          "weight": 1,
+          "weight": 10,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -369,13 +1017,38 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
         {
           "type": "minecraft:item",
           "name": "primogemcraft:aixubingyukuai",
-          "weight": 1,
+          "weight": 5,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
@@ -383,6 +1056,11 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
@@ -390,6 +1068,67 @@
           "type": "minecraft:item",
           "name": "primogemcraft:aixubingyu",
           "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "primogemcraft:ysjtsj_0",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantment": "minecraft:silk_touch",
+                      "levels": {
+                        "min": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "set_count",
