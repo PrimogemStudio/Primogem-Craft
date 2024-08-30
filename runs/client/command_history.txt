@@ -1,2 +1,0 @@
-/gamerule guizeshijianxianzhi 1000
-/gamerule guizesuijishijian 10000
