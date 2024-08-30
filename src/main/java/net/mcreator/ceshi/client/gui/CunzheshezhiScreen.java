@@ -60,7 +60,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.cunzheshezhi.tooltip_cong_xia_fang_an_niu_shu_ru"), mouseX, mouseY);
 		if (mouseX > leftPos + 62 && mouseX < leftPos + 86 && mouseY > topPos + 57 && mouseY < topPos + 81)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.cunzheshezhi.tooltip_dian_ci_huo_qu_bu_wen_ding_ban_ben"), mouseX, mouseY);
-		if (mouseX > leftPos + 98 && mouseX < leftPos + 122 && mouseY > topPos + 57 && mouseY < topPos + 81)
+		if (mouseX > leftPos + 96 && mouseX < leftPos + 120 && mouseY > topPos + 57 && mouseY < topPos + 81)
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.cunzheshezhi.tooltip_huo_qu"), mouseX, mouseY);
 	}
 
@@ -171,7 +171,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		}).bounds(this.leftPos + 21, this.topPos + 35, 23, 20).build();
 		guistate.put("button:button_1001", button_1001);
 		this.addRenderableWidget(button_1001);
-		imagebutton_dui = new ImageButton(this.leftPos + 96, this.topPos + 57, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/dui.png"), new ResourceLocation("primogemcraft:textures/screens/dui.png")), e -> {
+		imagebutton_dui = new ImageButton(this.leftPos + 96, this.topPos + 57, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/duia1.png"), new ResourceLocation("primogemcraft:textures/screens/duia2.png")), e -> {
 			if (true) {
 				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(6, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 6, x, y, z);
@@ -184,7 +184,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		};
 		guistate.put("button:imagebutton_dui", imagebutton_dui);
 		this.addRenderableWidget(imagebutton_dui);
-		imagebutton_cuo = new ImageButton(this.leftPos + 62, this.topPos + 57, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/cuo.png"), new ResourceLocation("primogemcraft:textures/screens/cuo.png")), e -> {
+		imagebutton_cuo = new ImageButton(this.leftPos + 62, this.topPos + 57, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/cuoa1.png"), new ResourceLocation("primogemcraft:textures/screens/cuoa2.png")), e -> {
 			if (true) {
 				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(7, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 7, x, y, z);

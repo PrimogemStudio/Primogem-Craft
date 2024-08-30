@@ -143,8 +143,8 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_dui",
-          "image": "dui.png",
-          "hoveredImage": "dui.png",
+          "image": "duia1.png",
+          "hoveredImage": "duia2.png",
           "onClick": {
             "name": "GUIbwdyinhang01"
           },
@@ -156,8 +156,8 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_cuo",
-          "image": "cuo.png",
-          "hoveredImage": "cuo.png",
+          "image": "cuoa1.png",
+          "hoveredImage": "cuoa2.png",
           "onClick": {
             "name": "GUIyinhanggunkai"
           },

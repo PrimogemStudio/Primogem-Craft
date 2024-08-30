@@ -21738,8 +21738,8 @@
       "registry_name": "yinhang",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ceshi/client/gui/YinhangScreen.java",
           "src/main/java/net/mcreator/ceshi/world/inventory/YinhangMenu.java",
+          "src/main/java/net/mcreator/ceshi/client/gui/YinhangScreen.java",
           "src/main/java/net/mcreator/ceshi/network/YinhangButtonMessage.java"
         ]
       }
@@ -22033,8 +22033,8 @@
       "registry_name": "bwdyinhang",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ceshi/client/gui/BwdyinhangScreen.java",
           "src/main/java/net/mcreator/ceshi/world/inventory/BwdyinhangMenu.java",
+          "src/main/java/net/mcreator/ceshi/client/gui/BwdyinhangScreen.java",
           "src/main/java/net/mcreator/ceshi/network/BwdyinhangButtonMessage.java"
         ]
       }
@@ -30647,7 +30647,7 @@
       "gamerule.guizeyuanshishengcheng.description": "§cPrimogem Ore Intergrate",
       "gui.primogemcraft.ceshigui.label_wu_pin_lan": "Inventory",
       "advancements.mmolagaojindu.title": "mora Pickaxe",
-      "gui.primogemcraft.bwdyinhang.label_cun_ru_yu_zhou_sui_pian_dang": "cosmic fragment deposited，Ting",
+      "gui.primogemcraft.bwdyinhang.label_cun_ru_yu_zhou_sui_pian_dang": "存入宇宙碎片，当",
       "item.primogemcraft.axtt_helmet": "§b『Shivada Jade』§fIron Helmet",
       "item.primogemcraft.shxjdlt": "§5『Curio』§bInterastral Big Lotto",
       "advancements.lletouderenke.descr": "Destroy 100 Cosmic Big Lotto§7-Trigger the ！",
@@ -30794,7 +30794,7 @@
       "advancements.zhongjifeiqiu.descr": "Away From All Lottos",
       "subtitles.xumimolazhuang": "",
       "item.primogemcraft.ddjzsj": "§b『Varunada Lazurite』 Diamond Sword",
-      "gui.primogemcraft.yinhang.label_xia_ci_yu_dao_shi_ke_ti": "Withdrawable when met next time",
+      "gui.primogemcraft.yinhang.label_xia_ci_yu_dao_shi_ke_ti": "下次遇到时，可提",
       "gui.primogemcraft.yinhang.label_shuang_bei_yu_zhou_sui_pian": "Double Cosmic Fragments！",
       "advancements.jdxxcy.descr": "§mAccount to next time",
       "item.primogemcraft.aixubingyusuixie": "§bShivada Jade Sliver",
@@ -30855,7 +30855,7 @@
       "advancements.jdlysf.descr": "Use§eMora§ato pile§eMora heap§a",
       "subtitles.choukatiaoguoguocheng01": "23333",
       "effect.guoqu": "§dPast",
-      "gui.primogemcraft.bwdyinhang.label_bei_lu_yu_zhou_sui_pian": "Multiplied Cosmic Fragment！",
+      "gui.primogemcraft.bwdyinhang.label_bei_lu_yu_zhou_sui_pian": "倍率宇宙碎片！",
       "advancements.mmolafujindu.title": "mora Axe",
       "item.primogemcraft.zsq": "§d『Vajrada Amethyst』Shovel",
       "subtitles.xiaoguanzi": "",

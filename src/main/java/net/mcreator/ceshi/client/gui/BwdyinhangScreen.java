@@ -81,7 +81,7 @@ public class BwdyinhangScreen extends AbstractContainerScreen<BwdyinhangMenu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_dui = new ImageButton(this.leftPos + 127, this.topPos + 27, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/dui.png"), new ResourceLocation("primogemcraft:textures/screens/dui.png")), e -> {
+		imagebutton_dui = new ImageButton(this.leftPos + 127, this.topPos + 27, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/duia1.png"), new ResourceLocation("primogemcraft:textures/screens/duia2.png")), e -> {
 			if (true) {
 				PacketDistributor.sendToServer(new BwdyinhangButtonMessage(0, x, y, z));
 				BwdyinhangButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -94,7 +94,7 @@ public class BwdyinhangScreen extends AbstractContainerScreen<BwdyinhangMenu> {
 		};
 		guistate.put("button:imagebutton_dui", imagebutton_dui);
 		this.addRenderableWidget(imagebutton_dui);
-		imagebutton_cuo = new ImageButton(this.leftPos + 127, this.topPos + 54, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/cuo.png"), new ResourceLocation("primogemcraft:textures/screens/cuo.png")), e -> {
+		imagebutton_cuo = new ImageButton(this.leftPos + 127, this.topPos + 54, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/cuoa1.png"), new ResourceLocation("primogemcraft:textures/screens/cuoa2.png")), e -> {
 			if (true) {
 				PacketDistributor.sendToServer(new BwdyinhangButtonMessage(1, x, y, z));
 				BwdyinhangButtonMessage.handleButtonAction(entity, 1, x, y, z);
