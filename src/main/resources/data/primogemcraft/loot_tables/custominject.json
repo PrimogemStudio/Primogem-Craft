@@ -15,7 +15,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -29,7 +29,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -43,7 +43,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -57,7 +57,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -71,7 +71,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -85,7 +85,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -99,7 +99,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -113,7 +113,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -127,7 +127,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -141,7 +141,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -155,7 +155,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -169,7 +169,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -183,7 +183,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -197,7 +197,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -211,7 +211,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -225,7 +225,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -239,7 +239,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -253,7 +253,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -267,7 +267,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -281,7 +281,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -295,7 +295,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -309,7 +309,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -323,7 +323,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -337,7 +337,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -351,7 +351,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -365,7 +365,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -379,7 +379,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -393,7 +393,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -421,7 +421,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -435,7 +435,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -449,7 +449,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -463,7 +463,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -477,7 +477,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -491,7 +491,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -505,7 +505,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -519,7 +519,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -533,7 +533,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -547,21 +547,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:qwsmcl",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -575,7 +561,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -584,13 +570,13 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 50,
+          "weight": 1500,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 0,
-                "max": 0
+                "min": 1,
+                "max": 1
               }
             }
           ]
@@ -600,8 +586,9 @@
     {
       "rolls": {
         "min": 0,
-        "max": 3
+        "max": 2
       },
+      "bonus_rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
@@ -627,104 +614,6 @@
               "count": {
                 "min": 1,
                 "max": 16
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:ziziyousongshisuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:jianransuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:zuishengsuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:shengzhangbifeisuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:dijingsuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:ranyuansuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:aixubingyusuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
               }
             }
           ]
@@ -781,20 +670,6 @@
               "count": {
                 "min": 1,
                 "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:guzhonglingjian",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 1
               }
             }
           ]
@@ -858,7 +733,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:laji",
-          "weight": 5,
+          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -872,7 +747,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:jiangliliulangzhejingyan",
-          "weight": 5,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -886,7 +761,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:jianglimaoxianjiajingyan",
-          "weight": 5,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -900,7 +775,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:xixiangyuzhiyuan",
-          "weight": 2,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -914,7 +789,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:jijiuchanzhiyuan",
-          "weight": 2,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -928,7 +803,21 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qyhx",
-          "weight": 2,
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 150,
           "functions": [
             {
               "function": "set_count",

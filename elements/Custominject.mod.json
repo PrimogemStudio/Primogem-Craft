@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -7,7 +7,7 @@
       {
         "minrolls": 0,
         "maxrolls": 1,
-        "minbonusrolls": 1,
+        "minbonusrolls": 0,
         "maxbonusrolls": 1,
         "hasbonusrolls": false,
         "entries": [
@@ -17,7 +17,7 @@
               "value": "CUSTOM:Ssanbamiantou"
             },
             "weight": 5,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -31,7 +31,7 @@
               "value": "CUSTOM:Xiangdanganlao"
             },
             "weight": 10,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -45,7 +45,7 @@
               "value": "CUSTOM:Yiyinhedaletou"
             },
             "weight": 5,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -59,7 +59,7 @@
               "value": "CUSTOM:Qiwuchongwang"
             },
             "weight": 5,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -73,7 +73,7 @@
               "value": "CUSTOM:Wawanxiangwuchangtou"
             },
             "weight": 10,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -87,7 +87,7 @@
               "value": "CUSTOM:Cebuzhunxia"
             },
             "weight": 10,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -101,7 +101,7 @@
               "value": "CUSTOM:Gongsideguguzhong"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -115,7 +115,7 @@
               "value": "CUSTOM:Fulinjiao"
             },
             "weight": 5,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -129,7 +129,7 @@
               "value": "CUSTOM:Pengkeluodejingshen"
             },
             "weight": 3,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -143,7 +143,7 @@
               "value": "CUSTOM:Fenliejinbi"
             },
             "weight": 2,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -157,7 +157,7 @@
               "value": "CUSTOM:Yiyimuguoshi"
             },
             "weight": 2,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -171,7 +171,7 @@
               "value": "CUSTOM:Wanshinang"
             },
             "weight": 8,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -185,7 +185,7 @@
               "value": "CUSTOM:Xingjidaletou"
             },
             "weight": 6,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -199,7 +199,7 @@
               "value": "CUSTOM:Qwhdlz"
             },
             "weight": 4,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -213,7 +213,7 @@
               "value": "CUSTOM:Jlbj"
             },
             "weight": 3,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -227,7 +227,7 @@
               "value": "CUSTOM:Qwybtzdypj"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -241,7 +241,7 @@
               "value": "CUSTOM:Qwxyzq"
             },
             "weight": 2,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -255,7 +255,7 @@
               "value": "CUSTOM:Qwymzj"
             },
             "weight": 5,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -269,7 +269,7 @@
               "value": "CUSTOM:Qwflyb"
             },
             "weight": 4,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -283,7 +283,7 @@
               "value": "CUSTOM:Qwxbzsq"
             },
             "weight": 4,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -297,7 +297,7 @@
               "value": "CUSTOM:Qwkwzj"
             },
             "weight": 4,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -311,7 +311,7 @@
               "value": "CUSTOM:Chunmeizhipao"
             },
             "weight": 3,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -325,7 +325,7 @@
               "value": "CUSTOM:Qwjzyj"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -339,7 +339,7 @@
               "value": "CUSTOM:Hqfeng"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -353,7 +353,7 @@
               "value": "CUSTOM:Hqyan"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -367,7 +367,7 @@
               "value": "CUSTOM:Hqlei"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -381,7 +381,7 @@
               "value": "CUSTOM:Hqcao"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -395,7 +395,7 @@
               "value": "CUSTOM:Hqshui"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -423,7 +423,7 @@
               "value": "CUSTOM:Hqbing"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -437,7 +437,7 @@
               "value": "CUSTOM:Qwyzzm"
             },
             "weight": 8,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -451,7 +451,7 @@
               "value": "CUSTOM:Qiwuheisenlinggz"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -465,7 +465,7 @@
               "value": "CUSTOM:QwggzfenlieA"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -479,7 +479,7 @@
               "value": "CUSTOM:Ydggz"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -493,7 +493,7 @@
               "value": "CUSTOM:Qwtcjlbptbg"
             },
             "weight": 2,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -507,7 +507,7 @@
               "value": "CUSTOM:Qwlbtdgcl"
             },
             "weight": 5,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -521,7 +521,7 @@
               "value": "CUSTOM:Quxgjibing"
             },
             "weight": 7,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -535,7 +535,7 @@
               "value": "CUSTOM:Qwqcxxmx"
             },
             "weight": 2,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -549,21 +549,7 @@
               "value": "CUSTOM:Qwsmcl"
             },
             "weight": 3,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Qwsmcl"
-            },
-            "weight": 3,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -577,7 +563,7 @@
               "value": "CUSTOM:Qwqskxjxt"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
@@ -590,9 +576,9 @@
             "item": {
               "value": "Blocks.AIR"
             },
-            "weight": 50,
-            "minCount": 0,
-            "maxCount": 0,
+            "weight": 1500,
+            "minCount": 1,
+            "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -603,10 +589,10 @@
       },
       {
         "minrolls": 0,
-        "maxrolls": 3,
+        "maxrolls": 2,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
-        "hasbonusrolls": false,
+        "hasbonusrolls": true,
         "entries": [
           {
             "type": "item",
@@ -630,104 +616,6 @@
             "weight": 20,
             "minCount": 1,
             "maxCount": 16,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Ziziyousongshisuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Jianransuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Zuishengsuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Shengzhangbifeisuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Dijingsuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Ranyuansuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Aixubingyusuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -784,20 +672,6 @@
             "weight": 10,
             "minCount": 1,
             "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Guzhonglingjian"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -865,7 +739,7 @@
             "item": {
               "value": "CUSTOM:Laji"
             },
-            "weight": 5,
+            "weight": 2,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -879,7 +753,7 @@
             "item": {
               "value": "CUSTOM:Jiangliliulangzhejingyan"
             },
-            "weight": 5,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -893,7 +767,7 @@
             "item": {
               "value": "CUSTOM:Jianglimaoxianjiajingyan"
             },
-            "weight": 5,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -907,7 +781,7 @@
             "item": {
               "value": "CUSTOM:Xixiangyuzhiyuan"
             },
-            "weight": 2,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
@@ -921,7 +795,7 @@
             "item": {
               "value": "CUSTOM:Jijiuchanzhiyuan"
             },
-            "weight": 2,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -935,7 +809,21 @@
             "item": {
               "value": "CUSTOM:Qyhx"
             },
-            "weight": 2,
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "Blocks.AIR"
+            },
+            "weight": 150,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
