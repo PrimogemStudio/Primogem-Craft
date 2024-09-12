@@ -1,50 +1,64 @@
 package net.mcreator.ceshi;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
-import net.minecraft.world.level.storage.loot.LootDataType;
-import net.minecraft.world.level.storage.loot.LootPool;
-import net.minecraft.world.level.storage.loot.LootTable;
+import com.google.common.base.Supplier;
+import com.google.common.base.Suppliers;
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
-import net.minecraftforge.common.ForgeHooks;
-import net.minecraftforge.event.LootTableLoadEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraftforge.common.loot.IGlobalLootModifier;
+import net.minecraftforge.common.loot.LootModifier;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.List;
-import java.util.Objects;
-
-import static net.mcreator.ceshi.PrimogemcraftMod.MODID;
-
-@Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class PGCEventHandler {
-    private static List<LootPool> getPools(LootTable table) {
-        try {
-            var fs = table.getClass().getDeclaredFields();
-            for (var f : fs) {
-                if (f.getName().equals("f_79109_") || f.getName().equals("pools")) {
-                    f.setAccessible(true);
-                    return (List<LootPool>) f.get(table);
-                }
-            }
-            throw new RuntimeException("No such field f_79109_");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+    static class AppendChestLootModifier extends LootModifier {
+        static final Supplier<Codec<AppendChestLootModifier>> CODEC = Suppliers.memoize(() -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ResourceLocation.CODEC.fieldOf("id").forGetter(m -> m.id)).apply(inst, AppendChestLootModifier::new)));
+        private final ResourceLocation id;
+
+        private AppendChestLootModifier(LootItemCondition[] conditionsIn, ResourceLocation id) {
+            super(conditionsIn);
+            this.id = id;
+        }
+
+        @SuppressWarnings("deprecation")
+        @Override
+        @NotNull
+        protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
+            if (context.getResolver().getLootTable(context.getQueriedLootTableId()).getParamSet() != LootContextParamSets.CHEST)
+                return generatedLoot;
+            var lootTable = context.getLevel().getServer().getLootData().getLootTable(id);
+            lootTable.getRandomItemsRaw(context, it -> {
+                if (!it.isEmpty()) generatedLoot.add(it);
+            });
+            return generatedLoot;
+        }
+
+        @Override
+        public Codec<? extends IGlobalLootModifier> codec() {
+            return CODEC.get();
         }
     }
 
-    @SubscribeEvent
-    protected static void onLoadLootTable(LootTableLoadEvent event) throws IOException {
-        var loot = event.getTable();
-        if (loot.getParamSet() == LootContextParamSets.CHEST) {
-            try (var in = new InputStreamReader(Objects.requireNonNull(PGCEventHandler.class.getResourceAsStream("/data/primogemcraft/loot_tables/custominject.json")))) {
-                var inject = ForgeHooks.loadLootTable(LootDataType.TABLE.parser(), event.getTable().getLootTableId(), new Gson().fromJson(in, JsonElement.class), true);
-                var pools = getPools(inject);
-                pools.forEach(loot::addPool);
-                pools.clear();
-            }
+    static class PGCRegistries {
+        static final DeferredRegister<LootItemFunctionType> LOOT_FUNCTIONS = DeferredRegister.create(Registries.LOOT_FUNCTION_TYPE, PrimogemcraftMod.MODID);
+        static final DeferredRegister<Codec<? extends IGlobalLootModifier>> LOOT_MODIFIER_SERIALIZERS = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, PrimogemcraftMod.MODID);
+
+        static {
+            LOOT_MODIFIER_SERIALIZERS.register("append_chest", AppendChestLootModifier.CODEC);
+        }
+
+        static void register(IEventBus eventBus) {
+            LOOT_FUNCTIONS.register(eventBus);
+            LOOT_MODIFIER_SERIALIZERS.register(eventBus);
         }
     }
 }

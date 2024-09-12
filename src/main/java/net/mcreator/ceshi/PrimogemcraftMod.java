@@ -68,6 +68,8 @@ public class PrimogemcraftMod {
 		PrimogemcraftModVillagerProfessions.PROFESSIONS.register(bus);
 		PrimogemcraftModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init
+		PGCEventHandler.PGCRegistries.register(bus);
+		DefaultGunPack.register();
 		// End of user code block mod init
 	}
 
