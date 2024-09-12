@@ -3,7 +3,6 @@ package net.mcreator.ceshi.procedures;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
@@ -12,13 +11,13 @@ import net.minecraft.network.chat.Component;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class Ceshi_3Procedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		double ceshi_01 = 0;
 		double a = 0;
 		if (entity.isShiftKeyDown()) {
-			MllpwzsxProcedure.execute(world, x, y, z, entity, itemstack);
+			FumoqugaoProcedure.execute(itemstack);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((ForgeRegistries.ITEMS.getKey((new Object() {
