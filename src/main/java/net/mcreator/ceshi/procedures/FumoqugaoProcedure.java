@@ -43,6 +43,7 @@ public class FumoqugaoProcedure {
 						map.putIfAbsent(en, lvl);
 					});
 				}
+				enchs.clear();
 				EnchantmentHelper.setEnchantments(map, stack);
 			}
 		}
