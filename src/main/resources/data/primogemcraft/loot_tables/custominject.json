@@ -584,7 +584,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 50,
+          "weight": 1500,
           "functions": [
             {
               "function": "set_count",
@@ -600,7 +600,7 @@
     {
       "rolls": {
         "min": 0,
-        "max": 3
+        "max": 2
       },
       "entries": [
         {
@@ -627,104 +627,6 @@
               "count": {
                 "min": 1,
                 "max": 16
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:ziziyousongshisuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:jianransuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:zuishengsuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:shengzhangbifeisuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:dijingsuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:ranyuansuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:aixubingyusuixie",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 5
               }
             }
           ]
@@ -929,6 +831,34 @@
           "type": "minecraft:item",
           "name": "primogemcraft:qyhx",
           "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "primogemcraft:shenmiwanou",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 150,
           "functions": [
             {
               "function": "set_count",

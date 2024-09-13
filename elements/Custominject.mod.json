@@ -590,7 +590,7 @@
             "item": {
               "value": "Blocks.AIR"
             },
-            "weight": 50,
+            "weight": 1500,
             "minCount": 0,
             "maxCount": 0,
             "minEnchantmentLevel": 0,
@@ -603,7 +603,7 @@
       },
       {
         "minrolls": 0,
-        "maxrolls": 3,
+        "maxrolls": 2,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
         "hasbonusrolls": false,
@@ -630,104 +630,6 @@
             "weight": 20,
             "minCount": 1,
             "maxCount": 16,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Ziziyousongshisuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Jianransuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Zuishengsuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Shengzhangbifeisuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Dijingsuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Ranyuansuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Aixubingyusuixie"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 5,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -936,6 +838,34 @@
               "value": "CUSTOM:Qyhx"
             },
             "weight": 2,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Shenmiwanou"
+            },
+            "weight": 4,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "Blocks.AIR"
+            },
+            "weight": 150,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
