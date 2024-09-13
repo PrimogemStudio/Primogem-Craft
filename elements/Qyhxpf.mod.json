@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Qyhx"
+      "value": "CUSTOM:Qyhx0wujiacheng"
     },
     "name": "qyhxpf",
     "namespace": "mod"
