@@ -28120,6 +28120,41 @@
           "src/main/java/net/mcreator/ceshi/PGCEventHandler.java"
         ]
       }
+    },
+    {
+      "name": "Qyhx0wujiacheng",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qyhx_0wujiacheng",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/Qyhx0wujiachengItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qyhx_0wujiacheng.json"
+        ]
+      }
+    },
+    {
+      "name": "Qyhc_wjc_sx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qyhc_wjc_sx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Qyhc_wjc_sxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -28754,6 +28789,10 @@
       "CUSTOM:QQQyuanchulan01",
       "CUSTOM:QqiyuanJinGuang"
     ],
+    "ITEMS:pgc:prayer_core_x1": [
+      "CUSTOM:Qyhx",
+      "CUSTOM:Qyhx0wujiacheng"
+    ],
     "DAMAGE_TYPES:minecraft:bypasses_cooldown": [
       "CUSTOM:Chiwuwuli"
     ],
@@ -28892,6 +28931,9 @@
       "~CUSTOM:Bbuzainianqingdeqincezhuang012",
       "~CUSTOM:Xiwangdeyitian011"
     ],
+    "ITEMS:pgc:prayer_core_x10": [
+      "CUSTOM:Qyhxshilian"
+    ],
     "ITEMS:pgc:ysgj": [
       "CUSTOM:Zizgao",
       "CUSTOM:Zizaifu",
@@ -29015,6 +29057,10 @@
     ],
     "ITEMS:pgc:token_mending": [
       "TAG:forge:curio"
+    ],
+    "ITEMS:pgc:prayer_core": [
+      "TAG:pgc:prayer_core_x1",
+      "TAG:pgc:prayer_core_x10"
     ],
     "BLOCKS:forge:yuansujingtikuai": [
       "CUSTOM:Ziyousongshikuai",
@@ -30365,7 +30411,8 @@
       "Ysrzspsx",
       "Qycx",
       "Qyhx",
-      "Qyhxshilian"
+      "Qyhxshilian",
+      "Qyhx0wujiacheng"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -31143,6 +31190,7 @@
       "item.primogemcraft.mmolachan": "§eMora Shovel",
       "gui.primogemcraft.taozhuangchakan.label_yan_01": "岩",
       "gui.primogemcraft.yinhang.button_ju_jue_bing_wei_xie_ta_rang_kai": "拒绝并威胁它让开",
+      "item.primogemcraft.qyhx_0wujiacheng": "祈愿核心§c[暂无加成]",
       "item.primogemcraft.shilianchou": "Ten Interwined Fate",
       "item.primogemcraft.qhzllh_4": "§6特殊产出 强化助力礼盒",
       "effect.primogemcraft.qwjlbbgsx_2": "俱乐部普通八卦",
@@ -32161,6 +32209,7 @@
       "item.primogemcraft.mmolachan": "§eMora Shovel",
       "gui.primogemcraft.taozhuangchakan.label_yan_01": "岩",
       "gui.primogemcraft.yinhang.button_ju_jue_bing_wei_xie_ta_rang_kai": "拒绝并威胁它让开",
+      "item.primogemcraft.qyhx_0wujiacheng": "祈愿核心§c[暂无加成]",
       "item.primogemcraft.shilianchou": "Ten Interwined Fate",
       "item.primogemcraft.qhzllh_4": "§6特殊产出 强化助力礼盒",
       "effect.primogemcraft.qwjlbbgsx_2": "俱乐部普通八卦",
@@ -33174,6 +33223,7 @@
       "item.primogemcraft.mmolachan": "§e摩拉 铲",
       "gui.primogemcraft.taozhuangchakan.label_yan_01": "岩",
       "gui.primogemcraft.yinhang.button_ju_jue_bing_wei_xie_ta_rang_kai": "拒绝并威胁它让开",
+      "item.primogemcraft.qyhx_0wujiacheng": "祈愿核心§c[暂无加成]",
       "item.primogemcraft.shilianchou": "十枚纠缠之缘",
       "item.primogemcraft.qhzllh_4": "§6特殊产出 强化助力礼盒",
       "effect.primogemcraft.qwjlbbgsx_2": "俱乐部普通八卦",

@@ -4,7 +4,7 @@
     "item": "primogemcraft:xixiangyuzhiyuan"
   },
   "base": {
-    "item": "primogemcraft:qyhx"
+    "tag": "pgc:prayer_core_x1"
   },
   "addition": {
     "item": "primogemcraft:xinghui"
