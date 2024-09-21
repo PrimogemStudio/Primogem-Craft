@@ -21,7 +21,7 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 
 public class YimuguoshisxhsProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack itemstack, boolean itemi, boolean sunhuai, double sudu_dengji) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack itemstack, boolean itemi, boolean sunhuai, double shijian, double sudu_dengji) {
 		if (entity == null)
 			return;
 		ItemStack a = ItemStack.EMPTY;
@@ -52,11 +52,11 @@ public class YimuguoshisxhsProcedure {
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			entity.getPersistentData().putBoolean("yijieguoshi_kaiqi", false);
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.LINZHONG, 1200, 0));
+				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.LINZHONG, (int) shijian, 0));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 1200, 9));
+				_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, (int) shijian, 9));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, (int) sudu_dengji));
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (int) shijian, (int) sudu_dengji));
 			if (itemi) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, item);
