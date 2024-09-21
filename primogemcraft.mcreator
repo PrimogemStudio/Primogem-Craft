@@ -28418,6 +28418,53 @@
           "src/main/resources/data/primogemcraft/recipes/qwlhpfs_2.json"
         ]
       }
+    },
+    {
+      "name": "Qwkwzg",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwkwzg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwkwzg.json",
+          "src/main/java/net/mcreator/ceshi/item/QwkwzgItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Diaoyongqwyisunhuai",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diaoyongqwyisunhuai",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/DiaoyongqwyisunhuaiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kwzgpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kwzgpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/kwzgpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -29509,7 +29556,8 @@
       "CUSTOM:Qwymzj",
       "CUSTOM:Chunmeizhipao",
       "CUSTOM:Qwjzyj",
-      "CUSTOM:Qwqcxxmx"
+      "CUSTOM:Qwqcxxmx",
+      "TAG:forge:curio/normal/fusion/s"
     ],
     "BLOCKS:forge:ores": [
       "CUSTOM:Yuanshikuangshi",
@@ -29555,7 +29603,8 @@
       "CUSTOM:Xiangdanganlao",
       "CUSTOM:Qiwuchongwang",
       "CUSTOM:Qwlbtdgcl",
-      "CUSTOM:Qwsmcl"
+      "CUSTOM:Qwsmcl",
+      "TAG:forge:curio/normal/fusion/b"
     ],
     "ITEMS:minecraft:leg_armor": [
       "~CUSTOM:Teshukuijia01.legs",
@@ -29740,7 +29789,8 @@
       "CUSTOM:Qwyzzm",
       "CUSTOM:Qwtcjlbptbg",
       "CUSTOM:Quxgjibing",
-      "CUSTOM:Xingjidaletou"
+      "CUSTOM:Xingjidaletou",
+      "TAG:forge:curio/normal/fusion/a"
     ],
     "ITEMS:forge:ysk_0": [
       "CUSTOM:Zziyousongshikuai",
@@ -29884,6 +29934,9 @@
       "CUSTOM:Xingchen",
       "Items.DYE#4"
     ],
+    "ITEMS:forge:curio/normal/fusion/b": [
+      "CUSTOM:Qwkwzg"
+    ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:Cangsangshizhuanlouti",
       "~CUSTOM:Xiuxiumulouqi",
@@ -29895,6 +29948,7 @@
       "~CUSTOM:Llianjiamolakuiaitaijie",
       "~CUSTOM:Yiyishijiemubanlouqi"
     ],
+    "ITEMS:forge:curio/normal/fusion/a": [],
     "ITEMS:forge:yssx_0": [
       "CUSTOM:Ziziyousongshisuixie",
       "CUSTOM:Jianransuixie",
@@ -29954,6 +30008,7 @@
       "CUSTOM:Mlxdml02",
       "CUSTOM:Mlxdml03"
     ],
+    "ITEMS:forge:curio/normal/fusion/s": [],
     "BLOCKS:pgc:ketance": [
       "CUSTOM:Ziyousongshikuangshi",
       "CUSTOM:Jianlaokuangshi",
@@ -30702,7 +30757,8 @@
       "Qwhcj",
       "Qwlhs",
       "Qwlha",
-      "Qwlhb"
+      "Qwlhb",
+      "Qwkwzg"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -31184,6 +31240,7 @@
       "block.ceshi.jiuchanzhiyuankuai": "Interwined Fate Block",
       "subtitles.hh_chai_0": "正在拆弹",
       "item.primogemcraft.ydggz": "§5『奇物』§b永动咕咕钟",
+      "item.primogemcraft.qwkwzg": "§5§l『奇物』§a空无烛果",
       "enchantment.primogemcraft.ceshifumo_01": "revive",
       "item.primogemcraft.axtt_leggings": "§b『Shivada Jade』§fIron Leggings",
       "subtitles.hh_d1": "滴滴",
@@ -32208,6 +32265,7 @@
       "subtitles.hh_chai_1": "炸弹已经被拆除！",
       "item.primogemcraft.ydggz": "§5『奇物』§b永动咕咕钟",
       "subtitles.hh_chai_0": "正在拆弹",
+      "item.primogemcraft.qwkwzg": "§5§l『奇物』§a空无烛果",
       "enchantment.primogemcraft.ceshifumo_01": "revive",
       "item.primogemcraft.axtt_leggings": "§b『Shivada Jade』§fIron Leggings",
       "effect.primogemcraft.shijianbuchufa": "事件不触发",
@@ -33230,6 +33288,7 @@
       "subtitles.hh_chai_1": "炸弹已经被拆除！",
       "item.primogemcraft.ydggz": "§5『奇物』§b永动咕咕钟",
       "subtitles.hh_chai_0": "正在拆弹",
+      "item.primogemcraft.qwkwzg": "§5§l『奇物』§a空无烛果",
       "enchantment.primogemcraft.ceshifumo_01": "建木附着",
       "item.primogemcraft.axtt_leggings": "§b『哀叙冰玉』§f铁护腿",
       "effect.primogemcraft.shijianbuchufa": "事件不触发",
