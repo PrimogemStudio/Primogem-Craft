@@ -2,6 +2,8 @@ package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.enchantment.ItemEnchantments;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -25,6 +27,7 @@ public class YimuguoshisxhsProcedure {
 		if (entity == null)
 			return;
 		ItemStack a = ItemStack.EMPTY;
+		ItemStack item1 = ItemStack.EMPTY;
 		if (entity.getPersistentData().getBoolean("yijieguoshi_kaiqi")) {
 			if (sunhuai) {
 				if (itemstack.getDamageValue() == itemstack.getMaxDamage() - 1) {
@@ -66,16 +69,10 @@ public class YimuguoshisxhsProcedure {
 			}
 		}
 		if (itemstack.isEnchanted()) {
-			a = new ItemStack(BuiltInRegistries.ITEM.get(new ResourceLocation(((BuiltInRegistries.ITEM.getKey(itemstack.getItem()).toString())).toLowerCase(java.util.Locale.ENGLISH))));
-			itemstack.shrink(1);
-			a.setDamageValue((int) (a.getMaxDamage() - 1));
-			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, a);
-				entityToSpawn.setPickUpDelay(0);
-				_level.addFreshEntity(entityToSpawn);
-			}
+			item1 = itemstack;
+			EnchantmentHelper.setEnchantments(item1, ItemEnchantments.EMPTY);
 		}
-		if (!(entity instanceof LivingEntity _livEnt21 && _livEnt21.hasEffect(PrimogemcraftModMobEffects.QWYMGS)) && !(entity instanceof LivingEntity _livEnt22 && _livEnt22.hasEffect(PrimogemcraftModMobEffects.LINZHONG))) {
+		if (!(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(PrimogemcraftModMobEffects.QWYMGS)) && !(entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(PrimogemcraftModMobEffects.LINZHONG))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.QWYMGS, 20, 0));
 		}
