@@ -24,6 +24,7 @@ public class YimuguoshisxhsProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack itemstack, boolean itemi, boolean sunhuai, double sudu_dengji) {
 		if (entity == null)
 			return;
+		ItemStack a = ItemStack.EMPTY;
 		if (entity.getPersistentData().getBoolean("yijieguoshi_kaiqi")) {
 			if (sunhuai) {
 				if (itemstack.getDamageValue() == itemstack.getMaxDamage() - 1) {
@@ -64,7 +65,17 @@ public class YimuguoshisxhsProcedure {
 				}
 			}
 		}
-		if (!(entity instanceof LivingEntity _livEnt14 && _livEnt14.hasEffect(PrimogemcraftModMobEffects.QWYMGS)) && !(entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(PrimogemcraftModMobEffects.LINZHONG))) {
+		if (itemstack.isEnchanted()) {
+			a = new ItemStack(BuiltInRegistries.ITEM.get(new ResourceLocation(((BuiltInRegistries.ITEM.getKey(itemstack.getItem()).toString())).toLowerCase(java.util.Locale.ENGLISH))));
+			itemstack.shrink(1);
+			a.setDamageValue((int) (a.getMaxDamage() - 1));
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, a);
+				entityToSpawn.setPickUpDelay(0);
+				_level.addFreshEntity(entityToSpawn);
+			}
+		}
+		if (!(entity instanceof LivingEntity _livEnt21 && _livEnt21.hasEffect(PrimogemcraftModMobEffects.QWYMGS)) && !(entity instanceof LivingEntity _livEnt22 && _livEnt22.hasEffect(PrimogemcraftModMobEffects.LINZHONG))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.QWYMGS, 20, 0));
 		}

@@ -30052,7 +30052,8 @@
       "Items.DYE#4"
     ],
     "ITEMS:forge:curio/normal/fusion/b": [
-      "CUSTOM:Qwkwzg"
+      "CUSTOM:Qwkwzg",
+      "CUSTOM:Qwcbzg"
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:Cangsangshizhuanlouti",
