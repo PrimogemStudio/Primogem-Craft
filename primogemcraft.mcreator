@@ -28615,6 +28615,65 @@
           "src/main/resources/data/primogemcraft/recipes/qwxeymgspf.json"
         ]
       }
+    },
+    {
+      "name": "Qwhydlt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwhydlt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwhydltItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwhydlt.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwhydltsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwhydltsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwhydltsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hydltsx",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydltsx",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/hydltsx.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -30914,7 +30973,8 @@
       "Qwlhb",
       "Qwkwzg",
       "Qwcbzg",
-      "Qwypzgs"
+      "Qwypzgs",
+      "Qwhydlt"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -32083,6 +32143,7 @@
       "itemGroup.tabyuanshifangkuaika": "Primogem Craft Blocks",
       "item.primogemcraft.djhjt_boots": "§b『Varunda Lazurite』§eNetherite Boots",
       "advancements.xdfsqczjd.title": "创造模式！！",
+      "item.primogemcraft.qwhydlt": "§5§l『奇物』§c欢愉大乐透",
       "block.primogemcraft.jingzhimolakuai": "§6Exquisite Mora Block",
       "item.ceshi.jijiuchanzhiyuan": "Intertwined Fate",
       "item.primogemcraft.liulangzhezhinang": "Wanderer\u0027s Kit Bag",
@@ -33110,6 +33171,7 @@
       "itemGroup.tabyuanshifangkuaika": "Primogem Craft Blocks",
       "item.primogemcraft.djhjt_boots": "§b『Varunda Lazurite』§eNetherite Boots",
       "advancements.xdfsqczjd.title": "创造模式！！",
+      "item.primogemcraft.qwhydlt": "§5§l『奇物』§c欢愉大乐透",
       "block.primogemcraft.jingzhimolakuai": "§6Exquisite Mora Block",
       "item.ceshi.jijiuchanzhiyuan": "Intertwined Fate",
       "item.primogemcraft.liulangzhezhinang": "Wanderer\u0027s Kit Bag",
@@ -34131,6 +34193,7 @@
       "itemGroup.tabyuanshifangkuaika": "原石工艺 方块",
       "item.primogemcraft.djhjt_boots": "§b『涤净青金』§e下界合金靴子",
       "advancements.xdfsqczjd.title": "创造模式！！",
+      "item.primogemcraft.qwhydlt": "§5§l『奇物』§c欢愉大乐透",
       "block.primogemcraft.jingzhimolakuai": "§6精致摩拉块",
       "item.ceshi.jijiuchanzhiyuan": "纠缠之缘",
       "item.primogemcraft.liulangzhezhinang": "流浪者之囊",
