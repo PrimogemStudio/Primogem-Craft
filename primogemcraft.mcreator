@@ -19064,8 +19064,8 @@
       "registry_name": "qwymzj",
       "metadata": {
         "files": [
-          "src/main/resources/assets/primogemcraft/models/item/qwymzj.json",
-          "src/main/java/net/mcreator/ceshi/item/QwymzjItem.java"
+          "src/main/java/net/mcreator/ceshi/item/QwymzjItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwymzj.json"
         ]
       }
     },
@@ -28674,6 +28674,31 @@
           "src/main/resources/data/primogemcraft/recipes/hydltsx.json"
         ]
       }
+    },
+    {
+      "name": "Qwzjxxmx",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwzjxxmx",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwzjxxmx.json",
+          "src/main/java/net/mcreator/ceshi/item/QwzjxxmxItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Zjmxpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zjmxpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/zjmxpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -30221,7 +30246,9 @@
       "CUSTOM:Mlxdml02",
       "CUSTOM:Mlxdml03"
     ],
-    "ITEMS:forge:curio/normal/fusion/s": [],
+    "ITEMS:forge:curio/normal/fusion/s": [
+      "CUSTOM:Qwzjxxmx"
+    ],
     "BLOCKS:pgc:ketance": [
       "CUSTOM:Ziyousongshikuangshi",
       "CUSTOM:Jianlaokuangshi",
@@ -30976,7 +31003,8 @@
       "Qwkwzg",
       "Qwcbzg",
       "Qwypzgs",
-      "Qwhydlt"
+      "Qwhydlt",
+      "Qwzjxxmx"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -31404,6 +31432,7 @@
       "item.primogemcraft.axtj": "§b『Shivada Jade』§Iron Sword",
       "entity.primogemcraft.qqiwuzhanlipinshiti": "entity of Curio",
       "item.primogemcraft.djtt_leggings": "§b『Varunada Lazurite』§fIron Leggings",
+      "item.primogemcraft.qwzjxxmx": "§5『奇物』§f烛剪星系模型",
       "item.primogemcraft.kkuijiaceshi_boots": "Mora Boots",
       "advancements.shshiwanyuyuedacheng.descr": "Obtain One Interwined Fate",
       "item.primogemcraft.ryzsj": "§c『Agnidus Agate』§bDiamond Sword",
@@ -31488,7 +31517,7 @@
       "subtitles.xiaoguanzi": "",
       "block.primogemcraft.cangsangshizhuantaijie": "Vicissitude Brick Stairs",
       "item.primogemcraft.szzskj_leggings": "§a『Nagadus Emerald』§dDiamond Leggings",
-      "item.primogemcraft.qwymzj": "§5『Curio』§6Obliteration Wick Trimmer",
+      "item.primogemcraft.qwymzj": "§5『奇物』§6湮灭烛剪",
       "item.ceshi.yuanshi": "Primogem",
       "item.primogemcraft.qyhx": "祈愿核心",
       "item.primogemcraft.shanbianzhichen": "Dust of Inverting",
@@ -32432,6 +32461,7 @@
       "item.primogemcraft.axtj": "§b『Shivada Jade』§Iron Sword",
       "entity.primogemcraft.qqiwuzhanlipinshiti": "entity of Curio",
       "item.primogemcraft.djtt_leggings": "§b『Varunada Lazurite』§fIron Leggings",
+      "item.primogemcraft.qwzjxxmx": "§5『奇物』§f烛剪星系模型",
       "item.primogemcraft.kkuijiaceshi_boots": "Mora Boots",
       "advancements.shshiwanyuyuedacheng.descr": "Obtain One Interwined Fate",
       "item.primogemcraft.ryzsj": "§c『Agnidus Agate』§bDiamond Sword",
@@ -33459,6 +33489,7 @@
       "item.primogemcraft.axtj": "§b『哀叙冰玉』§铁剑",
       "entity.primogemcraft.qqiwuzhanlipinshiti": "奇物战利品实体",
       "item.primogemcraft.djtt_leggings": "§b『涤净青金』§f铁护腿",
+      "item.primogemcraft.qwzjxxmx": "§5『奇物』§f烛剪星系模型",
       "item.primogemcraft.kkuijiaceshi_boots": "§e摩拉 靴子",
       "advancements.shshiwanyuyuedacheng.descr": "获得一枚相遇之缘",
       "item.primogemcraft.ryzsj": "§c『燃愿玛瑙』§b钻石剑",

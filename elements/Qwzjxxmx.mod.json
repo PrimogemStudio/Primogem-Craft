@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "yin_mie_zhu_jian_",
+    "texture": "qw_zjxxmx",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§5『奇物』§6湮灭烛剪",
+    "name": "§5『奇物』§f烛剪星系模型",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -23,16 +23,16 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7破坏方块后将获得随机",
-        "§7等级 力量 I ~ IV 效果",
-        "§8持续方块硬度 * 5秒"
+        "§6与湮灭烛剪效果一致，但",
+        "§6挖掘时根据方块硬度将有不同概率",
+        "§6掉落宇宙碎片"
       ]
     },
     "glowCondition": {
