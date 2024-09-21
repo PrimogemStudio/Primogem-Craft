@@ -28396,18 +28396,6 @@
       }
     },
     {
-      "name": "Qwlhpfs0",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "qwlhpfs_0",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipes/qwlhpfs_0.json"
-        ]
-      }
-    },
-    {
       "name": "Qwlhpfs1",
       "type": "recipe",
       "compiles": true,
