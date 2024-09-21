@@ -28465,6 +28465,52 @@
           "src/main/resources/data/primogemcraft/recipes/kwzgpf.json"
         ]
       }
+    },
+    {
+      "name": "Yimuguoshisxhs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yimuguoshisxhs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/YimuguoshisxhsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "sunhuai",
+            "type": "logic"
+          },
+          {
+            "name": "sudu_dengji",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31129,7 +31175,7 @@
       "block.primogemcraft.zhjsk": "Ingenuity  blck",
       "gamerule.jinyongnang.description": "是否阻止囊被使用？",
       "item.primogemcraft.yuanshif": "原石粉尘",
-      "item.primogemcraft.yiyimuguoshi": "§5『Curio』§6Fruit of the Alien Tree",
+      "item.primogemcraft.yiyimuguoshi": "§5『奇物』§6异木果实",
       "effect.primogemcraft.jijishengchongdefennu": "Parasitized",
       "gui.primogemcraft.taozhuangchakan.label_cao_01": "Dendro",
       "advancements.ffanrongjindu_1.title": "Philosophies of 『Prosperity』",
