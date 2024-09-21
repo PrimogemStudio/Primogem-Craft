@@ -218,12 +218,14 @@ import net.mcreator.ceshi.item.QwwxntdmjItem;
 import net.mcreator.ceshi.item.QwtldhyItem;
 import net.mcreator.ceshi.item.QwtcjlbptbgItem;
 import net.mcreator.ceshi.item.QwsmclItem;
+import net.mcreator.ceshi.item.QwrhjItem;
 import net.mcreator.ceshi.item.QwqskxjxtItem;
 import net.mcreator.ceshi.item.QwqcxxmxItem;
 import net.mcreator.ceshi.item.QwlbtdgclItem;
 import net.mcreator.ceshi.item.QwkwzjItem;
 import net.mcreator.ceshi.item.QwjzyjItem;
 import net.mcreator.ceshi.item.QwhdlzItem;
+import net.mcreator.ceshi.item.QwhcjItem;
 import net.mcreator.ceshi.item.QwggzfenlieBItem;
 import net.mcreator.ceshi.item.QwggzfenlieAItem;
 import net.mcreator.ceshi.item.QwflybItem;
@@ -914,6 +916,8 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> QYHXSHILIAN = REGISTRY.register("qyhxshilian", QyhxshilianItem::new);
 	public static final DeferredItem<Item> TIANKONGSP = REGISTRY.register("tiankongsp", TiankongspItem::new);
 	public static final DeferredItem<Item> QYHX_0WUJIACHENG = REGISTRY.register("qyhx_0wujiacheng", Qyhx0wujiachengItem::new);
+	public static final DeferredItem<Item> QWRHJ = REGISTRY.register("qwrhj", QwrhjItem::new);
+	public static final DeferredItem<Item> QWHCJ = REGISTRY.register("qwhcj", QwhcjItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

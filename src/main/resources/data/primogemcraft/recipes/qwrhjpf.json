@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcd",
+    "eee"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_nugget"
+    },
+    "b": {
+      "item": "primogemcraft:yuzhousuipian"
+    },
+    "c": {
+      "tag": "forge:curio"
+    },
+    "d": {
+      "item": "primogemcraft:shanbianzhichen"
+    },
+    "e": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:qwrhj",
+    "count": 3
+  }
+}

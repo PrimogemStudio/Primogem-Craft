@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.GOLD_NUGGET"
+      },
+      {
+        "value": "Items.GOLD_NUGGET"
+      },
+      {
+        "value": "Items.GOLD_NUGGET"
+      },
+      {
+        "value": "CUSTOM:Yuzhousuipian"
+      },
+      {
+        "value": "TAG:forge:curio"
+      },
+      {
+        "value": "CUSTOM:Shanbianzhichen"
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Qwrhj"
+    },
+    "name": "qwrhjpf",
+    "namespace": "mod"
+  }
+}
