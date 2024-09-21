@@ -2294,8 +2294,8 @@
       "registry_name": "ssanbamiantou",
       "metadata": {
         "files": [
-          "src/main/resources/assets/primogemcraft/models/item/ssanbamiantou.json",
-          "src/main/java/net/mcreator/ceshi/item/SsanbamiantouItem.java"
+          "src/main/java/net/mcreator/ceshi/item/SsanbamiantouItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/ssanbamiantou.json"
         ]
       }
     },
@@ -2349,18 +2349,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -28883,6 +28871,28 @@
           "src/main/resources/data/primogemcraft/recipes/flbpf.json"
         ]
       }
+    },
+    {
+      "name": "HSsbmtsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "h_ssbmtsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/HSsbmtsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31943,7 +31953,7 @@
       "item.primogemcraft.jlkjhj_boots": "§6『Prithiva Topaz』 §eNetherite Boots",
       "advancements.wanwuqiyuan.title": "Everything Original",
       "item.primogemcraft.mllp": "摩拉罗盘",
-      "item.primogemcraft.ssanbamiantou": "§5『Curio』§dShiny Trapezohedron Die",
+      "item.primogemcraft.ssanbamiantou": "§5『奇物』§d闪耀的偏方三八面骰",
       "effect.primogemcraft.diguixiaoguo": "§aFixed§fCurio",
       "gui.primogemcraft.liulangzhezhinanggui.label_wu_pin_lan": "Inventory",
       "block.primogemcraft.shengzhangkuangshi": "§aNagadus Emerald Ore",
