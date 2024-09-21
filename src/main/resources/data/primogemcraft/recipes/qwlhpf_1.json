@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:qwhcj"
+  },
+  "base": {
+    "tag": "forge:curio/normal/a"
+  },
+  "addition": {
+    "tag": "forge:curio/normal/a"
+  },
+  "result": {
+    "id": "primogemcraft:qwlhs"
+  }
+}

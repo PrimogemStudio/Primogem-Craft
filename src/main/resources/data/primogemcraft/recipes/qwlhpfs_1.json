@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "forge:curio/normal/a"
+  },
+  "result": {
+    "id": "primogemcraft:qwlhb"
+  }
+}

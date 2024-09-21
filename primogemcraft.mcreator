@@ -28205,6 +28205,231 @@
           "src/main/resources/data/primogemcraft/recipes/qwhcjpf.json"
         ]
       }
+    },
+    {
+      "name": "Qwlhs",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlhs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwlhs.json",
+          "src/main/java/net/mcreator/ceshi/item/QwlhsItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Qwlha",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlha",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwlha.json",
+          "src/main/java/net/mcreator/ceshi/item/QwlhaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Qwlhb",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlhb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwlhbItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwlhb.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwlhsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlhsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwlhsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "qwlh",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "qwlh_tag",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwlhsx0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlhsx_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Qwlhsx0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Zllhsxhs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zllhsxhs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/ZllhsxhsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tiem0",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "zllh_hs_zlpb",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwlhpf0",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlhpf_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwlhpf_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwlhpf1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlhpf_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwlhpf_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwlhpfs0",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlhpfs_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwlhpfs_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwlhpfs1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlhpfs_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwlhpfs_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwlhpfs2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlhpfs_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwlhpfs_2.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -30486,7 +30711,10 @@
       "Qyhxshilian",
       "Qyhx0wujiacheng",
       "Qwrhj",
-      "Qwhcj"
+      "Qwhcj",
+      "Qwlhs",
+      "Qwlha",
+      "Qwlhb"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -30863,6 +31091,8 @@
       "advancements.ffanrongjindu_1.title": "Philosophies of 『Prosperity』",
       "item.primogemcraft.ccangruimilinjian_014": "Village Surrounded by Green",
       "gui.primogemcraft.cunzheshezhi.label_empty": "+",
+      "item.primogemcraft.qwlhb": "奇物礼盒",
+      "item.primogemcraft.qwlha": "奇物礼盒",
       "item.primogemcraft.qwjzyj": "§5『Curio』§aFamily Ties",
       "entity.primogemcraft.q_qyuanchuzi_01": "Wish purple result",
       "block.primogemcraft.ceshi_mucaibao_slab": "Dendro Core Slab",
@@ -31170,6 +31400,7 @@
       "item.primogemcraft.yuzhousuipian": "Cosmic Fragments",
       "item.primogemcraft.zizgao": "§a『Vayuda Turquoise』Pickaxe",
       "item.primogemcraft.zizaitiejia_boots": "§a『Vayuda Turquoise』 Iron Boots",
+      "item.primogemcraft.qwlhs": "奇物礼盒",
       "item.primogemcraft.szhjkj_chestplate": "§a『Nagadus Emerald』§eNetherite Chestplate",
       "subtitles.chujinle02": "hahaha",
       "effect.lengquezhongguizhongju": "Implement Error Cool Down",
@@ -31884,6 +32115,8 @@
       "advancements.ffanrongjindu_1.title": "Philosophies of 『Prosperity』",
       "item.primogemcraft.ccangruimilinjian_014": "Village Surrounded by Green",
       "gui.primogemcraft.cunzheshezhi.label_empty": "+",
+      "item.primogemcraft.qwlhb": "奇物礼盒",
+      "item.primogemcraft.qwlha": "奇物礼盒",
       "item.primogemcraft.qwjzyj": "§5『Curio』§aFamily Ties",
       "entity.primogemcraft.q_qyuanchuzi_01": "Wish purple result",
       "item.primogemcraft.feiqiupingzheng": "§e§kaha§8§rVochur of Unlucky§e§kaha",
@@ -32191,6 +32424,7 @@
       "item.primogemcraft.yuzhousuipian": "Cosmic Fragments",
       "item.primogemcraft.zizgao": "§a『Vayuda Turquoise』Pickaxe",
       "item.primogemcraft.zizaitiejia_boots": "§a『Vayuda Turquoise』 Iron Boots",
+      "item.primogemcraft.qwlhs": "奇物礼盒",
       "item.primogemcraft.szhjkj_chestplate": "§a『Nagadus Emerald』§eNetherite Chestplate",
       "subtitles.chujinle02": "hahaha",
       "effect.lengquezhongguizhongju": "Implement Error Cool Down",
@@ -32905,6 +33139,8 @@
       "advancements.ffanrongjindu_1.title": "§6『繁荣』的哲学",
       "item.primogemcraft.ccangruimilinjian_014": "葳蕤林野间",
       "gui.primogemcraft.cunzheshezhi.label_empty": "+",
+      "item.primogemcraft.qwlhb": "奇物礼盒",
+      "item.primogemcraft.qwlha": "奇物礼盒",
       "item.primogemcraft.qwjzyj": "§5『奇物』§a家族缘结",
       "entity.primogemcraft.q_qyuanchuzi_01": "祈愿出紫色",
       "item.primogemcraft.feiqiupingzheng": "§e§kaha§8§r非酋凭证§e§kaha",
@@ -33207,6 +33443,7 @@
       "item.primogemcraft.zizgao": "§a『自在松石』镐",
       "item.primogemcraft.yuzhousuipian": "宇宙碎片",
       "item.primogemcraft.zizaitiejia_boots": "§a『自在松石』 §f铁靴子",
+      "item.primogemcraft.qwlhs": "奇物礼盒",
       "item.primogemcraft.szhjkj_chestplate": "§a『生长碧翡』§e下界合金胸甲",
       "subtitles.chujinle02": "hahaha",
       "effect.lengquezhongguizhongju": "错误代码冷却",
