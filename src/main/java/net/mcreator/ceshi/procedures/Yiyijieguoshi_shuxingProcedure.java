@@ -11,5 +11,8 @@ public class Yiyijieguoshi_shuxingProcedure {
 		if (entity == null)
 			return;
 		YimuguoshisxhsProcedure.execute(world, x, y, z, entity, itemstack, itemstack, false, itemstack.getItem() == PrimogemcraftModItems.QWKWZG.get() ? false : true, 1200, 2);
+		if (itemstack.getItem() == PrimogemcraftModItems.QWYPZGS.get()) {
+			entity.getPersistentData().putBoolean("ypz_ymgs", true);
+		}
 	}
 }

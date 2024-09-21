@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "qw_cbzg",
+    "texture": "qw_ypzgs",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§5§l『奇物』§f测不准果",
+    "name": "§5§l『奇物』§d邪恶的异木果实",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -18,7 +18,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 3,
+    "damageCount": 1,
     "recipeRemainder": {
       "value": ""
     },
@@ -30,9 +30,12 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7效果与异木果实一致，但",
-        "§7触发后可获得事件补偿券(低~中)",
-        "§7允许使用3次§c§l不能连续触发"
+        "§6与异木果实效果一致，但",
+        "§5免疫伤害时有20%概率对攻击",
+        "§5者造成一次攻击者最大生命值",
+        "§520%的魔法伤害",
+        "§c§l伤害不是由你造成的！",
+        "§c§l不能连续触发"
       ]
     },
     "glowCondition": {
@@ -42,7 +45,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onItemInInventoryTick": {
-      "name": "Qwcbzgsx"
+      "name": "Yiyijieguoshi_shuxing"
     },
     "enableRanged": false,
     "shootConstantly": false,

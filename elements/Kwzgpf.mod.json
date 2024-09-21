@@ -2,7 +2,7 @@
   "_fv": 69,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Crafting",
+    "recipeType": "Smithing",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
@@ -10,36 +10,16 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": "CUSTOM:Qwrhj"
-      },
-      {
-        "value": "CUSTOM:Yiyimuguoshi"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Qwkwzj"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
-    ],
-    "recipeReturnStack": {
+    "smithingInputStack": {
+      "value": "CUSTOM:Qwkwzj"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:Yiyimuguoshi"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:Qwrhj"
+    },
+    "smithingReturnStack": {
       "value": "CUSTOM:Qwkwzg"
     },
     "name": "kwzgpf",

@@ -1,23 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "ab",
-    "c "
-  ],
-  "key": {
-    "a": {
-      "item": "primogemcraft:qwrhj"
-    },
-    "b": {
-      "item": "primogemcraft:yiyimuguoshi"
-    },
-    "c": {
-      "item": "primogemcraft:qwkwzj"
-    }
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:qwrhj"
+  },
+  "base": {
+    "item": "primogemcraft:qwkwzj"
+  },
+  "addition": {
+    "item": "primogemcraft:yiyimuguoshi"
   },
   "result": {
-    "id": "primogemcraft:qwkwzg",
-    "count": 1
+    "id": "primogemcraft:qwkwzg"
   }
 }
