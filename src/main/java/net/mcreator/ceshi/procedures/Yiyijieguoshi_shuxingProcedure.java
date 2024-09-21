@@ -10,6 +10,6 @@ public class Yiyijieguoshi_shuxingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		YimuguoshisxhsProcedure.execute(world, x, y, z, entity, itemstack, itemstack.getItem() == PrimogemcraftModItems.QWKWZG.get() ? false : true, 2);
+		YimuguoshisxhsProcedure.execute(world, x, y, z, entity, itemstack, itemstack, false, itemstack.getItem() == PrimogemcraftModItems.QWKWZG.get() ? false : true, 2);
 	}
 }

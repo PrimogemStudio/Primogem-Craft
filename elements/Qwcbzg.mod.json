@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "yimuguoshi",
+    "texture": "qw_cbzg",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§5『奇物』§6异木果实",
+    "name": "§5§l『奇物』§f测不准果",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -30,10 +30,9 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7玩家死亡时，为其提供一分钟的额外生命",
-        "§7期间免疫5次任意伤害",
-        "§c临终效果结束后会尝试杀死玩家",
-        "§a不能连续触发"
+        "§7效果与异木果实一致，但",
+        "§7触发后可获得事件补偿券(低~中)",
+        "§7允许使用3次§c不能连续触发"
       ]
     },
     "glowCondition": {
@@ -43,7 +42,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onItemInInventoryTick": {
-      "name": "Yiyijieguoshi_shuxing"
+      "name": "Qwcbzgsx"
     },
     "enableRanged": false,
     "shootConstantly": false,
