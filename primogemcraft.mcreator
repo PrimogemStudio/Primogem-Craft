@@ -8471,8 +8471,8 @@
       "registry_name": "fenliejinbi",
       "metadata": {
         "files": [
-          "src/main/resources/assets/primogemcraft/models/item/fenliejinbi.json",
-          "src/main/java/net/mcreator/ceshi/item/FenliejinbiItem.java"
+          "src/main/java/net/mcreator/ceshi/item/FenliejinbiItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/fenliejinbi.json"
         ]
       }
     },
@@ -28699,6 +28699,190 @@
           "src/main/resources/data/primogemcraft/recipes/zjmxpf.json"
         ]
       }
+    },
+    {
+      "name": "Fenliejinbisxhs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fenliejinbisxhs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/FenliejinbisxhsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "item",
+            "type": "itemstack"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "cishu",
+            "type": "number"
+          },
+          {
+            "name": "gailv",
+            "type": "number"
+          },
+          {
+            "name": "naijiu",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "zhi_naijiu",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwflb",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwflb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwflb.json",
+          "src/main/java/net/mcreator/ceshi/item/QwflbItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Qwflbsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwflbsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwflbsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwfldyhdlb",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwfldyhdlb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwfldyhdlbItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwfldyhdlb.json"
+        ]
+      }
+    },
+    {
+      "name": "Yhdlbsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yhdlbsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/YhdlbsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Flyhdlbpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flyhdlbpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/flyhdlbpf.json"
+        ]
+      }
+    },
+    {
+      "name": "Flbpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flbpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/flbpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -30185,7 +30369,9 @@
       "~CUSTOM:Yiyishijiemubanlouqi"
     ],
     "ITEMS:forge:curio/normal/fusion/a": [
-      "CUSTOM:Qwhydlt"
+      "CUSTOM:Qwhydlt",
+      "CUSTOM:Qwflb",
+      "CUSTOM:Qwfldyhdlb"
     ],
     "ITEMS:forge:yssx_0": [
       "CUSTOM:Ziziyousongshisuixie",
@@ -30668,6 +30854,8 @@
       "CUSTOM:Hqbing"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwfldyhdlb",
+      "~CUSTOM:Qwflb",
       "~CUSTOM:Qwypzgs",
       "~CUSTOM:Qwcbzg",
       "~CUSTOM:Qyhxshilian",
@@ -31004,7 +31192,9 @@
       "Qwcbzg",
       "Qwypzgs",
       "Qwhydlt",
-      "Qwzjxxmx"
+      "Qwzjxxmx",
+      "Qwflb",
+      "Qwfldyhdlb"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -31395,7 +31585,7 @@
       "block.primogemcraft.yishijiemuban_button": "monochrome another world wood planks button",
       "item.primogemcraft.ysrz_0": "元素熔珠",
       "block.primogemcraft.mutankuai": "Charcoal Block",
-      "item.primogemcraft.fenliejinbi": "§5『Curio』§eGold Coin of Discord",
+      "item.primogemcraft.fenliejinbi": "§5『奇物』§e分裂金币",
       "item.primogemcraft.jlbj": "§5『CUrio』§cSociety Ticket",
       "item.primogemcraft.qwxyzq": "§5『CUrio』§eFaith Bond",
       "item.primogemcraft.szhjkj_helmet": "§a『Nagadus Emerald』§eNetherite Helmet",
@@ -31661,6 +31851,7 @@
       "item.primogemcraft.kjjlt_chestplate": "§6『Prithiva Topaz』 §fIron Chestplate",
       "block.primogemcraft.moladui_02": "Mora Heap",
       "gui.primogemcraft.gu_iqiwuxuanze.label_xuan_ze_ge_qi_wu": "选择一个奇物",
+      "item.primogemcraft.qwflb": "§5§l『奇物』§f分§e分§f裂§e裂§f币§e币",
       "block.primogemcraft.ryjsk": "Amethyst Block",
       "gui.primogemcraft.guiheitaxinyindao.label_xiao_hao_1ge_sui_ji_cuo_wu_dai_ma": "消耗1个随机错误代码。",
       "effect.primogemcraft.jiazuxianzhi": "Family Ties Cooling down",
@@ -31897,6 +32088,7 @@
       "advancements.jdzlyp.descr": "获得奇物：空无烛剪",
       "item.primogemcraft.weizhiyepian": "§eUnknown Leaf",
       "advancements.jdkx.descr": "获得强化助力礼盒",
+      "item.primogemcraft.qwfldyhdlb": "§5§l『奇物』§b分裂的银河大乐币",
       "block.primogemcraft.yishijiemuban_slab": "monochrome another world wood planks Slab",
       "item.primogemcraft.hqyan": "§5『Curio』§6Sealing Wax of indenture",
       "item.primogemcraft.quxgjibing": "§5『奇物』§f虚构机兵",
@@ -32690,6 +32882,7 @@
       "item.primogemcraft.kjjlt_chestplate": "§6『Prithiva Topaz』 §fIron Chestplate",
       "block.primogemcraft.moladui_02": "Mora Heap",
       "gui.primogemcraft.gu_iqiwuxuanze.label_xuan_ze_ge_qi_wu": "选择一个奇物",
+      "item.primogemcraft.qwflb": "§5§l『奇物』§f分§e分§f裂§e裂§f币§e币",
       "block.primogemcraft.ryjsk": "Amethyst Block",
       "gui.primogemcraft.guiheitaxinyindao.label_xiao_hao_1ge_sui_ji_cuo_wu_dai_ma": "消耗1个随机错误代码。",
       "effect.primogemcraft.jiazuxianzhi": "Family Ties Cooling down",
@@ -32926,6 +33119,7 @@
       "advancements.jdzlyp.descr": "获得奇物：空无烛剪",
       "item.primogemcraft.weizhiyepian": "§eUnknown Leaf",
       "advancements.jdkx.descr": "获得强化助力礼盒",
+      "item.primogemcraft.qwfldyhdlb": "§5§l『奇物』§b分裂的银河大乐币",
       "block.primogemcraft.yishijiemuban_slab": "monochrome another world wood planks Slab",
       "item.primogemcraft.hqyan": "§5『Curio』§6Sealing Wax of indenture",
       "item.primogemcraft.quxgjibing": "§5『奇物』§f虚构机兵",
@@ -33714,6 +33908,7 @@
       "item.primogemcraft.kjjlt_chestplate": "§6『坚牢黄玉』 §f铁胸甲",
       "block.primogemcraft.moladui_02": "摩拉堆",
       "gui.primogemcraft.gu_iqiwuxuanze.label_xuan_ze_ge_qi_wu": "选择一个奇物",
+      "item.primogemcraft.qwflb": "§5§l『奇物』§f分§e分§f裂§e裂§f币§e币",
       "block.primogemcraft.ryjsk": "燃愿金属块",
       "gui.primogemcraft.guiheitaxinyindao.label_xiao_hao_1ge_sui_ji_cuo_wu_dai_ma": "消耗1个随机错误代码。",
       "effect.primogemcraft.jiazuxianzhi": "家族缘结冷却",
@@ -33950,6 +34145,7 @@
       "advancements.jdzlyp.descr": "获得奇物：空无烛剪",
       "item.primogemcraft.weizhiyepian": "§e未知叶片",
       "advancements.jdkx.descr": "获得强化助力礼盒",
+      "item.primogemcraft.qwfldyhdlb": "§5§l『奇物』§b分裂的银河大乐币",
       "block.primogemcraft.yishijiemuban_slab": "单色异世界木木板 台阶",
       "item.primogemcraft.hqyan": "§5『奇物』§6契约火漆",
       "item.primogemcraft.quxgjibing": "§5『奇物』§f虚构机兵",
