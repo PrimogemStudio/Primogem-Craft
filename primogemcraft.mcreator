@@ -30159,7 +30159,9 @@
       "~CUSTOM:Llianjiamolakuiaitaijie",
       "~CUSTOM:Yiyishijiemubanlouqi"
     ],
-    "ITEMS:forge:curio/normal/fusion/a": [],
+    "ITEMS:forge:curio/normal/fusion/a": [
+      "CUSTOM:Qwhydlt"
+    ],
     "ITEMS:forge:yssx_0": [
       "CUSTOM:Ziziyousongshisuixie",
       "CUSTOM:Jianransuixie",
