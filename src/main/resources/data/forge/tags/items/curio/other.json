@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:curio/bad",
+    "#forge:curio/code",
+    "#forge:curio/other/ealing_wax"
+  ]
+}
