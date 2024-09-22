@@ -29219,6 +29219,69 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qwwxwcx",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwxwcx",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwwxwcx.json",
+          "src/main/java/net/mcreator/ceshi/item/QwwxwcxItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Qwwxwcxsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwxwcxsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwwxwcxsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wxwcxpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wxwcxpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/wxwcxpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -30693,7 +30756,8 @@
     "ITEMS:forge:curio/normal/fusion/b": [
       "CUSTOM:Qwkwzg",
       "CUSTOM:Qwcbzg",
-      "CUSTOM:Qwypzgs"
+      "CUSTOM:Qwypzgs",
+      "CUSTOM:Qwwxwcx"
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:Cangsangshizhuanlouti",
@@ -31193,6 +31257,7 @@
       "CUSTOM:Hqbing"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwwxwcx",
       "~CUSTOM:Qwsbmb",
       "~CUSTOM:Qwfldyhdlb",
       "~CUSTOM:Qwflb",
@@ -31535,7 +31600,8 @@
       "Qwzjxxmx",
       "Qwflb",
       "Qwfldyhdlb",
-      "Qwsbmb"
+      "Qwsbmb",
+      "Qwwxwcx"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -32300,6 +32366,7 @@
       "gui.primogemcraft.guiheitaxinyindao.label_chi_kai": "• 离开。",
       "item.primogemcraft.zhapiandingzhengshi": "§fNetherite Ingot",
       "item.primogemcraft.zstkj_helmet": "§d『Vajrada Amethyst』§fIron Helmet",
+      "item.primogemcraft.qwwxwcx": "§5§l『奇物』§f万象无常匣",
       "gui.primogemcraft.guis_jfumo.tooltip_ss6gao_pin_zhi_fu_mo": "§6高品质附魔",
       "item.primogemcraft.ranyuanduanpian": "§cAgnidus Agate Fragment",
       "item.primogemcraft.mllpzs": "摩拉罗盘 钻石",
@@ -33332,6 +33399,7 @@
       "gui.primogemcraft.guiheitaxinyindao.label_chi_kai": "• 离开。",
       "item.primogemcraft.zhapiandingzhengshi": "§fNetherite Ingot",
       "item.primogemcraft.zstkj_helmet": "§d『Vajrada Amethyst』§fIron Helmet",
+      "item.primogemcraft.qwwxwcx": "§5§l『奇物』§f万象无常匣",
       "gui.primogemcraft.guis_jfumo.tooltip_ss6gao_pin_zhi_fu_mo": "§6高品质附魔",
       "item.primogemcraft.ranyuanduanpian": "§cAgnidus Agate Fragment",
       "item.primogemcraft.mllpzs": "摩拉罗盘 钻石",
@@ -34359,6 +34427,7 @@
       "gui.primogemcraft.guiheitaxinyindao.label_chi_kai": "• 离开。",
       "item.primogemcraft.zhapiandingzhengshi": "§f下界合金锭",
       "item.primogemcraft.zstkj_helmet": "§d『最胜紫晶』§f铁头盔",
+      "item.primogemcraft.qwwxwcx": "§5§l『奇物』§f万象无常匣",
       "gui.primogemcraft.guis_jfumo.tooltip_ss6gao_pin_zhi_fu_mo": "§6高品质附魔",
       "item.primogemcraft.ranyuanduanpian": "§c燃愿玛瑙 断片",
       "item.primogemcraft.mllpzs": "摩拉罗盘 钻石",

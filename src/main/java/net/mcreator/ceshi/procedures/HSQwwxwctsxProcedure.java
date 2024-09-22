@@ -22,7 +22,7 @@ public class HSQwwxwctsxProcedure {
 			double zui_da, String itemx, String xianzhi_cishu) {
 		if (entity == null || itemx == null || xianzhi_cishu == null)
 			return;
-		if ((yi_fumo ? item0.isEnchanted() : item0.isEnchantable()) && !item0.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean(xianzhi_cishu)) {
+		if ((yi_fumo ? item0.isEnchanted() : !item0.isEnchanted() && item0.isEnchantable()) && !item0.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean(xianzhi_cishu)) {
 			item0.applyComponents((EnchantmentHelper.enchantItem(FeatureFlagSet.of(FeatureFlags.VANILLA), RandomSource.create(), (item0.copy()), (int) dengji, bao_zang)).getComponents());
 			if (dan_ci) {
 				{
@@ -37,45 +37,38 @@ public class HSQwwxwctsxProcedure {
 					CustomData.update(DataComponents.CUSTOM_DATA, item0, tag -> tag.putDouble(_tagName, _tagValue));
 				}
 			}
-			if (xiao_hui) {
-				itemstack.shrink(1);
-			} else {
-				{
-					ItemStack _ist = itemstack;
-					_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
-					});
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 5, 1);
+				} else {
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 5, 1, false);
 				}
 			}
 			if (xiao_hui) {
+				itemstack.shrink(1);
 				if (tong_zhi) {
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 5, 1);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 5, 1, false);
-						}
-					}
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal((itemx + "\u00A7c\u5DF2\u6D88\u8017")), false);
 				}
-			} else if (itemstack.getDamageValue() == itemstack.getMaxDamage() - 1) {
-				if (tong_zhi) {
+			} else {
+				if (itemstack.getDamageValue() == itemstack.getMaxDamage() - 1) {
 					itemstack.shrink(1);
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 5, 1);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 5, 1, false);
-						}
+					if (tong_zhi) {
+						if (entity instanceof Player _player)
+							_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
+						if (entity instanceof Player _player && !_player.level().isClientSide())
+							_player.displayClientMessage(Component.literal((itemx + "\u00A7c\u5DF2\u6D88\u8017")), false);
 					}
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal((itemx + "\u00A7c\u5DF2\u6D88\u8017")), false);
+				} else {
+					{
+						ItemStack _ist = itemstack;
+						_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
+							_ist.shrink(1);
+							_ist.setDamageValue(0);
+						});
+					}
 				}
 			}
 		} else {
