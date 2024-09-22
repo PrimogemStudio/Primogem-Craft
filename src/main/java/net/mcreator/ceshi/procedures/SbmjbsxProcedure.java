@@ -20,7 +20,7 @@ public class SbmjbsxProcedure {
 			if (FenliejinbisxhsProcedure.execute(world, x, y, z, entity,
 					new ItemStack(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("forge:curio/negative"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()),
 					itemstack, true, 3, 1, 12, 3)) {
-				if (Math.random() < 0.5) {
+				if (Math.random() < 0.35) {
 					PrimogemcraftMod.queueServerWork(1, () -> {
 						HSsbmtsxProcedure.execute(world, x, y, z, entity, itemstack, ItemStack.EMPTY, ItemStack.EMPTY, false, true, false, true, 1, 0, "loot spawn ~ ~ ~ loot primogemcraft:entities/qqiwuzhanlipinshiti");
 					});
