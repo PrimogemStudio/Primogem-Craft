@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "primogemcraft:yiyinhedaletou",
-    "primogemcraft:ssanbamiantou",
     "primogemcraft:fulinjiao",
     "primogemcraft:fenliejinbi",
     "primogemcraft:qwflyb",
@@ -10,6 +9,7 @@
     "primogemcraft:qwtcjlbptbg",
     "primogemcraft:quxgjibing",
     "primogemcraft:xingjidaletou",
-    "#forge:curio/normal/fusion/a"
+    "#forge:curio/normal/fusion/a",
+    "#pgc:sbmt"
   ]
 }

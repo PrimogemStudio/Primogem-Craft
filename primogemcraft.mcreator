@@ -2351,6 +2351,22 @@
             "type": "entity"
           },
           {
+            "name": "lengque",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -28888,8 +28904,77 @@
             "type": "entity"
           },
           {
+            "name": "lengque",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sbmtsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sbmtsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/SbmtsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sbmtsxhs0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sbmtsxhs_0",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Sbmtsxhs0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       }
@@ -30090,6 +30175,9 @@
       "CUSTOM:Axzst.boots",
       "CUSTOM:Axzsj"
     ],
+    "ITEMS:pgc:sbmt": [
+      "CUSTOM:Ssanbamiantou"
+    ],
     "ITEMS:pgc:qysz_7": [
       "CUSTOM:Mmolagao",
       "CUSTOM:Mmolafu",
@@ -30210,7 +30298,6 @@
     ],
     "ITEMS:forge:curio/normal/a": [
       "CUSTOM:Yiyinhedaletou",
-      "CUSTOM:Ssanbamiantou",
       "CUSTOM:Fulinjiao",
       "CUSTOM:Fenliejinbi",
       "CUSTOM:Qwflyb",
@@ -30218,7 +30305,8 @@
       "CUSTOM:Qwtcjlbptbg",
       "CUSTOM:Quxgjibing",
       "CUSTOM:Xingjidaletou",
-      "TAG:forge:curio/normal/fusion/a"
+      "TAG:forge:curio/normal/fusion/a",
+      "TAG:pgc:sbmt"
     ],
     "ITEMS:forge:ysk_0": [
       "CUSTOM:Zziyousongshikuai",

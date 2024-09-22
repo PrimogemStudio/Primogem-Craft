@@ -15,7 +15,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.ceshi.procedures.SsanbamiantouxiaoguoProcedure;
+import net.mcreator.ceshi.procedures.SbmtsxProcedure;
 
 import java.util.List;
 
@@ -47,7 +47,7 @@ public class SsanbamiantouItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		SsanbamiantouxiaoguoProcedure.execute(world, entity);
+		SbmtsxProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
 	}
 }
