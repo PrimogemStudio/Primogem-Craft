@@ -1,5 +1,8 @@
 package net.mcreator.ceshi.procedures;
 
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.capabilities.Capabilities;
+
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
@@ -7,6 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
@@ -20,8 +24,8 @@ import net.minecraft.commands.CommandSource;
 import java.util.HashSet;
 
 public class HSsbmtsxProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, double lengque) {
-		if (entity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack mu_biao, ItemStack shuchu_2, boolean qw_0, boolean zhan_li_pin, double beilv, double lengque, String zhiling) {
+		if (entity == null || zhiling == null)
 			return;
 		Entity e = null;
 		double out = 0;
@@ -38,26 +42,45 @@ public class HSsbmtsxProcedure {
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(item.getItem(), (int) lengque);
 			e = entity;
-			{
-				var set = new HashSet<Item>();
-				if (e instanceof Player player) {
-					player.getInventory().items.forEach(itemstack -> {
-						if (itemstack.getItem() == item.getItem())
-							return;
-						if (set.contains(itemstack.getItem()))
-							return;
-						if (Sbmtsxhs0Procedure.execute(itemstack)) {
-							set.add(itemstack.getItem());
-							itemstack.shrink(1);
-						}
-					});
+			if (qw_0) {
+				e = entity;
+				{
+					var set = new HashSet<Item>();
+					if (e instanceof Player player) {
+						player.getInventory().items.forEach(itemstack -> {
+							if (itemstack.getItem() == item.getItem())
+								return;
+							if (set.contains(itemstack.getItem()))
+								return;
+							if (Sbmtsxhs0Procedure.execute(itemstack)) {
+								set.add(itemstack.getItem());
+								itemstack.shrink(1);
+							}
+						});
+					}
+					out = set.size();
 				}
-				out = set.size();
+			} else {
+				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+					for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+						ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
+						if (itemstackiterator.getItem() == mu_biao.getItem()) {
+							out = out + itemstackiterator.getCount();
+						}
+					}
+				}
 			}
-			for (int index0 = 0; index0 < (int) out; index0++) {
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"loot spawn ~ ~ ~ loot primogemcraft:entities/qqiwuzhanlipinshiti");
+			if (zhan_li_pin) {
+				for (int index0 = 0; index0 < (int) (out / beilv); index0++) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), zhiling);
+				}
+			} else {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, shuchu_2);
+					entityToSpawn.setPickUpDelay(0);
+					_level.addFreshEntity(entityToSpawn);
+				}
 			}
 		}
 	}

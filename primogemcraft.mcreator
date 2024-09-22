@@ -2355,6 +2355,26 @@
             "type": "itemstack"
           },
           {
+            "name": "mu_biao",
+            "type": "itemstack"
+          },
+          {
+            "name": "shuchu_2",
+            "type": "itemstack"
+          },
+          {
+            "name": "qw_0",
+            "type": "logic"
+          },
+          {
+            "name": "zhan_li_pin",
+            "type": "logic"
+          },
+          {
+            "name": "beilv",
+            "type": "number"
+          },
+          {
             "name": "lengque",
             "type": "number"
           },
@@ -2369,6 +2389,10 @@
           {
             "name": "z",
             "type": "number"
+          },
+          {
+            "name": "zhiling",
+            "type": "string"
           },
           {
             "name": "world",
@@ -28912,6 +28936,26 @@
             "type": "itemstack"
           },
           {
+            "name": "mu_biao",
+            "type": "itemstack"
+          },
+          {
+            "name": "shuchu_2",
+            "type": "itemstack"
+          },
+          {
+            "name": "qw_0",
+            "type": "logic"
+          },
+          {
+            "name": "zhan_li_pin",
+            "type": "logic"
+          },
+          {
+            "name": "beilv",
+            "type": "number"
+          },
+          {
             "name": "lengque",
             "type": "number"
           },
@@ -28926,6 +28970,10 @@
           {
             "name": "z",
             "type": "number"
+          },
+          {
+            "name": "zhiling",
+            "type": "string"
           },
           {
             "name": "world",
