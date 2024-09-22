@@ -14,7 +14,7 @@ public class SbmtsxProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		HSsbmtsxProcedure.execute(world, x, y, z, entity, itemstack, ItemStack.EMPTY, ItemStack.EMPTY, true, true, 1, 60, "loot spawn ~ ~ ~ loot primogemcraft:entities/qqiwuzhanlipinshiti");
+		HSsbmtsxProcedure.execute(world, x, y, z, entity, itemstack, ItemStack.EMPTY, ItemStack.EMPTY, false, true, true, 1, 60, "loot spawn ~ ~ ~ loot primogemcraft:entities/qqiwuzhanlipinshiti");
 		itemstack.shrink(1);
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),

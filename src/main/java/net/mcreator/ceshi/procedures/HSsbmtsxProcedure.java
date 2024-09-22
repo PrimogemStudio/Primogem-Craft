@@ -24,7 +24,8 @@ import net.minecraft.commands.CommandSource;
 import java.util.HashSet;
 
 public class HSsbmtsxProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack mu_biao, ItemStack shuchu_2, boolean qw_0, boolean zhan_li_pin, double beilv, double lengque, String zhiling) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack mu_biao, ItemStack shuchu_2, boolean jin_rong_he, boolean qw_0, boolean zhan_li_pin, double beilv, double lengque,
+			String zhiling) {
 		if (entity == null || zhiling == null)
 			return;
 		Entity e = null;
@@ -44,21 +45,40 @@ public class HSsbmtsxProcedure {
 			e = entity;
 			if (qw_0) {
 				e = entity;
-				{
-					var set = new HashSet<Item>();
-					if (e instanceof Player player) {
-						player.getInventory().items.forEach(itemstack -> {
-							if (itemstack.getItem() == item.getItem())
-								return;
-							if (set.contains(itemstack.getItem()))
-								return;
-							if (Sbmtsxhs0Procedure.execute(itemstack)) {
-								set.add(itemstack.getItem());
-								itemstack.shrink(1);
-							}
-						});
+				if (jin_rong_he) {
+					{
+						var set = new HashSet<Item>();
+						if (e instanceof Player player) {
+							player.getInventory().items.forEach(itemstack -> {
+								if (itemstack.getItem() == item.getItem())
+									return;
+								if (set.contains(itemstack.getItem()))
+									return;
+								if (Sbmtsxhs1Procedure.execute(itemstack)) {
+									set.add(itemstack.getItem());
+									itemstack.shrink(1);
+								}
+							});
+						}
+						out = set.size();
 					}
-					out = set.size();
+				} else {
+					{
+						var set = new HashSet<Item>();
+						if (e instanceof Player player) {
+							player.getInventory().items.forEach(itemstack -> {
+								if (itemstack.getItem() == item.getItem())
+									return;
+								if (set.contains(itemstack.getItem()))
+									return;
+								if (Sbmtsxhs0Procedure.execute(itemstack)) {
+									set.add(itemstack.getItem());
+									itemstack.shrink(1);
+								}
+							});
+						}
+						out = set.size();
+					}
 				}
 			} else {
 				if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {

@@ -2363,6 +2363,10 @@
             "type": "itemstack"
           },
           {
+            "name": "jin_rong_he",
+            "type": "logic"
+          },
+          {
             "name": "qw_0",
             "type": "logic"
           },
@@ -28944,6 +28948,10 @@
             "type": "itemstack"
           },
           {
+            "name": "jin_rong_he",
+            "type": "logic"
+          },
+          {
             "name": "qw_0",
             "type": "logic"
           },
@@ -29030,6 +29038,25 @@
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/Sbmtsxhs0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sbmtsxhs1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sbmtsxhs_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Sbmtsxhs1Procedure.java"
         ],
         "dependencies": [
           {
