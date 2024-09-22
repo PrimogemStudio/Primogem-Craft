@@ -7605,22 +7605,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -29280,6 +29264,32 @@
       "metadata": {
         "files": [
           "src/main/resources/data/primogemcraft/recipes/wxwcxpf.json"
+        ]
+      }
+    },
+    {
+      "name": "FMhsxiubu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "f_mhsxiubu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/FMhsxiubuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "item",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
