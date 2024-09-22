@@ -20,7 +20,7 @@ public class YhdlbsxProcedure {
 							? new ItemStack(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("forge:curio"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())
 							: new ItemStack(
 									BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("forge:curio/negative"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()),
-					itemstack, 3, 1, 12, 5);
+					itemstack, true, 3, 1, 12, 5);
 		}
 	}
 }

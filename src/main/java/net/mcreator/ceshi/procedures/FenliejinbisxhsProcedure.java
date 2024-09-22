@@ -18,9 +18,9 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 public class FenliejinbisxhsProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack itemstack, double cishu, double gailv, double naijiu, double zhi_naijiu) {
+	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack itemstack, boolean tong_zhi, double cishu, double gailv, double naijiu, double zhi_naijiu) {
 		if (entity == null)
-			return;
+			return false;
 		ItemStack item1 = ItemStack.EMPTY;
 		if (itemstack.getDamageValue() == 0) {
 			itemstack.setDamageValue((int) (itemstack.getMaxDamage() - 1));
@@ -52,16 +52,19 @@ public class FenliejinbisxhsProcedure {
 					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 				}
 			}
+			return true;
 		}
 		if (!itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("daishanchu") && itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("shouming") == cishu) {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((itemstack.getDisplayName().getString() + "\u00A7c\u5DF2\u635F\u574F\uFF01")), false);
-			itemstack.shrink(1);
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
-				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
+			if (tong_zhi) {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal((itemstack.getDisplayName().getString() + "\u00A7c\u5DF2\u635F\u574F\uFF01")), false);
+				itemstack.shrink(1);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
+					}
 				}
 			}
 		}
@@ -69,5 +72,6 @@ public class FenliejinbisxhsProcedure {
 			item1 = itemstack;
 			EnchantmentHelper.setEnchantments(item1, ItemEnchantments.EMPTY);
 		}
+		return false;
 	}
 }

@@ -24,25 +24,27 @@ import net.minecraft.commands.CommandSource;
 import java.util.HashSet;
 
 public class HSsbmtsxProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack mu_biao, ItemStack shuchu_2, boolean jin_rong_he, boolean qw_0, boolean zhan_li_pin, double beilv, double lengque,
-			String zhiling) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack mu_biao, ItemStack shuchu_2, boolean jin_rong_he, boolean qw_0, boolean tong_zhi, boolean zhan_li_pin, double beilv,
+			double lengque, String zhiling) {
 		if (entity == null || zhiling == null)
 			return;
 		Entity e = null;
 		double out = 0;
 		ItemStack a = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((item.getDisplayName().getString() + "\u00A7c\u5DF2\u635F\u574F\uFF01")), false);
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
-				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
+			if (tong_zhi) {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal((item.getDisplayName().getString() + "\u00A7c\u5DF2\u635F\u574F\uFF01")), false);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
+					}
 				}
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(item.getItem(), (int) lengque);
 			}
-			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(item.getItem(), (int) lengque);
 			e = entity;
 			if (qw_0) {
 				e = entity;

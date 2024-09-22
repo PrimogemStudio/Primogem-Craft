@@ -12,7 +12,7 @@ public class FenliejinbishuxingProcedure {
 			return;
 		ItemStack a = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
-			FenliejinbisxhsProcedure.execute(world, x, y, z, entity, new ItemStack(PrimogemcraftModItems.YUZHOUSUIPIAN.get()), itemstack, 10, 0.5, 12, 10);
+			FenliejinbisxhsProcedure.execute(world, x, y, z, entity, new ItemStack(PrimogemcraftModItems.YUZHOUSUIPIAN.get()), itemstack, true, 10, 0.5, 12, 10);
 		}
 	}
 }

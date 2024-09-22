@@ -2371,6 +2371,10 @@
             "type": "logic"
           },
           {
+            "name": "tong_zhi",
+            "type": "logic"
+          },
+          {
             "name": "zhan_li_pin",
             "type": "logic"
           },
@@ -28760,6 +28764,10 @@
             "type": "itemstack"
           },
           {
+            "name": "tong_zhi",
+            "type": "logic"
+          },
+          {
             "name": "cishu",
             "type": "number"
           },
@@ -28791,7 +28799,8 @@
             "name": "world",
             "type": "world"
           }
-        ]
+        ],
+        "return_type": "logic"
       }
     },
     {
@@ -28956,6 +28965,10 @@
             "type": "logic"
           },
           {
+            "name": "tong_zhi",
+            "type": "logic"
+          },
+          {
             "name": "zhan_li_pin",
             "type": "logic"
           },
@@ -29062,6 +29075,57 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwsbmb",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwsbmb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwsbmb.json",
+          "src/main/java/net/mcreator/ceshi/item/QwsbmbItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Sbmjbsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sbmjbsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/SbmjbsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -31038,6 +31102,7 @@
       "CUSTOM:Hqbing"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwsbmb",
       "~CUSTOM:Qwfldyhdlb",
       "~CUSTOM:Qwflb",
       "~CUSTOM:Qwypzgs",
@@ -31378,7 +31443,8 @@
       "Qwhydlt",
       "Qwzjxxmx",
       "Qwflb",
-      "Qwfldyhdlb"
+      "Qwfldyhdlb",
+      "Qwsbmb"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -32577,6 +32643,7 @@
       "item.primogemcraft.zshjt_helmet": "§d『Vajrada Amethyst』§eNetherite Helmet",
       "item.primogemcraft.ruzst_chestplate": "§c『Vajrada Amethyst』§bDiamond Chestplate",
       "advancements.jdbfwb.descr": "获得精锻用魔矿",
+      "item.primogemcraft.qwsbmb": "§5§l『奇物』§d闪耀的分裂金币",
       "gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_1ge_sui_ji_cuo_wu_dai_ma": "消耗1个随机错误代码。",
       "block.primogemcraft.chuangzaoxiaodengfasheqi": "§5Creative§6Igniter Of Xiao Lantern",
       "item.primogemcraft.shcbzx": "§5『Curio』§fCasket of Inaccuracy",
@@ -33608,6 +33675,7 @@
       "item.primogemcraft.zshjt_helmet": "§d『Vajrada Amethyst』§eNetherite Helmet",
       "item.primogemcraft.ruzst_chestplate": "§c『Vajrada Amethyst』§bDiamond Chestplate",
       "advancements.jdbfwb.descr": "获得精锻用魔矿",
+      "item.primogemcraft.qwsbmb": "§5§l『奇物』§d闪耀的分裂金币",
       "gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_1ge_sui_ji_cuo_wu_dai_ma": "消耗1个随机错误代码。",
       "block.primogemcraft.chuangzaoxiaodengfasheqi": "§5Creative§6Igniter Of Xiao Lantern",
       "item.primogemcraft.shcbzx": "§5『Curio』§fCasket of Inaccuracy",
@@ -34633,6 +34701,7 @@
       "item.primogemcraft.zshjt_helmet": "§d『最胜紫晶』§e下界合金头盔",
       "item.primogemcraft.ruzst_chestplate": "§c『燃愿玛瑙』§b钻石胸甲",
       "advancements.jdbfwb.descr": "获得精锻用魔矿",
+      "item.primogemcraft.qwsbmb": "§5§l『奇物』§d闪耀的分裂金币",
       "gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_1ge_sui_ji_cuo_wu_dai_ma": "消耗1个随机错误代码。",
       "block.primogemcraft.chuangzaoxiaodengfasheqi": "§6霄灯发射器§5创造模式",
       "item.primogemcraft.shcbzx": "§5『奇物』§f测不准匣",
