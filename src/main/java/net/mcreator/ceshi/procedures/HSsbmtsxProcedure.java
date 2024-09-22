@@ -96,10 +96,12 @@ public class HSsbmtsxProcedure {
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), zhiling);
 				}
 			} else {
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, shuchu_2);
-					entityToSpawn.setPickUpDelay(0);
-					_level.addFreshEntity(entityToSpawn);
+				for (int index1 = 0; index1 < (int) (out / beilv); index1++) {
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, shuchu_2);
+						entityToSpawn.setPickUpDelay(0);
+						_level.addFreshEntity(entityToSpawn);
+					}
 				}
 			}
 		}
