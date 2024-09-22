@@ -30,6 +30,7 @@ public class HSsbmtsxProcedure {
 			return;
 		Entity e = null;
 		double out = 0;
+		ItemStack a = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((item.getDisplayName().getString() + "\u00A7c\u5DF2\u635F\u574F\uFF01")), false);
@@ -96,12 +97,12 @@ public class HSsbmtsxProcedure {
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), zhiling);
 				}
 			} else {
-				for (int index1 = 0; index1 < (int) (out / beilv); index1++) {
-					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, shuchu_2);
-						entityToSpawn.setPickUpDelay(0);
-						_level.addFreshEntity(entityToSpawn);
-					}
+				a = shuchu_2;
+				a.setCount((int) (out / beilv));
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, a);
+					entityToSpawn.setPickUpDelay(0);
+					_level.addFreshEntity(entityToSpawn);
 				}
 			}
 		}
