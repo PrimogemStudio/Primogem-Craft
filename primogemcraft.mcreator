@@ -29129,6 +29129,96 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qwfldjbpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwfldjbpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwfldjbpf.json"
+        ]
+      }
+    },
+    {
+      "name": "HSQwwxwctsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hs_qwwxwctsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/HSQwwxwctsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "item0",
+            "type": "itemstack"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "bao_zang",
+            "type": "logic"
+          },
+          {
+            "name": "dan_ci",
+            "type": "logic"
+          },
+          {
+            "name": "tong_zhi",
+            "type": "logic"
+          },
+          {
+            "name": "xiao_hui",
+            "type": "logic"
+          },
+          {
+            "name": "yi_fumo",
+            "type": "logic"
+          },
+          {
+            "name": "dengji",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "zui_da",
+            "type": "number"
+          },
+          {
+            "name": "itemx",
+            "type": "string"
+          },
+          {
+            "name": "xianzhi_cishu",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -32521,7 +32611,7 @@
       "block.primogemcraft.shenbanyanyuanshikuangshi": "Deep Slate Priomogem Ore",
       "death.attack.chiwuwuli": "%1$s 被持续物理伤害撕裂！",
       "item.primogemcraft.djtt_helmet": "§b『Varunada Lazurite』§fIron Helmet",
-      "item.primogemcraft.wawanxiangwuchangtou": "§5『Curio』§2Entropic Die",
+      "item.primogemcraft.wawanxiangwuchangtou": "§5『奇物』§2万象无常骰",
       "block.primogemcraft.yuansujingshikuai": "§kaha§fElements Crystal Gemstone§kaha",
       "item.primogemcraft.yhdltyidie": "一叠银河大乐透",
       "item.ceshi.yishijiemugun": "Tewatt Stick",
