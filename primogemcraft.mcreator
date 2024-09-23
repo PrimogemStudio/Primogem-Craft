@@ -29683,6 +29683,69 @@
           "src/main/resources/data/primogemcraft/recipes/xgsbmtpf.json"
         ]
       }
+    },
+    {
+      "name": "Qwwsg",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwsg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwwsgItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwwsg.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwwsgsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwsgsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwwsgsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wsgpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wsgpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/wsgpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31662,6 +31725,7 @@
       "CUSTOM:Hqbing"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwwsg",
       "~CUSTOM:Qwxgjb",
       "~CUSTOM:Qwwxwcx",
       "~CUSTOM:Qwsbmb",
@@ -32011,7 +32075,8 @@
       "Qwyhnj",
       "Qwxgjb",
       "Qwyhjb",
-      "Qwxgdbmt"
+      "Qwxgdbmt",
+      "Qwwsg"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -33030,6 +33095,7 @@
       "advancements.nibaodimeila.title": "Your Pity Vanished！",
       "item.primogemcraft.wanshinang": "§5『CUrio』§eOmniscient Capsule",
       "item.primogemcraft.yhjs": "Eternity Ingot",
+      "item.primogemcraft.qwwsg": "§5§l『奇物』§e万识果",
       "item.primogemcraft.zszst_helmet": "§d『Vajrada Amethyst』§bIron helmet",
       "subtitles.tashanglvtu": "A new Start",
       "item.primogemcraft.djc": "§b『Varunada Lazurite』 Hoe",
@@ -34067,6 +34133,7 @@
       "advancements.nibaodimeila.title": "Your Pity Vanished！",
       "item.primogemcraft.wanshinang": "§5『CUrio』§eOmniscient Capsule",
       "item.primogemcraft.yhjs": "Eternity Ingot",
+      "item.primogemcraft.qwwsg": "§5§l『奇物』§e万识果",
       "item.primogemcraft.zszst_helmet": "§d『Vajrada Amethyst』§bIron helmet",
       "subtitles.tashanglvtu": "A new Start",
       "item.primogemcraft.djc": "§b『Varunada Lazurite』 Hoe",
@@ -35098,6 +35165,7 @@
       "advancements.nibaodimeila.title": "你保底没啦！",
       "item.primogemcraft.wanshinang": "§5『奇物』§e万识囊",
       "item.primogemcraft.yhjs": "永恒金属",
+      "item.primogemcraft.qwwsg": "§5§l『奇物』§e万识果",
       "item.primogemcraft.zszst_helmet": "§d『最胜紫晶』§b钻石头盔",
       "subtitles.tashanglvtu": "新的开始",
       "item.primogemcraft.djc": "§b『涤净青金』 锄",
