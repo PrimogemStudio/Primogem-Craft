@@ -64,7 +64,6 @@ public class YijieguoshishuxingProcedure {
 							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1, false);
 						}
 					}
-					entity.getPersistentData().putDouble("ymgs_xz", 0);
 					entity.getPersistentData().putBoolean("yijieguo_a", true);
 					PrimogemcraftMod.queueServerWork(2400, () -> {
 						entity.getPersistentData().putBoolean("yijieguo_a", false);

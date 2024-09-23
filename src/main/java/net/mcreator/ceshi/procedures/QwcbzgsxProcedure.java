@@ -21,6 +21,6 @@ public class QwcbzgsxProcedure {
 			final double _tagValue = (Mth.nextInt(RandomSource.create(), 1, 2));
 			CustomData.update(DataComponents.CUSTOM_DATA, a, tag -> tag.putDouble(_tagName, _tagValue));
 		}
-		YimuguoshisxhsProcedure.execute(world, x, y, z, entity, a, itemstack, true, true, 1200, 2);
+		YimuguoshisxhsProcedure.execute(world, x, y, z, entity, a, itemstack, true, true, 5, 1200, 2);
 	}
 }

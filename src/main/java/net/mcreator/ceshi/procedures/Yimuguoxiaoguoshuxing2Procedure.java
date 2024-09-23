@@ -38,25 +38,20 @@ public class Yimuguoxiaoguoshuxing2Procedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (!world.isClientSide()) {
-			if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.LINZHONG)) {
-				if (entity.getPersistentData().getDouble("ymgs_xz") < 5) {
-					if (entity.getPersistentData().getBoolean("ypz_ymgs") && Math.random() < 0.2) {
-						sourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)),
-								(float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.2));
-					}
-					if (event instanceof ICancellableEvent _cancellable) {
-						_cancellable.setCanceled(true);
-					}
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.anvil.place")), SoundSource.NEUTRAL, (float) 0.2, 20);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.anvil.place")), SoundSource.NEUTRAL, (float) 0.2, 20, false);
-						}
-					}
-					entity.getPersistentData().putDouble("ymgs_xz", (entity.getPersistentData().getDouble("ymgs_xz") + 1));
+		if (entity.getPersistentData().getDouble("ymgs_xz") < (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.LINZHONG) ? _livEnt.getEffect(PrimogemcraftModMobEffects.LINZHONG).getAmplifier() : 0)) {
+			if (event instanceof ICancellableEvent _cancellable) {
+				_cancellable.setCanceled(true);
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.anvil.place")), SoundSource.NEUTRAL, (float) 0.2, 20);
+				} else {
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.anvil.place")), SoundSource.NEUTRAL, (float) 0.2, 20, false);
 				}
+			}
+			entity.getPersistentData().putDouble("ymgs_xz", (entity.getPersistentData().getDouble("ymgs_xz") + 1));
+			if (entity.getPersistentData().getBoolean("ypz_ymgs") && Math.random() < 0.2) {
+				sourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)), (float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.2));
 			}
 		}
 	}

@@ -23,7 +23,7 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 
 public class YimuguoshisxhsProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack itemstack, boolean itemi, boolean sunhuai, double shijian, double sudu_dengji) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack itemstack, boolean itemi, boolean sunhuai, double mian_shang, double shijian, double sudu_dengji) {
 		if (entity == null)
 			return;
 		ItemStack a = ItemStack.EMPTY;
@@ -55,7 +55,7 @@ public class YimuguoshisxhsProcedure {
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			entity.getPersistentData().putBoolean("yijieguoshi_kaiqi", false);
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.LINZHONG, (int) shijian, 0));
+				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.LINZHONG, (int) shijian, (int) mian_shang));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, (int) shijian, 9));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
