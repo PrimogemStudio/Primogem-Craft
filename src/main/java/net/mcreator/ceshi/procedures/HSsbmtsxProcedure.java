@@ -25,12 +25,14 @@ import java.util.HashSet;
 
 public class HSsbmtsxProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack mu_biao, ItemStack shuchu_2, boolean jin_rong_he, boolean qw_0, boolean tong_zhi, boolean zhan_li_pin, double beilv,
-			double lengque, String zhiling) {
+			double beilv_0, double lengque, String zhiling) {
 		if (entity == null || zhiling == null)
 			return;
 		Entity e = null;
-		double out = 0;
 		ItemStack a = ItemStack.EMPTY;
+		double out = 0;
+		double b = 0;
+		double c = 0;
 		if (!world.isClientSide()) {
 			if (tong_zhi) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -94,13 +96,13 @@ public class HSsbmtsxProcedure {
 				}
 			}
 			if (zhan_li_pin) {
-				for (int index0 = 0; index0 < (int) (out / beilv); index0++) {
+				for (int index0 = 0; index0 < (int) (out + Math.floor(out * beilv + beilv_0)); index0++) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), zhiling);
 				}
 			} else {
 				a = shuchu_2;
-				a.setCount((int) (out / beilv));
+				a.setCount((int) (out + Math.floor(out * beilv + beilv_0)));
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, a);
 					entityToSpawn.setPickUpDelay(0);

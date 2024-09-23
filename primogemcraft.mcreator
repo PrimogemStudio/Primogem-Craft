@@ -2383,6 +2383,10 @@
             "type": "number"
           },
           {
+            "name": "beilv_0",
+            "type": "number"
+          },
+          {
             "name": "lengque",
             "type": "number"
           },
@@ -28961,6 +28965,10 @@
             "type": "number"
           },
           {
+            "name": "beilv_0",
+            "type": "number"
+          },
+          {
             "name": "lengque",
             "type": "number"
           },
@@ -29547,6 +29555,128 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "Qwyhjb",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwyhjb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwyhjbItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwyhjb.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwxgdltsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwxgdltsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwxgdltsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xgdltpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xgdltpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/xgdltpf.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwxgdbmt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwxgdbmt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwxgdbmtItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwxgdbmt.json"
+        ]
+      }
+    },
+    {
+      "name": "Xgsbmtsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xgsbmtsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/XgsbmtsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xgsbmtpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xgsbmtpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/xgsbmtpf.json"
         ]
       }
     }
@@ -31043,7 +31173,9 @@
       "CUSTOM:Qwfldyhdlb",
       "CUSTOM:Qwsbmb",
       "CUSTOM:Qwyhnj",
-      "CUSTOM:Qwxgjb"
+      "CUSTOM:Qwxgjb",
+      "CUSTOM:Qwyhjb",
+      "CUSTOM:Qwxgdbmt"
     ],
     "ITEMS:forge:yssx_0": [
       "CUSTOM:Ziziyousongshisuixie",
@@ -31873,7 +32005,9 @@
       "Qwsbmb",
       "Qwwxwcx",
       "Qwyhnj",
-      "Qwxgjb"
+      "Qwxgjb",
+      "Qwyhjb",
+      "Qwxgdbmt"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -32546,6 +32680,7 @@
       "advancements.b_bao_di_ren.title": "Pity---System---Only---",
       "item.primogemcraft.ryhjt_chestplate": "§c『Agnidus Agate』§eNetherite Chestplate",
       "item.primogemcraft.axq": "§b『Shivada Jade』Shovel",
+      "item.primogemcraft.qwxgdbmt": "§5§l『奇物』§b虚构的三八面骰",
       "advancements.yysgj.descr": "获得任意元素工具",
       "item.primogemcraft.jlkjzs_chestplate": "§6『Prithiva Topaz』 §bDiamond Chestplate",
       "gui.primogemcraft.yibangrenzhinanggui.label_jin_bu_qu_zhi_nang": "进不去之囊",
@@ -32755,6 +32890,7 @@
       "gui.primogemcraft.sjgu_ifumo_00.tooltip_sscdang_qian_yu_zhou_sui_pian_shu_liang_bu_zu": "§c当前宇宙碎片数量不足！",
       "item.primogemcraft.wuqie_5": "Lvl.5 Mistsplitter Reforged",
       "item.primogemcraft.wuqie_2": "Lvl.5 Mistsplitter Reforged",
+      "item.primogemcraft.qwyhjb": "§5§l『奇物』§f虚构大乐透",
       "item.primogemcraft.ssjzszs": "§b『Diamond Upgrade』§dVajrada Amethyst",
       "gui.primogemcraft.sjgu_ifumo_01.label_jin_xing_1ci_di_pin_zhi_fu_mo": "进行1次低品质附魔。",
       "gui.primogemcraft.ceshishijianxuanzejiemian.button_shua_xin": "Shuffle",
@@ -33581,6 +33717,7 @@
       "advancements.b_bao_di_ren.title": "Pity---System---Only---",
       "item.primogemcraft.ryhjt_chestplate": "§c『Agnidus Agate』§eNetherite Chestplate",
       "item.primogemcraft.axq": "§b『Shivada Jade』Shovel",
+      "item.primogemcraft.qwxgdbmt": "§5§l『奇物』§b虚构的三八面骰",
       "advancements.yysgj.descr": "获得任意元素工具",
       "item.primogemcraft.jlkjzs_chestplate": "§6『Prithiva Topaz』 §bDiamond Chestplate",
       "gui.primogemcraft.yibangrenzhinanggui.label_jin_bu_qu_zhi_nang": "进不去之囊",
@@ -33790,6 +33927,7 @@
       "gui.primogemcraft.sjgu_ifumo_00.tooltip_sscdang_qian_yu_zhou_sui_pian_shu_liang_bu_zu": "§c当前宇宙碎片数量不足！",
       "item.primogemcraft.wuqie_5": "Lvl.5 Mistsplitter Reforged",
       "item.primogemcraft.wuqie_2": "Lvl.5 Mistsplitter Reforged",
+      "item.primogemcraft.qwyhjb": "§5§l『奇物』§f虚构大乐透",
       "item.primogemcraft.ssjzszs": "§b『Diamond Upgrade』§dVajrada Amethyst",
       "gui.primogemcraft.sjgu_ifumo_01.label_jin_xing_1ci_di_pin_zhi_fu_mo": "进行1次低品质附魔。",
       "gui.primogemcraft.ceshishijianxuanzejiemian.button_shua_xin": "Shuffle",
@@ -34611,6 +34749,7 @@
       "advancements.b_bao_di_ren.title": "保---底---人---",
       "item.primogemcraft.ryhjt_chestplate": "§c『燃愿玛瑙』§e下界合金胸甲",
       "item.primogemcraft.axq": "§b『哀叙冰玉』锹",
+      "item.primogemcraft.qwxgdbmt": "§5§l『奇物』§b虚构的三八面骰",
       "advancements.yysgj.descr": "获得任意元素工具",
       "item.primogemcraft.jlkjzs_chestplate": "§6『坚牢黄玉』 §b钻石胸甲",
       "gui.primogemcraft.yibangrenzhinanggui.label_jin_bu_qu_zhi_nang": "进不去之囊",
@@ -34820,6 +34959,7 @@
       "gui.primogemcraft.sjgu_ifumo_00.tooltip_sscdang_qian_yu_zhou_sui_pian_shu_liang_bu_zu": "§c当前宇宙碎片数量不足！",
       "item.primogemcraft.wuqie_5": "§5雾切之回光",
       "item.primogemcraft.wuqie_2": "§5雾切之回光",
+      "item.primogemcraft.qwyhjb": "§5§l『奇物』§f虚构大乐透",
       "item.primogemcraft.ssjzszs": "§b『钻石升级』§d最胜紫晶",
       "gui.primogemcraft.sjgu_ifumo_01.label_jin_xing_1ci_di_pin_zhi_fu_mo": "进行1次低品质附魔。",
       "gui.primogemcraft.ceshishijianxuanzejiemian.button_shua_xin": "刷新",
