@@ -22,7 +22,8 @@ public class HSQwwxwctsxProcedure {
 			double zui_da, String itemx, String xianzhi_cishu) {
 		if (entity == null || itemx == null || xianzhi_cishu == null)
 			return;
-		if ((yi_fumo ? item0.isEnchanted() : !item0.isEnchanted() && item0.isEnchantable()) && !item0.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean(xianzhi_cishu)) {
+		if ((yi_fumo ? item0.isEnchanted() : !item0.isEnchanted() && item0.isEnchantable())
+				&& (!item0.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean(xianzhi_cishu) || item0.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble(xianzhi_cishu) < zui_da)) {
 			item0.applyComponents((EnchantmentHelper.enchantItem(FeatureFlagSet.of(FeatureFlags.VANILLA), RandomSource.create(), (item0.copy()), (int) dengji, bao_zang)).getComponents());
 			if (dan_ci) {
 				{
