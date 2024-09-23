@@ -21,7 +21,7 @@ public class Wxntdmj_wp_sxProcedure {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
-			if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.WXNTDMJ)) {
+			if (!(entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.WXNTDMJ))) {
 				PrimogemcraftMod.queueServerWork(1, () -> {
 					if (!(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PrimogemcraftModMobEffects.WXNTDMJ)) && itemstack.getDamageValue() == 0) {
 						entity.getPersistentData().putBoolean("wxntdmj_sx", true);

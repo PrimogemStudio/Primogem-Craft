@@ -70,20 +70,6 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.DIAMOND"
-            },
-            "weight": 100,
-            "minCount": 32,
-            "maxCount": 32,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
               "value": "CUSTOM:Yiyinhedaletou"
             },
             "weight": 100,
@@ -116,7 +102,7 @@
             },
             "weight": 200,
             "minCount": 1,
-            "maxCount": 3,
+            "maxCount": 12,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -130,7 +116,7 @@
             },
             "weight": 500,
             "minCount": 1,
-            "maxCount": 2,
+            "maxCount": 8,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
