@@ -29983,6 +29983,49 @@
           "src/main/resources/data/primogemcraft/recipes/xxgg_pf.json"
         ]
       }
+    },
+    {
+      "name": "Qwwszj",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwszj",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwwszjItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwwszj.json"
+        ]
+      }
+    },
+    {
+      "name": "Diaoyongbukefumo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diaoyongbukefumo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/DiaoyongbukefumoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwwszjpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwszjpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwwszjpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31409,6 +31452,10 @@
       "TAG:forge:curio/normal/fusion/a",
       "TAG:forge:curio/normal/fusion/b"
     ],
+    "ITEMS:pgc:qi_wu_xiu_fu": [
+      "CUSTOM:Qwkwzj",
+      "CUSTOM:Qwwszj"
+    ],
     "ITEMS:primogemcraft:yuansutaoxiajiehejin": [
       "CUSTOM:Zizizaihejintao.helmet",
       "CUSTOM:Zizizaihejintao.body",
@@ -31464,7 +31511,8 @@
       "CUSTOM:Qwcbzg",
       "CUSTOM:Qwypzgs",
       "CUSTOM:Qwwxwcx",
-      "CUSTOM:Qwxxgg"
+      "CUSTOM:Qwxxgg",
+      "CUSTOM:Qwwszj"
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:Cangsangshizhuanlouti",
@@ -31968,6 +32016,7 @@
       "CUSTOM:Hqbing"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwwszj",
       "~CUSTOM:Qwxxgg",
       "~CUSTOM:Qwwsg",
       "~CUSTOM:Qwxgjb",
@@ -32327,7 +32376,8 @@
       "Qwxgdbmt",
       "Qwwsg",
       "Qwthhj",
-      "Qwxxgg"
+      "Qwxxgg",
+      "Qwwszj"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -32887,6 +32937,7 @@
       "block.primogemcraft.zuishengkuangshi": "§dVajrada Amethyst Ore",
       "gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_dang_qian_95zui_da_hp": "消耗当前95%最大HP。",
       "item.primogemcraft.bufengping": "Wind Bottle",
+      "item.primogemcraft.qwwszj": "§5§l『奇物』§e万识§a烛剪",
       "item.primogemcraft.qwwxntdmj": "§5『奇物』§f「无效念头」代码机",
       "item.primogemcraft.szzskj_chestplate": "§a『Nagadus Emerald』§dDiamond Chestplate",
       "subtitles.daguanzi": "",
@@ -33930,6 +33981,7 @@
       "block.primogemcraft.zuishengkuangshi": "§dVajrada Amethyst Ore",
       "gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_dang_qian_95zui_da_hp": "消耗当前95%最大HP。",
       "item.primogemcraft.bufengping": "Wind Bottle",
+      "item.primogemcraft.qwwszj": "§5§l『奇物』§e万识§a烛剪",
       "item.primogemcraft.qwwxntdmj": "§5『奇物』§f「无效念头」代码机",
       "item.primogemcraft.szzskj_chestplate": "§a『Nagadus Emerald』§dDiamond Chestplate",
       "subtitles.daguanzi": "",
@@ -34971,6 +35023,7 @@
       "block.primogemcraft.zuishengkuangshi": "§d最胜紫晶 矿石",
       "gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_dang_qian_95zui_da_hp": "消耗当前95%最大HP。",
       "item.primogemcraft.bufengping": "异世界捕风瓶",
+      "item.primogemcraft.qwwszj": "§5§l『奇物』§e万识§a烛剪",
       "item.primogemcraft.qwwxntdmj": "§5『奇物』§f「无效念头」代码机",
       "item.primogemcraft.szzskj_chestplate": "§a『生长碧翡』§d钻石胸甲",
       "subtitles.daguanzi": "",
