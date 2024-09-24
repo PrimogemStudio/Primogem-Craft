@@ -18,10 +18,10 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 public class HSQwwxwctsxProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item0, ItemStack itemstack, boolean bao_zang, boolean dan_ci, boolean tong_zhi, boolean xiao_hui, boolean yi_fumo, double dengji,
+	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item0, ItemStack itemstack, boolean bao_zang, boolean dan_ci, boolean tong_zhi, boolean xiao_hui, boolean yi_fumo, double dengji,
 			double zui_da, String itemx, String xianzhi_cishu) {
 		if (entity == null || itemx == null || xianzhi_cishu == null)
-			return;
+			return false;
 		if ((yi_fumo ? item0.isEnchanted() : !item0.isEnchanted() && item0.isEnchantable())
 				&& (!item0.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean(xianzhi_cishu) || item0.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble(xianzhi_cishu) < zui_da)) {
 			item0.applyComponents((EnchantmentHelper.enchantItem(FeatureFlagSet.of(FeatureFlags.VANILLA), RandomSource.create(), (item0.copy()), (int) dengji, bao_zang)).getComponents());
@@ -72,6 +72,7 @@ public class HSQwwxwctsxProcedure {
 					}
 				}
 			}
+			return true;
 		} else {
 			if (tong_zhi) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -82,5 +83,6 @@ public class HSQwwxwctsxProcedure {
 							false);
 			}
 		}
+		return false;
 	}
 }
