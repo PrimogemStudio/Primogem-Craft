@@ -29958,6 +29958,31 @@
           "src/main/resources/data/primogemcraft/recipes/thhjpf.json"
         ]
       }
+    },
+    {
+      "name": "Qwxxgg",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwxxgg",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwxxgg.json",
+          "src/main/java/net/mcreator/ceshi/item/QwxxggItem.java"
+        ]
+      }
+    },
+    {
+      "name": "XxggPf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xxgg_pf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/xxgg_pf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31438,7 +31463,8 @@
       "CUSTOM:Qwkwzg",
       "CUSTOM:Qwcbzg",
       "CUSTOM:Qwypzgs",
-      "CUSTOM:Qwwxwcx"
+      "CUSTOM:Qwwxwcx",
+      "CUSTOM:Qwxxgg"
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:Cangsangshizhuanlouti",
@@ -31942,6 +31968,7 @@
       "CUSTOM:Hqbing"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwxxgg",
       "~CUSTOM:Qwwsg",
       "~CUSTOM:Qwxgjb",
       "~CUSTOM:Qwwxwcx",
@@ -32299,7 +32326,8 @@
       "Qwyhjb",
       "Qwxgdbmt",
       "Qwwsg",
-      "Qwthhj"
+      "Qwthhj",
+      "Qwxxgg"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -33548,6 +33576,7 @@
       "item.primogemcraft.disui": "§eGeomarrow",
       "item.primogemcraft.cebuzhunxia": "§5『Curio』§eCasket of Inaccuracy",
       "gui.primogemcraft.ceshigui.label_bao_xiang": "Treasure Chest！",
+      "item.primogemcraft.qwxxgg": "§5§l『奇物』§e香涎干果",
       "advancements.jdwxjyjh.title": "无相救援计划",
       "advancements.mmolagaojindu.descr": "Luxury",
       "painting.primogemcraft.fulinna.author": "网络作者",
@@ -34590,6 +34619,7 @@
       "item.primogemcraft.disui": "§eGeomarrow",
       "item.primogemcraft.cebuzhunxia": "§5『Curio』§eCasket of Inaccuracy",
       "gui.primogemcraft.ceshigui.label_bao_xiang": "Treasure Chest！",
+      "item.primogemcraft.qwxxgg": "§5§l『奇物』§e香涎干果",
       "advancements.jdwxjyjh.title": "无相救援计划",
       "advancements.mmolagaojindu.descr": "Luxury",
       "painting.primogemcraft.fulinna.author": "网络作者",
@@ -35626,6 +35656,7 @@
       "item.primogemcraft.disui": "§e地髓",
       "item.primogemcraft.cebuzhunxia": "§5『奇物』§e测不准匣",
       "gui.primogemcraft.ceshigui.label_bao_xiang": "宝箱！",
+      "item.primogemcraft.qwxxgg": "§5§l『奇物』§e香涎干果",
       "advancements.jdwxjyjh.title": "无相救援计划",
       "advancements.mmolagaojindu.descr": "奢侈",
       "painting.primogemcraft.fulinna.author": "网络作者",

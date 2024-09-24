@@ -61,6 +61,11 @@ public class XxiangdangaolaozaibeibaoshiProcedure {
 					}
 				}
 			}
+			if (entity.getPersistentData().getBoolean("qw_xxgg_sx")) {
+				if (!(entity.getPersistentData().getDouble("ymgs_xz") <= 0)) {
+					entity.getPersistentData().putDouble("ymgs_xz", (entity.getPersistentData().getDouble("ymgs_xz") - 1));
+				}
+			}
 		}
 	}
 }

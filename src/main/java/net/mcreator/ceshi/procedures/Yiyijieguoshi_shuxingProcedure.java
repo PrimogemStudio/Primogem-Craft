@@ -14,5 +14,8 @@ public class Yiyijieguoshi_shuxingProcedure {
 		if (itemstack.getItem() == PrimogemcraftModItems.QWYPZGS.get()) {
 			entity.getPersistentData().putBoolean("ypz_ymgs", true);
 		}
+		if (itemstack.getItem() == PrimogemcraftModItems.QWXXGG.get()) {
+			entity.getPersistentData().putBoolean("qw_xxgg_sx", true);
+		}
 	}
 }
