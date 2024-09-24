@@ -29785,6 +29785,167 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qwlhcc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlhcc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwlhccItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwlhcc.json"
+        ]
+      }
+    },
+    {
+      "name": "Ccpqwlhsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ccpqwlhsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/CcpqwlhsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwfjj",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwfjj",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwfjjItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwfjj.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwfjjwl",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwfjjwl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwfjjwlItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwfjjwl.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwfjjpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwfjjpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwfjjpf.json"
+        ]
+      }
+    },
+    {
+      "name": "Wlqwfjjpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wlqwfjjpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/wlqwfjjpf.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwfj03",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwfj_03",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwfj_03.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwfjrh0",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwfjrh_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwfjrh_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwfjrh1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwfjrh_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwfjrh_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwfjrh2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwfjrh_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwfjrh_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwfjrhpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwfjrhpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/qwfjrhpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -30814,6 +30975,9 @@
     "ITEMS:forge:curio/clock/division": [
       "CUSTOM:QwggzfenlieA",
       "CUSTOM:QwggzfenlieB"
+    ],
+    "ITEMS:forge:curio/tianhuihejin": [
+      "CUSTOM:Qwthhj"
     ],
     "ITEMS:genshincraft:pyro_infusion": [
       "CUSTOM:Rytj",
@@ -31877,7 +32041,8 @@
       "TAG:forge:curio/normal",
       "TAG:forge:curio/negative",
       "TAG:forge:curio/other",
-      "TAG:forge:curio/fusion"
+      "TAG:forge:curio/fusion",
+      "TAG:forge:curio/tianhuihejin"
     ],
     "ITEMS:forge:armors/leggings": [
       "CUSTOM:Kkuijiaceshi.legs",
@@ -32119,7 +32284,10 @@
       "Qwyhjb",
       "Qwxgdbmt",
       "Qwwsg",
-      "Qwthhj"
+      "Qwthhj",
+      "Qwlhcc",
+      "Qwfjj",
+      "Qwfjjwl"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -32736,6 +32904,7 @@
       "item.primogemcraft.zuishengzijing": "§dVajrada Amethyst",
       "block.primogemcraft.ceshi_mucaibao_pressure_plate": "Dendro Core Wood Pressure Plate",
       "effect.ruodian": "Weakness",
+      "item.primogemcraft.qwfjj": "奇物分解剂",
       "item.primogemcraft.ggongzhuxinghua": "§6Chasing Starlight With You",
       "advancements.beiguotiejiang.descr": "Collect the basic tools of Mora Series",
       "advancements.kewu.title": "Darn it",
@@ -33240,6 +33409,7 @@
       "effect.primogemcraft.smclzf": "神秘磁力[增幅]",
       "block.primogemcraft.yishijiemuban_fence_gate": "monochrome another world wood planks Fence Gate",
       "effect.paopaolengque": "§9Bubble§cCooldown",
+      "item.primogemcraft.qwlhcc": "残次的奇物礼盒",
       "advancements.jdzlyp.title": "再来亿§m瓶§r张！",
       "advancements.yiyidantashang.title": "Once the bow is pulled",
       "gui.primogemcraft.ceshifumogui.button_cao_zuo": "Operate",
@@ -33370,6 +33540,7 @@
       "advancements.mmolagaojindu.descr": "Luxury",
       "painting.primogemcraft.fulinna.author": "网络作者",
       "gui.primogemcraft.bwdyinhang.button_cun_ru_zhe_xie": "存入这些",
+      "item.primogemcraft.qwfjjwl": "微量奇物分解剂",
       "item.primogemcraft.jljsl": "Prithiva Nugget",
       "itemGroup.tabyuanshigongjuxuanxiangka": "Primogem Craft Weapons and Tools",
       "item.primogemcraft.bbuzainianqingdeqincezhuang_012.desc": "The Fading Stories陈致逸,HOYO-MiX",
@@ -33775,6 +33946,7 @@
       "item.primogemcraft.zuishengzijing": "§dVajrada Amethyst",
       "block.primogemcraft.ceshi_mucaibao_pressure_plate": "Dendro Core Wood Pressure Plate",
       "effect.ruodian": "Weakness",
+      "item.primogemcraft.qwfjj": "奇物分解剂",
       "item.primogemcraft.ggongzhuxinghua": "§6Chasing Starlight With You",
       "advancements.beiguotiejiang.descr": "Collect the basic tools of Mora Series",
       "advancements.kewu.title": "Darn it",
@@ -34279,6 +34451,7 @@
       "effect.primogemcraft.smclzf": "神秘磁力[增幅]",
       "block.primogemcraft.yishijiemuban_fence_gate": "monochrome another world wood planks Fence Gate",
       "effect.paopaolengque": "§9Bubble§cCooldown",
+      "item.primogemcraft.qwlhcc": "残次的奇物礼盒",
       "advancements.jdzlyp.title": "再来亿§m瓶§r张！",
       "advancements.yiyidantashang.title": "Once the bow is pulled",
       "gui.primogemcraft.ceshifumogui.button_cao_zuo": "Operate",
@@ -34409,6 +34582,7 @@
       "advancements.mmolagaojindu.descr": "Luxury",
       "painting.primogemcraft.fulinna.author": "网络作者",
       "gui.primogemcraft.bwdyinhang.button_cun_ru_zhe_xie": "存入这些",
+      "item.primogemcraft.qwfjjwl": "微量奇物分解剂",
       "item.primogemcraft.jljsl": "Prithiva Nugget",
       "itemGroup.tabyuanshigongjuxuanxiangka": "Primogem Craft Weapons and Tools",
       "item.primogemcraft.bbuzainianqingdeqincezhuang_012.desc": "The Fading Stories陈致逸,HOYO-MiX",
@@ -34811,6 +34985,7 @@
       "item.primogemcraft.zuishengzijing": "§d最胜紫晶",
       "block.primogemcraft.ceshi_mucaibao_pressure_plate": "草原核化木 压力板",
       "effect.ruodian": "弱点",
+      "item.primogemcraft.qwfjj": "奇物分解剂",
       "advancements.beiguotiejiang.descr": "获得全套摩拉系列基础用具",
       "advancements.kewu.title": "§f可恶.....",
       "item.primogemcraft.shengjijltiewp": "『铁质升级』§6坚牢黄玉",
@@ -35312,6 +35487,7 @@
       "effect.primogemcraft.smclzf": "神秘磁力[增幅]",
       "block.primogemcraft.yishijiemuban_fence_gate": "单色异世界木木板 栅栏门",
       "effect.paopaolengque": "§9泡泡§c冷却",
+      "item.primogemcraft.qwlhcc": "残次的奇物礼盒",
       "advancements.jdzlyp.title": "再来亿§m瓶§r张！",
       "advancements.yiyidantashang.title": "一旦踏上了这条路",
       "gui.primogemcraft.ceshifumogui.button_cao_zuo": "操作",
@@ -35442,6 +35618,7 @@
       "advancements.mmolagaojindu.descr": "奢侈",
       "painting.primogemcraft.fulinna.author": "网络作者",
       "gui.primogemcraft.bwdyinhang.button_cun_ru_zhe_xie": "存入这些",
+      "item.primogemcraft.qwfjjwl": "微量奇物分解剂",
       "item.primogemcraft.jljsl": "坚牢金属粒",
       "itemGroup.tabyuanshigongjuxuanxiangka": "原石工艺 装备",
       "item.primogemcraft.bbuzainianqingdeqincezhuang_012.desc": "陈致逸,HOYO-MiX",

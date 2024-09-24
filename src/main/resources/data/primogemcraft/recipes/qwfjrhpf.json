@@ -3,14 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:curio/normal/s"
+      "tag": "forge:curio/fusion/b"
     },
     {
-      "item": "primogemcraft:qwfjj"
+      "item": "primogemcraft:qwfjjwl"
     }
   ],
   "result": {
-    "id": "primogemcraft:qwlha",
+    "id": "primogemcraft:qwlhcc",
     "count": 2
   }
 }

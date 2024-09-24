@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:curio/normal/b"
+    },
+    "b": {
+      "item": "primogemcraft:qwfjjwl"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:qwlhcc",
+    "count": 1
+  }
+}

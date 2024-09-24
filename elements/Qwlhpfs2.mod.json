@@ -2,19 +2,45 @@
   "_fv": 69,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Stone cutting",
-    "recipeRetstackSize": 1,
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "TAG:forge:curio/normal/s"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:Qwlha"
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "TAG:forge:curio/normal/a"
+      },
+      {
+        "value": "CUSTOM:Qwfjj"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Qwlhb"
     },
     "name": "qwlhpfs_2",
     "namespace": "mod"

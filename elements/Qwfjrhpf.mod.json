@@ -12,10 +12,10 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "TAG:forge:curio/normal/s"
+        "value": "TAG:forge:curio/fusion/b"
       },
       {
-        "value": "CUSTOM:Qwfjj"
+        "value": "CUSTOM:Qwfjjwl"
       },
       {
         "value": ""
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Qwlha"
+      "value": "CUSTOM:Qwlhcc"
     },
-    "name": "qwlhpfs_1",
+    "name": "qwfjrhpf",
     "namespace": "mod"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "b "
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:qwfjj"
+    },
+    "b": {
+      "tag": "forge:glass"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:qwfjjwl",
+    "count": 3
+  }
+}

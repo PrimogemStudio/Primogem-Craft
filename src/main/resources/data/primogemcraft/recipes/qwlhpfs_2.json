@@ -1,10 +1,16 @@
 {
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "tag": "forge:curio/normal/s"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:curio/normal/a"
+    },
+    {
+      "item": "primogemcraft:qwfjj"
+    }
+  ],
   "result": {
-    "id": "primogemcraft:qwlha"
+    "id": "primogemcraft:qwlhb",
+    "count": 2
   }
 }

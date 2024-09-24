@@ -3,19 +3,19 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 2,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:forge:curio/normal/s"
+        "value": "TAG:forge:curio/normal/b"
       },
       {
-        "value": "CUSTOM:Qwfjj"
+        "value": "CUSTOM:Qwfjjwl"
       },
       {
         "value": ""
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Qwlha"
+      "value": "CUSTOM:Qwlhcc"
     },
-    "name": "qwlhpfs_1",
+    "name": "qwfj_03",
     "namespace": "mod"
   }
 }
