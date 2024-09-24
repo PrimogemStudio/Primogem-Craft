@@ -3,6 +3,7 @@
   "values": [
     "#forge:curio/normal",
     "#forge:curio/negative",
-    "#forge:curio/other"
+    "#forge:curio/other",
+    "#forge:curio/fusion"
   ]
 }
