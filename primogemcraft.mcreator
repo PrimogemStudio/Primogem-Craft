@@ -29946,6 +29946,18 @@
           "src/main/resources/data/primogemcraft/recipes/qwfjrhpf.json"
         ]
       }
+    },
+    {
+      "name": "Thhjpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thhjpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipes/thhjpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -32267,9 +32279,12 @@
       "Qyhx0wujiacheng",
       "Qwrhj",
       "Qwhcj",
+      "Qwfjj",
+      "Qwfjjwl",
       "Qwlhs",
       "Qwlha",
       "Qwlhb",
+      "Qwlhcc",
       "Qwkwzg",
       "Qwcbzg",
       "Qwypzgs",
@@ -32284,10 +32299,7 @@
       "Qwyhjb",
       "Qwxgdbmt",
       "Qwwsg",
-      "Qwthhj",
-      "Qwlhcc",
-      "Qwfjj",
-      "Qwfjjwl"
+      "Qwthhj"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
