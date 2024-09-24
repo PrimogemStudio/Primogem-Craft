@@ -42,7 +42,7 @@ public class XiangdanganlaoItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		XixiangdanganlaoshiyongxiaoguoProcedure.execute(world, x, y, z, entity, itemstack);
+		XixiangdanganlaoshiyongxiaoguoProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 

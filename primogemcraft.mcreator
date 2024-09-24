@@ -1844,10 +1844,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -30161,6 +30157,86 @@
       "metadata": {
         "files": [
           "src/main/resources/data/primogemcraft/recipes/xxzjpf.json"
+        ]
+      }
+    },
+    {
+      "name": "Hssmhf",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hssmhf",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/HssmhfProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "tong_zhi",
+            "type": "logic"
+          },
+          {
+            "name": "beilv",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "item_ming_cheng",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kwglsx0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kwglsx_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Kwglsx0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }

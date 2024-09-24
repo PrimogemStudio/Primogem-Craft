@@ -14,8 +14,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.ceshi.procedures.XixiangdanganlaoshiyongxiaoguoProcedure;
 import net.mcreator.ceshi.procedures.KwglsxProcedure;
+import net.mcreator.ceshi.procedures.Kwglsx0Procedure;
 
 import java.util.List;
 
@@ -60,7 +60,7 @@ public class QwkwglItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		XixiangdanganlaoshiyongxiaoguoProcedure.execute(world, x, y, z, entity, itemstack);
+		Kwglsx0Procedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 
