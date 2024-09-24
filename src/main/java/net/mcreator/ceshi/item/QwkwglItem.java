@@ -5,11 +5,11 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
@@ -21,12 +21,7 @@ import java.util.List;
 
 public class QwkwglItem extends Item {
 	public QwkwglItem() {
-		super(new Item.Properties().durability(1).rarity(Rarity.COMMON));
-	}
-
-	@Override
-	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.EAT;
+		super(new Item.Properties().durability(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0f).alwaysEdible().build()));
 	}
 
 	@Override
@@ -47,11 +42,6 @@ public class QwkwglItem extends Item {
 	@Override
 	public boolean isRepairable(ItemStack itemstack) {
 		return false;
-	}
-
-	@Override
-	public int getUseDuration(ItemStack itemstack) {
-		return 32;
 	}
 
 	@Override
