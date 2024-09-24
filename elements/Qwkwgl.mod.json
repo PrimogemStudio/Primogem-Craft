@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "xiangdanganlao",
+    "texture": "qw_kwgl",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§5『奇物』§e香涎干酪",
+    "name": "§5§l『奇物』§a空无干酪",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -23,19 +23,17 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
-    "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7存在物品栏时：",
-        "§7拾取经验球时恢复少量生命值",
-        "§7小概率损坏！",
-        "§",
-        "§5当食用后：",
-        "§9恢复30%生命值"
+        "拾取经验球时，有概率少量修复副手",
+        "奇物，修复后该奇物概率损坏",
+        "§a合成以修复一个已损坏奇物",
+        "§e食用后恢复30%生命值"
       ]
     },
     "glowCondition": {
@@ -44,8 +42,8 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onDroppedByPlayer": {
-      "name": "Xxiangdangaolaozaibeibaoshi"
+    "onItemInInventoryTick": {
+      "name": "Kwglsx"
     },
     "onFinishUsingItem": {
       "name": "Xixiangdanganlaoshiyongxiaoguo"
@@ -56,14 +54,14 @@
     "projectile": {
       "value": "Arrow"
     },
-    "isFood": true,
-    "nutritionalValue": 0,
-    "saturation": 0.0,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
+    "isAlwaysEdible": false,
     "animation": "eat"
   }
 }
