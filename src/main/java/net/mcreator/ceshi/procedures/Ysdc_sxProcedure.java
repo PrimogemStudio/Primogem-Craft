@@ -55,8 +55,9 @@ public class Ysdc_sxProcedure {
 			}
 			{
 				final String _tagName = "vhoukajiance_pinjun";
-				final double _tagValue = ((entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).wj_ck_jin + entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).wj_ck_zi
-						+ entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).wj_ck_lan) / entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).wj_ck_jin);
+				final double _tagValue = Math
+						.round((entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).wj_ck_jin + entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).wj_ck_zi + entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).wj_ck_lan)
+								/ entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).wj_ck_jin);
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			itemstack.set(DataComponents.CUSTOM_NAME, Component.literal(("<" + entity.getDisplayName().getString() + ">\u5206\u4EAB\u7684\u7948\u613F\u8BB0\u5F55")));
@@ -78,10 +79,9 @@ public class Ysdc_sxProcedure {
 				_player.displayClientMessage(
 						Component.literal(("\u00A77\u8DDD\u79BB\u51FA\u91D1\u00A7a\u8FD8\u5269\u00A77" + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("vhoukajiance_jin_1") + "\u00A7a\u62BD")), false);
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(
-						Component.literal(("\u00A7e\u5E73\u5747\u7EA6" + new java.text.DecimalFormat("").format(Math.round(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("vhoukajiance_pinjun")))
-								+ "\u53D1\u51FA\u73B0\u00A7b1\u4E2A\u00A7e\u91D1\u5149\uFF01")),
-						false);
+				_player.displayClientMessage(Component.literal(("\u00A7e\u5E73\u5747\u7EA6" + new java.text.DecimalFormat("").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("vhoukajiance_jin") > 0
+						? itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("vhoukajiance_pinjun")
+						: 0) + "\u53D1\u51FA\u73B0\u00A7b1\u4E2A\u00A7e\u91D1\u5149\uFF01")), false);
 		}
 	}
 }
