@@ -30691,11 +30691,6 @@
       "~CUSTOM:Zizaitiejia.body",
       "~CUSTOM:Kkuijiaceshi.body"
     ],
-    "ITEMS:c:curio/normal": [
-      "TAG:c:curio/normal/s",
-      "TAG:c:curio/normal/a",
-      "TAG:c:curio/normal/b"
-    ],
     "BLOCKS:minecraft:woodenfences": [
       "CUSTOM:Yishijiemuzhalan",
       "CUSTOM:Ceshi_mucaibaoFence",
@@ -30707,26 +30702,30 @@
       "CUSTOM:Llianjiamolakuaiqiang",
       "CUSTOM:Cangsangshizhuanweiqiang"
     ],
-    "BLOCKS:c:mora/block": [
-      "CUSTOM:Moladui02",
-      "CUSTOM:Molakuai01",
-      "CUSTOM:Jingzhimolakuai",
-      "CUSTOM:Llianjiamolakuai",
-      "CUSTOM:Lianjiamolakuaibankuai",
-      "CUSTOM:Llianjiamolakuiaitaijie",
-      "CUSTOM:Llianjiamolakuaiqiang",
-      "CUSTOM:Mlxdml01",
-      "CUSTOM:Mlxdml02",
-      "CUSTOM:Mlxdml03"
+    "ITEMS:c:sanyuejinshu": [
+      "CUSTOM:Kongyuejinshu",
+      "CUSTOM:Xinyuejinshu",
+      "CUSTOM:Manyuejinshu"
     ],
-    "ITEMS:c:ysdp_0": [
-      "CUSTOM:Zziyousongshiduanpian",
-      "CUSTOM:Jianlaoduanpian",
-      "CUSTOM:Zuishengduanpian",
-      "CUSTOM:Shengzhangduanpian",
-      "CUSTOM:Dijingduanpian",
-      "CUSTOM:Ranyuanduanpian",
-      "CUSTOM:Aaixubingyuduanpian"
+    "ITEMS:c:curio/normal/fusion/a": [
+      "CUSTOM:Qwhydlt",
+      "CUSTOM:Qwflb",
+      "CUSTOM:Qwfldyhdlb",
+      "CUSTOM:Qwsbmb",
+      "CUSTOM:Qwyhnj",
+      "CUSTOM:Qwxgjb",
+      "CUSTOM:Qwyhjb",
+      "CUSTOM:Qwxgdbmt"
+    ],
+    "ITEMS:c:curio/normal/fusion/b": [
+      "CUSTOM:Qwkwzg",
+      "CUSTOM:Qwcbzg",
+      "CUSTOM:Qwypzgs",
+      "CUSTOM:Qwwxwcx",
+      "CUSTOM:Qwxxgg",
+      "CUSTOM:Qwwszj",
+      "CUSTOM:Qwkwgl",
+      "CUSTOM:Qwkwzt"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Ysjtsj1",
@@ -30782,6 +30781,24 @@
       "~CUSTOM:Jiuchanzhiyuankuai",
       "~CUSTOM:Yuanshikuangshi"
     ],
+    "ITEMS:c:curio/normal/b": [
+      "CUSTOM:Wawanxiangwuchangtou",
+      "CUSTOM:Cebuzhunxia",
+      "CUSTOM:Pengkeluodejingshen",
+      "CUSTOM:Yiyimuguoshi",
+      "CUSTOM:Wanshinang",
+      "CUSTOM:Qwkwzj",
+      "CUSTOM:Qwtldhy",
+      "CUSTOM:Qwhdlz",
+      "CUSTOM:Jlbj",
+      "CUSTOM:Qwybtzdypj",
+      "CUSTOM:Qwxyzq",
+      "CUSTOM:Qwxbzsq",
+      "CUSTOM:Xiangdanganlao",
+      "CUSTOM:Qiwuchongwang",
+      "CUSTOM:Qwlbtdgcl",
+      "CUSTOM:Qwsmcl"
+    ],
     "BLOCKS:minecraft:beacon_base_blocks": [
       "CUSTOM:Shengzhangbifeidakuai",
       "CUSTOM:Jianlaohuangyukuai",
@@ -30805,8 +30822,45 @@
       "CUSTOM:Lajsk",
       "CUSTOM:Jdyk"
     ],
-    "ITEMS:c:blocks/charcoal": [
-      "CUSTOM:Mutankuai"
+    "ITEMS:c:curio/normal/a": [
+      "CUSTOM:Yiyinhedaletou",
+      "CUSTOM:Fulinjiao",
+      "CUSTOM:Fenliejinbi",
+      "CUSTOM:Qwflyb",
+      "CUSTOM:Qwyzzm",
+      "CUSTOM:Qwtcjlbptbg",
+      "CUSTOM:Quxgjibing",
+      "CUSTOM:Xingjidaletou",
+      "TAG:pgc:sbmt",
+      "CUSTOM:Ssanbamiantou"
+    ],
+    "ITEMS:c:yssx_0": [
+      "CUSTOM:Ziziyousongshisuixie",
+      "CUSTOM:Jianransuixie",
+      "CUSTOM:Zuishengsuixie",
+      "CUSTOM:Shengzhangbifeisuixie",
+      "CUSTOM:Dijingsuixie",
+      "CUSTOM:Ranyuansuixie",
+      "CUSTOM:Aixubingyusuixie",
+      "CUSTOM:Ysfc"
+    ],
+    "ITEMS:c:hejin_0": [
+      "CUSTOM:Zizizaihejintao.helmet",
+      "CUSTOM:Jlkjhj.helmet",
+      "CUSTOM:Zshjt.helmet",
+      "CUSTOM:Szhjkj.helmet",
+      "CUSTOM:Djhjt.helmet",
+      "CUSTOM:Ryhjt.helmet",
+      "CUSTOM:Axhjt.helmet"
+    ],
+    "ITEMS:c:hejin_1": [
+      "CUSTOM:Zizizaihejintao.body",
+      "CUSTOM:Jlkjhj.body",
+      "CUSTOM:Zshjt.body",
+      "CUSTOM:Szhjkj.body",
+      "CUSTOM:Djhjt.body",
+      "CUSTOM:Ryhjt.body",
+      "CUSTOM:Axhjt.body"
     ],
     "ITEMS:minecraft:trimmable_armor": [
       "CUSTOM:Kkuijiaceshi.helmet",
@@ -30898,6 +30952,15 @@
       "CUSTOM:Axhjt.legs",
       "CUSTOM:Axhjt.boots"
     ],
+    "ITEMS:c:hejin_2": [
+      "CUSTOM:Zizizaihejintao.legs",
+      "CUSTOM:Jlkjhj.legs",
+      "CUSTOM:Zshjt.legs",
+      "CUSTOM:Szhjkj.legs",
+      "CUSTOM:Djhjt.legs",
+      "CUSTOM:Ryhjt.legs",
+      "CUSTOM:Axhjt.legs"
+    ],
     "ITEMS:pgc:yszb": [
       "CUSTOM:Yuanshijian",
       "CUSTOM:Yuanshigao",
@@ -30905,22 +30968,6 @@
       "CUSTOM:Yuanshiqiao",
       "CUSTOM:Yuanshichutou",
       "CUSTOM:Qgdysj"
-    ],
-    "ITEMS:c:zuishengjian": [
-      "CUSTOM:Zstj",
-      "CUSTOM:Zszsj",
-      "CUSTOM:Zshjj"
-    ],
-    "ITEMS:pgc:hjzzb": [
-      "TAG:c:yshjj",
-      "TAG:primogemcraft:yuansutaoxiajiehejin"
-    ],
-    "BLOCKS:c:moladui": [
-      "CUSTOM:Moladui02",
-      "CUSTOM:Mlxdml01",
-      "CUSTOM:Mlxdml02",
-      "CUSTOM:Mlxdml03",
-      "CUSTOM:Dbmlk"
     ],
     "ITEMS:c:hejin_3": [
       "CUSTOM:Zizizaihejintao.boots",
@@ -30931,14 +30978,30 @@
       "CUSTOM:Ryhjt.boots",
       "CUSTOM:Axhjt.boots"
     ],
-    "ITEMS:c:hejin_2": [
-      "CUSTOM:Zizizaihejintao.legs",
-      "CUSTOM:Jlkjhj.legs",
-      "CUSTOM:Zshjt.legs",
-      "CUSTOM:Szhjkj.legs",
-      "CUSTOM:Djhjt.legs",
-      "CUSTOM:Ryhjt.legs",
-      "CUSTOM:Axhjt.legs"
+    "ITEMS:c:curio/tianhuihejin": [
+      "CUSTOM:Qwthhj"
+    ],
+    "ITEMS:c:yshjj": [
+      "CUSTOM:Zizaihejinjian",
+      "CUSTOM:Jjljxjhj",
+      "CUSTOM:Zshjj",
+      "CUSTOM:Szhjj",
+      "CUSTOM:Djhjj",
+      "CUSTOM:Ryhjj",
+      "CUSTOM:Axhjj"
+    ],
+    "ITEMS:pgc:hjzzb": [
+      "TAG:c:yshjj",
+      "TAG:primogemcraft:yuansutaoxiajiehejin"
+    ],
+    "ITEMS:c:ysjinshu": [
+      "CUSTOM:Zzjs",
+      "CUSTOM:Jlzs",
+      "CUSTOM:Yhjs",
+      "CUSTOM:Zhjs",
+      "CUSTOM:Zyjs",
+      "CUSTOM:Ryjs",
+      "CUSTOM:Lijs"
     ],
     "ITEMS:genshincraft:anemo_infusion": [
       "CUSTOM:Zizaitiejian",
@@ -30954,27 +31017,33 @@
       "CUSTOM:QQQyuanchulan01",
       "CUSTOM:QqiyuanJinGuang"
     ],
+    "BLOCKS:c:yuansujingtikuai": [
+      "CUSTOM:Ziyousongshikuai",
+      "CUSTOM:Jianlaohuangyukuai",
+      "CUSTOM:Zuisnegzijingkuai",
+      "CUSTOM:Shengzhangbifeidakuai",
+      "CUSTOM:Dijingqingjinkuai",
+      "CUSTOM:Ranyuankuai2",
+      "CUSTOM:Yuansujingshikuai",
+      "CUSTOM:AixubingyufangkuI"
+    ],
     "ITEMS:pgc:prayer_core_x1": [
       "CUSTOM:Qyhx",
       "CUSTOM:Qyhx0wujiacheng"
+    ],
+    "ITEMS:c:mora": [
+      "CUSTOM:Mmola01",
+      "CUSTOM:Jinzhimola",
+      "TAG:c:mora/block"
+    ],
+    "DAMAGE_TYPES:minecraft:bypasses_cooldown": [
+      "CUSTOM:Chiwuwuli"
     ],
     "ITEMS:curios:curio": [
       "CUSTOM:Sanyuezhufu",
       "CUSTOM:Ysrz0",
       "CUSTOM:Feiqiupingzheng",
       "TAG:c:curio/curios"
-    ],
-    "DAMAGE_TYPES:minecraft:bypasses_cooldown": [
-      "CUSTOM:Chiwuwuli"
-    ],
-    "ITEMS:c:tie_2": [
-      "CUSTOM:Zizaitiejia.legs",
-      "CUSTOM:Kjjlt.legs",
-      "CUSTOM:Zstkj.legs",
-      "CUSTOM:Szkjtie.legs",
-      "CUSTOM:Djtt.legs",
-      "CUSTOM:Rytt.legs",
-      "CUSTOM:Axtt.legs"
     ],
     "ITEMS:pgc:qysz_10": [
       "TAG:c:ysjinshu",
@@ -31009,50 +31078,11 @@
       "CUSTOM:Yibangrenzhinang",
       "Items.NETHERITE_INGOT"
     ],
-    "ITEMS:c:tie_3": [
-      "CUSTOM:Zizaitiejia.boots",
-      "CUSTOM:Kjjlt.boots",
-      "CUSTOM:Zstkj.boots",
-      "CUSTOM:Szkjtie.boots",
-      "CUSTOM:Djtt.boots",
-      "CUSTOM:Rytt.boots",
-      "CUSTOM:Axtt.boots"
-    ],
-    "ITEMS:c:tie_0": [
-      "CUSTOM:Zizaitiejia.helmet",
-      "CUSTOM:Zstkj.helmet",
-      "CUSTOM:Kjjlt.helmet",
-      "CUSTOM:Szkjtie.helmet",
-      "CUSTOM:Djtt.helmet",
-      "CUSTOM:Rytt.helmet",
-      "CUSTOM:Axtt.helmet"
-    ],
-    "ITEMS:c:hejin_1": [
-      "CUSTOM:Zizizaihejintao.body",
-      "CUSTOM:Jlkjhj.body",
-      "CUSTOM:Zshjt.body",
-      "CUSTOM:Szhjkj.body",
-      "CUSTOM:Djhjt.body",
-      "CUSTOM:Ryhjt.body",
-      "CUSTOM:Axhjt.body"
-    ],
-    "ITEMS:c:tie_1": [
-      "CUSTOM:Zizaitiejia.body",
-      "CUSTOM:Kjjlt.body",
-      "CUSTOM:Zstkj.body",
-      "CUSTOM:Szkjtie.body",
-      "CUSTOM:Djtt.body",
-      "CUSTOM:Rytt.body",
-      "CUSTOM:Axtt.body"
-    ],
-    "ITEMS:c:hejin_0": [
-      "CUSTOM:Zizizaihejintao.helmet",
-      "CUSTOM:Jlkjhj.helmet",
-      "CUSTOM:Zshjt.helmet",
-      "CUSTOM:Szhjkj.helmet",
-      "CUSTOM:Djhjt.helmet",
-      "CUSTOM:Ryhjt.helmet",
-      "CUSTOM:Axhjt.helmet"
+    "ITEMS:c:primogemcraft": [
+      "TAG:pgc:tzzb",
+      "TAG:pgc:hjzzb",
+      "TAG:pgc:dzmb",
+      "TAG:pgc:zzzb"
     ],
     "DAMAGE_TYPES:minecraft:bypasses_resistance": [
       "CUSTOM:SHchixushanghai"
@@ -31096,6 +31126,25 @@
       "~CUSTOM:Bbuzainianqingdeqincezhuang012",
       "~CUSTOM:Xiwangdeyitian011"
     ],
+    "BLOCKS:c:ores": [
+      "CUSTOM:Yuanshikuangshi",
+      "CUSTOM:Ziyousongshikuangshi",
+      "CUSTOM:Jianlaokuangshi",
+      "CUSTOM:Zuishengkuangshi",
+      "CUSTOM:Shengzhangkuangshi",
+      "CUSTOM:Dijingqinjingkuangshi",
+      "CUSTOM:Ranyuanmanaokuangshi",
+      "CUSTOM:Aixubingyukuangshi"
+    ],
+    "ITEMS:c:ysk_0": [
+      "CUSTOM:Zziyousongshikuai",
+      "CUSTOM:Zuishengkuai",
+      "CUSTOM:Shengzhangkuai",
+      "CUSTOM:Dijingkuai",
+      "CUSTOM:Ranyuankuai",
+      "CUSTOM:Aixubingyukuai",
+      "CUSTOM:Jianlaokuaiwupin"
+    ],
     "ITEMS:pgc:prayer_core_x10": [
       "CUSTOM:Qyhxshilian"
     ],
@@ -31131,6 +31180,9 @@
       "CUSTOM:Axc",
       "CUSTOM:Zfg"
     ],
+    "ITEMS:c:blocks/charcoal": [
+      "CUSTOM:Mutankuai"
+    ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:D11",
       "~CUSTOM:YishijiemubanPlanks",
@@ -31138,6 +31190,11 @@
       "~CUSTOM:Caoyuanhehuabuban2",
       "~CUSTOM:Caoyuanhehuamuban",
       "~CUSTOM:Yishijieyuanmumuban"
+    ],
+    "ITEMS:c:curio/other": [
+      "TAG:c:curio/bad",
+      "TAG:c:curio/code",
+      "TAG:c:curio/other/ealing_wax"
     ],
     "ITEMS:pgc:lihe_0": [
       "CUSTOM:Xixiangyuzhiyuan",
@@ -31196,52 +31253,12 @@
       "CUSTOM:Axq",
       "CUSTOM:Axc"
     ],
-    "ITEMS:c:armors/chestplates": [
-      "CUSTOM:Kkuijiaceshi.body",
-      "CUSTOM:Zizaitiejia.body",
-      "CUSTOM:Zizaizuantao.body",
-      "CUSTOM:Zizizaihejintao.body",
-      "CUSTOM:Kjjlt.body",
-      "CUSTOM:Jlkjzs.body",
-      "CUSTOM:Jlkjhj.body",
-      "CUSTOM:Zstkj.body",
-      "CUSTOM:Zszst.body",
-      "CUSTOM:Zshjt.body",
-      "CUSTOM:Szkjtie.body",
-      "CUSTOM:Szzskj.body",
-      "CUSTOM:Szhjkj.body",
-      "CUSTOM:Djtt.body",
-      "CUSTOM:Djzst.body",
-      "CUSTOM:Djhjt.body",
-      "CUSTOM:Rytt.body",
-      "CUSTOM:Ruzst.body",
-      "CUSTOM:Ryhjt.body",
-      "CUSTOM:Axtt.body",
-      "CUSTOM:Axzst.body",
-      "CUSTOM:Axhjt.body"
-    ],
     "ITEMS:pgc:token_mending": [
       "TAG:c:curio"
     ],
     "ITEMS:pgc:prayer_core": [
       "TAG:pgc:prayer_core_x1",
       "TAG:pgc:prayer_core_x10"
-    ],
-    "BLOCKS:c:yuansujingtikuai": [
-      "CUSTOM:Ziyousongshikuai",
-      "CUSTOM:Jianlaohuangyukuai",
-      "CUSTOM:Zuisnegzijingkuai",
-      "CUSTOM:Shengzhangbifeidakuai",
-      "CUSTOM:Dijingqingjinkuai",
-      "CUSTOM:Ranyuankuai2",
-      "CUSTOM:Yuansujingshikuai",
-      "CUSTOM:AixubingyufangkuI"
-    ],
-    "ITEMS:c:element_powder": [
-      "TAG:c:ysdp_0",
-      "TAG:c:yssx_0",
-      "TAG:c:ysk_0",
-      "TAG:primogemcraft:yuansujingticailiaobiaoqian"
     ],
     "BLOCKS:minecraft:fences": [
       "CUSTOM:Yishijiemuzhalan",
@@ -31255,6 +31272,38 @@
     "BLOCKS:minecraft:walls": [
       "CUSTOM:Llianjiamolakuaiqiang",
       "CUSTOM:Cangsangshizhuanweiqiang"
+    ],
+    "ITEMS:c:armors/helmets": [
+      "CUSTOM:Kkuijiaceshi.helmet",
+      "CUSTOM:Zizaitiejia.helmet",
+      "CUSTOM:Zizaizuantao.helmet",
+      "CUSTOM:Zizizaihejintao.helmet",
+      "CUSTOM:Kjjlt.helmet",
+      "CUSTOM:Jlkjzs.helmet",
+      "CUSTOM:Jlkjhj.helmet",
+      "CUSTOM:Zstkj.helmet",
+      "CUSTOM:Zszst.helmet",
+      "CUSTOM:Zshjt.helmet",
+      "CUSTOM:Szkjtie.helmet",
+      "CUSTOM:Szzskj.helmet",
+      "CUSTOM:Szhjkj.helmet",
+      "CUSTOM:Djtt.helmet",
+      "CUSTOM:Djzst.helmet",
+      "CUSTOM:Djhjt.helmet",
+      "CUSTOM:Rytt.helmet",
+      "CUSTOM:Ruzst.helmet",
+      "CUSTOM:Ryhjt.helmet",
+      "CUSTOM:Axtt.helmet",
+      "CUSTOM:Axzst.helmet",
+      "CUSTOM:Axhjt.helmet"
+    ],
+    "ITEMS:c:curio/code": [
+      "CUSTOM:Luanqibazaodedaima",
+      "CUSTOM:Youdianqiqiaodedaima",
+      "CUSTOM:Zhongguizhongjudedaima",
+      "CUSTOM:Jingqueyouyadaima",
+      "CUSTOM:Meiyouzhushidaima",
+      "CUSTOM:Wuxiandiguidedaima"
     ],
     "DAMAGE_TYPES:minecraft:bypasses_enchantments": [
       "CUSTOM:Chiwuwuli"
@@ -31275,14 +31324,56 @@
       "~CUSTOM:Qinlaodezhexue",
       "~CUSTOM:Jiuchanzhiyuangao"
     ],
-    "ITEMS:c:ysjinshu": [
-      "CUSTOM:Zzjs",
-      "CUSTOM:Jlzs",
-      "CUSTOM:Yhjs",
-      "CUSTOM:Zhjs",
-      "CUSTOM:Zyjs",
-      "CUSTOM:Ryjs",
-      "CUSTOM:Lijs"
+    "BLOCKS:c:storage_blocks": [
+      "CUSTOM:Ziyousongshikuai",
+      "CUSTOM:Jingzhimolakuai",
+      "CUSTOM:Molakuai01",
+      "CUSTOM:Jiuchanzhiyuankuai",
+      "CUSTOM:Jianlaohuangyukuai",
+      "CUSTOM:Zuisnegzijingkuai",
+      "CUSTOM:Shengzhangbifeidakuai",
+      "CUSTOM:Dijingqingjinkuai",
+      "CUSTOM:Ranyuankuai2",
+      "CUSTOM:AixubingyufangkuI",
+      "CUSTOM:Yuansujingshikuai",
+      "CUSTOM:Jiuchanzhiyuankuai",
+      "CUSTOM:Molakuai01",
+      "CUSTOM:Jingzhimolakuai",
+      "CUSTOM:Ziyousongshikuai",
+      "CUSTOM:Jianlaohuangyukuai",
+      "CUSTOM:Zuisnegzijingkuai",
+      "CUSTOM:Shengzhangbifeidakuai",
+      "CUSTOM:Dijingqingjinkuai",
+      "CUSTOM:Ranyuankuai2",
+      "CUSTOM:AixubingyufangkuI",
+      "CUSTOM:Yuansujingshikuai"
+    ],
+    "ITEMS:c:zuan_0": [
+      "CUSTOM:Zizaizuantao.helmet",
+      "CUSTOM:Jlkjzs.helmet",
+      "CUSTOM:Zszst.helmet",
+      "CUSTOM:Szzskj.helmet",
+      "CUSTOM:Djzst.helmet",
+      "CUSTOM:Ruzst.helmet",
+      "CUSTOM:Axzst.helmet"
+    ],
+    "ITEMS:c:zuan_1": [
+      "CUSTOM:Zizaizuantao.body",
+      "CUSTOM:Jlkjzs.body",
+      "CUSTOM:Zszst.body",
+      "CUSTOM:Szzskj.body",
+      "CUSTOM:Djzst.body",
+      "CUSTOM:Ruzst.body",
+      "CUSTOM:Axzst.body"
+    ],
+    "ITEMS:c:zuan_2": [
+      "CUSTOM:Zizaizuantao.legs",
+      "CUSTOM:Jlkjzs.legs",
+      "CUSTOM:Zszst.legs",
+      "CUSTOM:Szzskj.legs",
+      "CUSTOM:Djzst.legs",
+      "CUSTOM:Ruzst.legs",
+      "CUSTOM:Axzst.legs"
     ],
     "ITEMS:minecraft:piglin_loved": [
       "CUSTOM:Jinzhimola",
@@ -31300,6 +31391,20 @@
       "CUSTOM:Xiaodaimola",
       "CUSTOM:Wmoladai",
       "CUSTOM:Mmolapeiziwupin"
+    ],
+    "ITEMS:c:zuan_3": [
+      "CUSTOM:Zizaizuantao.boots",
+      "CUSTOM:Jlkjzs.boots",
+      "CUSTOM:Zszst.boots",
+      "CUSTOM:Szzskj.boots",
+      "CUSTOM:Djzst.boots",
+      "CUSTOM:Ruzst.boots",
+      "CUSTOM:Axzst.boots"
+    ],
+    "ITEMS:c:curio/negative": [
+      "TAG:c:curio/clock",
+      "CUSTOM:Qwwxntdmj",
+      "CUSTOM:Qwqskxjxt"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~CUSTOM:Jianshijingban",
@@ -31341,13 +31446,6 @@
       "Blocks.RAW_GOLD_BLOCK",
       "Blocks.RAW_COPPER_BLOCK"
     ],
-    "ITEMS:c:curio/clock/division": [
-      "CUSTOM:QwggzfenlieA",
-      "CUSTOM:QwggzfenlieB"
-    ],
-    "ITEMS:c:curio/tianhuihejin": [
-      "CUSTOM:Qwthhj"
-    ],
     "ITEMS:genshincraft:pyro_infusion": [
       "CUSTOM:Rytj",
       "CUSTOM:Ryzsj",
@@ -31374,6 +31472,24 @@
     ],
     "BLOCKS:minecraft:dirt": [
       "CUSTOM:Shengzhangkuangshi"
+    ],
+    "ITEMS:c:curio/other/ealing_wax": [
+      "CUSTOM:Hqfeng",
+      "CUSTOM:Hqyan",
+      "CUSTOM:Hqlei",
+      "CUSTOM:Hqcao",
+      "CUSTOM:Hqshui",
+      "CUSTOM:Hqhuo",
+      "CUSTOM:Hqbing"
+    ],
+    "ITEMS:c:tie_1": [
+      "CUSTOM:Zizaitiejia.body",
+      "CUSTOM:Kjjlt.body",
+      "CUSTOM:Zstkj.body",
+      "CUSTOM:Szkjtie.body",
+      "CUSTOM:Djtt.body",
+      "CUSTOM:Rytt.body",
+      "CUSTOM:Axtt.body"
     ],
     "ITEMS:primogemcraft:yuansutaotie": [
       "CUSTOM:Zizaitiejia.helmet",
@@ -31405,30 +31521,23 @@
       "CUSTOM:Axtt.legs",
       "CUSTOM:Axtt.boots"
     ],
-    "ITEMS:c:curio/normal/s": [
-      "CUSTOM:Qwymzj",
-      "CUSTOM:Chunmeizhipao",
-      "CUSTOM:Qwjzyj",
-      "CUSTOM:Qwqcxxmx"
+    "ITEMS:c:tie_0": [
+      "CUSTOM:Zizaitiejia.helmet",
+      "CUSTOM:Zstkj.helmet",
+      "CUSTOM:Kjjlt.helmet",
+      "CUSTOM:Szkjtie.helmet",
+      "CUSTOM:Djtt.helmet",
+      "CUSTOM:Rytt.helmet",
+      "CUSTOM:Axtt.helmet"
     ],
-    "BLOCKS:c:ores": [
-      "CUSTOM:Yuanshikuangshi",
-      "CUSTOM:Ziyousongshikuangshi",
-      "CUSTOM:Jianlaokuangshi",
-      "CUSTOM:Zuishengkuangshi",
-      "CUSTOM:Shengzhangkuangshi",
-      "CUSTOM:Dijingqinjingkuangshi",
-      "CUSTOM:Ranyuanmanaokuangshi",
-      "CUSTOM:Aixubingyukuangshi"
-    ],
-    "ITEMS:pgc:zzzb": [
-      "TAG:c:yszsj",
-      "TAG:primogemcraft:yuansutaozuanshi"
-    ],
-    "ITEMS:c:curio/other": [
-      "TAG:c:curio/bad",
-      "TAG:c:curio/code",
-      "TAG:c:curio/other/ealing_wax"
+    "ITEMS:c:tie_3": [
+      "CUSTOM:Zizaitiejia.boots",
+      "CUSTOM:Kjjlt.boots",
+      "CUSTOM:Zstkj.boots",
+      "CUSTOM:Szkjtie.boots",
+      "CUSTOM:Djtt.boots",
+      "CUSTOM:Rytt.boots",
+      "CUSTOM:Axtt.boots"
     ],
     "ITEMS:c:yszsj": [
       "CUSTOM:Zizaizuanshijian",
@@ -31439,23 +31548,61 @@
       "CUSTOM:Ryzsj",
       "CUSTOM:Axzsj"
     ],
-    "ITEMS:c:curio/normal/b": [
-      "CUSTOM:Wawanxiangwuchangtou",
-      "CUSTOM:Cebuzhunxia",
+    "ITEMS:c:curio/normal/fusion/s": [
+      "CUSTOM:Qwzjxxmx"
+    ],
+    "ITEMS:c:ystj": [
+      "CUSTOM:Zizaitiejian",
+      "CUSTOM:Zstj",
+      "CUSTOM:Sztj",
+      "CUSTOM:Djtj",
+      "CUSTOM:Rytj",
+      "CUSTOM:Axtj",
+      "CUSTOM:Jljtie"
+    ],
+    "ITEMS:c:tie_2": [
+      "CUSTOM:Zizaitiejia.legs",
+      "CUSTOM:Kjjlt.legs",
+      "CUSTOM:Zstkj.legs",
+      "CUSTOM:Szkjtie.legs",
+      "CUSTOM:Djtt.legs",
+      "CUSTOM:Rytt.legs",
+      "CUSTOM:Axtt.legs"
+    ],
+    "ITEMS:c:curio/curios": [
       "CUSTOM:Pengkeluodejingshen",
+      "CUSTOM:Xiangdanganlao",
+      "CUSTOM:Qiwuchongwang",
+      "CUSTOM:Fenliejinbi",
       "CUSTOM:Yiyimuguoshi",
-      "CUSTOM:Wanshinang",
-      "CUSTOM:Qwkwzj",
       "CUSTOM:Qwtldhy",
       "CUSTOM:Qwhdlz",
       "CUSTOM:Jlbj",
       "CUSTOM:Qwybtzdypj",
       "CUSTOM:Qwxyzq",
+      "CUSTOM:Qwymzj",
       "CUSTOM:Qwxbzsq",
-      "CUSTOM:Xiangdanganlao",
-      "CUSTOM:Qiwuchongwang",
+      "CUSTOM:Chunmeizhipao",
+      "CUSTOM:Qwjzyj",
+      "CUSTOM:Hqfeng",
+      "CUSTOM:Hqyan",
+      "CUSTOM:Hqlei",
+      "CUSTOM:Hqcao",
+      "CUSTOM:Hqshui",
+      "CUSTOM:Hqhuo",
+      "CUSTOM:Hqbing",
+      "CUSTOM:Shenmilihe",
+      "CUSTOM:Qwtcjlbptbg",
       "CUSTOM:Qwlbtdgcl",
-      "CUSTOM:Qwsmcl"
+      "CUSTOM:Quxgjibing",
+      "CUSTOM:Wanshinang"
+    ],
+    "ITEMS:pgc:zzzb": [
+      "TAG:c:yszsj",
+      "TAG:primogemcraft:yuansutaozuanshi"
+    ],
+    "ITEMS:c:kebianjiduiyou": [
+      "CUSTOM:Mmola01"
     ],
     "ITEMS:minecraft:leg_armor": [
       "~CUSTOM:Teshukuijia01.legs",
@@ -31631,27 +31778,6 @@
       "Items.NETHERITE_SCRAP",
       "Items.EMERALD"
     ],
-    "ITEMS:c:curio/normal/a": [
-      "CUSTOM:Yiyinhedaletou",
-      "CUSTOM:Fulinjiao",
-      "CUSTOM:Fenliejinbi",
-      "CUSTOM:Qwflyb",
-      "CUSTOM:Qwyzzm",
-      "CUSTOM:Qwtcjlbptbg",
-      "CUSTOM:Quxgjibing",
-      "CUSTOM:Xingjidaletou",
-      "TAG:pgc:sbmt",
-      "CUSTOM:Ssanbamiantou"
-    ],
-    "ITEMS:c:ysk_0": [
-      "CUSTOM:Zziyousongshikuai",
-      "CUSTOM:Zuishengkuai",
-      "CUSTOM:Shengzhangkuai",
-      "CUSTOM:Dijingkuai",
-      "CUSTOM:Ranyuankuai",
-      "CUSTOM:Aixubingyukuai",
-      "CUSTOM:Jianlaokuaiwupin"
-    ],
     "ITEMS:pgc:qysz_3": [
       "CUSTOM:Yuanshi",
       "CUSTOM:Xixiangyuzhiyuan",
@@ -31729,21 +31855,28 @@
       "Items.GOLDEN_BOOTS",
       "CUSTOM:Liulangzhezhinang"
     ],
-    "ITEMS:c:curio/bad": [
-      "CUSTOM:Shqwyhdlt",
-      "CUSTOM:Shqwfnj",
-      "CUSTOM:Shcbzx",
-      "CUSTOM:Shxjdlt"
-    ],
-    "ITEMS:c:curio/fusion": [
-      "TAG:c:curio/normal/fusion/s",
-      "TAG:c:curio/normal/fusion/a",
-      "TAG:c:curio/normal/fusion/b"
-    ],
     "ITEMS:pgc:qi_wu_xiu_fu": [
       "CUSTOM:Qwkwzj",
       "CUSTOM:Qwwszj",
       "CUSTOM:Qwkwgl"
+    ],
+    "ITEMS:c:curio/clock": [
+      "CUSTOM:Gongsideguguzhong",
+      "CUSTOM:Qiwuheisenlinggz",
+      "TAG:c:curio/clock/division",
+      "CUSTOM:Ydggz"
+    ],
+    "ITEMS:c:mora/block": [
+      "CUSTOM:Moladui02",
+      "CUSTOM:Molakuai01",
+      "CUSTOM:Jingzhimolakuai",
+      "CUSTOM:Llianjiamolakuai",
+      "CUSTOM:Lianjiamolakuaibankuai",
+      "CUSTOM:Llianjiamolakuiaitaijie",
+      "CUSTOM:Llianjiamolakuaiqiang",
+      "CUSTOM:Mlxdml01",
+      "CUSTOM:Mlxdml02",
+      "CUSTOM:Mlxdml03"
     ],
     "ITEMS:primogemcraft:yuansutaoxiajiehejin": [
       "CUSTOM:Zizizaihejintao.helmet",
@@ -31795,25 +31928,10 @@
       "CUSTOM:Xingchen",
       "Items.DYE#4"
     ],
-    "ITEMS:c:curio/normal/fusion/b": [
-      "CUSTOM:Qwkwzg",
-      "CUSTOM:Qwcbzg",
-      "CUSTOM:Qwypzgs",
-      "CUSTOM:Qwwxwcx",
-      "CUSTOM:Qwxxgg",
-      "CUSTOM:Qwwszj",
-      "CUSTOM:Qwkwgl",
-      "CUSTOM:Qwkwzt"
-    ],
-    "ITEMS:c:curio/normal/fusion/a": [
-      "CUSTOM:Qwhydlt",
-      "CUSTOM:Qwflb",
-      "CUSTOM:Qwfldyhdlb",
-      "CUSTOM:Qwsbmb",
-      "CUSTOM:Qwyhnj",
-      "CUSTOM:Qwxgjb",
-      "CUSTOM:Qwyhjb",
-      "CUSTOM:Qwxgdbmt"
+    "ITEMS:c:zuishengjian": [
+      "CUSTOM:Zstj",
+      "CUSTOM:Zszsj",
+      "CUSTOM:Zshjj"
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:Cangsangshizhuanlouti",
@@ -31826,15 +31944,11 @@
       "~CUSTOM:Llianjiamolakuiaitaijie",
       "~CUSTOM:Yiyishijiemubanlouqi"
     ],
-    "ITEMS:c:yssx_0": [
-      "CUSTOM:Ziziyousongshisuixie",
-      "CUSTOM:Jianransuixie",
-      "CUSTOM:Zuishengsuixie",
-      "CUSTOM:Shengzhangbifeisuixie",
-      "CUSTOM:Dijingsuixie",
-      "CUSTOM:Ranyuansuixie",
-      "CUSTOM:Aixubingyusuixie",
-      "CUSTOM:Ysfc"
+    "ITEMS:c:element_powder": [
+      "TAG:c:ysdp_0",
+      "TAG:c:yssx_0",
+      "TAG:c:ysk_0",
+      "TAG:primogemcraft:yuansujingticailiaobiaoqian"
     ],
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:Axq",
@@ -31847,35 +31961,14 @@
       "~CUSTOM:Yuanshiqiao",
       "~CUSTOM:Mmolachan"
     ],
-    "ITEMS:c:armors/boots": [
-      "CUSTOM:Kkuijiaceshi.boots",
-      "CUSTOM:Zizaitiejia.boots",
-      "CUSTOM:Zizaizuantao.boots",
-      "CUSTOM:Zizizaihejintao.boots",
-      "CUSTOM:Kjjlt.boots",
-      "CUSTOM:Jlkjzs.boots",
-      "CUSTOM:Jlkjhj.boots",
-      "CUSTOM:Zstkj.boots",
-      "CUSTOM:Zszst.boots",
-      "CUSTOM:Zshjt.boots",
-      "CUSTOM:Szkjtie.boots",
-      "CUSTOM:Szzskj.boots",
-      "CUSTOM:Szhjkj.boots",
-      "CUSTOM:Djtt.boots",
-      "CUSTOM:Djzst.boots",
-      "CUSTOM:Djhjt.boots",
-      "CUSTOM:Rytt.boots",
-      "CUSTOM:Ruzst.boots",
-      "CUSTOM:Ryhjt.boots",
-      "CUSTOM:Axtt.boots",
-      "CUSTOM:Axzst.boots",
-      "CUSTOM:Axhjt.boots"
-    ],
-    "ITEMS:c:curio/clock": [
-      "CUSTOM:Gongsideguguzhong",
-      "CUSTOM:Qiwuheisenlinggz",
-      "TAG:c:curio/clock/division",
-      "CUSTOM:Ydggz"
+    "ITEMS:c:ysdp_0": [
+      "CUSTOM:Zziyousongshiduanpian",
+      "CUSTOM:Jianlaoduanpian",
+      "CUSTOM:Zuishengduanpian",
+      "CUSTOM:Shengzhangduanpian",
+      "CUSTOM:Dijingduanpian",
+      "CUSTOM:Ranyuanduanpian",
+      "CUSTOM:Aaixubingyuduanpian"
     ],
     "DAMAGE_TYPES:minecraft:bypasses_armor": [
       "CUSTOM:Chiwuwuli"
@@ -31885,8 +31978,9 @@
       "CUSTOM:Mlxdml02",
       "CUSTOM:Mlxdml03"
     ],
-    "ITEMS:c:curio/normal/fusion/s": [
-      "CUSTOM:Qwzjxxmx"
+    "ITEMS:c:curio/clock/division": [
+      "CUSTOM:QwggzfenlieA",
+      "CUSTOM:QwggzfenlieB"
     ],
     "BLOCKS:pgc:ketance": [
       "CUSTOM:Ziyousongshikuangshi",
@@ -31897,47 +31991,6 @@
       "CUSTOM:Ranyuanmanaokuangshi",
       "CUSTOM:Aixubingyukuangshi",
       "CUSTOM:Shenbanjianlaohuangyukuangshi"
-    ],
-    "ITEMS:c:ingots": [
-      "CUSTOM:Zhongkouweitieding",
-      "TAG:c:ysjinshu"
-    ],
-    "ITEMS:c:curio/curios": [
-      "CUSTOM:Pengkeluodejingshen",
-      "CUSTOM:Xiangdanganlao",
-      "CUSTOM:Qiwuchongwang",
-      "CUSTOM:Fenliejinbi",
-      "CUSTOM:Yiyimuguoshi",
-      "CUSTOM:Qwtldhy",
-      "CUSTOM:Qwhdlz",
-      "CUSTOM:Jlbj",
-      "CUSTOM:Qwybtzdypj",
-      "CUSTOM:Qwxyzq",
-      "CUSTOM:Qwymzj",
-      "CUSTOM:Qwxbzsq",
-      "CUSTOM:Chunmeizhipao",
-      "CUSTOM:Qwjzyj",
-      "CUSTOM:Hqfeng",
-      "CUSTOM:Hqyan",
-      "CUSTOM:Hqlei",
-      "CUSTOM:Hqcao",
-      "CUSTOM:Hqshui",
-      "CUSTOM:Hqhuo",
-      "CUSTOM:Hqbing",
-      "CUSTOM:Shenmilihe",
-      "CUSTOM:Qwtcjlbptbg",
-      "CUSTOM:Qwlbtdgcl",
-      "CUSTOM:Quxgjibing",
-      "CUSTOM:Wanshinang"
-    ],
-    "ITEMS:c:ystj": [
-      "CUSTOM:Zizaitiejian",
-      "CUSTOM:Zstj",
-      "CUSTOM:Sztj",
-      "CUSTOM:Djtj",
-      "CUSTOM:Rytj",
-      "CUSTOM:Axtj",
-      "CUSTOM:Jljtie"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:Axhjj",
@@ -31981,6 +32034,13 @@
       "~CUSTOM:Ysjfr",
       "~CUSTOM:Xiantiaoqiang"
     ],
+    "ITEMS:c:curio": [
+      "TAG:c:curio/normal",
+      "TAG:c:curio/negative",
+      "TAG:c:curio/other",
+      "TAG:c:curio/fusion",
+      "TAG:c:curio/tianhuihejin"
+    ],
     "ITEMS:minecraft:planks": [
       "CUSTOM:Yishijieyuanmumuban",
       "CUSTOM:Caoyuanhehuamuban",
@@ -31989,28 +32049,20 @@
       "CUSTOM:YishijiemubanPlanks",
       "CUSTOM:D11"
     ],
-    "ITEMS:c:zuan_2": [
-      "CUSTOM:Zizaizuantao.legs",
-      "CUSTOM:Jlkjzs.legs",
-      "CUSTOM:Zszst.legs",
-      "CUSTOM:Szzskj.legs",
-      "CUSTOM:Djzst.legs",
-      "CUSTOM:Ruzst.legs",
-      "CUSTOM:Axzst.legs"
-    ],
-    "ITEMS:c:zuan_3": [
-      "CUSTOM:Zizaizuantao.boots",
-      "CUSTOM:Jlkjzs.boots",
-      "CUSTOM:Zszst.boots",
-      "CUSTOM:Szzskj.boots",
-      "CUSTOM:Djzst.boots",
-      "CUSTOM:Ruzst.boots",
-      "CUSTOM:Axzst.boots"
+    "ITEMS:c:curio/bad": [
+      "CUSTOM:Shqwyhdlt",
+      "CUSTOM:Shqwfnj",
+      "CUSTOM:Shcbzx",
+      "CUSTOM:Shxjdlt"
     ],
     "ITEMS:pgc:dzmb_5": [
       "CUSTOM:Mzsj",
       "CUSTOM:Mzsj2",
       "CUSTOM:Mzsj3"
+    ],
+    "ITEMS:c:ingots": [
+      "CUSTOM:Zhongkouweitieding",
+      "TAG:c:ysjinshu"
     ],
     "ITEMS:pgc:dzmb_4": [
       "CUSTOM:Shengjizuanshejin",
@@ -32021,14 +32073,22 @@
       "CUSTOM:Ryzsshjsj",
       "CUSTOM:Axzsshjsj"
     ],
-    "BLOCKS:c:nitu": [
-      "Blocks.GRASS",
-      "Blocks.GRASS_PATH",
-      "Blocks.MYCELIUM",
-      "Blocks.DIRT#0",
-      "Blocks.DIRT#1",
-      "Blocks.DIRT#2",
-      "Blocks.FARMLAND"
+    "ITEMS:c:curio/normal": [
+      "TAG:c:curio/normal/s",
+      "TAG:c:curio/normal/a",
+      "TAG:c:curio/normal/b"
+    ],
+    "BLOCKS:c:mora/block": [
+      "CUSTOM:Moladui02",
+      "CUSTOM:Molakuai01",
+      "CUSTOM:Jingzhimolakuai",
+      "CUSTOM:Llianjiamolakuai",
+      "CUSTOM:Lianjiamolakuaibankuai",
+      "CUSTOM:Llianjiamolakuiaitaijie",
+      "CUSTOM:Llianjiamolakuaiqiang",
+      "CUSTOM:Mlxdml01",
+      "CUSTOM:Mlxdml02",
+      "CUSTOM:Mlxdml03"
     ],
     "ITEMS:pgc:dzmb_3": [
       "CUSTOM:Shengjizizaihej",
@@ -32038,6 +32098,11 @@
       "CUSTOM:Djhjsj",
       "CUSTOM:Ryhjsj",
       "CUSTOM:Axhjsj"
+    ],
+    "ITEMS:c:curio/fusion": [
+      "TAG:c:curio/normal/fusion/s",
+      "TAG:c:curio/normal/fusion/a",
+      "TAG:c:curio/normal/fusion/b"
     ],
     "ITEMS:pgc:dzmb_2": [
       "CUSTOM:Shengjizizaizuan",
@@ -32053,15 +32118,6 @@
       "CUSTOM:Shengzhangchu2",
       "CUSTOM:Shengzhangchu03",
       "CUSTOM:Shengzhangchu04"
-    ],
-    "ITEMS:c:zuan_0": [
-      "CUSTOM:Zizaizuantao.helmet",
-      "CUSTOM:Jlkjzs.helmet",
-      "CUSTOM:Zszst.helmet",
-      "CUSTOM:Szzskj.helmet",
-      "CUSTOM:Djzst.helmet",
-      "CUSTOM:Ruzst.helmet",
-      "CUSTOM:Axzst.helmet"
     ],
     "ITEMS:pgc:dzmb_1": [
       "CUSTOM:Shengjizizaitie",
@@ -32088,6 +32144,30 @@
       "~CUSTOM:Ziyousongshikuai",
       "~CUSTOM:Ziyousongshikuangshi",
       "~CUSTOM:Yuanshikuangshi"
+    ],
+    "ITEMS:c:armors/leggings": [
+      "CUSTOM:Kkuijiaceshi.legs",
+      "CUSTOM:Zizaitiejia.legs",
+      "CUSTOM:Zizaizuantao.legs",
+      "CUSTOM:Zizizaihejintao.legs",
+      "CUSTOM:Kjjlt.legs",
+      "CUSTOM:Jlkjzs.legs",
+      "CUSTOM:Jlkjhj.legs",
+      "CUSTOM:Zstkj.legs",
+      "CUSTOM:Zszst.legs",
+      "CUSTOM:Zshjt.legs",
+      "CUSTOM:Szkjtie.legs",
+      "CUSTOM:Szzskj.legs",
+      "CUSTOM:Szhjkj.legs",
+      "CUSTOM:Djtt.legs",
+      "CUSTOM:Djzst.legs",
+      "CUSTOM:Djhjt.legs",
+      "CUSTOM:Rytt.legs",
+      "CUSTOM:Ruzst.legs",
+      "CUSTOM:Ryhjt.legs",
+      "CUSTOM:Axtt.legs",
+      "CUSTOM:Axzst.legs",
+      "CUSTOM:Axhjt.legs"
     ],
     "ITEMS:minecraft:beacon_payment_items": [
       "CUSTOM:Yuanshi",
@@ -32123,76 +32203,10 @@
       "CUSTOM:Lajsl",
       "CUSTOM:Cunqupingzheng"
     ],
-    "ITEMS:c:zuan_1": [
-      "CUSTOM:Zizaizuantao.body",
-      "CUSTOM:Jlkjzs.body",
-      "CUSTOM:Zszst.body",
-      "CUSTOM:Szzskj.body",
-      "CUSTOM:Djzst.body",
-      "CUSTOM:Ruzst.body",
-      "CUSTOM:Axzst.body"
-    ],
     "ITEMS:pgc:dzmb_0": [
       "CUSTOM:Qhmbml",
       "CUSTOM:Qhmbmlys01",
       "CUSTOM:Qhmbmlys02"
-    ],
-    "ITEMS:c:yshjj": [
-      "CUSTOM:Zizaihejinjian",
-      "CUSTOM:Jjljxjhj",
-      "CUSTOM:Zshjj",
-      "CUSTOM:Szhjj",
-      "CUSTOM:Djhjj",
-      "CUSTOM:Ryhjj",
-      "CUSTOM:Axhjj"
-    ],
-    "ITEMS:c:armors/helmets": [
-      "CUSTOM:Kkuijiaceshi.helmet",
-      "CUSTOM:Zizaitiejia.helmet",
-      "CUSTOM:Zizaizuantao.helmet",
-      "CUSTOM:Zizizaihejintao.helmet",
-      "CUSTOM:Kjjlt.helmet",
-      "CUSTOM:Jlkjzs.helmet",
-      "CUSTOM:Jlkjhj.helmet",
-      "CUSTOM:Zstkj.helmet",
-      "CUSTOM:Zszst.helmet",
-      "CUSTOM:Zshjt.helmet",
-      "CUSTOM:Szkjtie.helmet",
-      "CUSTOM:Szzskj.helmet",
-      "CUSTOM:Szhjkj.helmet",
-      "CUSTOM:Djtt.helmet",
-      "CUSTOM:Djzst.helmet",
-      "CUSTOM:Djhjt.helmet",
-      "CUSTOM:Rytt.helmet",
-      "CUSTOM:Ruzst.helmet",
-      "CUSTOM:Ryhjt.helmet",
-      "CUSTOM:Axtt.helmet",
-      "CUSTOM:Axzst.helmet",
-      "CUSTOM:Axhjt.helmet"
-    ],
-    "BLOCKS:c:storage_blocks": [
-      "CUSTOM:Ziyousongshikuai",
-      "CUSTOM:Jingzhimolakuai",
-      "CUSTOM:Molakuai01",
-      "CUSTOM:Jiuchanzhiyuankuai",
-      "CUSTOM:Jianlaohuangyukuai",
-      "CUSTOM:Zuisnegzijingkuai",
-      "CUSTOM:Shengzhangbifeidakuai",
-      "CUSTOM:Dijingqingjinkuai",
-      "CUSTOM:Ranyuankuai2",
-      "CUSTOM:AixubingyufangkuI",
-      "CUSTOM:Yuansujingshikuai",
-      "CUSTOM:Jiuchanzhiyuankuai",
-      "CUSTOM:Molakuai01",
-      "CUSTOM:Jingzhimolakuai",
-      "CUSTOM:Ziyousongshikuai",
-      "CUSTOM:Jianlaohuangyukuai",
-      "CUSTOM:Zuisnegzijingkuai",
-      "CUSTOM:Shengzhangbifeidakuai",
-      "CUSTOM:Dijingqingjinkuai",
-      "CUSTOM:Ranyuankuai2",
-      "CUSTOM:AixubingyufangkuI",
-      "CUSTOM:Yuansujingshikuai"
     ],
     "ITEMS:minecraft:foot_armor": [
       "~CUSTOM:Teshukuijia01.boots",
@@ -32228,11 +32242,6 @@
       "CUSTOM:Jlq",
       "CUSTOM:Jlc"
     ],
-    "ITEMS:c:sanyuejinshu": [
-      "CUSTOM:Kongyuejinshu",
-      "CUSTOM:Xinyuejinshu",
-      "CUSTOM:Manyuejinshu"
-    ],
     "ITEMS:primogemcraft:yuansujingticailiaobiaoqian": [
       "CUSTOM:Zziyousongshi",
       "CUSTOM:Jianlaohuangyu",
@@ -32246,14 +32255,6 @@
     "ITEMS:minecraft:gold_ingot": [
       "CUSTOM:Jinzhimola"
     ],
-    "ITEMS:c:curio/code": [
-      "CUSTOM:Luanqibazaodedaima",
-      "CUSTOM:Youdianqiqiaodedaima",
-      "CUSTOM:Zhongguizhongjudedaima",
-      "CUSTOM:Jingqueyouyadaima",
-      "CUSTOM:Meiyouzhushidaima",
-      "CUSTOM:Wuxiandiguidedaima"
-    ],
     "ITEMS:minecraft:hoes": [
       "~CUSTOM:Molachutou",
       "~CUSTOM:Axc",
@@ -32265,16 +32266,12 @@
       "~CUSTOM:Yuanshichutou",
       "~CUSTOM:Huangjindezhexue"
     ],
-    "ITEMS:c:primogemcraft": [
-      "TAG:pgc:tzzb",
-      "TAG:pgc:hjzzb",
-      "TAG:pgc:dzmb",
-      "TAG:pgc:zzzb"
-    ],
-    "ITEMS:c:curio/negative": [
-      "TAG:c:curio/clock",
-      "CUSTOM:Qwwxntdmj",
-      "CUSTOM:Qwqskxjxt"
+    "BLOCKS:c:moladui": [
+      "CUSTOM:Moladui02",
+      "CUSTOM:Mlxdml01",
+      "CUSTOM:Mlxdml02",
+      "CUSTOM:Mlxdml03",
+      "CUSTOM:Dbmlk"
     ],
     "ITEMS:genshincraft:hydro_infusion": [
       "CUSTOM:Djtj",
@@ -32297,14 +32294,38 @@
       "~CUSTOM:Yuanshifu",
       "~CUSTOM:Mmolafu"
     ],
-    "ITEMS:c:curio/other/ealing_wax": [
-      "CUSTOM:Hqfeng",
-      "CUSTOM:Hqyan",
-      "CUSTOM:Hqlei",
-      "CUSTOM:Hqcao",
-      "CUSTOM:Hqshui",
-      "CUSTOM:Hqhuo",
-      "CUSTOM:Hqbing"
+    "BLOCKS:c:nitu": [
+      "Blocks.GRASS",
+      "Blocks.GRASS_PATH",
+      "Blocks.MYCELIUM",
+      "Blocks.DIRT#0",
+      "Blocks.DIRT#1",
+      "Blocks.DIRT#2",
+      "Blocks.FARMLAND"
+    ],
+    "ITEMS:c:armors/boots": [
+      "CUSTOM:Kkuijiaceshi.boots",
+      "CUSTOM:Zizaitiejia.boots",
+      "CUSTOM:Zizaizuantao.boots",
+      "CUSTOM:Zizizaihejintao.boots",
+      "CUSTOM:Kjjlt.boots",
+      "CUSTOM:Jlkjzs.boots",
+      "CUSTOM:Jlkjhj.boots",
+      "CUSTOM:Zstkj.boots",
+      "CUSTOM:Zszst.boots",
+      "CUSTOM:Zshjt.boots",
+      "CUSTOM:Szkjtie.boots",
+      "CUSTOM:Szzskj.boots",
+      "CUSTOM:Szhjkj.boots",
+      "CUSTOM:Djtt.boots",
+      "CUSTOM:Djzst.boots",
+      "CUSTOM:Djhjt.boots",
+      "CUSTOM:Rytt.boots",
+      "CUSTOM:Ruzst.boots",
+      "CUSTOM:Ryhjt.boots",
+      "CUSTOM:Axtt.boots",
+      "CUSTOM:Axzst.boots",
+      "CUSTOM:Axhjt.boots"
     ],
     "ITEMS:minecraft:enchantable/durability": [
       "~CUSTOM:Qwkwgl",
@@ -32364,21 +32385,6 @@
       "~CUSTOM:Lianjiamolakuaibankuai",
       "~CUSTOM:Yiyishijieyuanmubanzhuan"
     ],
-    "ITEMS:c:mora/block": [
-      "CUSTOM:Moladui02",
-      "CUSTOM:Molakuai01",
-      "CUSTOM:Jingzhimolakuai",
-      "CUSTOM:Llianjiamolakuai",
-      "CUSTOM:Lianjiamolakuaibankuai",
-      "CUSTOM:Llianjiamolakuiaitaijie",
-      "CUSTOM:Llianjiamolakuaiqiang",
-      "CUSTOM:Mlxdml01",
-      "CUSTOM:Mlxdml02",
-      "CUSTOM:Mlxdml03"
-    ],
-    "ITEMS:c:kebianjiduiyou": [
-      "CUSTOM:Mmola01"
-    ],
     "BLOCKS:mod:huoyuansu": [
       "Blocks.FLOWING_LAVA",
       "Blocks.LAVA",
@@ -32417,41 +32423,35 @@
       "~CUSTOM:Zizaitiejia.helmet",
       "~CUSTOM:Kkuijiaceshi.helmet"
     ],
-    "ITEMS:c:curio": [
-      "TAG:c:curio/normal",
-      "TAG:c:curio/negative",
-      "TAG:c:curio/other",
-      "TAG:c:curio/fusion",
-      "TAG:c:curio/tianhuihejin"
+    "ITEMS:c:curio/normal/s": [
+      "CUSTOM:Qwymzj",
+      "CUSTOM:Chunmeizhipao",
+      "CUSTOM:Qwjzyj",
+      "CUSTOM:Qwqcxxmx"
     ],
-    "ITEMS:c:armors/leggings": [
-      "CUSTOM:Kkuijiaceshi.legs",
-      "CUSTOM:Zizaitiejia.legs",
-      "CUSTOM:Zizaizuantao.legs",
-      "CUSTOM:Zizizaihejintao.legs",
-      "CUSTOM:Kjjlt.legs",
-      "CUSTOM:Jlkjzs.legs",
-      "CUSTOM:Jlkjhj.legs",
-      "CUSTOM:Zstkj.legs",
-      "CUSTOM:Zszst.legs",
-      "CUSTOM:Zshjt.legs",
-      "CUSTOM:Szkjtie.legs",
-      "CUSTOM:Szzskj.legs",
-      "CUSTOM:Szhjkj.legs",
-      "CUSTOM:Djtt.legs",
-      "CUSTOM:Djzst.legs",
-      "CUSTOM:Djhjt.legs",
-      "CUSTOM:Rytt.legs",
-      "CUSTOM:Ruzst.legs",
-      "CUSTOM:Ryhjt.legs",
-      "CUSTOM:Axtt.legs",
-      "CUSTOM:Axzst.legs",
-      "CUSTOM:Axhjt.legs"
-    ],
-    "ITEMS:c:mora": [
-      "CUSTOM:Mmola01",
-      "CUSTOM:Jinzhimola",
-      "TAG:c:mora/block"
+    "ITEMS:c:armors/chestplates": [
+      "CUSTOM:Kkuijiaceshi.body",
+      "CUSTOM:Zizaitiejia.body",
+      "CUSTOM:Zizaizuantao.body",
+      "CUSTOM:Zizizaihejintao.body",
+      "CUSTOM:Kjjlt.body",
+      "CUSTOM:Jlkjzs.body",
+      "CUSTOM:Jlkjhj.body",
+      "CUSTOM:Zstkj.body",
+      "CUSTOM:Zszst.body",
+      "CUSTOM:Zshjt.body",
+      "CUSTOM:Szkjtie.body",
+      "CUSTOM:Szzskj.body",
+      "CUSTOM:Szhjkj.body",
+      "CUSTOM:Djtt.body",
+      "CUSTOM:Djzst.body",
+      "CUSTOM:Djhjt.body",
+      "CUSTOM:Rytt.body",
+      "CUSTOM:Ruzst.body",
+      "CUSTOM:Ryhjt.body",
+      "CUSTOM:Axtt.body",
+      "CUSTOM:Axzst.body",
+      "CUSTOM:Axhjt.body"
     ]
   },
   "tab_element_order": {
@@ -32934,20 +32934,20 @@
   "language_map": {
     "en_us": {
       "item.primogemcraft.yuanshigao": "§b原石 镐",
-      "advancements.jdshijian_0.title": "星附魔方式",
       "item.primogemcraft.lajitongzunyan": "垃圾桶的尊严",
+      "advancements.jdshijian_0.title": "星附魔方式",
       "gui.primogemcraft.bwdyinhang.label_yu_zhou_sui_pian": "cosmic fragment！",
       "block.primogemcraft.dijingqinjingkuangshi": "§9涤净青金 矿石",
       "item.primogemcraft.mmolajian": "§e摩拉 剑",
       "item.primogemcraft.huangjindezhexue": "『黄金』的哲学",
-      "advancements.nibaodimeila.descr": "使用银河大乐透时获得大量钻石（概率小于0.6%）",
       "block.primogemcraft.jdyk": "§b精锻矿融合块",
+      "advancements.nibaodimeila.descr": "使用银河大乐透时获得大量钻石（概率小于0.6%）",
       "block.primogemcraft.hhyinbaoqi": "引爆器",
       "item.primogemcraft.kkuijiaceshi_leggings": "摩拉 护腿",
       "item.primogemcraft.kjjlt_helmet": "§6『坚牢黄玉』 §f铁头盔",
       "block.primogemcraft.ysjtsj_1": "深层元素晶体矿石",
-      "item.primogemcraft.kaifaqiangzhi_01": "§4需知",
       "block.primogemcraft.ysjtsj_0": "元素晶体矿石",
+      "item.primogemcraft.kaifaqiangzhi_01": "§4需知",
       "item.primogemcraft.chuangshijiejing": "Chuangshijiejing",
       "item.primogemcraft.wuqiezhihuiguang": "Wuqiezhihuiguang",
       "advancements.jdhszly.title": "回收利用",
@@ -32971,8 +32971,8 @@
       "advancements.lletouderenke.descr": "损坏100张银河大乐透§7-触发概率提升并且更换奖池！",
       "item.primogemcraft.zuishengkuai": "§d最胜紫晶 块",
       "gui.primogemcraft.heitayindaoyonggui.label_xiao_hao_1_ge_sui_ji_cuo_wu_dai_ma_zhuang_zhi_xuan_ze_1": "消耗 1 个 随机错误代码装置 选择 1 ",
-      "item.primogemcraft.sshenhudezhufu_013": "神狐的祝福",
       "item.primogemcraft.ryzssj": "§b『钻石升级』§c燃愿玛瑙",
+      "item.primogemcraft.sshenhudezhufu_013": "神狐的祝福",
       "block.primogemcraft.caoyuanhehuabuban_2": "草原核化木板",
       "item.primogemcraft.taikongmanbuchangpian.desc": "HOYO-MiX",
       "advancements.qinlaodezhexuejindu.title": "『勤劳』的哲学",
@@ -32984,8 +32984,8 @@
       "item.primogemcraft.hqbing": "§5『奇物』§b§k怜爱§r§b火漆",
       "block.primogemcraft.yhjsk": "永恒金属块",
       "item.primogemcraft.qq_qyuanchulan_01_spawn_egg": "祈愿出蓝 Spawn Egg",
-      "block.primogemcraft.yishijiemuban_fence": "单色异世界木木板 栅栏",
       "item.primogemcraft.zszsj": "§d『最胜紫晶』§b钻石剑",
+      "block.primogemcraft.yishijiemuban_fence": "单色异世界木木板 栅栏",
       "item.primogemcraft.axzsshjsj": "§d『钻石合金升级』§b哀叙冰玉",
       "advancements.cchangchangkan.descr": "获得§5垃圾",
       "advancements.jdybdw.descr": "获得钻石合金制元素模板",
@@ -33020,40 +33020,40 @@
       "item.primogemcraft.rytsj": "『铁质升级』§c燃愿玛瑙",
       "gui.primogemcraft.cunzheshezhi.tooltip_qu_chu_shi_you_gu_ding_shu_liang_zhuan_bian_wei_0240": "取出时由固定数量转变为0~240%",
       "gui.primogemcraft.ganjinglajitong.label_wu_pin_lan": "物品栏",
-      "advancements.ttazhenhaokan.descr": "获得神秘花瓣",
       "item.primogemcraft.zizizaihejintao_chestplate": "§a『自在松石』§e下界合金胸甲",
+      "advancements.ttazhenhaokan.descr": "获得神秘花瓣",
       "gui.primogemcraft.sjgu_ifumo_01.label_xiao_hao_40yu_zhou_sui_pian": "消耗40宇宙碎片。",
-      "subtitles.choukaqianxi01": "ohhhhh",
       "effect.primogemcraft.djqjkjxgxianzhi": "涤净盔甲效果限制",
+      "subtitles.choukaqianxi01": "ohhhhh",
       "item.primogemcraft.mmolagao": "§e摩拉 镐",
       "advancements.zhzhiyexuanshou.title": "“职业选手”",
       "advancements.bbaozang.title": "宝藏！",
-      "item.primogemcraft.yibangrenzhinang": "§b异邦人之囊",
       "gui.primogemcraft.yinhang.label_yu_jian_shi_gei_yu_shuang_bei": "doubles when met",
+      "item.primogemcraft.yibangrenzhinang": "§b异邦人之囊",
       "item.primogemcraft.djhjsj": "§e『下界合金升级』§b涤净青金",
       "advancements.jdszzqh.title": "升级再强化",
       "block.primogemcraft.yuanshikuangshi": "Yuanshikuangshi",
       "gui.primogemcraft.heitayindaoyonggui.label_ge_cuo_wu_dai_ma": "个错误代码",
       "gui.primogemcraft.bwdyinhang.label_xia_ci_yu_dao_shi_ke_ti": "withdrawable when met next",
-      "item.primogemcraft.ryhjsj": "§e『下界合金升级』§c燃愿玛瑙",
-      "item.primogemcraft.yuanshiqiao": "§b原石 锹",
       "item.primogemcraft.maoxianjiazhinang": "§7冒险家之囊",
-      "item.primogemcraft.qwqskxjxt": "§5『奇物』§b「奇思狂想」机械团",
+      "item.primogemcraft.yuanshiqiao": "§b原石 锹",
+      "item.primogemcraft.ryhjsj": "§e『下界合金升级』§c燃愿玛瑙",
       "block.primogemcraft.zhjsk": "智慧金属块",
+      "item.primogemcraft.qwqskxjxt": "§5『奇物』§b「奇思狂想」机械团",
       "gamerule.jinyongnang.description": "是否阻止囊被使用？",
       "item.primogemcraft.yuanshif": "原石粉尘",
-      "item.primogemcraft.yiyimuguoshi": "§5『奇物』§6异木果实",
       "effect.primogemcraft.jijishengchongdefennu": "寄生虫的愤怒",
+      "item.primogemcraft.yiyimuguoshi": "§5『奇物』§6异木果实",
       "gui.primogemcraft.taozhuangchakan.label_cao_01": "草",
       "advancements.ffanrongjindu_1.title": "『繁荣』的哲学",
       "item.primogemcraft.ccangruimilinjian_014": "葳蕤林野间",
-      "gui.primogemcraft.cunzheshezhi.label_empty": "+",
       "item.primogemcraft.qwlhb": "奇物礼盒",
+      "gui.primogemcraft.cunzheshezhi.label_empty": "+",
       "item.primogemcraft.qwlha": "奇物礼盒",
       "item.primogemcraft.qwjzyj": "§5『奇物』§a家族缘结",
       "entity.primogemcraft.q_qyuanchuzi_01": "祈愿出紫色",
-      "block.primogemcraft.ceshi_mucaibao_slab": "草原核化木 台阶",
       "item.primogemcraft.feiqiupingzheng": "§e§kaha§8§r非酋凭证§e§kaha",
+      "block.primogemcraft.ceshi_mucaibao_slab": "草原核化木 台阶",
       "gamerule.cs.description": "ces",
       "item.minecraft.tipped_arrow.effect.fengraoqiongjiang": "§e丰饶琼浆 箭矢",
       "item.primogemcraft.wufengjian": "无锋剑",
@@ -33064,14 +33064,14 @@
       "block.primogemcraft.mutankuai": "木炭块",
       "item.primogemcraft.fenliejinbi": "§5『奇物』§e分裂金币",
       "item.primogemcraft.jlbj": "§5『奇物』§c俱乐部券",
-      "effect.gongjitisheng": "Attack Buffted",
-      "item.primogemcraft.szhjkj_helmet": "§a『生长碧翡』§e下界合金头盔",
       "item.primogemcraft.qwxyzq": "§5『奇物』§e信仰债券",
+      "item.primogemcraft.szhjkj_helmet": "§a『生长碧翡』§e下界合金头盔",
+      "effect.gongjitisheng": "Attack Buffted",
       "item.primogemcraft.zshjt_chestplate": "§d『最胜紫晶』§e下界合金胸甲",
       "effect.primogemcraft.ljtdwq": "垃圾桶的顽强！",
-      "item.primogemcraft.yishijiecunzhe": "异世界存折",
-      "item.primogemcraft.xingchen": "§b无主的星尘",
       "item.primogemcraft.hqcao": "§5『奇物』§a智慧火漆",
+      "item.primogemcraft.xingchen": "§b无主的星尘",
+      "item.primogemcraft.yishijiecunzhe": "异世界存折",
       "item.primogemcraft.szhjkj_boots": "§a『生长碧翡』§e下界合金靴子",
       "advancements.zhzhongjixintu.title": "终极信徒",
       "item.primogemcraft.tashanglvtuchangpian.desc": "HOYO-MiX",
@@ -33088,13 +33088,13 @@
       "item.primogemcraft.yuanshichutou": "§b原石 锄",
       "item.primogemcraft.jiuchanzhiyuangao": "§d纠缠之缘镐",
       "item.primogemcraft.zizaichu": "§a『自在松石』锄",
-      "advancements.jdwxjyjh.descr": "获得任意元素碎屑或晶体",
       "item.primogemcraft.djzst_helmet": "§b『涤净青金』钻石头盔",
+      "advancements.jdwxjyjh.descr": "获得任意元素碎屑或晶体",
       "block.primogemcraft.caoyuansueci": "§a草元素恩赐",
       "item.primogemcraft.cunqupingzheng": "存取凭证",
       "item.primogemcraft.qwyzzm": "§5『奇物』§c愚者面具",
-      "item.primogemcraft.djzst_boots": "§b『涤净青金』钻石靴子",
       "block.primogemcraft.xiuxiumulouqi": "朽木楼梯",
+      "item.primogemcraft.djzst_boots": "§b『涤净青金』钻石靴子",
       "block.primogemcraft.ranyuanmanaokuangshi": "§c燃愿玛瑙 矿石",
       "item.primogemcraft.axtj": "§b『哀叙冰玉』§铁剑",
       "entity.primogemcraft.qqiwuzhanlipinshiti": "奇物战利品实体",
@@ -33105,8 +33105,8 @@
       "item.primogemcraft.ryzsj": "§c『燃愿玛瑙』§b钻石剑",
       "item.primogemcraft.jianlaohuangyu": "§6坚牢黄玉",
       "advancements.gou_gou_liao_jin_zhi_fu_du.title": "够了，禁止复读",
-      "advancements.xdfsqjd.descr": "获得霄灯发射器",
       "item.primogemcraft.diijingqingjing": "§9涤净青金",
+      "advancements.xdfsqjd.descr": "获得霄灯发射器",
       "effect.zhuoshao": "Burning",
       "item.primogemcraft.gongzhuxinghua": "§6共逐星华",
       "advancements.jdyszb.descr": "获得原石装备",
@@ -33118,8 +33118,8 @@
       "gui.primogemcraft.yinhang.label_xia_ci_yu_dao_shi_ke_ti": "下次遇到时，可提",
       "item.primogemcraft.qwrhj": "奇物融合剂",
       "gui.primogemcraft.yinhang.label_shuang_bei_yu_zhou_sui_pian": "Double Cosmic Fragments！",
-      "advancements.jdxxcy.descr": "§m下次一定",
       "item.primogemcraft.aixubingyusuixie": "§b哀叙冰玉 碎屑",
+      "advancements.jdxxcy.descr": "§m下次一定",
       "gui.primogemcraft.molalajitong.label_mo_la_zhi_la_ji_tong": "摩拉制垃圾桶",
       "item.primogemcraft.xzcfyxwzd": "§6象征财富与希望之盾",
       "gamerule.cs": "ces",
@@ -33980,20 +33980,20 @@
     },
     "en_ae": {
       "item.primogemcraft.yuanshigao": "§bPrimogem Pickaxe",
-      "item.primogemcraft.lajitongzunyan": "the Pride of Trash Bin",
       "advancements.jdshijian_0.title": "星附魔方式",
+      "item.primogemcraft.lajitongzunyan": "the Pride of Trash Bin",
       "gui.primogemcraft.bwdyinhang.label_yu_zhou_sui_pian": "cosmic fragment！",
       "block.primogemcraft.dijingqinjingkuangshi": "§9Varunada Lazurite Ore",
       "item.primogemcraft.mmolajian": "§eMora Sword",
       "item.primogemcraft.huangjindezhexue": "philosophies of 『gold』",
-      "block.primogemcraft.jdyk": "§bfused enhancement ore block",
       "advancements.nibaodimeila.descr": "When using Cosmic Big Lotto Obtain a large amount of diamonds（probability\u003c0.6%）",
+      "block.primogemcraft.jdyk": "§bfused enhancement ore block",
       "block.primogemcraft.hhyinbaoqi": "引爆器",
       "item.primogemcraft.kkuijiaceshi_leggings": "Mora Leggings",
       "item.primogemcraft.kjjlt_helmet": "§6『Prithiva Topaz』 §fIron Helmet",
       "block.primogemcraft.ysjtsj_1": "深层元素晶体矿石",
-      "block.primogemcraft.ysjtsj_0": "元素晶体矿石",
       "item.primogemcraft.kaifaqiangzhi_01": "§4需知",
+      "block.primogemcraft.ysjtsj_0": "元素晶体矿石",
       "item.primogemcraft.chuangshijiejing": "Genesis Crystal",
       "item.primogemcraft.wuqiezhihuiguang": "Mistsplitter Reforged",
       "advancements.jdhszly.title": "reuse",
@@ -34017,8 +34017,8 @@
       "advancements.lletouderenke.descr": "Destroy 100 Cosmic Big Lotto§7-Trigger the ！",
       "item.primogemcraft.zuishengkuai": "§dVajrada Amethyst gemstone",
       "gui.primogemcraft.heitayindaoyonggui.label_xiao_hao_1_ge_sui_ji_cuo_wu_dai_ma_zhuang_zhi_xuan_ze_1": "消耗 1 个 随机Error Code Curios装置 选择 1 ",
-      "item.primogemcraft.ryzssj": "§b『Diamond Upgrade』§cAgnidus Agate",
       "item.primogemcraft.sshenhudezhufu_013": "Hakushinn\u0027s Lullaby",
+      "item.primogemcraft.ryzssj": "§b『Diamond Upgrade』§cAgnidus Agate",
       "block.primogemcraft.caoyuanhehuabuban_2": "Dendro Core planks",
       "item.primogemcraft.taikongmanbuchangpian.desc": "Space Walk HOYO-MiX",
       "advancements.qinlaodezhexuejindu.title": "Philosophies of 『Diligence』",
@@ -34030,8 +34030,8 @@
       "item.primogemcraft.hqbing": "§5『Curio』§b§ksealing wax of §r§bMecry",
       "block.primogemcraft.yhjsk": "nity mental block",
       "item.primogemcraft.qq_qyuanchulan_01_spawn_egg": "Result Rare Spawn Egg",
-      "item.primogemcraft.zszsj": "§d『Vajrada Amethyst』§bDiamond Sword",
       "block.primogemcraft.yishijiemuban_fence": "monochrome another world wood planks Fence",
+      "item.primogemcraft.zszsj": "§d『Vajrada Amethyst』§bDiamond Sword",
       "item.primogemcraft.axzsshjsj": "§d『Netherite Upgrade』§bShivada Jade Gemstone",
       "advancements.cchangchangkan.descr": "Obtain§5Trash",
       "advancements.jdybdw.descr": "obtain the Netherite Upgrading element template",
@@ -34066,40 +34066,40 @@
       "item.primogemcraft.rytsj": "『Iron Upgrade』§cAgnidus Agate",
       "gui.primogemcraft.cunzheshezhi.tooltip_qu_chu_shi_you_gu_ding_shu_liang_zhuan_bian_wei_0240": "取出时由固定数量转变为0~240%",
       "gui.primogemcraft.ganjinglajitong.label_wu_pin_lan": "Inventory",
-      "item.primogemcraft.zizizaihejintao_chestplate": "§a『Vayuda Turquoise』§eNetherite Chestplate",
       "advancements.ttazhenhaokan.descr": "Gain the Mysterious petal",
+      "item.primogemcraft.zizizaihejintao_chestplate": "§a『Vayuda Turquoise』§eNetherite Chestplate",
       "gui.primogemcraft.sjgu_ifumo_01.label_xiao_hao_40yu_zhou_sui_pian": "消耗40宇宙碎片。",
-      "effect.primogemcraft.djqjkjxgxianzhi": "effect of varunada armors restricted",
       "subtitles.choukaqianxi01": "ohhhhh",
+      "effect.primogemcraft.djqjkjxgxianzhi": "effect of varunada armors restricted",
       "item.primogemcraft.mmolagao": "§eMora Pickaxe",
       "advancements.zhzhiyexuanshou.title": "“Professional Player”",
       "advancements.bbaozang.title": "Treasures！",
-      "gui.primogemcraft.yinhang.label_yu_jian_shi_gei_yu_shuang_bei": "doubles when met",
       "item.primogemcraft.yibangrenzhinang": "§bStranger\u0027s Travel Bag",
+      "gui.primogemcraft.yinhang.label_yu_jian_shi_gei_yu_shuang_bei": "doubles when met",
       "item.primogemcraft.djhjsj": "§e『Smithing Template』§bVarunada Lazurite",
       "advancements.jdszzqh.title": "upgrading and enhancing",
       "block.primogemcraft.yuanshikuangshi": "Primogem Ore",
       "gui.primogemcraft.heitayindaoyonggui.label_ge_cuo_wu_dai_ma": "个Error Code Curios",
       "gui.primogemcraft.bwdyinhang.label_xia_ci_yu_dao_shi_ke_ti": "withdrawable when met next",
-      "item.primogemcraft.maoxianjiazhinang": "§7Adventurer\u0027s Kit Bag",
-      "item.primogemcraft.yuanshiqiao": "§bPrimogem Shovel",
       "item.primogemcraft.ryhjsj": "§e『Smithing Templete』§cAgnidus Agate",
-      "block.primogemcraft.zhjsk": "Ingenuity  blck",
+      "item.primogemcraft.yuanshiqiao": "§bPrimogem Shovel",
+      "item.primogemcraft.maoxianjiazhinang": "§7Adventurer\u0027s Kit Bag",
       "item.primogemcraft.qwqskxjxt": "§5『奇物』§b「奇思狂想」机械团",
+      "block.primogemcraft.zhjsk": "Ingenuity  blck",
       "gamerule.jinyongnang.description": "是否阻止囊被使用？",
       "item.primogemcraft.yuanshif": "原石粉尘",
-      "item.primogemcraft.yiyimuguoshi": "§5『Curio』§6Fruit of the Alien Tree",
       "effect.primogemcraft.jijishengchongdefennu": "Parasitized",
+      "item.primogemcraft.yiyimuguoshi": "§5『Curio』§6Fruit of the Alien Tree",
       "gui.primogemcraft.taozhuangchakan.label_cao_01": "Dendro",
       "advancements.ffanrongjindu_1.title": "Philosophies of 『Prosperity』",
       "item.primogemcraft.ccangruimilinjian_014": "Village Surrounded by Green",
-      "gui.primogemcraft.cunzheshezhi.label_empty": "+",
       "item.primogemcraft.qwlhb": "奇物礼盒",
+      "gui.primogemcraft.cunzheshezhi.label_empty": "+",
       "item.primogemcraft.qwlha": "奇物礼盒",
       "item.primogemcraft.qwjzyj": "§5『Curio』§aFamily Ties",
       "entity.primogemcraft.q_qyuanchuzi_01": "Wish purple result",
-      "item.primogemcraft.feiqiupingzheng": "§e§kaha§8§rVochur of Unlucky§e§kaha",
       "block.primogemcraft.ceshi_mucaibao_slab": "Dendro Core Slab",
+      "item.primogemcraft.feiqiupingzheng": "§e§kaha§8§rVochur of Unlucky§e§kaha",
       "gamerule.cs.description": "ces",
       "item.minecraft.tipped_arrow.effect.fengraoqiongjiang": "§eAbundant Drinking Arrow",
       "item.primogemcraft.wufengjian": "Dull Blade",
@@ -34110,14 +34110,14 @@
       "block.primogemcraft.mutankuai": "Charcoal Block",
       "item.primogemcraft.fenliejinbi": "§5『Curio』§eGold Coin of Discord",
       "item.primogemcraft.jlbj": "§5『CUrio』§cSociety Ticket",
-      "item.primogemcraft.qwxyzq": "§5『CUrio』§eFaith Bond",
-      "item.primogemcraft.szhjkj_helmet": "§a『Nagadus Emerald』§eNetherite Helmet",
       "effect.gongjitisheng": "Attack Buffted",
+      "item.primogemcraft.szhjkj_helmet": "§a『Nagadus Emerald』§eNetherite Helmet",
+      "item.primogemcraft.qwxyzq": "§5『CUrio』§eFaith Bond",
       "item.primogemcraft.zshjt_chestplate": "§d『Vajrada Amethyst』§eNetherite Chestplate",
       "effect.primogemcraft.ljtdwq": "垃圾桶的顽强！",
-      "item.primogemcraft.hqcao": "§5『Curio』§aSealing wax of Erudition",
-      "item.primogemcraft.xingchen": "§bMasterless Stardust",
       "item.primogemcraft.yishijiecunzhe": "bankbook of Another world",
+      "item.primogemcraft.xingchen": "§bMasterless Stardust",
+      "item.primogemcraft.hqcao": "§5『Curio』§aSealing wax of Erudition",
       "item.primogemcraft.szhjkj_boots": "§a『Nagadus Emerald』§eNetherite boots",
       "advancements.zhzhongjixintu.title": "Ultra Devotees",
       "item.primogemcraft.tashanglvtuchangpian.desc": "Take The Journey HOYO-MiX",
@@ -34134,13 +34134,13 @@
       "item.primogemcraft.yuanshichutou": "§bPrimogem Hoe",
       "item.primogemcraft.jiuchanzhiyuangao": "§dInterwined Fate Pickaxe",
       "item.primogemcraft.zizaichu": "§a『Vayuda Turquoise』Hoe",
-      "item.primogemcraft.djzst_helmet": "§b『Varunada Lazurite』Diamond Helmet",
       "advancements.jdwxjyjh.descr": "Gain any element sliver or Crystal",
+      "item.primogemcraft.djzst_helmet": "§b『Varunada Lazurite』Diamond Helmet",
       "block.primogemcraft.caoyuansueci": "§aBlessing Of Dendro",
       "item.primogemcraft.cunqupingzheng": "bankbook",
       "item.primogemcraft.qwyzzm": "§5『Curio』§cFool\u0027s Mask",
-      "block.primogemcraft.xiuxiumulouqi": "Decayed Wood Stairs",
       "item.primogemcraft.djzst_boots": "§b『Varunada Lazurite』Diamond Boots",
+      "block.primogemcraft.xiuxiumulouqi": "Decayed Wood Stairs",
       "block.primogemcraft.ranyuanmanaokuangshi": "§cAgnidus Agate Ore",
       "item.primogemcraft.axtj": "§b『Shivada Jade』§Iron Sword",
       "entity.primogemcraft.qqiwuzhanlipinshiti": "entity of Curio",
@@ -34151,8 +34151,8 @@
       "item.primogemcraft.ryzsj": "§c『Agnidus Agate』§bDiamond Sword",
       "item.primogemcraft.jianlaohuangyu": "§6Prithiva Topaz Gemstone",
       "advancements.gou_gou_liao_jin_zhi_fu_du.title": "Enough，Stop Repeating",
-      "item.primogemcraft.diijingqingjing": "§9Varunada Lazurite Gemstone",
       "advancements.xdfsqjd.descr": "Gain the Xiao Latern igniter",
+      "item.primogemcraft.diijingqingjing": "§9Varunada Lazurite Gemstone",
       "effect.zhuoshao": "Burning",
       "item.primogemcraft.gongzhuxinghua": "§6Chasing Starlight With You",
       "advancements.jdyszb.descr": "Gain the Priomogem Armor",
@@ -34164,8 +34164,8 @@
       "gui.primogemcraft.yinhang.label_xia_ci_yu_dao_shi_ke_ti": "Withdrawable when met next time",
       "item.primogemcraft.qwrhj": "奇物融合剂",
       "gui.primogemcraft.yinhang.label_shuang_bei_yu_zhou_sui_pian": "Double Cosmic Fragments！",
-      "item.primogemcraft.aixubingyusuixie": "§bShivada Jade Sliver",
       "advancements.jdxxcy.descr": "§mAccount to next time",
+      "item.primogemcraft.aixubingyusuixie": "§bShivada Jade Sliver",
       "gui.primogemcraft.molalajitong.label_mo_la_zhi_la_ji_tong": "mora Trash Can",
       "item.primogemcraft.xzcfyxwzd": "§6Shield symbolized Wealth and Force",
       "gamerule.cs": "ces",
@@ -35026,20 +35026,20 @@
     },
     "zh_cn": {
       "item.primogemcraft.yuanshigao": "§b原石 镐",
-      "advancements.jdshijian_0.title": "星附魔方式",
       "item.primogemcraft.lajitongzunyan": "垃圾桶的尊严",
+      "advancements.jdshijian_0.title": "星附魔方式",
       "gui.primogemcraft.bwdyinhang.label_yu_zhou_sui_pian": "宇宙碎片！",
       "block.primogemcraft.dijingqinjingkuangshi": "§9涤净青金 矿石",
       "item.primogemcraft.mmolajian": "§e摩拉 剑",
       "item.primogemcraft.huangjindezhexue": "§6『黄金』的哲学",
-      "block.primogemcraft.jdyk": "§b精锻矿融合块",
       "advancements.nibaodimeila.descr": "使用银河大乐透时获得若干钻石（\u003c0.6%）",
+      "block.primogemcraft.jdyk": "§b精锻矿融合块",
       "block.primogemcraft.hhyinbaoqi": "引爆器",
       "item.primogemcraft.kkuijiaceshi_leggings": "§e摩拉 护腿",
       "item.primogemcraft.kjjlt_helmet": "§6『坚牢黄玉』 §f铁头盔",
       "block.primogemcraft.ysjtsj_1": "深层元素晶体矿石",
-      "item.primogemcraft.kaifaqiangzhi_01": "§4需知",
       "block.primogemcraft.ysjtsj_0": "元素晶体矿石",
+      "item.primogemcraft.kaifaqiangzhi_01": "§4需知",
       "item.primogemcraft.chuangshijiejing": "创世结晶",
       "item.primogemcraft.wuqiezhihuiguang": "§5雾切之回光",
       "advancements.jdhszly.title": "回收利用",
@@ -35063,8 +35063,8 @@
       "advancements.lletouderenke.descr": "损坏100张银河大乐透§7-触发概率提升并且更换奖池！",
       "item.primogemcraft.zuishengkuai": "§d最胜紫晶 块",
       "gui.primogemcraft.heitayindaoyonggui.label_xiao_hao_1_ge_sui_ji_cuo_wu_dai_ma_zhuang_zhi_xuan_ze_1": "消耗 1 个 随机错误代码装置 选择 1 ",
-      "item.primogemcraft.ryzssj": "§b『钻石升级』§c燃愿玛瑙",
       "item.primogemcraft.sshenhudezhufu_013": "神狐的祝福",
+      "item.primogemcraft.ryzssj": "§b『钻石升级』§c燃愿玛瑙",
       "block.primogemcraft.caoyuanhehuabuban_2": "草原核化木板",
       "item.primogemcraft.taikongmanbuchangpian.desc": "HOYO-MiX",
       "advancements.mmolachanjindu.title": "摩拉铲",
@@ -35076,8 +35076,8 @@
       "item.primogemcraft.hqbing": "§5『奇物』§b§k怜爱§r§b火漆",
       "block.primogemcraft.yhjsk": "永恒金属块",
       "item.primogemcraft.qq_qyuanchulan_01_spawn_egg": "生成祈愿蓝光",
-      "item.primogemcraft.zszsj": "§d『最胜紫晶』§b钻石剑",
       "block.primogemcraft.yishijiemuban_fence": "单色异世界木木板 栅栏",
+      "item.primogemcraft.zszsj": "§d『最胜紫晶』§b钻石剑",
       "item.primogemcraft.axzsshjsj": "§d『钻石合金升级』§b哀叙冰玉",
       "advancements.cchangchangkan.descr": "获得§5垃圾",
       "advancements.jdybdw.descr": "获得钻石合金制元素模板",
@@ -35112,26 +35112,26 @@
       "item.primogemcraft.rytsj": "『铁质升级』§c燃愿玛瑙",
       "gui.primogemcraft.cunzheshezhi.tooltip_qu_chu_shi_you_gu_ding_shu_liang_zhuan_bian_wei_0240": "取出时由固定数量转变为0~240%",
       "gui.primogemcraft.ganjinglajitong.label_wu_pin_lan": "物品栏",
-      "advancements.ttazhenhaokan.descr": "获得神秘花瓣",
       "item.primogemcraft.zizizaihejintao_chestplate": "§a『自在松石』§e下界合金胸甲",
+      "advancements.ttazhenhaokan.descr": "获得神秘花瓣",
       "gui.primogemcraft.sjgu_ifumo_01.label_xiao_hao_40yu_zhou_sui_pian": "消耗40宇宙碎片。",
-      "effect.primogemcraft.djqjkjxgxianzhi": "涤净盔甲效果限制",
       "subtitles.choukaqianxi01": "ohhhhh",
+      "effect.primogemcraft.djqjkjxgxianzhi": "涤净盔甲效果限制",
       "item.primogemcraft.mmolagao": "§e摩拉 镐",
       "advancements.zhzhiyexuanshou.title": "“职业选手”",
       "advancements.bbaozang.title": "宝藏！",
-      "item.primogemcraft.yibangrenzhinang": "§b异邦人之囊",
       "gui.primogemcraft.yinhang.label_yu_jian_shi_gei_yu_shuang_bei": "遇见时给予双倍",
+      "item.primogemcraft.yibangrenzhinang": "§b异邦人之囊",
       "item.primogemcraft.djhjsj": "§e『下界合金升级』§b涤净青金",
       "advancements.jdszzqh.title": "升级再强化",
       "block.primogemcraft.yuanshikuangshi": "原石矿石",
       "gui.primogemcraft.heitayindaoyonggui.label_ge_cuo_wu_dai_ma": "个错误代码",
       "gui.primogemcraft.bwdyinhang.label_xia_ci_yu_dao_shi_ke_ti": "下次遇到时，可提",
-      "item.primogemcraft.maoxianjiazhinang": "§7冒险家之囊",
-      "item.primogemcraft.yuanshiqiao": "§b原石 锹",
       "item.primogemcraft.ryhjsj": "§e『下界合金升级』§c燃愿玛瑙",
-      "block.primogemcraft.zhjsk": "智慧金属块",
+      "item.primogemcraft.yuanshiqiao": "§b原石 锹",
+      "item.primogemcraft.maoxianjiazhinang": "§7冒险家之囊",
       "item.primogemcraft.qwqskxjxt": "§5『奇物』§b「奇思狂想」机械团",
+      "block.primogemcraft.zhjsk": "智慧金属块",
       "gamerule.jinyongnang.description": "是否阻止囊被使用？",
       "item.primogemcraft.yuanshif": "原石粉尘",
       "item.primogemcraft.yiyimuguoshi": "§5『奇物』§6异木果实",
@@ -35139,13 +35139,13 @@
       "gui.primogemcraft.taozhuangchakan.label_cao_01": "草",
       "advancements.ffanrongjindu_1.title": "§6『繁荣』的哲学",
       "item.primogemcraft.ccangruimilinjian_014": "葳蕤林野间",
-      "gui.primogemcraft.cunzheshezhi.label_empty": "+",
       "item.primogemcraft.qwlhb": "奇物礼盒",
+      "gui.primogemcraft.cunzheshezhi.label_empty": "+",
       "item.primogemcraft.qwlha": "奇物礼盒",
       "item.primogemcraft.qwjzyj": "§5『奇物』§a家族缘结",
       "entity.primogemcraft.q_qyuanchuzi_01": "祈愿出紫色",
-      "item.primogemcraft.feiqiupingzheng": "§e§kaha§8§r非酋凭证§e§kaha",
       "block.primogemcraft.ceshi_mucaibao_slab": "草原核化木 台阶",
+      "item.primogemcraft.feiqiupingzheng": "§e§kaha§8§r非酋凭证§e§kaha",
       "item.primogemcraft.wufengjian": "无锋剑",
       "item.minecraft.tipped_arrow.effect.fengraoqiongjiang": "§e丰饶琼浆 箭矢",
       "item.primogemcraft.wmoladai": "大块精致摩拉",
@@ -35155,14 +35155,14 @@
       "block.primogemcraft.mutankuai": "木炭块",
       "item.primogemcraft.fenliejinbi": "§5『奇物』§e分裂金币",
       "item.primogemcraft.jlbj": "§5『奇物』§c俱乐部券",
-      "effect.gongjitisheng": "攻击项增益",
-      "item.primogemcraft.szhjkj_helmet": "§a『生长碧翡』§e下界合金头盔",
       "item.primogemcraft.qwxyzq": "§5『奇物』§e信仰债券",
+      "item.primogemcraft.szhjkj_helmet": "§a『生长碧翡』§e下界合金头盔",
+      "effect.gongjitisheng": "攻击项增益",
       "item.primogemcraft.zshjt_chestplate": "§d『最胜紫晶』§e下界合金胸甲",
       "effect.primogemcraft.ljtdwq": "垃圾桶的顽强！",
-      "item.primogemcraft.hqcao": "§5『奇物』§a智慧火漆",
-      "item.primogemcraft.xingchen": "§b无主的星尘",
       "item.primogemcraft.yishijiecunzhe": "异世界存折",
+      "item.primogemcraft.xingchen": "§b无主的星尘",
+      "item.primogemcraft.hqcao": "§5『奇物』§a智慧火漆",
       "item.primogemcraft.szhjkj_boots": "§a『生长碧翡』§e下界合金靴子",
       "advancements.zhzhongjixintu.title": "终极信徒",
       "item.primogemcraft.tashanglvtuchangpian.desc": "HOYO-MiX",
@@ -35179,13 +35179,13 @@
       "item.primogemcraft.yuanshichutou": "§b原石 锄",
       "item.primogemcraft.zizaichu": "§a『自在松石』锄",
       "item.primogemcraft.jiuchanzhiyuangao": "§d纠缠之缘镐",
-      "item.primogemcraft.djzst_helmet": "§b『涤净青金』钻石头盔",
       "advancements.jdwxjyjh.descr": "获得任意元素碎屑或晶体",
+      "item.primogemcraft.djzst_helmet": "§b『涤净青金』钻石头盔",
       "block.primogemcraft.caoyuansueci": "§a草元素恩赐",
       "item.primogemcraft.cunqupingzheng": "存取凭证",
       "item.primogemcraft.qwyzzm": "§5『奇物』§c愚者面具",
-      "block.primogemcraft.xiuxiumulouqi": "朽木楼梯",
       "item.primogemcraft.djzst_boots": "§b『涤净青金』钻石靴子",
+      "block.primogemcraft.xiuxiumulouqi": "朽木楼梯",
       "block.primogemcraft.ranyuanmanaokuangshi": "§c燃愿玛瑙 矿石",
       "item.primogemcraft.axtj": "§b『哀叙冰玉』§铁剑",
       "entity.primogemcraft.qqiwuzhanlipinshiti": "奇物战利品实体",
@@ -35196,8 +35196,8 @@
       "item.primogemcraft.ryzsj": "§c『燃愿玛瑙』§b钻石剑",
       "item.primogemcraft.jianlaohuangyu": "§6坚牢黄玉",
       "advancements.gou_gou_liao_jin_zhi_fu_du.title": "够了，禁止复读",
-      "advancements.xdfsqjd.descr": "获得霄灯发射器",
       "item.primogemcraft.diijingqingjing": "§9涤净青金",
+      "advancements.xdfsqjd.descr": "获得霄灯发射器",
       "effect.zhuoshao": "灼烧",
       "item.primogemcraft.gongzhuxinghua": "§6共逐星华",
       "advancements.jdyszb.descr": "获得原石装备",
@@ -35209,8 +35209,8 @@
       "gui.primogemcraft.yinhang.label_xia_ci_yu_dao_shi_ke_ti": "下次遇到时，可提",
       "item.primogemcraft.qwrhj": "奇物融合剂",
       "gui.primogemcraft.yinhang.label_shuang_bei_yu_zhou_sui_pian": "双倍宇宙碎片！",
-      "advancements.jdxxcy.descr": "§m下次一定",
       "item.primogemcraft.aixubingyusuixie": "§b哀叙冰玉 碎屑",
+      "advancements.jdxxcy.descr": "§m下次一定",
       "gui.primogemcraft.molalajitong.label_mo_la_zhi_la_ji_tong": "摩拉制垃圾桶",
       "item.primogemcraft.xzcfyxwzd": "§6象征财富与希望之盾",
       "item.primogemcraft.qycx": "祈愿数据导出.exe",

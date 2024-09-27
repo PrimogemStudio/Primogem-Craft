@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#c:curio/bad",
+    "#c:curio/code",
+    "#c:curio/other/ealing_wax"
+  ]
+}

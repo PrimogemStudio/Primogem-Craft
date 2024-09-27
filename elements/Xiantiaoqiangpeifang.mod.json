@@ -12,7 +12,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.COOKED_FISH"
+        "value": "CUSTOM:Hhaokandelaji"
       },
       {
         "value": "Items.BAKED_POTATO"
