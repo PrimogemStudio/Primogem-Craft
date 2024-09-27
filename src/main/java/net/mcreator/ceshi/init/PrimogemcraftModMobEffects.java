@@ -17,6 +17,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ceshi.procedures.Yimuguo_shuxingProcedure;
 import net.mcreator.ceshi.procedures.YdggzxgsxProcedure;
+import net.mcreator.ceshi.procedures.Xgjssx0Procedure;
 import net.mcreator.ceshi.procedures.WxntdmjxgsxProcedure;
 import net.mcreator.ceshi.procedures.Tldhy_sxProcedure;
 import net.mcreator.ceshi.procedures.Smcl_zf_sx_0Procedure;
@@ -30,7 +31,6 @@ import net.mcreator.ceshi.procedures.Flggzxgsx1Procedure;
 import net.mcreator.ceshi.procedures.Fengrao_shuxing_4Procedure;
 import net.mcreator.ceshi.procedures.Feixing_shuxinG_2Procedure;
 import net.mcreator.ceshi.procedures.DjpppolieProcedure;
-import net.mcreator.ceshi.procedures.ChongwangjueshanhaiProcedure;
 import net.mcreator.ceshi.potion.ZhuoshaoMobEffect;
 import net.mcreator.ceshi.potion.ZhongguizhongjuxiaoguoMobEffect;
 import net.mcreator.ceshi.potion.ZhengchangdaimaMobEffect;
@@ -61,7 +61,6 @@ import net.mcreator.ceshi.potion.LetoudechengfaMobEffect;
 import net.mcreator.ceshi.potion.LengquezhongguizhongjuMobEffect;
 import net.mcreator.ceshi.potion.JishengMobEffect;
 import net.mcreator.ceshi.potion.JingquedaimaMobEffect;
-import net.mcreator.ceshi.potion.JijishengchongdefennuMobEffect;
 import net.mcreator.ceshi.potion.JiazuxianzhiMobEffect;
 import net.mcreator.ceshi.potion.HslggzfuzhipinMobEffect;
 import net.mcreator.ceshi.potion.HeisenlinggzMobEffect;
@@ -83,7 +82,6 @@ import net.mcreator.ceshi.PrimogemcraftMod;
 public class PrimogemcraftModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(Registries.MOB_EFFECT, PrimogemcraftMod.MODID);
 	public static final DeferredHolder<MobEffect, MobEffect> JISHENG = REGISTRY.register("jisheng", () -> new JishengMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> JIJISHENGCHONGDEFENNU = REGISTRY.register("jijishengchongdefennu", () -> new JijishengchongdefennuMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> GONGJITISHENG = REGISTRY.register("gongjitisheng", () -> new GongjitishengMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> LETOUDECHENGFA = REGISTRY.register("letoudechengfa", () -> new LetoudechengfaMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> GOUYU = REGISTRY.register("gouyu", () -> new GouyuMobEffect());
@@ -147,7 +145,7 @@ public class PrimogemcraftModMobEffects {
 
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
 		if (effectInstance.getEffect().is(JISHENG)) {
-			ChongwangjueshanhaiProcedure.execute(entity.level(), entity);
+			Xgjssx0Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 		} else if (effectInstance.getEffect().is(GONGJITISHENG)) {
 			Gongjixiangzengyi_shuxingProcedure.execute(entity);
 		} else if (effectInstance.getEffect().is(GUOQU)) {

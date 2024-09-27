@@ -30,28 +30,29 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7存在物品栏时：",
-        "§9·寄生（∞）",
-        "§7寄生持续时：",
-        "§c·生命值达到上限后造成随机伤害",
-        "§a·力量（∞）",
-        "§7寄生结束时：",
-        "§c·造成大量伤害",
+        "§6攻击生物时，赋予§d§l寄生§r§6状态",
+        "§5处于§d§l寄生§r§5状态时，基础攻击力",
+        "§5额外增加50%",
+        "§c§l杀死生物后对自身造成一次当",
+        "§c§l前生命值20%的真实伤害",
         "§",
-        "§7饱食度小于12时：",
-        "§c·-80%生命值上限生命值",
-        "§a·设置饱食度至13"
+        "§9对于[寄生]效果每级：",
+        "§9 +50%额外基础攻击力",
+        "§9 +20%基于当前生命值受到的伤害"
       ]
+    },
+    "glowCondition": {
+      "fixedValue": false
     },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInInventoryTick": {
-      "name": "Zchongwangzengyi"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,

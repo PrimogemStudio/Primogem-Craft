@@ -3,23 +3,23 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "寄生",
-    "icon": "chongwangjisheng.png",
+    "icon": "chongwangjisheng",
     "color": {
       "value": -4756225,
       "falpha": 0.0
     },
-    "isInstant": true,
+    "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
-    "isCuredByMilk": true,
-    "isProtectedByTotem": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
     "isCuredbyHoney": false,
-    "onActiveTick": {
-      "name": "Jijishengxiaoguo"
+    "onStarted": {
+      "name": "Xgjssx"
     },
     "onExpired": {
-      "name": "Chongwangjueshanhai"
+      "name": "Xgjssx0"
     }
   }
 }
