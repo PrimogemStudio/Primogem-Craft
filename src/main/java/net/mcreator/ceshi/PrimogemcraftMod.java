@@ -33,6 +33,8 @@ import net.mcreator.ceshi.init.PrimogemcraftModEntities;
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 import net.mcreator.ceshi.init.PrimogemcraftModBlockEntities;
 
+import net.hackermdch.CustomRegister;
+
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
 import java.util.List;
@@ -64,8 +66,8 @@ public class PrimogemcraftMod {
 		PrimogemcraftModMenus.REGISTRY.register(modEventBus);
 		PrimogemcraftModParticleTypes.REGISTRY.register(modEventBus);
 		PrimogemcraftModVillagerProfessions.PROFESSIONS.register(modEventBus);
-
 		// Start of user code block mod init
+		CustomRegister.register(modEventBus);
 		// End of user code block mod init
 	}
 
