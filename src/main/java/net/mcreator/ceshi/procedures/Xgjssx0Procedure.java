@@ -38,6 +38,7 @@ public class Xgjssx0Procedure {
 		if (entity.getPersistentData().getBoolean("zdsmz")) {
 			if (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE))
 				_livingEntity2.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue((entity.getPersistentData().getDouble("zdsmz")));
+			entity.getPersistentData().putBoolean("zdsmz", false);
 			PrimogemcraftMod.queueServerWork(1, () -> {
 				if (!entity.isAlive()) {
 					if (entity instanceof Player _player) {
