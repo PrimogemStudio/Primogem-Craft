@@ -29,6 +29,6 @@ public class QiwuchongwangItem extends Item {
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A79\u5BF9\u4E8E[\u5BC4\u751F]\u6548\u679C\u6BCF\u7EA7\uFF1A"));
 		list.add(Component.literal("\u00A79 +50%\u989D\u5916\u57FA\u7840\u653B\u51FB\u529B"));
-		list.add(Component.literal("\u00A79 +20%\u57FA\u4E8E\u5F53\u524D\u751F\u547D\u503C\u53D7\u5230\u7684\u4F24\u5BB3"));
+		list.add(Component.literal("\u00A79 +20%\u57FA\u4E8E\u751F\u547D\u503C\u53D7\u5230\u7684\u4F24\u5BB3"));
 	}
 }
