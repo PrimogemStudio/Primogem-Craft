@@ -22,43 +22,44 @@ public class JlgsxProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (entity.isShiftKeyDown()) {
-			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:stone"))) || (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:stone_bricks")))
-					|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:cobblestone")))) {
-				{
-					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-					_ist.hurtAndBreak((int) Mth.nextDouble(RandomSource.create(), 1, 5), RandomSource.create(), null, () -> {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
-					});
-				}
-				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(itemstack.getItem(), (int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQYAN.get())) : false) ? 200 : 400));
-				if (Math.random() < 0.6) {
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.trident.thunder")), SoundSource.BLOCKS, (float) 0.5, 2);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.trident.thunder")), SoundSource.BLOCKS, (float) 0.5, 2, false);
-						}
+		if (!world.isClientSide()) {
+			if (entity.isShiftKeyDown()) {
+				if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:stones"))) || (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:cobblestones")))
+						|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:ancient_city_replaceable")))) {
+					{
+						ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+						_ist.hurtAndBreak((int) Mth.nextDouble(RandomSource.create(), 1, 5), RandomSource.create(), null, () -> {
+							_ist.shrink(1);
+							_ist.setDamageValue(0);
+						});
 					}
-					if (Math.random() < 0.03) {
-						world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.LIANJIAXIAJIEHEJINKUAI.get().defaultBlockState(), 3);
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(itemstack.getItem(), (int) ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.HQYAN.get())) : false) ? 200 : 400));
+					if (Math.random() < 0.6) {
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.trident.thunder")), SoundSource.BLOCKS, (float) 0.5, 2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.trident.thunder")), SoundSource.BLOCKS, (float) 0.5, 2, false);
+							}
+						}
+						if (Math.random() < 0.03) {
+							world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.LIANJIAXIAJIEHEJINKUAI.get().defaultBlockState(), 3);
+						} else {
+							if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.POLISHED_DEEPSLATE
+									|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:ancient_city_replaceable")))) {
+								world.setBlock(BlockPos.containing(x, y, z), Blocks.DEEPSLATE_GOLD_ORE.defaultBlockState(), 3);
+							} else {
+								world.setBlock(BlockPos.containing(x, y, z), Blocks.GOLD_ORE.defaultBlockState(), 3);
+							}
+						}
 					} else {
-						if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.POLISHED_DEEPSLATE
-								|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:ore_bearing_ground/deepslate")))
-								|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:cobblestone/deepslate")))) {
-							world.setBlock(BlockPos.containing(x, y, z), Blocks.DEEPSLATE_GOLD_ORE.defaultBlockState(), 3);
-						} else {
-							world.setBlock(BlockPos.containing(x, y, z), Blocks.GOLD_ORE.defaultBlockState(), 3);
-						}
-					}
-				} else {
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.beacon.deactivate")), SoundSource.BLOCKS, (float) 0.5, 2);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.beacon.deactivate")), SoundSource.BLOCKS, (float) 0.5, 2, false);
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.beacon.deactivate")), SoundSource.BLOCKS, (float) 0.5, 2);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.beacon.deactivate")), SoundSource.BLOCKS, (float) 0.5, 2, false);
+							}
 						}
 					}
 				}
