@@ -45,7 +45,7 @@ public class Qyhxsx0Procedure {
 					a = 6;
 				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("minecraft:breaks_decorated_pots")))) {
 					a = 4;
-				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:storage_blocks")))) {
+				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("c:storage_blocks")))) {
 					a = 6;
 				} else {
 					a = 1;

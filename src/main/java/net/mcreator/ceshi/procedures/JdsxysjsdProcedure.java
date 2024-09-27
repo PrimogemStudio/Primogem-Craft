@@ -29,7 +29,7 @@ public class JdsxysjsdProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (itemstack.is(ItemTags.create(new ResourceLocation("forge:ysjinshu")))) {
+		if (itemstack.is(ItemTags.create(new ResourceLocation("c:ysjinshu")))) {
 			if (entity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:jdtwtylc"));
 				if (_adv != null) {

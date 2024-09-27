@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:forge:stone"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:forge:stone"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:forge:stone"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:forge:stone"
+        "value": "TAG:c:stone"
       },
       {
         "value": "CUSTOM:Disuikuai1"
       },
       {
-        "value": "TAG:forge:stone"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:forge:stone"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:forge:stone"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:forge:stone"
+        "value": "TAG:c:stone"
       }
     ],
     "recipeReturnStack": {

@@ -30691,10 +30691,10 @@
       "~CUSTOM:Zizaitiejia.body",
       "~CUSTOM:Kkuijiaceshi.body"
     ],
-    "ITEMS:forge:curio/normal": [
-      "TAG:forge:curio/normal/s",
-      "TAG:forge:curio/normal/a",
-      "TAG:forge:curio/normal/b"
+    "ITEMS:c:curio/normal": [
+      "TAG:c:curio/normal/s",
+      "TAG:c:curio/normal/a",
+      "TAG:c:curio/normal/b"
     ],
     "BLOCKS:minecraft:woodenfences": [
       "CUSTOM:Yishijiemuzhalan",
@@ -30707,7 +30707,7 @@
       "CUSTOM:Llianjiamolakuaiqiang",
       "CUSTOM:Cangsangshizhuanweiqiang"
     ],
-    "BLOCKS:forge:mora/block": [
+    "BLOCKS:c:mora/block": [
       "CUSTOM:Moladui02",
       "CUSTOM:Molakuai01",
       "CUSTOM:Jingzhimolakuai",
@@ -30719,7 +30719,7 @@
       "CUSTOM:Mlxdml02",
       "CUSTOM:Mlxdml03"
     ],
-    "ITEMS:forge:ysdp_0": [
+    "ITEMS:c:ysdp_0": [
       "CUSTOM:Zziyousongshiduanpian",
       "CUSTOM:Jianlaoduanpian",
       "CUSTOM:Zuishengduanpian",
@@ -30805,7 +30805,7 @@
       "CUSTOM:Lajsk",
       "CUSTOM:Jdyk"
     ],
-    "ITEMS:forge:blocks/charcoal": [
+    "ITEMS:c:blocks/charcoal": [
       "CUSTOM:Mutankuai"
     ],
     "ITEMS:minecraft:trimmable_armor": [
@@ -30906,23 +30906,23 @@
       "CUSTOM:Yuanshichutou",
       "CUSTOM:Qgdysj"
     ],
-    "ITEMS:forge:zuishengjian": [
+    "ITEMS:c:zuishengjian": [
       "CUSTOM:Zstj",
       "CUSTOM:Zszsj",
       "CUSTOM:Zshjj"
     ],
     "ITEMS:pgc:hjzzb": [
-      "TAG:forge:yshjj",
+      "TAG:c:yshjj",
       "TAG:primogemcraft:yuansutaoxiajiehejin"
     ],
-    "BLOCKS:forge:moladui": [
+    "BLOCKS:c:moladui": [
       "CUSTOM:Moladui02",
       "CUSTOM:Mlxdml01",
       "CUSTOM:Mlxdml02",
       "CUSTOM:Mlxdml03",
       "CUSTOM:Dbmlk"
     ],
-    "ITEMS:forge:hejin_3": [
+    "ITEMS:c:hejin_3": [
       "CUSTOM:Zizizaihejintao.boots",
       "CUSTOM:Jlkjhj.boots",
       "CUSTOM:Zshjt.boots",
@@ -30931,7 +30931,7 @@
       "CUSTOM:Ryhjt.boots",
       "CUSTOM:Axhjt.boots"
     ],
-    "ITEMS:forge:hejin_2": [
+    "ITEMS:c:hejin_2": [
       "CUSTOM:Zizizaihejintao.legs",
       "CUSTOM:Jlkjhj.legs",
       "CUSTOM:Zshjt.legs",
@@ -30962,12 +30962,12 @@
       "CUSTOM:Sanyuezhufu",
       "CUSTOM:Ysrz0",
       "CUSTOM:Feiqiupingzheng",
-      "TAG:forge:curio/curios"
+      "TAG:c:curio/curios"
     ],
     "DAMAGE_TYPES:minecraft:bypasses_cooldown": [
       "CUSTOM:Chiwuwuli"
     ],
-    "ITEMS:forge:tie_2": [
+    "ITEMS:c:tie_2": [
       "CUSTOM:Zizaitiejia.legs",
       "CUSTOM:Kjjlt.legs",
       "CUSTOM:Zstkj.legs",
@@ -30977,9 +30977,9 @@
       "CUSTOM:Axtt.legs"
     ],
     "ITEMS:pgc:qysz_10": [
-      "TAG:forge:ysjinshu",
+      "TAG:c:ysjinshu",
       "TAG:pgc:dzmb_4",
-      "TAG:forge:yshjj",
+      "TAG:c:yshjj",
       "TAG:primogemcraft:yuansutaoxiajiehejin",
       "CUSTOM:Qhzllh4",
       "CUSTOM:Yuansujingshikuai",
@@ -31009,7 +31009,7 @@
       "CUSTOM:Yibangrenzhinang",
       "Items.NETHERITE_INGOT"
     ],
-    "ITEMS:forge:tie_3": [
+    "ITEMS:c:tie_3": [
       "CUSTOM:Zizaitiejia.boots",
       "CUSTOM:Kjjlt.boots",
       "CUSTOM:Zstkj.boots",
@@ -31018,7 +31018,7 @@
       "CUSTOM:Rytt.boots",
       "CUSTOM:Axtt.boots"
     ],
-    "ITEMS:forge:tie_0": [
+    "ITEMS:c:tie_0": [
       "CUSTOM:Zizaitiejia.helmet",
       "CUSTOM:Zstkj.helmet",
       "CUSTOM:Kjjlt.helmet",
@@ -31027,7 +31027,7 @@
       "CUSTOM:Rytt.helmet",
       "CUSTOM:Axtt.helmet"
     ],
-    "ITEMS:forge:hejin_1": [
+    "ITEMS:c:hejin_1": [
       "CUSTOM:Zizizaihejintao.body",
       "CUSTOM:Jlkjhj.body",
       "CUSTOM:Zshjt.body",
@@ -31036,7 +31036,7 @@
       "CUSTOM:Ryhjt.body",
       "CUSTOM:Axhjt.body"
     ],
-    "ITEMS:forge:tie_1": [
+    "ITEMS:c:tie_1": [
       "CUSTOM:Zizaitiejia.body",
       "CUSTOM:Kjjlt.body",
       "CUSTOM:Zstkj.body",
@@ -31045,7 +31045,7 @@
       "CUSTOM:Rytt.body",
       "CUSTOM:Axtt.body"
     ],
-    "ITEMS:forge:hejin_0": [
+    "ITEMS:c:hejin_0": [
       "CUSTOM:Zizizaihejintao.helmet",
       "CUSTOM:Jlkjhj.helmet",
       "CUSTOM:Zshjt.helmet",
@@ -31196,7 +31196,7 @@
       "CUSTOM:Axq",
       "CUSTOM:Axc"
     ],
-    "ITEMS:forge:armors/chestplates": [
+    "ITEMS:c:armors/chestplates": [
       "CUSTOM:Kkuijiaceshi.body",
       "CUSTOM:Zizaitiejia.body",
       "CUSTOM:Zizaizuantao.body",
@@ -31221,13 +31221,13 @@
       "CUSTOM:Axhjt.body"
     ],
     "ITEMS:pgc:token_mending": [
-      "TAG:forge:curio"
+      "TAG:c:curio"
     ],
     "ITEMS:pgc:prayer_core": [
       "TAG:pgc:prayer_core_x1",
       "TAG:pgc:prayer_core_x10"
     ],
-    "BLOCKS:forge:yuansujingtikuai": [
+    "BLOCKS:c:yuansujingtikuai": [
       "CUSTOM:Ziyousongshikuai",
       "CUSTOM:Jianlaohuangyukuai",
       "CUSTOM:Zuisnegzijingkuai",
@@ -31237,10 +31237,10 @@
       "CUSTOM:Yuansujingshikuai",
       "CUSTOM:AixubingyufangkuI"
     ],
-    "ITEMS:forge:element_powder": [
-      "TAG:forge:ysdp_0",
-      "TAG:forge:yssx_0",
-      "TAG:forge:ysk_0",
+    "ITEMS:c:element_powder": [
+      "TAG:c:ysdp_0",
+      "TAG:c:yssx_0",
+      "TAG:c:ysk_0",
       "TAG:primogemcraft:yuansujingticailiaobiaoqian"
     ],
     "BLOCKS:minecraft:fences": [
@@ -31275,7 +31275,7 @@
       "~CUSTOM:Qinlaodezhexue",
       "~CUSTOM:Jiuchanzhiyuangao"
     ],
-    "ITEMS:forge:ysjinshu": [
+    "ITEMS:c:ysjinshu": [
       "CUSTOM:Zzjs",
       "CUSTOM:Jlzs",
       "CUSTOM:Yhjs",
@@ -31341,11 +31341,11 @@
       "Blocks.RAW_GOLD_BLOCK",
       "Blocks.RAW_COPPER_BLOCK"
     ],
-    "ITEMS:forge:curio/clock/division": [
+    "ITEMS:c:curio/clock/division": [
       "CUSTOM:QwggzfenlieA",
       "CUSTOM:QwggzfenlieB"
     ],
-    "ITEMS:forge:curio/tianhuihejin": [
+    "ITEMS:c:curio/tianhuihejin": [
       "CUSTOM:Qwthhj"
     ],
     "ITEMS:genshincraft:pyro_infusion": [
@@ -31405,13 +31405,13 @@
       "CUSTOM:Axtt.legs",
       "CUSTOM:Axtt.boots"
     ],
-    "ITEMS:forge:curio/normal/s": [
+    "ITEMS:c:curio/normal/s": [
       "CUSTOM:Qwymzj",
       "CUSTOM:Chunmeizhipao",
       "CUSTOM:Qwjzyj",
       "CUSTOM:Qwqcxxmx"
     ],
-    "BLOCKS:forge:ores": [
+    "BLOCKS:c:ores": [
       "CUSTOM:Yuanshikuangshi",
       "CUSTOM:Ziyousongshikuangshi",
       "CUSTOM:Jianlaokuangshi",
@@ -31422,15 +31422,15 @@
       "CUSTOM:Aixubingyukuangshi"
     ],
     "ITEMS:pgc:zzzb": [
-      "TAG:forge:yszsj",
+      "TAG:c:yszsj",
       "TAG:primogemcraft:yuansutaozuanshi"
     ],
-    "ITEMS:forge:curio/other": [
-      "TAG:forge:curio/bad",
-      "TAG:forge:curio/code",
-      "TAG:forge:curio/other/ealing_wax"
+    "ITEMS:c:curio/other": [
+      "TAG:c:curio/bad",
+      "TAG:c:curio/code",
+      "TAG:c:curio/other/ealing_wax"
     ],
-    "ITEMS:forge:yszsj": [
+    "ITEMS:c:yszsj": [
       "CUSTOM:Zizaizuanshijian",
       "CUSTOM:Jljzs",
       "CUSTOM:Zszsj",
@@ -31439,7 +31439,7 @@
       "CUSTOM:Ryzsj",
       "CUSTOM:Axzsj"
     ],
-    "ITEMS:forge:curio/normal/b": [
+    "ITEMS:c:curio/normal/b": [
       "CUSTOM:Wawanxiangwuchangtou",
       "CUSTOM:Cebuzhunxia",
       "CUSTOM:Pengkeluodejingshen",
@@ -31543,10 +31543,10 @@
       "Items.DIAMOND_BOOTS",
       "Items.GOLDEN_HORSE_ARMOR",
       "Items.DIAMOND_HORSE_ARMOR",
-      "TAG:forge:curio",
+      "TAG:c:curio",
       "CUSTOM:Jlmo",
       "TAG:pgc:dzmb_3",
-      "TAG:forge:yszsj",
+      "TAG:c:yszsj",
       "TAG:primogemcraft:yuansutaozuanshi",
       "CUSTOM:Jianshijingban",
       "CUSTOM:QQuHangZhoullh",
@@ -31610,9 +31610,9 @@
       "CUSTOM:Dijingduanpian",
       "CUSTOM:Ranyuanduanpian",
       "CUSTOM:Aaixubingyuduanpian",
-      "TAG:forge:curio/bad",
+      "TAG:c:curio/bad",
       "CUSTOM:Jlliang",
-      "TAG:forge:ystj",
+      "TAG:c:ystj",
       "TAG:pgc:dzmb_2",
       "TAG:pgc:dzmb_0",
       "CUSTOM:Shiwutsslm",
@@ -31631,7 +31631,7 @@
       "Items.NETHERITE_SCRAP",
       "Items.EMERALD"
     ],
-    "ITEMS:forge:curio/normal/a": [
+    "ITEMS:c:curio/normal/a": [
       "CUSTOM:Yiyinhedaletou",
       "CUSTOM:Fulinjiao",
       "CUSTOM:Fenliejinbi",
@@ -31643,7 +31643,7 @@
       "TAG:pgc:sbmt",
       "CUSTOM:Ssanbamiantou"
     ],
-    "ITEMS:forge:ysk_0": [
+    "ITEMS:c:ysk_0": [
       "CUSTOM:Zziyousongshikuai",
       "CUSTOM:Zuishengkuai",
       "CUSTOM:Shengzhangkuai",
@@ -31729,16 +31729,16 @@
       "Items.GOLDEN_BOOTS",
       "CUSTOM:Liulangzhezhinang"
     ],
-    "ITEMS:forge:curio/bad": [
+    "ITEMS:c:curio/bad": [
       "CUSTOM:Shqwyhdlt",
       "CUSTOM:Shqwfnj",
       "CUSTOM:Shcbzx",
       "CUSTOM:Shxjdlt"
     ],
-    "ITEMS:forge:curio/fusion": [
-      "TAG:forge:curio/normal/fusion/s",
-      "TAG:forge:curio/normal/fusion/a",
-      "TAG:forge:curio/normal/fusion/b"
+    "ITEMS:c:curio/fusion": [
+      "TAG:c:curio/normal/fusion/s",
+      "TAG:c:curio/normal/fusion/a",
+      "TAG:c:curio/normal/fusion/b"
     ],
     "ITEMS:pgc:qi_wu_xiu_fu": [
       "CUSTOM:Qwkwzj",
@@ -31795,7 +31795,7 @@
       "CUSTOM:Xingchen",
       "Items.DYE#4"
     ],
-    "ITEMS:forge:curio/normal/fusion/b": [
+    "ITEMS:c:curio/normal/fusion/b": [
       "CUSTOM:Qwkwzg",
       "CUSTOM:Qwcbzg",
       "CUSTOM:Qwypzgs",
@@ -31805,7 +31805,7 @@
       "CUSTOM:Qwkwgl",
       "CUSTOM:Qwkwzt"
     ],
-    "ITEMS:forge:curio/normal/fusion/a": [
+    "ITEMS:c:curio/normal/fusion/a": [
       "CUSTOM:Qwhydlt",
       "CUSTOM:Qwflb",
       "CUSTOM:Qwfldyhdlb",
@@ -31826,7 +31826,7 @@
       "~CUSTOM:Llianjiamolakuiaitaijie",
       "~CUSTOM:Yiyishijiemubanlouqi"
     ],
-    "ITEMS:forge:yssx_0": [
+    "ITEMS:c:yssx_0": [
       "CUSTOM:Ziziyousongshisuixie",
       "CUSTOM:Jianransuixie",
       "CUSTOM:Zuishengsuixie",
@@ -31847,7 +31847,7 @@
       "~CUSTOM:Yuanshiqiao",
       "~CUSTOM:Mmolachan"
     ],
-    "ITEMS:forge:armors/boots": [
+    "ITEMS:c:armors/boots": [
       "CUSTOM:Kkuijiaceshi.boots",
       "CUSTOM:Zizaitiejia.boots",
       "CUSTOM:Zizaizuantao.boots",
@@ -31871,10 +31871,10 @@
       "CUSTOM:Axzst.boots",
       "CUSTOM:Axhjt.boots"
     ],
-    "ITEMS:forge:curio/clock": [
+    "ITEMS:c:curio/clock": [
       "CUSTOM:Gongsideguguzhong",
       "CUSTOM:Qiwuheisenlinggz",
-      "TAG:forge:curio/clock/division",
+      "TAG:c:curio/clock/division",
       "CUSTOM:Ydggz"
     ],
     "DAMAGE_TYPES:minecraft:bypasses_armor": [
@@ -31885,7 +31885,7 @@
       "CUSTOM:Mlxdml02",
       "CUSTOM:Mlxdml03"
     ],
-    "ITEMS:forge:curio/normal/fusion/s": [
+    "ITEMS:c:curio/normal/fusion/s": [
       "CUSTOM:Qwzjxxmx"
     ],
     "BLOCKS:pgc:ketance": [
@@ -31898,11 +31898,11 @@
       "CUSTOM:Aixubingyukuangshi",
       "CUSTOM:Shenbanjianlaohuangyukuangshi"
     ],
-    "ITEMS:forge:ingots": [
+    "ITEMS:c:ingots": [
       "CUSTOM:Zhongkouweitieding",
-      "TAG:forge:ysjinshu"
+      "TAG:c:ysjinshu"
     ],
-    "ITEMS:forge:curio/curios": [
+    "ITEMS:c:curio/curios": [
       "CUSTOM:Pengkeluodejingshen",
       "CUSTOM:Xiangdanganlao",
       "CUSTOM:Qiwuchongwang",
@@ -31930,7 +31930,7 @@
       "CUSTOM:Quxgjibing",
       "CUSTOM:Wanshinang"
     ],
-    "ITEMS:forge:ystj": [
+    "ITEMS:c:ystj": [
       "CUSTOM:Zizaitiejian",
       "CUSTOM:Zstj",
       "CUSTOM:Sztj",
@@ -31974,7 +31974,7 @@
       "~CUSTOM:Wuqiezhihuiguang"
     ],
     "ITEMS:pgc:tzzb": [
-      "TAG:forge:ystj",
+      "TAG:c:ystj",
       "TAG:primogemcraft:yuansutaotie"
     ],
     "ITEMS:minecraft:meat": [
@@ -31989,7 +31989,7 @@
       "CUSTOM:YishijiemubanPlanks",
       "CUSTOM:D11"
     ],
-    "ITEMS:forge:zuan_2": [
+    "ITEMS:c:zuan_2": [
       "CUSTOM:Zizaizuantao.legs",
       "CUSTOM:Jlkjzs.legs",
       "CUSTOM:Zszst.legs",
@@ -31998,7 +31998,7 @@
       "CUSTOM:Ruzst.legs",
       "CUSTOM:Axzst.legs"
     ],
-    "ITEMS:forge:zuan_3": [
+    "ITEMS:c:zuan_3": [
       "CUSTOM:Zizaizuantao.boots",
       "CUSTOM:Jlkjzs.boots",
       "CUSTOM:Zszst.boots",
@@ -32021,7 +32021,7 @@
       "CUSTOM:Ryzsshjsj",
       "CUSTOM:Axzsshjsj"
     ],
-    "BLOCKS:forge:nitu": [
+    "BLOCKS:c:nitu": [
       "Blocks.GRASS",
       "Blocks.GRASS_PATH",
       "Blocks.MYCELIUM",
@@ -32054,7 +32054,7 @@
       "CUSTOM:Shengzhangchu03",
       "CUSTOM:Shengzhangchu04"
     ],
-    "ITEMS:forge:zuan_0": [
+    "ITEMS:c:zuan_0": [
       "CUSTOM:Zizaizuantao.helmet",
       "CUSTOM:Jlkjzs.helmet",
       "CUSTOM:Zszst.helmet",
@@ -32123,7 +32123,7 @@
       "CUSTOM:Lajsl",
       "CUSTOM:Cunqupingzheng"
     ],
-    "ITEMS:forge:zuan_1": [
+    "ITEMS:c:zuan_1": [
       "CUSTOM:Zizaizuantao.body",
       "CUSTOM:Jlkjzs.body",
       "CUSTOM:Zszst.body",
@@ -32137,7 +32137,7 @@
       "CUSTOM:Qhmbmlys01",
       "CUSTOM:Qhmbmlys02"
     ],
-    "ITEMS:forge:yshjj": [
+    "ITEMS:c:yshjj": [
       "CUSTOM:Zizaihejinjian",
       "CUSTOM:Jjljxjhj",
       "CUSTOM:Zshjj",
@@ -32146,7 +32146,7 @@
       "CUSTOM:Ryhjj",
       "CUSTOM:Axhjj"
     ],
-    "ITEMS:forge:armors/helmets": [
+    "ITEMS:c:armors/helmets": [
       "CUSTOM:Kkuijiaceshi.helmet",
       "CUSTOM:Zizaitiejia.helmet",
       "CUSTOM:Zizaizuantao.helmet",
@@ -32170,7 +32170,7 @@
       "CUSTOM:Axzst.helmet",
       "CUSTOM:Axhjt.helmet"
     ],
-    "BLOCKS:forge:storage_blocks": [
+    "BLOCKS:c:storage_blocks": [
       "CUSTOM:Ziyousongshikuai",
       "CUSTOM:Jingzhimolakuai",
       "CUSTOM:Molakuai01",
@@ -32228,7 +32228,7 @@
       "CUSTOM:Jlq",
       "CUSTOM:Jlc"
     ],
-    "ITEMS:forge:sanyuejinshu": [
+    "ITEMS:c:sanyuejinshu": [
       "CUSTOM:Kongyuejinshu",
       "CUSTOM:Xinyuejinshu",
       "CUSTOM:Manyuejinshu"
@@ -32246,7 +32246,7 @@
     "ITEMS:minecraft:gold_ingot": [
       "CUSTOM:Jinzhimola"
     ],
-    "ITEMS:forge:curio/code": [
+    "ITEMS:c:curio/code": [
       "CUSTOM:Luanqibazaodedaima",
       "CUSTOM:Youdianqiqiaodedaima",
       "CUSTOM:Zhongguizhongjudedaima",
@@ -32265,14 +32265,14 @@
       "~CUSTOM:Yuanshichutou",
       "~CUSTOM:Huangjindezhexue"
     ],
-    "ITEMS:forge:primogemcraft": [
+    "ITEMS:c:primogemcraft": [
       "TAG:pgc:tzzb",
       "TAG:pgc:hjzzb",
       "TAG:pgc:dzmb",
       "TAG:pgc:zzzb"
     ],
-    "ITEMS:forge:curio/negative": [
-      "TAG:forge:curio/clock",
+    "ITEMS:c:curio/negative": [
+      "TAG:c:curio/clock",
       "CUSTOM:Qwwxntdmj",
       "CUSTOM:Qwqskxjxt"
     ],
@@ -32297,7 +32297,7 @@
       "~CUSTOM:Yuanshifu",
       "~CUSTOM:Mmolafu"
     ],
-    "ITEMS:forge:curio/other/ealing_wax": [
+    "ITEMS:c:curio/other/ealing_wax": [
       "CUSTOM:Hqfeng",
       "CUSTOM:Hqyan",
       "CUSTOM:Hqlei",
@@ -32364,7 +32364,7 @@
       "~CUSTOM:Lianjiamolakuaibankuai",
       "~CUSTOM:Yiyishijieyuanmubanzhuan"
     ],
-    "ITEMS:forge:mora/block": [
+    "ITEMS:c:mora/block": [
       "CUSTOM:Moladui02",
       "CUSTOM:Molakuai01",
       "CUSTOM:Jingzhimolakuai",
@@ -32376,7 +32376,7 @@
       "CUSTOM:Mlxdml02",
       "CUSTOM:Mlxdml03"
     ],
-    "ITEMS:forge:kebianjiduiyou": [
+    "ITEMS:c:kebianjiduiyou": [
       "CUSTOM:Mmola01"
     ],
     "BLOCKS:mod:huoyuansu": [
@@ -32417,14 +32417,14 @@
       "~CUSTOM:Zizaitiejia.helmet",
       "~CUSTOM:Kkuijiaceshi.helmet"
     ],
-    "ITEMS:forge:curio": [
-      "TAG:forge:curio/normal",
-      "TAG:forge:curio/negative",
-      "TAG:forge:curio/other",
-      "TAG:forge:curio/fusion",
-      "TAG:forge:curio/tianhuihejin"
+    "ITEMS:c:curio": [
+      "TAG:c:curio/normal",
+      "TAG:c:curio/negative",
+      "TAG:c:curio/other",
+      "TAG:c:curio/fusion",
+      "TAG:c:curio/tianhuihejin"
     ],
-    "ITEMS:forge:armors/leggings": [
+    "ITEMS:c:armors/leggings": [
       "CUSTOM:Kkuijiaceshi.legs",
       "CUSTOM:Zizaitiejia.legs",
       "CUSTOM:Zizaizuantao.legs",
@@ -32448,10 +32448,10 @@
       "CUSTOM:Axzst.legs",
       "CUSTOM:Axhjt.legs"
     ],
-    "ITEMS:forge:mora": [
+    "ITEMS:c:mora": [
       "CUSTOM:Mmola01",
       "CUSTOM:Jinzhimola",
-      "TAG:forge:mora/block"
+      "TAG:c:mora/block"
     ]
   },
   "tab_element_order": {

@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smeltingInputStack": {
-      "value": "TAG:forge:storage_blocks/copper"
+      "value": "TAG:c:storage_blocks/copper"
     },
     "smeltingReturnStack": {
       "value": "CUSTOM:Jlliang"

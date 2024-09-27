@@ -4,10 +4,10 @@
     "item": "primogemcraft:qwhcj"
   },
   "base": {
-    "tag": "forge:curio/normal/b"
+    "tag": "c:curio/normal/b"
   },
   "addition": {
-    "tag": "forge:curio/normal/b"
+    "tag": "c:curio/normal/b"
   },
   "result": {
     "id": "primogemcraft:qwlha"

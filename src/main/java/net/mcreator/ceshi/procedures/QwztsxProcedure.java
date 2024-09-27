@@ -13,7 +13,7 @@ public class QwztsxProcedure {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
-			if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:curio"))))) {
+			if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("c:curio"))))) {
 				if (HSQwwxwctsxProcedure.execute(world, x, y, z, entity, entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY, itemstack, false, true, true, true, true, 30, 1, itemstack.getDisplayName().getString(),
 						BuiltInRegistries.ITEM.getKey(itemstack.getItem()).toString() + "xianzhi")) {
 					(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).setDamageValue(

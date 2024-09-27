@@ -33,7 +33,7 @@ public class CcpqwlhsxProcedure {
 			for (int index0 = 0; index0 < (int) a; index0++) {
 				if (Math.random() < 0.5) {
 					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("forge:curio/tianhuihejin"))).getRandomElement(RandomSource.create())
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("c:curio/tianhuihejin"))).getRandomElement(RandomSource.create())
 								.orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())));
 						entityToSpawn.setPickUpDelay(0);
 						_level.addFreshEntity(entityToSpawn);
@@ -41,7 +41,7 @@ public class CcpqwlhsxProcedure {
 				} else {
 					if (world instanceof ServerLevel _level) {
 						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(
-								(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("forge:curio/normal/b"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())));
+								(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("c:curio/normal/b"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())));
 						entityToSpawn.setPickUpDelay(0);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -52,14 +52,14 @@ public class CcpqwlhsxProcedure {
 			if (Math.random() < 0.5) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(
-							(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("forge:curio/tianhuihejin"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())));
+							(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("c:curio/tianhuihejin"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(
-							(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("forge:curio/normal/b"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())));
+							(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("c:curio/normal/b"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

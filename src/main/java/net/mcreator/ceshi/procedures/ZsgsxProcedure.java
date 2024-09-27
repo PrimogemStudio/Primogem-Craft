@@ -24,7 +24,7 @@ public class ZsgsxProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:ores/coal")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:ores/coal")))) {
 			if (world instanceof ServerLevel _level) {
 				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y + 1, z)));
@@ -47,14 +47,14 @@ public class ZsgsxProcedure {
 					}
 				}
 				if (Math.random() < 0.05) {
-					if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:ores_in_ground/deepslate")))) {
+					if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:ores_in_ground/deepslate")))) {
 						world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.ZUISHENGKUANGSHI.get().defaultBlockState(), 3);
 					} else {
 						world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.ZUISHENGKUANGSHI.get().defaultBlockState(), 3);
 					}
 				} else {
 					if (Math.random() < 0.2) {
-						if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:ores_in_ground/deepslate")))) {
+						if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:ores_in_ground/deepslate")))) {
 							world.setBlock(BlockPos.containing(x, y, z), Blocks.DEEPSLATE_DIAMOND_ORE.defaultBlockState(), 3);
 						} else {
 							world.setBlock(BlockPos.containing(x, y, z), Blocks.DIAMOND_ORE.defaultBlockState(), 3);
@@ -64,34 +64,34 @@ public class ZsgsxProcedure {
 							world.setBlock(BlockPos.containing(x, y, z), Blocks.NETHER_QUARTZ_ORE.defaultBlockState(), 3);
 						} else {
 							if (Math.random() < 0.3) {
-								if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:ores_in_ground/deepslate")))) {
+								if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:ores_in_ground/deepslate")))) {
 									world.setBlock(BlockPos.containing(x, y, z), Blocks.DEEPSLATE_REDSTONE_ORE.defaultBlockState(), 3);
 								} else {
 									world.setBlock(BlockPos.containing(x, y, z), Blocks.REDSTONE_ORE.defaultBlockState(), 3);
 								}
 							} else {
 								if (Math.random() < 0.3) {
-									if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:ores_in_ground/deepslate")))) {
+									if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:ores_in_ground/deepslate")))) {
 										world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.SHENBANYANYUANSHIKUANGSHI.get().defaultBlockState(), 3);
 									} else {
 										world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.YUANSHIKUANGSHI.get().defaultBlockState(), 3);
 									}
 								} else {
 									if (Math.random() < 0.3) {
-										if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:ores_in_ground/deepslate")))) {
+										if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:ores_in_ground/deepslate")))) {
 											world.setBlock(BlockPos.containing(x, y, z), Blocks.DEEPSLATE_LAPIS_ORE.defaultBlockState(), 3);
 										} else {
 											world.setBlock(BlockPos.containing(x, y, z), Blocks.LAPIS_ORE.defaultBlockState(), 3);
 										}
 									} else {
 										if (Math.random() < 0.2) {
-											if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:ores_in_ground/deepslate")))) {
+											if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:ores_in_ground/deepslate")))) {
 												world.setBlock(BlockPos.containing(x, y, z), Blocks.DEEPSLATE_EMERALD_ORE.defaultBlockState(), 3);
 											} else {
 												world.setBlock(BlockPos.containing(x, y, z), Blocks.EMERALD_ORE.defaultBlockState(), 3);
 											}
 										} else {
-											if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:ores_in_ground/deepslate")))) {
+											if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:ores_in_ground/deepslate")))) {
 												world.setBlock(BlockPos.containing(x, y, z), Blocks.DEEPSLATE.defaultBlockState(), 3);
 											} else {
 												world.setBlock(BlockPos.containing(x, y, z), Blocks.STONE.defaultBlockState(), 3);

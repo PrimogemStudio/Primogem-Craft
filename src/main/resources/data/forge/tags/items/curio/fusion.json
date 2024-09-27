@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#forge:curio/normal/fusion/s",
-    "#forge:curio/normal/fusion/a",
-    "#forge:curio/normal/fusion/b"
+    "#c:curio/normal/fusion/s",
+    "#c:curio/normal/fusion/a",
+    "#c:curio/normal/fusion/b"
   ]
 }

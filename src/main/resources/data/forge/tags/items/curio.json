@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#forge:curio/normal",
-    "#forge:curio/negative",
-    "#forge:curio/other",
-    "#forge:curio/fusion",
-    "#forge:curio/tianhuihejin"
+    "#c:curio/normal",
+    "#c:curio/negative",
+    "#c:curio/other",
+    "#c:curio/fusion",
+    "#c:curio/tianhuihejin"
   ]
 }

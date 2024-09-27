@@ -17,9 +17,9 @@ public class YhdlbsxProcedure {
 		if (!world.isClientSide()) {
 			FenliejinbisxhsProcedure.execute(world, x, y, z, entity,
 					Math.random() < 0.5
-							? new ItemStack(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("forge:curio"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())
+							? new ItemStack(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("c:curio"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())
 							: new ItemStack(
-									BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("forge:curio/negative"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()),
+									BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("c:curio/negative"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()),
 					itemstack, true, 3, 1, 12, 5);
 		}
 	}

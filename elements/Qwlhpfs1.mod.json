@@ -12,7 +12,7 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "TAG:forge:curio/normal/s"
+        "value": "TAG:c:curio/normal/s"
       },
       {
         "value": "CUSTOM:Qwfjj"

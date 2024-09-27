@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#forge:ysdp_0",
-    "#forge:yssx_0",
-    "#forge:ysk_0",
+    "#c:ysdp_0",
+    "#c:yssx_0",
+    "#c:ysk_0",
     "#primogemcraft:yuansujingticailiaobiaoqian"
   ]
 }

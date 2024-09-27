@@ -68,7 +68,7 @@ public class QWSXypzjzyjcmzpProcedure {
 					if (sourceentity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
 						for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
 							ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
-							if (itemstackiterator.is(ItemTags.create(new ResourceLocation("forge:curio/bad")))) {
+							if (itemstackiterator.is(ItemTags.create(new ResourceLocation("c:curio/bad")))) {
 								a = a + itemstackiterator.getCount();
 							}
 						}

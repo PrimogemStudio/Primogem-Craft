@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#forge:curio/clock",
+    "#c:curio/clock",
     "primogemcraft:qwwxntdmj",
     "primogemcraft:qwqskxjxt"
   ]

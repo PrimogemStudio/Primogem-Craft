@@ -11,7 +11,7 @@
       "item": "minecraft:diamond"
     },
     "b": {
-      "tag": "forge:stained_glass_panes"
+      "tag": "c:stained_glass_panes"
     },
     "c": {
       "item": "minecraft:netherite_scrap"

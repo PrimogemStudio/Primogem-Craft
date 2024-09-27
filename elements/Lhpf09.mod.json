@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "stoneCuttingInputStack": {
-      "value": "TAG:forge:yshjj"
+      "value": "TAG:c:yshjj"
     },
     "stoneCuttingReturnStack": {
       "value": "CUSTOM:Qhzlh"

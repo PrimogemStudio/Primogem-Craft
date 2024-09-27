@@ -18,7 +18,7 @@ public class SbmjbsxProcedure {
 		ItemStack a = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
 			if (FenliejinbisxhsProcedure.execute(world, x, y, z, entity,
-					new ItemStack(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("forge:curio/negative"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()),
+					new ItemStack(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(new ResourceLocation("c:curio/negative"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()),
 					itemstack, true, 3, 1, 12, 3)) {
 				if (Math.random() < 0.35) {
 					PrimogemcraftMod.queueServerWork(1, () -> {

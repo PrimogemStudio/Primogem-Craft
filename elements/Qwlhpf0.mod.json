@@ -11,10 +11,10 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "TAG:forge:curio/normal/b"
+      "value": "TAG:c:curio/normal/b"
     },
     "smithingInputAdditionStack": {
-      "value": "TAG:forge:curio/normal/b"
+      "value": "TAG:c:curio/normal/b"
     },
     "smithingInputTemplateStack": {
       "value": "CUSTOM:Qwhcj"

@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "TAG:forge:zuan_1"
+      "value": "TAG:c:zuan_1"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:Mzsj2"

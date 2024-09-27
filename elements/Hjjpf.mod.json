@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "TAG:forge:yshjj"
+      "value": "TAG:c:yshjj"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:Mzsj3"

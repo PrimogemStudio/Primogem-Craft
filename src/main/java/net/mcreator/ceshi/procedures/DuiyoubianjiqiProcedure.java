@@ -31,7 +31,7 @@ public class DuiyoubianjiqiProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (sourceentity.isShiftKeyDown() && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:kebianjiduiyou")))) {
+		if (sourceentity.isShiftKeyDown() && (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("c:kebianjiduiyou")))) {
 			if (entity.getPersistentData().getBoolean((sourceentity.getDisplayName().getString() + "ceshi_duiyou"))) {
 				entity.getPersistentData().putBoolean((sourceentity.getDisplayName().getString() + "ceshi_duiyou"), false);
 				if (!world.isClientSide() && world.getServer() != null)

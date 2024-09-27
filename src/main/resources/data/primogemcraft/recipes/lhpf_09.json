@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 16,
   "ingredient": {
-    "tag": "forge:yshjj"
+    "tag": "c:yshjj"
   },
   "result": {
     "id": "primogemcraft:qhzlh"

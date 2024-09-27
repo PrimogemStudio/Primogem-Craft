@@ -23,8 +23,8 @@ public class JlgsxProcedure {
 		if (entity == null)
 			return;
 		if (entity.isShiftKeyDown()) {
-			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:stone"))) || (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:stone_bricks")))
-					|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:cobblestone")))) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:stone"))) || (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:stone_bricks")))
+					|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:cobblestone")))) {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 					_ist.hurtAndBreak((int) Mth.nextDouble(RandomSource.create(), 1, 5), RandomSource.create(), null, () -> {
@@ -46,8 +46,8 @@ public class JlgsxProcedure {
 						world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.LIANJIAXIAJIEHEJINKUAI.get().defaultBlockState(), 3);
 					} else {
 						if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.POLISHED_DEEPSLATE
-								|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:ore_bearing_ground/deepslate")))
-								|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:cobblestone/deepslate")))) {
+								|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:ore_bearing_ground/deepslate")))
+								|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:cobblestone/deepslate")))) {
 							world.setBlock(BlockPos.containing(x, y, z), Blocks.DEEPSLATE_GOLD_ORE.defaultBlockState(), 3);
 						} else {
 							world.setBlock(BlockPos.containing(x, y, z), Blocks.GOLD_ORE.defaultBlockState(), 3);

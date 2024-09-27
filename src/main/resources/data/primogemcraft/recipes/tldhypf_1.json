@@ -14,7 +14,7 @@
       "item": "minecraft:dragon_breath"
     },
     "c": {
-      "tag": "forge:glass"
+      "tag": "c:glass"
     }
   },
   "result": {

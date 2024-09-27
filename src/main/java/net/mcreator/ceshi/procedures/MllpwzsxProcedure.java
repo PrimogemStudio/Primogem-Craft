@@ -27,7 +27,7 @@ public class MllpwzsxProcedure {
 		BlockState a = Blocks.AIR.defaultBlockState();
 		if (entity.isShiftKeyDown()) {
 			if (itemstack.getItem() == PrimogemcraftModItems.MLLPHJ.get()) {
-				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("forge:ores")))) {
+				if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("c:ores")))) {
 					{
 						final String _tagName = "fnagkuai";
 						final String _tagValue = (BuiltInRegistries.BLOCK.getKey((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()).toString());

@@ -38,7 +38,7 @@ public class Mmolachutousuuijimola01Procedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PrimogemcraftModItems.HUANGJINDEZHEXUE.get()) {
-			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("forge:nitu"))) && !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.FARMLAND)
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:nitu"))) && !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.FARMLAND)
 					&& !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.MYCELIUM)) {
 				if (Math.random() < 0.09) {
 					if (world instanceof ServerLevel _level) {

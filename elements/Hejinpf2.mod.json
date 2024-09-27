@@ -11,7 +11,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smithingInputStack": {
-      "value": "TAG:forge:hejin_2"
+      "value": "TAG:c:hejin_2"
     },
     "smithingInputAdditionStack": {
       "value": "CUSTOM:Mzsj3"

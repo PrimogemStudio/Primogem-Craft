@@ -12,7 +12,7 @@ public class KwglsxProcedure {
 		ItemStack a = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
 			HsnjxfProcedure.execute(world, x, y, z, entity, entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY, itemstack, false, entity.getPersistentData().getBoolean("jingyanzhi_shiqu"), 0, 0.2, 0.3,
-					"jingyanzhi_shiqu", "forge:curio");
+					"jingyanzhi_shiqu", "c:curio");
 		}
 	}
 }
