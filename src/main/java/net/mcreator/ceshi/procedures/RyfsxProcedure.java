@@ -8,8 +8,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
@@ -36,17 +36,14 @@ public class RyfsxProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.ghast.shoot")), SoundSource.PLAYERS, (float) 0.5, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.ghast.shoot")), SoundSource.PLAYERS, (float) 0.5, 1);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.ghast.shoot")), SoundSource.PLAYERS, (float) 0.5, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.ghast.shoot")), SoundSource.PLAYERS, (float) 0.5, 1, false);
 				}
 			}
 			world.addParticle(ParticleTypes.LAVA, x, y, z, 0, 1, 0);
-			{
-				ItemStack _ist = itemstack;
-				_ist.hurtAndBreak(5, RandomSource.create(), null, () -> {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak(5, _level, null, _stkprov -> {
 				});
 			}
 		}

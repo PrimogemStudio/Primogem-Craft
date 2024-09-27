@@ -32,7 +32,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record CunzheshezhiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<CunzheshezhiButtonMessage> TYPE = new Type<>(new ResourceLocation(PrimogemcraftMod.MODID, "cunzheshezhi_buttons"));
+	public static final Type<CunzheshezhiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PrimogemcraftMod.MODID, "cunzheshezhi_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, CunzheshezhiButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, CunzheshezhiButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

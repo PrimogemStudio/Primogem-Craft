@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "primogemcraft:llianjiamolakuai"
+  },
+  "result": {
+    "id": "primogemcraft:llianjiamolakuaiqiang",
+    "count": 1
+  }
+}

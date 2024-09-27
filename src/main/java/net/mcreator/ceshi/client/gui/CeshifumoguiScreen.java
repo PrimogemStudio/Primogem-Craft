@@ -37,7 +37,7 @@ public class CeshifumoguiScreen extends AbstractContainerScreen<CeshifumoguiMenu
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/ceshifumogui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/ceshifumogui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -75,7 +75,7 @@ public class CeshifumoguiScreen extends AbstractContainerScreen<CeshifumoguiMenu
 	public void init() {
 		super.init();
 		imagebutton_heitasuijifumo = new ImageButton(this.leftPos + 55, this.topPos + 59, 64, 19,
-				new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/heitasuijifumo.png"), new ResourceLocation("primogemcraft:textures/screens/heitasuijifumo.png")), e -> {
+				new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/heitasuijifumo.png"), ResourceLocation.parse("primogemcraft:textures/screens/heitasuijifumo.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new CeshifumoguiButtonMessage(0, x, y, z));
 						CeshifumoguiButtonMessage.handleButtonAction(entity, 0, x, y, z);

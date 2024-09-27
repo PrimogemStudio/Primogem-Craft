@@ -1,6 +1,6 @@
 package net.mcreator.ceshi.procedures;
 
-import net.neoforged.neoforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -20,7 +20,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
@@ -31,7 +30,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class TiankongsxProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingAttackEvent event) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getSource().getEntity());
 		}
@@ -52,9 +51,9 @@ public class TiankongsxProcedure {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 40, 0, false, false));
 						} else if (Math.random() < 0.14) {
-							entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.CRAMMING), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
+							entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.CRAMMING), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
 						} else if (Math.random() < 0.14) {
-							entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.LIGHTNING_BOLT), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
+							entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.LIGHTNING_BOLT), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
 							if (world instanceof ServerLevel _level) {
 								LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 								entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
@@ -66,7 +65,7 @@ public class TiankongsxProcedure {
 								_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 40, 0, false, false));
 						} else if (Math.random() < 0.14) {
 							entity.setAirSupply(-20);
-							entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.IN_WALL), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
+							entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.IN_WALL), sourceentity), Mth.nextInt(RandomSource.create(), 1, 10));
 						} else if (Math.random() < 0.14) {
 							entity.igniteForSeconds(3);
 						} else {

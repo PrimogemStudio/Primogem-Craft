@@ -5,7 +5,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 
@@ -15,7 +14,7 @@ public class Qianye_shuxingProcedure {
 			return;
 		entity.getPersistentData().putDouble("qianye_shuxing", (entity.getPersistentData().getDouble("qianye_shuxing") + 1));
 		if (entity.getPersistentData().getDouble("qianye_shuxing") >= 40) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.INDIRECT_MAGIC)),
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.INDIRECT_MAGIC)),
 					entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.QIANYE) ? _livEnt.getEffect(PrimogemcraftModMobEffects.QIANYE).getAmplifier() : 0);
 			entity.getPersistentData().putDouble("qianye_shuxing", 0);
 		}

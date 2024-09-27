@@ -29,9 +29,9 @@ public class YsmbjdsxProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (itemstack.is(ItemTags.create(new ResourceLocation("pgc:dzmb_1")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("pgc:dzmb_1")))) {
 			if (entity instanceof ServerPlayer _player) {
-				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:jdhszly"));
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:jdhszly"));
 				if (_adv != null) {
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
@@ -41,9 +41,9 @@ public class YsmbjdsxProcedure {
 				}
 			}
 		}
-		if (itemstack.is(ItemTags.create(new ResourceLocation("pgc:dzmb_2")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("pgc:dzmb_2")))) {
 			if (entity instanceof ServerPlayer _player) {
-				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:jdlyzsj"));
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:jdlyzsj"));
 				if (_adv != null) {
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
@@ -53,9 +53,9 @@ public class YsmbjdsxProcedure {
 				}
 			}
 		}
-		if (itemstack.is(ItemTags.create(new ResourceLocation("pgc:dzmb_3")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("pgc:dzmb_3")))) {
 			if (entity instanceof ServerPlayer _player) {
-				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:jdszzqh"));
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:jdszzqh"));
 				if (_adv != null) {
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
@@ -65,9 +65,9 @@ public class YsmbjdsxProcedure {
 				}
 			}
 		}
-		if (itemstack.is(ItemTags.create(new ResourceLocation("pgc:dzmb_4")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("pgc:dzmb_4")))) {
 			if (entity instanceof ServerPlayer _player) {
-				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:jdybdw"));
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:jdybdw"));
 				if (_adv != null) {
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
@@ -77,9 +77,9 @@ public class YsmbjdsxProcedure {
 				}
 			}
 		}
-		if (itemstack.is(ItemTags.create(new ResourceLocation("pgc:dzmb_0")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("pgc:dzmb_0")))) {
 			if (entity instanceof ServerPlayer _player) {
-				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:jdwhhl"));
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:jdwhhl"));
 				if (_adv != null) {
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {

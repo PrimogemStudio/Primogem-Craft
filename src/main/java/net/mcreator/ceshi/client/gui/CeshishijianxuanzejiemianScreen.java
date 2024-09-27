@@ -36,7 +36,7 @@ public class CeshishijianxuanzejiemianScreen extends AbstractContainerScreen<Ces
 		this.imageHeight = 183;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/ceshishijianxuanzejiemian.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/ceshishijianxuanzejiemian.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

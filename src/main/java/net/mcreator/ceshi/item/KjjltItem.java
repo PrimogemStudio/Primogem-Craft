@@ -46,9 +46,9 @@ public abstract class KjjltItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 7);
 				map.put(ArmorItem.Type.HELMET, 4);
 				map.put(ArmorItem.Type.BODY, 7);
-			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("item.armor.equip_iron")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.JIANRANSUIXIE.get()), new ItemStack(Items.IRON_INGOT)),
-					List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:jlt_"))), 1f, 0f);
-			registerHelper.register(new ResourceLocation("primogemcraft:kjjlt"), armorMaterial);
+			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.JIANRANSUIXIE.get()), new ItemStack(Items.IRON_INGOT)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:jlt_"))), 1f, 0f);
+			registerHelper.register(ResourceLocation.parse("primogemcraft:kjjlt"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

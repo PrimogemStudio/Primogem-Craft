@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "智慧金属块",
     "specialInformation": {
       "fixedValue": []

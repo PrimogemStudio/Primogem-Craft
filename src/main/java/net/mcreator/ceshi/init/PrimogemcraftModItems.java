@@ -990,24 +990,24 @@ public class PrimogemcraftModItems {
 		@OnlyIn(Dist.CLIENT)
 		public static void clientLoad(FMLClientSetupEvent event) {
 			event.enqueueWork(() -> {
-				ItemProperties.register(MMOLA_01.get(), new ResourceLocation("primogemcraft:mmola_01_shuliang"),
+				ItemProperties.register(MMOLA_01.get(), ResourceLocation.parse("primogemcraft:mmola_01_shuliang"),
 						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Yssp_sxProcedure.execute(entity != null ? entity.level() : clientWorld, itemStackToRender));
-				ItemProperties.register(LJTG_01.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(new ItemStack(Items.SHIELD), new ResourceLocation("blocking")));
-				ItemProperties.register(LJTG_02.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(new ItemStack(Items.SHIELD), new ResourceLocation("blocking")));
-				ItemProperties.register(XZCFYXWZD.get(), new ResourceLocation("blocking"), ItemProperties.getProperty(new ItemStack(Items.SHIELD), new ResourceLocation("blocking")));
-				ItemProperties.register(SJBCQ.get(), new ResourceLocation("primogemcraft:sjbcq_pinzhi"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) FumoquanpinzhizhiProcedure.execute(itemStackToRender));
-				ItemProperties.register(YSSP.get(), new ResourceLocation("primogemcraft:yssp_shuliang"),
+				ItemProperties.register(LJTG_01.get(), ResourceLocation.parse("minecraft:blocking"), ItemProperties.getProperty(new ItemStack(Items.SHIELD), ResourceLocation.parse("minecraft:blocking")));
+				ItemProperties.register(LJTG_02.get(), ResourceLocation.parse("minecraft:blocking"), ItemProperties.getProperty(new ItemStack(Items.SHIELD), ResourceLocation.parse("minecraft:blocking")));
+				ItemProperties.register(XZCFYXWZD.get(), ResourceLocation.parse("minecraft:blocking"), ItemProperties.getProperty(new ItemStack(Items.SHIELD), ResourceLocation.parse("minecraft:blocking")));
+				ItemProperties.register(SJBCQ.get(), ResourceLocation.parse("primogemcraft:sjbcq_pinzhi"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) FumoquanpinzhizhiProcedure.execute(itemStackToRender));
+				ItemProperties.register(YSSP.get(), ResourceLocation.parse("primogemcraft:yssp_shuliang"),
 						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Yssp_sxProcedure.execute(entity != null ? entity.level() : clientWorld, itemStackToRender));
-				ItemProperties.register(ZSSP.get(), new ResourceLocation("primogemcraft:zssp_shuliang"),
+				ItemProperties.register(ZSSP.get(), ResourceLocation.parse("primogemcraft:zssp_shuliang"),
 						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Yssp_sxProcedure.execute(entity != null ? entity.level() : clientWorld, itemStackToRender));
-				ItemProperties.register(YHDLTYIDIE.get(), new ResourceLocation("primogemcraft:yhdltyidie_shuliang"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) YdyhdltsxProcedure.execute(itemStackToRender));
-				ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_feng"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa0Procedure.execute(itemStackToRender));
-				ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_yan"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa1Procedure.execute(itemStackToRender));
-				ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_lei"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa2Procedure.execute(itemStackToRender));
-				ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_cao"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa3Procedure.execute(itemStackToRender));
-				ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_shui"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa4Procedure.execute(itemStackToRender));
-				ItemProperties.register(YSRZ_0.get(), new ResourceLocation("primogemcraft:ysrz_0_huo"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa5Procedure.execute(itemStackToRender));
-				ItemProperties.register(YSRQSP.get(), new ResourceLocation("primogemcraft:ysrqsp_shu"),
+				ItemProperties.register(YHDLTYIDIE.get(), ResourceLocation.parse("primogemcraft:yhdltyidie_shuliang"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) YdyhdltsxProcedure.execute(itemStackToRender));
+				ItemProperties.register(YSRZ_0.get(), ResourceLocation.parse("primogemcraft:ysrz_0_feng"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa0Procedure.execute(itemStackToRender));
+				ItemProperties.register(YSRZ_0.get(), ResourceLocation.parse("primogemcraft:ysrz_0_yan"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa1Procedure.execute(itemStackToRender));
+				ItemProperties.register(YSRZ_0.get(), ResourceLocation.parse("primogemcraft:ysrz_0_lei"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa2Procedure.execute(itemStackToRender));
+				ItemProperties.register(YSRZ_0.get(), ResourceLocation.parse("primogemcraft:ysrz_0_cao"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa3Procedure.execute(itemStackToRender));
+				ItemProperties.register(YSRZ_0.get(), ResourceLocation.parse("primogemcraft:ysrz_0_shui"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa4Procedure.execute(itemStackToRender));
+				ItemProperties.register(YSRZ_0.get(), ResourceLocation.parse("primogemcraft:ysrz_0_huo"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Ysrqa5Procedure.execute(itemStackToRender));
+				ItemProperties.register(YSRQSP.get(), ResourceLocation.parse("primogemcraft:ysrqsp_shu"),
 						(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) Yssp_sxProcedure.execute(entity != null ? entity.level() : clientWorld, itemStackToRender));
 			});
 		}

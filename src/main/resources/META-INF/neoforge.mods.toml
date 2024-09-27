@@ -1,35 +1,33 @@
 modLoader="javafml"
-loaderVersion="[2,)"
+loaderVersion="[4,)"
 license="MIT"
 
 [[mods]]
 modId="primogemcraft"
 version="2439"
-displayName="原石工艺"
+displayName="\u539F\u77F3\u5DE5\u827A"
 displayURL="https://www.mcmod.cn/class/10429.html"
 logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="Pepper某人, hackerm大神, MCreator"
-description="这是一个无厘头的娱乐性mod，包含一些米游物品和梗"
+authors="Pepper\u67D0\u4EBA, hackerm\u5927\u795E, MCreator"
+description="\u8FD9\u662F\u4E00\u4E2A\u65E0\u5398\u5934\u7684\u5A31\u4E50\u6027mod\uFF0C\u5305\u542B\u4E00\u4E9B\u7C73\u6E38\u7269\u54C1\u548C\u6897"
 
 # Start of user code block mod configuration
-[[mixins]]
-config = "pgc.mixins.json"
 # End of user code block mod configuration
 
 [[dependencies.primogemcraft]]
-modId="neoforge"
-type="required"
-versionRange="[20.6.119,)"
-ordering="AFTER"
-side="BOTH"
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.12,)"
+    ordering="AFTER"
+    side="BOTH"
 
 [[dependencies.primogemcraft]]
-modId="minecraft"
-type="required"
-versionRange="[1.20.6]"
-ordering="AFTER"
-side="BOTH"
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
 
 
 

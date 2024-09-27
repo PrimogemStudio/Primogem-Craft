@@ -6,7 +6,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
@@ -15,11 +15,8 @@ public class Ysj_qgd_hdsxProcedure {
 		if (entity == null)
 			return;
 		if (Math.random() < 0.05) {
-			{
-				ItemStack _ist = itemstack;
-				_ist.hurtAndBreak(itemstack.getMaxDamage(), RandomSource.create(), null, () -> {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak(itemstack.getMaxDamage(), _level, null, _stkprov -> {
 				});
 			}
 			if (entity instanceof Player _player) {

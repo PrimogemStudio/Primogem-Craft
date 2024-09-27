@@ -46,9 +46,9 @@ public abstract class RyhjtItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 9);
 				map.put(ArmorItem.Type.HELMET, 5);
 				map.put(ArmorItem.Type.BODY, 9);
-			}), 10, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("item.armor.equip_netherite")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.RANYUANDUANPIAN.get()), new ItemStack(Items.NETHERITE_INGOT)),
-					List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:ryhjt_"))), 1f, 0.2f);
-			registerHelper.register(new ResourceLocation("primogemcraft:ryhjt"), armorMaterial);
+			}), 10, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_netherite")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.RANYUANDUANPIAN.get()), new ItemStack(Items.NETHERITE_INGOT)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:ryhjt_"))), 1f, 0.2f);
+			registerHelper.register(ResourceLocation.parse("primogemcraft:ryhjt"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

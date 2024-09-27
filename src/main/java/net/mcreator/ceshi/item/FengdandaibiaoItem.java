@@ -1,14 +1,16 @@
 
 package net.mcreator.ceshi.item;
 
-import net.minecraft.world.item.RecordItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 
-public class FengdandaibiaoItem extends RecordItem {
+import net.mcreator.ceshi.PrimogemcraftMod;
+
+public class FengdandaibiaoItem extends Item {
 	public FengdandaibiaoItem() {
-		super(4, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:lr_fengdan")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 5000);
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.RARE).jukeboxPlayable(ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(PrimogemcraftMod.MODID, "fengdandaibiao"))));
 	}
 }

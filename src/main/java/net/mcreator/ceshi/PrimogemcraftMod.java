@@ -25,13 +25,11 @@ import net.mcreator.ceshi.init.PrimogemcraftModTabs;
 import net.mcreator.ceshi.init.PrimogemcraftModSounds;
 import net.mcreator.ceshi.init.PrimogemcraftModPotions;
 import net.mcreator.ceshi.init.PrimogemcraftModParticleTypes;
-import net.mcreator.ceshi.init.PrimogemcraftModPaintings;
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 import net.mcreator.ceshi.init.PrimogemcraftModMenus;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.init.PrimogemcraftModFeatures;
 import net.mcreator.ceshi.init.PrimogemcraftModEntities;
-import net.mcreator.ceshi.init.PrimogemcraftModEnchantments;
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 import net.mcreator.ceshi.init.PrimogemcraftModBlockEntities;
 
@@ -61,13 +59,12 @@ public class PrimogemcraftMod {
 		PrimogemcraftModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		PrimogemcraftModFeatures.REGISTRY.register(modEventBus);
 		StructureFeature.REGISTRY.register(modEventBus);
-		PrimogemcraftModPaintings.REGISTRY.register(modEventBus);
 		PrimogemcraftModPotions.REGISTRY.register(modEventBus);
 		PrimogemcraftModMobEffects.REGISTRY.register(modEventBus);
-		PrimogemcraftModEnchantments.REGISTRY.register(modEventBus);
 		PrimogemcraftModMenus.REGISTRY.register(modEventBus);
 		PrimogemcraftModParticleTypes.REGISTRY.register(modEventBus);
 		PrimogemcraftModVillagerProfessions.PROFESSIONS.register(modEventBus);
+
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

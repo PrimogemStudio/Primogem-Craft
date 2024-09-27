@@ -1,7 +1,10 @@
 
 package net.mcreator.ceshi.potion;
 
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientMobEffectExtensions;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -11,9 +14,9 @@ import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.procedures.YsrzxgcsxProcedure;
+import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 
-import java.util.function.Consumer;
-
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class YsrzxgMobEffect extends MobEffect {
 	public YsrzxgMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
@@ -30,9 +33,9 @@ public class YsrzxgMobEffect extends MobEffect {
 		return super.applyEffectTick(entity, amplifier);
 	}
 
-	@Override
-	public void initializeClient(Consumer<IClientMobEffectExtensions> consumer) {
-		consumer.accept(new IClientMobEffectExtensions() {
+	@SubscribeEvent
+	public static void registerMobEffectExtensions(RegisterClientExtensionsEvent event) {
+		event.registerMobEffect(new IClientMobEffectExtensions() {
 			@Override
 			public boolean isVisibleInInventory(MobEffectInstance effect) {
 				return false;
@@ -47,6 +50,6 @@ public class YsrzxgMobEffect extends MobEffect {
 			public boolean isVisibleInGui(MobEffectInstance effect) {
 				return false;
 			}
-		});
+		}, PrimogemcraftModMobEffects.YSRZXG.get());
 	}
 }

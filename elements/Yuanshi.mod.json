@@ -45,6 +45,7 @@
     "projectile": {
       "value": "Arrow"
     },
+    "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 9,
     "saturation": 9.0,

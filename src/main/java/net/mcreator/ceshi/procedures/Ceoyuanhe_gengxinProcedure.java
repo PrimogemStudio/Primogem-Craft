@@ -6,7 +6,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.core.registries.Registries;
 
 public class Ceoyuanhe_gengxinProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -14,7 +13,7 @@ public class Ceoyuanhe_gengxinProcedure {
 			return;
 		entity.getPersistentData().putDouble("cao_chixu", (entity.getPersistentData().getDouble("cao_chixu") + 1));
 		if (entity.getPersistentData().getDouble("cao_chixu") >= 200) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1);
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1);
 			if (!entity.level().isClientSide())
 				entity.discard();
 		}

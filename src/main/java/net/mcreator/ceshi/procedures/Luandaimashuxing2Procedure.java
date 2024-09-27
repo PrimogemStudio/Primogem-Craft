@@ -14,7 +14,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
@@ -57,7 +56,7 @@ public class Luandaimashuxing2Procedure {
 					} else {
 						if (Math.random() < 0.5) {
 							if ((sourceentity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) < 1) {
-								sourceentity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.STARVE)), 2);
+								sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.STARVE)), 2);
 							} else {
 								if (sourceentity instanceof Player _player)
 									_player.getFoodData().setFoodLevel((int) ((sourceentity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 2));

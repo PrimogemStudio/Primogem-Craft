@@ -20,9 +20,9 @@ public class Guiyinhangyinxiao01Procedure {
 			return;
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.ender_chest.close")), SoundSource.BLOCKS, (float) 0.5, (float) 0.9);
+				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.ender_chest.close")), SoundSource.BLOCKS, (float) 0.5, (float) 0.9);
 			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.ender_chest.close")), SoundSource.BLOCKS, (float) 0.5, (float) 0.9, false);
+				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.ender_chest.close")), SoundSource.BLOCKS, (float) 0.5, (float) 0.9, false);
 			}
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PrimogemcraftModItems.CUNQUPINGZHENG.get()

@@ -42,7 +42,7 @@ public class GuiheitaxinyindaoScreen extends AbstractContainerScreen<Guiheitaxin
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/guiheitaxinyindao.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/guiheitaxinyindao.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -91,7 +91,7 @@ public class GuiheitaxinyindaoScreen extends AbstractContainerScreen<Guiheitaxin
 	public void init() {
 		super.init();
 		imagebutton_heita_xuanzeanniu = new ImageButton(this.leftPos + 31, this.topPos + 13, 114, 43,
-				new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/heita_xuanzeanniu.png"), new ResourceLocation("primogemcraft:textures/screens/heita_xuanzeanniu0.png")), e -> {
+				new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/heita_xuanzeanniu.png"), ResourceLocation.parse("primogemcraft:textures/screens/heita_xuanzeanniu0.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new GuiheitaxinyindaoButtonMessage(0, x, y, z));
 						GuiheitaxinyindaoButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -105,7 +105,7 @@ public class GuiheitaxinyindaoScreen extends AbstractContainerScreen<Guiheitaxin
 		guistate.put("button:imagebutton_heita_xuanzeanniu", imagebutton_heita_xuanzeanniu);
 		this.addRenderableWidget(imagebutton_heita_xuanzeanniu);
 		imagebutton_heita_xuanzeanniu1 = new ImageButton(this.leftPos + 31, this.topPos + 61, 114, 43,
-				new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/heita_xuanzeanniu.png"), new ResourceLocation("primogemcraft:textures/screens/heita_xuanzeanniu0.png")), e -> {
+				new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/heita_xuanzeanniu.png"), ResourceLocation.parse("primogemcraft:textures/screens/heita_xuanzeanniu0.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new GuiheitaxinyindaoButtonMessage(1, x, y, z));
 						GuiheitaxinyindaoButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -119,7 +119,7 @@ public class GuiheitaxinyindaoScreen extends AbstractContainerScreen<Guiheitaxin
 		guistate.put("button:imagebutton_heita_xuanzeanniu1", imagebutton_heita_xuanzeanniu1);
 		this.addRenderableWidget(imagebutton_heita_xuanzeanniu1);
 		imagebutton_heita_xuanzeanniu2 = new ImageButton(this.leftPos + 31, this.topPos + 109, 114, 43,
-				new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/heita_xuanzeanniu.png"), new ResourceLocation("primogemcraft:textures/screens/heita_xuanzeanniu0.png")), e -> {
+				new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/heita_xuanzeanniu.png"), ResourceLocation.parse("primogemcraft:textures/screens/heita_xuanzeanniu0.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new GuiheitaxinyindaoButtonMessage(2, x, y, z));
 						GuiheitaxinyindaoButtonMessage.handleButtonAction(entity, 2, x, y, z);

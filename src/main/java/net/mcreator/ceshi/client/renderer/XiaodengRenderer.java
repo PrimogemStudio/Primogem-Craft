@@ -19,18 +19,18 @@ public class XiaodengRenderer extends MobRenderer<XiaodengEntity, Modelceshixiao
 	public XiaodengRenderer(EntityRendererProvider.Context context) {
 		super(context, new Modelceshixiaodeng_Converted(context.bakeLayer(Modelceshixiaodeng_Converted.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new RenderLayer<XiaodengEntity, Modelceshixiaodeng_Converted<XiaodengEntity>>(this) {
-			final ResourceLocation LAYER_TEXTURE = new ResourceLocation("primogemcraft:textures/entities/ceshixiaodeng_tietu.png");
+			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("primogemcraft:textures/entities/ceshixiaodeng_tietu.png");
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, XiaodengEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
 				VertexConsumer vertexConsumer = bufferSource.getBuffer(RenderType.eyes(LAYER_TEXTURE));
-				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0), 1, 1, 1, 1);
+				this.getParentModel().renderToBuffer(poseStack, vertexConsumer, light, LivingEntityRenderer.getOverlayCoords(entity, 0));
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(XiaodengEntity entity) {
-		return new ResourceLocation("primogemcraft:textures/entities/ceshixiaodeng_tietu.png");
+		return ResourceLocation.parse("primogemcraft:textures/entities/ceshixiaodeng_tietu.png");
 	}
 }

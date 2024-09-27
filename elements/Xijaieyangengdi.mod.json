@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "下界岩耕地",
     "specialInformation": {
       "fixedValue": []

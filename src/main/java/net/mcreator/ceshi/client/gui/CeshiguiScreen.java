@@ -31,7 +31,7 @@ public class CeshiguiScreen extends AbstractContainerScreen<CeshiguiMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/ceshigui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/ceshigui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

@@ -46,9 +46,9 @@ public abstract class ZizaizuantaoItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 9);
 				map.put(ArmorItem.Type.HELMET, 4);
 				map.put(ArmorItem.Type.BODY, 9);
-			}), 14, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("item.armor.equip_diamond")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.ZIZIYOUSONGSHISUIXIE.get()), new ItemStack(Items.DIAMOND)),
-					List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:zizaizuan_"))), 2f, 0.1f);
-			registerHelper.register(new ResourceLocation("primogemcraft:zizaizuantao"), armorMaterial);
+			}), 14, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_diamond")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.ZIZIYOUSONGSHISUIXIE.get()), new ItemStack(Items.DIAMOND)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:zizaizuan_"))), 2f, 0.1f);
+			registerHelper.register(ResourceLocation.parse("primogemcraft:zizaizuantao"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

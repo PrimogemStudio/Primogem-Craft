@@ -48,7 +48,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/cunzheshezhi.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/cunzheshezhi.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -171,7 +171,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		}).bounds(this.leftPos + 21, this.topPos + 35, 23, 20).build();
 		guistate.put("button:button_1001", button_1001);
 		this.addRenderableWidget(button_1001);
-		imagebutton_dui = new ImageButton(this.leftPos + 96, this.topPos + 57, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/duia1.png"), new ResourceLocation("primogemcraft:textures/screens/duia2.png")), e -> {
+		imagebutton_dui = new ImageButton(this.leftPos + 96, this.topPos + 57, 21, 21, new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/duia1.png"), ResourceLocation.parse("primogemcraft:textures/screens/duia2.png")), e -> {
 			if (true) {
 				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(6, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 6, x, y, z);
@@ -184,7 +184,7 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		};
 		guistate.put("button:imagebutton_dui", imagebutton_dui);
 		this.addRenderableWidget(imagebutton_dui);
-		imagebutton_cuo = new ImageButton(this.leftPos + 62, this.topPos + 57, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/cuoa1.png"), new ResourceLocation("primogemcraft:textures/screens/cuoa2.png")), e -> {
+		imagebutton_cuo = new ImageButton(this.leftPos + 62, this.topPos + 57, 21, 21, new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/cuoa1.png"), ResourceLocation.parse("primogemcraft:textures/screens/cuoa2.png")), e -> {
 			if (true) {
 				PacketDistributor.sendToServer(new CunzheshezhiButtonMessage(7, x, y, z));
 				CunzheshezhiButtonMessage.handleButtonAction(entity, 7, x, y, z);

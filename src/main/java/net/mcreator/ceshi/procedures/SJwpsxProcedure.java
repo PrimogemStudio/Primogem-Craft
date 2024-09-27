@@ -51,7 +51,7 @@ public class SJwpsxProcedure {
 		ItemStack a = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
 			a = (itemstack.copy());
-			if (a.getItem() == BuiltInRegistries.ITEM.get(new ResourceLocation("primogemcraft:sh_jwupin"))) {
+			if (a.getItem() == BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:sh_jwupin"))) {
 				if (event instanceof ItemEntityPickupEvent.Pre _event)
 					_event.setCanPickup(TriState.FALSE);
 				if (!(entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(PrimogemcraftModMobEffects.SHIJIANBUCHUFA))) {
@@ -99,11 +99,11 @@ public class SJwpsxProcedure {
 							}
 						}
 					} else if (!(entity instanceof ServerPlayer _plr11 && _plr11.level() instanceof ServerLevel
-							&& _plr11.getAdvancements().getOrStartProgress(_plr11.server.getAdvancements().get(new ResourceLocation("primogemcraft:jdshijian_0"))).isDone())) {
+							&& _plr11.getAdvancements().getOrStartProgress(_plr11.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:jdshijian_0"))).isDone())) {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("\u00A75\u6F5C\u884C\u4EE5\u62FE\u53D6\u4E8B\u4EF6\uFF01"), false);
 						if (entity instanceof ServerPlayer _player) {
-							AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:jdshijian_0"));
+							AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:jdshijian_0"));
 							if (_adv != null) {
 								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 								if (!_ap.isDone()) {

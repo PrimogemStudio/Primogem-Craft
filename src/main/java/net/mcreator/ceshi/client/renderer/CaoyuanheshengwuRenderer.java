@@ -15,6 +15,6 @@ public class CaoyuanheshengwuRenderer extends MobRenderer<CaoyuanheshengwuEntity
 
 	@Override
 	public ResourceLocation getTextureLocation(CaoyuanheshengwuEntity entity) {
-		return new ResourceLocation("primogemcraft:textures/entities/cx_cyh_tt.png");
+		return ResourceLocation.parse("primogemcraft:textures/entities/cx_cyh_tt.png");
 	}
 }

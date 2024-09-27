@@ -49,9 +49,9 @@ public abstract class AxhjtItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 8);
 				map.put(ArmorItem.Type.HELMET, 4);
 				map.put(ArmorItem.Type.BODY, 8);
-			}), 15, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("item.armor.equip_netherite")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.AAIXUBINGYUDUANPIAN.get()), new ItemStack(Items.DIAMOND)),
-					List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:axhjt_"))), 2f, 0.2f);
-			registerHelper.register(new ResourceLocation("primogemcraft:axhjt"), armorMaterial);
+			}), 15, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_netherite")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.AAIXUBINGYUDUANPIAN.get()), new ItemStack(Items.DIAMOND)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:axhjt_"))), 2f, 0.2f);
+			registerHelper.register(ResourceLocation.parse("primogemcraft:axhjt"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

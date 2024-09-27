@@ -3,7 +3,6 @@ package net.mcreator.ceshi.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.item.RecordItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -12,14 +11,16 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ceshi.procedures.GongzhuxinghuacaidanchufaProcedure;
 import net.mcreator.ceshi.procedures.GongzhuxinghuacaidanProcedure;
+import net.mcreator.ceshi.PrimogemcraftMod;
 
-public class GongzhuxinghuaItem extends RecordItem {
+public class GongzhuxinghuaItem extends Item {
 	public GongzhuxinghuaItem() {
-		super(15, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:gongzhuxinghua")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 8000);
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.RARE).jukeboxPlayable(ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(PrimogemcraftMod.MODID, "gongzhuxinghua"))));
 	}
 
 	@Override

@@ -46,9 +46,9 @@ public abstract class ZizizaihejintaoItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 9);
 				map.put(ArmorItem.Type.HELMET, 5);
 				map.put(ArmorItem.Type.BODY, 9);
-			}), 18, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("item.armor.equip_netherite")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.ZZIYOUSONGSHIDUANPIAN.get()), new ItemStack(Items.NETHERITE_INGOT)),
-					List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:zizaihej_"))), 4f, 0.2f);
-			registerHelper.register(new ResourceLocation("primogemcraft:zizizaihejintao"), armorMaterial);
+			}), 18, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_netherite")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.ZZIYOUSONGSHIDUANPIAN.get()), new ItemStack(Items.NETHERITE_INGOT)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:zizaihej_"))), 4f, 0.2f);
+			registerHelper.register(ResourceLocation.parse("primogemcraft:zizizaihejintao"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

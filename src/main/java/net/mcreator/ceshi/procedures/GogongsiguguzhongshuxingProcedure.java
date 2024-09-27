@@ -13,6 +13,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -49,16 +50,13 @@ public class GogongsiguguzhongshuxingProcedure {
 							+ new java.text.DecimalFormat("##.##").format(Math.round(b)) + "\u00A78\u7ECF\u9A8C\u503C\uFF01\u00A77\uFF08\u7EA6" + new java.text.DecimalFormat("##.##").format(Math.round(a * 1000) * 0.1) + "%\uFF09")), false);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 4, (float) 0.5);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 4, (float) 0.5);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 4, (float) 0.5, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 4, (float) 0.5, false);
 					}
 				}
-				{
-					ItemStack _ist = itemstack;
-					_ist.hurtAndBreak(2232, RandomSource.create(), null, () -> {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
+				if (world instanceof ServerLevel _level) {
+					itemstack.hurtAndBreak(2232, _level, null, _stkprov -> {
 					});
 				}
 			}

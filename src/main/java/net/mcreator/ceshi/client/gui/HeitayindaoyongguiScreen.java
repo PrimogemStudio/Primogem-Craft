@@ -39,7 +39,7 @@ public class HeitayindaoyongguiScreen extends AbstractContainerScreen<Heitayinda
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/heitayindaoyonggui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/heitayindaoyonggui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -79,7 +79,7 @@ public class HeitayindaoyongguiScreen extends AbstractContainerScreen<Heitayinda
 	public void init() {
 		super.init();
 		imagebutton_heitaanniu = new ImageButton(this.leftPos + 96, this.topPos + 34, 56, 20,
-				new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png"), new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png")), e -> {
+				new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/heitaanniu.png"), ResourceLocation.parse("primogemcraft:textures/screens/heitaanniu.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new HeitayindaoyongguiButtonMessage(0, x, y, z));
 						HeitayindaoyongguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -93,7 +93,7 @@ public class HeitayindaoyongguiScreen extends AbstractContainerScreen<Heitayinda
 		guistate.put("button:imagebutton_heitaanniu", imagebutton_heitaanniu);
 		this.addRenderableWidget(imagebutton_heitaanniu);
 		imagebutton_heitaanniu1 = new ImageButton(this.leftPos + 96, this.topPos + 79, 56, 20,
-				new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png"), new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png")), e -> {
+				new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/heitaanniu.png"), ResourceLocation.parse("primogemcraft:textures/screens/heitaanniu.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new HeitayindaoyongguiButtonMessage(1, x, y, z));
 						HeitayindaoyongguiButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -107,7 +107,7 @@ public class HeitayindaoyongguiScreen extends AbstractContainerScreen<Heitayinda
 		guistate.put("button:imagebutton_heitaanniu1", imagebutton_heitaanniu1);
 		this.addRenderableWidget(imagebutton_heitaanniu1);
 		imagebutton_heitaanniu2 = new ImageButton(this.leftPos + 96, this.topPos + 124, 56, 20,
-				new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png"), new ResourceLocation("primogemcraft:textures/screens/heitaanniu.png")), e -> {
+				new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/heitaanniu.png"), ResourceLocation.parse("primogemcraft:textures/screens/heitaanniu.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new HeitayindaoyongguiButtonMessage(2, x, y, z));
 						HeitayindaoyongguiButtonMessage.handleButtonAction(entity, 2, x, y, z);

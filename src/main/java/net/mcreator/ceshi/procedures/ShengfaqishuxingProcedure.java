@@ -7,8 +7,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -52,11 +52,8 @@ public class ShengfaqishuxingProcedure {
 				return false;
 			}
 		}.checkGamemode(entity))) {
-			{
-				ItemStack _ist = itemstack;
-				_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
 				});
 			}
 		}

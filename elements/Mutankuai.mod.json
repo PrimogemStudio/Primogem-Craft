@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "木炭块",
     "specialInformation": {
       "fixedValue": []

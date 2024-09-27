@@ -1,7 +1,7 @@
 
 package net.mcreator.ceshi.entity;
 
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
 import net.minecraft.world.level.ServerLevelAccessor;
@@ -58,17 +58,17 @@ public class QQQyuanchulan01Entity extends PathfinderMob {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:choukatiaoguo.1"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:choukatiaoguo.1"));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:wu_sheng"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:wu_sheng"));
 	}
 
 	@Override
@@ -132,7 +132,7 @@ public class QQQyuanchulan01Entity extends PathfinderMob {
 		return retval;
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

@@ -1,7 +1,10 @@
 
 package net.mcreator.ceshi.potion;
 
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientMobEffectExtensions;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -9,9 +12,9 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.ceshi.procedures.Rykj_xg_sx_xzProcedure;
+import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 
-import java.util.function.Consumer;
-
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class RykjxgMobEffect extends MobEffect {
 	public RykjxgMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
@@ -28,13 +31,13 @@ public class RykjxgMobEffect extends MobEffect {
 		return super.applyEffectTick(entity, amplifier);
 	}
 
-	@Override
-	public void initializeClient(Consumer<IClientMobEffectExtensions> consumer) {
-		consumer.accept(new IClientMobEffectExtensions() {
+	@SubscribeEvent
+	public static void registerMobEffectExtensions(RegisterClientExtensionsEvent event) {
+		event.registerMobEffect(new IClientMobEffectExtensions() {
 			@Override
 			public boolean isVisibleInGui(MobEffectInstance effect) {
 				return false;
 			}
-		});
+		}, PrimogemcraftModMobEffects.RYKJXG.get());
 	}
 }

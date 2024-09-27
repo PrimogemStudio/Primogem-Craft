@@ -46,9 +46,9 @@ public abstract class SzzskjItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 7);
 				map.put(ArmorItem.Type.HELMET, 4);
 				map.put(ArmorItem.Type.BODY, 7);
-			}), 14, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("item.armor.equip_diamond")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.SHENGZHANGBIFEISUIXIE.get()), new ItemStack(Items.DIAMOND)),
-					List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:szzt_"))), 2f, 0.1f);
-			registerHelper.register(new ResourceLocation("primogemcraft:szzskj"), armorMaterial);
+			}), 14, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_diamond")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.SHENGZHANGBIFEISUIXIE.get()), new ItemStack(Items.DIAMOND)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:szzt_"))), 2f, 0.1f);
+			registerHelper.register(ResourceLocation.parse("primogemcraft:szzskj"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

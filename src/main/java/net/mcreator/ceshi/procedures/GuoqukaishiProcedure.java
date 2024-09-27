@@ -21,17 +21,17 @@ public class GuoqukaishiProcedure {
 		if (entity instanceof Player) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("ui.toast.challenge_complete")), SoundSource.PLAYERS, (float) 0.5, (float) 0.2);
+					_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ui.toast.challenge_complete")), SoundSource.PLAYERS, (float) 0.5, (float) 0.2);
 				} else {
-					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("ui.toast.challenge_complete")), SoundSource.PLAYERS, (float) 0.5, (float) 0.2, false);
+					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ui.toast.challenge_complete")), SoundSource.PLAYERS, (float) 0.5, (float) 0.2, false);
 				}
 			}
 		} else {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("ui.toast.challenge_complete")), SoundSource.NEUTRAL, (float) 0.1, (float) 0.2);
+					_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ui.toast.challenge_complete")), SoundSource.NEUTRAL, (float) 0.1, (float) 0.2);
 				} else {
-					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("ui.toast.challenge_complete")), SoundSource.NEUTRAL, (float) 0.1, (float) 0.2, false);
+					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ui.toast.challenge_complete")), SoundSource.NEUTRAL, (float) 0.1, (float) 0.2, false);
 				}
 			}
 		}

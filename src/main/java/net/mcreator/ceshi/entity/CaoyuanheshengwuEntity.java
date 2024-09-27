@@ -1,7 +1,7 @@
 
 package net.mcreator.ceshi.entity;
 
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -41,12 +41,12 @@ public class CaoyuanheshengwuEntity extends PathfinderMob {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:wu_sheng"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.firework_rocket.twinkle_far"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.firework_rocket.twinkle_far"));
 	}
 
 	@Override
@@ -67,7 +67,7 @@ public class CaoyuanheshengwuEntity extends PathfinderMob {
 		Ceoyuanhe_gengxinProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

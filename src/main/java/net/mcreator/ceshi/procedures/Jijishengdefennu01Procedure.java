@@ -7,7 +7,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 
@@ -16,7 +15,7 @@ public class Jijishengdefennu01Procedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) < 12) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.8));
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.8));
 			if (entity instanceof Player _player)
 				_player.getFoodData().setFoodLevel(13);
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 0) {

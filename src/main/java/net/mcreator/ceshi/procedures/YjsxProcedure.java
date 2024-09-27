@@ -12,7 +12,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
@@ -31,16 +30,16 @@ public class YjsxProcedure {
 					_level.explode(null, (entity.getX()), (entity.getY()), (entity.getZ()), 8, Level.ExplosionInteraction.TNT);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.break")), SoundSource.NEUTRAL, 10, (float) 0.5);
+						_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.glass.break")), SoundSource.NEUTRAL, 10, (float) 0.5);
 					} else {
-						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.break")), SoundSource.NEUTRAL, 10, (float) 0.5, false);
+						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.glass.break")), SoundSource.NEUTRAL, 10, (float) 0.5, false);
 					}
 				}
 				world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.YUANSHIKUANGSHI.get().defaultBlockState(), 3);
 				if (Math.random() < 0.5) {
 					world.setBlock(BlockPos.containing(x, y + 1, z), PrimogemcraftModBlocks.YUANSHIKUANGSHI.get().defaultBlockState(), 3);
 				}
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)), 20);
+				entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 20);
 				if (!(entity instanceof Player)) {
 					{
 						Entity _ent = entity;
@@ -51,7 +50,7 @@ public class YjsxProcedure {
 				} else {
 					PrimogemcraftMod.queueServerWork(20, () -> {
 						if (entity.isAlive()) {
-							entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)), 20);
+							entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 20);
 						}
 					});
 				}

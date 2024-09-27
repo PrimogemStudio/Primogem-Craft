@@ -18,6 +18,6 @@ public class QqiwuzhanlipinshitiRenderer extends HumanoidMobRenderer<Qqiwuzhanli
 
 	@Override
 	public ResourceLocation getTextureLocation(QqiwuzhanlipinshitiEntity entity) {
-		return new ResourceLocation("primogemcraft:textures/entities/toumingshiti.png");
+		return ResourceLocation.parse("primogemcraft:textures/entities/toumingshiti.png");
 	}
 }

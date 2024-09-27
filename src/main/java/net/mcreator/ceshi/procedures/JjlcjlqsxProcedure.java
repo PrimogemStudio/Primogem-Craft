@@ -19,11 +19,8 @@ public class JjlcjlqsxProcedure {
 		if (itemstack.getItem() == PrimogemcraftModItems.JLQ.get() && entity.isShiftKeyDown()) {
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.explode(null, x, y, z, Mth.nextInt(RandomSource.create(), 2, 8), Level.ExplosionInteraction.TNT);
-			{
-				ItemStack _ist = itemstack;
-				_ist.hurtAndBreak(Mth.nextInt(RandomSource.create(), 10, 40), RandomSource.create(), null, () -> {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak(Mth.nextInt(RandomSource.create(), 10, 40), _level, null, _stkprov -> {
 				});
 			}
 			if (entity instanceof Player _player)

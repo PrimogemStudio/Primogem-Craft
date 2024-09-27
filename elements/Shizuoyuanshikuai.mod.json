@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "试作原石块",
     "specialInformation": {
       "fixedValue": []

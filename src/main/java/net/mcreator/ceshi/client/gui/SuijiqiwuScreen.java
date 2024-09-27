@@ -36,7 +36,7 @@ public class SuijiqiwuScreen extends AbstractContainerScreen<SuijiqiwuMenu> {
 		this.imageHeight = 183;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/suijiqiwu.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/suijiqiwu.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

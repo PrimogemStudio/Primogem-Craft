@@ -15,6 +15,6 @@ public class XiaoheitaRenderer extends MobRenderer<XiaoheitaEntity, Modelheitaxi
 
 	@Override
 	public ResourceLocation getTextureLocation(XiaoheitaEntity entity) {
-		return new ResourceLocation("primogemcraft:textures/entities/ht.png");
+		return ResourceLocation.parse("primogemcraft:textures/entities/ht.png");
 	}
 }

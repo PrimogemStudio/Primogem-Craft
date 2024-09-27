@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "引爆器",
     "specialInformation": {
       "fixedValue": [

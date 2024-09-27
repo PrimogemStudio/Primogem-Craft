@@ -15,6 +15,6 @@ public class BaiguangguodushengwuRenderer extends MobRenderer<Baiguangguodusheng
 
 	@Override
 	public ResourceLocation getTextureLocation(BaiguangguodushengwuEntity entity) {
-		return new ResourceLocation("primogemcraft:textures/entities/baiguang.png");
+		return ResourceLocation.parse("primogemcraft:textures/entities/baiguang.png");
 	}
 }

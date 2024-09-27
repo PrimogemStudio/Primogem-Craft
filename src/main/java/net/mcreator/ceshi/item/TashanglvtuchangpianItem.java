@@ -7,7 +7,6 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.RecordItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -16,17 +15,19 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ceshi.procedures.TtashanglbtuteshuchufaProcedure;
 import net.mcreator.ceshi.procedures.TashanglvtuxianzhitiaojianProcedure;
+import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.List;
 
-public class TashanglvtuchangpianItem extends RecordItem {
+public class TashanglvtuchangpianItem extends Item {
 	public TashanglvtuchangpianItem() {
-		super(5, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:tashanglvtu")), new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 3000);
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.RARE).jukeboxPlayable(ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(PrimogemcraftMod.MODID, "tashanglvtuchangpian"))));
 	}
 
 	@Override

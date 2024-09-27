@@ -29,20 +29,20 @@ public class Guoqu_jieshuProcedure {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(entity.getPersistentData().getDouble("zuobiao_x"), entity.getPersistentData().getDouble("zuobiao_y"), entity.getPersistentData().getDouble("zuobiao_z")),
-							BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.player.levelup")), SoundSource.PLAYERS, 4, (float) 0.5);
+							BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.levelup")), SoundSource.PLAYERS, 4, (float) 0.5);
 				} else {
 					_level.playLocalSound((entity.getPersistentData().getDouble("zuobiao_x")), (entity.getPersistentData().getDouble("zuobiao_y")), (entity.getPersistentData().getDouble("zuobiao_z")),
-							BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.player.levelup")), SoundSource.PLAYERS, 4, (float) 0.5, false);
+							BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.levelup")), SoundSource.PLAYERS, 4, (float) 0.5, false);
 				}
 			}
 		} else {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(entity.getPersistentData().getDouble("zuobiao_x"), entity.getPersistentData().getDouble("zuobiao_y"), entity.getPersistentData().getDouble("zuobiao_z")),
-							BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.player.levelup")), SoundSource.NEUTRAL, (float) 0.1, (float) 0.5);
+							BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.levelup")), SoundSource.NEUTRAL, (float) 0.1, (float) 0.5);
 				} else {
 					_level.playLocalSound((entity.getPersistentData().getDouble("zuobiao_x")), (entity.getPersistentData().getDouble("zuobiao_y")), (entity.getPersistentData().getDouble("zuobiao_z")),
-							BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.player.levelup")), SoundSource.NEUTRAL, (float) 0.1, (float) 0.5, false);
+							BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.levelup")), SoundSource.NEUTRAL, (float) 0.1, (float) 0.5, false);
 				}
 			}
 		}

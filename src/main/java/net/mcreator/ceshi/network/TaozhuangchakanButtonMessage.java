@@ -25,7 +25,7 @@ import java.util.HashMap;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record TaozhuangchakanButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
-	public static final Type<TaozhuangchakanButtonMessage> TYPE = new Type<>(new ResourceLocation(PrimogemcraftMod.MODID, "taozhuangchakan_buttons"));
+	public static final Type<TaozhuangchakanButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(PrimogemcraftMod.MODID, "taozhuangchakan_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, TaozhuangchakanButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, TaozhuangchakanButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);

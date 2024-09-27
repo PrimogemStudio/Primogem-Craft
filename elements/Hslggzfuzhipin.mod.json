@@ -12,6 +12,9 @@
     "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
     "onExpired": {
       "name": "Hslggz_xiaoguo_sx_2"
     }

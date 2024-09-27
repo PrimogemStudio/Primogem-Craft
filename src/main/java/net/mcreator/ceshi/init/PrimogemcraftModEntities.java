@@ -6,7 +6,7 @@ package net.mcreator.ceshi.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -57,7 +57,7 @@ public class PrimogemcraftModEntities {
 	}
 
 	@SubscribeEvent
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 		QqiyuanJinGuangEntity.init(event);
 		QQyuanchuzi01Entity.init(event);
 		QQQyuanchulan01Entity.init(event);

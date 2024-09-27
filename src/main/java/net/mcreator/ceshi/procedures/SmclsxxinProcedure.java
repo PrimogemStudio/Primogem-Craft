@@ -1,6 +1,6 @@
 package net.mcreator.ceshi.procedures;
 
-import net.neoforged.neoforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -20,7 +20,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class SmclsxxinProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingAttackEvent event) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getEntity());
 		}
@@ -36,7 +36,7 @@ public class SmclsxxinProcedure {
 		if (sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.SMCLZF)) {
 			if (!world.isClientSide()) {
 				if (Math.random() < 0.5) {
-					entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("primogemcraft:chiwuwuli")))),
+					entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("primogemcraft:chiwuwuli")))),
 							(float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) * 0.03));
 				}
 			}

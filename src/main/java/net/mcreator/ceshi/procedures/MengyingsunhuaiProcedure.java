@@ -5,8 +5,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -19,11 +19,8 @@ public class MengyingsunhuaiProcedure {
 			return;
 		if (entity.getPersistentData().getDouble("mengying") == 1) {
 			if (Math.random() < 0.2) {
-				{
-					ItemStack _ist = itemstack;
-					_ist.hurtAndBreak(647, RandomSource.create(), null, () -> {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
+				if (world instanceof ServerLevel _level) {
+					itemstack.hurtAndBreak(647, _level, null, _stkprov -> {
 					});
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
@@ -34,9 +31,9 @@ public class MengyingsunhuaiProcedure {
 				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.totem.use")), SoundSource.PLAYERS, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("item.totem.use")), SoundSource.PLAYERS, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, 1, 1, false);
 				}
 			}
 		}

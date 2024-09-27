@@ -51,9 +51,9 @@ public class JingyanshutongyongsuijijingyanjiangliProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:jingyanshu00")), SoundSource.NEUTRAL, (float) 0.5, Mth.nextInt(RandomSource.create(), 1, (int) 1.2));
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:jingyanshu00")), SoundSource.NEUTRAL, (float) 0.5, Mth.nextInt(RandomSource.create(), 1, (int) 1.2));
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:jingyanshu00")), SoundSource.NEUTRAL, (float) 0.5, Mth.nextInt(RandomSource.create(), 1, (int) 1.2), false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:jingyanshu00")), SoundSource.NEUTRAL, (float) 0.5, Mth.nextInt(RandomSource.create(), 1, (int) 1.2), false);
 				}
 			}
 			{

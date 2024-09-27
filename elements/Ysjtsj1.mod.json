@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "深层元素晶体矿石",
     "specialInformation": {
       "fixedValue": []

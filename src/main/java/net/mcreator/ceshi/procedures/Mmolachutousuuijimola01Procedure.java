@@ -1,7 +1,7 @@
 package net.mcreator.ceshi.procedures;
 
 import net.neoforged.neoforge.event.level.BlockEvent;
-import net.neoforged.neoforge.common.ToolActions;
+import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -25,7 +25,7 @@ import javax.annotation.Nullable;
 public class Mmolachutousuuijimola01Procedure {
 	@SubscribeEvent
 	public static void onUseHoe(BlockEvent.BlockToolModificationEvent event) {
-		if (!event.isSimulated() && event.getToolAction() == ToolActions.HOE_TILL && event.getPlayer() != null) {
+		if (!event.isSimulated() && event.getItemAbility() == ItemAbilities.HOE_TILL && event.getPlayer() != null) {
 			execute(event, event.getContext().getLevel(), event.getContext().getClickedPos().getX(), event.getContext().getClickedPos().getY(), event.getContext().getClickedPos().getZ(), event.getPlayer());
 		}
 	}
@@ -38,7 +38,7 @@ public class Mmolachutousuuijimola01Procedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == PrimogemcraftModItems.HUANGJINDEZHEXUE.get()) {
-			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("c:nitu"))) && !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.FARMLAND)
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:nitu"))) && !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.FARMLAND)
 					&& !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.MYCELIUM)) {
 				if (Math.random() < 0.09) {
 					if (world instanceof ServerLevel _level) {

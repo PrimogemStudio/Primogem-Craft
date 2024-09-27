@@ -31,7 +31,7 @@ public class ZhuangmanlajidelajitongItem extends Item {
 	}
 
 	@Override
-	public int getUseDuration(ItemStack itemstack) {
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
 		return 30;
 	}
 

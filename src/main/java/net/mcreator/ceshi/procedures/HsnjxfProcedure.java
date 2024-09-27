@@ -22,15 +22,15 @@ public class HsnjxfProcedure {
 				entity.getPersistentData().putBoolean(NBT, NBTi);
 				if (Math.random() < gai_lv) {
 					a = item;
-					if (a.is(ItemTags.create(new ResourceLocation((TAG).toLowerCase(java.util.Locale.ENGLISH)))) && a.getDamageValue() >= 1) {
+					if (a.is(ItemTags.create(ResourceLocation.parse((TAG).toLowerCase(java.util.Locale.ENGLISH)))) && a.getDamageValue() >= 1) {
 						a.setDamageValue((int) (a.getDamageValue() - (1 + beilv)));
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal((a.getDisplayName().getString() + "\u00A7a\u00A7l\u5DF2\u4FEE\u590D!")), false);
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1);
 							} else {
-								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 1, 1, false);
 							}
 						}
 						if (Math.random() < sun_huai_gai_lv) {

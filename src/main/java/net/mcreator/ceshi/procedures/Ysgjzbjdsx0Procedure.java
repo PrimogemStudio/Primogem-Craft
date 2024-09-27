@@ -29,9 +29,9 @@ public class Ysgjzbjdsx0Procedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (itemstack.is(ItemTags.create(new ResourceLocation("pgc:yszb")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("pgc:yszb")))) {
 			if (entity instanceof ServerPlayer _player) {
-				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:jdyszb"));
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:jdyszb"));
 				if (_adv != null) {
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
@@ -41,9 +41,9 @@ public class Ysgjzbjdsx0Procedure {
 				}
 			}
 		}
-		if (itemstack.is(ItemTags.create(new ResourceLocation("pgc:ysgj")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("pgc:ysgj")))) {
 			if (entity instanceof ServerPlayer _player) {
-				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:yysgj"));
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:yysgj"));
 				if (_adv != null) {
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {

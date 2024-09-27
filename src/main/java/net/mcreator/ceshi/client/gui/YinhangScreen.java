@@ -38,7 +38,7 @@ public class YinhangScreen extends AbstractContainerScreen<YinhangMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/yinhang.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/yinhang.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -80,7 +80,7 @@ public class YinhangScreen extends AbstractContainerScreen<YinhangMenu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_dui = new ImageButton(this.leftPos + 126, this.topPos + 26, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/duia1.png"), new ResourceLocation("primogemcraft:textures/screens/duia2.png")), e -> {
+		imagebutton_dui = new ImageButton(this.leftPos + 126, this.topPos + 26, 21, 21, new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/duia1.png"), ResourceLocation.parse("primogemcraft:textures/screens/duia2.png")), e -> {
 			if (true) {
 				PacketDistributor.sendToServer(new YinhangButtonMessage(0, x, y, z));
 				YinhangButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -93,7 +93,7 @@ public class YinhangScreen extends AbstractContainerScreen<YinhangMenu> {
 		};
 		guistate.put("button:imagebutton_dui", imagebutton_dui);
 		this.addRenderableWidget(imagebutton_dui);
-		imagebutton_cuo = new ImageButton(this.leftPos + 126, this.topPos + 53, 21, 21, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/cuoa1.png"), new ResourceLocation("primogemcraft:textures/screens/cuoa2.png")), e -> {
+		imagebutton_cuo = new ImageButton(this.leftPos + 126, this.topPos + 53, 21, 21, new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/cuoa1.png"), ResourceLocation.parse("primogemcraft:textures/screens/cuoa2.png")), e -> {
 			if (true) {
 				PacketDistributor.sendToServer(new YinhangButtonMessage(1, x, y, z));
 				YinhangButtonMessage.handleButtonAction(entity, 1, x, y, z);

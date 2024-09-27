@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "primogemcraft:disuishuijingti"
+  },
+  "result": {
+    "id": "primogemcraft:disui",
+    "count": 1
+  }
+}

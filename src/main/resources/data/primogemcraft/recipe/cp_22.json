@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "primogemcraft:cangsangshizhuan"
+  },
+  "result": {
+    "id": "primogemcraft:cangsangshizhuantaijie",
+    "count": 1
+  }
+}

@@ -35,7 +35,7 @@ public class PrimogemcraftModVillagerProfessions {
 	private static final Map<String, ProfessionPoiType> POI_TYPES = new HashMap<>();
 	public static final DeferredRegister<VillagerProfession> PROFESSIONS = DeferredRegister.create(Registries.VILLAGER_PROFESSION, PrimogemcraftMod.MODID);
 	public static final DeferredHolder<VillagerProfession, VillagerProfession> CESYSXJ = registerProfession("cesysxj", () -> PrimogemcraftModBlocks.HUALIDUANZAO.get(),
-			() -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:jingyanshu00")));
+			() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:jingyanshu00")));
 
 	private static DeferredHolder<VillagerProfession, VillagerProfession> registerProfession(String name, Supplier<Block> block, Supplier<SoundEvent> soundEvent) {
 		POI_TYPES.put(name, new ProfessionPoiType(block, null));
@@ -57,7 +57,7 @@ public class PrimogemcraftModVillagerProfessions {
 					continue;
 				}
 				PoiType poiType = new PoiType(ImmutableSet.copyOf(block.getStateDefinition().getPossibleStates()), 1, 1);
-				registerHelper.register(new ResourceLocation("primogemcraft", name), poiType);
+				registerHelper.register(ResourceLocation.fromNamespaceAndPath("primogemcraft", name), poiType);
 				entry.getValue().poiType = BuiltInRegistries.POINT_OF_INTEREST_TYPE.wrapAsHolder(poiType);
 			}
 		});

@@ -22,9 +22,9 @@ public class Hh_yinbao_1Procedure {
 					"/fill ~16 ~-4 ~16 ~-16 ~5 ~-16 primogemcraft:hhzd_0 replace primogemcraft:shenmiwanou");
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.wooden_button.click_off")), SoundSource.BLOCKS, 1, 1);
+				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.wooden_button.click_off")), SoundSource.BLOCKS, 1, 1);
 			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.wooden_button.click_off")), SoundSource.BLOCKS, 1, 1, false);
+				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.wooden_button.click_off")), SoundSource.BLOCKS, 1, 1, false);
 			}
 		}
 		PrimogemcraftMod.queueServerWork(10, () -> {

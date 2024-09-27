@@ -16,13 +16,11 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
@@ -71,11 +69,8 @@ public class XxiaoguanziletoshuxingProcedure {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("\u00A75\u7CFB\u7EDF;\u00A7a\u83B7\u5F97\u5947\u7269"), false);
 					} else {
-						{
-							ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
-							_ist.hurtAndBreak(10, RandomSource.create(), null, () -> {
-								_ist.shrink(1);
-								_ist.setDamageValue(0);
+						if (world instanceof ServerLevel _level) {
+							(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).hurtAndBreak(10, _level, null, _stkprov -> {
 							});
 						}
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -84,14 +79,14 @@ public class XxiaoguanziletoshuxingProcedure {
 							_player.displayClientMessage(Component.literal("\u00A75\u7CFB\u7EDF\uFF1A\u300E\u771F\u300F\u00A7b\u94F6\u6CB3\u5927\u4E50\u900F\u00A7c\u5DF2\u635F\u574F"), false);
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 5, 1);
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 5, 1);
 							} else {
-								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 5, 1, false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:qiwusunhuai066")), SoundSource.NEUTRAL, 5, 1, false);
 							}
 						}
 					}
 				} else {
-					entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), 1000);
+					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), 1000);
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((entity.getDisplayName().getString() + "\u00A7c\u8F93\u5F97\u4E00\u584C\u7CCA\u6D82\uFF0C\u670B\u53CB")), false);
 				}

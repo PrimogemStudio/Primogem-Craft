@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "大罐子",
     "specialInformation": {
       "fixedValue": []

@@ -22,9 +22,9 @@ public class GUIyinhanggunkaiProcedure {
 			return;
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.chest.close")), SoundSource.BLOCKS, (float) 0.8, (float) 0.6);
+				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chest.close")), SoundSource.BLOCKS, (float) 0.8, (float) 0.6);
 			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.chest.close")), SoundSource.BLOCKS, (float) 0.8, (float) 0.6, false);
+				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chest.close")), SoundSource.BLOCKS, (float) 0.8, (float) 0.6, false);
 			}
 		}
 		if (entity instanceof Player _player)

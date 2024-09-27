@@ -8,6 +8,6 @@ import net.minecraft.core.BlockPos;
 
 public class Jiegouxianzhi1Procedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		return !world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, new ResourceLocation("minecraft:is_ocean"))) && !world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("river"));
+		return !world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_ocean"))) && !world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("river"));
 	}
 }

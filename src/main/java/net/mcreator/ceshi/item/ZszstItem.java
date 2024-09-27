@@ -46,9 +46,9 @@ public abstract class ZszstItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 8);
 				map.put(ArmorItem.Type.HELMET, 4);
 				map.put(ArmorItem.Type.BODY, 8);
-			}), 12, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("item.armor.equip_diamond")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.ZUISHENGSUIXIE.get()), new ItemStack(Items.DIAMOND)),
-					List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:zszst_"))), 2f, 0f);
-			registerHelper.register(new ResourceLocation("primogemcraft:zszst"), armorMaterial);
+			}), 12, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_diamond")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.ZUISHENGSUIXIE.get()), new ItemStack(Items.DIAMOND)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:zszst_"))), 2f, 0f);
+			registerHelper.register(ResourceLocation.parse("primogemcraft:zszst"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

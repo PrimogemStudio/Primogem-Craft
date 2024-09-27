@@ -2,7 +2,7 @@
 package net.mcreator.ceshi.entity;
 
 import net.neoforged.neoforge.fluids.FluidType;
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
 import net.minecraft.world.level.pathfinder.PathType;
@@ -96,17 +96,17 @@ public class XiaoheitaEntity extends PathfinderMob {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:wu_sheng"));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:wu_sheng"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:wu_sheng"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:wu_sheng"));
 	}
 
 	@Override
@@ -180,7 +180,7 @@ public class XiaoheitaEntity extends PathfinderMob {
 		return false;
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

@@ -1,7 +1,7 @@
 
 package net.mcreator.ceshi.entity;
 
-import net.neoforged.neoforge.event.entity.SpawnPlacementRegisterEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
@@ -42,7 +42,7 @@ public class BaiguangguodushengwuEntity extends Chicken {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:choukaqianxi01"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:choukaqianxi01"));
 	}
 
 	@Override
@@ -52,7 +52,7 @@ public class BaiguangguodushengwuEntity extends Chicken {
 		return retval;
 	}
 
-	public static void init(SpawnPlacementRegisterEvent event) {
+	public static void init(RegisterSpawnPlacementsEvent event) {
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

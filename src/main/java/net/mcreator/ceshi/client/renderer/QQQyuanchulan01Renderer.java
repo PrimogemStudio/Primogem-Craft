@@ -15,6 +15,6 @@ public class QQQyuanchulan01Renderer extends MobRenderer<QQQyuanchulan01Entity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(QQQyuanchulan01Entity entity) {
-		return new ResourceLocation("primogemcraft:textures/entities/languang.png");
+		return ResourceLocation.parse("primogemcraft:textures/entities/languang.png");
 	}
 }

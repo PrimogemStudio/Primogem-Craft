@@ -2,7 +2,7 @@ package net.mcreator.ceshi.procedures;
 
 import org.checkerframework.checker.units.qual.t;
 
-import net.neoforged.neoforge.event.entity.living.LivingAttackEvent;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -19,9 +19,9 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.util.RandomSource;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 
@@ -33,7 +33,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class FenlieggzsxProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingAttackEvent event) {
+	public static void onEntityAttacked(LivingIncomingDamageEvent event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getEntity());
 		}
@@ -227,44 +227,29 @@ public class FenlieggzsxProcedure {
 					final boolean _tagValue = true;
 					CustomData.update(DataComponents.CUSTOM_DATA, c3, tag -> tag.putBoolean(_tagName, _tagValue));
 				}
-				a.enchant(Enchantments.VANISHING_CURSE, 1);
-				c0.enchant(Enchantments.VANISHING_CURSE, 1);
-				c1.enchant(Enchantments.VANISHING_CURSE, 1);
-				c2.enchant(Enchantments.VANISHING_CURSE, 1);
-				c3.enchant(Enchantments.VANISHING_CURSE, 1);
-				{
-					ItemStack _ist = a;
-					_ist.hurtAndBreak((int) (a.getMaxDamage() * 0.8), RandomSource.create(), null, () -> {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
+				a.enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.VANISHING_CURSE), 1);
+				c0.enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.VANISHING_CURSE), 1);
+				c1.enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.VANISHING_CURSE), 1);
+				c2.enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.VANISHING_CURSE), 1);
+				c3.enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.VANISHING_CURSE), 1);
+				if (world instanceof ServerLevel _level) {
+					a.hurtAndBreak((int) (a.getMaxDamage() * 0.8), _level, null, _stkprov -> {
 					});
 				}
-				{
-					ItemStack _ist = c0;
-					_ist.hurtAndBreak((int) (c0.getMaxDamage() * 0.8), RandomSource.create(), null, () -> {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
+				if (world instanceof ServerLevel _level) {
+					c0.hurtAndBreak((int) (c0.getMaxDamage() * 0.8), _level, null, _stkprov -> {
 					});
 				}
-				{
-					ItemStack _ist = c1;
-					_ist.hurtAndBreak((int) (c1.getMaxDamage() * 0.8), RandomSource.create(), null, () -> {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
+				if (world instanceof ServerLevel _level) {
+					c1.hurtAndBreak((int) (c1.getMaxDamage() * 0.8), _level, null, _stkprov -> {
 					});
 				}
-				{
-					ItemStack _ist = c2;
-					_ist.hurtAndBreak((int) (c2.getMaxDamage() * 0.8), RandomSource.create(), null, () -> {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
+				if (world instanceof ServerLevel _level) {
+					c2.hurtAndBreak((int) (c2.getMaxDamage() * 0.8), _level, null, _stkprov -> {
 					});
 				}
-				{
-					ItemStack _ist = c3;
-					_ist.hurtAndBreak((int) (c3.getMaxDamage() * 0.8), RandomSource.create(), null, () -> {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
+				if (world instanceof ServerLevel _level) {
+					c3.hurtAndBreak((int) (c3.getMaxDamage() * 0.8), _level, null, _stkprov -> {
 					});
 				}
 			}

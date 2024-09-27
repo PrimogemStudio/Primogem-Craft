@@ -15,6 +15,6 @@ public class QQyuanchuzi01Renderer extends MobRenderer<QQyuanchuzi01Entity, Mode
 
 	@Override
 	public ResourceLocation getTextureLocation(QQyuanchuzi01Entity entity) {
-		return new ResourceLocation("primogemcraft:textures/entities/xiguang.png");
+		return ResourceLocation.parse("primogemcraft:textures/entities/xiguang.png");
 	}
 }

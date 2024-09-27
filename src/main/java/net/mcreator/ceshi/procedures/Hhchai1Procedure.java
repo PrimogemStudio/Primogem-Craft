@@ -16,9 +16,9 @@ public class Hhchai1Procedure {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.AIR) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:hh_chai_1")), SoundSource.PLAYERS, (float) 0.5, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:hh_chai_1")), SoundSource.PLAYERS, (float) 0.5, 1);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:hh_chai_1")), SoundSource.PLAYERS, (float) 0.5, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:hh_chai_1")), SoundSource.PLAYERS, (float) 0.5, 1, false);
 					}
 				}
 			}

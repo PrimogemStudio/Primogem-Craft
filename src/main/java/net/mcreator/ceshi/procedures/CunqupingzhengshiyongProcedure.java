@@ -59,9 +59,9 @@ public class CunqupingzhengshiyongProcedure {
 						}
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.chest.close")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.4);
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chest.close")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.4);
 							} else {
-								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.chest.close")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.4, false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chest.close")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.4, false);
 							}
 						}
 					} else {
@@ -84,9 +84,9 @@ public class CunqupingzhengshiyongProcedure {
 									+ ">\u00A78\u5B87\u5B99\u788E\u7247\uFF01\u00A77\uFF08\u7EA6\u4E3A\u539F\u5148\u7684\u00A7d<" + new java.text.DecimalFormat("##.##").format(b) + ">\u00A77\u500D!)")), false);
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.chest.close")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.4);
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chest.close")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.4);
 							} else {
-								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.chest.close")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.4, false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chest.close")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.4, false);
 							}
 						}
 					} else {
@@ -94,9 +94,9 @@ public class CunqupingzhengshiyongProcedure {
 							_player.displayClientMessage(Component.literal("\u00A7c\u4F60\u4E00\u65E0\u6240\u83B7\uFF01"), false);
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
-								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.beacon.deactivate")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.8);
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.beacon.deactivate")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.8);
 							} else {
-								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.beacon.deactivate")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.8, false);
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.beacon.deactivate")), SoundSource.NEUTRAL, (float) 0.7, (float) 0.8, false);
 							}
 						}
 					}

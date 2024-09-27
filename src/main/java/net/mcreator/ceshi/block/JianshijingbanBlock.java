@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.util.FastColor;
 import net.minecraft.core.BlockPos;
 
 public class JianshijingbanBlock extends IronBarsBlock {
@@ -17,8 +18,8 @@ public class JianshijingbanBlock extends IronBarsBlock {
 	}
 
 	@Override
-	public float[] getBeaconColorMultiplier(BlockState state, LevelReader world, BlockPos pos, BlockPos beaconPos) {
-		return new float[]{0.5568627451f, 0.831372549f, 0.9647058824f};
+	public Integer getBeaconColorMultiplier(BlockState state, LevelReader world, BlockPos pos, BlockPos beaconPos) {
+		return FastColor.ARGB32.opaque(-7416586);
 	}
 
 	@Override

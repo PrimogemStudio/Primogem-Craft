@@ -3,18 +3,20 @@ package net.mcreator.ceshi.procedures;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
+import net.minecraft.tags.EnchantmentTags;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
 
 public class HSQwwxwctsxProcedure {
@@ -24,7 +26,11 @@ public class HSQwwxwctsxProcedure {
 			return false;
 		if ((yi_fumo ? item0.isEnchanted() : !item0.isEnchanted() && item0.isEnchantable())
 				&& (!item0.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean(xianzhi_cishu) || item0.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble(xianzhi_cishu) < zui_da)) {
-			item0.applyComponents((EnchantmentHelper.enchantItem(FeatureFlagSet.of(FeatureFlags.VANILLA), RandomSource.create(), (item0.copy()), (int) dengji, bao_zang)).getComponents());
+			item0.applyComponents((EnchantmentHelper.enchantItem(world.getRandom(), (item0.copy()), (int) dengji,
+					(bao_zang)
+							? world.registryAccess().registryOrThrow(Registries.ENCHANTMENT).holders().map(reference -> (Holder<Enchantment>) reference)
+							: world.registryAccess().registryOrThrow(Registries.ENCHANTMENT).getTag(EnchantmentTags.IN_ENCHANTING_TABLE).get().stream()))
+					.getComponents());
 			if (dan_ci) {
 				{
 					final String _tagName = xianzhi_cishu;
@@ -40,9 +46,9 @@ public class HSQwwxwctsxProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 5, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 5, 1);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 5, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, 5, 1, false);
 				}
 			}
 			if (xiao_hui) {
@@ -63,11 +69,8 @@ public class HSQwwxwctsxProcedure {
 							_player.displayClientMessage(Component.literal((itemx + "\u00A7c\u5DF2\u6D88\u8017")), false);
 					}
 				} else {
-					{
-						ItemStack _ist = itemstack;
-						_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
-							_ist.shrink(1);
-							_ist.setDamageValue(0);
+					if (world instanceof ServerLevel _level) {
+						itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
 						});
 					}
 				}

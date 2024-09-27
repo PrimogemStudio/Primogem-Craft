@@ -46,9 +46,9 @@ public abstract class JlkjzsItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 9);
 				map.put(ArmorItem.Type.HELMET, 4);
 				map.put(ArmorItem.Type.BODY, 9);
-			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("item.armor.equip_diamond")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.JIANRANSUIXIE.get()), new ItemStack(Items.DIAMOND)),
-					List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:jlzs_"))), 3f, 0.1f);
-			registerHelper.register(new ResourceLocation("primogemcraft:jlkjzs"), armorMaterial);
+			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_diamond")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.JIANRANSUIXIE.get()), new ItemStack(Items.DIAMOND)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:jlzs_"))), 3f, 0.1f);
+			registerHelper.register(ResourceLocation.parse("primogemcraft:jlkjzs"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

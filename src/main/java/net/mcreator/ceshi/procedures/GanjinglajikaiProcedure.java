@@ -11,9 +11,9 @@ public class GanjinglajikaiProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.shulker_box.open")), SoundSource.BLOCKS, (float) 0.5, 2);
+				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.shulker_box.open")), SoundSource.BLOCKS, (float) 0.5, 2);
 			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.shulker_box.open")), SoundSource.BLOCKS, (float) 0.5, 2, false);
+				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.shulker_box.open")), SoundSource.BLOCKS, (float) 0.5, 2, false);
 			}
 		}
 	}

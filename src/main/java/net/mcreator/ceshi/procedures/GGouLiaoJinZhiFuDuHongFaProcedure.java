@@ -36,9 +36,9 @@ public class GGouLiaoJinZhiFuDuHongFaProcedure {
 		if (entity == null)
 			return;
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PrimogemcraftModBlocks.SANYUEQIDIAOXIANG_01.get() && Mth.nextDouble(RandomSource.create(), 1, 10) <= 1.5 && entity instanceof ServerPlayer _plr3
-				&& _plr3.level() instanceof ServerLevel && _plr3.getAdvancements().getOrStartProgress(_plr3.server.getAdvancements().get(new ResourceLocation("primogemcraft:fuduji"))).isDone()) {
+				&& _plr3.level() instanceof ServerLevel && _plr3.getAdvancements().getOrStartProgress(_plr3.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:fuduji"))).isDone()) {
 			if (entity instanceof ServerPlayer _player) {
-				AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:gou_gou_liao_jin_zhi_fu_du"));
+				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:gou_gou_liao_jin_zhi_fu_du"));
 				if (_adv != null) {
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {

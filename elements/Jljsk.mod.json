@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "坚牢金属块",
     "specialInformation": {
       "fixedValue": []

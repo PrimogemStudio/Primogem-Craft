@@ -43,17 +43,17 @@ public class Heita_shuxingProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.fire.extinguish")), SoundSource.PLAYERS, (float) 0.4, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.fire.extinguish")), SoundSource.PLAYERS, (float) 0.4, 1);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.fire.extinguish")), SoundSource.PLAYERS, (float) 0.4, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.fire.extinguish")), SoundSource.PLAYERS, (float) 0.4, 1, false);
 				}
 			}
 		} else {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.donkey.chest")), SoundSource.PLAYERS, (float) 0.4, (float) Mth.nextDouble(RandomSource.create(), 0.2, 1));
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.donkey.chest")), SoundSource.PLAYERS, (float) 0.4, (float) Mth.nextDouble(RandomSource.create(), 0.2, 1));
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("entity.donkey.chest")), SoundSource.PLAYERS, (float) 0.4, (float) Mth.nextDouble(RandomSource.create(), 0.2, 1), false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.donkey.chest")), SoundSource.PLAYERS, (float) 0.4, (float) Mth.nextDouble(RandomSource.create(), 0.2, 1), false);
 				}
 			}
 			if (sourceentity instanceof ServerPlayer _ent) {

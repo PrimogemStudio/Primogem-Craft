@@ -32,7 +32,7 @@ public class ZzsspsxProcedure {
 			return;
 		ItemStack a = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
-			if (blockstate.is(BlockTags.create(new ResourceLocation("c:ores/diamond")))) {
+			if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:ores/diamond")))) {
 				PrimogemcraftMod.queueServerWork(1, () -> {
 					Zsslpsx2Procedure.execute(world, x, y, z, entity);
 				});

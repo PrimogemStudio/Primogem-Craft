@@ -31,7 +31,7 @@ public class ZhangquanzhezhinangguiScreen extends AbstractContainerScreen<Zhangq
 		this.imageHeight = 217;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/zhangquanzhezhinanggui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/zhangquanzhezhinanggui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

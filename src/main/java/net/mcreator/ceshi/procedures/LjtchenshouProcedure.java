@@ -6,6 +6,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
+import net.minecraft.server.level.ServerLevel;
 
 public class LjtchenshouProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
@@ -14,11 +15,8 @@ public class LjtchenshouProcedure {
 		if (entity instanceof Player _plrCldCheck1 && _plrCldCheck1.getCooldowns().isOnCooldown(itemstack.getItem())) {
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 0);
-			{
-				ItemStack _ist = itemstack;
-				_ist.hurtAndBreak(Mth.nextInt(RandomSource.create(), 1, 5), RandomSource.create(), null, () -> {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak(Mth.nextInt(RandomSource.create(), 1, 5), _level, null, _stkprov -> {
 				});
 			}
 		}

@@ -12,7 +12,6 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -90,9 +89,9 @@ public class TtiaoguozhizhangshuxingProcedure {
 								} else {
 									if (world instanceof Level _level) {
 										if (!_level.isClientSide()) {
-											_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9);
+											_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9);
 										} else {
-											_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9, false);
+											_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.2, (float) 0.9, false);
 										}
 									}
 									if (entityiterator instanceof QqiyuanJinGuangEntity && entityiterator.getPersistentData().getBoolean("chouka_jiance_2")) {
@@ -121,11 +120,8 @@ public class TtiaoguozhizhangshuxingProcedure {
 									}
 									if (!entityiterator.level().isClientSide())
 										entityiterator.discard();
-									{
-										ItemStack _ist = itemstack;
-										_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
-											_ist.shrink(1);
-											_ist.setDamageValue(0);
+									if (world instanceof ServerLevel _level) {
+										itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
 										});
 									}
 								}

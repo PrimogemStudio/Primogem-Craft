@@ -39,7 +39,7 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/gu_iqiwuxuanze.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/gu_iqiwuxuanze.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -82,7 +82,7 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_xuanze0 = new ImageButton(this.leftPos + 35, this.topPos + 53, 16, 16, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/xuanze0.png"), new ResourceLocation("primogemcraft:textures/screens/xuanze1.png")),
+		imagebutton_xuanze0 = new ImageButton(this.leftPos + 35, this.topPos + 53, 16, 16, new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/xuanze0.png"), ResourceLocation.parse("primogemcraft:textures/screens/xuanze1.png")),
 				e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new GUIqiwuxuanzeButtonMessage(0, x, y, z));
@@ -96,7 +96,7 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 		};
 		guistate.put("button:imagebutton_xuanze0", imagebutton_xuanze0);
 		this.addRenderableWidget(imagebutton_xuanze0);
-		imagebutton_xuanze01 = new ImageButton(this.leftPos + 79, this.topPos + 53, 16, 16, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/xuanze0.png"), new ResourceLocation("primogemcraft:textures/screens/xuanze1.png")),
+		imagebutton_xuanze01 = new ImageButton(this.leftPos + 79, this.topPos + 53, 16, 16, new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/xuanze0.png"), ResourceLocation.parse("primogemcraft:textures/screens/xuanze1.png")),
 				e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new GUIqiwuxuanzeButtonMessage(1, x, y, z));
@@ -110,8 +110,8 @@ public class GUIqiwuxuanzeScreen extends AbstractContainerScreen<GUIqiwuxuanzeMe
 		};
 		guistate.put("button:imagebutton_xuanze01", imagebutton_xuanze01);
 		this.addRenderableWidget(imagebutton_xuanze01);
-		imagebutton_xuanze02 = new ImageButton(this.leftPos + 124, this.topPos + 53, 16, 16, new WidgetSprites(new ResourceLocation("primogemcraft:textures/screens/xuanze0.png"), new ResourceLocation("primogemcraft:textures/screens/xuanze1.png")),
-				e -> {
+		imagebutton_xuanze02 = new ImageButton(this.leftPos + 124, this.topPos + 53, 16, 16,
+				new WidgetSprites(ResourceLocation.parse("primogemcraft:textures/screens/xuanze0.png"), ResourceLocation.parse("primogemcraft:textures/screens/xuanze1.png")), e -> {
 					if (true) {
 						PacketDistributor.sendToServer(new GUIqiwuxuanzeButtonMessage(2, x, y, z));
 						GUIqiwuxuanzeButtonMessage.handleButtonAction(entity, 2, x, y, z);

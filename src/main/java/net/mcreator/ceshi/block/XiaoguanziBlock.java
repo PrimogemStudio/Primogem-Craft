@@ -40,10 +40,10 @@ public class XiaoguanziBlock extends FallingBlock {
 
 	public XiaoguanziBlock() {
 		super(BlockBehaviour.Properties.of()
-				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("primogemcraft:xiaoguanzi")), () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.step")),
-						() -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.step")), () -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.step")),
-						() -> BuiltInRegistries.SOUND_EVENT.get(new ResourceLocation("block.glass.step"))))
-				.strength(0f, 1f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
+				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:xiaoguanzi")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.glass.step")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.glass.step")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.glass.step")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.glass.step"))))
+				.strength(0f, 1f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -75,12 +75,13 @@ public class XiaoguanziBlock extends FallingBlock {
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
 		builder.add(FACING);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

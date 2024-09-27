@@ -36,7 +36,7 @@ public class GUISJfumoScreen extends AbstractContainerScreen<GUISJfumoMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/guis_jfumo.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/guis_jfumo.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -76,19 +76,19 @@ public class GUISJfumoScreen extends AbstractContainerScreen<GUISJfumoMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		if (GUIfumobaocuoProcedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("primogemcraft:textures/screens/gui_baocuo.png"), this.leftPos + 74, this.topPos + 29, 0, 0, 28, 28, 28, 28);
+			guiGraphics.blit(ResourceLocation.parse("primogemcraft:textures/screens/gui_baocuo.png"), this.leftPos + 74, this.topPos + 29, 0, 0, 28, 28, 28, 28);
 		}
 		if (GUIfumopinzhixianshi0Procedure.execute(world)) {
-			guiGraphics.blit(new ResourceLocation("primogemcraft:textures/screens/guifu_bai.png"), this.leftPos + 80, this.topPos + 20, 0, 0, 17, 8, 17, 8);
+			guiGraphics.blit(ResourceLocation.parse("primogemcraft:textures/screens/guifu_bai.png"), this.leftPos + 80, this.topPos + 20, 0, 0, 17, 8, 17, 8);
 		}
 		if (GUIfumopinzhixianshi1Procedure.execute(world)) {
-			guiGraphics.blit(new ResourceLocation("primogemcraft:textures/screens/guifu_lan.png"), this.leftPos + 80, this.topPos + 20, 0, 0, 17, 8, 17, 8);
+			guiGraphics.blit(ResourceLocation.parse("primogemcraft:textures/screens/guifu_lan.png"), this.leftPos + 80, this.topPos + 20, 0, 0, 17, 8, 17, 8);
 		}
 		if (GUIfumopinzhixianshi2Procedure.execute(world)) {
-			guiGraphics.blit(new ResourceLocation("primogemcraft:textures/screens/guifu_huang.png"), this.leftPos + 80, this.topPos + 20, 0, 0, 17, 8, 17, 8);
+			guiGraphics.blit(ResourceLocation.parse("primogemcraft:textures/screens/guifu_huang.png"), this.leftPos + 80, this.topPos + 20, 0, 0, 17, 8, 17, 8);
 		}
 		if (GUIfumopinzhixianshi3Procedure.execute(world)) {
-			guiGraphics.blit(new ResourceLocation("primogemcraft:textures/screens/guifu_rhong.png"), this.leftPos + 80, this.topPos + 20, 0, 0, 17, 8, 17, 8);
+			guiGraphics.blit(ResourceLocation.parse("primogemcraft:textures/screens/guifu_rhong.png"), this.leftPos + 80, this.topPos + 20, 0, 0, 17, 8, 17, 8);
 		}
 		RenderSystem.disableBlend();
 	}

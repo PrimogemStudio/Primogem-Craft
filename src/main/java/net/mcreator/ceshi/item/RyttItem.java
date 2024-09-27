@@ -46,9 +46,9 @@ public abstract class RyttItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 7);
 				map.put(ArmorItem.Type.HELMET, 3);
 				map.put(ArmorItem.Type.BODY, 7);
-			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("item.armor.equip_iron")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.RANYUANSUIXIE.get()), new ItemStack(Items.IRON_INGOT)),
-					List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:rytt_"))), 0f, 1f);
-			registerHelper.register(new ResourceLocation("primogemcraft:rytt"), armorMaterial);
+			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), () -> Ingredient.of(new ItemStack(PrimogemcraftModItems.RANYUANSUIXIE.get()), new ItemStack(Items.IRON_INGOT)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:rytt_"))), 0f, 1f);
+			registerHelper.register(ResourceLocation.parse("primogemcraft:rytt"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

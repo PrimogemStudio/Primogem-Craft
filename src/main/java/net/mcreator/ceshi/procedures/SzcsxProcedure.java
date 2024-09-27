@@ -7,7 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.BoneMealItem;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 public class SzcsxProcedure {
@@ -23,11 +23,8 @@ public class SzcsxProcedure {
 					_level.levelEvent(2005, _bp, 0);
 			}
 		}
-		{
-			ItemStack _ist = itemstack;
-			_ist.hurtAndBreak(1, RandomSource.create(), null, () -> {
-				_ist.shrink(1);
-				_ist.setDamageValue(0);
+		if (world instanceof ServerLevel _level) {
+			itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
 			});
 		}
 	}

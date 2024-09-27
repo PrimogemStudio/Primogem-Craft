@@ -45,7 +45,7 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 		this.imageHeight = 144;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/taozhuangchakan.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/taozhuangchakan.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

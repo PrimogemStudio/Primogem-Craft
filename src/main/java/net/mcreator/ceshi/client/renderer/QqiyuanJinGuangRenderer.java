@@ -15,6 +15,6 @@ public class QqiyuanJinGuangRenderer extends MobRenderer<QqiyuanJinGuangEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(QqiyuanJinGuangEntity entity) {
-		return new ResourceLocation("primogemcraft:textures/entities/texture.png");
+		return ResourceLocation.parse("primogemcraft:textures/entities/texture.png");
 	}
 }

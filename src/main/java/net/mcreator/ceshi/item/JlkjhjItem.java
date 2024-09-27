@@ -45,10 +45,10 @@ public abstract class JlkjhjItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 9);
 				map.put(ArmorItem.Type.HELMET, 6);
 				map.put(ArmorItem.Type.BODY, 9);
-			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, new ResourceLocation("item.armor.equip_netherite")),
-					() -> Ingredient.of(new ItemStack(PrimogemcraftModItems.ZHAPIANDINGZHENGSHI.get()), new ItemStack(PrimogemcraftModItems.JIANLAODUANPIAN.get())), List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:jlhj_"))), 1.5f,
-					0.45f);
-			registerHelper.register(new ResourceLocation("primogemcraft:jlkjhj"), armorMaterial);
+			}), 20, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_netherite")),
+					() -> Ingredient.of(new ItemStack(PrimogemcraftModItems.ZHAPIANDINGZHENGSHI.get()), new ItemStack(PrimogemcraftModItems.JIANLAODUANPIAN.get())), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:jlhj_"))),
+					1.5f, 0.45f);
+			registerHelper.register(ResourceLocation.parse("primogemcraft:jlkjhj"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

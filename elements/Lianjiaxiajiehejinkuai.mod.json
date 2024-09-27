@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "下界合金块",
     "specialInformation": {
       "fixedValue": []

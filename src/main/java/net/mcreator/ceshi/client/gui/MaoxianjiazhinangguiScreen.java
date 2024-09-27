@@ -31,7 +31,7 @@ public class MaoxianjiazhinangguiScreen extends AbstractContainerScreen<Maoxianj
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/maoxianjiazhinanggui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/maoxianjiazhinanggui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {

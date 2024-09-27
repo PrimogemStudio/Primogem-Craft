@@ -6,7 +6,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -25,7 +24,7 @@ public class Zuoshao_sxProcedure {
 			}
 		}
 		if (entity.getPersistentData().getDouble("zhuoshao") >= 40) {
-			entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.LAVA)), (float) Math.ceil((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.LAVA)), (float) Math.ceil((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
 					* ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.ZHUOSHAO) ? _livEnt.getEffect(PrimogemcraftModMobEffects.ZHUOSHAO).getAmplifier() : 0) + 1) * 0.01));
 			entity.getPersistentData().putDouble("zhuoshao", 0);
 		}

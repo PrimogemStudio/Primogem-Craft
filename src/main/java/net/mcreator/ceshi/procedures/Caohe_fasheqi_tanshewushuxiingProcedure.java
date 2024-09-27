@@ -19,8 +19,8 @@ public class Caohe_fasheqi_tanshewushuxiingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("primogemcraft:huoyuansu")))
-				|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("primogemcraft:huoyuansu")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("primogemcraft:huoyuansu")))
+				|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("primogemcraft:huoyuansu")))) {
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.explode(null, x, y, z, 4, Level.ExplosionInteraction.TNT);
 			{

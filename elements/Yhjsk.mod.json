@@ -33,6 +33,7 @@
         "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "永恒金属块",
     "specialInformation": {
       "fixedValue": []

@@ -35,9 +35,9 @@ public abstract class KkuijiaceshiItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 10);
 				map.put(ArmorItem.Type.HELMET, 4);
 				map.put(ArmorItem.Type.BODY, 10);
-			}), 20, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(new ItemStack(PrimogemcraftModBlocks.MOLADUI_02.get())), List.of(new ArmorMaterial.Layer(new ResourceLocation("primogemcraft:kuijiaceshi01"))), 4f,
-					0.2f);
-			registerHelper.register(new ResourceLocation("primogemcraft:kkuijiaceshi"), armorMaterial);
+			}), 20, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(new ItemStack(PrimogemcraftModBlocks.MOLADUI_02.get())), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:kuijiaceshi01"))),
+					4f, 0.2f);
+			registerHelper.register(ResourceLocation.parse("primogemcraft:kkuijiaceshi"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}

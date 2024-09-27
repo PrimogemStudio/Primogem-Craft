@@ -7,7 +7,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.component.DataComponents;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
@@ -25,11 +25,8 @@ public class ZsqsxProcedure {
 					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 				}
 			}
-			{
-				ItemStack _ist = itemstack;
-				_ist.hurtAndBreak((int) (itemstack.getMaxDamage() * 0.05), RandomSource.create(), null, () -> {
-					_ist.shrink(1);
-					_ist.setDamageValue(0);
+			if (world instanceof ServerLevel _level) {
+				itemstack.hurtAndBreak((int) (itemstack.getMaxDamage() * 0.05), _level, null, _stkprov -> {
 				});
 			}
 			if (entity instanceof Player _player)

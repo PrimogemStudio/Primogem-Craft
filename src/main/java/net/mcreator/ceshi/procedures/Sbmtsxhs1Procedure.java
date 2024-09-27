@@ -6,7 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class Sbmtsxhs1Procedure {
 	public static boolean execute(ItemStack itemstack) {
-		return itemstack.is(ItemTags.create(new ResourceLocation("c:curio"))) && (itemstack.is(ItemTags.create(new ResourceLocation("c:curio/normal/fusion/s")))
-				|| itemstack.is(ItemTags.create(new ResourceLocation("c:curio/normal/fusion/a"))) || itemstack.is(ItemTags.create(new ResourceLocation("c:curio/normal/fusion/b"))));
+		return itemstack.is(ItemTags.create(ResourceLocation.parse("c:curio"))) && (itemstack.is(ItemTags.create(ResourceLocation.parse("c:curio/normal/fusion/s"))) || itemstack.is(ItemTags.create(ResourceLocation.parse("c:curio/normal/fusion/a")))
+				|| itemstack.is(ItemTags.create(ResourceLocation.parse("c:curio/normal/fusion/b"))));
 	}
 }

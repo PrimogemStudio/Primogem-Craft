@@ -44,9 +44,9 @@ public class HuiguiProcedure {
 			entity.getPersistentData().putDouble("mengying", 1);
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(PrimogemcraftModMobEffects.GUOQU);
-			if (!(entity instanceof ServerPlayer _plr4 && _plr4.level() instanceof ServerLevel && _plr4.getAdvancements().getOrStartProgress(_plr4.server.getAdvancements().get(new ResourceLocation("primogemcraft:sierfusheng"))).isDone())) {
+			if (!(entity instanceof ServerPlayer _plr4 && _plr4.level() instanceof ServerLevel && _plr4.getAdvancements().getOrStartProgress(_plr4.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:sierfusheng"))).isDone())) {
 				if (entity instanceof ServerPlayer _player) {
-					AdvancementHolder _adv = _player.server.getAdvancements().get(new ResourceLocation("primogemcraft:sierfusheng"));
+					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:sierfusheng"));
 					if (_adv != null) {
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 						if (!_ap.isDone()) {

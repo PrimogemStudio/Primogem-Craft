@@ -31,7 +31,7 @@ public class MolalajitongScreen extends AbstractContainerScreen<MolalajitongMenu
 		this.imageHeight = 217;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("primogemcraft:textures/screens/molalajitong.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("primogemcraft:textures/screens/molalajitong.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
