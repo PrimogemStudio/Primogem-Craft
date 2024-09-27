@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "tag": "minecraft:base_stone_overworld"
+      "tag": "c:stone"
     },
     "b": {
       "item": "primogemcraft:disuikuai_1"

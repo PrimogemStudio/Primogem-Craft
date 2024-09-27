@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:minecraft:base_stone_overworld"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:minecraft:base_stone_overworld"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:minecraft:base_stone_overworld"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:minecraft:base_stone_overworld"
+        "value": "TAG:c:stone"
       },
       {
         "value": "CUSTOM:Disuikuai1"
       },
       {
-        "value": "TAG:minecraft:base_stone_overworld"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:minecraft:base_stone_overworld"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:minecraft:base_stone_overworld"
+        "value": "TAG:c:stone"
       },
       {
-        "value": "TAG:minecraft:base_stone_overworld"
+        "value": "TAG:c:stone"
       }
     ],
     "recipeReturnStack": {
