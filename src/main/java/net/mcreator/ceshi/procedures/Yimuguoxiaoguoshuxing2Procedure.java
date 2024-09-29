@@ -43,9 +43,9 @@ public class Yimuguoxiaoguoshuxing2Procedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.place")), SoundSource.NEUTRAL, (float) 0.2, 20);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.place")), SoundSource.PLAYERS, (float) 0.2, 20);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.place")), SoundSource.NEUTRAL, (float) 0.2, 20, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.place")), SoundSource.PLAYERS, (float) 0.2, 20, false);
 				}
 			}
 			entity.getPersistentData().putDouble("ymgs_xz", (entity.getPersistentData().getDouble("ymgs_xz") + 1));
