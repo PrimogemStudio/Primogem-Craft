@@ -25,6 +25,7 @@ public class YimuguoshisxhsProcedure {
 		if (entity.getPersistentData().getBoolean("yijieguoshi_kaiqi")) {
 			if (sunhuai) {
 				if (itemstack.getDamageValue() == itemstack.getMaxDamage() - 1) {
+					Diaoyongqiwu66Procedure.execute(world, x, y, z);
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal((itemstack.getDisplayName().getString() + "\u00A7c\u5DF2\u635F\u574F\uFF01")), false);
 					itemstack.shrink(1);
