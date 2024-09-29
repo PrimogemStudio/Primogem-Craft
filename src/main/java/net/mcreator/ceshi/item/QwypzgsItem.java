@@ -12,7 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.ceshi.procedures.Yiyijieguoshi_shuxingProcedure;
+import net.mcreator.ceshi.procedures.XegssxProcedure;
 
 import java.util.List;
 
@@ -36,6 +36,6 @@ public class QwypzgsItem extends Item {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		Yiyijieguoshi_shuxingProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		XegssxProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 	}
 }

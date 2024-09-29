@@ -42,7 +42,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onItemInInventoryTick": {
-      "name": "Yiyijieguoshi_shuxing"
+      "name": "Xxggsx"
     },
     "enableRanged": false,
     "shootConstantly": false,
