@@ -30800,24 +30800,6 @@
       "~CUSTOM:Jiuchanzhiyuankuai",
       "~CUSTOM:Yuanshikuangshi"
     ],
-    "ITEMS:c:curio/normal/b": [
-      "CUSTOM:Wawanxiangwuchangtou",
-      "CUSTOM:Cebuzhunxia",
-      "CUSTOM:Pengkeluodejingshen",
-      "CUSTOM:Yiyimuguoshi",
-      "CUSTOM:Wanshinang",
-      "CUSTOM:Qwkwzj",
-      "CUSTOM:Qwtldhy",
-      "CUSTOM:Qwhdlz",
-      "CUSTOM:Jlbj",
-      "CUSTOM:Qwybtzdypj",
-      "CUSTOM:Qwxyzq",
-      "CUSTOM:Qwxbzsq",
-      "CUSTOM:Xiangdanganlao",
-      "CUSTOM:Qiwuchongwang",
-      "CUSTOM:Qwlbtdgcl",
-      "CUSTOM:Qwsmcl"
-    ],
     "BLOCKS:minecraft:beacon_base_blocks": [
       "CUSTOM:Shengzhangbifeidakuai",
       "CUSTOM:Jianlaohuangyukuai",
@@ -30840,6 +30822,24 @@
       "CUSTOM:Ryjsk",
       "CUSTOM:Lajsk",
       "CUSTOM:Jdyk"
+    ],
+    "ITEMS:c:curio/normal/b": [
+      "CUSTOM:Wawanxiangwuchangtou",
+      "CUSTOM:Cebuzhunxia",
+      "CUSTOM:Pengkeluodejingshen",
+      "CUSTOM:Yiyimuguoshi",
+      "CUSTOM:Wanshinang",
+      "CUSTOM:Qwkwzj",
+      "CUSTOM:Qwtldhy",
+      "CUSTOM:Qwhdlz",
+      "CUSTOM:Jlbj",
+      "CUSTOM:Qwybtzdypj",
+      "CUSTOM:Qwxyzq",
+      "CUSTOM:Qwxbzsq",
+      "CUSTOM:Xiangdanganlao",
+      "CUSTOM:Qiwuchongwang",
+      "CUSTOM:Qwlbtdgcl",
+      "CUSTOM:Qwsmcl"
     ],
     "ITEMS:c:curio/normal/a": [
       "CUSTOM:Yiyinhedaletou",
@@ -31243,6 +31243,13 @@
       "CUSTOM:Qwsmcl",
       "CUSTOM:Shenmiwanou"
     ],
+    "ITEMS:pgc:lihe_1": [
+      "CUSTOM:Gongsideguguzhong",
+      "CUSTOM:Qiwuheisenlinggz",
+      "CUSTOM:QwggzfenlieA",
+      "CUSTOM:Ydggz",
+      "CUSTOM:Shenmiwanou"
+    ],
     "ITEMS:genshincraft:dendro_infusion": [
       "CUSTOM:Sztj",
       "CUSTOM:Szzsj",
@@ -31253,12 +31260,12 @@
       "CUSTOM:Szc",
       "CUSTOM:Zfg"
     ],
-    "ITEMS:pgc:lihe_1": [
-      "CUSTOM:Gongsideguguzhong",
-      "CUSTOM:Qiwuheisenlinggz",
-      "CUSTOM:QwggzfenlieA",
-      "CUSTOM:Ydggz",
-      "CUSTOM:Shenmiwanou"
+    "ITEMS:pgc:prayer_core": [
+      "TAG:pgc:prayer_core_x1",
+      "TAG:pgc:prayer_core_x10"
+    ],
+    "ITEMS:pgc:token_mending": [
+      "TAG:c:curio"
     ],
     "ITEMS:genshincraft:cryo_infusion": [
       "CUSTOM:Axtj",
@@ -31269,13 +31276,6 @@
       "CUSTOM:Axf",
       "CUSTOM:Axq",
       "CUSTOM:Axc"
-    ],
-    "ITEMS:pgc:token_mending": [
-      "TAG:c:curio"
-    ],
-    "ITEMS:pgc:prayer_core": [
-      "TAG:pgc:prayer_core_x1",
-      "TAG:pgc:prayer_core_x10"
     ],
     "BLOCKS:minecraft:fences": [
       "CUSTOM:Yishijiemuzhalan",
@@ -31395,6 +31395,15 @@
       "CUSTOM:Ruzst.legs",
       "CUSTOM:Axzst.legs"
     ],
+    "ITEMS:c:zuan_3": [
+      "CUSTOM:Zizaizuantao.boots",
+      "CUSTOM:Jlkjzs.boots",
+      "CUSTOM:Zszst.boots",
+      "CUSTOM:Szzskj.boots",
+      "CUSTOM:Djzst.boots",
+      "CUSTOM:Ruzst.boots",
+      "CUSTOM:Axzst.boots"
+    ],
     "ITEMS:minecraft:piglin_loved": [
       "CUSTOM:Jinzhimola",
       "CUSTOM:Molakuai01",
@@ -31411,15 +31420,6 @@
       "CUSTOM:Xiaodaimola",
       "CUSTOM:Wmoladai",
       "CUSTOM:Mmolapeiziwupin"
-    ],
-    "ITEMS:c:zuan_3": [
-      "CUSTOM:Zizaizuantao.boots",
-      "CUSTOM:Jlkjzs.boots",
-      "CUSTOM:Zszst.boots",
-      "CUSTOM:Szzskj.boots",
-      "CUSTOM:Djzst.boots",
-      "CUSTOM:Ruzst.boots",
-      "CUSTOM:Axzst.boots"
     ],
     "ITEMS:c:curio/negative": [
       "TAG:c:curio/clock",
@@ -31490,9 +31490,6 @@
       "CUSTOM:Wuqie5",
       "CUSTOM:Tiaoguozhang"
     ],
-    "BLOCKS:minecraft:dirt": [
-      "CUSTOM:Shengzhangkuangshi"
-    ],
     "ITEMS:c:curio/other/ealing_wax": [
       "CUSTOM:Hqfeng",
       "CUSTOM:Hqyan",
@@ -31501,6 +31498,9 @@
       "CUSTOM:Hqshui",
       "CUSTOM:Hqhuo",
       "CUSTOM:Hqbing"
+    ],
+    "BLOCKS:minecraft:dirt": [
+      "CUSTOM:Shengzhangkuangshi"
     ],
     "ITEMS:c:tie_1": [
       "CUSTOM:Zizaitiejia.body",
@@ -31559,6 +31559,9 @@
       "CUSTOM:Rytt.boots",
       "CUSTOM:Axtt.boots"
     ],
+    "ITEMS:c:curio/normal/fusion/s": [
+      "CUSTOM:Qwzjxxmx"
+    ],
     "ITEMS:c:yszsj": [
       "CUSTOM:Zizaizuanshijian",
       "CUSTOM:Jljzs",
@@ -31567,9 +31570,6 @@
       "CUSTOM:Ddjzsj",
       "CUSTOM:Ryzsj",
       "CUSTOM:Axzsj"
-    ],
-    "ITEMS:c:curio/normal/fusion/s": [
-      "CUSTOM:Qwzjxxmx"
     ],
     "ITEMS:c:ystj": [
       "CUSTOM:Zizaitiejian",
@@ -32084,13 +32084,13 @@
       "~CUSTOM:Fumoyuzhezn",
       "~CUSTOM:Ceshifumo01"
     ],
+    "ENCHANTMENTS:minecraft:treasure": [
+      "~CUSTOM:Fumoyuzhezn"
+    ],
     "ITEMS:pgc:dzmb_5": [
       "CUSTOM:Mzsj",
       "CUSTOM:Mzsj2",
       "CUSTOM:Mzsj3"
-    ],
-    "ENCHANTMENTS:minecraft:treasure": [
-      "~CUSTOM:Fumoyuzhezn"
     ],
     "ITEMS:c:ingots": [
       "CUSTOM:Zhongkouweitieding",
@@ -32145,20 +32145,22 @@
       "CUSTOM:Ryzssj",
       "CUSTOM:Axzssj"
     ],
-    "ITEMS:mod:caochu": [
-      "CUSTOM:Shengzhangchu01",
-      "CUSTOM:Shengzhangchu2",
-      "CUSTOM:Shengzhangchu03",
-      "CUSTOM:Shengzhangchu04"
-    ],
-    "ITEMS:pgc:dzmb_1": [
-      "CUSTOM:Shengjizizaitie",
-      "CUSTOM:Shengjijltiewp",
-      "CUSTOM:Sjzst",
-      "CUSTOM:Szsjtie",
-      "CUSTOM:Djtsj",
-      "CUSTOM:Rytsj",
-      "CUSTOM:Axtsj"
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Ysjtsj1",
+      "~CUSTOM:Ysjtsj0",
+      "~CUSTOM:Jdyk",
+      "~CUSTOM:Shenbanjianlaohuangyukuangshi",
+      "~CUSTOM:Disuikuai1",
+      "~CUSTOM:Manyuejinshukuangshi",
+      "~CUSTOM:Aixubingyukuangshi",
+      "~CUSTOM:Dijingqingjinkuai",
+      "~CUSTOM:Dijingqinjingkuangshi",
+      "~CUSTOM:Shengzhangkuangshi",
+      "~CUSTOM:Zuishengkuangshi",
+      "~CUSTOM:Jianlaokuangshi",
+      "~CUSTOM:Ziyousongshikuai",
+      "~CUSTOM:Ziyousongshikuangshi",
+      "~CUSTOM:Yuanshikuangshi"
     ],
     "ITEMS:c:armors/leggings": [
       "CUSTOM:Kkuijiaceshi.legs",
@@ -32184,22 +32186,20 @@
       "CUSTOM:Axzst.legs",
       "CUSTOM:Axhjt.legs"
     ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:Ysjtsj1",
-      "~CUSTOM:Ysjtsj0",
-      "~CUSTOM:Jdyk",
-      "~CUSTOM:Shenbanjianlaohuangyukuangshi",
-      "~CUSTOM:Disuikuai1",
-      "~CUSTOM:Manyuejinshukuangshi",
-      "~CUSTOM:Aixubingyukuangshi",
-      "~CUSTOM:Dijingqingjinkuai",
-      "~CUSTOM:Dijingqinjingkuangshi",
-      "~CUSTOM:Shengzhangkuangshi",
-      "~CUSTOM:Zuishengkuangshi",
-      "~CUSTOM:Jianlaokuangshi",
-      "~CUSTOM:Ziyousongshikuai",
-      "~CUSTOM:Ziyousongshikuangshi",
-      "~CUSTOM:Yuanshikuangshi"
+    "ITEMS:mod:caochu": [
+      "CUSTOM:Shengzhangchu01",
+      "CUSTOM:Shengzhangchu2",
+      "CUSTOM:Shengzhangchu03",
+      "CUSTOM:Shengzhangchu04"
+    ],
+    "ITEMS:pgc:dzmb_1": [
+      "CUSTOM:Shengjizizaitie",
+      "CUSTOM:Shengjijltiewp",
+      "CUSTOM:Sjzst",
+      "CUSTOM:Szsjtie",
+      "CUSTOM:Djtsj",
+      "CUSTOM:Rytsj",
+      "CUSTOM:Axtsj"
     ],
     "ITEMS:minecraft:beacon_payment_items": [
       "CUSTOM:Yuanshi",
