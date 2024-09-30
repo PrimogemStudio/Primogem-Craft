@@ -30,7 +30,7 @@ public class QwwcnItem extends Item {
 		list.add(Component.literal("\u00A75\u7F50\u5B50\u6709\u6982\u7387\u6389\u843D\u866B\u7F51"));
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A79\u5BC4\u751FII\uFF1A"));
-		list.add(Component.literal("\u00A79 +100%\u57FA\u7840\u653B\u51FB\u529B"));
+		list.add(Component.literal("\u00A79 +100%\u989D\u5916\u57FA\u7840\u653B\u51FB\u529B"));
 		list.add(Component.literal("\u00A7c\u51FB\u6740\u751F\u7269\u540E\uFF1A"));
 		list.add(Component.literal("\u00A7c -40%\u5F53\u524D\u751F\u547D\u503C"));
 	}
