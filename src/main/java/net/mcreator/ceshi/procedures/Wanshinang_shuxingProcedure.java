@@ -12,7 +12,7 @@ public class Wanshinang_shuxingProcedure {
 		if (!world.isClientSide()) {
 			if (entity.getPersistentData().getBoolean("guan_zi_po_huai")) {
 				entity.getPersistentData().putBoolean("guan_zi_po_huai", false);
-				HSqwwsnProcedure.execute(world, x, y, z, entity, ItemStack.EMPTY, itemstack, false, true, 1, "loot spawn ~ ~ ~ loot primogemcraft:blocks/daguanzi", itemstack.getDisplayName().getString(),
+				HSqwwsnProcedure.execute(world, x, y, z, entity, ItemStack.EMPTY, itemstack, false, true, 1, 1, "loot spawn ~ ~ ~ loot primogemcraft:blocks/daguanzi", itemstack.getDisplayName().getString(),
 						"loot spawn ~ ~ ~ loot primogemcraft:blocks/xiaoguanzi");
 			}
 		}

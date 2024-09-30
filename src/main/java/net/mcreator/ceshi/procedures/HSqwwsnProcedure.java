@@ -18,7 +18,7 @@ import net.minecraft.commands.CommandSource;
 import net.minecraft.client.Minecraft;
 
 public class HSqwwsnProcedure {
-	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack itemstack, boolean e_wai, boolean tong_zhi, double shu, String da, String items, String xiao) {
+	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, ItemStack itemstack, boolean e_wai, boolean tong_zhi, double gai_lv, double shu, String da, String items, String xiao) {
 		if (entity == null || da == null || items == null || xiao == null)
 			return false;
 		String a = "";
@@ -51,10 +51,12 @@ public class HSqwwsnProcedure {
 										new Vec3((entity.getPersistentData().getDouble("guan_zi_x")), (entity.getPersistentData().getDouble("guan_zi_y")), (entity.getPersistentData().getDouble("guan_zi_z"))), Vec2.ZERO, _level, 4, "",
 										Component.literal(""), _level.getServer(), null).withSuppressedOutput(), a);
 					if (e_wai) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getPersistentData().getDouble("guan_zi_x")), (entity.getPersistentData().getDouble("guan_zi_y")), (entity.getPersistentData().getDouble("guan_zi_z")), item);
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
+						if (Math.random() < gai_lv) {
+							if (world instanceof ServerLevel _level) {
+								ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getPersistentData().getDouble("guan_zi_x")), (entity.getPersistentData().getDouble("guan_zi_y")), (entity.getPersistentData().getDouble("guan_zi_z")), item);
+								entityToSpawn.setPickUpDelay(10);
+								_level.addFreshEntity(entityToSpawn);
+							}
 						}
 					}
 				}
