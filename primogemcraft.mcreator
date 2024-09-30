@@ -30549,6 +30549,69 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qwwcn",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwcn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwwcnItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwwcn.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwwcnsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwcnsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwwcnsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wcnpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wcnpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/wcnpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -32576,6 +32639,7 @@
       "CUSTOM:Axhjt.boots"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwwcn",
       "~CUSTOM:Qwzcgs",
       "~CUSTOM:Qwkwgl",
       "~CUSTOM:Qwwszj",
@@ -32926,7 +32990,8 @@
       "Qwwszj",
       "Qwkwgl",
       "Qwkwzt",
-      "Qwzcgs"
+      "Qwzcgs",
+      "Qwwcn"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -33686,6 +33751,7 @@
       "item.primogemcraft.jlkjhj_leggings": "§6『Prithiva Topaz』 §eNetherite Leggings",
       "effect.primogemcraft.jisheng": "寄生",
       "gui.primogemcraft.taozhuangchakan.label_feng_01": "风",
+      "item.primogemcraft.qwwcn": "§5§l『奇物』§4万虫囊",
       "block.primogemcraft.dijingqingjinkuai": "§1Varunada Lazurite block",
       "gui.primogemcraft.cunzheshezhi.button_10": "1",
       "gui.primogemcraft.cunzheshezhi.button_11": "1",
@@ -34732,6 +34798,7 @@
       "item.primogemcraft.jlkjhj_leggings": "§6『Prithiva Topaz』 §eNetherite Leggings",
       "effect.primogemcraft.jisheng": "Leeched",
       "gui.primogemcraft.taozhuangchakan.label_feng_01": "风",
+      "item.primogemcraft.qwwcn": "§5§l『奇物』§4万虫囊",
       "block.primogemcraft.dijingqingjinkuai": "§1Varunada Lazurite block",
       "gui.primogemcraft.cunzheshezhi.button_10": "1",
       "gui.primogemcraft.cunzheshezhi.button_11": "1",
@@ -35773,6 +35840,7 @@
       "item.primogemcraft.jlkjhj_leggings": "§6『坚牢黄玉』 §e下界合金护腿",
       "effect.primogemcraft.jisheng": "寄生",
       "gui.primogemcraft.taozhuangchakan.label_feng_01": "风",
+      "item.primogemcraft.qwwcn": "§5§l『奇物』§4万虫囊",
       "block.primogemcraft.dijingqingjinkuai": "§1涤净青金 块",
       "gui.primogemcraft.cunzheshezhi.button_10": "1",
       "gui.primogemcraft.cunzheshezhi.button_11": "1",
