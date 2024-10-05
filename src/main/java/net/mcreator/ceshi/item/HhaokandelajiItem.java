@@ -10,7 +10,10 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.HhaokanlajishuxingProcedure;
@@ -32,6 +35,13 @@ public class HhaokandelajiItem extends Item {
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A75\u5F53\u98DF\u7528\u540E\uFF1A"));
 		list.add(Component.literal("\u00A79\u89E3\u9664\u00A7c\u4E50\u900F\u7684\u60E9\u7F5A\u00A79\u6548\u679C"));
+	}
+
+	@Override
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		entity.startUsingItem(hand);
+		return ar;
 	}
 
 	@Override

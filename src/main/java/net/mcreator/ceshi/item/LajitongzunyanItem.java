@@ -10,7 +10,10 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.LajizunyanProcedure;
@@ -30,6 +33,13 @@ public class LajitongzunyanItem extends Item {
 		list.add(Component.literal("\u00A7"));
 		list.add(Component.literal("\u00A75\u5F53\u98DF\u7528\u540E\uFF1A"));
 		list.add(Component.literal("\u00A79\u6297\u6027\u63D0\u5347II\uFF083:00\uFF09"));
+	}
+
+	@Override
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		entity.startUsingItem(hand);
+		return ar;
 	}
 
 	@Override

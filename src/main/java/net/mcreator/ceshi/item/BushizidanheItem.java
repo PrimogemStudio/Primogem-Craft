@@ -45,6 +45,7 @@ public class BushizidanheItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		entity.startUsingItem(hand);
 		BushizidanheDangYouJianDianJiKongQiShiShiTiDeWeiZhiProcedure.execute(entity, ar.getObject());
 		return ar;
 	}

@@ -52,6 +52,8 @@ public class PrimogemcraftModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<XiaoheitaEntity>> XIAOHEITA = register("xiaoheita",
 			EntityType.Builder.<XiaoheitaEntity>of(XiaoheitaEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 
+	// Start of user code block custom entities
+	// End of user code block custom entities
 	private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
 	}

@@ -11,8 +11,11 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.XixiangyuzhiyuanchoukaProcedure;
@@ -38,6 +41,13 @@ public class XixiangyuzhiyuanItem extends Item {
 		list.add(Component.literal("\u00A77\u76F8\u9047\u4E4B\u7F18\u4E0D\u53EF\u589E\u5F3A\uFF01"));
 		list.add(Component.literal("\u00A7c\u4F7F\u7528\u8005\u5FC5\u987B\u5728\u9644\u8FD1"));
 		list.add(Component.literal("\u00A7510%\u00A77\u3001\u00A761%"));
+	}
+
+	@Override
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		entity.startUsingItem(hand);
+		return ar;
 	}
 
 	@Override
