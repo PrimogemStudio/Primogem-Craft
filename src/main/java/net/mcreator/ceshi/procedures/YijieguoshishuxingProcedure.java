@@ -44,30 +44,32 @@ public class YijieguoshishuxingProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.QWYMGS)) {
-			if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.TOTEM_OF_UNDYING
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Items.TOTEM_OF_UNDYING)) {
-				if (!entity.getPersistentData().getBoolean("yijieguo_a")) {
-					if (event instanceof ICancellableEvent _cancellable) {
-						_cancellable.setCanceled(true);
-					}
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"/particle primogemcraft:moyin ~ ~1 ~ 0 0 0 1 150 normal");
-					if (entity instanceof LivingEntity _entity)
-						_entity.setHealth(1);
-					entity.getPersistentData().putBoolean("yijieguoshi_kaiqi", true);
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1, false);
+		if (!world.isClientSide()) {
+			if (entity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.QWYMGS)) {
+				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.TOTEM_OF_UNDYING
+						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Items.TOTEM_OF_UNDYING)) {
+					if (!entity.getPersistentData().getBoolean("yijieguo_a")) {
+						if (event instanceof ICancellableEvent _cancellable) {
+							_cancellable.setCanceled(true);
 						}
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"/particle primogemcraft:moyin ~ ~1 ~ 0 0 0 1 150 normal");
+						if (entity instanceof LivingEntity _entity)
+							_entity.setHealth(1);
+						entity.getPersistentData().putBoolean("yijieguoshi_kaiqi", true);
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.5, 1, false);
+							}
+						}
+						entity.getPersistentData().putBoolean("yijieguo_a", true);
+						PrimogemcraftMod.queueServerWork(2400, () -> {
+							entity.getPersistentData().putBoolean("yijieguo_a", false);
+						});
 					}
-					entity.getPersistentData().putBoolean("yijieguo_a", true);
-					PrimogemcraftMod.queueServerWork(2400, () -> {
-						entity.getPersistentData().putBoolean("yijieguo_a", false);
-					});
 				}
 			}
 		}
