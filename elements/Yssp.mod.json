@@ -122,6 +122,22 @@
             "value": 8.0
           }
         ]
+      },
+      {
+        "renderType": 0,
+        "texture": "yssp_zd",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:shuliang",
+              "type": "number"
+            },
+            "value": 9.0
+          }
+        ]
       }
     ],
     "name": "§b原石碎片",
@@ -131,7 +147,7 @@
         "value": "CUSTOM:Zhenghuo"
       }
     ],
-    "stackSize": 8,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 32,
     "toolType": 1.0,

@@ -12,7 +12,7 @@ import net.minecraft.world.InteractionHand;
 
 public class YsspItem extends Item {
 	public YsspItem() {
-		super(new Item.Properties().stacksTo(8).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationModifier(0.2f).alwaysEdible().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationModifier(0.2f).alwaysEdible().build()));
 	}
 
 	@Override

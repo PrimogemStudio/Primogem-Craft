@@ -26703,6 +26703,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/primogemcraft/models/item/yssp_5.json",
+          "src/main/resources/assets/primogemcraft/models/item/yssp_7.json",
           "src/main/java/net/mcreator/ceshi/item/YsspItem.java",
           "src/main/resources/assets/primogemcraft/models/item/yssp_4.json",
           "src/main/resources/assets/primogemcraft/models/item/yssp_0.json",

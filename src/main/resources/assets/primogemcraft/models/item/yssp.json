@@ -45,6 +45,12 @@
         "primogemcraft:yssp_shuliang": 8
       },
       "model": "primogemcraft:item/yssp_6"
+    },
+    {
+      "predicate": {
+        "primogemcraft:yssp_shuliang": 9
+      },
+      "model": "primogemcraft:item/yssp_7"
     }
   ]
 }
