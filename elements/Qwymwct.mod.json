@@ -1,0 +1,63 @@
+{
+  "_fv": 69,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "qw_ymwct",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "§5§l『奇物』§e丰饶果骰",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§e与万象无常骰效果一致，但",
+        "§e必定为副手物品提供§6§l建木附着V§r§e附魔"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "Qwymwctsx"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

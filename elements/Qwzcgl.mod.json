@@ -1,0 +1,66 @@
+{
+  "_fv": 69,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "qw_zcgl",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "§5§l『奇物』§c蛀虫干酪",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 32,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7拾取经验球时移除自身的寄生效果",
+        "§7§l食用后赋予 寄生II，持续60s"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "Zcglsx"
+    },
+    "onFinishUsingItem": {
+      "name": "Zcglsx0"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
+  }
+}
