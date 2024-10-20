@@ -30665,6 +30665,70 @@
           "src/main/resources/data/primogemcraft/recipe/thhjpf_1.json"
         ]
       }
+    },
+    {
+      "name": "Qwwsx",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwwsxItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwwsx.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwwsxsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwsxsx",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwwsxsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwwsxpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwsxpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/qwwsxpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -32695,6 +32759,7 @@
       "CUSTOM:Axhjt.boots"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwwsx",
       "~CUSTOM:Qwwsgl",
       "~CUSTOM:Qwwcn",
       "~CUSTOM:Qwzcgs",
@@ -33050,7 +33115,8 @@
       "Qwkwzt",
       "Qwzcgs",
       "Qwwcn",
-      "Qwwsgl"
+      "Qwwsgl",
+      "Qwwsx"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -34100,6 +34166,7 @@
       "advancements.huhuangjinjindu_01.title": "『黄金』的哲学",
       "advancements.mmolachanjindu.descr": "富裕",
       "gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian": "§c该物品不满足附魔条件！",
+      "item.primogemcraft.qwwsx": "§5§l『奇物』§f万识匣",
       "item.primogemcraft.axhjsj": "§e『下界合金升级』§b哀叙冰玉",
       "item.primogemcraft.ysrzspsx": "元素溶珠 粉尘",
       "advancements.mmolajianjindu.title": "摩拉剑",
@@ -35149,6 +35216,7 @@
       "advancements.huhuangjinjindu_01.title": "Philosophies of 『Gold』",
       "advancements.mmolachanjindu.descr": "Wealthy",
       "gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian": "§c该物品不满足附魔条件！",
+      "item.primogemcraft.qwwsx": "§5§l『奇物』§f万识匣",
       "item.primogemcraft.axhjsj": "§e『Netherite Upgrade』§bShivada Jade",
       "item.primogemcraft.ysrzspsx": "元素溶珠 粉尘",
       "advancements.mmolajianjindu.title": "mora Sword",
@@ -36192,6 +36260,7 @@
       "advancements.huhuangjinjindu_01.title": "§6『黄金』的哲学",
       "advancements.mmolachanjindu.descr": "富裕",
       "gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian": "§c该物品不满足附魔条件！",
+      "item.primogemcraft.qwwsx": "§5§l『奇物』§f万识匣",
       "item.primogemcraft.axhjsj": "§e『下界合金升级』§b哀叙冰玉",
       "item.primogemcraft.ysrzspsx": "元素溶珠 粉尘",
       "advancements.mmolajianjindu.title": "摩拉剑",
