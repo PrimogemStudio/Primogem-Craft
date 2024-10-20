@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "enchantment",
+  "definition": {
+    "name": "开罐器",
+    "supportedSlots": "mainhand",
+    "weight": 1,
+    "anvilCost": 5,
+    "maxLevel": 5,
+    "damageModifier": 0,
+    "incompatibleEnchantments": [],
+    "supportedItems": [
+      {
+        "value": "TAG:c:tools"
+      }
+    ],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "canGenerateInLootTables": false,
+    "canVillagerTrade": false
+  }
+}
