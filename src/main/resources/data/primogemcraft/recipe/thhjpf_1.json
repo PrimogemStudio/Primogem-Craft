@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:qwhcj"
+  },
+  "base": {
+    "item": "primogemcraft:qwthhjiii"
+  },
+  "addition": {
+    "item": "primogemcraft:qwthhjiii"
+  },
+  "result": {
+    "id": "primogemcraft:qwlhs"
+  }
+}

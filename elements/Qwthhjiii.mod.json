@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "qw_thhj_i",
+    "texture": "qw_thhj_iii",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§5§l『奇物』§f天彗合金",
-    "rarity": "COMMON",
+    "name": "§5§l『奇物』§b天彗合金 III 型",
+    "rarity": "UNCOMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:Zhenghuo"

@@ -30628,6 +30628,43 @@
           "src/main/resources/data/primogemcraft/recipe/wsglpf.json"
         ]
       }
+    },
+    {
+      "name": "Qwthhjiii",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwthhjiii",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwthhjiii.json",
+          "src/main/java/net/mcreator/ceshi/item/QwthhjiiiItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Thhjpf0",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thhjpf_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/thhjpf_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Thhjpf1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thhjpf_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/thhjpf_1.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31040,7 +31077,8 @@
       "CUSTOM:Qwkwgl",
       "CUSTOM:Qwkwzt",
       "CUSTOM:Qwzcgs",
-      "CUSTOM:Qwwcn"
+      "CUSTOM:Qwwcn",
+      "CUSTOM:Qwwsgl"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Ysjtsj1",
@@ -31293,7 +31331,8 @@
       "CUSTOM:Axhjt.boots"
     ],
     "ITEMS:c:curio/tianhuihejin": [
-      "CUSTOM:Qwthhj"
+      "CUSTOM:Qwthhj",
+      "CUSTOM:Qwthhjiii"
     ],
     "ITEMS:c:yshjj": [
       "CUSTOM:Zizaihejinjian",
@@ -32989,6 +33028,8 @@
       "Qwlha",
       "Qwlhb",
       "Qwlhcc",
+      "Qwthhj",
+      "Qwthhjiii",
       "Qwkwzg",
       "Qwcbzg",
       "Qwypzgs",
@@ -33003,7 +33044,6 @@
       "Qwyhjb",
       "Qwxgdbmt",
       "Qwwsg",
-      "Qwthhj",
       "Qwxxgg",
       "Qwwszj",
       "Qwkwgl",
@@ -34090,6 +34130,7 @@
       "item.primogemcraft.sjzshj": "§e『下界合金升级』§d最胜紫晶",
       "item.primogemcraft.zhapiandingzhengshi.desc": "§c！§7—§e！§7—§9！§7—§a！§7——",
       "item.primogemcraft.dijingkuai": "§9涤净青金 块",
+      "item.primogemcraft.qwthhjiii": "§5§l『奇物』§b天彗合金 III 型",
       "item.primogemcraft.aixubingyukuai": "§b哀叙冰玉 块",
       "advancements.jdwhhl.title": "我后悔了",
       "gui.primogemcraft.sjgu_ifumo_01.label_xiao_hao_95dang_qian_zui_da_hp": "消耗95%当前最大HP，",
@@ -35138,6 +35179,7 @@
       "item.primogemcraft.sjzshj": "§e『Netherite Upgrade』§dVajrada Amethyst",
       "item.primogemcraft.zhapiandingzhengshi.desc": "§7put it in jukebox,Maybe?",
       "item.primogemcraft.dijingkuai": "§9Varunada Lazurite Gemstone",
+      "item.primogemcraft.qwthhjiii": "§5§l『奇物』§b天彗合金 III 型",
       "item.primogemcraft.aixubingyukuai": "§bShivada Jade Gemstone",
       "advancements.jdwhhl.title": "我后悔了",
       "gui.primogemcraft.sjgu_ifumo_01.label_xiao_hao_95dang_qian_zui_da_hp": "消耗95%当前最大HP，",
@@ -36180,6 +36222,7 @@
       "item.primogemcraft.sjzshj": "§e『下界合金升级』§d最胜紫晶",
       "item.primogemcraft.zhapiandingzhengshi.desc": "§c！§f—§e！§f—§9！§f—§a！§f——",
       "item.primogemcraft.dijingkuai": "§9涤净青金 块",
+      "item.primogemcraft.qwthhjiii": "§5§l『奇物』§b天彗合金 III 型",
       "item.primogemcraft.aixubingyukuai": "§b哀叙冰玉 块",
       "advancements.jdwhhl.title": "我后悔了",
       "gui.primogemcraft.sjgu_ifumo_01.label_xiao_hao_95dang_qian_zui_da_hp": "消耗95%当前最大HP，",
