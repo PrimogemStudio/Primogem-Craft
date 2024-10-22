@@ -31143,6 +31143,69 @@
           "src/main/resources/data/primogemcraft/recipe/qwclgspf.json"
         ]
       }
+    },
+    {
+      "name": "Qwwshy",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwshy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwwshy.json",
+          "src/main/java/net/mcreator/ceshi/item/QwwshyItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Qwwshysx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwshysx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwwshysxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwwshypf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwshypf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/qwwshypf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31564,7 +31627,8 @@
       "CUSTOM:Qwzcgl",
       "CUSTOM:Qwsmcd",
       "CUSTOM:Qwtldgs",
-      "CUSTOM:Qwclgs"
+      "CUSTOM:Qwclgs",
+      "CUSTOM:Qwwshy"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Ysjtsj1",
@@ -33183,6 +33247,7 @@
       "CUSTOM:Axhjt.boots"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwwshy",
       "~CUSTOM:Qwclgs",
       "~CUSTOM:Qwtldgs",
       "~CUSTOM:Qwsmcd",
@@ -33550,7 +33615,8 @@
       "Qwzcgl",
       "Qwsmcd",
       "Qwtldgs",
-      "Qwclgs"
+      "Qwclgs",
+      "Qwwshy"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -34369,6 +34435,7 @@
       "subtitles.qiwusunhuai066": "Ding！",
       "effect.zhandouzhuangtai": "Combat Effect",
       "effect.primogemcraft.zhuoshao": "§d灼烧",
+      "item.primogemcraft.qwwshy": "§5§l『奇物』§b万识之火焰",
       "gamerule.guizemoyinshenshengmingzhi": "§b原石工艺 §e可生成魔阴身生物血量限制",
       "item.primogemcraft.jlzs": "坚牢金属",
       "block.primogemcraft.lajitong": "Lajitong",
@@ -35428,6 +35495,7 @@
       "subtitles.qiwusunhuai066": "Ding！",
       "effect.zhandouzhuangtai": "Combat Effect",
       "effect.primogemcraft.zhuoshao": "§dburn",
+      "item.primogemcraft.qwwshy": "§5§l『奇物』§b万识之火焰",
       "gamerule.guizemoyinshenshengmingzhi": "§bPrimogems Craft §espawning Mara-Struck EntityLiving Health limitation",
       "item.primogemcraft.jlzs": "Prithiva Ingot",
       "block.primogemcraft.lajitong": "Trash Bin",
@@ -36482,6 +36550,7 @@
       "subtitles.qiwusunhuai066": "叮！",
       "effect.zhandouzhuangtai": "战斗状态",
       "effect.primogemcraft.zhuoshao": "§d灼烧",
+      "item.primogemcraft.qwwshy": "§5§l『奇物』§b万识之火焰",
       "gamerule.guizemoyinshenshengmingzhi": "§b原石工艺 §e可生成魔阴身生物血量限制",
       "item.primogemcraft.jlzs": "坚牢金属",
       "block.primogemcraft.lajitong": "垃圾桶",
