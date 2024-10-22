@@ -30965,6 +30965,70 @@
           "src/main/java/net/mcreator/ceshi/GlobalAttributeModifier.java"
         ]
       }
+    },
+    {
+      "name": "Qwsmcd",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwsmcd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwsmcdItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwsmcd.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwsmcdsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwsmcdsx",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwsmcdsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwsmcdpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwsmcdpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/qwsmcdpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31383,7 +31447,8 @@
       "CUSTOM:Qwkwzw",
       "CUSTOM:Qwwswct",
       "CUSTOM:Qwymwct",
-      "CUSTOM:Qwzcgl"
+      "CUSTOM:Qwzcgl",
+      "CUSTOM:Qwsmcd"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Ysjtsj1",
@@ -33002,6 +33067,7 @@
       "CUSTOM:Axhjt.boots"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwsmcd",
       "~CUSTOM:Qwwsx",
       "~CUSTOM:Qwwsgl",
       "~CUSTOM:Qwwcn",
@@ -33363,7 +33429,8 @@
       "Qwkwzw",
       "Qwwswct",
       "Qwymwct",
-      "Qwzcgl"
+      "Qwzcgl",
+      "Qwsmcd"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -34296,6 +34363,7 @@
       "item.primogemcraft.gongzhuxinghua.desc": "§eHOYO-MiX",
       "item.primogemcraft.teshukuijia_01_boots": "特殊01",
       "gui.primogemcraft.heitayindaoyonggui.button_empty": "\u003e\u003e\u003e\u003e",
+      "item.primogemcraft.qwsmcd": "§5§l『奇物』§e神秘磁袋",
       "item.primogemcraft.zziyousongshiduanpian": "§a自由松石 断片",
       "enchantment.primogemcraft.ceshifumo_01.desc": "§eRepair certain durability before being destroyed",
       "item.primogemcraft.zshjj": "§d『最胜紫晶』§e下界合金剑",
@@ -35352,6 +35420,7 @@
       "item.primogemcraft.gongzhuxinghua.desc": "§eHOYO-MiX",
       "item.primogemcraft.teshukuijia_01_boots": "特殊01",
       "gui.primogemcraft.heitayindaoyonggui.button_empty": "\u003e\u003e\u003e\u003e",
+      "item.primogemcraft.qwsmcd": "§5§l『奇物』§e神秘磁袋",
       "item.primogemcraft.zziyousongshiduanpian": "§aVayuda Turquoise Fragment",
       "enchantment.primogemcraft.ceshifumo_01.desc": "§eRepair certain durability before being destroyed",
       "item.primogemcraft.zshjj": "§d『Vajrada Amethyst』§eNetherite Sword",
@@ -36403,6 +36472,7 @@
       "item.primogemcraft.gongzhuxinghua.desc": "§eHOYO-MiX",
       "item.primogemcraft.teshukuijia_01_boots": "特殊01",
       "gui.primogemcraft.heitayindaoyonggui.button_empty": "\u003e\u003e\u003e\u003e",
+      "item.primogemcraft.qwsmcd": "§5§l『奇物』§e神秘磁袋",
       "item.primogemcraft.zziyousongshiduanpian": "§a自在松石 断片",
       "enchantment.primogemcraft.ceshifumo_01.desc": "§6物品损坏或即将损坏时，恢复其附魔等级*20%耐久度",
       "item.primogemcraft.zshjj": "§d『最胜紫晶』§e下界合金剑",
