@@ -30,10 +30,12 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§d存在物品栏时：",
-        "§7 - 提供永久 速度 I 效果",
-        "§7 - 每30秒损失1点生命值"
+        "§7每30秒损失2点生命值",
+        "§7§l但提供更多速度"
       ]
+    },
+    "glowCondition": {
+      "fixedValue": false
     },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
@@ -44,6 +46,9 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,

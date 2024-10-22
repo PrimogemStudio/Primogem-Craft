@@ -25,12 +25,14 @@ public class GlobalAttributeModifier {
     private static void init(Map<String, Consumer<ItemAttributeModifierEvent>> modifiers) {
         modifiers.put("primogemcraft:ljtg_02", e -> {
             e.replaceModifier(ARMOR_TOUGHNESS, modifier("ljta", 1.5, ADD_VALUE), HAND);
-            e.replaceModifier(MOVEMENT_SPEED, modifier("ljta", 0.5, ADD_VALUE), ANY);
         });
         modifiers.put("primogemcraft:xzcfyxwzd", e -> {
             e.replaceModifier(ARMOR_TOUGHNESS, modifier("ljtb", 2, ADD_VALUE), HAND);
         });
-        enableForInventory("primogemcraft:ljtg_02");
+        modifiers.put("primogemcraft:qwtldhy", e -> {
+            e.replaceModifier(MOVEMENT_SPEED, modifier("tldhy", 0.05, ADD_VALUE), ANY);
+        });
+        enableForInventory("primogemcraft:qwtldhy");
     }
 
     private static AttributeModifier modifier(String id, double amount, AttributeModifier.Operation operation) {

@@ -25,9 +25,8 @@ public class QwtldhyItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u5B58\u5728\u7269\u54C1\u680F\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u63D0\u4F9B\u6C38\u4E45 \u901F\u5EA6 I \u6548\u679C"));
-		list.add(Component.literal("\u00A77 - \u6BCF30\u79D2\u635F\u59311\u70B9\u751F\u547D\u503C"));
+		list.add(Component.literal("\u00A77\u6BCF30\u79D2\u635F\u59312\u70B9\u751F\u547D\u503C"));
+		list.add(Component.literal("\u00A77\u00A7l\u4F46\u63D0\u4F9B\u66F4\u591A\u901F\u5EA6"));
 	}
 
 	@Override
