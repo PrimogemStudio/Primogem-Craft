@@ -18794,18 +18794,6 @@
       }
     },
     {
-      "name": "Tldhypf1",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tldhypf_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/tldhypf_1.json"
-        ]
-      }
-    },
-    {
       "name": "Qwhdlz",
       "type": "item",
       "compiles": true,
@@ -31029,6 +31017,69 @@
           "src/main/resources/data/primogemcraft/recipe/qwsmcdpf.json"
         ]
       }
+    },
+    {
+      "name": "Qwtldgs",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwtldgs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwtldgsItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwtldgs.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwtldgssx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwtldgssx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwtldgssxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwtldgspf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwtldgspf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/qwtldgspf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31448,7 +31499,8 @@
       "CUSTOM:Qwwswct",
       "CUSTOM:Qwymwct",
       "CUSTOM:Qwzcgl",
-      "CUSTOM:Qwsmcd"
+      "CUSTOM:Qwsmcd",
+      "CUSTOM:Qwtldgs"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Ysjtsj1",
@@ -33067,6 +33119,7 @@
       "CUSTOM:Axhjt.boots"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwtldgs",
       "~CUSTOM:Qwsmcd",
       "~CUSTOM:Qwwsx",
       "~CUSTOM:Qwwsgl",
@@ -33430,7 +33483,8 @@
       "Qwwswct",
       "Qwymwct",
       "Qwzcgl",
-      "Qwsmcd"
+      "Qwsmcd",
+      "Qwtldgs"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -34410,6 +34464,7 @@
       "item.primogemcraft.aixubingyu": "§b哀叙冰玉",
       "gui.primogemcraft.cunzheshezhi.button_1": "1",
       "effect.primogemcraft.qianye": "千叶",
+      "item.primogemcraft.qwtldgs": "§5§l『奇物』§b塔拉毒果实",
       "item.primogemcraft.qinlaodezhexue": "『勤劳』的哲学",
       "item.primogemcraft.axzssj": "§b『钻石升级』§b哀叙冰玉",
       "advancements.jdtwtylc.descr": "获得任意元素金属",
@@ -35467,6 +35522,7 @@
       "item.primogemcraft.aixubingyu": "§bShivada Jade",
       "gui.primogemcraft.cunzheshezhi.button_1": "1",
       "effect.primogemcraft.qianye": "A Thousand Nights\u0027 Dawnsong",
+      "item.primogemcraft.qwtldgs": "§5§l『奇物』§b塔拉毒果实",
       "item.primogemcraft.qinlaodezhexue": "Philosophies of 『Dilligence』",
       "item.primogemcraft.axzssj": "§b『Smith Templete』§bShivada jade",
       "advancements.jdtwtylc.descr": "获得任意元素金属",
@@ -36518,6 +36574,7 @@
       "item.primogemcraft.aixubingyu": "§b哀叙冰玉",
       "gui.primogemcraft.cunzheshezhi.button_1": "1",
       "effect.primogemcraft.qianye": "千叶",
+      "item.primogemcraft.qwtldgs": "§5§l『奇物』§b塔拉毒果实",
       "item.primogemcraft.qinlaodezhexue": "§6『勤劳』的哲学",
       "item.primogemcraft.axzssj": "§b『钻石升级』§b哀叙冰玉",
       "advancements.jdtwtylc.descr": "获得任意元素金属",
