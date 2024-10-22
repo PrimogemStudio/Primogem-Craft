@@ -22,13 +22,11 @@ public class GlobalAttributeModifier {
     private static final Map<ResourceLocation, Consumer<ItemAttributeModifierEvent>> modifiers = getModifiers();
 
     private static void init(Map<String, Consumer<ItemAttributeModifierEvent>> modifiers) {
-        modifiers.put("stone", e -> {
-            e.replaceModifier(MOVEMENT_SPEED, modifier("base_movement_speed", 0.1, ADD_VALUE), HAND);
-            e.replaceModifier(MOVEMENT_SPEED, modifier("offhand_movement_speed", 0.04, ADD_VALUE), OFFHAND);
+        modifiers.put("primogemcraft:ljtg_02", e -> {
+            e.replaceModifier(ARMOR_TOUGHNESS, modifier("ljta", 2, ADD_VALUE), HAND);
         });
-        modifiers.put("dirt", e -> {
-            e.replaceModifier(ATTACK_DAMAGE, modifier("base_attack_damage", 0.1, ADD_VALUE), HAND);
-            e.replaceModifier(MOVEMENT_SPEED, modifier("base_movement_speed", 0.02, ADD_MULTIPLIED_BASE), HEAD);
+        modifiers.put("primogemcraft:xzcfyxwzd", e -> {
+            e.replaceModifier(ARMOR_TOUGHNESS, modifier("ljtb", 2, ADD_VALUE), HAND);
         });
     }
 
