@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
 
+import static net.hackermdch.CustomUtils.enableForInventory;
 import static net.mcreator.ceshi.PrimogemcraftMod.MODID;
 import static net.minecraft.world.entity.EquipmentSlotGroup.*;
 import static net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation.*;
@@ -24,10 +25,12 @@ public class GlobalAttributeModifier {
     private static void init(Map<String, Consumer<ItemAttributeModifierEvent>> modifiers) {
         modifiers.put("primogemcraft:ljtg_02", e -> {
             e.replaceModifier(ARMOR_TOUGHNESS, modifier("ljta", 1.5, ADD_VALUE), HAND);
+            e.replaceModifier(MOVEMENT_SPEED, modifier("ljta", 0.5, ADD_VALUE), ANY);
         });
         modifiers.put("primogemcraft:xzcfyxwzd", e -> {
             e.replaceModifier(ARMOR_TOUGHNESS, modifier("ljtb", 2, ADD_VALUE), HAND);
         });
+        enableForInventory("primogemcraft:ljtg_02");
     }
 
     private static AttributeModifier modifier(String id, double amount, AttributeModifier.Operation operation) {
