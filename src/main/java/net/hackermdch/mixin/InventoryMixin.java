@@ -10,6 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.Container;
 import net.minecraft.world.Nameable;
 import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -30,60 +31,45 @@ public abstract class InventoryMixin implements Container, Nameable {
     @Final
     public Player player;
     @Unique
-    private static Set<Item> items;
+    private final Set<Item> items = CustomUtils.enableInventoryAttribute.stream().map(s -> BuiltInRegistries.ITEM.getHolder(ResourceLocation.parse(s)).orElseThrow().value()).collect(ImmutableSet.toImmutableSet());
     @Unique
-    private final Set<ItemStack> set = new ObjectArraySet<>(), set1 = new ObjectArraySet<>();
+    private final Set<ItemStack> cache = new ObjectArraySet<>(), snapshot = new ObjectArraySet<>();
 
     @Inject(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;inventoryTick(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;IZ)V"))
     private void inventoryTick(CallbackInfo ci, @Local(ordinal = 1) int i, @Local NonNullList<ItemStack> stacks) {
-        if (items == null)
-            items = CustomUtils.enableInventoryAttribute.stream().map(s -> BuiltInRegistries.ITEM.getHolder(ResourceLocation.parse(s)).orElseThrow().value()).collect(ImmutableSet.toImmutableSet());
         var item = stacks.get(i);
         if (items.contains(item.getItem())) {
             var flag = false;
             for (var m : item.getAttributeModifiers().modifiers()) {
                 if (m.slot() == EquipmentSlotGroup.ANY) {
                     var attr = player.getAttributes();
-                    if (!attr.hasModifier(m.attribute(), m.modifier().id())) {
-                        var ins = attr.getInstance(m.attribute());
-                        assert ins != null;
+                    if (!attr.hasModifier(m.attribute(), m.modifier().id()) && attr.getInstance(m.attribute()) instanceof AttributeInstance ins) {
                         ins.addTransientModifier(m.modifier());
                         flag = true;
                     }
                 }
             }
             var copy = item.copy();
-            if (flag) set.add(copy);
-            set1.add(copy);
+            if (flag) cache.add(copy);
+            snapshot.add(copy);
         }
     }
 
     @Inject(method = "tick", at = @At("RETURN"))
     private void tick(CallbackInfo ci) {
-        var remove = new ObjectArraySet<ItemStack>();
-        for (var item : set) {
-            var flag = false;
-            for (var item1 : set1) {
-                if (ItemStack.isSameItemSameComponents(item, item1)) {
-                    flag = true;
-                    break;
-                }
-            }
-            if (!flag) {
+        cache.forEach(item -> {
+            if (snapshot.stream().noneMatch(i -> ItemStack.isSameItemSameComponents(item, i))) {
                 item.getAttributeModifiers().modifiers().forEach(m -> {
                     if (m.slot() == EquipmentSlotGroup.ANY) {
                         var attr = player.getAttributes();
-                        if (attr.hasModifier(m.attribute(), m.modifier().id())) {
-                            var ins = attr.getInstance(m.attribute());
-                            assert ins != null;
+                        if (attr.hasModifier(m.attribute(), m.modifier().id()) && attr.getInstance(m.attribute()) instanceof AttributeInstance ins) {
                             ins.removeModifier(m.modifier());
                         }
                     }
                 });
-                remove.add(item);
+                cache.remove(item);
             }
-        }
-        set.removeAll(remove);
-        set1.clear();
+        });
+        snapshot.clear();
     }
 }

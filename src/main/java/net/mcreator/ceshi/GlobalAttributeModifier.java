@@ -19,7 +19,7 @@ import static net.minecraft.world.entity.ai.attributes.AttributeModifier.Operati
 import static net.minecraft.world.entity.ai.attributes.Attributes.*;
 
 @EventBusSubscriber(modid = MODID)
-public class GlobalAttributeModifier {
+class GlobalAttributeModifier {
     private static final Map<ResourceLocation, Consumer<ItemAttributeModifierEvent>> modifiers = getModifiers();
 
     private static void init(Map<String, Consumer<ItemAttributeModifierEvent>> modifiers) {
@@ -35,6 +35,9 @@ public class GlobalAttributeModifier {
         enableForInventory("primogemcraft:qwtldhy");
     }
 
+    private static void custom(ItemAttributeModifierEvent event) {
+    }
+
     private static AttributeModifier modifier(String id, double amount, AttributeModifier.Operation operation) {
         return new AttributeModifier(ResourceLocation.parse(id), amount, operation);
     }
@@ -46,9 +49,7 @@ public class GlobalAttributeModifier {
     }
 
     @SubscribeEvent
-    protected static void onEvent(ItemAttributeModifierEvent event) {
-        var con = modifiers.get(BuiltInRegistries.ITEM.getKey(event.getItemStack().getItem()));
-        if (con == null) return;
-        con.accept(event);
+    static void onEvent(ItemAttributeModifierEvent event) {
+        modifiers.getOrDefault(BuiltInRegistries.ITEM.getKey(event.getItemStack().getItem()), GlobalAttributeModifier::custom).accept(event);
     }
 }
