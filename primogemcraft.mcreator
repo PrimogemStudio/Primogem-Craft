@@ -31080,6 +31080,69 @@
           "src/main/resources/data/primogemcraft/recipe/qwtldgspf.json"
         ]
       }
+    },
+    {
+      "name": "Qwclgs",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwclgs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwclgsItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwclgs.json"
+        ]
+      }
+    },
+    {
+      "name": "Qwclgssx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwclgssx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwclgssxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwclgspf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwclgspf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/qwclgspf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31500,7 +31563,8 @@
       "CUSTOM:Qwymwct",
       "CUSTOM:Qwzcgl",
       "CUSTOM:Qwsmcd",
-      "CUSTOM:Qwtldgs"
+      "CUSTOM:Qwtldgs",
+      "CUSTOM:Qwclgs"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Ysjtsj1",
@@ -33119,6 +33183,7 @@
       "CUSTOM:Axhjt.boots"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Qwclgs",
       "~CUSTOM:Qwtldgs",
       "~CUSTOM:Qwsmcd",
       "~CUSTOM:Qwwsx",
@@ -33484,7 +33549,8 @@
       "Qwymwct",
       "Qwzcgl",
       "Qwsmcd",
-      "Qwtldgs"
+      "Qwtldgs",
+      "Qwclgs"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -34588,6 +34654,7 @@
       "item.ceshi.yishijiemugun": "Tewatt Stick",
       "item.primogemcraft.zizaitiejia_helmet": "§a『自在松石』 铁头盔",
       "item.primogemcraft.djzsshjsj": "§d『钻石合金升级』§b涤净青金",
+      "item.primogemcraft.qwclgs": "§5§l『奇物』§c磁力果实",
       "item.primogemcraft.kkuijiaceshi_chestplate": "摩拉 胸甲",
       "advancements.jdszzqh.descr": "制作合金制模板",
       "block.primogemcraft.xiutiekuai": "锈铁块",
@@ -35646,6 +35713,7 @@
       "item.ceshi.yishijiemugun": "Tewatt Stick",
       "item.primogemcraft.zizaitiejia_helmet": "§a『Vayuda Turquoise』 Iron Helmet",
       "item.primogemcraft.djzsshjsj": "§d『Netherite Upgrade』§bVarunada Lazurite",
+      "item.primogemcraft.qwclgs": "§5§l『奇物』§c磁力果实",
       "item.primogemcraft.kkuijiaceshi_chestplate": "Mora Chestplate",
       "advancements.jdszzqh.descr": "制作合金制模板",
       "block.primogemcraft.xiutiekuai": "Rust Iron Block",
@@ -36698,6 +36766,7 @@
       "item.ceshi.yishijiemugun": "异世界木棍",
       "item.primogemcraft.zizaitiejia_helmet": "§a『自在松石』 §f铁头盔",
       "item.primogemcraft.djzsshjsj": "§d『钻石合金升级』§b涤净青金",
+      "item.primogemcraft.qwclgs": "§5§l『奇物』§c磁力果实",
       "item.primogemcraft.kkuijiaceshi_chestplate": "§e摩拉 胸甲",
       "advancements.jdszzqh.descr": "制作合金制模板",
       "block.primogemcraft.xiutiekuai": "锈铁块",
