@@ -5,7 +5,7 @@
   "plugin": "net.hackermdch.mixin.MixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "ItemStackMixin"
+    "InventoryMixin"
   ],
   "client": [
   ],
