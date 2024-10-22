@@ -1,11 +1,12 @@
 package net.mcreator.ceshi;
 
+import com.google.common.collect.ImmutableMap;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.neoforged.neoforge.event.ItemAttributeModifierEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.ItemAttributeModifierEvent;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,7 +21,7 @@ import static net.minecraft.world.entity.ai.attributes.Attributes.*;
 public class GlobalAttributeModifier {
     private static final Map<ResourceLocation, Consumer<ItemAttributeModifierEvent>> modifiers = getModifiers();
 
-    public static void init(Map<String, Consumer<ItemAttributeModifierEvent>> modifiers) {
+    private static void init(Map<String, Consumer<ItemAttributeModifierEvent>> modifiers) {
         modifiers.put("stone", e -> {
             e.replaceModifier(MOVEMENT_SPEED, modifier("base_movement_speed", 0.1, ADD_VALUE), HAND);
             e.replaceModifier(MOVEMENT_SPEED, modifier("offhand_movement_speed", 0.04, ADD_VALUE), OFFHAND);
@@ -36,11 +37,9 @@ public class GlobalAttributeModifier {
     }
 
     private static Map<ResourceLocation, Consumer<ItemAttributeModifierEvent>> getModifiers() {
-        var m = new HashMap<String, Consumer<ItemAttributeModifierEvent>>();
-        var modifiers = new HashMap<ResourceLocation, Consumer<ItemAttributeModifierEvent>>();
-        init(m);
-        m.forEach((r, a) -> modifiers.put(ResourceLocation.tryParse(r), a));
-        return modifiers;
+        var modifiers = new HashMap<String, Consumer<ItemAttributeModifierEvent>>();
+        init(modifiers);
+        return modifiers.entrySet().stream().collect(ImmutableMap.toImmutableMap(e -> ResourceLocation.parse(e.getKey()), Map.Entry::getValue));
     }
 
     @SubscribeEvent
