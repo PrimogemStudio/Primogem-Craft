@@ -1,8 +1,11 @@
 package net.hackermdch;
 
+import net.hackermdch.CustomUtils.CuriosCompat;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModList;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -15,5 +18,8 @@ public class CustomRegister {
 
     public static void register(IEventBus modBus) {
         LOOT_CONDITION_TYPES.register(modBus);
+        if (ModList.get().isLoaded("curios")) {
+            NeoForge.EVENT_BUS.addListener(CuriosCompat::onCurioAttributeModifier);
+        }
     }
 }
