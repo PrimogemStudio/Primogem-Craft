@@ -32,14 +32,6 @@ neoForge {
     }
 }
 
-repositories {
-    maven { url = "https://maven.octo-studios.com/releases" }
-}
-
-dependencies {
-    implementation 'top.theillusivec4.curios:curios-neoforge:9.0.14+1.21.1'
-}
-
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
