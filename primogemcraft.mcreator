@@ -31380,6 +31380,56 @@
           "src/main/resources/assets/primogemcraft/models/item/qwkzhy.json"
         ]
       }
+    },
+    {
+      "name": "Qwwzhysx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwwzhysx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwwzhysxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qqwkzhypf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qqwkzhypf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/qqwkzhypf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31803,7 +31853,8 @@
       "CUSTOM:Qwtldgs",
       "CUSTOM:Qwclgs",
       "CUSTOM:Qwwshy",
-      "CUSTOM:Qwjlbxyq"
+      "CUSTOM:Qwjlbxyq",
+      "CUSTOM:Qwkzhy"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Ysjtsj1",
@@ -32939,7 +32990,8 @@
       "CUSTOM:Qwkwzj",
       "CUSTOM:Qwwszj",
       "CUSTOM:Qwkwgl",
-      "CUSTOM:Qwkwzw"
+      "CUSTOM:Qwkwzw",
+      "CUSTOM:Qwkzhy"
     ],
     "ITEMS:c:curio/clock": [
       "CUSTOM:Gongsideguguzhong",

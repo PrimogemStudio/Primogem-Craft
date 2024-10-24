@@ -16,6 +16,8 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.ceshi.procedures.QwwzhysxProcedure;
+
 import java.util.List;
 
 public class QwkzhyItem extends Item {
@@ -25,7 +27,7 @@ public class QwkzhyItem extends Item {
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.BOW;
+		return UseAnim.DRINK;
 	}
 
 	@Override
@@ -48,5 +50,15 @@ public class QwkzhyItem extends Item {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		entity.startUsingItem(hand);
 		return ar;
+	}
+
+	@Override
+	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
+		ItemStack retval = super.finishUsingItem(itemstack, world, entity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		QwwzhysxProcedure.execute(world, x, y, z, entity, itemstack);
+		return retval;
 	}
 }
