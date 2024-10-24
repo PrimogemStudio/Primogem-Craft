@@ -18,6 +18,7 @@ import net.minecraft.core.registries.Registries;
 import net.mcreator.ceshi.procedures.Yimuguo_shuxingProcedure;
 import net.mcreator.ceshi.procedures.YdggzxgsxProcedure;
 import net.mcreator.ceshi.procedures.Xgjssx0Procedure;
+import net.mcreator.ceshi.procedures.XGsmcwsx0Procedure;
 import net.mcreator.ceshi.procedures.WxntdmjxgsxProcedure;
 import net.mcreator.ceshi.procedures.Tldhy_sxProcedure;
 import net.mcreator.ceshi.procedures.Smcl_zf_sx_0Procedure;
@@ -38,6 +39,7 @@ import net.mcreator.ceshi.potion.ZhandouzhuangtaiMobEffect;
 import net.mcreator.ceshi.potion.YydggzxgMobEffect;
 import net.mcreator.ceshi.potion.YsrzxgMobEffect;
 import net.mcreator.ceshi.potion.YijiMobEffect;
+import net.mcreator.ceshi.potion.XGsmcwMobEffect;
 import net.mcreator.ceshi.potion.WxntdmjMobEffect;
 import net.mcreator.ceshi.potion.TldhyMobEffect;
 import net.mcreator.ceshi.potion.SztsxcwdpMobEffect;
@@ -126,6 +128,7 @@ public class PrimogemcraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> RYFXGSX = REGISTRY.register("ryfxgsx", () -> new RyfxgsxMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SZTSXCWDP = REGISTRY.register("sztsxcwdp", () -> new SztsxcwdpMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> YSRZXG = REGISTRY.register("ysrzxg", () -> new YsrzxgMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> X_GSMCW = REGISTRY.register("x_gsmcw", () -> new XGsmcwMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -176,6 +179,8 @@ public class PrimogemcraftModMobEffects {
 			WxntdmjxgsxProcedure.execute(entity.level(), entity);
 		} else if (effectInstance.getEffect().is(SMCLZF)) {
 			Smcl_zf_sx_0Procedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(X_GSMCW)) {
+			XGsmcwsx0Procedure.execute(entity);
 		}
 	}
 }

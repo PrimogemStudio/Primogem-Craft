@@ -5,7 +5,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.network.chat.Component;
+
+import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 
 public class Ceshi_3Procedure {
 	public static void execute(Entity entity) {
@@ -19,13 +22,15 @@ public class Ceshi_3Procedure {
 			} else {
 				if (entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.MAX_HEALTH))
 					_livingEntity6.getAttribute(Attributes.MAX_HEALTH).setBaseValue(20);
-				if (entity instanceof LivingEntity _livingEntity7 && _livingEntity7.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE))
-					_livingEntity7.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(1);
 			}
 		} else {
+			if (entity.isShiftKeyDown() && !(entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(PrimogemcraftModMobEffects.X_GSMCW))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.X_GSMCW, 100, 4));
+			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##")
-						.format(entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity8.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0))), false);
+						.format(entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity10.getAttribute(Attributes.MAX_HEALTH).getValue() : 0))), false);
 		}
 	}
 }
