@@ -1,5 +1,7 @@
 package net.mcreator.ceshi.procedures;
 
+import org.checkerframework.checker.units.qual.t;
+
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
@@ -13,6 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -20,6 +23,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
@@ -46,6 +50,8 @@ public class SmclstsxProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		double a = 0;
+		String s1 = "";
+		Entity e1 = null;
 		if (!world.isClientSide()) {
 			if (sourceentity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.SMCLXG) && !(entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PrimogemcraftModMobEffects.SMCLZF))
 					&& entity.getType().is(EntityTypeTags.UNDEAD)) {
@@ -87,6 +93,36 @@ public class SmclstsxProcedure {
 								_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 								if (_entity instanceof Player _player)
 									_player.getInventory().setChanged();
+							}
+						}
+						if (sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWCLHY.get())) : false) {
+							sourceentity.getPersistentData().putBoolean("cl_hy", true);
+							s1 = BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString();
+							var t = entity.getType();
+							var p = entity.blockPosition();
+							var sw = (ServerLevel) world;
+							e1 = t.spawn(sw, p, MobSpawnType.MOB_SUMMONED);
+							if (e1 instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.SMCLZF, 80, 0, false, false));
+							if ((e1 instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
+								if (e1 instanceof LivingEntity _entity) {
+									ItemStack _setstack = (Math.random() < 0.5 ? new ItemStack(PrimogemcraftModItems.ZSF.get()) : new ItemStack(PrimogemcraftModItems.AXTJ.get())).copy();
+									_setstack.setCount(1);
+									_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+									if (_entity instanceof Player _player)
+										_player.getInventory().setChanged();
+								}
+							}
+							if ((e1 instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
+								{
+									Entity _entity = e1;
+									if (_entity instanceof Player _player) {
+										_player.getInventory().armor.set(3, new ItemStack(Items.GOLDEN_HELMET));
+										_player.getInventory().setChanged();
+									} else if (_entity instanceof LivingEntity _living) {
+										_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.GOLDEN_HELMET));
+									}
+								}
 							}
 						}
 					}

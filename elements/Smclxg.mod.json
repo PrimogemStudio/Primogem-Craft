@@ -3,15 +3,15 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "神秘磁力",
-    "icon": "shen_mi_ci_li_.png",
+    "icon": "shen_mi_ci_li_",
     "color": {
       "value": -1,
       "falpha": 0.0
     },
     "isInstant": false,
     "mobEffectCategory": "NEUTRAL",
-    "renderStatusInInventory": true,
-    "renderStatusInHUD": true,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false
