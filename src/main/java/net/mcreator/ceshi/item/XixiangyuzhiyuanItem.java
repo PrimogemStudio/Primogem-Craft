@@ -10,7 +10,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -25,12 +24,17 @@ import java.util.List;
 
 public class XixiangyuzhiyuanItem extends Item {
 	public XixiangyuzhiyuanItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0f).alwaysEdible().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.RARE));
 	}
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
 		return UseAnim.BOW;
+	}
+
+	@Override
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
+		return 32;
 	}
 
 	@Override
@@ -56,7 +60,7 @@ public class XixiangyuzhiyuanItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		XixiangyuzhiyuanchoukaProcedure.execute(world, x, y, z, entity);
+		XixiangyuzhiyuanchoukaProcedure.execute(world, x, y, z, entity, itemstack);
 		return retval;
 	}
 

@@ -10,7 +10,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
@@ -24,12 +23,17 @@ import java.util.List;
 
 public class ShilianchouItem extends Item {
 	public ShilianchouItem() {
-		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0f).alwaysEdible().build()));
+		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
 		return UseAnim.BOW;
+	}
+
+	@Override
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
+		return 32;
 	}
 
 	@Override
@@ -59,8 +63,8 @@ public class ShilianchouItem extends Item {
 	}
 
 	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-		boolean retval = super.onEntitySwing(itemstack, entity);
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
+		boolean retval = super.onEntitySwing(itemstack, entity, hand);
 		JcsxcxsxProcedure.execute(entity, itemstack);
 		return retval;
 	}

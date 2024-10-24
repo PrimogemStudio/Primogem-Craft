@@ -22,6 +22,7 @@ public class ShshilianchouxiaoguoProcedure {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
+			itemstack.shrink(1);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:shilianyinpin")), SoundSource.NEUTRAL, 1, 1);

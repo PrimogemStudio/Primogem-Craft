@@ -15,10 +15,11 @@ import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.init.PrimogemcraftModEntities;
 
 public class XixiangyuzhiyuanchoukaProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
+			itemstack.shrink(1);
 			entity.getPersistentData().putBoolean("xiangyu", true);
 			entity.getPersistentData().putDouble("chouka", 1);
 			new ItemStack(PrimogemcraftModItems.XIXIANGYUZHIYUAN.get()).shrink(1);

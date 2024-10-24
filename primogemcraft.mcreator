@@ -121,8 +121,8 @@
       "registry_name": "xixiangyuzhiyuan",
       "metadata": {
         "files": [
-          "src/main/resources/assets/primogemcraft/models/item/xixiangyuzhiyuan.json",
-          "src/main/java/net/mcreator/ceshi/item/XixiangyuzhiyuanItem.java"
+          "src/main/java/net/mcreator/ceshi/item/XixiangyuzhiyuanItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/xixiangyuzhiyuan.json"
         ]
       }
     },
@@ -164,8 +164,8 @@
       "registry_name": "jijiuchanzhiyuan",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ceshi/item/JijiuchanzhiyuanItem.java",
-          "src/main/resources/assets/primogemcraft/models/item/jijiuchanzhiyuan.json"
+          "src/main/resources/assets/primogemcraft/models/item/jijiuchanzhiyuan.json",
+          "src/main/java/net/mcreator/ceshi/item/JijiuchanzhiyuanItem.java"
         ]
       }
     },
@@ -1120,6 +1120,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -31363,6 +31367,19 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qwkzhy",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwkzhy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwkzhyItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwkzhy.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -33775,7 +33792,8 @@
       "Qwtldgs",
       "Qwclgs",
       "Qwwshy",
-      "Qwjlbxyq"
+      "Qwjlbxyq",
+      "Qwkzhy"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -34575,7 +34593,7 @@
       "gui.primogemcraft.taozhuangchakan.label_yan_01": "岩",
       "gui.primogemcraft.yinhang.button_ju_jue_bing_wei_xie_ta_rang_kai": "拒绝并威胁它让开",
       "item.primogemcraft.qyhx_0wujiacheng": "祈愿核心§c[暂无加成]",
-      "item.primogemcraft.shilianchou": "Ten Interwined Fate",
+      "item.primogemcraft.shilianchou": "十枚纠缠之缘",
       "item.primogemcraft.qwypzgs": "§5§l『奇物』§d邪恶的异木果实",
       "item.primogemcraft.qhzllh_4": "§6特殊产出 强化助力礼盒",
       "effect.primogemcraft.qwjlbbgsx_2": "俱乐部普通八卦",
@@ -34695,7 +34713,7 @@
       "item.primogemcraft.suijiwupin": "随机掉落物品",
       "effect.primogemcraft.fengrao": "Abundance",
       "gui.primogemcraft.bwdyinhang.label_gong_xiang_ying_ping_zheng_bing_huo": "供相应凭证，并获",
-      "item.primogemcraft.xixiangyuzhiyuan": "XiAquaint Fate",
+      "item.primogemcraft.xixiangyuzhiyuan": "Xixiangyuzhiyuan",
       "item.primogemcraft.zizaifu": "§a『Vayuda Turquoise』Axe",
       "item.primogemcraft.lajitongsuipian": "Pieces of Trash Bin",
       "advancements.jindushilianchou.title": " Wish Ten Times！！！",
@@ -34706,7 +34724,7 @@
       "gui.primogemcraft.taozhuangchakan.label_tao_zhuang_shu_zhi_jian_ce": "套装数值检测",
       "effect.primogemcraft.letoudechengfa": "Punishment Of Lotto",
       "advancements.chengjingle.descr": "Statue of March 7th",
-      "item.primogemcraft.jijiuchanzhiyuan": "JiInterwined Fate",
+      "item.primogemcraft.jijiuchanzhiyuan": "Jijiuchanzhiyuan",
       "item.primogemcraft.qwsmcl": "§5『奇物』§d「神秘」磁力",
       "item.primogemcraft.gongzhuxinghua.desc": "§eHOYO-MiX",
       "item.primogemcraft.teshukuijia_01_boots": "特殊01",
@@ -34904,6 +34922,7 @@
       "item.primogemcraft.q_qyuanchuzi_01_spawn_egg": "Result Epic Spawn Egg",
       "gui.primogemcraft.maoxianjiazhinanggui.label_wu_pin_lan": "Inventory",
       "advancements.yqyxw.title": "§6有钱有希望！",
+      "item.primogemcraft.qwkzhy": "§5§l『奇物』§a空烛火焰",
       "item.primogemcraft.sshengjijlzsshjwp": "§d『Netherite Upgrade』§6Prithiva Topaz",
       "item.primogemcraft.hqhuo": "§5『Curio』§cSealing Wax of War",
       "subtitles.dashengchulan01": "hahaha",
@@ -35968,6 +35987,7 @@
       "item.primogemcraft.q_qyuanchuzi_01_spawn_egg": "Result Epic Spawn Egg",
       "gui.primogemcraft.maoxianjiazhinanggui.label_wu_pin_lan": "Inventory",
       "advancements.yqyxw.title": "§6有钱有希望！",
+      "item.primogemcraft.qwkzhy": "§5§l『奇物』§a空烛火焰",
       "item.primogemcraft.sshengjijlzsshjwp": "§d『Netherite Upgrade』§6Prithiva Topaz",
       "item.primogemcraft.hqhuo": "§5『Curio』§cSealing Wax of War",
       "subtitles.dashengchulan01": "hahaha",
@@ -37026,6 +37046,7 @@
       "item.primogemcraft.q_qyuanchuzi_01_spawn_egg": "生成祈愿紫光",
       "gui.primogemcraft.maoxianjiazhinanggui.label_wu_pin_lan": "物品栏",
       "advancements.yqyxw.title": "§6有钱有希望！",
+      "item.primogemcraft.qwkzhy": "§5§l『奇物』§a空烛火焰",
       "item.primogemcraft.sshengjijlzsshjwp": "§d『钻石合金升级』§6坚牢黄玉",
       "item.primogemcraft.hqhuo": "§5『奇物』§c战争火漆",
       "subtitles.dashengchulan01": "hahaha",

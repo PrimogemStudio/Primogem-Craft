@@ -21,6 +21,7 @@ public class JijiuchanzhiyuanWanJiaWanChengShiYongWuPinShiProcedure {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
+			itemstack.shrink(1);
 			entity.getPersistentData().putDouble("chouka", 1);
 			entity.getPersistentData().putDouble("chouka_jiacheng", 1);
 			entity.getPersistentData().putDouble("Prayers_strengthen", (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("Prayers_strengthen")));

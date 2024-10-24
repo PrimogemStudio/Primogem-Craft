@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "6jiu_chan_zhi_yuan_",
-    "customModelName": "Tool",
+    "texture": "qw_kzhy",
+    "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Jijiuchanzhiyuan",
-    "rarity": "UNCOMMON",
+    "name": "§5§l『奇物』§a空烛火焰",
+    "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:Zhenghuo"
       }
     ],
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 32,
     "toolType": 1.0,
@@ -23,17 +23,17 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7长按右键使用",
-        "§6潜行+左键§5获取祈愿加成信息",
-        "§c使用者必须在附近",
-        "§520%§7、§63%"
+        "主手持按住使用",
+        "§l使用后修复副手受耐久影响的",
+        "§l奇物，完成后复制一个该奇物",
+        "§750%概率损坏"
       ]
     },
     "glowCondition": {
@@ -42,15 +42,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInUseTick": {
-      "name": "JijiuchanzhiyuanDangWuPinZaiShouShangMeiKeFaSheng"
-    },
-    "onEntitySwing": {
-      "name": "Jcsxcxsx"
-    },
-    "onFinishUsingItem": {
-      "name": "JijiuchanzhiyuanWanJiaWanChengShiYongWuPinShi"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -59,13 +50,13 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": false,
-    "nutritionalValue": -1,
-    "saturation": -1.0,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
+    "isAlwaysEdible": false,
     "animation": "bow"
   }
 }
