@@ -20,17 +20,18 @@ public class Ceshi_3Procedure {
 			if (entity.isShiftKeyDown()) {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).setDamageValue((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getMaxDamage() + 1));
 			} else {
-				if (entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.MAX_HEALTH))
-					_livingEntity6.getAttribute(Attributes.MAX_HEALTH).setBaseValue(20);
+				if (entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE))
+					_livingEntity6.getAttribute(Attributes.ATTACK_DAMAGE).setBaseValue(1);
 			}
 		} else {
-			if (entity.isShiftKeyDown() && !(entity instanceof LivingEntity _livEnt8 && _livEnt8.hasEffect(PrimogemcraftModMobEffects.X_GSMCW))) {
+			if (entity.isShiftKeyDown()) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.X_GSMCW, 100, 4));
+					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.JISHENG, 200,
+							(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.JISHENG) ? _livEnt.getEffect(PrimogemcraftModMobEffects.JISHENG).getAmplifier() : 0) + 1)));
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##.##")
-						.format(entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity10.getAttribute(Attributes.MAX_HEALTH).getValue() : 0))), false);
+						.format(entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity10.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0))), false);
 		}
 	}
 }

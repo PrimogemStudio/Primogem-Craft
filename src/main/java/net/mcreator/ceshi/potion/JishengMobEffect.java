@@ -23,6 +23,6 @@ public class JishengMobEffect extends MobEffect {
 
 	@Override
 	public void onEffectStarted(LivingEntity entity, int amplifier) {
-		XgjssxProcedure.execute(entity);
+		XgjssxProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
 	}
 }

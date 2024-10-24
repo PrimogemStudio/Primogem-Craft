@@ -30173,6 +30173,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -34441,7 +34457,7 @@
       "gui.primogemcraft.liulangzhezhinanggui.label_wu_pin_lan": "Inventory",
       "block.primogemcraft.shengzhangkuangshi": "§aNagadus Emerald Ore",
       "item.primogemcraft.jlkjhj_leggings": "§6『Prithiva Topaz』 §eNetherite Leggings",
-      "effect.primogemcraft.jisheng": "Leeched",
+      "effect.primogemcraft.jisheng": "寄生",
       "gui.primogemcraft.taozhuangchakan.label_feng_01": "风",
       "item.primogemcraft.qwwcn": "§5§l『奇物』§4万虫囊",
       "block.primogemcraft.dijingqingjinkuai": "§1Varunada Lazurite block",

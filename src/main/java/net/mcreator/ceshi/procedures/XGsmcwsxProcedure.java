@@ -11,6 +11,7 @@ public class XGsmcwsxProcedure {
 		if (entity == null)
 			return;
 		double a = 0;
+		XGsmcwsx0Procedure.execute(entity);
 		a = entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity0.getAttribute(Attributes.MAX_HEALTH).getBaseValue() : 0;
 		entity.getPersistentData().putDouble("xg_smcw", a);
 		if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.MAX_HEALTH))
