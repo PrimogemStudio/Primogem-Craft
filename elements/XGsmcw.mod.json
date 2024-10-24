@@ -9,7 +9,7 @@
       "falpha": 0.0
     },
     "isInstant": false,
-    "mobEffectCategory": "BENEFICIAL",
+    "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredByMilk": true,

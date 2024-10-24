@@ -31283,6 +31283,40 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qwjlbxypzsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwjlbxypzsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwjlbxypzsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xyjlbpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xyjlbpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/xyjlbpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -31705,7 +31739,8 @@
       "CUSTOM:Qwsmcd",
       "CUSTOM:Qwtldgs",
       "CUSTOM:Qwclgs",
-      "CUSTOM:Qwwshy"
+      "CUSTOM:Qwwshy",
+      "CUSTOM:Qwjlbxyq"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Ysjtsj1",
@@ -33324,7 +33359,6 @@
       "CUSTOM:Axhjt.boots"
     ],
     "ITEMS:minecraft:enchantable/durability": [
-      "~CUSTOM:Qwjlbxyq",
       "~CUSTOM:Qwwshy",
       "~CUSTOM:Qwclgs",
       "~CUSTOM:Qwtldgs",

@@ -18,18 +18,23 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 200,
+    "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7攻击生物时，将自身10%最大生命值",
+        "§7等级的 生命垂危 效果赋予生物",
+        "§c§l每级效果减少其2点生命值上限",
+        "§7§l 效果持续10s，触发后冷却15s"
+      ]
     },
     "glowCondition": {
       "fixedValue": false

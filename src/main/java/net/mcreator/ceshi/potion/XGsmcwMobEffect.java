@@ -15,7 +15,7 @@ import java.util.Set;
 
 public class XGsmcwMobEffect extends MobEffect {
 	public XGsmcwMobEffect() {
-		super(MobEffectCategory.BENEFICIAL, -10092544);
+		super(MobEffectCategory.NEUTRAL, -10092544);
 	}
 
 	@Override
