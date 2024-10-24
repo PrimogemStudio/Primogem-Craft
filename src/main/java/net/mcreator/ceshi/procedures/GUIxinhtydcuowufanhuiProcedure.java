@@ -5,9 +5,10 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 public class GUIxinhtydcuowufanhuiProcedure {
@@ -23,6 +24,6 @@ public class GUIxinhtydcuowufanhuiProcedure {
 				}
 			}
 		}
-		return !(a >= ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWXYZQ.get())) : false) ? 13 : 16));
+		return !(a >= (entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(PrimogemcraftModMobEffects.HTDZ) ? 13 : 16));
 	}
 }
