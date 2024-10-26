@@ -31493,6 +31493,31 @@
           "src/main/resources/data/primogemcraft/recipe/qwclhypf.json"
         ]
       }
+    },
+    {
+      "name": "Qwjlbhy",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwjlbhy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwjlbhy.json",
+          "src/main/java/net/mcreator/ceshi/item/QwjlbhyItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Qwjlbhypf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwjlbhypf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/qwjlbhypf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -33910,7 +33935,8 @@
       "Qwwshy",
       "Qwjlbxyq",
       "Qwkzhy",
-      "Qwclhy"
+      "Qwclhy",
+      "Qwjlbhy"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -35146,6 +35172,7 @@
       "item.primogemcraft.qwxbzsq": "§5『Curio』§fBeacon coloring paste",
       "gui.primogemcraft.bwdyinhang.label_50gai_lu_huo_de_sui_ji": "50%概率获得随机",
       "item.primogemcraft.sanyuezhufu": "§dBlessing of March",
+      "item.primogemcraft.qwjlbhy": "§5§l『奇物』§a俱乐部火焰",
       "block.primogemcraft.xiaoguanzi": "Small Jar",
       "item.primogemcraft.zssp": "钻石碎片",
       "advancements.jdybdw.title": "一步到位！",
@@ -36212,6 +36239,7 @@
       "item.primogemcraft.qwxbzsq": "§5『Curio』§fBeacon coloring paste",
       "gui.primogemcraft.bwdyinhang.label_50gai_lu_huo_de_sui_ji": "50%概率获得随机",
       "item.primogemcraft.sanyuezhufu": "§dBlessing of March",
+      "item.primogemcraft.qwjlbhy": "§5§l『奇物』§a俱乐部火焰",
       "block.primogemcraft.xiaoguanzi": "Small Jar",
       "item.primogemcraft.zssp": "钻石碎片",
       "advancements.jdybdw.title": "一步到位！",
@@ -37272,6 +37300,7 @@
       "item.primogemcraft.qwxbzsq": "§5『奇物』§f信标着色剂",
       "gui.primogemcraft.bwdyinhang.label_50gai_lu_huo_de_sui_ji": "50%概率获得随机",
       "item.primogemcraft.sanyuezhufu": "§d三月祝福",
+      "item.primogemcraft.qwjlbhy": "§5§l『奇物』§a俱乐部火焰",
       "block.primogemcraft.xiaoguanzi": "小罐子",
       "item.primogemcraft.zssp": "钻石碎片",
       "advancements.jdybdw.title": "一步到位！",
