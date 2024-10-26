@@ -27,7 +27,7 @@ public class QwclhyItem extends Item {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.literal("\u00A77\u795E\u79D8\u78C1\u529B\u89E6\u53D1\u65F6\u5FC5\u5B9A\u989D\u5916\u751F\u6210"));
 		list.add(Component.literal("\u00A77\u4E00\u4E2A\u5F3A\u5316\u4EA1\u7075\u751F\u7269"));
-		list.add(Component.literal("\u00A7c\u00A7l\u6BCF\u6B21\u89E6\u53D1\u5C06\u670920%\u6982\u7387\u635F\u574F"));
+		list.add(Component.literal("\u00A7c\u00A7l\u6BCF\u6B21\u89E6\u53D1\u5C06\u670915%\u6982\u7387\u635F\u574F"));
 	}
 
 	@Override

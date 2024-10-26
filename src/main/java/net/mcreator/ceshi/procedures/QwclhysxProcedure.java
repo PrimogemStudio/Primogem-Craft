@@ -17,7 +17,7 @@ public class QwclhysxProcedure {
 			return;
 		if (entity.getPersistentData().getBoolean("cl_hy")) {
 			entity.getPersistentData().putBoolean("cl_hy", false);
-			if (Math.random() < 0.2) {
+			if (Math.random() < 0.15) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal((itemstack.getDisplayName().getString() + "\u00A7c\u5DF2\u635F\u574F\uFF01")), false);
 				itemstack.shrink(1);
