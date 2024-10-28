@@ -3,7 +3,12 @@ package net.mcreator.ceshi.procedures;
 import net.minecraft.client.gui.screens.Screen;
 
 public class Diaoyongshift0Procedure {
-	public static boolean execute() {
-		return Screen.hasShiftDown();
+	public static String execute(String shift, String shift0) {
+		if (shift == null || shift0 == null)
+			return "";
+		if (Screen.hasShiftDown()) {
+			return shift;
+		}
+		return "\u00A77\u00A7o\u6309\u4F4F[Shift]\u67E5\u770B" + shift0;
 	}
 }
