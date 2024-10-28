@@ -32,12 +32,11 @@ class GlobalAttributeModifier {
         modifiers.put("primogemcraft:qwtldhy", e -> {
             e.replaceModifier(MOVEMENT_SPEED, modifier("tldhy", 0.05, ADD_VALUE), ANY);
         });
-        enableForInventory("primogemcraft:qwtldhy");
-        modifiers.put("primogemcraft:qwjlbhy", e -> {
+        modifiers.put("primogemcraft:qwjlbhy", e -> {
             e.replaceModifier(MOVEMENT_SPEED, modifier("jlbhy", 0.02, ADD_VALUE), ANY);
         });
         enableForInventory("primogemcraft:qwjlbhy");
-
+        enableForInventory("primogemcraft:qwtldhy");
     }
 
     private static void custom(ItemAttributeModifierEvent event) {
