@@ -12,8 +12,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.XxiangdangaolaozaibeibaoshiProcedure;
@@ -30,19 +28,12 @@ public class XiangdanganlaoItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u5B58\u5728\u7269\u54C1\u680F\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77\u62FE\u53D6\u7ECF\u9A8C\u7403\u65F6\u6062\u590D\u5C11\u91CF\u751F\u547D\u503C"));
-		list.add(Component.literal("\u00A77\u5C0F\u6982\u7387\u635F\u574F\uFF01"));
-		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A75\u5F53\u98DF\u7528\u540E\uFF1A"));
-		list.add(Component.literal("\u00A79\u6062\u590D30%\u751F\u547D\u503C"));
-	}
-
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		entity.startUsingItem(hand);
-		return ar;
+		list.add(Component.translatable("item.primogemcraft.xiangdanganlao.description_0"));
+		list.add(Component.translatable("item.primogemcraft.xiangdanganlao.description_1"));
+		list.add(Component.translatable("item.primogemcraft.xiangdanganlao.description_2"));
+		list.add(Component.translatable("item.primogemcraft.xiangdanganlao.description_3"));
+		list.add(Component.translatable("item.primogemcraft.xiangdanganlao.description_4"));
+		list.add(Component.translatable("item.primogemcraft.xiangdanganlao.description_5"));
 	}
 
 	@Override

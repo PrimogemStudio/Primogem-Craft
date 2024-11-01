@@ -21,6 +21,6 @@ public class WmoladaiItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u6750\u6599"));
+		list.add(Component.translatable("item.primogemcraft.wmoladai.description_0"));
 	}
 }

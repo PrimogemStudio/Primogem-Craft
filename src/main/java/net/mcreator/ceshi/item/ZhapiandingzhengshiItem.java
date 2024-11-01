@@ -29,8 +29,8 @@ public class ZhapiandingzhengshiItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u8868\u9762\u7559\u6709\u7EC6\u7EB9"));
-		list.add(Component.literal("\u00A77\u6216\u8BB8\u53EF\u4EE5\u653E\u8FDB\u5531\u7247\u673A...."));
+		list.add(Component.translatable("item.primogemcraft.zhapiandingzhengshi.description_0"));
+		list.add(Component.translatable("item.primogemcraft.zhapiandingzhengshi.description_1"));
 	}
 
 	@Override

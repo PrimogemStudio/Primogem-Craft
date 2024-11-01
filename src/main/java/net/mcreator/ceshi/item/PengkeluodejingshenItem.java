@@ -45,14 +45,14 @@ public class PengkeluodejingshenItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A79\u8D4B\u4E88\u6218\u6597\u72B6\u6001"));
-		list.add(Component.literal("\u00A7d\u5904\u4E8E\u6218\u6597\u72B6\u6001\u4E0B\uFF1A"));
-		list.add(Component.literal("\u00A77\u88AB\u653B\u51FB\u65F6\uFF0C\u5C06\u670950%\u6982\u7387\u5BF9\u653B\u51FB\u8005\u65BD\u52A0\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u51CB\u96F6 I \uFF085s\uFF09"));
-		list.add(Component.literal("\u00A77 - \u7F13\u6162 III \uFF085s\uFF09"));
-		list.add(Component.literal("\u00A77 - \u5931\u660E III \uFF085s\uFF09"));
-		list.add(Component.literal("\u00A77 - \u9ED1\u6697 III \uFF085s\uFF09"));
-		list.add(Component.literal("\u00A77\u5176\u4E2D\u4E00\u79CD"));
+		list.add(Component.translatable("item.primogemcraft.pengkeluodejingshen.description_0"));
+		list.add(Component.translatable("item.primogemcraft.pengkeluodejingshen.description_1"));
+		list.add(Component.translatable("item.primogemcraft.pengkeluodejingshen.description_2"));
+		list.add(Component.translatable("item.primogemcraft.pengkeluodejingshen.description_3"));
+		list.add(Component.translatable("item.primogemcraft.pengkeluodejingshen.description_4"));
+		list.add(Component.translatable("item.primogemcraft.pengkeluodejingshen.description_5"));
+		list.add(Component.translatable("item.primogemcraft.pengkeluodejingshen.description_6"));
+		list.add(Component.translatable("item.primogemcraft.pengkeluodejingshen.description_7"));
 	}
 
 	@Override

@@ -66,12 +66,12 @@ public abstract class JlkjzsItem extends ArmorItem {
 		@OnlyIn(Dist.CLIENT)
 		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, context, list, flag);
-			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
-			list.add(Component.literal("\u00A77 2x \u83B7\u5F97\u6C38\u4E45\u6297\u6027\u63D0\u5347\u6548\u679C"));
-			list.add(Component.literal("\u00A77 4x \u95F4\u6B47\u6027\u83B7\u5F97\u4F24\u5BB3\u5438\u6536\u6548\u679C"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
-			list.add(Component.literal("\u00A7"));
-			list.add(Component.literal("\u00A79+1 \u5957\u88C5\u503C\uFF08\u9EC4\u7389\uFF09"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_helmet.description_0"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_helmet.description_1"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_helmet.description_2"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_helmet.description_3"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_helmet.description_4"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_helmet.description_5"));
 		}
 
 		@Override
@@ -92,12 +92,12 @@ public abstract class JlkjzsItem extends ArmorItem {
 		@OnlyIn(Dist.CLIENT)
 		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, context, list, flag);
-			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
-			list.add(Component.literal("\u00A77 2x \u83B7\u5F97\u6C38\u4E45\u6297\u6027\u63D0\u5347\u6548\u679C"));
-			list.add(Component.literal("\u00A77 4x \u95F4\u6B47\u6027\u83B7\u5F97\u4F24\u5BB3\u5438\u6536\u6548\u679C"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
-			list.add(Component.literal("\u00A7"));
-			list.add(Component.literal("\u00A79+1 \u5957\u88C5\u503C\uFF08\u9EC4\u7389\uFF09"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_chestplate.description_0"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_chestplate.description_1"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_chestplate.description_2"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_chestplate.description_3"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_chestplate.description_4"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_chestplate.description_5"));
 		}
 
 		@Override
@@ -118,12 +118,12 @@ public abstract class JlkjzsItem extends ArmorItem {
 		@OnlyIn(Dist.CLIENT)
 		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, context, list, flag);
-			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
-			list.add(Component.literal("\u00A77 2x \u83B7\u5F97\u6C38\u4E45\u6297\u6027\u63D0\u5347\u6548\u679C"));
-			list.add(Component.literal("\u00A77 4x \u95F4\u6B47\u6027\u83B7\u5F97\u4F24\u5BB3\u5438\u6536\u6548\u679C"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
-			list.add(Component.literal("\u00A7"));
-			list.add(Component.literal("\u00A79+1 \u5957\u88C5\u503C\uFF08\u9EC4\u7389\uFF09"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_leggings.description_0"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_leggings.description_1"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_leggings.description_2"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_leggings.description_3"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_leggings.description_4"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_leggings.description_5"));
 		}
 
 		@Override
@@ -144,12 +144,12 @@ public abstract class JlkjzsItem extends ArmorItem {
 		@OnlyIn(Dist.CLIENT)
 		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, context, list, flag);
-			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
-			list.add(Component.literal("\u00A77 2x \u83B7\u5F97\u6C38\u4E45\u6297\u6027\u63D0\u5347\u6548\u679C"));
-			list.add(Component.literal("\u00A77 4x \u95F4\u6B47\u6027\u83B7\u5F97\u4F24\u5BB3\u5438\u6536\u6548\u679C"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
-			list.add(Component.literal("\u00A7"));
-			list.add(Component.literal("\u00A79+1 \u5957\u88C5\u503C\uFF08\u9EC4\u7389\uFF09"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_boots.description_0"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_boots.description_1"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_boots.description_2"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_boots.description_3"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_boots.description_4"));
+			list.add(Component.translatable("item.primogemcraft.jlkjzs_boots.description_5"));
 		}
 
 		@Override

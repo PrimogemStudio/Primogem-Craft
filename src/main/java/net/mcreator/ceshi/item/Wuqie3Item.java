@@ -80,8 +80,8 @@ public class Wuqie3Item extends SwordItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7e\u7CBE\u70BC[3]"));
-		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A77\u968F\u5979\u5DE6\u53F3\u5373\u53EF"));
+		list.add(Component.translatable("item.primogemcraft.wuqie_3.description_0"));
+		list.add(Component.translatable("item.primogemcraft.wuqie_3.description_1"));
+		list.add(Component.translatable("item.primogemcraft.wuqie_3.description_2"));
 	}
 }

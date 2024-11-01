@@ -25,11 +25,11 @@ public class QwzcgsItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A76\u4E0E\u5F02\u6728\u679C\u5B9E\u6548\u679C\u4E00\u81F4\uFF0C\u4F46"));
-		list.add(Component.literal("\u00A7c\u89E6\u53D1\u540E\u4E3A\u9644\u8FD1\u6700\u5927\u751F\u547D\u503C\u5C0F\u6216\u7B49\u4E8E\u81EA\u8EAB"));
-		list.add(Component.literal("\u00A7c\u5341\u500D\u6700\u5927\u751F\u547D\u503C\u7684\u4EFB\u4F55\u751F\u7269"));
-		list.add(Component.literal("\u00A75\u8D4B\u4E88\uFF1A"));
-		list.add(Component.literal("\u00A79 \u5BC4\u751FV\uFF0800:20\uFF09"));
+		list.add(Component.translatable("item.primogemcraft.qwzcgs.description_0"));
+		list.add(Component.translatable("item.primogemcraft.qwzcgs.description_1"));
+		list.add(Component.translatable("item.primogemcraft.qwzcgs.description_2"));
+		list.add(Component.translatable("item.primogemcraft.qwzcgs.description_3"));
+		list.add(Component.translatable("item.primogemcraft.qwzcgs.description_4"));
 	}
 
 	@Override

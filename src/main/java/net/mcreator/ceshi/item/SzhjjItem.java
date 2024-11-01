@@ -70,9 +70,9 @@ public class SzhjjItem extends SwordItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u653B\u51FB\u751F\u7269\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u4E3A\u76EE\u6807\u65BD\u52A0\u300E\u5343\u53F6\u300F\u6548\u679C III"));
-		list.add(Component.literal("\u00A77 - \u6301\u7EED\u65F6\u95F4\u53EF\u53E0\u52A0"));
-		list.add(Component.literal("\u00A77 - \u65BD\u52A0\u95F4\u9694 8\u79D2"));
+		list.add(Component.translatable("item.primogemcraft.szhjj.description_0"));
+		list.add(Component.translatable("item.primogemcraft.szhjj.description_1"));
+		list.add(Component.translatable("item.primogemcraft.szhjj.description_2"));
+		list.add(Component.translatable("item.primogemcraft.szhjj.description_3"));
 	}
 }

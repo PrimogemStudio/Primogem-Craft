@@ -10,11 +10,8 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.KwglsxProcedure;
@@ -51,17 +48,10 @@ public class QwkwglItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u62FE\u53D6\u7ECF\u9A8C\u7403\u65F6\uFF0C\u6709\u6982\u7387\u5C11\u91CF\u4FEE\u590D\u526F\u624B"));
-		list.add(Component.literal("\u5947\u7269\uFF0C\u4FEE\u590D\u540E\u8BE5\u5947\u7269\u6982\u7387\u635F\u574F"));
-		list.add(Component.literal("\u00A7a\u5408\u6210\u4EE5\u4FEE\u590D\u4E00\u4E2A\u5DF2\u635F\u574F\u5947\u7269"));
-		list.add(Component.literal("\u00A7e\u98DF\u7528\u540E\u6062\u590D30%\u751F\u547D\u503C"));
-	}
-
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		entity.startUsingItem(hand);
-		return ar;
+		list.add(Component.translatable("item.primogemcraft.qwkwgl.description_0"));
+		list.add(Component.translatable("item.primogemcraft.qwkwgl.description_1"));
+		list.add(Component.translatable("item.primogemcraft.qwkwgl.description_2"));
+		list.add(Component.translatable("item.primogemcraft.qwkwgl.description_3"));
 	}
 
 	@Override

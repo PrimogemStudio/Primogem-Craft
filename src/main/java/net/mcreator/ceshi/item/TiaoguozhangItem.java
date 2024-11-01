@@ -84,7 +84,7 @@ public class TiaoguozhangItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u624B\u6301\u53F3\u952E\u5FEB\u901F\u7ED3\u7B97\u62BD\u53D6\u8303\u56F4"));
-		list.add(Component.literal("\u00A77\u5185\u7684\u7948\u613F\u5B9E\u4F53"));
+		list.add(Component.translatable("item.primogemcraft.tiaoguozhang.description_0"));
+		list.add(Component.translatable("item.primogemcraft.tiaoguozhang.description_1"));
 	}
 }

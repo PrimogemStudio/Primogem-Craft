@@ -33,7 +33,7 @@ public class ShengzhangkuangshiBlock extends Block {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A78\u5728\u4E3B\u4E16\u754C\u62E5\u6709\u6CE5\u571F\u7684\u4F4D\u7F6E\u751F\u6210"));
+		list.add(Component.translatable("block.primogemcraft.shengzhangkuangshi.description_0"));
 	}
 
 	@Override

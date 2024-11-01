@@ -25,9 +25,9 @@ public class QwqskxjxtItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u98DF\u7528\u98DF\u7269\u540E\u51CF\u5C1150%\u9971\u98DF\u5EA6\u6536\u76CA"));
-		list.add(Component.literal("\u00A77\u540C\u65F6\u51CF\u5C1180%\u9971\u548C\u5EA6\u6536\u76CA"));
-		list.add(Component.literal("\u00A78\u653E\u7F6E\u7C7B\u98DF\u7269\u4E0D\u53D7\u5F71\u54CD"));
+		list.add(Component.translatable("item.primogemcraft.qwqskxjxt.description_0"));
+		list.add(Component.translatable("item.primogemcraft.qwqskxjxt.description_1"));
+		list.add(Component.translatable("item.primogemcraft.qwqskxjxt.description_2"));
 	}
 
 	@Override

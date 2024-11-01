@@ -66,8 +66,8 @@ public class ZizaichuItem extends HoeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u653B\u51FB\u76EE\u6807\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u72E0\u72E0\u5730\u51FB\u9000\u76EE\u6807\uFF01"));
+		list.add(Component.translatable("item.primogemcraft.zizaichu.description_0"));
+		list.add(Component.translatable("item.primogemcraft.zizaichu.description_1"));
 	}
 
 	@Override

@@ -25,10 +25,10 @@ public class Qyhx0wujiachengItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A76\u00A7l\u65E0\u52A0\u6210\u7248\u672C\uFF0C\u4FBF\u4E8E\u5408\u6210"));
-		list.add(Component.literal("\u00A75\u624B\u6301\u65F6:"));
-		list.add(Component.literal("\u00A77 \u00A7 \u00A7 \u9010\u6B65\u66FF\u6362\u4E3A\u52A0\u6210\u7248\u672C"));
-		list.add(Component.literal("\u00A76 \u00A7 \u00A7 \u6F5C\u884C\u00A77\u4EE5\u66FF\u6362\u5168\u90E8"));
+		list.add(Component.translatable("item.primogemcraft.qyhx_0wujiacheng.description_0"));
+		list.add(Component.translatable("item.primogemcraft.qyhx_0wujiacheng.description_1"));
+		list.add(Component.translatable("item.primogemcraft.qyhx_0wujiacheng.description_2"));
+		list.add(Component.translatable("item.primogemcraft.qyhx_0wujiacheng.description_3"));
 	}
 
 	@Override

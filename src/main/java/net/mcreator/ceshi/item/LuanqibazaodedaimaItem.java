@@ -32,15 +32,15 @@ public class LuanqibazaodedaimaItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u5C06\u8FD9\u6BB5\u4EE3\u7801\u4FEE\u590D\u6210\u6B63\u5E38\u7684\u5947\u7269\u9700\u8981"));
-		list.add(Component.literal("\u00A77\u51FB\u674030\u53EA\u751F\u7269"));
-		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A77\u4FEE\u590D\u671F\u95F4\uFF1A"));
-		list.add(Component.literal("\u00A72\u51FB\u6740\u751F\u7269\u65F6\u670950%\u7684\u6982\u7387\u6D88\u8017"));
-		list.add(Component.literal("\u00A722\u70B9\u9971\u98DF\u5EA6"));
-		list.add(Component.literal("\u00A77\u4EE3\u7801\u4FEE\u590D\u540E\uFF1A"));
-		list.add(Component.literal("\u00A72\u51FB\u6740\u751F\u7269100%\u6062\u590D\u9971\u98DF\u5EA6"));
-		list.add(Component.literal("\u00A72\u6301\u7EED\u5230\u589E\u76CA\u7ED3\u675F"));
+		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_0"));
+		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_1"));
+		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_2"));
+		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_3"));
+		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_4"));
+		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_5"));
+		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_6"));
+		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_7"));
+		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_8"));
 	}
 
 	@Override

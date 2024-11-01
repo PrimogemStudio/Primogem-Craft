@@ -69,6 +69,6 @@ public class FfanrongdezhexueItem extends SwordItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A74\u6218\u6597\u65F6\u00A7f\u6709\u5C0F\u6982\u7387\u6389\u843D\u00A7e\u6469\u62C9"));
+		list.add(Component.translatable("item.primogemcraft.ffanrongdezhexue.description_0"));
 	}
 }

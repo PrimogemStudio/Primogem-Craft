@@ -17,7 +17,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 public class XiaodengRenderer extends MobRenderer<XiaodengEntity, Modelceshixiaodeng_Converted<XiaodengEntity>> {
 	public XiaodengRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelceshixiaodeng_Converted(context.bakeLayer(Modelceshixiaodeng_Converted.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelceshixiaodeng_Converted<XiaodengEntity>(context.bakeLayer(Modelceshixiaodeng_Converted.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new RenderLayer<XiaodengEntity, Modelceshixiaodeng_Converted<XiaodengEntity>>(this) {
 			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("primogemcraft:textures/entities/ceshixiaodeng_tietu.png");
 

@@ -73,7 +73,7 @@ public class RygItem extends PickaxeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u6316\u6398\u77F3\u82F1\u77FF\u77F3\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - 5%\u6982\u7387\u6389\u843D\u4E00\u4E2A\u5143\u7D20\u6676\u77F3\u7C89\u5C18"));
+		list.add(Component.translatable("item.primogemcraft.ryg.description_0"));
+		list.add(Component.translatable("item.primogemcraft.ryg.description_1"));
 	}
 }

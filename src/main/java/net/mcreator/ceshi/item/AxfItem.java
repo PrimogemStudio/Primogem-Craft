@@ -73,12 +73,12 @@ public class AxfItem extends AxeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u53F3\u952E\u7A7A\u6C14\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - 50%\u6982\u7387\u6D88\u8017\u4E00\u4E2A\u00A7d\u00A7n\u6700\u80DC\u7D2B\u6676 \u788E\u5C51"));
-		list.add(Component.literal("\u00A77 - \u5BF9\u5468\u56F4\u975E\u961F\u53CB\u751F\u7269"));
-		list.add(Component.literal("\u00A77 \u9020\u6210\u4E00\u6B21\u00A7b\u00A7o [3d8] \u00A77\u771F\u5B9E\u4F24\u5BB3"));
-		list.add(Component.literal("\u00A77 - \u51B7\u537410\u79D2"));
-		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A7d\u4F7F\u7528\u6469\u62C9\u53EF\u6DFB\u52A0\u961F\u53CB"));
+		list.add(Component.translatable("item.primogemcraft.axf.description_0"));
+		list.add(Component.translatable("item.primogemcraft.axf.description_1"));
+		list.add(Component.translatable("item.primogemcraft.axf.description_2"));
+		list.add(Component.translatable("item.primogemcraft.axf.description_3"));
+		list.add(Component.translatable("item.primogemcraft.axf.description_4"));
+		list.add(Component.translatable("item.primogemcraft.axf.description_5"));
+		list.add(Component.translatable("item.primogemcraft.axf.description_6"));
 	}
 }

@@ -64,9 +64,9 @@ public class RyqItem extends ShovelItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u6D88\u8017\u8010\u4E45\u6F5C\u884C\u53F3\u952E\u65B9\u5757\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u5BF9\u53EF\u7194\u70BC\u65B9\u5757\u8FDB\u884C\u7194\u70BC\uFF0C\u5E76\u83B7\u5F971~4\u500D\u4EA7\u51FA"));
-		list.add(Component.literal("\u00A7c - \u5C06\u670950%\u6982\u7387\u65E0\u4EFB\u4F55\u4EA7\u51FA\uFF01"));
+		list.add(Component.translatable("item.primogemcraft.ryq.description_0"));
+		list.add(Component.translatable("item.primogemcraft.ryq.description_1"));
+		list.add(Component.translatable("item.primogemcraft.ryq.description_2"));
 	}
 
 	@Override

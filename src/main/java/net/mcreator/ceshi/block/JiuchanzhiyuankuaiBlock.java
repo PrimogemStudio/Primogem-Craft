@@ -30,8 +30,8 @@ public class JiuchanzhiyuankuaiBlock extends Block {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u6211\u5168\u505A\u4E86...."));
-		list.add(Component.literal("\u7528\u6765\u5F53\u5730\u677F\u600E\u4E48\u6837...\uFF1F"));
+		list.add(Component.translatable("block.primogemcraft.jiuchanzhiyuankuai.description_0"));
+		list.add(Component.translatable("block.primogemcraft.jiuchanzhiyuankuai.description_1"));
 	}
 
 	@Override

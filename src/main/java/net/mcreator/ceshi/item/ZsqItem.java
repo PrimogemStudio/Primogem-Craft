@@ -75,16 +75,16 @@ public class ZsqItem extends ShovelItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u624B\u6301\u00A76[SHIFT\u53F3\u952E]\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u8BB0\u5F55\u5F53\u524D\u5750\u6807"));
-		list.add(Component.literal("\u00A7d - \u300E\u8FC7\u53BB\u300F\u6548\u679C\u7ED3\u675F\u65F6\u56DE\u5230\u8FD9\u91CC"));
-		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A7a[SHIFT+\u5DE6\u952E]\u8C03\u6574\u6548\u679C\u5EF6\u8FDF\uFF01"));
+		list.add(Component.translatable("item.primogemcraft.zsq.description_0"));
+		list.add(Component.translatable("item.primogemcraft.zsq.description_1"));
+		list.add(Component.translatable("item.primogemcraft.zsq.description_2"));
+		list.add(Component.translatable("item.primogemcraft.zsq.description_3"));
+		list.add(Component.translatable("item.primogemcraft.zsq.description_4"));
 	}
 
 	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-		boolean retval = super.onEntitySwing(itemstack, entity);
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
+		boolean retval = super.onEntitySwing(itemstack, entity, hand);
 		Zsqsx2Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 		return retval;
 	}

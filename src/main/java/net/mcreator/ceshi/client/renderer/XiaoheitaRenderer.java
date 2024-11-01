@@ -10,7 +10,7 @@ import net.mcreator.ceshi.client.model.Modelheitaxiaoren_Converted_Converted;
 
 public class XiaoheitaRenderer extends MobRenderer<XiaoheitaEntity, Modelheitaxiaoren_Converted_Converted<XiaoheitaEntity>> {
 	public XiaoheitaRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelheitaxiaoren_Converted_Converted(context.bakeLayer(Modelheitaxiaoren_Converted_Converted.LAYER_LOCATION)), 0.5f);
+		super(context, new Modelheitaxiaoren_Converted_Converted<XiaoheitaEntity>(context.bakeLayer(Modelheitaxiaoren_Converted_Converted.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

@@ -64,8 +64,8 @@ public class AxqItem extends ShovelItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u53F3\u952E\u51B0\u5757\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u4F7F\u5176\u8F6C\u5316\u4E3A\u84DD\u51B0"));
+		list.add(Component.translatable("item.primogemcraft.axq.description_0"));
+		list.add(Component.translatable("item.primogemcraft.axq.description_1"));
 	}
 
 	@Override

@@ -29,8 +29,8 @@ public class CaoyuanhekuaiBlock extends Block {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u5F53\u95EA\u7535\u51FB\u4E2D\u8349\u539F\u6838\u65F6\u51FA\u73B0"));
-		list.add(Component.literal("\u4E5F\u53EF\u4EE5\u5408\u6210"));
+		list.add(Component.translatable("block.primogemcraft.caoyuanhekuai.description_0"));
+		list.add(Component.translatable("block.primogemcraft.caoyuanhekuai.description_1"));
 	}
 
 	@Override

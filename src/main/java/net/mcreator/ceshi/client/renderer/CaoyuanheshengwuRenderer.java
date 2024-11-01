@@ -10,7 +10,7 @@ import net.mcreator.ceshi.client.model.Modelcx_cyhsrmx;
 
 public class CaoyuanheshengwuRenderer extends MobRenderer<CaoyuanheshengwuEntity, Modelcx_cyhsrmx<CaoyuanheshengwuEntity>> {
 	public CaoyuanheshengwuRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcx_cyhsrmx(context.bakeLayer(Modelcx_cyhsrmx.LAYER_LOCATION)), 0.2f);
+		super(context, new Modelcx_cyhsrmx<CaoyuanheshengwuEntity>(context.bakeLayer(Modelcx_cyhsrmx.LAYER_LOCATION)), 0.2f);
 	}
 
 	@Override

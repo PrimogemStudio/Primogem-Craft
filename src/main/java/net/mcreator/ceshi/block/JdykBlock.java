@@ -28,7 +28,7 @@ public class JdykBlock extends Block {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u4F3C\u4E4E\u9664\u4E86\u88C5\u9970\u4EE5\u5916\u5E76\u65E0\u7528\u9014"));
+		list.add(Component.translatable("block.primogemcraft.jdyk.description_0"));
 	}
 
 	@Override

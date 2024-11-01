@@ -38,9 +38,9 @@ public class ShenshenghuabanItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u53F3\u952E\u5730\u9762\u00A7b\u53EC\u5524\u00A77\u865A\u62DF\u9ED1\u5854"));
-		list.add(Component.literal("\u00A77\u53F3\u952E\u865A\u62DF\u9ED1\u5854\u4EE5\u00A7e\u56DE\u6536"));
-		list.add(Component.literal("\u00A78\u5B83\u771F\u597D\u770B"));
+		list.add(Component.translatable("item.primogemcraft.shenshenghuaban.description_0"));
+		list.add(Component.translatable("item.primogemcraft.shenshenghuaban.description_1"));
+		list.add(Component.translatable("item.primogemcraft.shenshenghuaban.description_2"));
 	}
 
 	@Override

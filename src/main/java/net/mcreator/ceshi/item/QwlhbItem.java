@@ -27,7 +27,7 @@ public class QwlhbItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A76\u00A7l\u83B7\u5F97\u968F\u673A \u00A7f\u00A7lB \u00A76\u00A7l\u7EA7\u5947\u7269"));
+		list.add(Component.translatable("item.primogemcraft.qwlhb.description_0"));
 	}
 
 	@Override

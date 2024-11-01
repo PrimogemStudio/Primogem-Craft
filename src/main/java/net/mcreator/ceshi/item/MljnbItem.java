@@ -21,6 +21,6 @@ public class MljnbItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u6CA1\u6709\u5B9E\u9645\u7528\u9014"));
+		list.add(Component.translatable("item.primogemcraft.mljnb.description_0"));
 	}
 }

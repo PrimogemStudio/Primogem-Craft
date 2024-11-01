@@ -39,7 +39,7 @@ public class DijingqinjingkuangshiBlock extends FallingBlock {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A78\u5728\u6D77\u6D0B\u7FA4\u7CFB\u751F\u6210"));
+		list.add(Component.translatable("block.primogemcraft.dijingqinjingkuangshi.description_0"));
 	}
 
 	@Override

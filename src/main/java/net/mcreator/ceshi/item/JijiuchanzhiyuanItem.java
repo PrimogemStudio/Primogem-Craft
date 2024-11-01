@@ -42,10 +42,10 @@ public class JijiuchanzhiyuanItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u957F\u6309\u53F3\u952E\u4F7F\u7528"));
-		list.add(Component.literal("\u00A76\u6F5C\u884C+\u5DE6\u952E\u00A75\u83B7\u53D6\u7948\u613F\u52A0\u6210\u4FE1\u606F"));
-		list.add(Component.literal("\u00A7c\u4F7F\u7528\u8005\u5FC5\u987B\u5728\u9644\u8FD1"));
-		list.add(Component.literal("\u00A7520%\u00A77\u3001\u00A763%"));
+		list.add(Component.translatable("item.primogemcraft.jijiuchanzhiyuan.description_0"));
+		list.add(Component.translatable("item.primogemcraft.jijiuchanzhiyuan.description_1"));
+		list.add(Component.translatable("item.primogemcraft.jijiuchanzhiyuan.description_2"));
+		list.add(Component.translatable("item.primogemcraft.jijiuchanzhiyuan.description_3"));
 	}
 
 	@Override

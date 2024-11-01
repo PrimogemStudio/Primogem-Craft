@@ -25,10 +25,10 @@ public class QwflbItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A76\u4E0E\u5206\u88C2\u91D1\u5E01\u6548\u679C\u4E00\u81F4\uFF0C\u4F46"));
-		list.add(Component.literal("\u00A77 \u4EA7\u51FA\u4E00\u6216\u591A\u4E2A\u5B87\u5B99\u788E\u7247\uFF0C\u9700\u8981"));
-		list.add(Component.literal("\u00A77 \u66F4\u957F\u7B49\u5F85\u65F6\u95F4\uFF0C\u4E00\u5B9A\u6B21\u6570\u540E\u81EA"));
-		list.add(Component.literal("\u00A77 \u7136\u6D88\u5931"));
+		list.add(Component.translatable("item.primogemcraft.qwflb.description_0"));
+		list.add(Component.translatable("item.primogemcraft.qwflb.description_1"));
+		list.add(Component.translatable("item.primogemcraft.qwflb.description_2"));
+		list.add(Component.translatable("item.primogemcraft.qwflb.description_3"));
 	}
 
 	@Override

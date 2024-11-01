@@ -39,7 +39,7 @@ public class BushizidanheItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u5565\u4E5F\u4E0D\u662F\uFF0C\u5565\u4E5F\u4E0D\u662F"));
+		list.add(Component.translatable("item.primogemcraft.mingwei_yiqiedekaishi.description_0"));
 	}
 
 	@Override

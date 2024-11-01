@@ -21,11 +21,11 @@ public class HqshuiItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A79\u5BF9\u4E8E\u6DA4\u51C0\u9752\u91D1\u7CFB\u5217\u88C5\u5907\uFF1A"));
-		list.add(Component.literal(" \u00A7a+50%\u00A78 \u00A7/ \u00A7d+0.5"));
-		list.add(Component.literal(" \u00A77\u6982\u7387\u00A78 \u00A7/ \u00A7/ \u00A7/ \u00A77\u5957\u88C5\u6570\u503C"));
-		list.add(Component.literal(" \u00A7e-50%"));
-		list.add(Component.literal(" \u00A77\u51B7\u5374"));
-		list.add(Component.literal("\u00A78\u4EC5\u4F5C\u7528\u4E8E\u6B63\u9762\u6548\u679C"));
+		list.add(Component.translatable("item.primogemcraft.hqshui.description_0"));
+		list.add(Component.translatable("item.primogemcraft.hqshui.description_1"));
+		list.add(Component.translatable("item.primogemcraft.hqshui.description_2"));
+		list.add(Component.translatable("item.primogemcraft.hqshui.description_3"));
+		list.add(Component.translatable("item.primogemcraft.hqshui.description_4"));
+		list.add(Component.translatable("item.primogemcraft.hqshui.description_5"));
 	}
 }

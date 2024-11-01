@@ -64,8 +64,8 @@ public class AxcItem extends HoeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A76[SHIFT+\u53F3\u952E]\u00A7d\u65B9\u5757\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u6539\u53D8\u5176\u9876\u90E8\u7684\u79EF\u96EA\u72B6\u6001"));
+		list.add(Component.translatable("item.primogemcraft.axc.description_0"));
+		list.add(Component.translatable("item.primogemcraft.axc.description_1"));
 	}
 
 	@Override

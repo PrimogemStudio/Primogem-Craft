@@ -80,6 +80,6 @@ public class WufengjianItem extends SwordItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u6709\u80FD\u529B\u6539\u53D8\u4E00\u4E2A\u4E16\u754C\u7684\u4EBA\u624D\u80FD\u62E5\u6709\u5B83"));
+		list.add(Component.translatable("item.primogemcraft.wufengjian.description_0"));
 	}
 }

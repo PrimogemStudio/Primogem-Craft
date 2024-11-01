@@ -64,11 +64,11 @@ public class DjqItem extends ShovelItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A76[SHIFT+\u53F3\u952E]\u00A7d\u65B9\u5757\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77\u6D88\u8017\u8010\u4E45"));
-		list.add(Component.literal("\u00A77 - \u8F6C\u5316\u6CE5\u571F\u4E3A\u7C98\u571F"));
-		list.add(Component.literal("\u00A77 - \u8F6C\u5316\u7C98\u571F\u4E3A\u6C99\u5B50"));
-		list.add(Component.literal("\u00A77 - 25%\u8F6C\u5316\u5931\u8D25"));
+		list.add(Component.translatable("item.primogemcraft.djq.description_0"));
+		list.add(Component.translatable("item.primogemcraft.djq.description_1"));
+		list.add(Component.translatable("item.primogemcraft.djq.description_2"));
+		list.add(Component.translatable("item.primogemcraft.djq.description_3"));
+		list.add(Component.translatable("item.primogemcraft.djq.description_4"));
 	}
 
 	@Override

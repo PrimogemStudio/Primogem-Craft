@@ -21,6 +21,6 @@ public class WeizhiyepianItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u53EF\u4E0E\u00A7b\u6D53\u7A20\u7684\u836F\u6C34\u00A7f\u917F\u9020\u00A7e\u4E30\u9976\u743C\u6D46"));
+		list.add(Component.translatable("item.primogemcraft.weizhiyepian.description_0"));
 	}
 }

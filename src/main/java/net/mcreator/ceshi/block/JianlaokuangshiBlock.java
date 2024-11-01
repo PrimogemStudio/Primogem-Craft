@@ -27,7 +27,7 @@ public class JianlaokuangshiBlock extends Block {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A78\u4E3B\u4E16\u754C\u5730\u5F62\u6D45\u5C42\u751F\u6210"));
+		list.add(Component.translatable("block.primogemcraft.jianlaokuangshi.description_0"));
 	}
 
 	@Override

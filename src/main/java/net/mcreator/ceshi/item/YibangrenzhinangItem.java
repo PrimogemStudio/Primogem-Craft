@@ -41,7 +41,7 @@ public class YibangrenzhinangItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u5B58\u50A8\u7A7A\u95F4\uFF1A143"));
+		list.add(Component.translatable("item.primogemcraft.yingjicunchunang.description_0"));
 	}
 
 	@Override

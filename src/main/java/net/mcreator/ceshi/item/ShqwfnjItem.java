@@ -21,6 +21,6 @@ public class ShqwfnjItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7c\u5DF2\u635F\u574F\uFF01"));
+		list.add(Component.translatable("item.primogemcraft.shqwfnj.description_0"));
 	}
 }

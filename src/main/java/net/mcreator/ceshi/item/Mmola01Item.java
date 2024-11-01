@@ -25,8 +25,8 @@ public class Mmola01Item extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u636E\u8BF4\u662F\u67D0\u4E2A\u4E16\u754C\u7684\u901A\u7528\u8D27\u5E01"));
-		list.add(Component.literal("\u00A77\u4F46\u7EDD\u5BF9\u4E0D\u662F\u8FD9\u91CC"));
+		list.add(Component.translatable("item.primogemcraft.mmola_01.description_0"));
+		list.add(Component.translatable("item.primogemcraft.mmola_01.description_1"));
 	}
 
 	@Override

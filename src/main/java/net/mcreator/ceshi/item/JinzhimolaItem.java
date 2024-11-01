@@ -21,6 +21,6 @@ public class JinzhimolaItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u7CBE\u6E5B\u7684\u94F8\u9020\u5DE5\u827A...."));
+		list.add(Component.translatable("item.primogemcraft.jinzhimola.description_0"));
 	}
 }

@@ -12,7 +12,7 @@ import net.mcreator.ceshi.entity.QqiwuzhanlipinshitiEntity;
 
 public class QqiwuzhanlipinshitiRenderer extends HumanoidMobRenderer<QqiwuzhanlipinshitiEntity, HumanoidModel<QqiwuzhanlipinshitiEntity>> {
 	public QqiwuzhanlipinshitiRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.1f);
+		super(context, new HumanoidModel<QqiwuzhanlipinshitiEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0.1f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 	}
 

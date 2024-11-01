@@ -73,9 +73,9 @@ public class DjgItem extends PickaxeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u6C34\u4E0B\u53F3\u952E\u7A7A\u6C14\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A79 - \u6C34\u4E0B\u547C\u5438\uFF081:00\uFF09"));
-		list.add(Component.literal("\u00A79 - \u6025\u8FEBII\uFF081:00\uFF09"));
-		list.add(Component.literal("\u00A77\u51B7\u53742\u5206\u949F"));
+		list.add(Component.translatable("item.primogemcraft.djg.description_0"));
+		list.add(Component.translatable("item.primogemcraft.djg.description_1"));
+		list.add(Component.translatable("item.primogemcraft.djg.description_2"));
+		list.add(Component.translatable("item.primogemcraft.djg.description_3"));
 	}
 }

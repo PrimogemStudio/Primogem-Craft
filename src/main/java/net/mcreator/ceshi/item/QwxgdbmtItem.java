@@ -27,9 +27,9 @@ public class QwxgdbmtItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A76\u4E0E\u00A7d\u00A7l\u95EA\u8000\u7684\u504F\u65B9\u4E09\u516B\u9762\u9AB0\u00A7r\u00A76\u6548\u679C\u4E00\u81F4\uFF0C\u4F46"));
-		list.add(Component.literal("\u00A7e\u8F6C\u5316\u81EA\u8EAB\u4EE5\u5916\u7684\u5947\u7269\u65F6\uFF0C\u6BCF\u8F6C\u531610\u79CD\u5176"));
-		list.add(Component.literal("\u00A7e\u4ED6\u5947\u7269\u5219\u00A7l\u989D\u5916\u83B7\u5F97\u4E00\u4E2A\u968F\u673A\u5947\u7269"));
+		list.add(Component.translatable("item.primogemcraft.qwxgdbmt.description_0"));
+		list.add(Component.translatable("item.primogemcraft.qwxgdbmt.description_1"));
+		list.add(Component.translatable("item.primogemcraft.qwxgdbmt.description_2"));
 	}
 
 	@Override

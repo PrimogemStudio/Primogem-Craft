@@ -66,11 +66,11 @@ public abstract class DjttItem extends ArmorItem {
 		@OnlyIn(Dist.CLIENT)
 		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, context, list, flag);
-			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
-			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6F6E\u6D8C\u6838\u5FC3\u6548\u679C"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
-			list.add(Component.literal("\u00A7"));
-			list.add(Component.literal("\u00A79+0.5 \u5957\u88C5\u503C\uFF08\u9752\u91D1\uFF09"));
+			list.add(Component.translatable("item.primogemcraft.djtt_helmet.description_0"));
+			list.add(Component.translatable("item.primogemcraft.djtt_helmet.description_1"));
+			list.add(Component.translatable("item.primogemcraft.djtt_helmet.description_2"));
+			list.add(Component.translatable("item.primogemcraft.djtt_helmet.description_3"));
+			list.add(Component.translatable("item.primogemcraft.djtt_helmet.description_4"));
 		}
 
 		@Override
@@ -91,11 +91,11 @@ public abstract class DjttItem extends ArmorItem {
 		@OnlyIn(Dist.CLIENT)
 		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, context, list, flag);
-			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
-			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6F6E\u6D8C\u6838\u5FC3\u6548\u679C"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
-			list.add(Component.literal("\u00A7"));
-			list.add(Component.literal("\u00A79+0.5 \u5957\u88C5\u503C\uFF08\u9752\u91D1\uFF09"));
+			list.add(Component.translatable("item.primogemcraft.djtt_chestplate.description_0"));
+			list.add(Component.translatable("item.primogemcraft.djtt_chestplate.description_1"));
+			list.add(Component.translatable("item.primogemcraft.djtt_chestplate.description_2"));
+			list.add(Component.translatable("item.primogemcraft.djtt_chestplate.description_3"));
+			list.add(Component.translatable("item.primogemcraft.djtt_chestplate.description_4"));
 		}
 
 		@Override
@@ -116,11 +116,11 @@ public abstract class DjttItem extends ArmorItem {
 		@OnlyIn(Dist.CLIENT)
 		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, context, list, flag);
-			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
-			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6F6E\u6D8C\u6838\u5FC3\u6548\u679C"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
-			list.add(Component.literal("\u00A7"));
-			list.add(Component.literal("\u00A79+0.5 \u5957\u88C5\u503C\uFF08\u9752\u91D1\uFF09"));
+			list.add(Component.translatable("item.primogemcraft.djtt_leggings.description_0"));
+			list.add(Component.translatable("item.primogemcraft.djtt_leggings.description_1"));
+			list.add(Component.translatable("item.primogemcraft.djtt_leggings.description_2"));
+			list.add(Component.translatable("item.primogemcraft.djtt_leggings.description_3"));
+			list.add(Component.translatable("item.primogemcraft.djtt_leggings.description_4"));
 		}
 
 		@Override
@@ -141,11 +141,11 @@ public abstract class DjttItem extends ArmorItem {
 		@OnlyIn(Dist.CLIENT)
 		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, context, list, flag);
-			list.add(Component.literal("\u00A76\u5957\u88C5\u6548\u679C\uFF1A"));
-			list.add(Component.literal("\u00A77 2x \u63D0\u4F9B\u6C38\u4E45\u6F6E\u6D8C\u6838\u5FC3\u6548\u679C"));
-			list.add(Component.literal("\u00A78\u63D0\u5347\u7A0B\u5EA6\u57FA\u4E8E\u5957\u88C5\u503C"));
-			list.add(Component.literal("\u00A7"));
-			list.add(Component.literal("\u00A79+0.5 \u5957\u88C5\u503C\uFF08\u9752\u91D1\uFF09"));
+			list.add(Component.translatable("item.primogemcraft.djtt_boots.description_0"));
+			list.add(Component.translatable("item.primogemcraft.djtt_boots.description_1"));
+			list.add(Component.translatable("item.primogemcraft.djtt_boots.description_2"));
+			list.add(Component.translatable("item.primogemcraft.djtt_boots.description_3"));
+			list.add(Component.translatable("item.primogemcraft.djtt_boots.description_4"));
 		}
 
 		@Override

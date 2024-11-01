@@ -21,6 +21,6 @@ public class SuijiwupinItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u62BD\u5361\u4EE5\u83B7\u5F97\u968F\u673A\u5956\u52B1"));
+		list.add(Component.translatable("item.primogemcraft.suijiwupin.description_0"));
 	}
 }

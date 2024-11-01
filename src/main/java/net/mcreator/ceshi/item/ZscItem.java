@@ -73,8 +73,8 @@ public class ZscItem extends HoeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u624B\u6301\u53F3\u952E\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A7c - \u6D88\u8017\u5927\u91CF\u8010\u4E45"));
-		list.add(Component.literal("\u00A77 - \u968F\u673A\u6539\u53D8\u5929\u6C14"));
+		list.add(Component.translatable("item.primogemcraft.zsc.description_0"));
+		list.add(Component.translatable("item.primogemcraft.zsc.description_1"));
+		list.add(Component.translatable("item.primogemcraft.zsc.description_2"));
 	}
 }

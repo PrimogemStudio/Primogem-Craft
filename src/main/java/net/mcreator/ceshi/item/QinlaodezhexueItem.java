@@ -73,6 +73,6 @@ public class QinlaodezhexueItem extends PickaxeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7b\u6316\u6398\u65F6\u00A7f\u6709\u5C0F\u6982\u7387\u6389\u843D\u00A7e\u6469\u62C9"));
+		list.add(Component.translatable("item.primogemcraft.qinlaodezhexue.description_0"));
 	}
 }

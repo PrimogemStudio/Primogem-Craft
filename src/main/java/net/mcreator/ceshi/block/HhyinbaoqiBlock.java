@@ -46,8 +46,8 @@ public class HhyinbaoqiBlock extends Block {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u867D\u7136\u4E5F\u53EF\u4EE5\u901A\u8FC7\u53F3\u952E\u6765\u6FC0\u6D3B\u73A9\u5076\uFF0C\u4F46\u662F"));
-		list.add(Component.literal("\u00A77\u8C01\u4F1A\u62D2\u7EDD\u66F4\u6709\u4EEA\u5F0F\u611F\u7684\u6FC0\u6D3B\u65B9\u5F0F\u5462\uFF1F"));
+		list.add(Component.translatable("block.primogemcraft.hhyinbaoqi.description_0"));
+		list.add(Component.translatable("block.primogemcraft.hhyinbaoqi.description_1"));
 	}
 
 	@Override

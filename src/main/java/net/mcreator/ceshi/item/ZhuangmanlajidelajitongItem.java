@@ -14,8 +14,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.EcrysxProcedure;
@@ -41,15 +39,8 @@ public class ZhuangmanlajidelajitongItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7c\u4E2D\u6BD2IV\uFF081:14\uFF09"));
-		list.add(Component.literal("\u00A7c\u53CD\u80C3IV\uFF085:14\uFF09"));
-	}
-
-	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		entity.startUsingItem(hand);
-		return ar;
+		list.add(Component.translatable("item.primogemcraft.zhuangmanlajidelajitong.description_0"));
+		list.add(Component.translatable("item.primogemcraft.zhuangmanlajidelajitong.description_1"));
 	}
 
 	@Override

@@ -64,9 +64,9 @@ public class ZizaifuItem extends AxeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u624B\u6301\u5DE5\u5177\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u6B65\u884C\u65F6\u83B7\u5F97\u6025\u901F"));
-		list.add(Component.literal("\u00A77 - \u6E38\u6CF3\u65F6\u83B7\u5F97\u6D77\u8C5A\u7684\u6069\u60E0"));
+		list.add(Component.translatable("item.primogemcraft.zizaifu.description_0"));
+		list.add(Component.translatable("item.primogemcraft.zizaifu.description_1"));
+		list.add(Component.translatable("item.primogemcraft.zizaifu.description_2"));
 	}
 
 	@Override

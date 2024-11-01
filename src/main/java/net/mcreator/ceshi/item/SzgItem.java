@@ -73,7 +73,7 @@ public class SzgItem extends PickaxeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u5904\u4E8E\u6C34\u4E2D\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u6316\u6398\u65B9\u5757\u6709\u6982\u7387\u6389\u843D\u7269\u54C1\u8349\u539F\u6838"));
+		list.add(Component.translatable("item.primogemcraft.szg.description_0"));
+		list.add(Component.translatable("item.primogemcraft.szg.description_1"));
 	}
 }

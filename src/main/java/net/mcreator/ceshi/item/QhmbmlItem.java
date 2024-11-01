@@ -21,11 +21,11 @@ public class QhmbmlItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u6469\u62C9\u6750\u8D28\u5347\u7EA7"));
-		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A77\u53EF\u5E94\u7528\u4E8E\uFF1A"));
-		list.add(Component.literal("\u00A79 \u5251\u6216\u5DE5\u5177"));
-		list.add(Component.literal("\u00A77\u6240\u9700\u539F\u6750\u6599\uFF1A"));
-		list.add(Component.literal("\u00A79 \u6469\u62C9"));
+		list.add(Component.translatable("item.primogemcraft.qhmbml.description_0"));
+		list.add(Component.translatable("item.primogemcraft.qhmbml.description_1"));
+		list.add(Component.translatable("item.primogemcraft.qhmbml.description_2"));
+		list.add(Component.translatable("item.primogemcraft.qhmbml.description_3"));
+		list.add(Component.translatable("item.primogemcraft.qhmbml.description_4"));
+		list.add(Component.translatable("item.primogemcraft.qhmbml.description_5"));
 	}
 }

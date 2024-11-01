@@ -21,6 +21,6 @@ public class XiaodaimolaItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u53EF\u7528\u4E8E\u4EA4\u6613"));
+		list.add(Component.translatable("item.primogemcraft.xiaodaimola.description_0"));
 	}
 }

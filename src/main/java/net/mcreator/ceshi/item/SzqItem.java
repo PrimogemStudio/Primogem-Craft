@@ -76,9 +76,9 @@ public class SzqItem extends ShovelItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u5728\u4E3B\u624B\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u7834\u574F\u6CE5\u571F\u65F6\u6709\u6982\u7387\u4EA7\u51FA\u6218\u5229\u54C1"));
-		list.add(Component.literal("\u00A77 - [\u00A76SHIFT+\u53F3\u952E]\u00A77\u6539\u53D8\u6CE5\u571F\u72B6\u6001"));
+		list.add(Component.translatable("item.primogemcraft.szq.description_0"));
+		list.add(Component.translatable("item.primogemcraft.szq.description_1"));
+		list.add(Component.translatable("item.primogemcraft.szq.description_2"));
 	}
 
 	@Override

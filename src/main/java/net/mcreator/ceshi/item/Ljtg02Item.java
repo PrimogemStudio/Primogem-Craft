@@ -33,14 +33,14 @@ public class Ljtg02Item extends ShieldItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u624B\u611F\u597D\u50CF\u8FD8\u4E0D\u9519\uFF1F"));
-		list.add(Component.literal(""));
-		list.add(Component.literal("\u00A76 \u2022 \u5783\u573E\u6876\u7684\u987D\u5F3A\uFF01"));
-		list.add(Component.literal("\u00A78 \u53D7\u5230\u653B\u51FB\u65F6\u67094%\u51E0\u7387\u514D\u75AB"));
-		list.add(Component.literal("\u00A78 \u8FD9\u6B21\u4F24\u5BB3\uFF01"));
-		list.add(Component.literal("\u00A76 \u2022 \u8D81\u624B"));
-		list.add(Component.literal("\u00A78 \u6D88\u8017\u8010\u4E45\u62B5\u5FA1\u683C\u6321\u5931\u8D25\u540E"));
-		list.add(Component.literal("\u00A78 \u88AB\u65BD\u52A0\u7684\u51B7\u5374"));
+		list.add(Component.translatable("item.primogemcraft.ljtg_02.description_0"));
+		list.add(Component.translatable("item.primogemcraft.ljtg_02.description_1"));
+		list.add(Component.translatable("item.primogemcraft.ljtg_02.description_2"));
+		list.add(Component.translatable("item.primogemcraft.ljtg_02.description_3"));
+		list.add(Component.translatable("item.primogemcraft.ljtg_02.description_4"));
+		list.add(Component.translatable("item.primogemcraft.ljtg_02.description_5"));
+		list.add(Component.translatable("item.primogemcraft.ljtg_02.description_6"));
+		list.add(Component.translatable("item.primogemcraft.ljtg_02.description_7"));
 	}
 
 	@Override

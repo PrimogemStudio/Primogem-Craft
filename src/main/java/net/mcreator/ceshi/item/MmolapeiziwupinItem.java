@@ -21,6 +21,6 @@ public class MmolapeiziwupinItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u9AD8\u7EA7\u953B\u9020\u6750\u6599"));
+		list.add(Component.translatable("item.primogemcraft.mmolapeiziwupin.description_0"));
 	}
 }

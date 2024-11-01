@@ -26,7 +26,7 @@ public class Molakuai01Block extends Block {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A76\u4F60\u4EEC\u6709\u5E26\u94B1\u5417...."));
+		list.add(Component.translatable("block.primogemcraft.molakuai_01.description_0"));
 	}
 
 	@Override

@@ -41,10 +41,10 @@ public class XixiangyuzhiyuanItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u957F\u6309\u53F3\u952E\u4F7F\u7528"));
-		list.add(Component.literal("\u00A77\u76F8\u9047\u4E4B\u7F18\u4E0D\u53EF\u589E\u5F3A\uFF01"));
-		list.add(Component.literal("\u00A7c\u4F7F\u7528\u8005\u5FC5\u987B\u5728\u9644\u8FD1"));
-		list.add(Component.literal("\u00A7510%\u00A77\u3001\u00A761%"));
+		list.add(Component.translatable("item.primogemcraft.xixiangyuzhiyuan.description_0"));
+		list.add(Component.translatable("item.primogemcraft.xixiangyuzhiyuan.description_1"));
+		list.add(Component.translatable("item.primogemcraft.xixiangyuzhiyuan.description_2"));
+		list.add(Component.translatable("item.primogemcraft.xixiangyuzhiyuan.description_3"));
 	}
 
 	@Override

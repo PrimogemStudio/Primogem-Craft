@@ -39,10 +39,10 @@ public class QwkzhyItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u4E3B\u624B\u6301\u6309\u4F4F\u4F7F\u7528"));
-		list.add(Component.literal("\u00A7l\u4F7F\u7528\u540E\u4FEE\u590D\u526F\u624B\u53D7\u8010\u4E45\u5F71\u54CD\u7684"));
-		list.add(Component.literal("\u00A7l\u5947\u7269\uFF0C\u5B8C\u6210\u540E\u590D\u5236\u4E00\u4E2A\u8BE5\u5947\u7269"));
-		list.add(Component.literal("\u00A7750%\u6982\u7387\u635F\u574F"));
+		list.add(Component.translatable("item.primogemcraft.qwkzhy.description_0"));
+		list.add(Component.translatable("item.primogemcraft.qwkzhy.description_1"));
+		list.add(Component.translatable("item.primogemcraft.qwkzhy.description_2"));
+		list.add(Component.translatable("item.primogemcraft.qwkzhy.description_3"));
 	}
 
 	@Override

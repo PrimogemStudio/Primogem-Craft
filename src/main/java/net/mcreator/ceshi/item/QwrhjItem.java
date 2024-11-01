@@ -21,8 +21,8 @@ public class QwrhjItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7b\u00A7l\u878D\u5408\u5947\u7269\u4F7F\u7528"));
-		list.add(Component.literal("\u00A76\u53EF\u5C06\u4E24\u4E2A\u540C\u7EA7\u522B\u5947\u7269\u878D\u5408"));
-		list.add(Component.literal("\u00A76\u6210\u4E3A\u66F4\u591A\u529F\u80FD\u6027\u540C\u7EA7\u5947\u7269"));
+		list.add(Component.translatable("item.primogemcraft.qwrhj.description_0"));
+		list.add(Component.translatable("item.primogemcraft.qwrhj.description_1"));
+		list.add(Component.translatable("item.primogemcraft.qwrhj.description_2"));
 	}
 }

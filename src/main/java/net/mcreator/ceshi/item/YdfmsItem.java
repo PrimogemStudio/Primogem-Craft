@@ -33,7 +33,7 @@ public class YdfmsItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u5305\u542B\u4E00\u4E9B\u9644\u9B54\u4E66"));
+		list.add(Component.translatable("item.primogemcraft.ydfms.description_0"));
 	}
 
 	@Override

@@ -27,7 +27,7 @@ public class YhdltyidieItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u5305\u542B\u51E0\u5F20\u5D2D\u65B0\u51FA\u5382\u7684\u94F6\u6CB3\u5927\u4E50\u900F"));
+		list.add(Component.translatable("item.primogemcraft.yhdltyidie.description_0"));
 	}
 
 	@Override

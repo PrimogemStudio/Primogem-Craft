@@ -27,8 +27,8 @@ public class JianmushengfaqiItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u53F3\u952E\u63D0\u9AD8\u9B54\u9634\u8EAB\u751F\u6210\u6982\u7387"));
-		list.add(Component.literal("\u00A77\u6F5C\u884C+\u53F3\u952E\u964D\u4F4E\u9B54\u9634\u8EAB\u751F\u6210\u6982\u7387"));
+		list.add(Component.translatable("item.primogemcraft.jianmushengfaqi.description_0"));
+		list.add(Component.translatable("item.primogemcraft.jianmushengfaqi.description_1"));
 	}
 
 	@Override

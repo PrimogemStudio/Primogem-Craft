@@ -68,7 +68,7 @@ public class GanjinglajitongxiangziBlock extends Block implements SimpleWaterlog
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u53EF\u4EE5\u7528\u6765\u5B58\u653E\u7269\u54C1"));
+		list.add(Component.translatable("block.primogemcraft.ganjinglajitongxiangzi.description_0"));
 	}
 
 	@Override

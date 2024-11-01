@@ -27,8 +27,8 @@ public class YsjbfpkItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u53EA\u6709\u8FD9\u6837\u624D\u80FD\u88C5\u7684\u4F4F\u98CE"));
-		list.add(Component.literal("\u00A77\u624B\u6301\u6F5C\u884C\u53F3\u952E"));
+		list.add(Component.translatable("item.primogemcraft.ysjbfpk.description_0"));
+		list.add(Component.translatable("item.primogemcraft.ysjbfpk.description_1"));
 	}
 
 	@Override

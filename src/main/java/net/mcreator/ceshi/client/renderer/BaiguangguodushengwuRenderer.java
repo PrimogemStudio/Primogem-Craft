@@ -10,7 +10,7 @@ import net.mcreator.ceshi.client.model.Modeljinguangshiti01_Converted_Converted;
 
 public class BaiguangguodushengwuRenderer extends MobRenderer<BaiguangguodushengwuEntity, Modeljinguangshiti01_Converted_Converted<BaiguangguodushengwuEntity>> {
 	public BaiguangguodushengwuRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modeljinguangshiti01_Converted_Converted(context.bakeLayer(Modeljinguangshiti01_Converted_Converted.LAYER_LOCATION)), 0.5f);
+		super(context, new Modeljinguangshiti01_Converted_Converted<BaiguangguodushengwuEntity>(context.bakeLayer(Modeljinguangshiti01_Converted_Converted.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

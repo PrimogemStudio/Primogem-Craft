@@ -10,7 +10,7 @@ import net.mcreator.ceshi.client.model.Modeljinguangshiti01_Converted_Converted;
 
 public class QQyuanchuzi01Renderer extends MobRenderer<QQyuanchuzi01Entity, Modeljinguangshiti01_Converted_Converted<QQyuanchuzi01Entity>> {
 	public QQyuanchuzi01Renderer(EntityRendererProvider.Context context) {
-		super(context, new Modeljinguangshiti01_Converted_Converted(context.bakeLayer(Modeljinguangshiti01_Converted_Converted.LAYER_LOCATION)), 0.3f);
+		super(context, new Modeljinguangshiti01_Converted_Converted<QQyuanchuzi01Entity>(context.bakeLayer(Modeljinguangshiti01_Converted_Converted.LAYER_LOCATION)), 0.3f);
 	}
 
 	@Override

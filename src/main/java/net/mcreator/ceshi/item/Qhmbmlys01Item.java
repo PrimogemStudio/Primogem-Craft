@@ -21,11 +21,11 @@ public class Qhmbmlys01Item extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u5143\u7D20\u6676\u4F53\u5347\u7EA7"));
-		list.add(Component.literal("\u00A7"));
-		list.add(Component.literal("\u00A77\u53EF\u5E94\u7528\u4E8E\uFF1A"));
-		list.add(Component.literal("\u00A79 \u76D4\u7532\u6216\u6B66\u5668"));
-		list.add(Component.literal("\u00A77\u6240\u9700\u539F\u6750\u6599\uFF1A"));
-		list.add(Component.literal("\u00A79 \u5143\u7D20\u6676\u4F53\u5F3A\u5316\u80DA"));
+		list.add(Component.translatable("item.primogemcraft.qhmbmlys_01.description_0"));
+		list.add(Component.translatable("item.primogemcraft.qhmbmlys_01.description_1"));
+		list.add(Component.translatable("item.primogemcraft.qhmbmlys_01.description_2"));
+		list.add(Component.translatable("item.primogemcraft.qhmbmlys_01.description_3"));
+		list.add(Component.translatable("item.primogemcraft.qhmbmlys_01.description_4"));
+		list.add(Component.translatable("item.primogemcraft.qhmbmlys_01.description_5"));
 	}
 }

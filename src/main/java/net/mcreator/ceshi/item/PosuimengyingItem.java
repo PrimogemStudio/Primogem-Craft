@@ -21,6 +21,6 @@ public class PosuimengyingItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u53EF\u4FEE\u590D"));
+		list.add(Component.translatable("item.primogemcraft.posuimengying.description_0"));
 	}
 }

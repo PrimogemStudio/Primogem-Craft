@@ -70,8 +70,8 @@ public class RytjItem extends SwordItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u653B\u51FB\u76EE\u6807\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u4E3A\u76EE\u6807\u65BD\u52A0\u707C\u70E7\u6548\u679CI\uFF086s\uFF09"));
-		list.add(Component.literal("\u00A77 - \u89E6\u53D1\u6982\u738725%"));
+		list.add(Component.translatable("item.primogemcraft.rytj.description_0"));
+		list.add(Component.translatable("item.primogemcraft.rytj.description_1"));
+		list.add(Component.translatable("item.primogemcraft.rytj.description_2"));
 	}
 }

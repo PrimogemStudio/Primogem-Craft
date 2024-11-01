@@ -64,7 +64,7 @@ public class RycItem extends HoeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u00A7o\u300E\u5C1D\u8BD5\u8015\u4F5C\u4E0B\u754C\u5CA9\u300F"));
+		list.add(Component.translatable("item.primogemcraft.ryc.description_0"));
 	}
 
 	@Override

@@ -50,7 +50,7 @@ public class DangaoliyueBlock extends Block implements EntityBlock {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u6700\u597D\u5E26\u4E00\u4E9B\u6469\u62C9\u518D\u6765\uFF01"));
+		list.add(Component.translatable("block.primogemcraft.dangaoliyue.description_0"));
 	}
 
 	@Override

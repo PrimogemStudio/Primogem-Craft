@@ -82,12 +82,12 @@ public class ZshjjItem extends SwordItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A76[SHIFT+\u53F3\u952E]\uFF1A"));
-		list.add(Component.literal("\u00A75 - \u83B7\u5F97\u52FE\u7389\u6548\u679C III"));
-		list.add(Component.literal("\u00A77 - \u6301\u7EED\u65F6\u95F410\u79D2"));
-		list.add(Component.literal("\u00A77 - \u51B7\u537445\u79D2"));
-		list.add(Component.literal("\u00A76\u975E\u52FE\u7389\u72B6\u6001\u4E0B"));
-		list.add(Component.literal("\u00A77 - \u653B\u51FB\u76EE\u6807\u6982\u7387\u91CA\u653E\u95EA\u7535"));
-		list.add(Component.literal("\u00A77 - \u89E6\u53D1\u6982\u738710%"));
+		list.add(Component.translatable("item.primogemcraft.zshjj.description_0"));
+		list.add(Component.translatable("item.primogemcraft.zshjj.description_1"));
+		list.add(Component.translatable("item.primogemcraft.zshjj.description_2"));
+		list.add(Component.translatable("item.primogemcraft.zshjj.description_3"));
+		list.add(Component.translatable("item.primogemcraft.zshjj.description_4"));
+		list.add(Component.translatable("item.primogemcraft.zshjj.description_5"));
+		list.add(Component.translatable("item.primogemcraft.zshjj.description_6"));
 	}
 }

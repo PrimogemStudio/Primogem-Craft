@@ -70,9 +70,9 @@ public class AxhjjItem extends SwordItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u653B\u51FB\u76EE\u6807\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - 30%\u51E0\u7387\u4E3A\u5176\u65BD\u52A0\u7F13\u6162\u6548\u679C"));
-		list.add(Component.literal("\u00A77 - 50%\u6982\u7387\u4F7F\u5DF2\u88AB\u65BD\u52A0\u7F13\u6162\u7684\u76EE\u6807\u7981\u9522"));
-		list.add(Component.literal("\u00A77 - \u6301\u7EED12\u79D2"));
+		list.add(Component.translatable("item.primogemcraft.axhjj.description_0"));
+		list.add(Component.translatable("item.primogemcraft.axhjj.description_1"));
+		list.add(Component.translatable("item.primogemcraft.axhjj.description_2"));
+		list.add(Component.translatable("item.primogemcraft.axhjj.description_3"));
 	}
 }

@@ -36,8 +36,8 @@ public class CeshixiaodengfasheqiBlock extends Block implements EntityBlock {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u7EA2\u77F3\u9A71\u52A8\uFF0C\u89E6\u53D1\u5341\u6B21\u540E"));
-		list.add(Component.literal("\u00A77\u53D8\u4E3A\u6389\u843D\u7269"));
+		list.add(Component.translatable("block.primogemcraft.ceshixiaodengfasheqi.description_0"));
+		list.add(Component.translatable("block.primogemcraft.ceshixiaodengfasheqi.description_1"));
 	}
 
 	@Override

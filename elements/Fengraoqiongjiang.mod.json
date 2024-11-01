@@ -12,6 +12,7 @@
           "value": "CUSTOM:Fengrao"
         },
         "duration": 1200,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": true
@@ -21,6 +22,7 @@
           "value": "NAUSEA"
         },
         "duration": 1200,
+        "infinite": false,
         "amplifier": 2,
         "ambient": false,
         "showParticles": false
@@ -30,6 +32,7 @@
           "value": "MINING_FATIGUE"
         },
         "duration": 1200,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": false
@@ -39,6 +42,7 @@
           "value": "WEAKNESS"
         },
         "duration": 1200,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": false
@@ -48,6 +52,7 @@
           "value": "UNLUCK"
         },
         "duration": 1200,
+        "infinite": false,
         "amplifier": 0,
         "ambient": false,
         "showParticles": false

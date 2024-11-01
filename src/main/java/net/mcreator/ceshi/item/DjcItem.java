@@ -63,7 +63,7 @@ public class DjcItem extends SwordItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A77\u00A7o\u300E\u65E2\u662F\u6B66\u5668\uFF0C\u4E5F\u662F\u5DE5\u5177\u300F"));
+		list.add(Component.translatable("item.primogemcraft.djc.description_0"));
 	}
 
 	@Override

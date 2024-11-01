@@ -73,7 +73,7 @@ public class ZizgaoItem extends PickaxeItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A76[SHIFT+\u53F3\u952E]"));
-		list.add(Component.literal("\u00A77 - \u6D88\u8017\u8010\u4E45\u5E76\u98DE\u5411\u9AD8\u7A7A\uFF01"));
+		list.add(Component.translatable("item.primogemcraft.zizgao.description_0"));
+		list.add(Component.translatable("item.primogemcraft.zizgao.description_1"));
 	}
 }

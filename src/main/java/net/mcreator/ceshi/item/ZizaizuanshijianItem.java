@@ -70,8 +70,8 @@ public class ZizaizuanshijianItem extends SwordItem {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("\u00A7d\u653B\u51FB\u76EE\u6807\u65F6\uFF1A"));
-		list.add(Component.literal("\u00A77 - \u53EF\u4EE5\u66F4\u597D\u7684\u51FB\u98DE\u76EE\u6807\uFF01"));
-		list.add(Component.literal("\u00A77 - \u89E6\u53D1\u51E0\u738750%"));
+		list.add(Component.translatable("item.primogemcraft.zizaizuanshijian.description_0"));
+		list.add(Component.translatable("item.primogemcraft.zizaizuanshijian.description_1"));
+		list.add(Component.translatable("item.primogemcraft.zizaizuanshijian.description_2"));
 	}
 }
