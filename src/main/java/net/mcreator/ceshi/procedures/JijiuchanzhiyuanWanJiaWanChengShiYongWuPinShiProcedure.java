@@ -13,7 +13,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.init.PrimogemcraftModEntities;
 
 public class JijiuchanzhiyuanWanJiaWanChengShiYongWuPinShiProcedure {
@@ -21,11 +20,10 @@ public class JijiuchanzhiyuanWanJiaWanChengShiYongWuPinShiProcedure {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
-			itemstack.shrink(1);
 			entity.getPersistentData().putDouble("chouka", 1);
 			entity.getPersistentData().putDouble("chouka_jiacheng", 1);
 			entity.getPersistentData().putDouble("Prayers_strengthen", (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("Prayers_strengthen")));
-			new ItemStack(PrimogemcraftModItems.JIJIUCHANZHIYUAN.get()).shrink(1);
+			itemstack.shrink(1);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:choukaqianxi01")), SoundSource.HOSTILE, 70, 1);

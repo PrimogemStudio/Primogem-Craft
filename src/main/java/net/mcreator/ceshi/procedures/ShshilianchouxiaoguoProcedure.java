@@ -22,7 +22,6 @@ public class ShshilianchouxiaoguoProcedure {
 		if (entity == null)
 			return;
 		if (!world.isClientSide()) {
-			itemstack.shrink(1);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:shilianyinpin")), SoundSource.NEUTRAL, 1, 1);
@@ -39,6 +38,8 @@ public class ShshilianchouxiaoguoProcedure {
 			entity.getPersistentData().putDouble("shilian_x", x);
 			entity.getPersistentData().putDouble("shilian_y", y);
 			entity.getPersistentData().putDouble("shilian_z", z);
+			entity.getPersistentData().putDouble("bu_chong", (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("Prayers_strengthen") / 10));
+			itemstack.shrink(1);
 			PrimogemcraftMod.queueServerWork(40, () -> {
 				{
 					Entity _ent = entity;
@@ -48,7 +49,7 @@ public class ShshilianchouxiaoguoProcedure {
 				}
 				entity.getPersistentData().putDouble("chouka", 10);
 				entity.getPersistentData().putDouble("chouka_jiacheng", 10);
-				entity.getPersistentData().putDouble("Prayers_strengthen", (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("Prayers_strengthen") / 10));
+				entity.getPersistentData().putDouble("Prayers_strengthen", (entity.getPersistentData().getDouble("bu_chong")));
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x, y + 7, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
