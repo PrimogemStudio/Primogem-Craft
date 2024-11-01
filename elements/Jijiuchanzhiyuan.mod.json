@@ -46,9 +46,6 @@
     "onItemInUseTick": {
       "name": "JijiuchanzhiyuanDangWuPinZaiShouShangMeiKeFaSheng"
     },
-    "onEntitySwing": {
-      "name": "Jcsxcxsx"
-    },
     "onFinishUsingItem": {
       "name": "JijiuchanzhiyuanWanJiaWanChengShiYongWuPinShi"
     },

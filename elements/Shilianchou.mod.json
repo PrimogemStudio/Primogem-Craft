@@ -42,9 +42,6 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onEntitySwing": {
-      "name": "Jcsxcxsx"
-    },
     "onFinishUsingItem": {
       "name": "Shshilianchouxiaoguo"
     },

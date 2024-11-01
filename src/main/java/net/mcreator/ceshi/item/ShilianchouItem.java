@@ -20,7 +20,6 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.procedures.ShshilianchouxiaoguoProcedure;
 import net.mcreator.ceshi.procedures.JczymsProcedure;
-import net.mcreator.ceshi.procedures.JcsxcxsxProcedure;
 
 import java.util.List;
 
@@ -66,13 +65,6 @@ public class ShilianchouItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 		ShshilianchouxiaoguoProcedure.execute(world, x, y, z, entity, itemstack);
-		return retval;
-	}
-
-	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
-		boolean retval = super.onEntitySwing(itemstack, entity, hand);
-		JcsxcxsxProcedure.execute(entity, itemstack);
 		return retval;
 	}
 }
