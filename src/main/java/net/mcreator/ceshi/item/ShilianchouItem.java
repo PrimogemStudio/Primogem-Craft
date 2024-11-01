@@ -12,11 +12,14 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.procedures.ShshilianchouxiaoguoProcedure;
+import net.mcreator.ceshi.procedures.JczymsProcedure;
 import net.mcreator.ceshi.procedures.JcsxcxsxProcedure;
 
 import java.util.List;
@@ -40,9 +43,13 @@ public class ShilianchouItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.primogemcraft.shilianchou.description_0"));
-		list.add(Component.translatable("item.primogemcraft.shilianchou.description_1"));
-		list.add(Component.translatable("item.primogemcraft.shilianchou.description_2"));
+		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
+		String hoverText = JczymsProcedure.execute(itemstack);
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 
 	@Override

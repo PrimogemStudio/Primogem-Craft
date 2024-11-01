@@ -44,7 +44,6 @@ public class XixiangyuzhiyuanItem extends Item {
 		list.add(Component.translatable("item.primogemcraft.xixiangyuzhiyuan.description_0"));
 		list.add(Component.translatable("item.primogemcraft.xixiangyuzhiyuan.description_1"));
 		list.add(Component.translatable("item.primogemcraft.xixiangyuzhiyuan.description_2"));
-		list.add(Component.translatable("item.primogemcraft.xixiangyuzhiyuan.description_3"));
 	}
 
 	@Override

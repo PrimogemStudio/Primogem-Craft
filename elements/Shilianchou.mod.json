@@ -33,7 +33,8 @@
         "§7长按右键以十连抽",
         "§6潜行+左键§5获取祈愿加成信息",
         "§c使用者必须在附近"
-      ]
+      ],
+      "name": "Jczyms"
     },
     "glowCondition": {
       "fixedValue": false
