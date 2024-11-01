@@ -7,8 +7,8 @@ public class HSaltProcedure {
 		if (alt == null || alt0 == null)
 			return "";
 		if (Screen.hasAltDown()) {
-			return alt;
+			return alt + "\n";
 		}
-		return "\u00A77\u6309\u4F4F[Alt]\u67E5\u770B" + alt0;
+		return "\u00A77\u6309\u4F4F[Alt]\u67E5\u770B" + alt0 + "\n";
 	}
 }

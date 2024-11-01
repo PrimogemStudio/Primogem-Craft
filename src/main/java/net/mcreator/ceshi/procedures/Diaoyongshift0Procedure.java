@@ -7,8 +7,8 @@ public class Diaoyongshift0Procedure {
 		if (shift == null || shift0 == null)
 			return "";
 		if (Screen.hasShiftDown()) {
-			return shift;
+			return shift + "\n";
 		}
-		return "\u00A77\u00A7o\u6309\u4F4F[Shift]\u67E5\u770B" + shift0;
+		return "\u00A77\u6309\u4F4F[Shift]\u67E5\u770B" + shift0 + "\n";
 	}
 }

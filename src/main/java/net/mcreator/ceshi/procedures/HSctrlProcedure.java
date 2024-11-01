@@ -7,8 +7,8 @@ public class HSctrlProcedure {
 		if (ctrl == null || ctrl0 == null)
 			return "";
 		if (Screen.hasControlDown()) {
-			return ctrl;
+			return ctrl + "\n";
 		}
-		return "\u00A77\u6309\u4F4F[Ctrl]\u67E5\u770B" + ctrl0;
+		return "\u00A77\u6309\u4F4F[Ctrl]\u67E5\u770B" + ctrl0 + "\n";
 	}
 }
