@@ -1,4 +1,4 @@
-package net.hackermdch.mixin;
+package net.hackermdch.pgc.mixin;
 
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;

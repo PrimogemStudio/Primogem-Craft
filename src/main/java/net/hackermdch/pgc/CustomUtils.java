@@ -1,4 +1,4 @@
-package net.hackermdch;
+package net.hackermdch.pgc;
 
 import it.unimi.dsi.fastutil.objects.ObjectArraySet;
 

@@ -12,3 +12,7 @@ run/
 .eclipse/
 
 runs/
+
+.classpath
+
+.project

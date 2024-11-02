@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
 
-import static net.hackermdch.CustomUtils.enableForInventory;
+import static net.hackermdch.pgc.CustomUtils.enableForInventory;
 import static net.mcreator.ceshi.PrimogemcraftMod.MODID;
 import static net.minecraft.world.entity.EquipmentSlotGroup.*;
 import static net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation.*;

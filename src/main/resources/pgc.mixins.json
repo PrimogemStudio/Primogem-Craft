@@ -1,8 +1,8 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.hackermdch.mixin",
-  "plugin": "net.hackermdch.mixin.MixinPlugin",
+  "package": "net.hackermdch.pgc.mixin",
+  "plugin": "net.hackermdch.pgc.mixin.MixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "AttributeUtilMixin",

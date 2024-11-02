@@ -1,4 +1,4 @@
-package net.hackermdch;
+package net.hackermdch.pgc;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.resources.ResourceKey;
@@ -8,7 +8,7 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;
 import org.jetbrains.annotations.NotNull;
 
-import static net.hackermdch.CustomRegister.IS_CHEST;
+import static net.hackermdch.pgc.CustomRegister.IS_CHEST;
 import static net.minecraft.core.registries.Registries.LOOT_TABLE;
 
 public class IsChestCondition implements LootItemCondition {

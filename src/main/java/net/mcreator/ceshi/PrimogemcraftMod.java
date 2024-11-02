@@ -33,7 +33,7 @@ import net.mcreator.ceshi.init.PrimogemcraftModEntities;
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 import net.mcreator.ceshi.init.PrimogemcraftModBlockEntities;
 
-import net.hackermdch.CustomRegister;
+import net.hackermdch.pgc.CustomRegister;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;

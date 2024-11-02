@@ -1,4 +1,4 @@
-package net.hackermdch;
+package net.hackermdch.pgc;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;

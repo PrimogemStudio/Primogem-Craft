@@ -1,7 +1,7 @@
-package net.hackermdch.mixin;
+package net.hackermdch.pgc.mixin;
 
 import com.google.common.collect.ImmutableSet;
-import net.hackermdch.CustomUtils;
+import net.hackermdch.pgc.CustomUtils;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlotGroup;
