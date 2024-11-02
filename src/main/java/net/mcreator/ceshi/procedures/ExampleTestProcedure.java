@@ -16,6 +16,7 @@ bar
 CustomAPI.getCustomBar(stack)
 de
 numerator
+bar.visible=false;
 }
 }
 }
