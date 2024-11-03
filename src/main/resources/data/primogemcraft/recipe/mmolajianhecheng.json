@@ -1,15 +1,21 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": {
-    "item": "primogemcraft:qhmbml"
-  },
-  "base": {
-    "item": "minecraft:stone_sword"
-  },
-  "addition": {
-    "item": "primogemcraft:mmola_01"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:wmoladai"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "id": "primogemcraft:mmolajian"
+    "id": "primogemcraft:mmolajian",
+    "count": 1
   }
 }

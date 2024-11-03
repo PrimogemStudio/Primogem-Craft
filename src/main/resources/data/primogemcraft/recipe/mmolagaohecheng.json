@@ -1,15 +1,24 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": {
-    "item": "primogemcraft:qhmbml"
-  },
-  "base": {
-    "item": "minecraft:stone_pickaxe"
-  },
-  "addition": {
-    "item": "primogemcraft:mmola_01"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    " c ",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:xiaodaimola"
+    },
+    "b": {
+      "item": "primogemcraft:wmoladai"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "id": "primogemcraft:mmolagao"
+    "id": "primogemcraft:mmolagao",
+    "count": 1
   }
 }

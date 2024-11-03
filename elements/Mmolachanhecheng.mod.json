@@ -2,7 +2,7 @@
   "_fv": 69,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
@@ -10,16 +10,36 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "Items.STONE_SHOVEL"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:Mmola01"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:Qhmbml"
-    },
-    "smithingReturnStack": {
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Wmoladai"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:Mmolachan"
     },
     "name": "mmolachanhecheng",

@@ -1,15 +1,21 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": {
-    "item": "primogemcraft:qhmbml"
-  },
-  "base": {
-    "item": "minecraft:stone_hoe"
-  },
-  "addition": {
-    "item": "primogemcraft:mmola_01"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    " b",
+    " b"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:xiaodaimola"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "id": "primogemcraft:mmolachutou"
+    "id": "primogemcraft:mmolachutou",
+    "count": 1
   }
 }
