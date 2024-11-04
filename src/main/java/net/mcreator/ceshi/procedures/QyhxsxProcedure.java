@@ -19,7 +19,7 @@ public class QyhxsxProcedure {
 						+ "%" + "\n" + "\u00A78\u51FA\u91D1\u6982\u7387\u589E\u52A0:\u00A76"
 						+ new java.text.DecimalFormat(".0").format((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("Prayers_strengthen") / 10) / 10) + "%",
 				"\u8BE6\u60C5") + ""
-				+ HSctrlProcedure.execute("\u00A75\u624B\u6301 \u5DE6\u952E\u67E5\u770B\u526F\u624B\u7269\u54C1\u7948\u613F\u503C" + "\n" + "\u00A76\u53F3\u952E \u51CF\u5C11\u00A7b1\u00A76\u526F\u624B\u7269\u54C1\u6362\u53D6\u8D77\u6E90\u503C" + "\n"
+				+ HSctrlProcedure.execute("\u00A75\u624B\u6301 \u5DE6\u952E\u67E5\u770B\u526F\u624B\u7269\u54C1\u7948\u613F\u503C" + "\n" + "\u00A76\u53F3\u952E \u51CF\u5C11\u00A7b1\u00A76\u526F\u624B\u7269\u54C1\u6362\u53D6\u7948\u613F\u503C" + "\n"
 						+ "\u00A76\u6F5C\u884C+\u53F3\u952E \u63D0\u4EA4\u81F3\u6700\u5927\u503C" + "\n", "\u6559\u7A0B");
 	}
 }
