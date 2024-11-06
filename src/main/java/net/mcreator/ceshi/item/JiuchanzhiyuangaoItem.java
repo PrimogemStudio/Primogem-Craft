@@ -59,7 +59,7 @@ public class JiuchanzhiyuangaoItem extends PickaxeItem {
 	};
 
 	public JiuchanzhiyuangaoItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 3f, -3f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 4f, -2.4f)).fireResistant());
 	}
 
 	@Override
