@@ -144,7 +144,7 @@
             },
             "weight": 4,
             "minCount": 1,
-            "maxCount": 3,
+            "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -187,34 +187,6 @@
             "weight": 4,
             "minCount": 62,
             "maxCount": 128,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Jianglidayinxiongjingyan"
-            },
-            "weight": 4,
-            "minCount": 2,
-            "maxCount": 4,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Yiyimuguoshi"
-            },
-            "weight": 4,
-            "minCount": 1,
-            "maxCount": 3,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -661,7 +633,7 @@
               "value": "CUSTOM:Tiankongsp"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 10,
             "maxCount": 30,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,

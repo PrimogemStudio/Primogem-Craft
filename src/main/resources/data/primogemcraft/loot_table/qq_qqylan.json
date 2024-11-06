@@ -1008,20 +1008,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:qwtldhy",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "primogemcraft:xiumu",
           "weight": 1,
           "functions": [
@@ -1301,22 +1287,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:jlliang",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
                 "min": 1,
-                "max": 1
+                "max": 3
               }
             }
           ]

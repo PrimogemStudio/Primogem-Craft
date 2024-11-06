@@ -240,9 +240,9 @@
             "item": {
               "value": "CUSTOM:Laji"
             },
-            "weight": 5000,
+            "weight": 12000,
             "minCount": 1,
-            "maxCount": 5,
+            "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -254,7 +254,7 @@
             "item": {
               "value": "CUSTOM:Hhaokandelaji"
             },
-            "weight": 1000,
+            "weight": 1500,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -383,20 +383,6 @@
             "weight": 700,
             "minCount": 1,
             "maxCount": 2,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Jlliang"
-            },
-            "weight": 500,
-            "minCount": 1,
-            "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,

@@ -392,20 +392,6 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Llianjiamolakuai"
-            },
-            "weight": 1,
-            "minCount": 16,
-            "maxCount": 64,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
               "value": "CUSTOM:Mmolagao"
             },
             "weight": 1,
@@ -495,20 +481,6 @@
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Suiji1shijian"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -644,20 +616,6 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Zizaiqiao"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
               "value": "CUSTOM:Zizgao"
             },
             "weight": 1,
@@ -687,20 +645,6 @@
             "type": "item",
             "item": {
               "value": "CUSTOM:Jlg"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Zfg"
             },
             "weight": 1,
             "minCount": 1,
