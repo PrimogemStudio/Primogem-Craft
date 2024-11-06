@@ -1,64 +1,55 @@
 package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.component.DataComponents;
+
+import net.hackermdch.pgc.CustomAPI;
 
 public class Liulang_jingyan_shuxingProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		ItemStack stack = ItemStack.EMPTY;
 		double jingyan = 0;
+		double a = 0;
 		if (!world.isClientSide()) {
+			stack = itemstack;
+			var bar = CustomAPI.getCustomBar(stack);
 			if (entity.isShiftKeyDown()) {
-				if (itemstack.getDamageValue() == itemstack.getMaxDamage() - 1) {
+				if (bar.numerator == 0) {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("\u00A7a\u7ECF\u9A8C\u503C\u00A7c\u4E3A\u7A7A\uFF01"), false);
 				} else {
 					if (entity instanceof Player _player)
-						_player.giveExperiencePoints((int) ((itemstack.getMaxDamage() - 1) - itemstack.getDamageValue()));
-					if ((itemstack.getMaxDamage() - 1) - itemstack.getDamageValue() != 1) {
-						if (entity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal("\u00A7a\u7ECF\u9A8C\u503C\u00A7e\u5DF2\u53D6\u51FA\uFF01"), false);
-						if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
-							if (entity instanceof LivingEntity _entity)
-								_entity.swing(InteractionHand.MAIN_HAND, true);
-						} else {
-							if (entity instanceof LivingEntity _entity)
-								_entity.swing(InteractionHand.OFF_HAND, true);
-						}
-						YouhuayoujianfangfangzhiProcedure.execute();
+						_player.giveExperiencePoints((int) bar.numerator);
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("\u00A7a\u7ECF\u9A8C\u503C\u00A7e\u5DF2\u53D6\u51FA\uFF01"), false);
+					if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.swing(InteractionHand.MAIN_HAND, true);
+					} else {
+						if (entity instanceof LivingEntity _entity)
+							_entity.swing(InteractionHand.OFF_HAND, true);
 					}
-					itemstack.setDamageValue((int) (itemstack.getMaxDamage() - itemstack.getDamageValue() + (itemstack.getMaxDamage() - 1) - (itemstack.getMaxDamage() - itemstack.getDamageValue())));
-					{
-						final String _tagName = "naijiu_xianzhi";
-						final double _tagValue = (itemstack.getMaxDamage() - itemstack.getDamageValue());
-						CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
-					}
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
+					bar.numerator = 0;
 				}
 			} else {
-				if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) != 0) {
-					if (!(itemstack.getDamageValue() == 0)) {
-						jingyan = DiaoyongjisuanjingyanzhiProcedure.execute(entity);
+				if (bar.numerator < bar.denumerator) {
+					jingyan = DiaoyongjisuanjingyanzhiProcedure.execute(entity);
+					if (jingyan != 0) {
+						a = bar.denumerator - bar.numerator;
 						if (entity instanceof Player _player)
-							_player.giveExperiencePoints(-(itemstack.getDamageValue()));
-						itemstack.setDamageValue((int) ((itemstack.getMaxDamage() - jingyan) - (itemstack.getMaxDamage() - itemstack.getDamageValue())));
-						{
-							final String _tagName = "naijiu_xianzhi";
-							final double _tagValue = (itemstack.getMaxDamage() - itemstack.getDamageValue());
-							CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+							_player.giveExperiencePoints(-((int) a));
+						if (jingyan > a) {
+							bar.numerator = bar.denumerator;
+						} else {
+							bar.numerator = bar.numerator + jingyan;
 						}
-						if (entity instanceof Player _player)
-							_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
-						jingyan = 0;
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("\u00A7a\u7ECF\u9A8C\u503C\u00A7b\u5DF2\u5B58\u5165\uFF01"), false);
 						if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
@@ -68,11 +59,10 @@ public class Liulang_jingyan_shuxingProcedure {
 							if (entity instanceof LivingEntity _entity)
 								_entity.swing(InteractionHand.OFF_HAND, true);
 						}
-						YouhuayoujianfangfangzhiProcedure.execute();
-					} else {
-						if (entity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal("\u00A7a\u7ECF\u9A8C\u4E66\u00A7c\u5DF2\u5B58\u6EE1\uFF01"), false);
 					}
+				} else {
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("\u00A7a\u7ECF\u9A8C\u4E66\u00A7c\u5DF2\u5B58\u6EE1\uFF01"), false);
 				}
 			}
 		}
