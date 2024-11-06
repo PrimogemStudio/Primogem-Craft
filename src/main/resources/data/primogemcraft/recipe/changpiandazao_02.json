@@ -1,15 +1,16 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": {
-    "tag": "minecraft:music_discs"
-  },
-  "base": {
-    "item": "primogemcraft:jijiuchanzhiyuan"
-  },
-  "addition": {
-    "item": "primogemcraft:shengzhangbifei"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:qyhx_0wujiacheng"
+    }
   },
   "result": {
-    "id": "primogemcraft:ccangruimilinjian_014"
+    "id": "primogemcraft:qyhx",
+    "count": 1
   }
 }
