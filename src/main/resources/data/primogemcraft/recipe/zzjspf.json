@@ -2,35 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "abc",
-    "ded",
-    "fgf"
+    "aba",
+    "aca"
   ],
   "key": {
     "a": {
-      "item": "minecraft:ender_pearl"
+      "item": "primogemcraft:jlliang"
     },
     "b": {
-      "item": "primogemcraft:bufengping"
-    },
-    "c": {
-      "item": "minecraft:slime_ball"
-    },
-    "d": {
-      "item": "primogemcraft:yuanshi"
-    },
-    "e": {
       "item": "primogemcraft:zziyousongshiduanpian"
     },
-    "f": {
+    "c": {
       "item": "primogemcraft:jlmo"
-    },
-    "g": {
-      "item": "primogemcraft:ziziyousongshisuixie"
     }
   },
   "result": {
     "id": "primogemcraft:zzjs",
-    "count": 2
+    "count": 1
   }
 }

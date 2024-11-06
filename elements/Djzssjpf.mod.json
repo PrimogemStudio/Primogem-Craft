@@ -12,6 +12,24 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Zyjsl"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Zyjsl"
+      },
+      {
+        "value": "CUSTOM:Zyjs"
+      },
+      {
+        "value": "CUSTOM:Zyjsl"
+      },
+      {
         "value": "Items.PRISMARINE_SHARD"
       },
       {
@@ -19,24 +37,6 @@
       },
       {
         "value": "Items.PRISMARINE_SHARD"
-      },
-      {
-        "value": "CUSTOM:Dijingsuixie"
-      },
-      {
-        "value": "CUSTOM:Zyjs"
-      },
-      {
-        "value": "CUSTOM:Dijingsuixie"
-      },
-      {
-        "value": "CUSTOM:Jlliang"
-      },
-      {
-        "value": "CUSTOM:Jlmo"
-      },
-      {
-        "value": "CUSTOM:Jlliang"
       }
     ],
     "recipeReturnStack": {

@@ -2,28 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
+    " a ",
     "aba",
-    "cdc",
-    "efe"
+    "cdc"
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:disui"
+      "item": "primogemcraft:lajsl"
     },
     "b": {
-      "item": "minecraft:diamond"
-    },
-    "c": {
-      "item": "primogemcraft:aixubingyusuixie"
-    },
-    "d": {
       "item": "primogemcraft:lijs"
     },
-    "e": {
-      "item": "primogemcraft:jlliang"
+    "c": {
+      "item": "primogemcraft:disui"
     },
-    "f": {
-      "item": "primogemcraft:jlmo"
+    "d": {
+      "item": "minecraft:diamond"
     }
   },
   "result": {

@@ -2,25 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aba",
-    "aca",
-    "ded"
+    " a ",
+    "aaa",
+    "bcb"
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:jlza"
+      "item": "primogemcraft:lajsl"
     },
     "b": {
-      "item": "primogemcraft:aixubingyusuixie"
-    },
-    "c": {
-      "item": "minecraft:iron_pickaxe"
-    },
-    "d": {
       "item": "minecraft:powder_snow_bucket"
     },
-    "e": {
-      "item": "primogemcraft:jlliang"
+    "c": {
+      "item": "minecraft:iron_ingot"
     }
   },
   "result": {

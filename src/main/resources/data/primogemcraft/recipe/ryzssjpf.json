@@ -2,28 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
+    " a ",
     "aba",
-    "cdc",
-    "efe"
+    "cdc"
   ],
   "key": {
     "a": {
-      "item": "minecraft:blaze_powder"
+      "item": "primogemcraft:ryjll"
     },
     "b": {
-      "item": "minecraft:diamond"
-    },
-    "c": {
-      "item": "primogemcraft:ranyuansuixie"
-    },
-    "d": {
       "item": "primogemcraft:ryjs"
     },
-    "e": {
+    "c": {
       "item": "primogemcraft:jlliang"
     },
-    "f": {
-      "item": "primogemcraft:jlmo"
+    "d": {
+      "item": "minecraft:diamond"
     }
   },
   "result": {

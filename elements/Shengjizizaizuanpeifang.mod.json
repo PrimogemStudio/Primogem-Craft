@@ -12,28 +12,28 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.AMETHYST_SHARD"
+        "value": ""
       },
       {
-        "value": "Items.DIAMOND"
+        "value": "CUSTOM:Zzjll"
       },
       {
-        "value": "Items.AMETHYST_SHARD"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ziziyousongshisuixie"
+        "value": "CUSTOM:Zzjll"
       },
       {
         "value": "CUSTOM:Zzjs"
       },
       {
-        "value": "CUSTOM:Ziziyousongshisuixie"
+        "value": "CUSTOM:Zzjll"
       },
       {
         "value": "CUSTOM:Jlliang"
       },
       {
-        "value": "CUSTOM:Jlmo"
+        "value": "Items.DIAMOND"
       },
       {
         "value": "CUSTOM:Jlliang"

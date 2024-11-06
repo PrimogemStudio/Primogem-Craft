@@ -2,35 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "abc",
-    "def",
-    "geg"
+    "aba",
+    "aca"
   ],
   "key": {
     "a": {
-      "tag": "minecraft:small_flowers"
+      "item": "primogemcraft:jlliang"
     },
     "b": {
-      "item": "minecraft:emerald"
-    },
-    "c": {
-      "item": "minecraft:cactus"
-    },
-    "d": {
-      "tag": "minecraft:saplings"
-    },
-    "e": {
       "item": "primogemcraft:shengzhangduanpian"
     },
-    "f": {
-      "tag": "minecraft:sand"
-    },
-    "g": {
+    "c": {
       "item": "primogemcraft:jlmo"
     }
   },
   "result": {
     "id": "primogemcraft:zhjs",
-    "count": 3
+    "count": 1
   }
 }

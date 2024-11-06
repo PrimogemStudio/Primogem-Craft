@@ -2,27 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aba",
-    "aca",
-    "def"
+    " a ",
+    "aaa",
+    "bcd"
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:jlza"
+      "item": "primogemcraft:yhjsl"
     },
     "b": {
-      "item": "primogemcraft:zuishengsuixie"
-    },
-    "c": {
-      "item": "minecraft:iron_pickaxe"
-    },
-    "d": {
       "item": "minecraft:redstone"
     },
-    "e": {
-      "item": "primogemcraft:jlliang"
+    "c": {
+      "item": "minecraft:iron_ingot"
     },
-    "f": {
+    "d": {
       "item": "minecraft:lapis_lazuli"
     }
   },

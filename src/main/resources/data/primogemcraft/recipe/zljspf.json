@@ -3,31 +3,21 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "cdc",
-    "efe"
+    "aca"
   ],
   "key": {
     "a": {
-      "item": "minecraft:crying_obsidian"
+      "item": "primogemcraft:jlliang"
     },
     "b": {
-      "item": "primogemcraft:jingzhimolakuai"
-    },
-    "c": {
-      "item": "primogemcraft:mmola_01"
-    },
-    "d": {
       "item": "primogemcraft:jianlaoduanpian"
     },
-    "e": {
+    "c": {
       "item": "primogemcraft:jlmo"
-    },
-    "f": {
-      "item": "primogemcraft:jianransuixie"
     }
   },
   "result": {
     "id": "primogemcraft:jlzs",
-    "count": 2
+    "count": 1
   }
 }

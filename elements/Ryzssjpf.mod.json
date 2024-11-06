@@ -12,28 +12,28 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.BLAZE_POWDER"
+        "value": ""
       },
       {
-        "value": "Items.DIAMOND"
+        "value": "CUSTOM:Ryjll"
       },
       {
-        "value": "Items.BLAZE_POWDER"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ranyuansuixie"
+        "value": "CUSTOM:Ryjll"
       },
       {
         "value": "CUSTOM:Ryjs"
       },
       {
-        "value": "CUSTOM:Ranyuansuixie"
+        "value": "CUSTOM:Ryjll"
       },
       {
         "value": "CUSTOM:Jlliang"
       },
       {
-        "value": "CUSTOM:Jlmo"
+        "value": "Items.DIAMOND"
       },
       {
         "value": "CUSTOM:Jlliang"

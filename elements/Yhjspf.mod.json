@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 3,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.REDSTONE_BLOCK"
+        "value": "CUSTOM:Jlliang"
       },
       {
-        "value": "Items.AMETHYST_SHARD"
+        "value": "CUSTOM:Zuishengduanpian"
       },
       {
-        "value": "Blocks.REDSTONE_BLOCK"
+        "value": "CUSTOM:Jlliang"
       },
       {
-        "value": "Items.CHORUS_FRUIT"
-      },
-      {
-        "value": "CUSTOM:Zuishengkuai"
-      },
-      {
-        "value": "Items.CHORUS_FRUIT"
+        "value": "CUSTOM:Jlliang"
       },
       {
         "value": "CUSTOM:Jlmo"
       },
       {
-        "value": "Blocks.COAL_ORE"
+        "value": "CUSTOM:Jlliang"
       },
       {
-        "value": "CUSTOM:Jlmo"
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {

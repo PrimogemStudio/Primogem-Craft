@@ -2,28 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
+    " a ",
     "aba",
-    "cdc",
-    "efe"
+    "cdc"
   ],
   "key": {
     "a": {
-      "item": "minecraft:prismarine_shard"
+      "item": "primogemcraft:zyjsl"
     },
     "b": {
-      "item": "minecraft:diamond"
-    },
-    "c": {
-      "item": "primogemcraft:dijingsuixie"
-    },
-    "d": {
       "item": "primogemcraft:zyjs"
     },
-    "e": {
-      "item": "primogemcraft:jlliang"
+    "c": {
+      "item": "minecraft:prismarine_shard"
     },
-    "f": {
-      "item": "primogemcraft:jlmo"
+    "d": {
+      "item": "minecraft:diamond"
     }
   },
   "result": {

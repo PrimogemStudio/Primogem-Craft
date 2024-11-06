@@ -12,6 +12,24 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Lajsl"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Lajsl"
+      },
+      {
+        "value": "CUSTOM:Lijs"
+      },
+      {
+        "value": "CUSTOM:Lajsl"
+      },
+      {
         "value": "CUSTOM:Disui"
       },
       {
@@ -19,24 +37,6 @@
       },
       {
         "value": "CUSTOM:Disui"
-      },
-      {
-        "value": "CUSTOM:Aixubingyusuixie"
-      },
-      {
-        "value": "CUSTOM:Lijs"
-      },
-      {
-        "value": "CUSTOM:Aixubingyusuixie"
-      },
-      {
-        "value": "CUSTOM:Jlliang"
-      },
-      {
-        "value": "CUSTOM:Jlmo"
-      },
-      {
-        "value": "CUSTOM:Jlliang"
       }
     ],
     "recipeReturnStack": {

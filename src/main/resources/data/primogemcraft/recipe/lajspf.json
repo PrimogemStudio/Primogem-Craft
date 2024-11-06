@@ -2,41 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "abc",
-    "def",
-    "ghi"
+    "aba",
+    "aca"
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:zzjs"
+      "item": "primogemcraft:jlliang"
     },
     "b": {
-      "item": "primogemcraft:chuangshijiejing"
+      "item": "primogemcraft:aaixubingyuduanpian"
     },
     "c": {
-      "item": "primogemcraft:jlzs"
-    },
-    "d": {
-      "item": "primogemcraft:yhjs"
-    },
-    "e": {
-      "item": "primogemcraft:aixubingyukuai"
-    },
-    "f": {
-      "item": "primogemcraft:zyjs"
-    },
-    "g": {
-      "item": "primogemcraft:zhjs"
-    },
-    "h": {
       "item": "primogemcraft:jlmo"
-    },
-    "i": {
-      "item": "primogemcraft:ryjs"
     }
   },
   "result": {
     "id": "primogemcraft:lijs",
-    "count": 7
+    "count": 1
   }
 }

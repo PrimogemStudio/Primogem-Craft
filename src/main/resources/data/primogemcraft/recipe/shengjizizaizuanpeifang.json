@@ -2,28 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
+    " a ",
     "aba",
-    "cdc",
-    "efe"
+    "cdc"
   ],
   "key": {
     "a": {
-      "item": "minecraft:amethyst_shard"
+      "item": "primogemcraft:zzjll"
     },
     "b": {
-      "item": "minecraft:diamond"
-    },
-    "c": {
-      "item": "primogemcraft:ziziyousongshisuixie"
-    },
-    "d": {
       "item": "primogemcraft:zzjs"
     },
-    "e": {
+    "c": {
       "item": "primogemcraft:jlliang"
     },
-    "f": {
-      "item": "primogemcraft:jlmo"
+    "d": {
+      "item": "minecraft:diamond"
     }
   },
   "result": {

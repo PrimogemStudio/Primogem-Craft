@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.ECHO_SHARD"
+        "value": ""
       },
       {
-        "value": "Items.EMERALD"
+        "value": "CUSTOM:Zhjsl"
       },
       {
-        "value": "Items.ECHO_SHARD"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Shengzhangbifeisuixie"
+        "value": "CUSTOM:Zhjsl"
       },
       {
         "value": "CUSTOM:Zhjs"
       },
       {
-        "value": "CUSTOM:Shengzhangbifeisuixie"
+        "value": "CUSTOM:Zhjsl"
       },
       {
-        "value": "CUSTOM:Jlliang"
+        "value": "Items.EMERALD"
       },
       {
-        "value": "CUSTOM:Jlmo"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Jlliang"
+        "value": "Items.EMERALD"
       }
     ],
     "recipeReturnStack": {

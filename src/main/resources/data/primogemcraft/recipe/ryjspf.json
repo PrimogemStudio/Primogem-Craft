@@ -2,35 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "abc",
-    "ded",
-    "fgf"
+    "aba",
+    "aca"
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:chiyuejinshu"
+      "item": "primogemcraft:jlliang"
     },
     "b": {
-      "item": "minecraft:blaze_powder"
+      "item": "primogemcraft:ranyuanduanpian"
     },
     "c": {
-      "item": "minecraft:nether_wart"
-    },
-    "d": {
-      "item": "primogemcraft:yuanshi"
-    },
-    "e": {
-      "item": "primogemcraft:ranyuankuai"
-    },
-    "f": {
       "item": "primogemcraft:jlmo"
-    },
-    "g": {
-      "item": "minecraft:lava_bucket"
     }
   },
   "result": {
     "id": "primogemcraft:ryjs",
-    "count": 3
+    "count": 1
   }
 }

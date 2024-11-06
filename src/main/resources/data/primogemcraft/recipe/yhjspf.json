@@ -3,31 +3,21 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "cdc",
-    "efe"
+    "aca"
   ],
   "key": {
     "a": {
-      "item": "minecraft:redstone_block"
+      "item": "primogemcraft:jlliang"
     },
     "b": {
-      "item": "minecraft:amethyst_shard"
+      "item": "primogemcraft:zuishengduanpian"
     },
     "c": {
-      "item": "minecraft:chorus_fruit"
-    },
-    "d": {
-      "item": "primogemcraft:zuishengkuai"
-    },
-    "e": {
       "item": "primogemcraft:jlmo"
-    },
-    "f": {
-      "item": "minecraft:coal_ore"
     }
   },
   "result": {
     "id": "primogemcraft:yhjs",
-    "count": 3
+    "count": 1
   }
 }

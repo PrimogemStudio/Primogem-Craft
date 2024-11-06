@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 2,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.LANTERN"
-      },
-      {
-        "value": "Blocks.LIGHTNING_ROD"
-      },
-      {
-        "value": "Blocks.SOUL_LANTERN"
-      },
-      {
-        "value": "Blocks.PISTON"
+        "value": "CUSTOM:Jlliang"
       },
       {
         "value": "CUSTOM:Dijingduanpian"
       },
       {
-        "value": "Blocks.PISTON"
+        "value": "CUSTOM:Jlliang"
+      },
+      {
+        "value": "CUSTOM:Jlliang"
       },
       {
         "value": "CUSTOM:Jlmo"
       },
       {
-        "value": "CUSTOM:Chuangshijiejing"
+        "value": "CUSTOM:Jlliang"
       },
       {
-        "value": "CUSTOM:Jlmo"
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {
