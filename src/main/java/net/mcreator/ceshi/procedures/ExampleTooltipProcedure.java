@@ -11,6 +11,6 @@ public class ExampleTooltipProcedure {
 		ItemStack stack = ItemStack.EMPTY;
 		stack = itemstack;
 		var bar = CustomAPI.getCustomBar(stack);
-		return (zhi + "\uFF1A") + "" + bar.numerator + "/" + bar.denominator;
+		return (zhi + ":") + "" + bar.numerator + "/" + bar.denominator;
 	}
 }
