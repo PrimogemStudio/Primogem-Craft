@@ -14,7 +14,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.procedures.Liulang_jingyan_shuxingProcedure;
 import net.mcreator.ceshi.procedures.Jingyanshu_beibaonaijiuProcedure;
@@ -30,8 +29,7 @@ public class DayingxiongdejingyanItem extends Item {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public boolean isFoil(ItemStack itemstack) {
-		Entity entity = Minecraft.getInstance().player;
-		return Dayingxiong_shu_faguangProcedure.execute(entity, itemstack);
+		return Dayingxiong_shu_faguangProcedure.execute(itemstack);
 	}
 
 	@Override
