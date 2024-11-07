@@ -39,16 +39,16 @@ public class Liulang_jingyan_shuxingProcedure {
 					bar.numerator = 0;
 				}
 			} else {
-				if (bar.numerator < bar.denumerator) {
+				if (bar.numerator < bar.denominator) {
 					jingyan = DiaoyongjisuanjingyanzhiProcedure.execute(entity);
 					if (jingyan != 0) {
-						a = bar.denumerator - bar.numerator;
+						a = bar.denominator - bar.numerator;
 						if (entity instanceof Player _player)
 							_player.giveExperiencePoints(-((int) a));
 						if (jingyan > a) {
-							bar.numerator = bar.denumerator;
+							bar.numerator = bar.denominator;
 						} else {
-							bar.numerator = bar.numerator + jingyan;
+							bar.numerator += (int) jingyan;
 						}
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("\u00A7a\u7ECF\u9A8C\u503C\u00A7b\u5DF2\u5B58\u5165\uFF01"), false);
