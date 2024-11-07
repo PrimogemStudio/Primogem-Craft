@@ -9,6 +9,6 @@ public class HSctrlProcedure {
 		if (Screen.hasControlDown()) {
 			return ctrl + "\n";
 		}
-		return "\u00A77\u6309\u4F4F[Ctrl]\u67E5\u770B" + ctrl0 + "\n";
+		return "\u00A77\u6309\u4F4F\u00A7bCtrl\u00A77\u67E5\u770B" + ctrl0 + "\n";
 	}
 }
