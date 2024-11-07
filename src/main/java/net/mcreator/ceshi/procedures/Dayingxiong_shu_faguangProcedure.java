@@ -9,6 +9,11 @@ public class Dayingxiong_shu_faguangProcedure {
 		ItemStack stack = ItemStack.EMPTY;
 		stack = itemstack;
 		var bar = CustomAPI.getCustomBar(stack);
+		if (bar.numerator == bar.denominator) {
+			bar.visible = false;
+		} else {
+			bar.visible = true;
+		}
 		return bar.numerator == bar.denominator;
 	}
 }
