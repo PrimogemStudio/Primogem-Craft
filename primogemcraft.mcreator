@@ -8762,7 +8762,7 @@
       "name": "Maoxianjiajingyanshu",
       "type": "recipe",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "maoxianjiajingyanshu",
       "metadata": {
         "files": [
@@ -8774,7 +8774,7 @@
       "name": "Dayinxiongjingyanshu",
       "type": "recipe",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "dayinxiongjingyanshu",
       "metadata": {
         "files": [

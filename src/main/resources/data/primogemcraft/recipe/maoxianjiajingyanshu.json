@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "primogemcraft:crafting_shaped_with_components",
   "category": "misc",
   "pattern": [
     "aaa",
@@ -14,6 +14,7 @@
       "item": "primogemcraft:liulangzhedejingyan"
     }
   },
+  "source": "primogemcraft:liulangzhedejingyan",
   "result": {
     "id": "primogemcraft:maoxianjiadejingyan",
     "count": 1
