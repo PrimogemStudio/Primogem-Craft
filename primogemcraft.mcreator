@@ -31749,6 +31749,29 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "zhi",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Example0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "example_0",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Example0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       }

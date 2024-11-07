@@ -5,10 +5,12 @@ import net.minecraft.world.item.ItemStack;
 import net.hackermdch.pgc.CustomAPI;
 
 public class ExampleTooltipProcedure {
-	public static String execute(ItemStack itemstack) {
+	public static String execute(ItemStack itemstack, String zhi) {
+		if (zhi == null)
+			return "";
 		ItemStack stack = ItemStack.EMPTY;
 		stack = itemstack;
 		var bar = CustomAPI.getCustomBar(stack);
-		return "\u8FDB\u5EA6\uFF1A" + bar.numerator + "/" + bar.denominator;
+		return (zhi + "\uFF1A") + "" + bar.numerator + "/" + bar.denominator;
 	}
 }

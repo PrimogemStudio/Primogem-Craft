@@ -16,8 +16,8 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.ceshi.procedures.ExampleTooltipProcedure;
 import net.mcreator.ceshi.procedures.ExampleTestProcedure;
+import net.mcreator.ceshi.procedures.Example0Procedure;
 
 import java.util.List;
 
@@ -31,7 +31,7 @@ public class ExampleItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
-		String hoverText = ExampleTooltipProcedure.execute(itemstack);
+		String hoverText = Example0Procedure.execute(itemstack);
 		if (hoverText != null) {
 			for (String line : hoverText.split("\n")) {
 				list.add(Component.literal(line));

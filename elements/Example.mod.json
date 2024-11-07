@@ -26,7 +26,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [],
-      "name": "ExampleTooltip"
+      "name": "Example0"
     },
     "glowCondition": {
       "fixedValue": false
