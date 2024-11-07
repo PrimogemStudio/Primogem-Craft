@@ -52,7 +52,10 @@ public final class ShapedWithComponentsRecipe implements CraftingRecipe {
         var result = getResultItem(registries).copy();
         for (var it : inv.items()) {
             if (it.is(source)) {
+                var com = result.get(CustomComponents.CUSTOM_BAR);
                 result.applyComponents(it.getComponents());
+                var bar = result.get(CustomComponents.CUSTOM_BAR);
+                if (com != null && bar != null) bar.denominator = com.denominator;
                 return result;
             }
         }
