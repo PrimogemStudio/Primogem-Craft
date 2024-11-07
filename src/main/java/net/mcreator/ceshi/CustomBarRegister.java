@@ -16,7 +16,7 @@ import java.util.List;
 @OnlyIn(Dist.CLIENT)
 public class CustomBarRegister {
     private static void init(Builder builder) {
-        builder.add(lookup("primogemcraft:example"), bar(13, 0xc145c3), bar(0, 1500, true));
+        builder.add(lookup("primogemcraft:example"), bar(13, 0xc145c3), bar(0, 100, true));
         builder.add(lookup("primogemcraft:dayingxiongdejingyan"), bar(13, 0x6A75EA), bar(0, 2920, true));
         builder.add(lookup("primogemcraft:maoxianjiadejingyan"), bar(13, 0x6A75EA), bar(0, 1395, true));
         builder.add(lookup("primogemcraft:liulangzhedejingyan"), bar(13, 0x6A75EA), bar(0, 1089, true));

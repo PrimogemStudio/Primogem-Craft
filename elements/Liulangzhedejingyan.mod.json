@@ -34,7 +34,8 @@
         "§",
         "§c  升级后不保留经验",
         "§c 频繁存取可能造成损失"
-      ]
+      ],
+      "name": "Jingyanshumiaoshu"
     },
     "glowCondition": {
       "fixedValue": true,

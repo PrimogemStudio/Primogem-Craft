@@ -32,7 +32,8 @@
       "fixedValue": [
         "§6可以储存§d30§6经验等级",
         "§6经验值！"
-      ]
+      ],
+      "name": "Jingyanshumiaoshu"
     },
     "glowCondition": {
       "fixedValue": true,

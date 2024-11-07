@@ -8721,10 +8721,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -31763,6 +31759,25 @@
         "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/Example0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jingyanshumiaoshu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jingyanshumiaoshu",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/JingyanshumiaoshuProcedure.java"
         ],
         "dependencies": [
           {

@@ -14,8 +14,10 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.procedures.Liulang_jingyan_shuxingProcedure;
+import net.mcreator.ceshi.procedures.JingyanshumiaoshuProcedure;
 import net.mcreator.ceshi.procedures.Jingyanshu_beibaonaijiuProcedure;
 import net.mcreator.ceshi.procedures.Dayingxiong_shu_faguangProcedure;
 
@@ -36,14 +38,19 @@ public class DayingxiongdejingyanItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.primogemcraft.dayingxiongdejingyan.description_0"));
-		list.add(Component.translatable("item.primogemcraft.dayingxiongdejingyan.description_1"));
+		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
+		String hoverText = JingyanshumiaoshuProcedure.execute(itemstack);
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		Liulang_jingyan_shuxingProcedure.execute(world, entity, ar.getObject());
+		Liulang_jingyan_shuxingProcedure.execute(entity, ar.getObject());
 		return ar;
 	}
 
