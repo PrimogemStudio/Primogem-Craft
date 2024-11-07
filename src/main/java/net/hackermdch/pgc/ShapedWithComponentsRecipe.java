@@ -55,7 +55,10 @@ public final class ShapedWithComponentsRecipe implements CraftingRecipe {
                 var com = result.get(CustomComponents.CUSTOM_BAR);
                 result.applyComponents(it.getComponents());
                 var bar = result.get(CustomComponents.CUSTOM_BAR);
-                if (com != null && bar != null) bar.denominator = com.denominator;
+                if (bar != null) {
+                    bar = new CustomBar(bar.numerator, com != null ? com.denominator : bar.denominator, bar.visible);
+                    result.set(CustomComponents.CUSTOM_BAR, bar);
+                }
                 return result;
             }
         }
