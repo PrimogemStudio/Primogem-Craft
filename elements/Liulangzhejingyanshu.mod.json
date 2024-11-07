@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:Jlza"
       },
       {
-        "value": "Items.DYE#4"
+        "value": "CUSTOM:Jlza"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Jlza"
       },
       {
-        "value": "CUSTOM:Mmola01"
+        "value": "CUSTOM:Jlza"
       },
       {
         "value": "Items.BOOK"
       },
       {
-        "value": "Items.DYE#4"
+        "value": "CUSTOM:Jlza"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Jlza"
       },
       {
-        "value": "CUSTOM:Mmola01"
+        "value": "CUSTOM:Jlza"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Jlza"
       }
     ],
     "recipeReturnStack": {

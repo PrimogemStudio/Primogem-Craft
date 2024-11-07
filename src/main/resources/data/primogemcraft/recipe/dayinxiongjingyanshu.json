@@ -2,22 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " a ",
-    "bcd",
-    " a "
+    "aaa",
+    "aba",
+    "aaa"
   ],
   "key": {
     "a": {
       "item": "primogemcraft:jlmo"
     },
     "b": {
-      "item": "primogemcraft:chuangshijiejing"
-    },
-    "c": {
       "item": "primogemcraft:maoxianjiadejingyan"
-    },
-    "d": {
-      "item": "primogemcraft:wmoladai"
     }
   },
   "result": {

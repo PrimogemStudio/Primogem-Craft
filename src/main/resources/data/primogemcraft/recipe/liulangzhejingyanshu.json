@@ -2,18 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " a ",
-    "bca",
-    " b "
+    "aaa",
+    "aba",
+    "aaa"
   ],
   "key": {
     "a": {
-      "item": "minecraft:lapis_lazuli"
+      "item": "primogemcraft:jlza"
     },
     "b": {
-      "item": "primogemcraft:mmola_01"
-    },
-    "c": {
       "item": "minecraft:book"
     }
   },
