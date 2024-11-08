@@ -44,7 +44,7 @@ public class Hslggzsx2Procedure {
 						a = entityiterator;
 						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) <= (a instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-								_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.HSLGGZFUZHIPIN, 60, 0));
+								_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.HSLGGZFUZHIPIN, 24000, 0));
 						}
 					}
 				}

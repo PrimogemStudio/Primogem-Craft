@@ -64,7 +64,7 @@ public class FenlieggzsxProcedure {
 				var sw = (ServerLevel) world;
 				e1 = t.spawn(sw, p, MobSpawnType.MOB_SUMMONED);
 				if (e1 instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.HSLGGZFUZHIPIN, 60, 0));
+					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.HSLGGZFUZHIPIN, 24000, 0));
 				{
 					Entity _entity = e1;
 					if (_entity instanceof Player _player) {

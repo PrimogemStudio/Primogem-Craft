@@ -45,7 +45,7 @@ public class Hslggzsx03Procedure {
 			if (!entity.level().isClientSide())
 				entity.discard();
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.CRIT, x, y, z, 40, 0, 3, 0, 1);
+				_level.sendParticles(ParticleTypes.LARGE_SMOKE, x, y, z, 40, 0, 2, 0, 0.1);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.evoker.cast_spell")), SoundSource.HOSTILE, 10, 1);
