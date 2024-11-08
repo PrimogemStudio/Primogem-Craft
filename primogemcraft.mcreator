@@ -31766,6 +31766,36 @@
           }
         ]
       }
+    },
+    {
+      "name": "Huoqihanshu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "huoqihanshu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/HuoqihanshuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "huoqi",
+            "type": "itemstack"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "zhi",
+            "type": "string"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
