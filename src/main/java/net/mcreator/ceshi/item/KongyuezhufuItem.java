@@ -55,7 +55,7 @@ public class KongyuezhufuItem extends Item {
 
 	@Override
 	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
-		return 32;
+		return 16;
 	}
 
 	@Override
