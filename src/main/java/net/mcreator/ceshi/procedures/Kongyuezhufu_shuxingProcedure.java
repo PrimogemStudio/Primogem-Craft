@@ -1,14 +1,9 @@
 package net.mcreator.ceshi.procedures;
 
 import net.neoforged.neoforge.items.ItemHandlerHelper;
-import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -17,75 +12,61 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
-import net.mcreator.ceshi.PrimogemcraftMod;
 
-import javax.annotation.Nullable;
+import net.hackermdch.pgc.CustomAPI;
 
-@EventBusSubscriber
 public class Kongyuezhufu_shuxingProcedure {
-	@SubscribeEvent
-	public static void onUseItemStart(LivingEntityUseItemEvent.Start event) {
-		if (event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getItem());
-		}
-	}
-
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
-		execute(null, world, x, y, z, entity, itemstack);
-	}
-
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (itemstack.getItem() == PrimogemcraftModItems.KONGYUEZHUFU.get()) {
-			if (!itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("yueka_lengque")) {
-				{
-					final String _tagName = "yueka_lengque";
-					final boolean _tagValue = true;
-					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
+		ItemStack stack = ItemStack.EMPTY;
+		if (!(entity instanceof Player _plrCldCheck1 && _plrCldCheck1.getCooldowns().isOnCooldown(itemstack.getItem()))) {
+			if (world.isClientSide())
+				Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
+			stack = itemstack;
+			var bar = CustomAPI.getCustomBar(stack);
+			bar.numerator -= 1;
+			if (!world.isClientSide()) {
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(PrimogemcraftModItems.YSSP.get()).copy();
+					_setstack.setCount(Mth.nextInt(RandomSource.create(), 10, 90));
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
-				PrimogemcraftMod.queueServerWork(32, () -> {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(PrimogemcraftModItems.YUANSHI.get()).copy();
-						_setstack.setCount(Mth.nextInt(RandomSource.create(), 1, 9));
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.3, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.3, 1, false);
 					}
-					if (world.isClientSide())
-						Minecraft.getInstance().gameRenderer.displayItemActivation(itemstack);
+				}
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 24000);
+				if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
+				} else {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.OFF_HAND, true);
+				}
+				if (bar.numerator == 0) {
+					itemstack.shrink(1);
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.3, 1);
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, (float) 0.3, (float) 0.5);
 						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.totem.use")), SoundSource.PLAYERS, (float) 0.3, 1, false);
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:qiwusunhuai066")), SoundSource.PLAYERS, (float) 0.3, (float) 0.5, false);
 						}
 					}
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(itemstack.getItem(), 24000);
-					if (world instanceof ServerLevel _level) {
-						itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
-						});
-					}
-					if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
-						if (entity instanceof LivingEntity _entity)
-							_entity.swing(InteractionHand.MAIN_HAND, true);
-					} else {
-						if (entity instanceof LivingEntity _entity)
-							_entity.swing(InteractionHand.OFF_HAND, true);
-					}
-					{
-						final String _tagName = "yueka_lengque";
-						final boolean _tagValue = false;
-						CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
-					}
-				});
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("\u00A7b1 \u5F20\u6708\u5361\u5230\u671F\u4E86"), false);
+				}
 			}
 		}
 	}

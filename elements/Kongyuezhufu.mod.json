@@ -16,7 +16,7 @@
     ],
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 1200,
+    "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 30,
     "recipeRemainder": {
@@ -30,17 +30,27 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "每天领取1~9颗原石"
-      ]
+        "§7每天可以领取10~90原石碎片"
+      ],
+      "name": "Kongyuemiaoshu"
+    },
+    "glowCondition": {
+      "fixedValue": false
     },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "Kongyuezhufu_shuxing"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "projectileDisableAmmoCheck": false,
-    "isFood": true,
+    "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.0,
     "eatResultItem": {
