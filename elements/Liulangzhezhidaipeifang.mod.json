@@ -12,7 +12,10 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.STRING"
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": ""
@@ -21,22 +24,19 @@
         "value": "Items.STRING"
       },
       {
-        "value": "Items.LEATHER"
-      },
-      {
         "value": "CUSTOM:Mmola01"
       },
       {
-        "value": "Items.LEATHER"
+        "value": "Items.STRING"
+      },
+      {
+        "value": ""
       },
       {
         "value": "Items.LEATHER"
       },
       {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.LEATHER"
+        "value": ""
       }
     ],
     "recipeReturnStack": {

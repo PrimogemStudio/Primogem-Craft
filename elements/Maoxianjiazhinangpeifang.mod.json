@@ -12,7 +12,10 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.LEATHER"
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": ""
@@ -21,22 +24,19 @@
         "value": "Items.LEATHER"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:Liulangzhezhinang"
       },
       {
-        "value": "CUSTOM:Mmola01"
+        "value": "Items.LEATHER"
       },
       {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
+        "value": ""
       },
       {
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": ""
       }
     ],
     "recipeReturnStack": {

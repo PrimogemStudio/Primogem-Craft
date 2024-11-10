@@ -12,16 +12,10 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Jiuchanzhiyuanxian"
+        "value": ""
       },
       {
         "value": "CUSTOM:Yuanshi"
-      },
-      {
-        "value": "CUSTOM:Jiuchanzhiyuanxian"
-      },
-      {
-        "value": "CUSTOM:Jijiuchanzhiyuan"
       },
       {
         "value": ""
@@ -30,13 +24,19 @@
         "value": "CUSTOM:Jijiuchanzhiyuan"
       },
       {
+        "value": "CUSTOM:Zhangquanzhezhinang"
+      },
+      {
+        "value": "CUSTOM:Jijiuchanzhiyuan"
+      },
+      {
+        "value": ""
+      },
+      {
         "value": "CUSTOM:Chuangshijiejing"
       },
       {
-        "value": "CUSTOM:Jiuchanzhiyuankuai"
-      },
-      {
-        "value": "CUSTOM:Chuangshijiejing"
+        "value": ""
       }
     ],
     "recipeReturnStack": {

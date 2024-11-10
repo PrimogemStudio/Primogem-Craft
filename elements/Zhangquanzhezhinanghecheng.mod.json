@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Xixiangyuzhiyuan"
-      },
-      {
         "value": ""
       },
       {
         "value": "CUSTOM:Jiuchanzhiyuanxian"
       },
       {
-        "value": "CUSTOM:Jijiuchanzhiyuan"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Jinzhimola"
+        "value": "CUSTOM:Xixiangyuzhiyuan"
       },
       {
-        "value": "CUSTOM:Jijiuchanzhiyuan"
-      },
-      {
-        "value": "CUSTOM:Jijiuchanzhiyuan"
+        "value": "CUSTOM:Maoxianjiazhinang"
       },
       {
         "value": "CUSTOM:Jijiuchanzhiyuan"
       },
       {
-        "value": "CUSTOM:Jijiuchanzhiyuan"
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Xixiangyuzhiyuan"
+      },
+      {
+        "value": ""
       }
     ],
     "recipeReturnStack": {

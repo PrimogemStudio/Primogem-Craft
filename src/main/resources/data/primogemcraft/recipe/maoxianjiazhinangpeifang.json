@@ -1,22 +1,22 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "primogemcraft:crafting_shaped_with_components",
   "category": "misc",
   "pattern": [
-    "a a",
-    "bcb",
-    "bbb"
+    "aba",
+    " c "
   ],
   "key": {
     "a": {
       "item": "minecraft:leather"
     },
     "b": {
-      "item": "minecraft:iron_ingot"
+      "item": "primogemcraft:liulangzhezhinang"
     },
     "c": {
-      "item": "primogemcraft:mmola_01"
+      "item": "minecraft:iron_ingot"
     }
   },
+  "source": "primogemcraft:liulangzhezhinang",
   "result": {
     "id": "primogemcraft:maoxianjiazhinang",
     "count": 1
