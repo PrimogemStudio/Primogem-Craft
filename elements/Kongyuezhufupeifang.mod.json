@@ -12,6 +12,15 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Kongyuejinshu"
+      },
+      {
+        "value": ""
+      },
+      {
         "value": "Blocks.WOOL#11"
       },
       {
@@ -19,15 +28,6 @@
       },
       {
         "value": "Blocks.WOOL#5"
-      },
-      {
-        "value": "CUSTOM:Kongyuejinshu"
-      },
-      {
-        "value": "CUSTOM:Shanbianzhichen"
-      },
-      {
-        "value": "CUSTOM:Xinyuejinshu"
       },
       {
         "value": ""
