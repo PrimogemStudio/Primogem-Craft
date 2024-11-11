@@ -42,13 +42,6 @@ public class GUIhldztan1Procedure {
 		}
 		i1 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY);
 		if (!(i1.getItem() == Blocks.AIR.asItem()) && i1.is(ItemTags.create(ResourceLocation.parse("pgc:wuqi")))) {
-			if (i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji") == 0) {
-				{
-					final String _tagName = "deng_ji";
-					final double _tagValue = 1;
-					CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putDouble(_tagName, _tagValue));
-				}
-			}
 			a = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
 			if (a < 30) {
 				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, 30, b, c, 6);
