@@ -1,6 +1,9 @@
 package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.EquipmentSlotGroup;
 
 import net.hackermdch.pgc.CustomAPI;
 
@@ -8,11 +11,8 @@ public class ExampleTestProcedure {
 	public static void execute(ItemStack itemstack) {
 		ItemStack stack = ItemStack.EMPTY;
 		stack = itemstack;
-		var bar = CustomAPI.getCustomBar(stack);
-		if (bar.numerator > 10) {
-			bar.numerator = 100;
-		} else {
-			bar.numerator += 2;
-		}
+		var attr = CustomAPI.getAttributes(stack);
+		attr.add(Attributes.ATTACK_DAMAGE, "aa", 1, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.HAND);
+		attr.apply();
 	}
 }
