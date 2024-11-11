@@ -2383,7 +2383,7 @@
   "gui.primogemcraft.ganjinglajitong.label_gan_jing_de_la_ji_tong": "clean Trash Can",
   "item.primogemcraft.ysjbfpk.description_1": "§7手持潜行右键",
   "item.primogemcraft.mmolapeiziwupin.description_0": "§d高级锻造材料",
-  "gamerule.guizewuqishanghai": "§b原石工艺§e武器强化伤害倍率（默认10）",
+  "gamerule.guizewuqishanghai": "§b原石工艺§e武器强化伤害倍率",
   "effect.primogemcraft.syzf": "§b三月祝福",
   "advancements.jdljhs.descr": "获得精锻用杂矿",
   "item.primogemcraft.baiguangguodushengwu_spawn_egg": "Result Legendary Spawn Egg",

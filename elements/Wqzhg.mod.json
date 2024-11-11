@@ -35,6 +35,12 @@
     "blockDropsTier": "IRON",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": true
+    "damageOnCrafting": true,
+    "onRightClickedInAir": {
+      "name": "Wqzhg_sx_1"
+    },
+    "onEntityHitWith": {
+      "name": "Wqzhg_sx_0"
+    }
   }
 }
