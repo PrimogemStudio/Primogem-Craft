@@ -32039,12 +32039,34 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wfj_sx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wfj_sx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Wfj_sxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
             "type": "entity"
           },
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -32895,7 +32917,8 @@
       "CUSTOM:Jianlaokuaiwupin"
     ],
     "ITEMS:pgc:wuqi": [
-      "CUSTOM:Wqzhg"
+      "CUSTOM:Wqzhg",
+      "CUSTOM:Wufengjian"
     ],
     "ITEMS:pgc:prayer_core_x10": [
       "CUSTOM:Qyhxshilian"

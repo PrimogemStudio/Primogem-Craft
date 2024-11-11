@@ -12,7 +12,8 @@
     "specialInformation": {
       "fixedValue": [
         "有能力改变一个世界的人才能拥有它"
-      ]
+      ],
+      "name": "Wfjms"
     },
     "creativeTabs": [
       {
@@ -20,10 +21,10 @@
       }
     ],
     "efficiency": 4.0,
-    "attackSpeed": 0.05,
+    "attackSpeed": 0.02,
     "enchantability": 15,
-    "damageVsEntity": 17.7,
-    "usageCount": 20,
+    "damageVsEntity": 20.0,
+    "usageCount": 18,
     "glowCondition": {
       "fixedValue": false
     },
@@ -36,6 +37,9 @@
     "blockDropsTier": "STONE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": true,
-    "damageOnCrafting": true
+    "damageOnCrafting": true,
+    "onEntityHitWith": {
+      "name": "Wfj_sx"
+    }
   }
 }
