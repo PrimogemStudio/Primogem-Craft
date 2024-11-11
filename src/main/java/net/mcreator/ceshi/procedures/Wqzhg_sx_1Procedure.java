@@ -28,6 +28,10 @@ public class Wqzhg_sx_1Procedure {
 			return;
 		double a = 0;
 		if (entity.isShiftKeyDown()) {
+			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC_KILL)), (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.2));
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 5, (int) itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian")));
+		} else {
 			if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) >= 9) {
 				{
 					final Vec3 _center = new Vec3(x, y, z);
@@ -38,7 +42,7 @@ public class Wqzhg_sx_1Procedure {
 								if (entity instanceof Player _player)
 									_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 9));
 								entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.LIGHTNING_BOLT), entityiterator, entity),
-										(float) ((entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity6.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0) * 0.3
+										(float) ((entity instanceof LivingEntity _livingEntity12 && _livingEntity12.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity12.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0) * 0.3
 												* HSjinglianProcedure.execute(itemstack)));
 								if (world instanceof ServerLevel _level) {
 									LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
@@ -51,10 +55,6 @@ public class Wqzhg_sx_1Procedure {
 					}
 				}
 			}
-		} else {
-			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC_KILL)), (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.2));
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 5, (int) itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian")));
 		}
 	}
 }

@@ -9,13 +9,12 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
-
-import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 import java.util.List;
 
@@ -48,12 +47,12 @@ public class WufengjianItem extends SwordItem {
 
 		@Override
 		public Ingredient getRepairIngredient() {
-			return Ingredient.of(new ItemStack(PrimogemcraftModItems.MMOLAPEIZIWUPIN.get()));
+			return Ingredient.of(new ItemStack(Items.IRON_INGOT));
 		}
 	};
 
 	public WufengjianItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 15.6f, -3.95f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 16.7f, -3.95f)).fireResistant());
 	}
 
 	@Override

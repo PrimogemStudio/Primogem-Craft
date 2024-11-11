@@ -30,6 +30,6 @@ public class PrimogemcraftModGameRules {
 		GUIZESUIJISHIJIAN = GameRules.register("guizesuijishijian", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(100));
 		GUIZESHIJIANXIANZHI = GameRules.register("guizeshijianxianzhi", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(5));
 		GUIZEWUQISHANGXIAN = GameRules.register("guizewuqishangxian", GameRules.Category.PLAYER, GameRules.IntegerValue.create(89));
-		GUIZEWUQISHANGHAI = GameRules.register("guizewuqishanghai", GameRules.Category.PLAYER, GameRules.IntegerValue.create(5));
+		GUIZEWUQISHANGHAI = GameRules.register("guizewuqishanghai", GameRules.Category.PLAYER, GameRules.IntegerValue.create(10));
 	}
 }

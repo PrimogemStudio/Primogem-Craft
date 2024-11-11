@@ -7,7 +7,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.component.DataComponents;
 
-public class WqzhgmsProcedure {
+public class WfjmsProcedure {
 	public static String execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return "";

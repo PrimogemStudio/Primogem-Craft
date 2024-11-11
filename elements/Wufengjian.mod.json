@@ -22,11 +22,14 @@
     "efficiency": 4.0,
     "attackSpeed": 0.05,
     "enchantability": 15,
-    "damageVsEntity": 16.599999999999998,
+    "damageVsEntity": 17.7,
     "usageCount": 20,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
-        "value": "CUSTOM:Mmolapeiziwupin"
+        "value": "Items.IRON_INGOT"
       }
     ],
     "immuneToFire": true,
