@@ -50,7 +50,7 @@ public class GUIhldztan1SHProcedure {
 			CustomData.update(DataComponents.CUSTOM_DATA, item, tag -> tag.putDouble(_tagName, _tagValue));
 		}
 		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			((Slot) _slots.get((int) wei_zhi)).remove((int) (a - a * Mth.nextInt(RandomSource.create(), (int) fanwei_0, (int) fanwei_1)));
+			((Slot) _slots.get((int) wei_zhi)).remove((int) (a - a * Mth.nextDouble(RandomSource.create(), fanwei_0, fanwei_1)));
 			_player.containerMenu.broadcastChanges();
 		}
 		a = item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji") + 1;

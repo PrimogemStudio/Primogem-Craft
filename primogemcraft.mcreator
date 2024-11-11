@@ -32070,6 +32070,64 @@
           }
         ]
       }
+    },
+    {
+      "name": "Myzj",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myzj",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/myzj.json",
+          "src/main/java/net/mcreator/ceshi/item/MyzjItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Myzjms",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myzjms",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/MyzjmsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Myzjsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myzjsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/MyzjsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -34113,6 +34171,7 @@
       "CUSTOM:Axhjt.boots"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Myzj",
       "~CUSTOM:Qwwshy",
       "~CUSTOM:Qwclgs",
       "~CUSTOM:Qwtldgs",
@@ -34487,7 +34546,8 @@
       "Qwkzhy",
       "Qwclhy",
       "Qwjlbhy",
-      "Qwyznj"
+      "Qwyznj",
+      "Myzj"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -35729,6 +35789,7 @@
       "item.primogemcraft.xzcfyxwzd.description_1": "",
       "block.primogemcraft.xiutiekuai": "Rust Iron Block",
       "item.primogemcraft.xzcfyxwzd.description_4": "§6 • 趁手",
+      "item.primogemcraft.myzj": "命运足迹",
       "item.primogemcraft.xzcfyxwzd.description_3": "§8  永久提供抗性提升 I",
       "advancements.jdyhjs.title": "Eternity Ingot",
       "item.primogemcraft.xzcfyxwzd.description_6": "§8  后被施加的冷却",
@@ -38307,6 +38368,7 @@
       "item.primogemcraft.xzcfyxwzd.description_1": "",
       "block.primogemcraft.xiutiekuai": "Rust Iron Block",
       "item.primogemcraft.xzcfyxwzd.description_4": "§6 • 趁手",
+      "item.primogemcraft.myzj": "命运足迹",
       "item.primogemcraft.xzcfyxwzd.description_3": "§8  永久提供抗性提升 I",
       "advancements.jdyhjs.title": "Eternity Ingot",
       "item.primogemcraft.xzcfyxwzd.description_6": "§8  后被施加的冷却",
@@ -40883,6 +40945,7 @@
       "item.primogemcraft.xzcfyxwzd.description_1": "",
       "block.primogemcraft.xiutiekuai": "锈铁块",
       "item.primogemcraft.xzcfyxwzd.description_4": "§6 • 趁手",
+      "item.primogemcraft.myzj": "命运足迹",
       "item.primogemcraft.xzcfyxwzd.description_3": "§8  永久提供抗性提升 I",
       "advancements.jdyhjs.title": "永恒金属",
       "item.primogemcraft.xzcfyxwzd.description_6": "§8  后被施加的冷却",
