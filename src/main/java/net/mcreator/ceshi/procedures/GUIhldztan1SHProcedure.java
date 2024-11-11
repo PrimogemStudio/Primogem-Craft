@@ -57,12 +57,23 @@ public class GUIhldztan1SHProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 			a = item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
-			b = GUIhldztwqqhszhsProcedure.execute(world, 0.05, a, (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGXIAN)));
-			c = c + b;
-			b = GUIhldztwqqhszhsProcedure.execute(world, 0.02, a, 60);
-			c = c + b;
-			b = GUIhldztwqqhszhsProcedure.execute(world, 0.01, a, 30);
-			c = c + b;
+			if (a > 60) {
+				b = 30 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
+				c = c + b;
+				b = 30 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.05;
+				c = c + b;
+				c = c + (a - 60) * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.1;
+			} else {
+				if (a >= 30 && a <= 60) {
+					b = 30 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
+					c = c + b;
+					c = c + (a - 30) * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.05;
+				} else {
+					if (a < 30) {
+						c = c + a * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
+					}
+				}
+			}
 			stack = item;
 			var attr = CustomAPI.getAttributes(stack);
 			attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
