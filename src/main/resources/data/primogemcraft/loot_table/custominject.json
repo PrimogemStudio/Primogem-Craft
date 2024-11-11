@@ -868,6 +868,20 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "primogemcraft:myzj",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
         }
       ]
     }
