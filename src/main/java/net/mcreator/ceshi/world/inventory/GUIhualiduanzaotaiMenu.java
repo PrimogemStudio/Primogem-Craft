@@ -18,9 +18,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
@@ -114,7 +112,7 @@ public class GUIhualiduanzaotaiMenu extends AbstractContainerMenu implements Sup
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 51, 53) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.parse("pgc:wuqi")));
+				return PrimogemcraftModItems.MYZJ.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 71, 53) {
