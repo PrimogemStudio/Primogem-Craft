@@ -1,7 +1,6 @@
 package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -12,11 +11,7 @@ import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModGameRules;
 
@@ -26,7 +21,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 
 public class GUIhldztan1SHProcedure {
-	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack item, double deng_ji, double fanwei_0, double fanwei_1, double wei_zhi) {
+	public static boolean execute(LevelAccessor world, Entity entity, ItemStack item, double deng_ji, double fanwei_0, double fanwei_1, double wei_zhi) {
 		if (entity == null)
 			return false;
 		ItemStack i1 = ItemStack.EMPTY;
@@ -57,37 +52,30 @@ public class GUIhldztan1SHProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 			a = item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
+			stack = item;
+			var attr = CustomAPI.getAttributes(stack);
 			if (a > 60) {
 				b = 30 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
 				c = c + b;
 				b = 30 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.05;
 				c = c + b;
 				c = c + (a - 60) * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.1;
-			} else {
-				if (a >= 30 && a <= 60) {
-					b = 30 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
-					c = c + b;
-					c = c + (a - 30) * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.05;
-				} else {
-					if (a < 30) {
-						c = c + a * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
-					}
-				}
+				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
+				attr.apply();
+				return true;
+			} else if (a >= 30 && a <= 60) {
+				b = 30 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
+				c = c + b;
+				c = c + (a - 30) * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.05;
+				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
+				attr.apply();
+				return true;
+			} else if (a < 30) {
+				c = c + a * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
+				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
+				attr.apply();
+				return true;
 			}
-			stack = item;
-			var attr = CustomAPI.getAttributes(stack);
-			attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
-			attr.apply();
-			if (!world.isClientSide()) {
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:jingyanshu00")), SoundSource.BLOCKS, (float) 0.3, 1);
-					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:jingyanshu00")), SoundSource.BLOCKS, (float) 0.3, 1, false);
-					}
-				}
-			}
-			return true;
 		}
 		return false;
 	}

@@ -2,15 +2,19 @@ package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModGameRules;
 
@@ -46,16 +50,27 @@ public class GUIhldztan1Procedure {
 				}
 			}
 			a = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
-			if (a >= 60) {
-				GUIhldztan1SHProcedure.execute(world, x, y, z, entity, i1, (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGXIAN)), b, c, 8);
+			if (a < 30) {
+				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, 30, b, c, 6);
 			}
 			a = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
 			if (a >= 30 && a < 60) {
-				GUIhldztan1SHProcedure.execute(world, x, y, z, entity, i1, 60, b, c, 7);
+				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, 60, b, c, 7);
 			}
 			a = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
-			if (a < 30) {
-				GUIhldztan1SHProcedure.execute(world, x, y, z, entity, i1, 30, b, c, 6);
+			if (a >= 60) {
+				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGXIAN)), b, c, 8);
+			}
+			if (!world.isClientSide()) {
+				if (lg0) {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:jingyanshu00")), SoundSource.BLOCKS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:jingyanshu00")), SoundSource.BLOCKS, 1, 1, false);
+						}
+					}
+				}
 			}
 		}
 	}
