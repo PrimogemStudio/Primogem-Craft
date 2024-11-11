@@ -15,6 +15,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
+
 import java.util.function.Supplier;
 import java.util.Map;
 
@@ -29,7 +31,8 @@ public class GUIhldztan0Procedure {
 		if (!(i1.getItem() == Blocks.AIR.asItem()) && i1.is(ItemTags.create(ResourceLocation.parse("pgc:wuqi")))) {
 			for (int index0 = 0; index0 < 4; index0++) {
 				b = b + 1;
-				if (!((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get((int) b)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem())) {
+				if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get((int) b)).getItem() : ItemStack.EMPTY)
+						.getItem() == PrimogemcraftModItems.TEZHIDIEYINGQI.get()) {
 					if (i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian") < 4) {
 						{
 							final String _tagName = "jing_lian";

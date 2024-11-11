@@ -19,6 +19,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.mcreator.ceshi.init.PrimogemcraftModGameRules;
 
 import java.util.function.Supplier;
@@ -49,15 +50,18 @@ public class GUIhldztan1Procedure {
 		i1 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY);
 		if (!(i1.getItem() == Blocks.AIR.asItem()) && i1.is(ItemTags.create(ResourceLocation.parse("pgc:wuqi")))) {
 			a = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
-			if (a < 29) {
+			if (a < 29 && (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(6)).getItem() : ItemStack.EMPTY).getItem() == PrimogemcraftModItems.JLZA
+					.get()) {
 				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, 29, b, c, 6);
 			}
 			a = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
-			if (a >= 29 && a < 59) {
+			if (a >= 29 && a < 59 && (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(7)).getItem() : ItemStack.EMPTY)
+					.getItem() == PrimogemcraftModItems.JLLIANG.get()) {
 				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, 59, b, c, 7);
 			}
 			a = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
-			if (a >= 59) {
+			if (a >= 59 && (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(8)).getItem() : ItemStack.EMPTY).getItem() == PrimogemcraftModItems.JLMO
+					.get()) {
 				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGXIAN)), b, c, 8);
 			}
 			if (!world.isClientSide()) {
