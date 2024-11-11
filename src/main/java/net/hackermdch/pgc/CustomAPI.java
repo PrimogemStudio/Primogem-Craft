@@ -21,4 +21,8 @@ public class CustomAPI {
     public static boolean hasCustomBar(ItemStack stack) {
         return stack.has(CustomComponents.CUSTOM_BAR);
     }
+
+    public static AttributeWrapper getAttributes(ItemStack stack) {
+        return new AttributeWrapper(stack);
+    }
 }
