@@ -29,7 +29,7 @@ public class MyzjsxProcedure {
 						}
 						return false;
 					}
-				}.checkGamemode(entity) ? 1 : Mth.nextDouble(RandomSource.create(), 0.01, 0.15);
+				}.checkGamemode(entity) ? 1 : Mth.nextDouble(RandomSource.create(), 0.01, 0.25);
 				{
 					final String _tagName = "qianghua_touzi_gailv";
 					final double _tagValue = a;
@@ -37,7 +37,7 @@ public class MyzjsxProcedure {
 				}
 				{
 					final String _tagName = "touzi_fenwei_1";
-					final double _tagValue = a;
+					final double _tagValue = (Mth.nextDouble(RandomSource.create(), 0.01, 0.2));
 					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 				}
 			}

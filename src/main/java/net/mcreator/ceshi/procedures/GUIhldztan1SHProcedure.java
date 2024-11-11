@@ -32,54 +32,56 @@ public class GUIhldztan1SHProcedure {
 		double a1 = 0;
 		double a2 = 0;
 		double a11 = 0;
-		a = new Object() {
-			public int getAmount(int sltid) {
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
-					if (stack != null)
-						return stack.getCount();
+		if (!world.isClientSide()) {
+			a = new Object() {
+				public int getAmount(int sltid) {
+					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+						if (stack != null)
+							return stack.getCount();
+					}
+					return 0;
 				}
-				return 0;
+			}.getAmount((int) wei_zhi);
+			b = deng_ji - item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
+			a = a > b ? b : a;
+			{
+				final String _tagName = "deng_ji";
+				final double _tagValue = (item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji") + a);
+				CustomData.update(DataComponents.CUSTOM_DATA, item, tag -> tag.putDouble(_tagName, _tagValue));
 			}
-		}.getAmount((int) wei_zhi);
-		b = deng_ji - item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
-		a = a > b ? b : a;
-		{
-			final String _tagName = "deng_ji";
-			final double _tagValue = (item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji") + a);
-			CustomData.update(DataComponents.CUSTOM_DATA, item, tag -> tag.putDouble(_tagName, _tagValue));
-		}
-		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			((Slot) _slots.get((int) wei_zhi)).remove((int) (a - a * Mth.nextDouble(RandomSource.create(), fanwei_0, fanwei_1)));
-			_player.containerMenu.broadcastChanges();
-		}
-		a = item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji") + 1;
-		stack = item;
-		var attr = CustomAPI.getAttributes(stack);
-		a1 = 30;
-		a2 = 60;
-		a11 = (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI));
-		if (a > a2) {
-			b = a1 * a11 * 0.02;
-			c = c + b;
-			b = a1 * a11 * 0.05;
-			c = c + b;
-			c = c + (a - a2) * a11 * 0.1;
-			attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
-			attr.apply();
-			return true;
-		} else if (a >= a1 && a <= a2) {
-			b = a1 * a11 * 0.02;
-			c = c + b;
-			c = c + (a - a1) * a11 * 0.05;
-			attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
-			attr.apply();
-			return true;
-		} else if (a < a1) {
-			c = c + a * a11 * 0.02;
-			attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
-			attr.apply();
-			return true;
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get((int) wei_zhi)).remove((int) (a - a * Mth.nextDouble(RandomSource.create(), fanwei_0, fanwei_1)));
+				_player.containerMenu.broadcastChanges();
+			}
+			a = item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji") + 1;
+			stack = item;
+			var attr = CustomAPI.getAttributes(stack);
+			a1 = 30;
+			a2 = 60;
+			a11 = (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI));
+			if (a > a2) {
+				b = a1 * a11 * 0.02;
+				c = c + b;
+				b = a1 * a11 * 0.05;
+				c = c + b;
+				c = c + (a - a2) * a11 * 0.1;
+				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
+				attr.apply();
+				return true;
+			} else if (a >= a1 && a <= a2) {
+				b = a1 * a11 * 0.02;
+				c = c + b;
+				c = c + (a - a1) * a11 * 0.05;
+				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
+				attr.apply();
+				return true;
+			} else if (a < a1) {
+				c = c + a * a11 * 0.02;
+				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
+				attr.apply();
+				return true;
+			}
 		}
 		return false;
 	}
