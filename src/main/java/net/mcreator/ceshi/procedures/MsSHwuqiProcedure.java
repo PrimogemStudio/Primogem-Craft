@@ -15,6 +15,6 @@ public class MsSHwuqiProcedure {
 		for (int index1 = 0; index1 < (int) (5 - a); index1++) {
 			sb.append('□');
 		}
-		return new java.text.DecimalFormat("Lv:").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji")) + "\u00A7b\u7CBE\u70BC\u8FDB\u5EA6:" + sb.toString();
+		return new java.text.DecimalFormat("Lv:").format(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji") + 1) + "\n" + "\u00A76\u7CBE\u70BC:" + sb.toString() + "\n";
 	}
 }

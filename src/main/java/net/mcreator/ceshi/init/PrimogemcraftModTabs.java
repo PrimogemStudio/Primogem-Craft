@@ -263,7 +263,6 @@ public class PrimogemcraftModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> YUANSHIGONGJUXUANXIANGKA = REGISTRY.register("yuanshigongjuxuanxiangka",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.primogemcraft.yuanshigongjuxuanxiangka")).icon(() -> new ItemStack(PrimogemcraftModItems.WUFENGJIAN.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(PrimogemcraftModItems.JIUCHANZHIYUANGAO.get());
-				tabData.accept(PrimogemcraftModItems.WUQIE_5.get());
 				tabData.accept(PrimogemcraftModItems.QINLAODEZHEXUE.get());
 				tabData.accept(PrimogemcraftModItems.HUANGJINDEZHEXUE.get());
 				tabData.accept(PrimogemcraftModItems.FFANRONGDEZHEXUE.get());
@@ -307,10 +306,6 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.AIXUBINGYU.get());
 				tabData.accept(PrimogemcraftModItems.YUANSUJINGTI.get());
 				tabData.accept(PrimogemcraftModItems.TIAOGUOZHANG.get());
-				tabData.accept(PrimogemcraftModItems.WUQIEZHIHUIGUANG.get());
-				tabData.accept(PrimogemcraftModItems.WUQIE_2.get());
-				tabData.accept(PrimogemcraftModItems.WUQIE_3.get());
-				tabData.accept(PrimogemcraftModItems.WUQIE_4.get());
 				tabData.accept(PrimogemcraftModItems.YUANSHIJIAN.get());
 				tabData.accept(PrimogemcraftModItems.YUANSHIGAO.get());
 				tabData.accept(PrimogemcraftModItems.YUANSHIFU.get());
@@ -485,6 +480,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.AXF.get());
 				tabData.accept(PrimogemcraftModItems.AXQ.get());
 				tabData.accept(PrimogemcraftModItems.AXC.get());
+				tabData.accept(PrimogemcraftModItems.WQZHG.get());
 			})
 
 					.build());

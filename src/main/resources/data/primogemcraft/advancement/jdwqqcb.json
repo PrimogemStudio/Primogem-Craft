@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "primogemcraft:wuqiezhihuiguang"
+      "id": "primogemcraft:wqzhg"
     },
     "title": {
       "translate": "advancements.jdwqqcb.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "primogemcraft:wuqiezhihuiguang"
+              "primogemcraft:wqzhg"
             ],
             "count": {
               "min": 1,

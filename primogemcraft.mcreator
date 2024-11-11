@@ -321,19 +321,6 @@
       }
     },
     {
-      "name": "Wuqiezhihuiguang",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wuqiezhihuiguang",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/item/WuqiezhihuiguangItem.java",
-          "src/main/resources/assets/primogemcraft/models/item/wuqiezhihuiguang.json"
-        ]
-      }
-    },
-    {
       "name": "Jiuchanzhiyuankuai",
       "type": "block",
       "compiles": true,
@@ -10782,106 +10769,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/primogemcraft/recipe/dieyingqipeifang.json"
-        ]
-      }
-    },
-    {
-      "name": "Wuqie2",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wuqie_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/item/Wuqie2Item.java",
-          "src/main/resources/assets/primogemcraft/models/item/wuqie_2.json"
-        ]
-      }
-    },
-    {
-      "name": "Wuqie3",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wuqie_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/item/Wuqie3Item.java",
-          "src/main/resources/assets/primogemcraft/models/item/wuqie_3.json"
-        ]
-      }
-    },
-    {
-      "name": "Wuqie4",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wuqie_4",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/item/Wuqie4Item.java",
-          "src/main/resources/assets/primogemcraft/models/item/wuqie_4.json"
-        ]
-      }
-    },
-    {
-      "name": "Wuqie5",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wuqie_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/primogemcraft/models/item/wuqie_5.json",
-          "src/main/java/net/mcreator/ceshi/item/Wuqie5Item.java"
-        ]
-      }
-    },
-    {
-      "name": "Wuqiejing2",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wuqiejing_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/wuqiejing_2.json"
-        ]
-      }
-    },
-    {
-      "name": "Wuqiejing3",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wuqiejing_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/wuqiejing_3.json"
-        ]
-      }
-    },
-    {
-      "name": "Wuqiejing4",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wuqiejing_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/wuqiejing_4.json"
-        ]
-      }
-    },
-    {
-      "name": "Wuqiejing5",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wuqiejing_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/wuqiejing_5.json"
         ]
       }
     },
@@ -32013,6 +31900,48 @@
           "src/main/java/net/mcreator/ceshi/item/WqzhgItem.java"
         ]
       }
+    },
+    {
+      "name": "Wqzhgms",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wqzhgms",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/WqzhgmsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MSHSwuqi00",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "msh_swuqi_00",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/MSHSwuqi00Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "miaoshu",
+            "type": "string"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -32860,8 +32789,7 @@
       "CUSTOM:Jianlaokuaiwupin"
     ],
     "ITEMS:pgc:wuqi": [
-      "CUSTOM:Ceshiyongwupin",
-      "CUSTOM:Ffanrongdezhexue"
+      "CUSTOM:Wqzhg"
     ],
     "ITEMS:pgc:prayer_core_x10": [
       "CUSTOM:Qyhxshilian"
@@ -33741,14 +33669,9 @@
       "~CUSTOM:Zizaizuanshijian",
       "~CUSTOM:Zizaitiejian",
       "~CUSTOM:Yuanshijian",
-      "~CUSTOM:Wuqie5",
-      "~CUSTOM:Wuqie4",
-      "~CUSTOM:Wuqie3",
-      "~CUSTOM:Wuqie2",
       "~CUSTOM:Wufengjian",
       "~CUSTOM:Mmolajian",
-      "~CUSTOM:Ffanrongdezhexue",
-      "~CUSTOM:Wuqiezhihuiguang"
+      "~CUSTOM:Ffanrongdezhexue"
     ],
     "ITEMS:pgc:tzzb": [
       "TAG:c:ystj",
@@ -34443,7 +34366,6 @@
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
-      "Wuqie5",
       "Qinlaodezhexue",
       "Huangjindezhexue",
       "Ffanrongdezhexue",
@@ -34484,10 +34406,6 @@
       "Aixubingyu",
       "Yuansujingti",
       "Tiaoguozhang",
-      "Wuqiezhihuiguang",
-      "Wuqie2",
-      "Wuqie3",
-      "Wuqie4",
       "Yuanshijian",
       "Yuanshigao",
       "Yuanshifu",
@@ -34721,7 +34639,6 @@
       "block.primogemcraft.hhyinbaoqi": "引爆器",
       "block.primogemcraft.zuishengkuangshi.description_0": "§8在河流群戏浅层深处生成",
       "item.primogemcraft.kaifaqiangzhi_01": "§4需知",
-      "item.primogemcraft.wuqiezhihuiguang": "Mistsplitter Reforged",
       "advancements.jdhszly.title": "reuse",
       "block.primogemcraft.jingzhimolakuai.description_0": "§7maybe be used as§ethe center of the roof！",
       "gui.primogemcraft.cunzheshezhi.tooltip_shi_shu_liang_jian_shao": "使数量减少",
@@ -34808,7 +34725,7 @@
       "item.primogemcraft.qwjlbxyq": "§5§l『奇物』§a俱乐部信仰凭证",
       "gui.primogemcraft.cunzheshezhi.tooltip_qu_chu_shi_you_gu_ding_shu_liang_zhuan_bian_wei_0240": "取出时由固定数量转变为0~240%",
       "subtitles.choukaqianxi01": "ohhhhh",
-      "block.primogemcraft.hualiduanzao.description_0": "§7仅作为村民工作方块",
+      "block.primogemcraft.hualiduanzao.description_0": "§c§l用于精炼、强化部分装备",
       "item.primogemcraft.yibangrenzhinang": "§bStranger\u0027s Travel Bag",
       "item.primogemcraft.ydggz.description_2": "§7击杀生物有概率掉落§e咕钟零件§7",
       "item.primogemcraft.ydggz.description_1": "§7每3分钟扣除自身5%当前经验值",
@@ -35142,7 +35059,7 @@
       "item.primogemcraft.jlg": "§6『Prithiva Topaz』Pickaxe",
       "item.primogemcraft.qgdysj.description_2": "§7   个神奇的效果",
       "item.primogemcraft.meiyouzhushidaima.description_9": "§2否则取持续时间的5%继承",
-      "advancements.kejindalao.title": "§bSpendthrift",
+      "advancements.kejindalao.title": "§b科进大佬",
       "item.primogemcraft.meiyouzhushidaima.description_8": "§2若力量效果小于20秒，将继承持续时间",
       "item.primogemcraft.meiyouzhushidaima.description_7": "§2击杀目标后概率提升自身力量等级",
       "item.primogemcraft.meiyouzhushidaima.description_6": "§7代码修复后：",
@@ -35399,9 +35316,6 @@
       "item.primogemcraft.szzssj.description_1": "§",
       "block.primogemcraft.hhzd_1": "Bomb！",
       "item.primogemcraft.szzssj.description_2": "§7可应用于：",
-      "item.primogemcraft.wuqie_3.description_0": "§e精炼[3]",
-      "item.primogemcraft.wuqie_3.description_1": "§",
-      "item.primogemcraft.wuqie_3.description_2": "§7随她左右即可",
       "advancements.xdfsqjd.title": "§4§m烟花§6霄灯来咯~",
       "item.primogemcraft.axhjt_helmet.description_5": "§",
       "item.primogemcraft.axhjt_helmet.description_6": "§9+2 suit amount（shivada jade）",
@@ -35439,9 +35353,6 @@
       "item.primogemcraft.zizaitiejian.description_2": "§7 - 触发几率25%",
       "item.primogemcraft.jianlaokuaiwupin": "§6Prithiva Topaz Gemstone",
       "block.primogemcraft.yishijiemuban_planks": "monochrome another world wood planks",
-      "item.primogemcraft.wuqie_4.description_2": "§7随她左右即可",
-      "item.primogemcraft.wuqie_4.description_0": "§e精炼[4]",
-      "item.primogemcraft.wuqie_4.description_1": "§",
       "item.primogemcraft.zizaitiejian.description_0": "§d攻击目标时：",
       "gui.primogemcraft.cunzheshezhi.label_qi_yong_guan_bi_bu_wen_ding": "启用/关闭 不稳定？",
       "item.primogemcraft.ysjfr.description_1": "§0逃课将获得嘉奖！",
@@ -35521,11 +35432,8 @@
       "advancements.kewu.descr": "§e§kNever§a§kGonna§c§kGive you§9§kUp",
       "advancements.zzenmezhemechoua.descr": "获得恶臭溶液",
       "advancements.cchangchangkan.title": "Take A bite",
-      "item.primogemcraft.wuqiezhihuiguang.description_2": "§7随她左右即可",
       "item.primogemcraft.chunmeizhipao": "§5『Curio』§fRobe of the beauty",
-      "item.primogemcraft.wuqiezhihuiguang.description_1": "§",
       "enchantment.primogemcraft.fumoyuzhezn": "愚者之怒",
-      "item.primogemcraft.wuqiezhihuiguang.description_0": "§e精炼[1]",
       "item.primogemcraft.zshjj.description_1": "§5 - 获得勾玉效果 III",
       "item.primogemcraft.zshjj.description_2": "§7 - 持续时间10秒",
       "item.primogemcraft.zshjj.description_3": "§7 - 冷却45秒",
@@ -36036,7 +35944,7 @@
       "item.primogemcraft.kkuijiaceshi_leggings": "Mora Leggings",
       "item.primogemcraft.kjjlt_helmet": "§6『Prithiva Topaz』 §fIron Helmet",
       "block.primogemcraft.ysjtsj_1": "深层元素晶体矿石",
-      "item.primogemcraft.wqzhg": "§e雾切之回光",
+      "item.primogemcraft.wqzhg": "§d雾切之回光",
       "block.primogemcraft.ysjtsj_0": "元素晶体矿石",
       "item.primogemcraft.chuangshijiejing": "Genesis Crystal",
       "effect.primogemcraft.htdz": "黑塔打折",
@@ -36533,7 +36441,7 @@
       "item.primogemcraft.ruzst_helmet": "§c『Vajrada Amethyst』§bDiamond Helmet",
       "item.primogemcraft.djzst_leggings": "§b『Varunada Lazurite』Diamond Leggings",
       "item.primogemcraft.yuanshijian": "§bPrimogem Sword",
-      "advancements.jdwqqcb.descr": "获得雾切之回光精炼[1]",
+      "advancements.jdwqqcb.descr": "获得雾切之回光精炼",
       "item.primogemcraft.jinguangbaodi_01.description_0": "§7右键使用",
       "item.primogemcraft.zhzhenyinhedaletou.description_4": "§a - 小概率获得奇物",
       "item.primogemcraft.jinguangbaodi_01.description_1": "§7100%§e出金！",
@@ -36617,7 +36525,7 @@
       "subtitles.gongzhuxinghua": "[ ]~~[ ]~~~！",
       "item.primogemcraft.jlkjzs_helmet": "§6『Prithiva Topaz』 §bDiamond Helmet",
       "block.primogemcraft.caomo_23": "Dendro-Core Wood Fence",
-      "advancements.jdwqqcb.title": "雾切之回光§m青春版",
+      "advancements.jdwqqcb.title": "雾切之回光",
       "item.primogemcraft.shengjizizaitie.description_3": "§9 铁剑",
       "item.primogemcraft.shengjizizaitie.description_4": "§9 铁质盔甲",
       "item.primogemcraft.yssp": "§b原石碎片",
@@ -36706,15 +36614,11 @@
       "item.primogemcraft.meiyouzhushidaima": "§5『Curio』§dMysterious Code",
       "item.primogemcraft.zizizaihejintao_chestplate.description_0": "§6套装效果：",
       "item.primogemcraft.zizizaihejintao_chestplate.description_1": "§7 2x 获得永久羽坠效果",
-      "item.primogemcraft.wuqie_4": "Lvl.4 Mistsplitter Reforged",
       "item.primogemcraft.shengjizuanshejin.description_1": "§",
-      "item.primogemcraft.wuqie_3": "Lvl.3 Mistsplitter Reforged",
       "item.primogemcraft.zizaitiejia_leggings": "§a『Vayuda Turquoise』 Iron Leggings",
       "item.primogemcraft.shengjizuanshejin.description_2": "§7可应用于：",
       "item.primogemcraft.shengjizuanshejin.description_3": "§d『元素晶体』§9钻石剑",
-      "item.primogemcraft.wuqie_5": "Lvl.5 Mistsplitter Reforged",
       "item.primogemcraft.shengjizuanshejin.description_4": "§d『元素晶体』§9钻石制盔甲",
-      "item.primogemcraft.wuqie_2": "Lvl.5 Mistsplitter Reforged",
       "gui.primogemcraft.sjgu_ifumo_01.label_jin_xing_1ci_di_pin_zhi_fu_mo": "进行1次低品质附魔。",
       "item.primogemcraft.youdianqiqiaodedaima.description_0": "§7将这段代码修复成正常的奇物需要",
       "item.primogemcraft.zizizaihejintao_chestplate.description_2": "§7 4x 获得永久跳跃提升效果",
@@ -36727,13 +36631,10 @@
       "item.primogemcraft.zizaitiejia_chestplate.description_3": "§",
       "item.primogemcraft.zizizaihejintao_chestplate.description_5": "§9+2 套装值（松石）",
       "item.primogemcraft.ryhjj.description_2": "§7 - 触发概率75%",
-      "item.primogemcraft.wuqie_5.description_0": "§e精炼[5]",
       "gui.primogemcraft.sjgu_ifumo_00.label_chi_kai_zhe_li": "离开这里。",
       "advancements.jdwhhl.descr": "制作任意等级元素去除模板（保留附魔）",
-      "item.primogemcraft.wuqie_5.description_2": "§7随她左右即可",
       "block.primogemcraft.jiuchanzhiyuankuai.description_1": "How about the floor？",
       "block.primogemcraft.jiuchanzhiyuankuai.description_0": "I\u0027ve crafted all of them",
-      "item.primogemcraft.wuqie_5.description_1": "§",
       "item.primogemcraft.youdianqiqiaodedaima.description_8": "§2命值，持续到增益结束",
       "item.primogemcraft.jjljxjhj": "§6『Prithiva Topaz』§eNetherite Sword",
       "item.primogemcraft.youdianqiqiaodedaima.description_6": "§7代码修复后：",
@@ -36840,7 +36741,7 @@
       "advancements.jdtwtylc.descr": "获得任意元素金属",
       "item.primogemcraft.zizizaihejintao_leggings": "§a『Vayuda Turquoise』§eNetherite Leggings",
       "block.primogemcraft.hualiduanzao": "华丽锻造台",
-      "advancements.kejindalao.descr": "Ascending Mistsplitter Reforged to [5]",
+      "advancements.kejindalao.descr": "精炼雾切之回光至[5]",
       "block.primogemcraft.shenbanjianlaohuangyukuangshi.description_0": "§8主世界地形深层生成",
       "item.primogemcraft.ryhjsj.description_3": "§9 下界合金剑",
       "item.primogemcraft.qwtldhy": "§5『CUrio』§9Thalan Toxi-Flame",
@@ -36927,11 +36828,8 @@
       "item.primogemcraft.pengkeluodejingshen.description_4": "§7 - 缓慢 III （5s）",
       "item.primogemcraft.pengkeluodejingshen.description_3": "§7 - 凋零 I （5s）",
       "item.primogemcraft.wanshinang.description_0": "§7破坏罐子时掉落双倍战利品",
-      "item.primogemcraft.wuqie_2.description_2": "§7随她左右即可",
       "effect.primogemcraft.djppxianzhi": "泡泡限制",
       "gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_95dang_qian_zui_da_hp": "消耗95%当前最大HP，",
-      "item.primogemcraft.wuqie_2.description_1": "§",
-      "item.primogemcraft.wuqie_2.description_0": "§e精炼[2]",
       "item.primogemcraft.shengjizizaihej": "§e『Netherite Upgrade』§aVayuda Turquoise",
       "block.primogemcraft.ceshi_mucaibao_fence_gate": "Dendro-Core Wood Fence Gate",
       "item.primogemcraft.yiyimuguoshi.description_3": "§a不能连续触发",
@@ -37319,7 +37217,6 @@
       "block.primogemcraft.hhyinbaoqi": "引爆器",
       "block.primogemcraft.zuishengkuangshi.description_0": "§8在河流群戏浅层深处生成",
       "item.primogemcraft.kaifaqiangzhi_01": "§4需知",
-      "item.primogemcraft.wuqiezhihuiguang": "Mistsplitter Reforged",
       "advancements.jdhszly.title": "reuse",
       "gui.primogemcraft.cunzheshezhi.tooltip_shi_shu_liang_jian_shao": "使数量减少",
       "block.primogemcraft.jingzhimolakuai.description_0": "§7maybe be used as§ethe center of the roof！",
@@ -37406,7 +37303,7 @@
       "gui.primogemcraft.cunzheshezhi.tooltip_qu_chu_shi_you_gu_ding_shu_liang_zhuan_bian_wei_0240": "取出时由固定数量转变为0~240%",
       "item.primogemcraft.qwjlbxyq": "§5§l『奇物』§a俱乐部信仰凭证",
       "subtitles.choukaqianxi01": "ohhhhh",
-      "block.primogemcraft.hualiduanzao.description_0": "§7job site blocks only",
+      "block.primogemcraft.hualiduanzao.description_0": "§c§l用于精炼、强化部分装备",
       "item.primogemcraft.yibangrenzhinang": "§bStranger\u0027s Travel Bag",
       "item.primogemcraft.ydggz.description_2": "§7击杀生物有概率掉落§e咕钟零件§7",
       "item.primogemcraft.ydggz.description_1": "§7每3分钟扣除自身5%当前经验值",
@@ -37997,9 +37894,6 @@
       "item.primogemcraft.szzssj.description_1": "§",
       "block.primogemcraft.hhzd_1": "Bomb！",
       "item.primogemcraft.szzssj.description_2": "§7可应用于：",
-      "item.primogemcraft.wuqie_3.description_0": "§e精炼[3]",
-      "item.primogemcraft.wuqie_3.description_1": "§",
-      "item.primogemcraft.wuqie_3.description_2": "§7随她左右即可",
       "advancements.xdfsqjd.title": "§4§m烟花§6霄灯来咯~",
       "item.primogemcraft.axhjt_helmet.description_5": "§",
       "item.primogemcraft.axhjt_helmet.description_6": "§9+2 suit amount（shivada jade）",
@@ -38037,9 +37931,6 @@
       "item.primogemcraft.zizaitiejian.description_2": "§7 - 触发几率25%",
       "item.primogemcraft.jianlaokuaiwupin": "§6Prithiva Topaz Gemstone",
       "block.primogemcraft.yishijiemuban_planks": "monochrome another world wood planks",
-      "item.primogemcraft.wuqie_4.description_2": "§7随她左右即可",
-      "item.primogemcraft.wuqie_4.description_0": "§e精炼[4]",
-      "item.primogemcraft.wuqie_4.description_1": "§",
       "item.primogemcraft.zizaitiejian.description_0": "§d攻击目标时：",
       "gui.primogemcraft.cunzheshezhi.label_qi_yong_guan_bi_bu_wen_ding": "启用/关闭 不稳定？",
       "item.primogemcraft.ysjfr.description_1": "§0逃课将获得嘉奖！",
@@ -38119,11 +38010,8 @@
       "advancements.kewu.descr": "§e§kNever§a§kGonna§c§kGive you§9§kUp",
       "advancements.zzenmezhemechoua.descr": "获得恶臭溶液",
       "advancements.cchangchangkan.title": "Take A bite",
-      "item.primogemcraft.wuqiezhihuiguang.description_2": "§7随她左右即可",
       "item.primogemcraft.chunmeizhipao": "§5『Curio』§fRobe of the beauty",
-      "item.primogemcraft.wuqiezhihuiguang.description_1": "§",
       "enchantment.primogemcraft.fumoyuzhezn": "愚者之怒",
-      "item.primogemcraft.wuqiezhihuiguang.description_0": "§e精炼[1]",
       "item.primogemcraft.zshjj.description_1": "§5 - 获得勾玉效果 III",
       "item.primogemcraft.zshjj.description_2": "§7 - 持续时间10秒",
       "item.primogemcraft.zshjj.description_3": "§7 - 冷却45秒",
@@ -38634,7 +38522,7 @@
       "item.primogemcraft.kkuijiaceshi_leggings": "Mora Leggings",
       "item.primogemcraft.kjjlt_helmet": "§6『Prithiva Topaz』 §fIron Helmet",
       "block.primogemcraft.ysjtsj_1": "深层元素晶体矿石",
-      "item.primogemcraft.wqzhg": "§e雾切之回光",
+      "item.primogemcraft.wqzhg": "§d雾切之回光",
       "block.primogemcraft.ysjtsj_0": "元素晶体矿石",
       "item.primogemcraft.chuangshijiejing": "Genesis Crystal",
       "effect.primogemcraft.htdz": "黑塔打折",
@@ -39304,15 +39192,11 @@
       "item.primogemcraft.meiyouzhushidaima": "§5『Curio』§dMysterious Code",
       "item.primogemcraft.zizizaihejintao_chestplate.description_0": "§6套装效果：",
       "item.primogemcraft.zizizaihejintao_chestplate.description_1": "§7 2x 获得永久羽坠效果",
-      "item.primogemcraft.wuqie_4": "Lvl.4 Mistsplitter Reforged",
       "item.primogemcraft.shengjizuanshejin.description_1": "§",
-      "item.primogemcraft.wuqie_3": "Lvl.3 Mistsplitter Reforged",
       "item.primogemcraft.zizaitiejia_leggings": "§a『Vayuda Turquoise』 Iron Leggings",
       "item.primogemcraft.shengjizuanshejin.description_2": "§7可应用于：",
       "item.primogemcraft.shengjizuanshejin.description_3": "§d『元素晶体』§9钻石剑",
-      "item.primogemcraft.wuqie_5": "Lvl.5 Mistsplitter Reforged",
       "item.primogemcraft.shengjizuanshejin.description_4": "§d『元素晶体』§9钻石制盔甲",
-      "item.primogemcraft.wuqie_2": "Lvl.5 Mistsplitter Reforged",
       "gui.primogemcraft.sjgu_ifumo_01.label_jin_xing_1ci_di_pin_zhi_fu_mo": "进行1次低品质附魔。",
       "item.primogemcraft.youdianqiqiaodedaima.description_0": "§7将这段代码修复成正常的奇物需要",
       "item.primogemcraft.zizizaihejintao_chestplate.description_2": "§7 4x 获得永久跳跃提升效果",
@@ -39325,13 +39209,10 @@
       "item.primogemcraft.zizaitiejia_chestplate.description_3": "§",
       "item.primogemcraft.zizizaihejintao_chestplate.description_5": "§9+2 套装值（松石）",
       "item.primogemcraft.ryhjj.description_2": "§7 - 触发概率75%",
-      "item.primogemcraft.wuqie_5.description_0": "§e精炼[5]",
       "gui.primogemcraft.sjgu_ifumo_00.label_chi_kai_zhe_li": "离开这里。",
       "advancements.jdwhhl.descr": "制作任意等级元素去除模板（保留附魔）",
-      "item.primogemcraft.wuqie_5.description_2": "§7随她左右即可",
       "block.primogemcraft.jiuchanzhiyuankuai.description_1": "How about the floor？",
       "block.primogemcraft.jiuchanzhiyuankuai.description_0": "I\u0027ve crafted all of them",
-      "item.primogemcraft.wuqie_5.description_1": "§",
       "item.primogemcraft.youdianqiqiaodedaima.description_8": "§2命值，持续到增益结束",
       "item.primogemcraft.jjljxjhj": "§6『Prithiva Topaz』§eNetherite Sword",
       "item.primogemcraft.youdianqiqiaodedaima.description_6": "§7代码修复后：",
@@ -39525,11 +39406,8 @@
       "item.primogemcraft.pengkeluodejingshen.description_4": "§7 - 缓慢 III （5s）",
       "item.primogemcraft.pengkeluodejingshen.description_3": "§7 - 凋零 I （5s）",
       "item.primogemcraft.wanshinang.description_0": "§7破坏罐子时掉落双倍战利品",
-      "item.primogemcraft.wuqie_2.description_2": "§7随她左右即可",
       "effect.primogemcraft.djppxianzhi": "泡泡限制",
       "gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_95dang_qian_zui_da_hp": "消耗95%当前最大HP，",
-      "item.primogemcraft.wuqie_2.description_1": "§",
-      "item.primogemcraft.wuqie_2.description_0": "§e精炼[2]",
       "item.primogemcraft.shengjizizaihej": "§e『Netherite Upgrade』§aVayuda Turquoise",
       "block.primogemcraft.ceshi_mucaibao_fence_gate": "Dendro-Core Wood Fence Gate",
       "item.primogemcraft.yiyimuguoshi.description_3": "§a不能连续触发",
@@ -39917,7 +39795,6 @@
       "block.primogemcraft.hhyinbaoqi": "引爆器",
       "block.primogemcraft.zuishengkuangshi.description_0": "§8在河流群戏浅层深处生成",
       "item.primogemcraft.kaifaqiangzhi_01": "§4需知",
-      "item.primogemcraft.wuqiezhihuiguang": "§5雾切之回光",
       "advancements.jdhszly.title": "回收利用",
       "block.primogemcraft.jingzhimolakuai.description_0": "§7或许能用来做§e屋顶的中心！",
       "gui.primogemcraft.cunzheshezhi.tooltip_shi_shu_liang_jian_shao": "使数量减少",
@@ -40004,7 +39881,7 @@
       "item.primogemcraft.qwjlbxyq": "§5§l『奇物』§a俱乐部信仰凭证",
       "gui.primogemcraft.cunzheshezhi.tooltip_qu_chu_shi_you_gu_ding_shu_liang_zhuan_bian_wei_0240": "取出时由固定数量转变为0~240%",
       "subtitles.choukaqianxi01": "ohhhhh",
-      "block.primogemcraft.hualiduanzao.description_0": "§7仅作为村民工作方块",
+      "block.primogemcraft.hualiduanzao.description_0": "§c§l用于精炼、强化部分装备",
       "item.primogemcraft.yibangrenzhinang": "§b异邦人之囊",
       "item.primogemcraft.ydggz.description_2": "§7击杀生物有概率掉落§e咕钟零件§7",
       "item.primogemcraft.ydggz.description_1": "§7每3分钟扣除自身5%当前经验值",
@@ -40593,9 +40470,6 @@
       "item.primogemcraft.szzssj.description_1": "§",
       "block.primogemcraft.hhzd_1": "炸弹！",
       "item.primogemcraft.szzssj.description_2": "§7可应用于：",
-      "item.primogemcraft.wuqie_3.description_0": "§e精炼[3]",
-      "item.primogemcraft.wuqie_3.description_1": "§",
-      "item.primogemcraft.wuqie_3.description_2": "§7随她左右即可",
       "advancements.xdfsqjd.title": "§4§m烟花§6霄灯来咯~",
       "item.primogemcraft.axhjt_helmet.description_5": "§",
       "item.primogemcraft.axhjt_helmet.description_6": "§9+2 套装值（冰玉）",
@@ -40633,9 +40507,6 @@
       "item.primogemcraft.zizaitiejian.description_2": "§7 - 触发几率25%",
       "item.primogemcraft.jianlaokuaiwupin": "§6坚牢黄玉 块",
       "block.primogemcraft.yishijiemuban_planks": "单色异世界木木板",
-      "item.primogemcraft.wuqie_4.description_2": "§7随她左右即可",
-      "item.primogemcraft.wuqie_4.description_0": "§e精炼[4]",
-      "item.primogemcraft.wuqie_4.description_1": "§",
       "item.primogemcraft.zizaitiejian.description_0": "§d攻击目标时：",
       "gui.primogemcraft.cunzheshezhi.label_qi_yong_guan_bi_bu_wen_ding": "启用/关闭 不稳定？",
       "item.primogemcraft.ysjfr.description_1": "§0逃课将获得嘉奖！",
@@ -40715,11 +40586,8 @@
       "advancements.kewu.descr": "§e§k你§a§k被§c§k骗§9§k啦",
       "advancements.zzenmezhemechoua.descr": "获得恶臭溶液",
       "advancements.cchangchangkan.title": "尝尝看",
-      "item.primogemcraft.wuqiezhihuiguang.description_2": "§7随她左右即可",
       "item.primogemcraft.chunmeizhipao": "§5『奇物』§f纯美之袍",
-      "item.primogemcraft.wuqiezhihuiguang.description_1": "§",
       "enchantment.primogemcraft.fumoyuzhezn": "愚者之怒",
-      "item.primogemcraft.wuqiezhihuiguang.description_0": "§e精炼[1]",
       "item.primogemcraft.zshjj.description_1": "§5 - 获得勾玉效果 III",
       "item.primogemcraft.zshjj.description_2": "§7 - 持续时间10秒",
       "item.primogemcraft.zshjj.description_3": "§7 - 冷却45秒",
@@ -41230,7 +41098,7 @@
       "item.primogemcraft.kkuijiaceshi_leggings": "§e摩拉 护腿",
       "item.primogemcraft.kjjlt_helmet": "§6『坚牢黄玉』 §f铁头盔",
       "block.primogemcraft.ysjtsj_1": "深层元素晶体矿石",
-      "item.primogemcraft.wqzhg": "§e雾切之回光",
+      "item.primogemcraft.wqzhg": "§d雾切之回光",
       "block.primogemcraft.ysjtsj_0": "元素晶体矿石",
       "item.primogemcraft.chuangshijiejing": "创世结晶",
       "effect.primogemcraft.htdz": "黑塔打折",
@@ -41897,15 +41765,11 @@
       "item.primogemcraft.meiyouzhushidaima": "§5『奇物』§d没有注释的代码",
       "item.primogemcraft.zizizaihejintao_chestplate.description_0": "§6套装效果：",
       "item.primogemcraft.zizizaihejintao_chestplate.description_1": "§7 2x 获得永久羽坠效果",
-      "item.primogemcraft.wuqie_4": "§5雾切之回光",
       "item.primogemcraft.shengjizuanshejin.description_1": "§",
-      "item.primogemcraft.wuqie_3": "§5雾切之回光",
       "item.primogemcraft.zizaitiejia_leggings": "§a『自在松石』 §f铁护腿",
       "item.primogemcraft.shengjizuanshejin.description_2": "§7可应用于：",
       "item.primogemcraft.shengjizuanshejin.description_3": "§d『元素晶体』§9钻石剑",
-      "item.primogemcraft.wuqie_5": "§5雾切之回光",
       "item.primogemcraft.shengjizuanshejin.description_4": "§d『元素晶体』§9钻石制盔甲",
-      "item.primogemcraft.wuqie_2": "§5雾切之回光",
       "gui.primogemcraft.sjgu_ifumo_01.label_jin_xing_1ci_di_pin_zhi_fu_mo": "进行1次低品质附魔。",
       "item.primogemcraft.youdianqiqiaodedaima.description_0": "§7将这段代码修复成正常的奇物需要",
       "item.primogemcraft.zizizaihejintao_chestplate.description_2": "§7 4x 获得永久跳跃提升效果",
@@ -41918,13 +41782,10 @@
       "item.primogemcraft.zizaitiejia_chestplate.description_3": "§",
       "item.primogemcraft.zizizaihejintao_chestplate.description_5": "§9+2 套装值（松石）",
       "item.primogemcraft.ryhjj.description_2": "§7 - 触发概率75%",
-      "item.primogemcraft.wuqie_5.description_0": "§e精炼[5]",
       "gui.primogemcraft.sjgu_ifumo_00.label_chi_kai_zhe_li": "离开这里。",
       "advancements.jdwhhl.descr": "制作任意等级元素去除模板（保留附魔）",
-      "item.primogemcraft.wuqie_5.description_2": "§7随她左右即可",
       "block.primogemcraft.jiuchanzhiyuankuai.description_1": "用来当地板怎么样...？",
       "block.primogemcraft.jiuchanzhiyuankuai.description_0": "我全做了....",
-      "item.primogemcraft.wuqie_5.description_1": "§",
       "item.primogemcraft.youdianqiqiaodedaima.description_8": "§2命值，持续到增益结束",
       "item.primogemcraft.jjljxjhj": "§6『坚牢黄玉』§e下界合金剑",
       "item.primogemcraft.youdianqiqiaodedaima.description_6": "§7代码修复后：",
@@ -42117,11 +41978,8 @@
       "item.primogemcraft.pengkeluodejingshen.description_4": "§7 - 缓慢 III （5s）",
       "item.primogemcraft.pengkeluodejingshen.description_3": "§7 - 凋零 I （5s）",
       "item.primogemcraft.wanshinang.description_0": "§7破坏罐子时掉落双倍战利品",
-      "item.primogemcraft.wuqie_2.description_2": "§7随她左右即可",
       "effect.primogemcraft.djppxianzhi": "泡泡限制",
       "gui.primogemcraft.sjgu_ifumo_00.label_xiao_hao_95dang_qian_zui_da_hp": "消耗95%当前最大HP，",
-      "item.primogemcraft.wuqie_2.description_1": "§",
-      "item.primogemcraft.wuqie_2.description_0": "§e精炼[2]",
       "item.primogemcraft.shengjizizaihej": "§e『下界合金升级』§a自在松石",
       "block.primogemcraft.ceshi_mucaibao_fence_gate": "草原核化木 栅栏门",
       "item.primogemcraft.yiyimuguoshi.description_3": "§a不能连续触发",

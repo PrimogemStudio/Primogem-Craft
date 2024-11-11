@@ -29,6 +29,8 @@ public class GUIhldztan1SHProcedure {
 		double a = 0;
 		double b = 0;
 		double c = 0;
+		double a1 = 0;
+		double a2 = 0;
 		if (!world.isClientSide()) {
 			a = new Object() {
 				public int getAmount(int sltid) {
@@ -51,26 +53,28 @@ public class GUIhldztan1SHProcedure {
 				((Slot) _slots.get((int) wei_zhi)).remove((int) (a - a * Mth.nextInt(RandomSource.create(), (int) fanwei_0, (int) fanwei_1)));
 				_player.containerMenu.broadcastChanges();
 			}
-			a = item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
+			a = item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji") + 1;
 			stack = item;
 			var attr = CustomAPI.getAttributes(stack);
-			if (a > 60) {
-				b = 30 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
+			a1 = 30;
+			a2 = 60;
+			if (a > a2) {
+				b = a1 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
 				c = c + b;
-				b = 30 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.05;
+				b = a1 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.05;
 				c = c + b;
-				c = c + (a - 60) * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.1;
+				c = c + (a - a2) * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.1;
 				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
 				attr.apply();
 				return true;
-			} else if (a >= 30 && a <= 60) {
-				b = 30 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
+			} else if (a >= a1 && a <= a2) {
+				b = a1 * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
 				c = c + b;
-				c = c + (a - 30) * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.05;
+				c = c + (a - a1) * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.05;
 				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
 				attr.apply();
 				return true;
-			} else if (a < 30) {
+			} else if (a < a1) {
 				c = c + a * (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI)) * 0.02;
 				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
 				attr.apply();

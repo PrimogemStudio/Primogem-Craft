@@ -8,9 +8,10 @@
     "texture": "wuqie_4",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "§e雾切之回光",
+    "name": "§d雾切之回光",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "Wqzhgms"
     },
     "creativeTabs": [
       {

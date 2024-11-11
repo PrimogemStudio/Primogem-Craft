@@ -43,15 +43,15 @@ public class GUIhldztan1Procedure {
 		i1 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY);
 		if (!(i1.getItem() == Blocks.AIR.asItem()) && i1.is(ItemTags.create(ResourceLocation.parse("pgc:wuqi")))) {
 			a = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
-			if (a < 30) {
-				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, 30, b, c, 6);
+			if (a < 29) {
+				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, 29, b, c, 6);
 			}
 			a = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
-			if (a >= 30 && a < 60) {
-				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, 60, b, c, 7);
+			if (a >= 29 && a < 59) {
+				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, 59, b, c, 7);
 			}
 			a = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
-			if (a >= 60) {
+			if (a >= 59) {
 				lg0 = GUIhldztan1SHProcedure.execute(world, entity, i1, (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGXIAN)), b, c, 8);
 			}
 			if (!world.isClientSide()) {

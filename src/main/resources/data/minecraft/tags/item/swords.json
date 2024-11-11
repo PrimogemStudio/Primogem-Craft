@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "primogemcraft:wqzhg",
     "primogemcraft:axhjj",
     "primogemcraft:axzsj",
     "primogemcraft:axtj",
@@ -25,13 +26,8 @@
     "primogemcraft:zizaizuanshijian",
     "primogemcraft:zizaitiejian",
     "primogemcraft:yuanshijian",
-    "primogemcraft:wuqie_5",
-    "primogemcraft:wuqie_4",
-    "primogemcraft:wuqie_3",
-    "primogemcraft:wuqie_2",
     "primogemcraft:wufengjian",
     "primogemcraft:mmolajian",
-    "primogemcraft:ffanrongdezhexue",
-    "primogemcraft:wuqiezhihuiguang"
+    "primogemcraft:ffanrongdezhexue"
   ]
 }

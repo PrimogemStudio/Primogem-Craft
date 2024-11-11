@@ -37,7 +37,7 @@
     "name": "华丽锻造台",
     "specialInformation": {
       "fixedValue": [
-        "§7仅作为村民工作方块"
+        "§c§l用于精炼、强化部分装备"
       ]
     },
     "hardness": 3.0,

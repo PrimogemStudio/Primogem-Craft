@@ -28,20 +28,6 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Wuqiezhihuiguang"
-            },
-            "weight": 3,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 20,
-            "maxEnchantmentLevel": 30,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
               "value": "CUSTOM:Jiuchanzhiyuangao"
             },
             "weight": 4,
