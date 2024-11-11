@@ -23,6 +23,7 @@ import net.mcreator.ceshi.block.entity.Mlxdml03BlockEntity;
 import net.mcreator.ceshi.block.entity.Mlxdml02BlockEntity;
 import net.mcreator.ceshi.block.entity.Mlxdml01BlockEntity;
 import net.mcreator.ceshi.block.entity.LajitongBlockEntity;
+import net.mcreator.ceshi.block.entity.HualiduanzaoBlockEntity;
 import net.mcreator.ceshi.block.entity.HhzdbooBlockEntity;
 import net.mcreator.ceshi.block.entity.Hhzd1BlockEntity;
 import net.mcreator.ceshi.block.entity.Hhzd0BlockEntity;
@@ -48,6 +49,7 @@ public class PrimogemcraftModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> DANGAOLIYUE = register("dangaoliyue", PrimogemcraftModBlocks.DANGAOLIYUE, DangaoliyueBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> XJHPYHFH = register("xjhpyhfh", PrimogemcraftModBlocks.XJHPYHFH, XjhpyhfhBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> BWDXJHPYHFH = register("bwdxjhpyhfh", PrimogemcraftModBlocks.BWDXJHPYHFH, BwdxjhpyhfhBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> HUALIDUANZAO = register("hualiduanzao", PrimogemcraftModBlocks.HUALIDUANZAO, HualiduanzaoBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> HHZD_0 = register("hhzd_0", PrimogemcraftModBlocks.HHZD_0, Hhzd0BlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> HHZD_1 = register("hhzd_1", PrimogemcraftModBlocks.HHZD_1, Hhzd1BlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> SHENMIWANOU = register("shenmiwanou", PrimogemcraftModBlocks.SHENMIWANOU, ShenmiwanouBlockEntity::new);
@@ -73,6 +75,7 @@ public class PrimogemcraftModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, DANGAOLIYUE.get(), (blockEntity, side) -> ((DangaoliyueBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, XJHPYHFH.get(), (blockEntity, side) -> ((XjhpyhfhBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BWDXJHPYHFH.get(), (blockEntity, side) -> ((BwdxjhpyhfhBlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, HUALIDUANZAO.get(), (blockEntity, side) -> ((HualiduanzaoBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, HHZD_0.get(), (blockEntity, side) -> ((Hhzd0BlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, HHZD_1.get(), (blockEntity, side) -> ((Hhzd1BlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SHENMIWANOU.get(), (blockEntity, side) -> ((ShenmiwanouBlockEntity) blockEntity).getItemHandler());

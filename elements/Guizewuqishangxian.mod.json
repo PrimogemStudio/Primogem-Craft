@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "§b原石工艺§e武器等级上限",
+    "description": "最大强化等级",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 90
+  }
+}

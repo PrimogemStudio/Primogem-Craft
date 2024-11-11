@@ -18,6 +18,8 @@ public class PrimogemcraftModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> JINYONGNANG;
 	public static GameRules.Key<GameRules.IntegerValue> GUIZESUIJISHIJIAN;
 	public static GameRules.Key<GameRules.IntegerValue> GUIZESHIJIANXIANZHI;
+	public static GameRules.Key<GameRules.IntegerValue> GUIZEWUQISHANGXIAN;
+	public static GameRules.Key<GameRules.IntegerValue> GUIZEWUQISHANGHAI;
 
 	@SubscribeEvent
 	public static void registerGameRules(FMLCommonSetupEvent event) {
@@ -27,5 +29,7 @@ public class PrimogemcraftModGameRules {
 		JINYONGNANG = GameRules.register("jinyongnang", GameRules.Category.PLAYER, GameRules.BooleanValue.create(false));
 		GUIZESUIJISHIJIAN = GameRules.register("guizesuijishijian", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(100));
 		GUIZESHIJIANXIANZHI = GameRules.register("guizeshijianxianzhi", GameRules.Category.SPAWNING, GameRules.IntegerValue.create(5));
+		GUIZEWUQISHANGXIAN = GameRules.register("guizewuqishangxian", GameRules.Category.PLAYER, GameRules.IntegerValue.create(90));
+		GUIZEWUQISHANGHAI = GameRules.register("guizewuqishanghai", GameRules.Category.PLAYER, GameRules.IntegerValue.create(10));
 	}
 }
