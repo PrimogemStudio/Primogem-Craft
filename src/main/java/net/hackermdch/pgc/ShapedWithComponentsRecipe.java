@@ -1,7 +1,6 @@
 package net.hackermdch.pgc;
 
 import com.mojang.serialization.Codec;
-import com.mojang.serialization.DataResult;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.Holder;
@@ -12,9 +11,10 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
@@ -27,12 +27,12 @@ public final class ShapedWithComponentsRecipe implements CraftingRecipe {
     private static final Supplier<RecipeSerializer<?>> CRAFTING_SHAPED_WITH_COMPONENTS = RECIPE_SERIALIZERS.register("crafting_shaped_with_components", Serializer::new);
     private final ShapedRecipePattern pattern;
     private final ItemStack result;
-    private final Item source;
+    private final String source;
     private final String group;
     private final CraftingBookCategory category;
     private final boolean showNotification;
 
-    public ShapedWithComponentsRecipe(String group, CraftingBookCategory category, ShapedRecipePattern pattern, ItemStack result, Item source, boolean showNotification) {
+    public ShapedWithComponentsRecipe(String group, CraftingBookCategory category, ShapedRecipePattern pattern, ItemStack result, String source, boolean showNotification) {
         this.group = group;
         this.category = category;
         this.pattern = pattern;
@@ -51,7 +51,7 @@ public final class ShapedWithComponentsRecipe implements CraftingRecipe {
     public ItemStack assemble(@NotNull CraftingInput inv, @NotNull HolderLookup.Provider registries) {
         var result = getResultItem(registries).copy();
         for (var it : inv.items()) {
-            if (it.is(source)) {
+            if ((source.startsWith("#") && it.is(ItemTags.create(ResourceLocation.parse(source.substring(1)))) || it.is(BuiltInRegistries.ITEM.get(ResourceLocation.parse(source))))) {
                 var com = result.get(CustomComponents.CUSTOM_BAR);
                 result.applyComponents(it.getComponents());
                 var bar = result.get(CustomComponents.CUSTOM_BAR);
@@ -112,7 +112,7 @@ public final class ShapedWithComponentsRecipe implements CraftingRecipe {
     }
 
     private static class Serializer implements RecipeSerializer<ShapedWithComponentsRecipe> {
-        private static final MapCodec<ShapedWithComponentsRecipe> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(Codec.STRING.optionalFieldOf("group", "").forGetter(recipe -> recipe.group), CraftingBookCategory.CODEC.fieldOf("category").orElse(CraftingBookCategory.MISC).forGetter(recipe -> recipe.category), ShapedRecipePattern.MAP_CODEC.forGetter(recipe -> recipe.pattern), ItemStack.STRICT_CODEC.fieldOf("result").forGetter(recipe -> recipe.result), BuiltInRegistries.ITEM.byNameCodec().fieldOf("source").validate(item -> item == Items.AIR ? DataResult.error(() -> "Item must not be minecraft:air") : DataResult.success(item)).forGetter(recipe -> recipe.source), Codec.BOOL.optionalFieldOf("show_notification", true).forGetter(recipe -> recipe.showNotification)).apply(instance, ShapedWithComponentsRecipe::new));
+        private static final MapCodec<ShapedWithComponentsRecipe> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(Codec.STRING.optionalFieldOf("group", "").forGetter(recipe -> recipe.group), CraftingBookCategory.CODEC.fieldOf("category").orElse(CraftingBookCategory.MISC).forGetter(recipe -> recipe.category), ShapedRecipePattern.MAP_CODEC.forGetter(recipe -> recipe.pattern), ItemStack.STRICT_CODEC.fieldOf("result").forGetter(recipe -> recipe.result), Codec.STRING.fieldOf("source").forGetter(recipe -> recipe.source), Codec.BOOL.optionalFieldOf("show_notification", true).forGetter(recipe -> recipe.showNotification)).apply(instance, ShapedWithComponentsRecipe::new));
         private static final StreamCodec<RegistryFriendlyByteBuf, ShapedWithComponentsRecipe> STREAM_CODEC = StreamCodec.of(Serializer::encode, Serializer::decode);
         private static final StreamCodec<RegistryFriendlyByteBuf, Holder<Item>> ITEM_STREAM_CODEC = ByteBufCodecs.holderRegistry(Registries.ITEM);
 
@@ -133,9 +133,9 @@ public final class ShapedWithComponentsRecipe implements CraftingRecipe {
             var category = buffer.readEnum(CraftingBookCategory.class);
             var pattern = ShapedRecipePattern.STREAM_CODEC.decode(buffer);
             var result = ItemStack.STREAM_CODEC.decode(buffer);
-            var source = ITEM_STREAM_CODEC.decode(buffer);
+            var source = buffer.readUtf();
             var showNotification = buffer.readBoolean();
-            return new ShapedWithComponentsRecipe(group, category, pattern, result, source.value(), showNotification);
+            return new ShapedWithComponentsRecipe(group, category, pattern, result, source, showNotification);
         }
 
         private static void encode(RegistryFriendlyByteBuf buffer, ShapedWithComponentsRecipe recipe) {
@@ -143,7 +143,7 @@ public final class ShapedWithComponentsRecipe implements CraftingRecipe {
             buffer.writeEnum(recipe.category);
             ShapedRecipePattern.STREAM_CODEC.encode(buffer, recipe.pattern);
             ItemStack.STREAM_CODEC.encode(buffer, recipe.result);
-            ITEM_STREAM_CODEC.encode(buffer, BuiltInRegistries.ITEM.wrapAsHolder(recipe.source));
+            buffer.writeUtf(recipe.source);
             buffer.writeBoolean(recipe.showNotification);
         }
     }
