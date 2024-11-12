@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 71,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -25,7 +25,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 155,
-          "y": 55
+          "y": 55,
+          "locked": false
         }
       },
       {
@@ -40,7 +41,8 @@
             "falpha": 0.0
           },
           "x": 131,
-          "y": 40
+          "y": 40,
+          "locked": false
         }
       },
       {
@@ -58,7 +60,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 156,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -76,7 +79,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 189,
-          "y": 64
+          "y": 64,
+          "locked": false
         }
       },
       {
@@ -94,7 +98,8 @@
             "name": "Suijifumo3haoyinpin"
           },
           "x": 249,
-          "y": 72
+          "y": 72,
+          "locked": false
         }
       },
       {
@@ -107,7 +112,8 @@
             "name": "Suijifumoanniu01"
           },
           "x": 181,
-          "y": 96
+          "y": 96,
+          "locked": false
         }
       },
       {
@@ -120,7 +126,8 @@
           "width": 82,
           "height": 29,
           "x": 213,
-          "y": 42
+          "y": 42,
+          "locked": false
         }
       }
     ],

@@ -441,10 +441,6 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> Q_QYUANCHUZI_01_SPAWN_EGG = REGISTRY.register("q_qyuanchuzi_01_spawn_egg", () -> new DeferredSpawnEggItem(PrimogemcraftModEntities.Q_QYUANCHUZI_01, -3056653, -4118017, new Item.Properties()));
 	public static final DeferredItem<Item> QQ_QYUANCHULAN_01_SPAWN_EGG = REGISTRY.register("qq_qyuanchulan_01_spawn_egg", () -> new DeferredSpawnEggItem(PrimogemcraftModEntities.QQ_QYUANCHULAN_01, -10254081, -5449985, new Item.Properties()));
 	public static final DeferredItem<Item> JINGUANGBAODI_01 = REGISTRY.register("jinguangbaodi_01", Jinguangbaodi01Item::new);
-	public static final DeferredItem<Item> XIWANGDEYITIAN_011 = REGISTRY.register("xiwangdeyitian_011", Xiwangdeyitian011Item::new);
-	public static final DeferredItem<Item> BBUZAINIANQINGDEQINCEZHUANG_012 = REGISTRY.register("bbuzainianqingdeqincezhuang_012", Bbuzainianqingdeqincezhuang012Item::new);
-	public static final DeferredItem<Item> SSHENHUDEZHUFU_013 = REGISTRY.register("sshenhudezhufu_013", Sshenhudezhufu013Item::new);
-	public static final DeferredItem<Item> CCANGRUIMILINJIAN_014 = REGISTRY.register("ccangruimilinjian_014", Ccangruimilinjian014Item::new);
 	public static final DeferredItem<Item> MOLADUI_02 = block(PrimogemcraftModBlocks.MOLADUI_02);
 	public static final DeferredItem<Item> MOLAKUAI_01 = block(PrimogemcraftModBlocks.MOLAKUAI_01);
 	public static final DeferredItem<Item> YIYISHIJIEMUBANLOUQI = block(PrimogemcraftModBlocks.YIYISHIJIEMUBANLOUQI);
@@ -456,8 +452,6 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> FFANRONGDEZHEXUE = REGISTRY.register("ffanrongdezhexue", FfanrongdezhexueItem::new);
 	public static final DeferredItem<Item> SANYUEQIDIAOXIANG_01 = block(PrimogemcraftModBlocks.SANYUEQIDIAOXIANG_01);
 	public static final DeferredItem<Item> XIANGDANGANLAO = REGISTRY.register("xiangdanganlao", XiangdanganlaoItem::new);
-	public static final DeferredItem<Item> TAIKONGMANBUCHANGPIAN = REGISTRY.register("taikongmanbuchangpian", TaikongmanbuchangpianItem::new);
-	public static final DeferredItem<Item> YYANZIYUELIANGCHANGPIAN = REGISTRY.register("yyanziyueliangchangpian", YyanziyueliangchangpianItem::new);
 	public static final DeferredItem<Item> JINGZHIMOLAKUAI = block(PrimogemcraftModBlocks.JINGZHIMOLAKUAI);
 	public static final DeferredItem<Item> LLIANJIAMOLAKUAI = block(PrimogemcraftModBlocks.LLIANJIAMOLAKUAI);
 	public static final DeferredItem<Item> LIANJIAMOLAKUAIBANKUAI = block(PrimogemcraftModBlocks.LIANJIAMOLAKUAIBANKUAI);
@@ -474,7 +468,6 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> MMOLAFU = REGISTRY.register("mmolafu", MmolafuItem::new);
 	public static final DeferredItem<Item> MMOLACHAN = REGISTRY.register("mmolachan", MmolachanItem::new);
 	public static final DeferredItem<Item> MMOLAJIAN = REGISTRY.register("mmolajian", MmolajianItem::new);
-	public static final DeferredItem<Item> TASHANGLVTUCHANGPIAN = REGISTRY.register("tashanglvtuchangpian", TashanglvtuchangpianItem::new);
 	public static final DeferredItem<Item> XIAOGUANZI = block(PrimogemcraftModBlocks.XIAOGUANZI);
 	public static final DeferredItem<Item> DAGUANZI = block(PrimogemcraftModBlocks.DAGUANZI);
 	public static final DeferredItem<Item> JINZHIMOLA = REGISTRY.register("jinzhimola", JinzhimolaItem::new);
@@ -557,7 +550,6 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> DIIJINGQINGJING = REGISTRY.register("diijingqingjing", DiijingqingjingItem::new);
 	public static final DeferredItem<Item> DIJINGQINGJINKUAI = block(PrimogemcraftModBlocks.DIJINGQINGJINKUAI);
 	public static final DeferredItem<Item> LIANJIAXIAJIEHEJINKUAI = block(PrimogemcraftModBlocks.LIANJIAXIAJIEHEJINKUAI);
-	public static final DeferredItem<Item> ZHAPIANDINGZHENGSHI = REGISTRY.register("zhapiandingzhengshi", ZhapiandingzhengshiItem::new);
 	public static final DeferredItem<Item> RANYUANMANAOKUANGSHI = block(PrimogemcraftModBlocks.RANYUANMANAOKUANGSHI);
 	public static final DeferredItem<Item> RANYUANSUIXIE = REGISTRY.register("ranyuansuixie", RanyuansuixieItem::new);
 	public static final DeferredItem<Item> RANYUANDUANPIAN = REGISTRY.register("ranyuanduanpian", RanyuanduanpianItem::new);
@@ -648,7 +640,6 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> SHENSHENGHUABAN = REGISTRY.register("shenshenghuaban", ShenshenghuabanItem::new);
 	public static final DeferredItem<Item> SHENBANYANYUANSHIKUANGSHI = block(PrimogemcraftModBlocks.SHENBANYANYUANSHIKUANGSHI);
 	public static final DeferredItem<Item> SHENBANJIANLAOHUANGYUKUANGSHI = block(PrimogemcraftModBlocks.SHENBANJIANLAOHUANGYUKUANGSHI);
-	public static final DeferredItem<Item> GONGZHUXINGHUA = REGISTRY.register("gongzhuxinghua", GongzhuxinghuaItem::new);
 	public static final DeferredItem<Item> XINGHUI = REGISTRY.register("xinghui", XinghuiItem::new);
 	public static final DeferredItem<Item> XINGCHEN = REGISTRY.register("xingchen", XingchenItem::new);
 	public static final DeferredItem<Item> JIANMUSHENGFAQI = REGISTRY.register("jianmushengfaqi", JianmushengfaqiItem::new);
@@ -846,7 +837,6 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> QWYMZJ = REGISTRY.register("qwymzj", QwymzjItem::new);
 	public static final DeferredItem<Item> QWFLYB = REGISTRY.register("qwflyb", QwflybItem::new);
 	public static final DeferredItem<Item> QWXBZSQ = REGISTRY.register("qwxbzsq", QwxbzsqItem::new);
-	public static final DeferredItem<Item> FENGDANDAIBIAO = REGISTRY.register("fengdandaibiao", FengdandaibiaoItem::new);
 	public static final DeferredItem<Item> MLXDML_01 = block(PrimogemcraftModBlocks.MLXDML_01);
 	public static final DeferredItem<Item> MLXDML_02 = block(PrimogemcraftModBlocks.MLXDML_02);
 	public static final DeferredItem<Item> MLXDML_03 = block(PrimogemcraftModBlocks.MLXDML_03);
@@ -1000,6 +990,16 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> EXAMPLE = REGISTRY.register("example", ExampleItem::new);
 	public static final DeferredItem<Item> WQZHG = REGISTRY.register("wqzhg", WqzhgItem::new);
 	public static final DeferredItem<Item> MYZJ = REGISTRY.register("myzj", MyzjItem::new);
+	public static final DeferredItem<Item> XIWANGDEYITIAN_011 = REGISTRY.register("xiwangdeyitian_011", Xiwangdeyitian011Item::new);
+	public static final DeferredItem<Item> BBUZAINIANQINGDEQINCEZHUANG_012 = REGISTRY.register("bbuzainianqingdeqincezhuang_012", Bbuzainianqingdeqincezhuang012Item::new);
+	public static final DeferredItem<Item> SSHENHUDEZHUFU_013 = REGISTRY.register("sshenhudezhufu_013", Sshenhudezhufu013Item::new);
+	public static final DeferredItem<Item> CCANGRUIMILINJIAN_014 = REGISTRY.register("ccangruimilinjian_014", Ccangruimilinjian014Item::new);
+	public static final DeferredItem<Item> TAIKONGMANBUCHANGPIAN = REGISTRY.register("taikongmanbuchangpian", TaikongmanbuchangpianItem::new);
+	public static final DeferredItem<Item> YYANZIYUELIANGCHANGPIAN = REGISTRY.register("yyanziyueliangchangpian", YyanziyueliangchangpianItem::new);
+	public static final DeferredItem<Item> TASHANGLVTUCHANGPIAN = REGISTRY.register("tashanglvtuchangpian", TashanglvtuchangpianItem::new);
+	public static final DeferredItem<Item> ZHAPIANDINGZHENGSHI = REGISTRY.register("zhapiandingzhengshi", ZhapiandingzhengshiItem::new);
+	public static final DeferredItem<Item> GONGZHUXINGHUA = REGISTRY.register("gongzhuxinghua", GongzhuxinghuaItem::new);
+	public static final DeferredItem<Item> FENGDANDAIBIAO = REGISTRY.register("fengdandaibiao", FengdandaibiaoItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

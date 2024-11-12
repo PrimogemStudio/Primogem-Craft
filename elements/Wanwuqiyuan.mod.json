@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 71,
   "_type": "achievement",
   "definition": {
     "achievementName": "万物起“源”",
@@ -16,7 +16,6 @@
       "Xinghuizhanlipinbiao"
     ],
     "rewardRecipes": [],
-    "rewardFunction": "No function",
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {

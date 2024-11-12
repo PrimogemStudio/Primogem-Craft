@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 71,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -25,7 +25,8 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 204,
-          "y": 72
+          "y": 72,
+          "locked": false
         }
       }
     ],

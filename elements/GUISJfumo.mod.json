@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 71,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -28,7 +28,8 @@
             "name": "GUIshijianfumoshuxing"
           },
           "x": 205,
-          "y": 71
+          "y": 71,
+          "locked": false
         }
       },
       {
@@ -43,7 +44,8 @@
             "falpha": 0.0
           },
           "x": 132,
-          "y": 42
+          "y": 42,
+          "locked": false
         }
       },
       {
@@ -55,7 +57,8 @@
             "name": "GUIfumobaocuo"
           },
           "x": 200,
-          "y": 66
+          "y": 66,
+          "locked": false
         }
       },
       {
@@ -71,7 +74,8 @@
           "width": 5,
           "height": 28,
           "x": 223,
-          "y": 66
+          "y": 66,
+          "locked": false
         }
       },
       {
@@ -87,7 +91,8 @@
           "width": 24,
           "height": 5,
           "x": 200,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -103,7 +108,8 @@
           "width": 5,
           "height": 23,
           "x": 200,
-          "y": 66
+          "y": 66,
+          "locked": false
         }
       },
       {
@@ -119,7 +125,8 @@
           "width": 18,
           "height": 5,
           "x": 205,
-          "y": 66
+          "y": 66,
+          "locked": false
         }
       },
       {
@@ -131,7 +138,8 @@
             "name": "GUIfumopinzhixianshi0"
           },
           "x": 206,
-          "y": 57
+          "y": 57,
+          "locked": false
         }
       },
       {
@@ -147,7 +155,8 @@
           "width": 17,
           "height": 8,
           "x": 206,
-          "y": 57
+          "y": 57,
+          "locked": false
         }
       },
       {
@@ -159,7 +168,8 @@
             "name": "GUIfumopinzhixianshi1"
           },
           "x": 206,
-          "y": 57
+          "y": 57,
+          "locked": false
         }
       },
       {
@@ -175,7 +185,8 @@
           "width": 17,
           "height": 8,
           "x": 206,
-          "y": 57
+          "y": 57,
+          "locked": false
         }
       },
       {
@@ -187,7 +198,8 @@
             "name": "GUIfumopinzhixianshi2"
           },
           "x": 206,
-          "y": 57
+          "y": 57,
+          "locked": false
         }
       },
       {
@@ -203,7 +215,8 @@
           "width": 17,
           "height": 8,
           "x": 206,
-          "y": 57
+          "y": 57,
+          "locked": false
         }
       },
       {
@@ -215,7 +228,8 @@
             "name": "GUIfumopinzhixianshi3"
           },
           "x": 206,
-          "y": 57
+          "y": 57,
+          "locked": false
         }
       },
       {
@@ -231,7 +245,8 @@
           "width": 17,
           "height": 8,
           "x": 206,
-          "y": 57
+          "y": 57,
+          "locked": false
         }
       }
     ],

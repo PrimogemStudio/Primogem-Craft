@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 71,
   "_type": "livingentity",
   "definition": {
     "mobName": "霄灯",
@@ -74,7 +74,6 @@
       "fixedValue": true
     },
     "flyingMob": true,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,

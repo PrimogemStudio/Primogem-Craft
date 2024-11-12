@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 71,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -20,7 +20,8 @@
             "name": "Sjguifumo00sx0"
           },
           "x": 157,
-          "y": 50
+          "y": 50,
+          "locked": false
         }
       },
       {
@@ -33,7 +34,8 @@
             "name": "Sjguifumo00sx1"
           },
           "x": 157,
-          "y": 98
+          "y": 98,
+          "locked": false
         }
       },
       {
@@ -46,7 +48,8 @@
             "name": "Sjguifumo00sx2"
           },
           "x": 157,
-          "y": 146
+          "y": 146,
+          "locked": false
         }
       },
       {
@@ -61,7 +64,8 @@
             "falpha": 0.0
           },
           "x": 160,
-          "y": 65
+          "y": 65,
+          "locked": false
         }
       },
       {
@@ -76,7 +80,8 @@
             "falpha": 0.0
           },
           "x": 161,
-          "y": 112
+          "y": 112,
+          "locked": false
         }
       },
       {
@@ -91,7 +96,8 @@
             "falpha": 0.0
           },
           "x": 163,
-          "y": 100
+          "y": 100,
+          "locked": false
         }
       },
       {
@@ -106,7 +112,8 @@
             "falpha": 0.0
           },
           "x": 163,
-          "y": 52
+          "y": 52,
+          "locked": false
         }
       },
       {
@@ -121,7 +128,8 @@
             "falpha": 0.0
           },
           "x": 163,
-          "y": 148
+          "y": 148,
+          "locked": false
         }
       },
       {
@@ -136,7 +144,8 @@
             "falpha": 0.0
           },
           "x": 161,
-          "y": 160
+          "y": 160,
+          "locked": false
         }
       },
       {
@@ -151,7 +160,8 @@
             "falpha": 0.0
           },
           "x": 161,
-          "y": 170
+          "y": 170,
+          "locked": false
         }
       }
     ],

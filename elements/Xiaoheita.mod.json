@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 71,
   "_type": "livingentity",
   "definition": {
     "mobName": "黑塔----异世界分塔",
@@ -67,7 +67,6 @@
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 667,
     "inventoryStackSize": 64,
     "disableCollisions": false,

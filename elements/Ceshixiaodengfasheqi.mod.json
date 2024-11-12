@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 71,
   "_type": "block",
   "definition": {
     "texture": "ceshi_xiaodengfasheqi_3",
@@ -109,7 +109,6 @@
     "vanillaToolTier": "STONE",
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 0,
     "inventoryStackSize": 64,

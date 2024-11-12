@@ -1,29 +1,57 @@
 {
-  "_fv": 69,
-  "_type": "musicdisc",
+  "_fv": 71,
+  "_type": "item",
   "definition": {
+    "renderType": 0,
+    "texture": "zhapianding",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "§f下界合金锭",
     "rarity": "RARE",
-    "texture": "zhapianding",
-    "description": "§c！§7—§e！§7—§9！§7—§a！§7——",
     "creativeTabs": [
       {
         "value": "CUSTOM:Zhenghuo"
       }
     ],
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
         "§7表面留有细纹",
         "§7或许可以放进唱片机...."
       ]
     },
-    "music": {
-      "value": "CUSTOM:zhapian"
-    },
-    "lengthInTicks": 1200,
-    "analogOutput": 15,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
     "onRightClickedOnBlock": {
       "name": "Zhapianding_tuozhan_1"
-    }
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none",
+    "isMusicDisc": true,
+    "musicDiscMusic": {
+      "value": "CUSTOM:zhapian"
+    },
+    "musicDiscDescription": "§c！§7—§e！§7—§9！§7—§a！§7——",
+    "musicDiscLengthInTicks": 1200,
+    "musicDiscAnalogOutput": 15
   }
 }

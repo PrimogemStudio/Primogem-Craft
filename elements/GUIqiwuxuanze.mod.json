@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 71,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -29,7 +29,8 @@
           },
           "dropItemsWhenNotBound": false,
           "x": 160,
-          "y": 57
+          "y": 57,
+          "locked": false
         }
       },
       {
@@ -51,7 +52,8 @@
           },
           "dropItemsWhenNotBound": false,
           "x": 204,
-          "y": 57
+          "y": 57,
+          "locked": false
         }
       },
       {
@@ -73,7 +75,8 @@
           },
           "dropItemsWhenNotBound": false,
           "x": 249,
-          "y": 57
+          "y": 57,
+          "locked": false
         }
       },
       {
@@ -86,7 +89,8 @@
             "name": "GUIqwxzanniusx0"
           },
           "x": 161,
-          "y": 90
+          "y": 90,
+          "locked": false
         }
       },
       {
@@ -99,7 +103,8 @@
             "name": "GUIqwxzanniusx1"
           },
           "x": 205,
-          "y": 90
+          "y": 90,
+          "locked": false
         }
       },
       {
@@ -112,7 +117,8 @@
             "name": "GUIqwxzanniusx2"
           },
           "x": 250,
-          "y": 90
+          "y": 90,
+          "locked": false
         }
       },
       {
@@ -125,7 +131,8 @@
           "width": 16,
           "height": 16,
           "x": 158,
-          "y": 89
+          "y": 89,
+          "locked": false
         }
       },
       {
@@ -138,7 +145,8 @@
           "width": 16,
           "height": 16,
           "x": 205,
-          "y": 90
+          "y": 90,
+          "locked": false
         }
       },
       {
@@ -151,7 +159,8 @@
           "width": 16,
           "height": 16,
           "x": 250,
-          "y": 90
+          "y": 90,
+          "locked": false
         }
       },
       {
@@ -164,7 +173,8 @@
           "width": 48,
           "height": 8,
           "x": 131,
-          "y": 43
+          "y": 43,
+          "locked": false
         }
       },
       {
@@ -179,7 +189,8 @@
             "falpha": 0.0
           },
           "x": 131,
-          "y": 42
+          "y": 42,
+          "locked": false
         }
       }
     ],
