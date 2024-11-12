@@ -8,13 +8,13 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_ingot"
+      "item": "primogemcraft:jlza"
     },
     "b": {
-      "item": "minecraft:bone"
+      "item": "minecraft:iron_ingot"
     },
     "c": {
-      "item": "primogemcraft:mmola_01"
+      "item": "minecraft:stick"
     }
   },
   "result": {
