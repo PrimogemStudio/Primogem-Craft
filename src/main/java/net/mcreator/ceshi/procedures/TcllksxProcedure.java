@@ -36,7 +36,7 @@ public class TcllksxProcedure {
 				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLLIANG.get()), c);
 				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLZA.get()), 29);
 			} else if (a < a1 && a > 1) {
-				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLZA.get()), a1 - 2);
+				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLZA.get()), a - 1);
 			}
 			if (!world.isClientSide()) {
 				if (world instanceof Level _level) {
