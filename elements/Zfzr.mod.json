@@ -1,0 +1,46 @@
+{
+  "_fv": 71,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "zfzr_01",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§6斫锋之刃",
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "Zfzrms"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 1.6,
+    "enchantability": 2,
+    "damageVsEntity": 9.0,
+    "usageCount": 3600,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jlzs"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "Zfzr_sx_1"
+    },
+    "onEntityHitWith": {
+      "name": "Zfzr_sx_0"
+    }
+  }
+}

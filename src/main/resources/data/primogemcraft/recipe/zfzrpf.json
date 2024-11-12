@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "aac",
+    "dc "
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:jlzs"
+    },
+    "b": {
+      "item": "primogemcraft:jljsl"
+    },
+    "c": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "d": {
+      "item": "minecraft:diamond_sword"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:zfzr",
+    "count": 1
+  }
+}

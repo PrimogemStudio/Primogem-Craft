@@ -15,34 +15,34 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:Yhjs"
+        "value": "CUSTOM:Jlzs"
       },
       {
-        "value": "CUSTOM:Yhjs"
+        "value": "CUSTOM:Jljsl"
       },
       {
-        "value": "CUSTOM:Yhjs"
+        "value": "CUSTOM:Jlzs"
+      },
+      {
+        "value": "CUSTOM:Jlzs"
+      },
+      {
+        "value": "Blocks.CRYING_OBSIDIAN"
       },
       {
         "value": "Items.DIAMOND_SWORD"
       },
       {
-        "value": ""
-      },
-      {
-        "value": "Blocks.STAINED_HARDENED_CLAY#0"
-      },
-      {
-        "value": "Items.STICK"
+        "value": "Blocks.CRYING_OBSIDIAN"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Wqzhg"
+      "value": "CUSTOM:Zfzr"
     },
-    "name": "wwuqiezhihuiguanghecheng",
+    "name": "zfzrpf",
     "namespace": "mod"
   }
 }

@@ -2,24 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " ab",
-    "ac ",
-    "de "
+    " aa",
+    "ab ",
+    "cd "
   ],
   "key": {
     "a": {
       "item": "primogemcraft:yhjs"
     },
     "b": {
-      "item": "minecraft:diamond"
-    },
-    "c": {
       "item": "minecraft:diamond_sword"
     },
-    "d": {
+    "c": {
       "item": "minecraft:white_terracotta"
     },
-    "e": {
+    "d": {
       "item": "minecraft:stick"
     }
   },

@@ -277,6 +277,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.MMOLAJIAN.get());
 				tabData.accept(PrimogemcraftModItems.MMOLACHUTOU.get());
 				tabData.accept(PrimogemcraftModItems.WUFENGJIAN.get());
+				tabData.accept(PrimogemcraftModItems.ZFZR.get());
 				tabData.accept(PrimogemcraftModItems.WQZHG.get());
 				tabData.accept(PrimogemcraftModItems.ZIZIYOUSONGSHISUIXIE.get());
 				tabData.accept(PrimogemcraftModItems.ZZIYOUSONGSHIDUANPIAN.get());
