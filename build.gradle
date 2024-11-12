@@ -9,7 +9,7 @@ base.archivesName = "modid"
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = "21.1.65"
+    version = "21.1.74"
 
     runs {
         client {
@@ -30,6 +30,23 @@ neoForge {
             sourceSet sourceSets.main
         }
     }
+}
+
+repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                url "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+}
+
+dependencies {
+    implementation "maven.modrinth:genshincraft:+"
 }
 
 tasks.withType(JavaCompile).configureEach {

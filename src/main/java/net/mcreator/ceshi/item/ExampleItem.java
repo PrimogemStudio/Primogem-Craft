@@ -42,7 +42,7 @@ public class ExampleItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ExampleTestProcedure.execute(ar.getObject());
+		ExampleTestProcedure.execute(world, entity);
 		return ar;
 	}
 }

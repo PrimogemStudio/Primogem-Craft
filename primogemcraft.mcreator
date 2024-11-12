@@ -31435,8 +31435,8 @@
       "registry_name": "example",
       "metadata": {
         "files": [
-          "src/main/resources/assets/primogemcraft/models/item/example.json",
-          "src/main/java/net/mcreator/ceshi/item/ExampleItem.java"
+          "src/main/java/net/mcreator/ceshi/item/ExampleItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/example.json"
         ]
       }
     },
@@ -31452,8 +31452,12 @@
         ],
         "dependencies": [
           {
-            "name": "itemstack",
-            "type": "itemstack"
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -32122,6 +32126,168 @@
           "src/main/resources/assets/primogemcraft/models/item/fengdandaibiao.json",
           "src/main/java/net/mcreator/ceshi/item/FengdandaibiaoItem.java",
           "src/main/resources/data/primogemcraft/jukebox_song/fengdandaibiao.json"
+        ]
+      }
+    },
+    {
+      "name": "ToElementDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "to_element_damage",
+      "metadata": {
+        "return_type": "damagesource",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/ToElementDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "count",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElementDamageSetApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "element_damage_set_apply",
+      "metadata": {
+        "return_type": "damagesource",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/ElementDamageSetApplyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "value",
+            "type": "logic"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElementDamageSetCritical",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "element_damage_set_critical",
+      "metadata": {
+        "return_type": "damagesource",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/ElementDamageSetCriticalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "value",
+            "type": "logic"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElementDamageSetCooldown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "element_damage_set_cooldown",
+      "metadata": {
+        "return_type": "damagesource",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/ElementDamageSetCooldownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "value",
+            "type": "logic"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElementDamageSetKnockback",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "element_damage_set_knockback",
+      "metadata": {
+        "return_type": "damagesource",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/ElementDamageSetKnockbackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "value",
+            "type": "logic"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FullToElementDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "full_to_element_damage",
+      "metadata": {
+        "return_type": "damagesource",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/FullToElementDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "apply",
+            "type": "logic"
+          },
+          {
+            "name": "cooldown",
+            "type": "logic"
+          },
+          {
+            "name": "critical",
+            "type": "logic"
+          },
+          {
+            "name": "knockback",
+            "type": "logic"
+          },
+          {
+            "name": "count",
+            "type": "number"
+          },
+          {
+            "name": "type",
+            "type": "number"
+          }
         ]
       }
     }

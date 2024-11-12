@@ -2,11 +2,13 @@ package net.hackermdch.pgc;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.fml.ModList;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class CustomAPI {
+    public static final boolean GenshinCraftLoaded = ModList.get().isLoaded("genshincraft");
     static final Map<Item, CustomBar> defaults = new HashMap<>();
 
     public static CustomBar getCustomBar(ItemStack stack) {
