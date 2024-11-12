@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "pgc:wuqi"
+    },
+    {
+      "item": "primogemcraft:cllk"
+    }
+  ],
+  "result": {
+    "id": "primogemcraft:cllk",
+    "count": 1
+  }
+}

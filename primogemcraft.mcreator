@@ -32281,6 +32281,122 @@
           }
         ]
       }
+    },
+    {
+      "name": "Cllk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cllk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/CllkItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/cllk.json"
+        ]
+      }
+    },
+    {
+      "name": "Tcllkms",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcllkms",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/TcllkmsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tcllksx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcllksx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/TcllksxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Diaoyongwupindiaoluo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diaoyongwupindiaoluo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/DiaoyongwupindiaoluoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "item",
+            "type": "itemstack"
+          },
+          {
+            "name": "shu_liang",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tcllkwpcj",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tcllkwpcj",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/tcllkwpcj.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -34857,7 +34973,8 @@
       "Yxaxg",
       "Axf",
       "Axq",
-      "Axc"
+      "Axc",
+      "Cllk"
     ],
     "CUSTOM:Yuanshifangkuaika": [
       "Yuanshikuangshi",
@@ -35683,6 +35800,7 @@
       "item.primogemcraft.qwhydlt.description_3": "§c§l所有数据！§r§c是的，是所有！！",
       "advancements.jdyszb.title": "钻石降级版",
       "block.primogemcraft.disuikuai_1": "地髓水晶块",
+      "item.primogemcraft.cllk": "特处理良矿",
       "item.primogemcraft.qhzlh": "强化助力礼盒",
       "item.primogemcraft.lajitongzunyan.description_3": "§9抗性提升II（3:00）",
       "entity.primogemcraft.qq_qyuanchulan_01": "祈愿出蓝",
@@ -38262,6 +38380,7 @@
       "item.primogemcraft.qwhydlt.description_3": "§c§l所有数据！§r§c是的，是所有！！",
       "advancements.jdyszb.title": "钻石降级版",
       "block.primogemcraft.disuikuai_1": "Geomarrow crystal",
+      "item.primogemcraft.cllk": "特处理良矿",
       "item.primogemcraft.qhzlh": "Enhancement Helping hands",
       "item.primogemcraft.lajitongzunyan.description_3": "§9抗性提升II（3:00）",
       "entity.primogemcraft.qq_qyuanchulan_01": "Wish blue result",
@@ -40839,6 +40958,7 @@
       "item.primogemcraft.qwhydlt.description_3": "§c§l所有数据！§r§c是的，是所有！！",
       "advancements.jdyszb.title": "钻石降级版",
       "block.primogemcraft.disuikuai_1": "地髓水晶块",
+      "item.primogemcraft.cllk": "特处理良矿",
       "item.primogemcraft.qhzlh": "强化助力礼盒",
       "item.primogemcraft.lajitongzunyan.description_3": "§9抗性提升II（3:00）",
       "entity.primogemcraft.qq_qyuanchulan_01": "祈愿出蓝",
