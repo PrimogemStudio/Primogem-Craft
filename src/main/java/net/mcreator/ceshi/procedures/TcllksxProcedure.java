@@ -19,9 +19,9 @@ public class TcllksxProcedure {
 		double a1 = 0;
 		double a2 = 0;
 		double c = 0;
-		a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
+		a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji") + 1;
 		b = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
-		if (a > 0 || b > 0) {
+		if (a > 1 || b > 0) {
 			itemstack.shrink(1);
 			DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.TEZHIDIEYINGQI.get()), b);
 			a1 = 30;
@@ -30,13 +30,13 @@ public class TcllksxProcedure {
 				c = a - a2;
 				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLMO.get()), c);
 				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLLIANG.get()), 30);
-				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLZA.get()), 30);
+				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLZA.get()), 29);
 			} else if (a >= a1 && a <= a2) {
 				c = a - a1;
 				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLLIANG.get()), c);
-				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLZA.get()), 30);
-			} else if (a < a1) {
-				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLZA.get()), a1);
+				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLZA.get()), 29);
+			} else if (a < a1 && a > 1) {
+				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.JLZA.get()), a1 - 2);
 			}
 			if (!world.isClientSide()) {
 				if (world instanceof Level _level) {

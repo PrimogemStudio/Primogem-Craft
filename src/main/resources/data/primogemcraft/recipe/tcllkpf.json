@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:wmoladai"
+    },
+    "b": {
+      "item": "minecraft:glass_pane"
+    },
+    "c": {
+      "item": "primogemcraft:jlliang"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:cllk",
+    "count": 1
+  }
+}

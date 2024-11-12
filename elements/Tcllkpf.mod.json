@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:pgc:wuqi"
+        "value": "CUSTOM:Wmoladai"
       },
       {
-        "value": "CUSTOM:Cllk"
+        "value": "Blocks.GLASS_PANE"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Wmoladai"
       },
       {
-        "value": ""
+        "value": "Blocks.GLASS_PANE"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Jlliang"
       },
       {
-        "value": ""
+        "value": "Blocks.GLASS_PANE"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Wmoladai"
       },
       {
-        "value": ""
+        "value": "Blocks.GLASS_PANE"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Wmoladai"
       }
     ],
     "recipeReturnStack": {
       "value": "CUSTOM:Cllk"
     },
-    "name": "tcllkwpcj",
+    "name": "tcllkpf",
     "namespace": "mod"
   }
 }

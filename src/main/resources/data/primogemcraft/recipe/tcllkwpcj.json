@@ -1,14 +1,17 @@
 {
   "type": "primogemcraft:crafting_shaped_with_components",
   "category": "misc",
-  "ingredients": [
-    {
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
       "tag": "pgc:wuqi"
     },
-    {
+    "b": {
       "item": "primogemcraft:cllk"
     }
-  ],
+  },
   "source": "#pgc:wuqi",
   "result": {
     "id": "primogemcraft:cllk",
