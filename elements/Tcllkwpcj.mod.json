@@ -12,7 +12,7 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "TAG:pgc:wuqi"
+        "value": "TAG:minecraft:pgc_wuqi"
       },
       {
         "value": "CUSTOM:Cllk"
