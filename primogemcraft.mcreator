@@ -31435,8 +31435,8 @@
       "registry_name": "example",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ceshi/item/ExampleItem.java",
-          "src/main/resources/assets/primogemcraft/models/item/example.json"
+          "src/main/resources/assets/primogemcraft/models/item/example.json",
+          "src/main/java/net/mcreator/ceshi/item/ExampleItem.java"
         ]
       }
     },
@@ -31450,16 +31450,7 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/ExampleTestProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {

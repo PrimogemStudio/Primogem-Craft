@@ -45,8 +45,12 @@ repositories {
     }
 }
 
+/*
+ * implementation = true 
+ * compileOnly = false 
+ */
 dependencies {
-    implementation "maven.modrinth:genshincraft:+"
+    compileOnly "maven.modrinth:genshincraft:+"
 }
 
 tasks.withType(JavaCompile).configureEach {
