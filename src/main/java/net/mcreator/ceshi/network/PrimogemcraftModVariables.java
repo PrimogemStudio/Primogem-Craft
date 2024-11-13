@@ -74,6 +74,7 @@ public class PrimogemcraftModVariables {
 			clone.wj_ck_jin = original.wj_ck_jin;
 			clone.zi_baodi = original.zi_baodi;
 			clone.jin_baodi = original.jin_baodi;
+			clone.jun_heng = original.jun_heng;
 			if (!event.isWasDeath()) {
 				clone.ceshi = original.ceshi;
 				clone.wanjia_qianye = original.wanjia_qianye;
@@ -227,6 +228,7 @@ public class PrimogemcraftModVariables {
 		public double wj_ck_jin = 0;
 		public double zi_baodi = 0;
 		public double jin_baodi = 0;
+		public double jun_heng = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -240,6 +242,7 @@ public class PrimogemcraftModVariables {
 			nbt.putDouble("wj_ck_jin", wj_ck_jin);
 			nbt.putDouble("zi_baodi", zi_baodi);
 			nbt.putDouble("jin_baodi", jin_baodi);
+			nbt.putDouble("jun_heng", jun_heng);
 			return nbt;
 		}
 
@@ -254,6 +257,7 @@ public class PrimogemcraftModVariables {
 			wj_ck_jin = nbt.getDouble("wj_ck_jin");
 			zi_baodi = nbt.getDouble("zi_baodi");
 			jin_baodi = nbt.getDouble("jin_baodi");
+			jun_heng = nbt.getDouble("jun_heng");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

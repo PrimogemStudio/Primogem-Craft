@@ -13,6 +13,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.core.component.DataComponents;
 
+import net.mcreator.ceshi.network.PrimogemcraftModVariables;
 import net.mcreator.ceshi.init.PrimogemcraftModGameRules;
 
 import net.hackermdch.pgc.CustomAPI;
@@ -32,6 +33,7 @@ public class GUIhldztan1SHProcedure {
 		double a1 = 0;
 		double a2 = 0;
 		double a11 = 0;
+		double a12 = 0;
 		if (!world.isClientSide()) {
 			a = new Object() {
 				public int getAmount(int sltid) {
@@ -60,24 +62,25 @@ public class GUIhldztan1SHProcedure {
 			a1 = 30;
 			a2 = 60;
 			a11 = (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI));
+			a12 = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).jun_heng;
 			if (a > a2) {
-				b = a1 * a11 * 0.02;
+				b = a1 * a11 * (0.01 + a12);
 				c = c + b;
-				b = a1 * a11 * 0.05;
+				b = a1 * a11 * (0.03 + a12 * 2);
 				c = c + b;
-				c = c + (a - a2) * a11 * 0.1;
+				c = c + (a - a2) * a11 * (0.06 + a12 * 3);
 				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
 				attr.apply();
 				return true;
 			} else if (a >= a1 && a <= a2) {
-				b = a1 * a11 * 0.02;
+				b = a1 * a11 * (0.01 + a12);
 				c = c + b;
-				c = c + (a - a1) * a11 * 0.05;
+				c = c + (a - a1) * a11 * (0.03 + a12 * 2);
 				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
 				attr.apply();
 				return true;
 			} else if (a < a1) {
-				c = c + a * a11 * 0.02;
+				c = c + a * a11 * (0.01 + a12);
 				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
 				attr.apply();
 				return true;
