@@ -7,6 +7,6 @@ import static net.hackermdch.pgc.CustomAPI.GenshinCraftLoaded;
 
 public class FullToElementDamageProcedure {
     public static DamageSource execute(DamageSource damagesource, boolean apply, boolean cooldown, boolean critical, boolean knockback, double count, double type) {
-        return GenshinCraftLoaded ? GenshinCraftAPI.toElement(damagesource, (int) type, (int) count, apply, critical, cooldown, knockback) : damagesource;
+        return GenshinCraftLoaded ? GenshinCraftAPI.toElement(damagesource, (int) type, (float) count, apply, critical, cooldown, knockback) : damagesource;
     }
 }
