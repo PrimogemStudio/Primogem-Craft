@@ -5,12 +5,12 @@ import net.hacker.genshincraft.element.ElementDamageSource;
 import net.minecraft.world.damagesource.DamageSource;
 
 public class GenshinCraftAPI {
-    public static DamageSource toElement(DamageSource origin, int type, int q) {
+    public static DamageSource toElement(DamageSource origin, int type, float q) {
         q = Math.clamp(q, 0, 3);
         return new ElementDamageSource(origin, Element.fromType(type, q, Element.getDelta(q)));
     }
 
-    public static DamageSource toElement(DamageSource origin, int type, int q, boolean a, boolean c, boolean cd, boolean k) {
+    public static DamageSource toElement(DamageSource origin, int type, float q, boolean a, boolean c, boolean cd, boolean k) {
         q = Math.clamp(q, 0, 3);
         return new ElementDamageSource(origin, Element.fromType(type, q, Element.getDelta(q))).setApply(a).setCritical(c).setCooldown(cd).setKnockback(k);
     }
