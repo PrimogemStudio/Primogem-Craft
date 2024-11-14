@@ -9,7 +9,9 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.ceshi.procedures.Qyhc_wjc_sxProcedure;
@@ -32,9 +34,9 @@ public class Qyhx0wujiachengItem extends Item {
 	}
 
 	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			Qyhc_wjc_sxProcedure.execute(entity, itemstack);
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		Qyhc_wjc_sxProcedure.execute(entity, ar.getObject());
+		return ar;
 	}
 }

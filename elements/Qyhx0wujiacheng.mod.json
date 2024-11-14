@@ -31,7 +31,7 @@
     "specialInformation": {
       "fixedValue": [
         "§6§l无加成版本，便于合成",
-        "§5手持时:",
+        "§5右键时:",
         "§7 § § 逐步替换为加成版本",
         "§6 § § 潜行§7以替换全部"
       ]
@@ -41,7 +41,7 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInUseTick": {
+    "onRightClickedInAir": {
       "name": "Qyhc_wjc_sx"
     },
     "enableRanged": false,
@@ -61,6 +61,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }
