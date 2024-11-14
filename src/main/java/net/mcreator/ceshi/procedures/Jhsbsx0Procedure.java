@@ -12,7 +12,7 @@ public class Jhsbsx0Procedure {
 		if (entity == null)
 			return false;
 		if (itemstack.getItem() == item.getItem()) {
-			if (jun_heng <= zhi) {
+			if (jun_heng < zhi) {
 				{
 					PrimogemcraftModVariables.PlayerVariables _vars = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES);
 					_vars.jun_heng = zhi * 1000;

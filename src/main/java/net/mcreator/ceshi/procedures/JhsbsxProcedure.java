@@ -45,7 +45,7 @@ public class JhsbsxProcedure {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("\u00A7a\u00A7l\u4F60\u662F\u521B\u9020\u6A21\u5F0F\uFF0C\u5DF2\u6F5C\u884C\u53F3\u952E\u5C06\u5747\u8861\u7B49\u7EA7\u8BBE\u7F6E\u4E3A 0"), false);
 			} else {
-				a = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).jun_heng;
+				a = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).jun_heng / 1000;
 				b = (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI));
 				if (Jhsbsx0Procedure.execute(entity, new ItemStack(PrimogemcraftModItems.JHSB_0.get()), itemstack, a, 0.005 + b * 0.0005)
 						|| Jhsbsx0Procedure.execute(entity, new ItemStack(PrimogemcraftModItems.JHSB_1.get()), itemstack, a, 0.015 + b * 0.0005)
