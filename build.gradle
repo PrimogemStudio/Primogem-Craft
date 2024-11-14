@@ -50,7 +50,7 @@ repositories {
  * compileOnly = false 
  */
 dependencies {
-    compileOnly "maven.modrinth:genshincraft:+"
+    compileOnly "maven.modrinth:genshincraft:1.6.0"
 }
 
 tasks.withType(JavaCompile).configureEach {
