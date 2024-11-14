@@ -68,7 +68,7 @@ public class GUIhldztan1SHProcedure {
 				c = c + b;
 				b = a1 * a11 * (0.02 + a12 * 1.5);
 				c = c + b;
-				c = c + (a - a2) * a11 * (0.04 + a12 * 2);
+				c = c + (a - a2) * a11 * (0.03 + a12 * 2);
 				attr.add(Attributes.ATTACK_DAMAGE, "djjc", c, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
 				attr.apply();
 				return true;
