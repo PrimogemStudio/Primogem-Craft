@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.NETHERITE_SCRAP"
-      },
-      {
         "value": "CUSTOM:Zhapiandingzhengshi"
       },
       {
-        "value": "Items.NETHERITE_SCRAP"
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:Zhapiandingzhengshi"
       },
       {
         "value": "Items.NETHER_STAR"
@@ -30,13 +30,13 @@
         "value": "Blocks.END_STONE"
       },
       {
-        "value": "Items.NETHERITE_SCRAP"
-      },
-      {
         "value": "CUSTOM:Zhapiandingzhengshi"
       },
       {
-        "value": "Items.NETHERITE_SCRAP"
+        "value": "Items.ECHO_SHARD"
+      },
+      {
+        "value": "CUSTOM:Zhapiandingzhengshi"
       }
     ],
     "recipeReturnStack": {

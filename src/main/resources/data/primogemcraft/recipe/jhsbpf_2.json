@@ -8,10 +8,10 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:netherite_scrap"
+      "item": "primogemcraft:zhapiandingzhengshi"
     },
     "b": {
-      "item": "primogemcraft:zhapiandingzhengshi"
+      "item": "minecraft:echo_shard"
     },
     "c": {
       "item": "minecraft:nether_star"
