@@ -7,13 +7,10 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.neoforge.client.IItemDecorator;
 
 import java.util.List;
 
-@OnlyIn(Dist.CLIENT)
 public class CustomBarRegister {
     private static void init(Builder builder) {
         builder.add(lookup("primogemcraft:example"), bar(13, 0xc145c3), bar(0, 100, true));
