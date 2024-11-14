@@ -8,35 +8,35 @@
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:jianransuixie"
+      "item": "primogemcraft:jljsl"
     },
     "b": {
-      "item": "primogemcraft:ziziyousongshisuixie"
+      "item": "primogemcraft:zzjll"
     },
     "c": {
-      "item": "primogemcraft:aixubingyusuixie"
+      "item": "primogemcraft:lajsl"
     },
     "d": {
-      "item": "primogemcraft:zuishengsuixie"
+      "item": "primogemcraft:yhjsl"
     },
     "e": {
-      "item": "minecraft:sculk"
+      "item": "minecraft:sculk_catalyst"
     },
     "f": {
-      "item": "primogemcraft:ranyuansuixie"
+      "item": "primogemcraft:ryjll"
     },
     "g": {
-      "item": "primogemcraft:shengzhangbifeisuixie"
+      "item": "primogemcraft:zhjsl"
     },
     "h": {
-      "item": "minecraft:diamond"
+      "item": "minecraft:echo_shard"
     },
     "i": {
-      "item": "primogemcraft:dijingsuixie"
+      "item": "primogemcraft:zyjsl"
     }
   },
   "result": {
     "id": "minecraft:echo_shard",
-    "count": 1
+    "count": 2
   }
 }
