@@ -258,7 +258,6 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.QWJLBHY.get());
 				tabData.accept(PrimogemcraftModItems.QWYZNJ.get());
 				tabData.accept(PrimogemcraftModItems.MYZJ.get());
-				tabData.accept(PrimogemcraftModItems.JHSB_2.get());
 			})
 
 					.build());
