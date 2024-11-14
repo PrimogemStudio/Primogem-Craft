@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "b": {
+      "item": "primogemcraft:zhapiandingzhengshi"
+    },
+    "c": {
+      "item": "minecraft:nether_star"
+    },
+    "d": {
+      "item": "primogemcraft:cchonggaodaodedezanxu"
+    },
+    "e": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:jhsb_2",
+    "count": 1
+  }
+}

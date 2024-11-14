@@ -62,7 +62,7 @@ public class GUIhldztan1SHProcedure {
 			a1 = 30;
 			a2 = 60;
 			a11 = (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGHAI));
-			a12 = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).jun_heng * 0.01;
+			a12 = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).jun_heng / 1000;
 			if (a > a2) {
 				b = a1 * a11 * (0.01 + a12);
 				c = c + b;

@@ -3,20 +3,23 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "chonggaodaode",
+    "texture": "junhengshiban_2",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§f崇高道德的赞许",
-    "rarity": "UNCOMMON",
+    "name": "§e均衡石板",
+    "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:Zhenghuo"
+      },
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
       }
     ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -30,7 +33,8 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7掠夺者系列生物小概率掉落"
+        "§e均衡等级>3",
+        "§9右键使用"
       ]
     },
     "glowCondition": {
@@ -38,8 +42,8 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "Chonggaodaode_shuxing"
+    "onRightClickedInAir": {
+      "name": "Jhsbsx"
     },
     "enableRanged": false,
     "shootConstantly": false,
@@ -48,21 +52,21 @@
       "value": "Arrow"
     },
     "projectileDisableAmmoCheck": false,
-    "isFood": true,
-    "nutritionalValue": 0,
-    "saturation": 0.0,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
-    "animation": "eat",
+    "isAlwaysEdible": false,
+    "animation": "none",
     "isMusicDisc": false,
     "musicDiscMusic": {
       "value": ""
     },
     "musicDiscDescription": "",
-    "musicDiscLengthInTicks": 0,
+    "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0
   }
 }

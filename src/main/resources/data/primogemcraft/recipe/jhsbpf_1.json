@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:echo_shard"
+    },
+    "c": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "d": {
+      "item": "primogemcraft:cchonggaodaodedezanxu"
+    },
+    "e": {
+      "item": "primogemcraft:zhapiandingzhengshi"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:jhsb_1",
+    "count": 1
+  }
+}
