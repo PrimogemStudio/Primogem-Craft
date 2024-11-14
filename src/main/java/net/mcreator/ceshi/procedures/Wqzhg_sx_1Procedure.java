@@ -35,6 +35,7 @@ public class Wqzhg_sx_1Procedure {
 				_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 5, (int) itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian")));
 		} else {
 			if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) >= 9) {
+				a = entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity8.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0;
 				{
 					final Vec3 _center = new Vec3(x, y, z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
@@ -44,8 +45,7 @@ public class Wqzhg_sx_1Procedure {
 								if (entity instanceof Player _player)
 									_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 9));
 								entityiterator.hurt(ElementDamageSetApplyProcedure.execute(ToElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.LIGHTNING_BOLT), entityiterator, entity), 1, 3), false),
-										(float) (0.3 * HSjinglianProcedure.execute(itemstack)
-												* (entity instanceof LivingEntity _livingEntity12 && _livingEntity12.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity12.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)));
+										(float) (0.3 * HSjinglianProcedure.execute(itemstack) * a));
 								PrimogemcraftMod.LOGGER
 										.info(entity instanceof LivingEntity _livingEntity15 && _livingEntity15.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity15.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0);
 								PrimogemcraftMod.LOGGER.info(0.3 * HSjinglianProcedure.execute(itemstack)
