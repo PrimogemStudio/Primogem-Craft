@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " a ",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:jlliang"
+    },
+    "b": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:lmsj",
+    "count": 1
+  }
+}
