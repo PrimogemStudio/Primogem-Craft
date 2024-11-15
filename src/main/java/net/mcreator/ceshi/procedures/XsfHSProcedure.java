@@ -19,7 +19,7 @@ public class XsfHSProcedure {
 		a = zhi;
 		var attr = CustomAPI.getAttributes(stack);
 		if (bai_fen) {
-			attr.add(Attributes.ATTACK_DAMAGE, "s1", a, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL, EquipmentSlotGroup.MAINHAND);
+			attr.add(Attributes.ATTACK_DAMAGE, "s1", a, AttributeModifier.Operation.ADD_MULTIPLIED_BASE, EquipmentSlotGroup.MAINHAND);
 		} else {
 			attr.add(Attributes.ATTACK_DAMAGE, "s1", a, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);
 		}
