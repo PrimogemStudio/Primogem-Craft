@@ -1,0 +1,43 @@
+{
+  "_fv": 71,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "minecraft:diamond_sword",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "黎明神剑",
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "Lmsjms"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 0.9,
+    "enchantability": 15,
+    "damageVsEntity": 6.0,
+    "usageCount": 1500,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jlliang"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "Lmsjsx"
+    }
+  }
+}
