@@ -19,8 +19,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.ceshi.PrimogemcraftMod;
-
 import java.util.List;
 import java.util.Comparator;
 
@@ -29,6 +27,7 @@ public class Wqzhg_sx_1Procedure {
 		if (entity == null)
 			return;
 		double a = 0;
+		double b = 0;
 		if (entity.isShiftKeyDown()) {
 			entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC_KILL)), (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.2));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -36,6 +35,7 @@ public class Wqzhg_sx_1Procedure {
 		} else {
 			if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) >= 9) {
 				a = entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity8.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0;
+				b = 0.3 * HSjinglianProcedure.execute(itemstack) * a;
 				{
 					final Vec3 _center = new Vec3(x, y, z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
@@ -44,12 +44,7 @@ public class Wqzhg_sx_1Procedure {
 							if (!(entityiterator == entity)) {
 								if (entity instanceof Player _player)
 									_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 9));
-								entityiterator.hurt(ElementDamageSetApplyProcedure.execute(ToElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.LIGHTNING_BOLT), entityiterator, entity), 1, 3), false),
-										(float) (0.3 * HSjinglianProcedure.execute(itemstack) * a));
-								PrimogemcraftMod.LOGGER
-										.info(entity instanceof LivingEntity _livingEntity15 && _livingEntity15.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity15.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0);
-								PrimogemcraftMod.LOGGER.info(0.3 * HSjinglianProcedure.execute(itemstack)
-										* (entity instanceof LivingEntity _livingEntity16 && _livingEntity16.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity16.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0));
+								entityiterator.hurt(ElementDamageSetApplyProcedure.execute(ToElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.LIGHTNING_BOLT), entityiterator, entity), 1, 3), false), (float) b);
 								if (world instanceof ServerLevel _level) {
 									LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
 									entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())));
