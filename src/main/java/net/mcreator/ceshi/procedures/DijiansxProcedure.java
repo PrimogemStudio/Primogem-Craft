@@ -24,8 +24,8 @@ import java.util.List;
 import java.util.Comparator;
 
 public class DijiansxProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity, ItemStack itemstack) {
-		if (entity == null || sourceentity == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity sourceentity, ItemStack itemstack) {
+		if (sourceentity == null)
 			return;
 		double a = 0;
 		double b = 0;
@@ -40,7 +40,7 @@ public class DijiansxProcedure {
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator == sourceentity) && (entityiterator instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) >= 1) {
 							if (a <= 5) {
-								entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC), entityiterator, entity), (float) b);
+								entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC), entityiterator, sourceentity), (float) b);
 							}
 							a = a + 1;
 							{
