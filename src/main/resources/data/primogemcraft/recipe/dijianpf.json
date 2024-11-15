@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " b ",
+    "c  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:note_block"
+    },
+    "b": {
+      "item": "minecraft:bamboo"
+    },
+    "c": {
+      "item": "primogemcraft:jlliang"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:dijian",
+    "count": 1
+  }
+}

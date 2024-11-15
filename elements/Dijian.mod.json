@@ -1,0 +1,46 @@
+{
+  "_fv": 71,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "di_jian",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§b笛剑",
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "Dijianms"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 12,
+    "damageVsEntity": 8.0,
+    "usageCount": 2000,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jlliang"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "Dijiansx0"
+    },
+    "onEntityHitWith": {
+      "name": "Dijiansx"
+    }
+  }
+}

@@ -32800,6 +32800,130 @@
           "src/main/resources/data/primogemcraft/recipe/lmsjpf.json"
         ]
       }
+    },
+    {
+      "name": "Dijian",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dijian",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/dijian.json",
+          "src/main/java/net/mcreator/ceshi/item/DijianItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Dijianms",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dijianms",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/DijianmsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dijiansx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dijiansx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/DijiansxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dijiansx0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dijiansx_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Dijiansx0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dijianpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dijianpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/dijianpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -33656,7 +33780,8 @@
       "CUSTOM:Wqzhg",
       "CUSTOM:Wufengjian",
       "CUSTOM:Zfzr",
-      "CUSTOM:Lmsj"
+      "CUSTOM:Lmsj",
+      "CUSTOM:Dijian"
     ],
     "ITEMS:pgc:prayer_core_x10": [
       "CUSTOM:Qyhxshilian"
@@ -34509,6 +34634,7 @@
       "CUSTOM:Shenbanjianlaohuangyukuangshi"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:Dijian",
       "~CUSTOM:Lmsj",
       "~CUSTOM:Zfzr",
       "~CUSTOM:Wqzhg",
@@ -35244,8 +35370,9 @@
       "Molachutou",
       "Wufengjian",
       "Lmsj",
-      "Zfzr",
+      "Dijian",
       "Wqzhg",
+      "Zfzr",
       "Ziziyousongshisuixie",
       "Zziyousongshiduanpian",
       "Zziyousongshikuai",
@@ -36424,6 +36551,7 @@
       "item.primogemcraft.shengjizuanshejin": "§d『钻石合金升级』§a自在松石",
       "itemGroup.tabzhenghuo": "Primogem Craft",
       "advancements.huhuangjinjindu_01.title": "『黄金』的哲学",
+      "item.primogemcraft.dijian": "§b笛剑",
       "gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian": "§c该物品不满足附魔条件！",
       "item.primogemcraft.axhjsj": "§e『下界合金升级』§b哀叙冰玉",
       "item.primogemcraft.hqfeng.description_5": "§8仅作用于正面效果",
@@ -39017,6 +39145,7 @@
       "item.primogemcraft.shengjizuanshejin": "§d『Netherite Upgrade』§aVayuda Turquoise",
       "itemGroup.tabzhenghuo": "Primogem Craft",
       "advancements.huhuangjinjindu_01.title": "Philosophies of 『Gold』",
+      "item.primogemcraft.dijian": "§b笛剑",
       "gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian": "§c该物品不满足附魔条件！",
       "item.primogemcraft.axhjsj": "§e『Netherite Upgrade』§bShivada Jade",
       "item.primogemcraft.hqfeng.description_5": "§8仅作用于正面效果",
@@ -41608,6 +41737,7 @@
       "item.primogemcraft.shengjizuanshejin": "§d『钻石合金升级』§a自在松石",
       "itemGroup.tabzhenghuo": "原石工艺",
       "advancements.huhuangjinjindu_01.title": "§6『黄金』的哲学",
+      "item.primogemcraft.dijian": "§b笛剑",
       "gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian": "§c该物品不满足附魔条件！",
       "item.primogemcraft.axhjsj": "§e『下界合金升级』§b哀叙冰玉",
       "item.primogemcraft.hqfeng.description_5": "§8仅作用于正面效果",
