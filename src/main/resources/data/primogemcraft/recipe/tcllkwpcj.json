@@ -1,18 +1,14 @@
 {
-  "type": "primogemcraft:crafting_shaped_with_components",
+  "type": "primogemcraft:crafting_material_recovery",
   "category": "misc",
-  "pattern": [
-    "ab"
-  ],
-  "key": {
-    "a": {
+  "ingredients": [
+    {
       "tag": "pgc:wuqi"
     },
-    "b": {
+    {
       "item": "primogemcraft:cllk"
     }
-  },
-  "source": "#pgc:wuqi",
+  ],
   "result": {
     "id": "primogemcraft:cllk",
     "count": 1

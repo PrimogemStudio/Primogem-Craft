@@ -20,7 +20,8 @@ public class CustomRegister {
 
     static {
         DATA_COMPONENT_TYPES.register("custom_bar", () -> CustomComponents.CUSTOM_BAR);
-        new ShapedWithComponentsRecipe(null, null, null, null, null, false);
+        ShapedWithComponentsRecipe.register();
+        MaterialRecoveryRecipe.register();
     }
 
     public static void register(IEventBus modBus) {

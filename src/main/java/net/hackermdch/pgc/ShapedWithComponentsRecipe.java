@@ -28,6 +28,9 @@ public final class ShapedWithComponentsRecipe implements CraftingRecipe {
     private final CraftingBookCategory category;
     private final boolean showNotification;
 
+    public static void register() {
+    }
+
     public ShapedWithComponentsRecipe(String group, CraftingBookCategory category, ShapedRecipePattern pattern, ItemStack result, String source, boolean showNotification) {
         this.group = group;
         this.category = category;
