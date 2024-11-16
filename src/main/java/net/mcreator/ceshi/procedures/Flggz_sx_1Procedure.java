@@ -20,19 +20,11 @@ public class Flggz_sx_1Procedure {
 			return;
 		double jingyan = 0;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_0)) {
-			if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > 0 && (entity instanceof Player _plr ? _plr.experienceLevel : 0) < 17) {
-				jingyan = (entity instanceof Player _plr ? _plr.experienceLevel : 0) * (entity instanceof Player _plr ? _plr.experienceLevel : 0) + 6 * (entity instanceof Player _plr ? _plr.experienceLevel : 0);
-			}
-			if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > 16 && (entity instanceof Player _plr ? _plr.experienceLevel : 0) <= 31) {
-				jingyan = 2.5 * (entity instanceof Player _plr ? _plr.experienceLevel : 0) * (entity instanceof Player _plr ? _plr.experienceLevel : 0) - 40.5 * (entity instanceof Player _plr ? _plr.experienceLevel : 0) + 360;
-			}
-			if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) > 32) {
-				jingyan = 4.5 * (entity instanceof Player _plr ? _plr.experienceLevel : 0) * (entity instanceof Player _plr ? _plr.experienceLevel : 0) - 162.5 * (entity instanceof Player _plr ? _plr.experienceLevel : 0) + 2220;
-			}
-			itemstack.setDamageValue((int) ((itemstack.getMaxDamage() - jingyan) - (itemstack.getMaxDamage() - itemstack.getDamageValue())));
+			jingyan = DiaoyongjisuanjingyanzhiProcedure.execute(entity);
 			if (entity instanceof Player _player)
 				_player.giveExperiencePoints(-(itemstack.getDamageValue()));
-			if (itemstack.getDamageValue() == 0 && !(entity instanceof LivingEntity _livEnt28 && _livEnt28.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1))) {
+			itemstack.setDamageValue((int) ((itemstack.getMaxDamage() - jingyan) - (itemstack.getMaxDamage() - itemstack.getDamageValue())));
+			if (itemstack.getDamageValue() == 0 && !(entity instanceof LivingEntity _livEnt14 && _livEnt14.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1))) {
 				entity.getPersistentData().putBoolean("fenlie_ggz_a", false);
 				entity.getPersistentData().putBoolean("fenlie_ggz_b", false);
 				entity.getPersistentData().putBoolean("fenlie_ggz_c", false);
