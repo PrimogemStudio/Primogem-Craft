@@ -1,0 +1,5 @@
+public net.minecraft.world.level.storage.loot.LootTable pools
+public net.minecraft.world.level.storage.loot.LootPool entries
+public net.minecraft.world.level.storage.loot.entries.LootItem item
+public net.minecraft.client.multiplayer.ClientLevel connection
+public net.minecraft.client.multiplayer.MultiPlayerGameMode connection
