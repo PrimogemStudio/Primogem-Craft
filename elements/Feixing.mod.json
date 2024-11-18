@@ -3,15 +3,15 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "飞行",
-    "icon": "rydp.png",
+    "icon": "rydp",
     "color": {
       "value": -1,
       "falpha": 0.0
     },
     "isInstant": false,
     "mobEffectCategory": "NEUTRAL",
-    "renderStatusInInventory": true,
-    "renderStatusInHUD": true,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
