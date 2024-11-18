@@ -46,8 +46,8 @@ public record WishInfoConfiguration(ServerConfigurationPacketListener listener) 
     private static void onReload(AddReloadListenerEvent event) {
         var provider = event.getRegistryAccess().asGetterLookup();
         registry = event.getRegistryAccess();
-        items = getItems(provider, "q_qqyzi");
-        items1 = getItems(provider, "qq_qqylan");
+        items = getItems(provider, "qq_qqylan");
+        items1 = getItems(provider, "q_qqyzi");
         items2 = getItems(provider, "qqyjin");
     }
 
