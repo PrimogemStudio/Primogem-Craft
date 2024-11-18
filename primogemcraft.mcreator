@@ -35631,6 +35631,7 @@
   },
   "language_map": {
     "en_us": {
+      "rei.category.pgc.wish": "Wish",
       "item.primogemcraft.yuanshigao": "§b原石 镐",
       "item.primogemcraft.qwwcn.description_7": "§c -40%当前生命值",
       "item.primogemcraft.qwwcn.description_6": "§c击杀生物后：",
@@ -38225,6 +38226,7 @@
       "item.primogemcraft.zizaifu.description_1": "§7 - 步行时获得急速"
     },
     "en_ae": {
+      "rei.category.pgc.wish": "Wish",
       "item.primogemcraft.yuanshigao": "§bPrimogem Pickaxe",
       "item.primogemcraft.qwwcn.description_7": "§c -40%当前生命值",
       "item.primogemcraft.qwwcn.description_6": "§c击杀生物后：",
@@ -40819,6 +40821,7 @@
       "item.primogemcraft.zizaifu.description_1": "§7 - 步行时获得急速"
     },
     "zh_cn": {
+      "rei.category.pgc.wish": "祈愿",
       "item.primogemcraft.yuanshigao": "§b原石 镐",
       "item.primogemcraft.qwwcn.description_7": "§c -40%当前生命值",
       "item.primogemcraft.qwwcn.description_6": "§c击杀生物后：",
