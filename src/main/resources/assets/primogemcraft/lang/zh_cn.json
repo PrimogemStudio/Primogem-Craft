@@ -1,5 +1,11 @@
 {
   "rei.category.pgc.wish": "祈愿",
+  "rei.category.pgc.forge": "精炼强化",
+  "rei.pgc.tooltip.forge.title": "需知",
+  "rei.pgc.tooltip.forge.1": "使用叠影器为武器叠影，精炼等级影响技能效果",
+  "rei.pgc.tooltip.forge.2": "使用精锻矿石为武器升级，提供更高攻击力加成",
+  "rei.pgc.tooltip.forge.3": "使用均衡石板提升均衡等级，提高强化的攻击力",
+  "rei.pgc.tooltip.forge.4": "使用石板后需放入对应下登级材料进行强化刷新",
   "item.primogemcraft.yuanshigao": "§b原石 镐",
   "item.primogemcraft.qwwcn.description_7": "§c -40%当前生命值",
   "item.primogemcraft.qwwcn.description_6": "§c击杀生物后：",

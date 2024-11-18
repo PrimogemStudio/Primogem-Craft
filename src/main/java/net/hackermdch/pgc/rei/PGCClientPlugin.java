@@ -14,6 +14,7 @@ import net.minecraft.world.level.ItemLike;
 
 import java.util.Set;
 
+import static net.hackermdch.pgc.rei.PGCPlugin.FORGE;
 import static net.hackermdch.pgc.rei.PGCPlugin.WISH;
 import static net.mcreator.ceshi.init.PrimogemcraftModEntities.*;
 import static net.mcreator.ceshi.init.PrimogemcraftModItems.*;
@@ -22,8 +23,9 @@ import static net.mcreator.ceshi.init.PrimogemcraftModItems.*;
 public class PGCClientPlugin implements REIClientPlugin {
     @Override
     public void registerCategories(CategoryRegistry registry) {
-        registry.add(new WishCategory());
+        registry.add(new WishCategory(), new ForgeCategory());
         registry.addWorkstations(WISH, EntryStacks.of(XIXIANGYUZHIYUAN), EntryStacks.of(JIJIUCHANZHIYUAN), EntryStacks.of(SHILIANCHOU), EntryStacks.of(QYHX_0WUJIACHENG), EntryStacks.of(QYHXSHILIAN));
+        registry.addWorkstations(FORGE, EntryStacks.of(HUALIDUANZAO));
     }
 
     @Override
@@ -31,6 +33,7 @@ public class PGCClientPlugin implements REIClientPlugin {
         addWishEntry(registry, QQ_QYUANCHULAN_01.get(), WishInfoPacket.info[0]);
         addWishEntry(registry, Q_QYUANCHUZI_01.get(), WishInfoPacket.info[1]);
         addWishEntry(registry, QQIYUAN_JIN_GUANG.get(), WishInfoPacket.info[2]);
+        registry.add(new ForgeDisplay());
     }
 
     private void addWishEntry(DisplayRegistry registry, EntityType<? extends LivingEntity> type, Set<ItemLike> items) {
