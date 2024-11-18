@@ -31,10 +31,13 @@ public class WishCategory implements DisplayCategory<WishDisplay> {
     @Override
     public List<Widget> setupDisplay(WishDisplay display, Rectangle bounds) {
         var widgets = ImmutableList.<Widget>builder();
-        var startPoint = new Point(bounds.getCenterX() - 58, bounds.getCenterY() - 8);
+        var startPoint = new Point(bounds.getCenterX(), bounds.getCenterY());
+        var entity = display.entityType.create(Minecraft.getInstance().level);
+        entity.setCustomName(null);
+        entity.setCustomNameVisible(false);
         widgets.add(Widgets.createRecipeBase(bounds));
-        widgets.add(Widgets.createDrawableWidget(((graphics, mouseX, mouseY, delta) -> InventoryScreen.renderEntityInInventory(graphics, startPoint.x + 10, startPoint.y, 30, new Vector3f(), new Quaternionf(), new Quaternionf(), display.entityType.create(Minecraft.getInstance().level)))));
-        widgets.add(Widgets.createSlot(new Point(startPoint.x + 95, startPoint.y)).entries(display.getOutputEntries().getFirst()).markOutput());
+        widgets.add(Widgets.createDrawableWidget(((graphics, mouseX, mouseY, delta) -> InventoryScreen.renderEntityInInventory(graphics, startPoint.x - 20, startPoint.y - 8, 30, new Vector3f(), new Quaternionf(), new Quaternionf(), entity))));
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 10, startPoint.y - 8)).entries(display.getOutputEntries().getFirst()).markOutput());
         return widgets.build();
     }
 
@@ -46,5 +49,15 @@ public class WishCategory implements DisplayCategory<WishDisplay> {
     @Override
     public Renderer getIcon() {
         return EntryStacks.of(PrimogemcraftModItems.JIJIUCHANZHIYUAN);
+    }
+
+    @Override
+    public int getDisplayHeight() {
+        return 33;
+    }
+
+    @Override
+    public int getDisplayWidth(WishDisplay display) {
+        return 75;
     }
 }
