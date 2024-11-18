@@ -2,10 +2,13 @@ package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
@@ -19,9 +22,15 @@ public class TcllksxProcedure {
 		double a1 = 0;
 		double a2 = 0;
 		double c = 0;
+		ItemStack i1 = ItemStack.EMPTY;
 		a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji") + 1;
 		b = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
 		if (a > 1 || b > 0) {
+			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("fu_mo") > 0) {
+				i1 = new ItemStack(Items.ENCHANTED_BOOK);
+				i1.enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FIRE_ASPECT), 2);
+				DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, i1, Math.floor(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("fu_mo") / 2));
+			}
 			itemstack.shrink(1);
 			DiaoyongwupindiaoluoProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.TEZHIDIEYINGQI.get()), b);
 			a1 = 30;
