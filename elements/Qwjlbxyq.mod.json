@@ -32,7 +32,7 @@
       "fixedValue": [
         "§7攻击生物时，将减少其的最大生命",
         "§7值，减少量为当前使用者最大生命",
-        "§7值的5%",
+        "§7值的20%",
         "§7§l 效果持续10s，触发后冷却15s",
         "§e每次触发后20%掉落1个宇宙碎片",
         "§a§l携带后黑塔商店奇物价格减少20%"
@@ -63,6 +63,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }
