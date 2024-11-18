@@ -33018,6 +33018,18 @@
           }
         ]
       }
+    },
+    {
+      "name": "Xllypf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xllypf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/xllypf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
