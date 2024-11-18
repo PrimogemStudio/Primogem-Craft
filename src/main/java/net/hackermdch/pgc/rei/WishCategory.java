@@ -36,8 +36,9 @@ public class WishCategory implements DisplayCategory<WishDisplay> {
         entity.setCustomName(null);
         entity.setCustomNameVisible(false);
         widgets.add(Widgets.createRecipeBase(bounds));
-        widgets.add(Widgets.createDrawableWidget(((graphics, mouseX, mouseY, delta) -> InventoryScreen.renderEntityInInventory(graphics, startPoint.x - 20, startPoint.y - 8, 30, new Vector3f(), new Quaternionf(), new Quaternionf(), entity))));
-        widgets.add(Widgets.createSlot(new Point(startPoint.x + 10, startPoint.y - 8)).entries(display.getOutputEntries().getFirst()).markOutput());
+        widgets.add(Widgets.createDrawableWidget(((graphics, mouseX, mouseY, delta) -> InventoryScreen.renderEntityInInventory(graphics, startPoint.x - 30, startPoint.y - 8, 30, new Vector3f(), new Quaternionf(), new Quaternionf(), entity))));
+        widgets.add(Widgets.createArrow(new Point(startPoint.x - 12, startPoint.y - 9)));
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 20, startPoint.y - 8)).entries(display.getOutputEntries().getFirst()).markOutput());
         return widgets.build();
     }
 
@@ -58,6 +59,6 @@ public class WishCategory implements DisplayCategory<WishDisplay> {
 
     @Override
     public int getDisplayWidth(WishDisplay display) {
-        return 75;
+        return 120;
     }
 }
