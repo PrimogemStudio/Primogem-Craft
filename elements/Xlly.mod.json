@@ -1,0 +1,46 @@
+{
+  "_fv": 71,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "xlln",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§6匣里龙吟",
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "Xllyms"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 0.8,
+    "enchantability": 2,
+    "damageVsEntity": 7.5,
+    "usageCount": 2600,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jlliang"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "Xllysx"
+    },
+    "onItemInInventoryTick": {
+      "name": "Xllysx0"
+    }
+  }
+}

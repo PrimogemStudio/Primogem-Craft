@@ -32934,6 +32934,90 @@
           }
         ]
       }
+    },
+    {
+      "name": "Xlly",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xlly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/XllyItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/xlly.json"
+        ]
+      }
+    },
+    {
+      "name": "Xllyms",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xllyms",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/XllymsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xllysx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xllysx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/XllysxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xllysx0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xllysx_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Xllysx0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -33791,7 +33875,8 @@
       "CUSTOM:Wufengjian",
       "CUSTOM:Zfzr",
       "CUSTOM:Lmsj",
-      "CUSTOM:Dijian"
+      "CUSTOM:Dijian",
+      "CUSTOM:Xlly"
     ],
     "ITEMS:pgc:prayer_core_x10": [
       "CUSTOM:Qyhxshilian"
@@ -34644,6 +34729,7 @@
       "CUSTOM:Shenbanjianlaohuangyukuangshi"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:Xlly",
       "~CUSTOM:Dijian",
       "~CUSTOM:Lmsj",
       "~CUSTOM:Zfzr",
@@ -35382,8 +35468,13 @@
       "Wufengjian",
       "Lmsj",
       "Dijian",
+      "Xlly",
       "Wqzhg",
       "Zfzr",
+      "Cllk",
+      "Jhsb0",
+      "Jhsb1",
+      "Jhsb2",
       "Ziziyousongshisuixie",
       "Zziyousongshiduanpian",
       "Zziyousongshikuai",
@@ -35524,11 +35615,7 @@
       "Yxaxg",
       "Axf",
       "Axq",
-      "Axc",
-      "Cllk",
-      "Jhsb0",
-      "Jhsb1",
-      "Jhsb2"
+      "Axc"
     ],
     "CUSTOM:Yuanshifangkuaika": [
       "Yuanshikuangshi",
@@ -37529,6 +37616,7 @@
       "item.primogemcraft.jlkjhj_leggings.description_1": "§7 2x 获得永久抗性提升效果",
       "item.primogemcraft.jlkjhj_leggings.description_0": "§6套装效果：",
       "item.primogemcraft.lijs": "§klianai§r金属",
+      "item.primogemcraft.xlly": "§6匣里龙吟",
       "item.primogemcraft.luanqibazaodedaima": "§5『奇物』§f乱七八糟的代码",
       "item.primogemcraft.shengjijlhjwp": "§e『下界合金升级』§6坚牢黄玉",
       "enchantment.primogemcraft.fumoyuzhezn.desc": "§8攻击目标后对自己造成一次主手+副手附魔等级*2%概率的目标当前血量200%的魔法伤害",
@@ -40130,6 +40218,7 @@
       "item.primogemcraft.jlkjhj_leggings.description_1": "§7 2x 获得永久抗性提升效果",
       "item.primogemcraft.jlkjhj_leggings.description_0": "§6套装效果：",
       "item.primogemcraft.lijs": "§klianai§rMetal",
+      "item.primogemcraft.xlly": "§6匣里龙吟",
       "item.primogemcraft.luanqibazaodedaima": "§5『Curio』§fCorrupted Code",
       "item.primogemcraft.shengjijlhjwp": "§e『Netherite Upgrade』§6Prithiva Topaz",
       "enchantment.primogemcraft.fumoyuzhezn.desc": "§8攻击目标后对自己造成一次主手+副手附魔等级*2%概率的目标当前血量200%的魔法伤害",
@@ -42726,6 +42815,7 @@
       "item.primogemcraft.jlkjhj_leggings.description_1": "§7 2x 获得永久抗性提升效果",
       "item.primogemcraft.jlkjhj_leggings.description_0": "§6套装效果：",
       "item.primogemcraft.lijs": "§klianai§r金属",
+      "item.primogemcraft.xlly": "§6匣里龙吟",
       "item.primogemcraft.luanqibazaodedaima": "§5『奇物』§f乱七八糟的代码",
       "item.primogemcraft.shengjijlhjwp": "§e『下界合金升级』§6坚牢黄玉",
       "enchantment.primogemcraft.fumoyuzhezn.desc": "§8攻击目标后有主手+副手附魔等级*2%概率对自己造成一次等同于目标当前生命值200%的魔法伤害",
