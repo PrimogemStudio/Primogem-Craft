@@ -9,6 +9,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.core.component.DataComponents;
 
+import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 public class JjlkjsxProcedure {
@@ -27,10 +28,12 @@ public class JjlkjsxProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100, (int) (b - 7), true, false));
 			}
 		}
-		if (!(entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(MobEffects.ABSORPTION))) {
+		if (!(entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(PrimogemcraftModMobEffects.XISHOULENGQUE)) && !(entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(MobEffects.ABSORPTION))) {
 			if (b >= 4) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 900, (int) (b * 0.5 - 1), true, false));
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.XISHOULENGQUE, 900, 0, false, false));
 			}
 		}
 	}
