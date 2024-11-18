@@ -36,7 +36,7 @@ public class Qyhx0wujiachengItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		Qyhc_wjc_sxProcedure.execute(entity, ar.getObject());
+		Qyhc_wjc_sxProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
 	}
 }
