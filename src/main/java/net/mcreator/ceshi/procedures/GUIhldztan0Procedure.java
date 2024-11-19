@@ -56,6 +56,12 @@ public class GUIhldztan0Procedure {
 							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:jingyanshu00")), SoundSource.BLOCKS, 1, 1, false);
 						}
 					}
+					{
+						final String _tagName = "jing_lian_shua_xin";
+						final boolean _tagValue = false;
+						CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putBoolean(_tagName, _tagValue));
+					}
+					JlqhewaiProcedure.execute(i1);
 				}
 			}
 		}

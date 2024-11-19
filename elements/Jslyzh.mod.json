@@ -1,0 +1,46 @@
+{
+  "_fv": 71,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "jslyzh",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§9净水流涌之辉",
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "Jslyzhms"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
+    "efficiency": 7.0,
+    "attackSpeed": 2.0,
+    "enchantability": 15,
+    "damageVsEntity": 10.0,
+    "usageCount": 3000,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Zyjs"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "Jslyzhsx"
+    },
+    "onEntitySwing": {
+      "name": "Jslyzhsx0"
+    }
+  }
+}

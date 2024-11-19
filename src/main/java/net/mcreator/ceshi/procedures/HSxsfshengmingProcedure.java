@@ -7,15 +7,11 @@ import net.minecraft.world.entity.EquipmentSlotGroup;
 
 import net.hackermdch.pgc.CustomAPI;
 
-public class HSsxfshengmingProcedure {
-	public static void execute(ItemStack itemstack, boolean bai_fen, boolean zui_da, double zhi, String ming_cheng) {
-		if (ming_cheng == null)
-			return;
+public class HSxsfshengmingProcedure {
+	public static void execute(ItemStack itemstack, boolean bai_fen, boolean zui_da, double zhi) {
 		ItemStack stack = ItemStack.EMPTY;
-		String s1 = "";
 		double a = 0;
 		stack = itemstack;
-		s1 = ming_cheng;
 		a = zhi;
 		var attr = CustomAPI.getAttributes(stack);
 		if (zui_da) {
