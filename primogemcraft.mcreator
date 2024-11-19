@@ -7334,16 +7334,7 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/Ceshi_3Procedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -33210,6 +33201,40 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ceshi/potion/XishoulengqueMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "HSsxfshengming",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "h_ssxfshengming",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/HSsxfshengmingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "bai_fen",
+            "type": "logic"
+          },
+          {
+            "name": "zui_da",
+            "type": "logic"
+          },
+          {
+            "name": "zhi",
+            "type": "number"
+          },
+          {
+            "name": "ming_cheng",
+            "type": "string"
+          }
         ]
       }
     }
