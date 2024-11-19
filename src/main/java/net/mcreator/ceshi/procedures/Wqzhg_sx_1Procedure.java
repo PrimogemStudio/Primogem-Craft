@@ -35,7 +35,9 @@ public class Wqzhg_sx_1Procedure {
 				_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 5, (int) itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian")));
 		} else {
 			if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) >= 9) {
-				a = entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity8.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0;
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
+				a = entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity10.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0;
 				b = 0.3 * HSjinglianProcedure.execute(itemstack) * a;
 				{
 					final Vec3 _center = new Vec3(x, y, z);
