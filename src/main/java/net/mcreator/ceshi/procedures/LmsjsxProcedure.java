@@ -13,9 +13,9 @@ public class LmsjsxProcedure {
 		double a = 0;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) >= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.9) {
 			a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
-			XsfHSProcedure.execute(itemstack, true, 0.14 + 0.035 * a, "lmsj");
+			XsfHSProcedure.execute(itemstack, true, false, 0.14 + 0.035 * a, "lmsj");
 		} else {
-			XsfHSProcedure.execute(itemstack, false, 0, "lmsj");
+			XsfHSProcedure.execute(itemstack, false, false, 0, "lmsj");
 		}
 	}
 }

@@ -40,8 +40,8 @@ public class FtyjsxProcedure {
 				} else {
 					if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("ftyj_sx") < 1) {
 						b = 0.12 + 0.03 * a;
-						XsfHSProcedure.execute(itemstack, true, b, "ftyj");
-						XsfhsyidongProcedure.execute(itemstack, true, b, "ftyj");
+						XsfHSProcedure.execute(itemstack, true, false, b, "ftyj");
+						XsfhsyidongProcedure.execute(itemstack, true, false, b, "ftyj");
 						{
 							final String _tagName = "ftyj_sx";
 							final double _tagValue = 10;

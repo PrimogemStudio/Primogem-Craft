@@ -8,7 +8,7 @@ import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.hackermdch.pgc.CustomAPI;
 
 public class XsfhsyidongProcedure {
-	public static void execute(ItemStack itemstack, boolean bai_fen, double zhi, String ming_cheng) {
+	public static void execute(ItemStack itemstack, boolean bai_fen, boolean zui_da, double zhi, String ming_cheng) {
 		if (ming_cheng == null)
 			return;
 		ItemStack stack = ItemStack.EMPTY;
@@ -18,7 +18,9 @@ public class XsfhsyidongProcedure {
 		s1 = ming_cheng;
 		a = zhi;
 		var attr = CustomAPI.getAttributes(stack);
-		if (bai_fen) {
+		if (zui_da) {
+			attr.add(Attributes.MOVEMENT_SPEED, "s1", a, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL, EquipmentSlotGroup.MAINHAND);
+		} else if (bai_fen) {
 			attr.add(Attributes.MOVEMENT_SPEED, "s1", a, AttributeModifier.Operation.ADD_MULTIPLIED_BASE, EquipmentSlotGroup.MAINHAND);
 		} else {
 			attr.add(Attributes.MOVEMENT_SPEED, "s1", a, AttributeModifier.Operation.ADD_VALUE, EquipmentSlotGroup.MAINHAND);

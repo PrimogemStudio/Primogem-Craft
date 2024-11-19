@@ -17,8 +17,8 @@ public class Ftyjsx0Procedure {
 		a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("ftyj_sx");
 		if (a == 1) {
 			b = 0;
-			XsfHSProcedure.execute(itemstack, true, b, "ftyj");
-			XsfhsyidongProcedure.execute(itemstack, true, b, "ftyj");
+			XsfHSProcedure.execute(itemstack, true, false, b, "ftyj");
+			XsfhsyidongProcedure.execute(itemstack, true, false, b, "ftyj");
 			{
 				final String _tagName = "ftyj_sx";
 				final double _tagValue = 0;

@@ -1617,7 +1617,7 @@
   "item.primogemcraft.qwjlbxyq.description_4": "§e每次触发后20%掉落1个宇宙碎片",
   "item.primogemcraft.qwjlbxyq.description_3": "§7§l 效果持续10s，触发后冷却15s",
   "enchantment.primogemcraft.ceshifumo_01": "revive",
-  "item.primogemcraft.qwjlbxyq.description_2": "§7值的5%",
+  "item.primogemcraft.qwjlbxyq.description_2": "§7值的20%",
   "item.primogemcraft.qwjlbxyq.description_1": "§7值，减少量为当前使用者最大生命",
   "item.primogemcraft.qwjlbxyq.description_0": "§7攻击生物时，将减少其的最大生命",
   "effect.primogemcraft.shijianbuchufa": "事件不触发",
