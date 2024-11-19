@@ -23,6 +23,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.procedures.JslyzhsxProcedure;
+import net.mcreator.ceshi.procedures.Jslyzhsx1Procedure;
 import net.mcreator.ceshi.procedures.Jslyzhsx0Procedure;
 import net.mcreator.ceshi.procedures.JslyzhmsProcedure;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
@@ -89,7 +90,13 @@ public class JslyzhItem extends SwordItem {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
 		boolean retval = super.onEntitySwing(itemstack, entity, hand);
-		Jslyzhsx0Procedure.execute(entity.level(), entity, itemstack);
+		Jslyzhsx0Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
 		return retval;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		Jslyzhsx1Procedure.execute(entity, itemstack);
 	}
 }

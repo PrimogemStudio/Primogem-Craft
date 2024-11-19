@@ -39,6 +39,9 @@
     "onRightClickedInAir": {
       "name": "Jslyzhsx"
     },
+    "onItemInInventoryTick": {
+      "name": "Jslyzhsx1"
+    },
     "onEntitySwing": {
       "name": "Jslyzhsx0"
     }
