@@ -632,7 +632,7 @@
             "item": {
               "value": "CUSTOM:Wqzhg"
             },
-            "weight": 2,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -646,7 +646,7 @@
             "item": {
               "value": "CUSTOM:Zfzr"
             },
-            "weight": 2,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
