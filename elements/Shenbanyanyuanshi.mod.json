@@ -51,7 +51,7 @@
             "maxEnchantmentLevel": 0,
             "affectedByFortune": true,
             "explosionDecay": false,
-            "silkTouchMode": 0
+            "silkTouchMode": 2
           }
         ]
       },
