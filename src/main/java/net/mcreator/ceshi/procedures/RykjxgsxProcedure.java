@@ -6,6 +6,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -34,7 +35,7 @@ public class RykjxgsxProcedure {
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.RYKJXG)) {
 			if (!(sourceentity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.RYKJXGLQ))) {
-				sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.LAVA), entity), (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
+				sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.LAVA), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)), (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
 						* (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.RYKJXG) ? _livEnt.getEffect(PrimogemcraftModMobEffects.RYKJXG).getAmplifier() : 0) * 0.1));
 				sourceentity.igniteForSeconds((int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.RYKJXG) ? _livEnt.getEffect(PrimogemcraftModMobEffects.RYKJXG).getAmplifier() : 0) * 3));
 				if (sourceentity instanceof LivingEntity _entity && !_entity.level().isClientSide())
