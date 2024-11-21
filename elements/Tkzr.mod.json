@@ -1,0 +1,45 @@
+{
+  "_fv": 71,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "tiankong_zhiren",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§b§l天空之刃",
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "Trzrms"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
+    "efficiency": 5.0,
+    "attackSpeed": 2.0,
+    "enchantability": 20,
+    "damageVsEntity": 9.0,
+    "usageCount": 1000,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "Tkzrsx0"
+    },
+    "onEntityHitWith": {
+      "name": "Tkzrsx"
+    },
+    "onItemInInventoryTick": {
+      "name": "Jslyzhsx1"
+    }
+  }
+}

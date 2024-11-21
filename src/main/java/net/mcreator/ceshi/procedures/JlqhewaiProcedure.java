@@ -21,11 +21,16 @@ public class JlqhewaiProcedure {
 			final boolean _tagValue = true;
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
 		}
-		if (itemstack.getItem() == PrimogemcraftModItems.JSLYZH.get()) {
-			stack = itemstack;
-			a = 0.24 + 0.06 * itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
-			var attr = CustomAPI.getAttributes(stack);
+		stack = itemstack;
+		var attr = CustomAPI.getAttributes(stack);
+		if (stack.getItem() == PrimogemcraftModItems.JSLYZH.get()) {
+			a = 0.24 + 0.06 * stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
 			attr.add(Attributes.MAX_HEALTH, "bd", a, AttributeModifier.Operation.ADD_MULTIPLIED_BASE, EquipmentSlotGroup.MAINHAND);
+			attr.apply();
+		}
+		if (stack.getItem() == PrimogemcraftModItems.TKZR.get()) {
+			a = 0.08 + 0.02 * stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
+			attr.add(Attributes.ATTACK_DAMAGE, "bd", a, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL, EquipmentSlotGroup.MAINHAND);
 			attr.apply();
 		}
 	}

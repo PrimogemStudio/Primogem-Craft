@@ -131,6 +131,7 @@ import net.mcreator.ceshi.item.WmoladaiItem;
 import net.mcreator.ceshi.item.WeizhiyepianItem;
 import net.mcreator.ceshi.item.WawanxiangwuchangtouItem;
 import net.mcreator.ceshi.item.WanshinangItem;
+import net.mcreator.ceshi.item.TkzrItem;
 import net.mcreator.ceshi.item.TiaoguozhangItem;
 import net.mcreator.ceshi.item.TiankongspItem;
 import net.mcreator.ceshi.item.TezhidieyingqiItem;
@@ -1020,6 +1021,7 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> XLLY = REGISTRY.register("xlly", XllyItem::new);
 	public static final DeferredItem<Item> FTYJ = REGISTRY.register("ftyj", FtyjItem::new);
 	public static final DeferredItem<Item> JSLYZH = REGISTRY.register("jslyzh", JslyzhItem::new);
+	public static final DeferredItem<Item> TKZR = REGISTRY.register("tkzr", TkzrItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
