@@ -46,7 +46,7 @@ public class TkzrsxProcedure {
 			PrimogemcraftMod.queueServerWork(10, () -> {
 				entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC), sourceentity),
 						(float) ((sourceentity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity6.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
-								* (0.2 + 0.05 * itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian"))));
+								* (0.14 + 0.035 * itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian"))));
 			});
 			{
 				final String _tagName = "tkzr_sx";

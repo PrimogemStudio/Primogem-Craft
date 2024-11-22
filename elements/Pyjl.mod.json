@@ -1,0 +1,49 @@
+{
+  "_fv": 71,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "panyanjielv",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§2§l磐岩结绿",
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "Pyjlms"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
+    "efficiency": 8.0,
+    "attackSpeed": 1.6,
+    "enchantability": 20,
+    "damageVsEntity": 10.0,
+    "usageCount": 2000,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jianlaoduanpian"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "Pyjlsx0"
+    },
+    "onItemInInventoryTick": {
+      "name": "Jlqhewai"
+    },
+    "onItemInUseTick": {
+      "name": "Pyjlsx"
+    }
+  }
+}
