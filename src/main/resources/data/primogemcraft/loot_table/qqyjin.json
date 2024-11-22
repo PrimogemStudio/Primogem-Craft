@@ -57,7 +57,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_block",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -71,7 +71,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:emerald_block",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -85,7 +85,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:lapis_block",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -99,7 +99,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:gold_block",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -113,7 +113,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:redstone_block",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -127,7 +127,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:mmolapeiziwupin",
-          "weight": 4,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -141,7 +141,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:mengying",
-          "weight": 4,
+          "weight": 5,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -155,7 +155,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:yuansujingti",
-          "weight": 4,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -169,7 +169,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:yuzhousuipian",
-          "weight": 4,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -197,7 +197,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:tezhidieyingqi",
-          "weight": 4,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -708,6 +708,20 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:tkzr",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "primogemcraft:pyjl",
           "weight": 1,
           "functions": [
             {
