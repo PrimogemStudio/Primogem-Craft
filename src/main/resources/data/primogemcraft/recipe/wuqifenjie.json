@@ -1,0 +1,16 @@
+{
+  "type": "primogemcraft:crafting_material_recovery",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "pgc:wuqi/5"
+    },
+    {
+      "item": "primogemcraft:tclwqcjq"
+    }
+  ],
+  "result": {
+    "id": "primogemcraft:tcllk",
+    "count": 1
+  }
+}

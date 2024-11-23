@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:tclzhaiquan"
+    },
+    "b": {
+      "item": "primogemcraft:zhjsl"
+    },
+    "c": {
+      "item": "primogemcraft:jljtie"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:pyjl",
+    "count": 1
+  }
+}
