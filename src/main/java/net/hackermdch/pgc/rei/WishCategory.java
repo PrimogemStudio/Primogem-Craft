@@ -20,11 +20,13 @@ import org.joml.Vector3f;
 
 import java.util.List;
 
+import static net.hackermdch.pgc.rei.PGCClientPlugin.WISH;
+
 @OnlyIn(Dist.CLIENT)
 public class WishCategory implements DisplayCategory<WishDisplay> {
     @Override
     public CategoryIdentifier<? extends WishDisplay> getCategoryIdentifier() {
-        return PGCPlugin.WISH;
+        return WISH;
     }
 
     @SuppressWarnings("DataFlowIssue")

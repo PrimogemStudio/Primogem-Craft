@@ -9,6 +9,7 @@ import net.minecraft.tags.ItemTags;
 
 import java.util.List;
 
+import static net.hackermdch.pgc.rei.PGCClientPlugin.FORGE;
 import static net.mcreator.ceshi.init.PrimogemcraftModItems.*;
 
 public class ForgeDisplay implements Display {
@@ -24,6 +25,6 @@ public class ForgeDisplay implements Display {
 
     @Override
     public CategoryIdentifier<?> getCategoryIdentifier() {
-        return PGCPlugin.FORGE;
+        return FORGE;
     }
 }

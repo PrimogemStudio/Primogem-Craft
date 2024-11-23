@@ -3,29 +3,24 @@ package net.hackermdch.pgc.rei;
 import com.google.common.collect.ImmutableList;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
-import me.shedaniel.rei.api.common.entry.EntryIngredient;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import me.shedaniel.rei.api.common.util.EntryIngredients;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.Item;
 
-import java.util.List;
+import static net.hackermdch.pgc.rei.PGCClientPlugin.WISH;
 
 public class WishDisplay extends BasicDisplay {
-    public final EntityType<? extends LivingEntity> entityType;
+    final EntityType<? extends LivingEntity> entityType;
 
-    public WishDisplay(EntityType<? extends LivingEntity> type, List<EntryIngredient> outputs) {
-        super(ImmutableList.of(), outputs);
+    public WishDisplay(EntityType<? extends LivingEntity> type, TagKey<Item> tag) {
+        super(ImmutableList.of(), ImmutableList.of(EntryIngredients.ofItemTag(tag)));
         entityType = type;
-    }
-
-    @SuppressWarnings("unchecked")
-    public static BasicDisplay.Serializer<WishDisplay> serializer() {
-        return Serializer.ofRecipeLess((input, output, tag) -> new WishDisplay((EntityType<? extends LivingEntity>) BuiltInRegistries.ENTITY_TYPE.get(ResourceLocation.parse(tag.getString("type"))), output), (display, tag) -> tag.putString("type", BuiltInRegistries.ENTITY_TYPE.getKey(display.entityType).toString()));
     }
 
     @Override
     public CategoryIdentifier<?> getCategoryIdentifier() {
-        return PGCPlugin.WISH;
+        return WISH;
     }
 }
