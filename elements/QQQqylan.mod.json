@@ -1495,7 +1495,7 @@
             "item": {
               "value": "CUSTOM:Xingchen"
             },
-            "weight": 2,
+            "weight": 3,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -1509,7 +1509,7 @@
             "item": {
               "value": "CUSTOM:Xingchen"
             },
-            "weight": 6,
+            "weight": 4,
             "minCount": 2,
             "maxCount": 2,
             "minEnchantmentLevel": 0,

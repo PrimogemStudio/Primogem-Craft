@@ -1567,7 +1567,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:xingchen",
-          "weight": 2,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -1581,7 +1581,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:xingchen",
-          "weight": 6,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_count",

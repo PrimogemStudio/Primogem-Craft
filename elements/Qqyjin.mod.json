@@ -712,8 +712,8 @@
               "value": "CUSTOM:Xinghui"
             },
             "weight": 1,
-            "minCount": 12,
-            "maxCount": 32,
+            "minCount": 10,
+            "maxCount": 10,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
