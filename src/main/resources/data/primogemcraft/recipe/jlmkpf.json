@@ -3,18 +3,15 @@
   "category": "misc",
   "pattern": [
     "aa",
-    "b "
+    "aa"
   ],
   "key": {
     "a": {
-      "item": "minecraft:amethyst_shard"
-    },
-    "b": {
-      "item": "primogemcraft:mmola_01"
+      "item": "primogemcraft:ysjsj"
     }
   },
   "result": {
-    "id": "primogemcraft:jlza",
+    "id": "primogemcraft:jlliang",
     "count": 1
   }
 }

@@ -7,11 +7,11 @@
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 1.0,
-    "cookingTime": 600,
+    "cookingTime": 400,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smeltingInputStack": {
-      "value": "TAG:minecraft:beacon_payment_items"
+      "value": "CUSTOM:Baitiekuang"
     },
     "smeltingReturnStack": {
       "value": "CUSTOM:Jlza"

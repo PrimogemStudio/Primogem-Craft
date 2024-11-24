@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 2,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,16 +12,16 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.AMETHYST_SHARD"
+        "value": "CUSTOM:Baitiekuang"
       },
       {
-        "value": "Items.AMETHYST_SHARD"
+        "value": "TAG:minecraft:pickaxes"
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:Mmola01"
+        "value": ""
       },
       {
         "value": ""
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Jlza"
+      "value": "Items.RAW_IRON"
     },
-    "name": "jlzapf_02",
+    "name": "baitietie",
     "namespace": "mod"
   }
 }

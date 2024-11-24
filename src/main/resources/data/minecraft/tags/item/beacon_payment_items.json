@@ -2,27 +2,11 @@
   "replace": false,
   "values": [
     "primogemcraft:yuanshi",
-    "primogemcraft:xixiangyuzhiyuan",
-    "primogemcraft:jijiuchanzhiyuan",
-    "primogemcraft:chuangshijiejing",
     "primogemcraft:xiaodaimola",
-    "primogemcraft:ziziyousongshisuixie",
-    "primogemcraft:zuishengsuixie",
-    "primogemcraft:shengzhangbifeisuixie",
-    "primogemcraft:dijingsuixie",
-    "primogemcraft:ranyuansuixie",
-    "primogemcraft:aixubingyusuixie",
     "primogemcraft:chiyuejinshu",
     "primogemcraft:xinyuejinshu",
     "primogemcraft:manyuejinshu",
-    "primogemcraft:ysfc",
-    "primogemcraft:jlza",
     "primogemcraft:jlliang",
-    "primogemcraft:yhjs",
-    "primogemcraft:zhjs",
-    "primogemcraft:zyjs",
-    "primogemcraft:ryjs",
-    "primogemcraft:lijs",
     "primogemcraft:zzjll",
     "primogemcraft:jljsl",
     "primogemcraft:yhjsl",
@@ -30,6 +14,6 @@
     "primogemcraft:zyjsl",
     "primogemcraft:ryjll",
     "primogemcraft:lajsl",
-    "primogemcraft:cunqupingzheng"
+    "primogemcraft:ysjsj"
   ]
 }

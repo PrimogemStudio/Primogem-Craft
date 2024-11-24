@@ -19425,42 +19425,6 @@
       }
     },
     {
-      "name": "Jlzapf1",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jlzapf_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/jlzapf_1.json"
-        ]
-      }
-    },
-    {
-      "name": "Jlmopf0",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jlmopf_0",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/jlmopf_0.json"
-        ]
-      }
-    },
-    {
-      "name": "Jlmopf1",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jlmopf_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/jlmopf_1.json"
-        ]
-      }
-    },
-    {
       "name": "Jlpf00",
       "type": "recipe",
       "compiles": true,
@@ -19481,18 +19445,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/primogemcraft/recipe/jlpf_000.json"
-        ]
-      }
-    },
-    {
-      "name": "Jlpf0",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jlpf_0",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/jlpf_0.json"
         ]
       }
     },
@@ -19943,18 +19895,6 @@
       }
     },
     {
-      "name": "Jlzapf02",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jlzapf_02",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/jlzapf_02.json"
-        ]
-      }
-    },
-    {
       "name": "Disuipf0",
       "type": "recipe",
       "compiles": true,
@@ -20243,18 +20183,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/primogemcraft/recipe/jskpf_14.json"
-        ]
-      }
-    },
-    {
-      "name": "Jlzapf2",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jlzapf_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/jlzapf_2.json"
         ]
       }
     },
@@ -22328,18 +22256,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/primogemcraft/recipe/jingbanpf_0.json"
-        ]
-      }
-    },
-    {
-      "name": "Jingbanpf1",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "jingbanpf_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/jingbanpf_1.json"
         ]
       }
     },
@@ -33938,6 +33854,30 @@
           "src/main/resources/data/primogemcraft/loot_table/blocks/ysjshuijing_1.json"
         ]
       }
+    },
+    {
+      "name": "Baitietie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baitietie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/baitietie.json"
+        ]
+      }
+    },
+    {
+      "name": "Jlmkpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jlmkpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/jlmkpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -35981,27 +35921,11 @@
     ],
     "ITEMS:minecraft:beacon_payment_items": [
       "CUSTOM:Yuanshi",
-      "CUSTOM:Xixiangyuzhiyuan",
-      "CUSTOM:Jijiuchanzhiyuan",
-      "CUSTOM:Chuangshijiejing",
       "CUSTOM:Xiaodaimola",
-      "CUSTOM:Ziziyousongshisuixie",
-      "CUSTOM:Zuishengsuixie",
-      "CUSTOM:Shengzhangbifeisuixie",
-      "CUSTOM:Dijingsuixie",
-      "CUSTOM:Ranyuansuixie",
-      "CUSTOM:Aixubingyusuixie",
       "CUSTOM:Kongyuejinshu",
       "CUSTOM:Xinyuejinshu",
       "CUSTOM:Manyuejinshu",
-      "CUSTOM:Ysfc",
-      "CUSTOM:Jlza",
       "CUSTOM:Jlliang",
-      "CUSTOM:Yhjs",
-      "CUSTOM:Zhjs",
-      "CUSTOM:Zyjs",
-      "CUSTOM:Ryjs",
-      "CUSTOM:Lijs",
       "CUSTOM:Zzjll",
       "CUSTOM:Jljsl",
       "CUSTOM:Yhjsl",
@@ -36009,7 +35933,7 @@
       "CUSTOM:Zyjsl",
       "CUSTOM:Ryjll",
       "CUSTOM:Lajsl",
-      "CUSTOM:Cunqupingzheng"
+      "CUSTOM:Ysjsj"
     ],
     "ITEMS:pgc:dzmb_0": [
       "CUSTOM:Qhmbml",

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:baitiekuang"
+    },
+    "b": {
+      "tag": "minecraft:pickaxes"
+    }
+  },
+  "result": {
+    "id": "minecraft:raw_iron",
+    "count": 2
+  }
+}
