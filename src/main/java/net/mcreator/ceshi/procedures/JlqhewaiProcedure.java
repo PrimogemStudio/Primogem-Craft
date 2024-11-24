@@ -40,5 +40,10 @@ public class JlqhewaiProcedure {
 			attr.add(Attributes.ATTACK_DAMAGE, "bd", a, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL, EquipmentSlotGroup.MAINHAND);
 			attr.apply();
 		}
+		if (stack.getItem() == PrimogemcraftModItems.HEIJIAN.get()) {
+			a = 0.2 + 0.05 * stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
+			attr.add(Attributes.ATTACK_DAMAGE, "bd", a, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL, EquipmentSlotGroup.MAINHAND);
+			attr.apply();
+		}
 	}
 }

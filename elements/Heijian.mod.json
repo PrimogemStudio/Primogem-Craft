@@ -1,0 +1,46 @@
+{
+  "_fv": 71,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "heijian",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "§4黑剑",
+    "specialInformation": {
+      "fixedValue": [],
+      "name": "Heijianms"
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
+      }
+    ],
+    "efficiency": 5.0,
+    "attackSpeed": 1.2,
+    "enchantability": 20,
+    "damageVsEntity": 8.0,
+    "usageCount": 1500,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Jianlaoduanpian"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "Hei_jian_sx"
+    },
+    "onItemInInventoryTick": {
+      "name": "Jlqhewai"
+    }
+  }
+}
