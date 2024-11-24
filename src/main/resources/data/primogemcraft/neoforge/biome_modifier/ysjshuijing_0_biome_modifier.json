@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "features": "primogemcraft:ysjshuijing_0",
+  "step": "underground_ores"
+}

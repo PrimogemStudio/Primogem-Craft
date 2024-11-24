@@ -33865,6 +33865,79 @@
           "src/main/resources/data/primogemcraft/loot_table/blocks/baitiekuangshi_1.json"
         ]
       }
+    },
+    {
+      "name": "Ysjshuijing0",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ysjshuijing_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/worldgen/configured_feature/ysjshuijing_0.json",
+          "src/main/resources/assets/primogemcraft/models/item/ysjshuijing_0.json",
+          "src/main/resources/data/primogemcraft/worldgen/placed_feature/ysjshuijing_0.json",
+          "src/main/resources/assets/primogemcraft/models/block/ysjshuijing_0.json",
+          "src/main/java/net/mcreator/ceshi/block/Ysjshuijing0Block.java",
+          "src/main/resources/data/primogemcraft/neoforge/biome_modifier/ysjshuijing_0_biome_modifier.json",
+          "src/main/resources/assets/primogemcraft/blockstates/ysjshuijing_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Ysjshuijing1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ysjshuijing_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/neoforge/biome_modifier/ysjshuijing_1_biome_modifier.json",
+          "src/main/resources/assets/primogemcraft/models/block/ysjshuijing_1.json",
+          "src/main/java/net/mcreator/ceshi/block/Ysjshuijing1Block.java",
+          "src/main/resources/data/primogemcraft/worldgen/configured_feature/ysjshuijing_1.json",
+          "src/main/resources/data/primogemcraft/worldgen/placed_feature/ysjshuijing_1.json",
+          "src/main/resources/assets/primogemcraft/models/item/ysjshuijing_1.json",
+          "src/main/resources/assets/primogemcraft/blockstates/ysjshuijing_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Ysjsj",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ysjsj",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/ysjsj.json",
+          "src/main/java/net/mcreator/ceshi/item/YsjsjItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Zysjshuijing0",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zysjshuijing_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/loot_table/blocks/ysjshuijing_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Zysjshuijing1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zysjshuijing_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/loot_table/blocks/ysjshuijing_1.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -34301,6 +34374,8 @@
       "CUSTOM:Qwjlbhy"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Ysjshuijing1",
+      "~CUSTOM:Ysjshuijing0",
       "~CUSTOM:Baitiekuangshi1",
       "~CUSTOM:Baitiekuangshi0",
       "~CUSTOM:Ysjtsj1",
@@ -35003,6 +35078,8 @@
       "CUSTOM:Qwqskxjxt"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:Ysjshuijing1",
+      "~CUSTOM:Ysjshuijing0",
       "~CUSTOM:Jianshijingban",
       "~CUSTOM:Chiyuejinshukuang",
       "~CUSTOM:Xinyuekuangshi",
@@ -36546,7 +36623,8 @@
       "Qwjlbhy",
       "Qwyznj",
       "Myzj",
-      "Baitiekuang"
+      "Baitiekuang",
+      "Ysjsj"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -36817,7 +36895,9 @@
       "Ysjtsj0",
       "Ysjtsj1",
       "Baitiekuangshi0",
-      "Baitiekuangshi1"
+      "Baitiekuangshi1",
+      "Ysjshuijing0",
+      "Ysjshuijing1"
     ]
   },
   "language_map": {
@@ -36909,6 +36989,8 @@
       "item.primogemcraft.szzskj_boots.description_0": "§6套装效果：",
       "gui.primogemcraft.yinhang.label_ti_gong_ping_zheng_hou_jiang_huo_de": "gain after the voucher submitted",
       "subtitles.cp_fengdandaibiao": "",
+      "block.primogemcraft.ysjshuijing_1": "深层异世界水晶矿石",
+      "block.primogemcraft.ysjshuijing_0": "异世界水晶矿石",
       "item.primogemcraft.qwkwzw.description_1": "§a与普通虫网效果一致，但",
       "item.primogemcraft.qwkwzw.description_2": "击杀生物后50%恢复10%最大生",
       "block.primogemcraft.yiyishijiemubanlouqi": "异世界木 楼梯",
@@ -38123,6 +38205,7 @@
       "item.primogemcraft.ssanbamiantou.description_2": "§7的所有种类奇物",
       "item.primogemcraft.qwclgs.description_3": "§c§l效果，但持续时间和等级减半",
       "item.primogemcraft.mllphj.description_2": "§e可以寻找所有被标记为矿物的方块！",
+      "item.primogemcraft.ysjsj": "异世界水晶",
       "item.primogemcraft.ssanbamiantou.description_0": "§9右键使用后：",
       "item.primogemcraft.mllphj.description_1": "§7右键寻找§d5*y*5§7范围内的记录方块",
       "item.primogemcraft.jianransuixie": "§6坚牢黄玉 碎屑",
@@ -39526,6 +39609,8 @@
       "item.primogemcraft.szzskj_boots.description_0": "§6套装效果：",
       "gui.primogemcraft.yinhang.label_ti_gong_ping_zheng_hou_jiang_huo_de": "gain after the voucher submitted",
       "subtitles.cp_fengdandaibiao": "",
+      "block.primogemcraft.ysjshuijing_1": "深层异世界水晶矿石",
+      "block.primogemcraft.ysjshuijing_0": "异世界水晶矿石",
       "item.primogemcraft.qwkwzw.description_1": "§a与普通虫网效果一致，但",
       "item.primogemcraft.qwkwzw.description_2": "击杀生物后50%恢复10%最大生",
       "block.primogemcraft.yiyishijiemubanlouqi": "The another world\u0027s wood Stairs",
@@ -40740,6 +40825,7 @@
       "item.primogemcraft.ssanbamiantou.description_2": "§7的所有种类奇物",
       "item.primogemcraft.qwclgs.description_3": "§c§l效果，但持续时间和等级减半",
       "item.primogemcraft.mllphj.description_2": "§e可以寻找所有被标记为矿物的方块！",
+      "item.primogemcraft.ysjsj": "异世界水晶",
       "item.primogemcraft.ssanbamiantou.description_0": "§9右键使用后：",
       "item.primogemcraft.mllphj.description_1": "§7右键寻找§d5*y*5§7范围内的记录方块",
       "item.primogemcraft.jianransuixie": "§6Prithiva Topaz Sliver",
@@ -42143,6 +42229,8 @@
       "item.primogemcraft.szzskj_boots.description_0": "§6套装效果：",
       "gui.primogemcraft.yinhang.label_ti_gong_ping_zheng_hou_jiang_huo_de": "提供凭证后将获得",
       "subtitles.cp_fengdandaibiao": "",
+      "block.primogemcraft.ysjshuijing_1": "深层异世界水晶矿石",
+      "block.primogemcraft.ysjshuijing_0": "异世界水晶矿石",
       "item.primogemcraft.qwkwzw.description_1": "§a与普通虫网效果一致，但",
       "item.primogemcraft.qwkwzw.description_2": "击杀生物后50%恢复10%最大生",
       "block.primogemcraft.yiyishijiemubanlouqi": "异世界木 楼梯",
@@ -43355,6 +43443,7 @@
       "item.primogemcraft.ssanbamiantou.description_2": "§7的所有种类奇物",
       "item.primogemcraft.qwclgs.description_3": "§c§l效果，但持续时间和等级减半",
       "item.primogemcraft.mllphj.description_2": "§e可以寻找所有被标记为矿物的方块！",
+      "item.primogemcraft.ysjsj": "异世界水晶",
       "item.primogemcraft.ssanbamiantou.description_0": "§9右键使用后：",
       "item.primogemcraft.mllphj.description_1": "§7右键寻找§d5*y*5§7范围内的记录方块",
       "item.primogemcraft.jianransuixie": "§6坚牢黄玉 碎屑",

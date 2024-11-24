@@ -20,6 +20,8 @@ import net.mcreator.ceshi.block.YuansujingshikuaiBlock;
 import net.mcreator.ceshi.block.YuanshikuangshiBlock;
 import net.mcreator.ceshi.block.Ysjtsj1Block;
 import net.mcreator.ceshi.block.Ysjtsj0Block;
+import net.mcreator.ceshi.block.Ysjshuijing1Block;
+import net.mcreator.ceshi.block.Ysjshuijing0Block;
 import net.mcreator.ceshi.block.YiyishijieyuanmubanzhuanBlock;
 import net.mcreator.ceshi.block.YiyishijiemuzhalanBlock;
 import net.mcreator.ceshi.block.YiyishijiemubanlouqiBlock;
@@ -253,6 +255,8 @@ public class PrimogemcraftModBlocks {
 	public static final DeferredBlock<Block> YSJTSJ_1 = REGISTRY.register("ysjtsj_1", Ysjtsj1Block::new);
 	public static final DeferredBlock<Block> BAITIEKUANGSHI_0 = REGISTRY.register("baitiekuangshi_0", Baitiekuangshi0Block::new);
 	public static final DeferredBlock<Block> BAITIEKUANGSHI_1 = REGISTRY.register("baitiekuangshi_1", Baitiekuangshi1Block::new);
+	public static final DeferredBlock<Block> YSJSHUIJING_0 = REGISTRY.register("ysjshuijing_0", Ysjshuijing0Block::new);
+	public static final DeferredBlock<Block> YSJSHUIJING_1 = REGISTRY.register("ysjshuijing_1", Ysjshuijing1Block::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/sheng_ysj_shuijing_kuang",
+    "up": "primogemcraft:block/sheng_ysj_shuijing_kuang",
+    "north": "primogemcraft:block/sheng_ysj_shuijing_kuang",
+    "east": "primogemcraft:block/sheng_ysj_shuijing_kuang",
+    "south": "primogemcraft:block/sheng_ysj_shuijing_kuang",
+    "west": "primogemcraft:block/sheng_ysj_shuijing_kuang",
+    "particle": "primogemcraft:block/sheng_ysj_shuijing_kuang"
+  },
+  "render_type": "solid"
+}
