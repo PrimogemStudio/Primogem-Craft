@@ -29,7 +29,7 @@ public class MyzjsxProcedure {
 						}
 						return false;
 					}
-				}.checkGamemode(entity) ? 1 : Mth.nextDouble(RandomSource.create(), 0.01, 0.25);
+				}.checkGamemode(entity) ? 1 : Mth.nextDouble(RandomSource.create(), 0.01, 0.6);
 				{
 					final String _tagName = "qianghua_touzi_gailv";
 					final double _tagValue = a;
