@@ -8,7 +8,7 @@
         "target": {
           "predicate_type": "blockstate_match",
           "block_state": {
-            "Name": "minecraft:iron_ore"
+            "Name": "minecraft:stone"
           }
         },
         "state": {

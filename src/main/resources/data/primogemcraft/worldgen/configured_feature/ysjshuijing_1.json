@@ -8,7 +8,10 @@
         "target": {
           "predicate_type": "blockstate_match",
           "block_state": {
-            "Name": "minecraft:deepslate_iron_ore"
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
           }
         },
         "state": {
