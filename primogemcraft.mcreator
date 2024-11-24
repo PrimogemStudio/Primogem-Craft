@@ -33792,6 +33792,79 @@
           "src/main/resources/data/primogemcraft/recipe/heijianpf.json"
         ]
       }
+    },
+    {
+      "name": "Baitiekuangshi0",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baitiekuangshi_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/blockstates/baitiekuangshi_0.json",
+          "src/main/resources/data/primogemcraft/worldgen/placed_feature/baitiekuangshi_0.json",
+          "src/main/java/net/mcreator/ceshi/block/Baitiekuangshi0Block.java",
+          "src/main/resources/assets/primogemcraft/models/block/baitiekuangshi_0.json",
+          "src/main/resources/assets/primogemcraft/models/item/baitiekuangshi_0.json",
+          "src/main/resources/data/primogemcraft/worldgen/configured_feature/baitiekuangshi_0.json",
+          "src/main/resources/data/primogemcraft/neoforge/biome_modifier/baitiekuangshi_0_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Baitiekuangshi1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baitiekuangshi_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/block/Baitiekuangshi1Block.java",
+          "src/main/resources/assets/primogemcraft/models/block/baitiekuangshi_1.json",
+          "src/main/resources/data/primogemcraft/worldgen/placed_feature/baitiekuangshi_1.json",
+          "src/main/resources/assets/primogemcraft/models/item/baitiekuangshi_1.json",
+          "src/main/resources/assets/primogemcraft/blockstates/baitiekuangshi_1.json",
+          "src/main/resources/data/primogemcraft/worldgen/configured_feature/baitiekuangshi_1.json",
+          "src/main/resources/data/primogemcraft/neoforge/biome_modifier/baitiekuangshi_1_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Baitiekuang",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baitiekuang",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/BaitiekuangItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/baitiekuang.json"
+        ]
+      }
+    },
+    {
+      "name": "Zbaitiekuangshi0",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zbaitiekuangshi_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/loot_table/blocks/baitiekuangshi_0.json"
+        ]
+      }
+    },
+    {
+      "name": "Zbaitiekuangshi1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zbaitiekuangshi_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/loot_table/blocks/baitiekuangshi_1.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -34228,6 +34301,8 @@
       "CUSTOM:Qwjlbhy"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Baitiekuangshi1",
+      "~CUSTOM:Baitiekuangshi0",
       "~CUSTOM:Ysjtsj1",
       "~CUSTOM:Ysjtsj0",
       "~CUSTOM:Jianshijingban",
@@ -35276,6 +35351,8 @@
       "CUSTOM:Zhangquanzhezhinang"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:Baitiekuangshi1",
+      "~CUSTOM:Baitiekuangshi0",
       "~CUSTOM:Lajsk",
       "~CUSTOM:Ryjsk",
       "~CUSTOM:Zyjsk",
@@ -36468,7 +36545,8 @@
       "Qwclhy",
       "Qwjlbhy",
       "Qwyznj",
-      "Myzj"
+      "Myzj",
+      "Baitiekuang"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -36737,7 +36815,9 @@
       "Bwdxjhpyhfh",
       "Jianshijingban",
       "Ysjtsj0",
-      "Ysjtsj1"
+      "Ysjtsj1",
+      "Baitiekuangshi0",
+      "Baitiekuangshi1"
     ]
   },
   "language_map": {
@@ -38862,6 +38942,7 @@
       "item.primogemcraft.jlkjhj_chestplate.description_3": "§8提升程度基于套装值",
       "item.primogemcraft.jlkjhj_chestplate.description_2": "§7 4x 间歇性获得伤害吸收效果",
       "item.primogemcraft.jlkjhj_chestplate.description_1": "§7 2x 获得永久抗性提升效果",
+      "item.primogemcraft.baitiekuang": "白铁矿",
       "item.primogemcraft.djtt_boots": "§b『涤净青金』§f铁靴子",
       "item.primogemcraft.jlkjhj_chestplate.description_0": "§6套装效果：",
       "item.primogemcraft.wuxiandiguidedaima": "§5『奇物』§b无限递归的代码",
@@ -39061,7 +39142,9 @@
       "item.primogemcraft.xixiangyuzhiyuan.description_4": "§c使用者必须在附近",
       "item.primogemcraft.gzsmz.description_0": "§7解除一些莫名其妙的负面效果",
       "item.primogemcraft.jianmushengfaqi.description_0": "§7右键提高魔阴身生成概率",
+      "block.primogemcraft.baitiekuangshi_0": "白铁矿石",
       "item.primogemcraft.jianmushengfaqi.description_1": "§7潜行+右键降低魔阴身生成概率",
+      "block.primogemcraft.baitiekuangshi_1": "深层白铁矿石",
       "item.primogemcraft.wawanxiangwuchangtou": "§5『奇物』§2万象无常骰",
       "item.primogemcraft.yhdltyidie": "一叠银河大乐透",
       "item.ceshi.yishijiemugun": "Tewatt Stick",
@@ -41476,6 +41559,7 @@
       "item.primogemcraft.jlkjhj_chestplate.description_3": "§8level of improvement based on suit amount",
       "item.primogemcraft.jlkjhj_chestplate.description_2": "§7 4x 间歇性获得伤害吸收效果",
       "item.primogemcraft.jlkjhj_chestplate.description_1": "§7 2x 获得永久抗性提升效果",
+      "item.primogemcraft.baitiekuang": "白铁矿",
       "item.primogemcraft.djtt_boots": "§b『Varunada Lazurite』§fIron Boots",
       "item.primogemcraft.jlkjhj_chestplate.description_0": "§6套装效果：",
       "item.primogemcraft.wuxiandiguidedaima": "§5『Curio』§bInfinitely Recursive Code",
@@ -41675,7 +41759,9 @@
       "item.primogemcraft.xixiangyuzhiyuan.description_4": "§c使用者必须在附近",
       "item.primogemcraft.gzsmz.description_0": "§7解除一些莫名其妙的负面效果",
       "item.primogemcraft.jianmushengfaqi.description_0": "§7右键提高魔阴身生成概率",
+      "block.primogemcraft.baitiekuangshi_0": "白铁矿石",
       "item.primogemcraft.jianmushengfaqi.description_1": "§7潜行+右键降低魔阴身生成概率",
+      "block.primogemcraft.baitiekuangshi_1": "白铁矿石",
       "item.primogemcraft.wawanxiangwuchangtou": "§5『Curio』§2Entropic Die",
       "item.primogemcraft.yhdltyidie": "一叠银河大乐透",
       "item.ceshi.yishijiemugun": "Tewatt Stick",
@@ -44085,6 +44171,7 @@
       "item.primogemcraft.jlkjhj_chestplate.description_3": "§8提升程度基于套装值",
       "item.primogemcraft.jlkjhj_chestplate.description_2": "§7 4x 间歇性获得伤害吸收效果",
       "item.primogemcraft.jlkjhj_chestplate.description_1": "§7 2x 获得永久抗性提升效果",
+      "item.primogemcraft.baitiekuang": "白铁矿",
       "item.primogemcraft.djtt_boots": "§b『涤净青金』§f铁靴子",
       "item.primogemcraft.jlkjhj_chestplate.description_0": "§6套装效果：",
       "item.primogemcraft.wuxiandiguidedaima": "§5『奇物』§b无限递归的代码",
@@ -44283,7 +44370,9 @@
       "item.primogemcraft.xixiangyuzhiyuan.description_4": "§c使用者必须在附近",
       "item.primogemcraft.gzsmz.description_0": "§7解除一些莫名其妙的负面效果",
       "item.primogemcraft.jianmushengfaqi.description_0": "§7右键提高魔阴身生成概率",
+      "block.primogemcraft.baitiekuangshi_0": "白铁矿石",
       "item.primogemcraft.jianmushengfaqi.description_1": "§7潜行+右键降低魔阴身生成概率",
+      "block.primogemcraft.baitiekuangshi_1": "白铁矿石",
       "item.primogemcraft.wawanxiangwuchangtou": "§5『奇物』§2万象无常骰",
       "item.primogemcraft.yhdltyidie": "一叠银河大乐透",
       "item.ceshi.yishijiemugun": "异世界木棍",
