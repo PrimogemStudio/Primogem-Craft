@@ -37,7 +37,7 @@ public class MyzjsxProcedure {
 				}
 				{
 					final String _tagName = "touzi_fenwei_1";
-					final double _tagValue = (Mth.nextDouble(RandomSource.create(), 0.01, 0.2));
+					final double _tagValue = (Mth.nextDouble(RandomSource.create(), 0.01, 0.25));
 					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 				}
 			}
