@@ -1040,6 +1040,7 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> YSJSHUIJING_0 = block(PrimogemcraftModBlocks.YSJSHUIJING_0);
 	public static final DeferredItem<Item> YSJSHUIJING_1 = block(PrimogemcraftModBlocks.YSJSHUIJING_1);
 	public static final DeferredItem<Item> YSJSJ = REGISTRY.register("ysjsj", YsjsjItem::new);
+	public static final DeferredItem<Item> YSJSHUIJINGCU = block(PrimogemcraftModBlocks.YSJSHUIJINGCU);
 
 	// Start of user code block custom items
 	// End of user code block custom items

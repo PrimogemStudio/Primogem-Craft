@@ -1,0 +1,13 @@
+{
+  "type": "primogemcraft:structure_feature",
+  "config": {
+    "structure": "primogemcraft:shuijing_dui_0",
+    "random_rotation": true,
+    "ignored_blocks": "minecraft:structure_block",
+    "offset": [
+      0,
+      -2,
+      0
+    ]
+  }
+}
