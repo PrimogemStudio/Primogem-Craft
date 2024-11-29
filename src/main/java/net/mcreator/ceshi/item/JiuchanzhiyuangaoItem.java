@@ -65,7 +65,7 @@ public class JiuchanzhiyuangaoItem extends PickaxeItem {
 	@Override
 	public boolean mineBlock(ItemStack itemstack, Level world, BlockState blockstate, BlockPos pos, LivingEntity entity) {
 		boolean retval = super.mineBlock(itemstack, world, blockstate, pos, entity);
-		JiuchanzhigaosuijidiaoluoProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		JiuchanzhigaosuijidiaoluoProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity, itemstack);
 		return retval;
 	}
 
@@ -98,5 +98,6 @@ public class JiuchanzhiyuangaoItem extends PickaxeItem {
 		list.add(Component.translatable("item.primogemcraft.jiuchanzhiyuangao.description_2"));
 		list.add(Component.translatable("item.primogemcraft.jiuchanzhiyuangao.description_3"));
 		list.add(Component.translatable("item.primogemcraft.jiuchanzhiyuangao.description_4"));
+		list.add(Component.translatable("item.primogemcraft.jiuchanzhiyuangao.description_5"));
 	}
 }
