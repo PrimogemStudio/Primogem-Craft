@@ -18,7 +18,7 @@ public class FrjssxProcedure {
 		if (entity == null)
 			return;
 		ItemStack a = ItemStack.EMPTY;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 20) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.2) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 				a = new ItemStack(PrimogemcraftModItems.HEIJIAN.get());
 				{
