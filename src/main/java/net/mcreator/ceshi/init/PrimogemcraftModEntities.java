@@ -53,9 +53,7 @@ public class PrimogemcraftModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<XiaoheitaEntity>> XIAOHEITA = register("xiaoheita",
 			EntityType.Builder.<XiaoheitaEntity>of(XiaoheitaEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<SWfengraojiangshiEntity>> S_WFENGRAOJIANGSHI = register("s_wfengraojiangshi",
-			EntityType.Builder.<SWfengraojiangshiEntity>of(SWfengraojiangshiEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-
-					.sized(0.6f, 1.8f));
+			EntityType.Builder.<SWfengraojiangshiEntity>of(SWfengraojiangshiEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

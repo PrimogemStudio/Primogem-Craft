@@ -109,6 +109,8 @@ public class SWfengraojiangshiEntity extends Animal {
 		Entity immediatesourceentity = damagesource.getDirectEntity();
 
 		FrjssxProcedure.execute(world, x, y, z, entity);
+		if (damagesource.is(DamageTypes.IN_FIRE))
+			return false;
 		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
 			return false;
 		if (damagesource.is(DamageTypes.CACTUS))
@@ -122,6 +124,11 @@ public class SWfengraojiangshiEntity extends Animal {
 		if (damagesource.is(DamageTypes.WITHER) || damagesource.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public boolean fireImmune() {
+		return true;
 	}
 
 	@Override
