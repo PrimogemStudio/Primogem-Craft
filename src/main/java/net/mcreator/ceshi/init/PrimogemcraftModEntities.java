@@ -18,6 +18,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ceshi.entity.XiaoheitaEntity;
 import net.mcreator.ceshi.entity.XiaodengEntity;
+import net.mcreator.ceshi.entity.SWfengraojiangshiEntity;
 import net.mcreator.ceshi.entity.QqiyuanJinGuangEntity;
 import net.mcreator.ceshi.entity.QqiwuzhanlipinshitiEntity;
 import net.mcreator.ceshi.entity.QQyuanchuzi01Entity;
@@ -51,6 +52,10 @@ public class PrimogemcraftModEntities {
 			EntityType.Builder.<XiaodengEntity>of(XiaodengEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<XiaoheitaEntity>> XIAOHEITA = register("xiaoheita",
 			EntityType.Builder.<XiaoheitaEntity>of(XiaoheitaEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SWfengraojiangshiEntity>> S_WFENGRAOJIANGSHI = register("s_wfengraojiangshi",
+			EntityType.Builder.<SWfengraojiangshiEntity>of(SWfengraojiangshiEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -68,6 +73,7 @@ public class PrimogemcraftModEntities {
 		CaoyuanheshengwuEntity.init(event);
 		XiaodengEntity.init(event);
 		XiaoheitaEntity.init(event);
+		SWfengraojiangshiEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -80,5 +86,6 @@ public class PrimogemcraftModEntities {
 		event.put(CAOYUANHESHENGWU.get(), CaoyuanheshengwuEntity.createAttributes().build());
 		event.put(XIAODENG.get(), XiaodengEntity.createAttributes().build());
 		event.put(XIAOHEITA.get(), XiaoheitaEntity.createAttributes().build());
+		event.put(S_WFENGRAOJIANGSHI.get(), SWfengraojiangshiEntity.createAttributes().build());
 	}
 }

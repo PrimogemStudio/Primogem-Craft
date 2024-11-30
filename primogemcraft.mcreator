@@ -33990,6 +33990,69 @@
           "src/main/resources/data/primogemcraft/loot_table/entities/fengraozlp.json"
         ]
       }
+    },
+    {
+      "name": "SWfengraojiangshi",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_wfengraojiangshi",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/s_wfengraojiangshi_spawn_egg.json",
+          "src/main/resources/data/primogemcraft/neoforge/biome_modifier/s_wfengraojiangshi_biome_modifier.json",
+          "src/main/java/net/mcreator/ceshi/client/renderer/SWfengraojiangshiRenderer.java",
+          "src/main/java/net/mcreator/ceshi/entity/SWfengraojiangshiEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Frjszlp",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frjszlp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/loot_table/entities/s_wfengraojiangshi.json"
+        ]
+      }
+    },
+    {
+      "name": "Swfengraojssx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swfengraojssx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/SwfengraojssxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Frjssx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frjssx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/FrjssxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -34483,6 +34546,9 @@
       "~CUSTOM:Molakuai01",
       "~CUSTOM:Jiuchanzhiyuankuai",
       "~CUSTOM:Yuanshikuangshi"
+    ],
+    "ENTITIES:minecraft:undead": [
+      "~CUSTOM:SWfengraojiangshi"
     ],
     "BLOCKS:minecraft:beacon_base_blocks": [
       "CUSTOM:Shengzhangbifeidakuai",
@@ -38680,6 +38746,7 @@
       "advancements.huanying.title": "原石工艺",
       "advancements.jdwmypszyd.title": "原...",
       "item.primogemcraft.qwjlbhy.description_0": "§7提供少量速度加成",
+      "entity.primogemcraft.s_wfengraojiangshi": "§e丰饶孽物僵尸",
       "item.primogemcraft.qwjlbhy.description_1": "§7§l但没有伤害惩罚",
       "item.primogemcraft.szkjtie_leggings": "§a『生长碧翡』§f铁护腿",
       "block.ceshi.yuanshikuangshi": "Primogem Ore",
@@ -39483,6 +39550,7 @@
       "item.primogemcraft.jlg.description_3": "§7 - 冷却时间20秒",
       "item.primogemcraft.zizaizuantao_boots.description_2": "§7 4x 获得永久跳跃提升效果",
       "item.primogemcraft.zizaizuantao_boots.description_3": "§8提升程度基于套装值",
+      "item.primogemcraft.s_wfengraojiangshi_spawn_egg": "§e丰饶孽物僵尸 Spawn Egg",
       "block.primogemcraft.cshixiutiezhalan": "锈铁栅栏",
       "item.primogemcraft.zizaizuantao_boots.description_4": "§",
       "item.primogemcraft.axzst_boots.description_6": "§9+1 套装值（冰玉）",
@@ -41302,6 +41370,7 @@
       "advancements.huanying.title": "Primogemcraft",
       "advancements.jdwmypszyd.title": "Genshin",
       "item.primogemcraft.qwjlbhy.description_0": "§7提供少量速度加成",
+      "entity.primogemcraft.s_wfengraojiangshi": "§e丰饶孽物僵尸",
       "item.primogemcraft.qwjlbhy.description_1": "§7§l但没有伤害惩罚",
       "item.primogemcraft.szkjtie_leggings": "§a『Nagadus Emerald』§fIron Leggings",
       "block.ceshi.yuanshikuangshi": "Primogem Ore",
@@ -42105,6 +42174,7 @@
       "item.primogemcraft.jlg.description_3": "§7 - 冷却时间20秒",
       "item.primogemcraft.zizaizuantao_boots.description_2": "§7 4x 获得永久跳跃提升效果",
       "item.primogemcraft.zizaizuantao_boots.description_3": "§8level of improvement based on suit amount",
+      "item.primogemcraft.s_wfengraojiangshi_spawn_egg": "§e丰饶孽物僵尸 Spawn Egg",
       "block.primogemcraft.cshixiutiezhalan": "Rust Iron Bar",
       "item.primogemcraft.zizaizuantao_boots.description_4": "§",
       "item.primogemcraft.axzst_boots.description_6": "§9+1 suit amount(shivada jade)）",
@@ -43922,6 +43992,7 @@
       "advancements.huanying.title": "原石工艺",
       "advancements.jdwmypszyd.title": "原...",
       "item.primogemcraft.qwjlbhy.description_0": "§7提供少量速度加成",
+      "entity.primogemcraft.s_wfengraojiangshi": "§e丰饶孽物僵尸",
       "item.primogemcraft.qwjlbhy.description_1": "§7§l但没有伤害惩罚",
       "item.primogemcraft.szkjtie_leggings": "§a『生长碧翡』§f铁护腿",
       "block.ceshi.yuanshikuangshi": "原石矿石",
@@ -44721,6 +44792,7 @@
       "item.primogemcraft.jlg.description_3": "§7 - 冷却时间20秒",
       "item.primogemcraft.zizaizuantao_boots.description_2": "§7 4x 获得永久跳跃提升效果",
       "item.primogemcraft.zizaizuantao_boots.description_3": "§8提升程度基于套装值",
+      "item.primogemcraft.s_wfengraojiangshi_spawn_egg": "§e丰饶孽物僵尸 Spawn Egg",
       "block.primogemcraft.cshixiutiezhalan": "锈铁栅栏",
       "item.primogemcraft.zizaizuantao_boots.description_4": "§",
       "item.primogemcraft.axzst_boots.description_6": "§9+1 套装值（冰玉）",

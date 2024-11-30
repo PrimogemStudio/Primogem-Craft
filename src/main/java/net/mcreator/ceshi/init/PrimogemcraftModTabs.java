@@ -625,6 +625,10 @@ public class PrimogemcraftModTabs {
 			tabData.accept(PrimogemcraftModBlocks.D_16.get().asItem());
 			tabData.accept(PrimogemcraftModBlocks.D_17.get().asItem());
 
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+
+			tabData.accept(PrimogemcraftModItems.S_WFENGRAOJIANGSHI_SPAWN_EGG.get());
+
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 
 			tabData.accept(PrimogemcraftModItems.CESHIYONGWUPIN.get());
