@@ -11,6 +11,6 @@ public class SwfengraojssxProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.FENGRAO, (int) Double.POSITIVE_INFINITY, 4));
+			_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.FENGRAO, (int) Double.POSITIVE_INFINITY, 2));
 	}
 }
