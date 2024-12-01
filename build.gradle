@@ -60,7 +60,13 @@ dependencies {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+    options.encoding = 'UTF-8'
+    dependsOn overwriteJava
+}
+
+tasks.register('overwriteJava', Copy) {
+    from 'overwrite/src/main/java'
+    into 'src/main/java'
 }
 
 apply from: 'mcreator.gradle'

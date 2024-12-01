@@ -1,0 +1,19 @@
+plugins {
+    id 'net.neoforged.moddev' version '1.0.20'
+}
+
+neoForge {
+    version = "21.1.74"
+}
+
+repositories {
+    addAll rootProject.repositories
+}
+
+dependencies {
+    implementation rootProject
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
