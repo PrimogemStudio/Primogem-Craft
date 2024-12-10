@@ -35,7 +35,7 @@ public class GUIhldztan1Procedure {
 		double b = 0;
 		double c = 0;
 		if (!world.isClientSide()) {
-			i1 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).copy();
+			i1 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY);
 			if (Math.random() < i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("qianghua_touzi_gailv")) {
 				b = 0.01;
 				c = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("touzi_fenwei_1");
@@ -47,7 +47,7 @@ public class GUIhldztan1Procedure {
 					_player.displayClientMessage(Component.literal("\u00A7a\u00A7l\u89E6\u53D1\u547D\u8FD0\u8DB3\u8FF9\uFF01\u5C06\u968F\u673A\u51CF\u5C11\u77FF\u77F3\u6D88\u8017\uFF01"), false);
 			}
 		}
-		i1 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).copy();
+		i1 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY);
 		if (!(i1.getItem() == Blocks.AIR.asItem()) && i1.is(ItemTags.create(ResourceLocation.parse("pgc:wuqi")))) {
 			a = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
 			if (a < 29 && (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(6)).getItem() : ItemStack.EMPTY).getItem() == PrimogemcraftModItems.JLZA

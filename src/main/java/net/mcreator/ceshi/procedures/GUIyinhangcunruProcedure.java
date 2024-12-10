@@ -73,7 +73,7 @@ public class GUIyinhangcunruProcedure {
 					return 0;
 				}
 			}.getAmount(3)) * 2;
-			b = new ItemStack(PrimogemcraftModItems.CUNQUPINGZHENG.get()).copy();
+			b = new ItemStack(PrimogemcraftModItems.CUNQUPINGZHENG.get());
 			{
 				final String _tagName = "pgc_cunchu";
 				final double _tagValue = a;
