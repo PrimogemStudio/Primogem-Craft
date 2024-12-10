@@ -84,50 +84,67 @@ public class GUIhualiduanzaotaiMenu extends AbstractContainerMenu implements Sup
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 20, 35) {
+			private final int slot = 0;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 51, 17) {
+			private final int slot = 1;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.TEZHIDIEYINGQI.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 71, 17) {
+			private final int slot = 2;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.TEZHIDIEYINGQI.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 91, 17) {
+			private final int slot = 3;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.TEZHIDIEYINGQI.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 111, 17) {
+			private final int slot = 4;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.TEZHIDIEYINGQI.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 51, 53) {
+			private final int slot = 5;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.MYZJ.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 71, 53) {
+			private final int slot = 6;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.JLZA.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 91, 53) {
+			private final int slot = 7;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.JLLIANG.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 111, 53) {
+			private final int slot = 8;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.JLMO.get() == stack.getItem();

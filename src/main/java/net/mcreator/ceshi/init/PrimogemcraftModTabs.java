@@ -260,9 +260,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.MYZJ.get());
 				tabData.accept(PrimogemcraftModItems.BAITIEKUANG.get());
 				tabData.accept(PrimogemcraftModItems.YSJSJ.get());
-			})
-
-					.build());
+			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> YUANSHIGONGJUXUANXIANGKA = REGISTRY.register("yuanshigongjuxuanxiangka",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.primogemcraft.yuanshigongjuxuanxiangka")).icon(() -> new ItemStack(PrimogemcraftModItems.WUFENGJIAN.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(PrimogemcraftModItems.JIUCHANZHIYUANGAO.get());
@@ -500,9 +498,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.AXQ.get());
 				tabData.accept(PrimogemcraftModItems.AXC.get());
 				tabData.accept(PrimogemcraftModItems.TCLZHAIQUAN.get());
-			})
-
-					.build());
+			}).withTabsBefore(ZHENGHUO.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> YUANSHIFANGKUAIKA = REGISTRY.register("yuanshifangkuaika",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.primogemcraft.yuanshifangkuaika")).icon(() -> new ItemStack(PrimogemcraftModBlocks.YUANSHIKUANGSHI.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(PrimogemcraftModBlocks.YUANSHIKUANGSHI.get().asItem());
@@ -606,14 +602,13 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModBlocks.YSJSHUIJING_0.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.YSJSHUIJING_1.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.YSJSHUIJINGCU.get().asItem());
-			})
-
-					.build());
+			}).withTabsBefore(YUANSHIGONGJUXUANXIANGKA.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-
+		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(PrimogemcraftModItems.CESHIYONGWUPIN.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(PrimogemcraftModBlocks.CESHI_MUCAIBAO_PRESSURE_PLATE.get().asItem());
 			tabData.accept(PrimogemcraftModBlocks.CESHI_MUCAIBAO_BUTTON.get().asItem());
 			tabData.accept(PrimogemcraftModBlocks.CAOMU_25.get().asItem());
@@ -624,19 +619,10 @@ public class PrimogemcraftModTabs {
 			tabData.accept(PrimogemcraftModBlocks.YISHIJIEMUBAN_BUTTON.get().asItem());
 			tabData.accept(PrimogemcraftModBlocks.D_16.get().asItem());
 			tabData.accept(PrimogemcraftModBlocks.D_17.get().asItem());
-
-		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-
-			tabData.accept(PrimogemcraftModItems.S_WFENGRAOJIANGSHI_SPAWN_EGG.get());
-
-		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-
-			tabData.accept(PrimogemcraftModItems.CESHIYONGWUPIN.get());
-
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-
 			tabData.accept(PrimogemcraftModItems.GONGZHUXINGHUA.get());
-
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(PrimogemcraftModItems.S_WFENGRAOJIANGSHI_SPAWN_EGG.get());
 		}
 	}
 }

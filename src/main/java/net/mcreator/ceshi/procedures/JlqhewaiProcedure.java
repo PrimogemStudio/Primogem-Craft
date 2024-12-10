@@ -21,7 +21,7 @@ public class JlqhewaiProcedure {
 			final boolean _tagValue = true;
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
 		}
-		stack = itemstack;
+		stack = itemstack.copy();
 		var attr = CustomAPI.getAttributes(stack);
 		if (stack.getItem() == PrimogemcraftModItems.JSLYZH.get()) {
 			a = 0.24 + 0.06 * stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");

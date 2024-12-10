@@ -109,6 +109,8 @@ public class SWfengraojiangshiEntity extends Animal {
 		Entity immediatesourceentity = damagesource.getDirectEntity();
 
 		FrjssxProcedure.execute(entity);
+		if (damagesource.is(DamageTypes.IN_FIRE))
+			return false;
 		if (damagesource.getDirectEntity() instanceof ThrownPotion || damagesource.getDirectEntity() instanceof AreaEffectCloud || damagesource.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
 			return false;
 		if (damagesource.is(DamageTypes.CACTUS))

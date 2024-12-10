@@ -89,6 +89,8 @@ public class GUIqiwuxuanzeMenu extends AbstractContainerMenu implements Supplier
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 35, 21) {
+			private final int slot = 0;
+
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;
@@ -100,6 +102,8 @@ public class GUIqiwuxuanzeMenu extends AbstractContainerMenu implements Supplier
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 79, 21) {
+			private final int slot = 1;
+
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;
@@ -111,6 +115,8 @@ public class GUIqiwuxuanzeMenu extends AbstractContainerMenu implements Supplier
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 124, 21) {
+			private final int slot = 2;
+
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;

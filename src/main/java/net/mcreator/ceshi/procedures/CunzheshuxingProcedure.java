@@ -22,7 +22,7 @@ public class CunzheshuxingProcedure {
 		double a = 0;
 		boolean b = false;
 		ItemStack a1 = ItemStack.EMPTY;
-		a1 = new ItemStack(PrimogemcraftModItems.CUNQUPINGZHENG.get());
+		a1 = new ItemStack(PrimogemcraftModItems.CUNQUPINGZHENG.get()).copy();
 		a = entity.getPersistentData().getDouble("GUI_yzsp_sl");
 		if (guistate.get("text:cunzhe_shuliang") instanceof EditBox _tf)
 			_tf.setValue((new java.text.DecimalFormat("##.##").format(a)));

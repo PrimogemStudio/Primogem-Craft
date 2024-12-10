@@ -57,7 +57,7 @@ public class GUIhldztan1SHProcedure {
 				_player.containerMenu.broadcastChanges();
 			}
 			a = item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji") + 1;
-			stack = item;
+			stack = item.copy();
 			var attr = CustomAPI.getAttributes(stack);
 			a1 = 30;
 			a2 = 60;

@@ -1,5 +1,5 @@
 {
-  "_fv": 71,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "§c分裂咕咕钟§f[复制品]",
@@ -15,6 +15,7 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
+    "modifiers": [],
     "onExpired": {
       "name": "Flggzxgsx2"
     }

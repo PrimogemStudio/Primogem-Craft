@@ -92,6 +92,8 @@ public class SuijiqiwuMenu extends AbstractContainerMenu implements Supplier<Map
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 30, 53) {
+			private final int slot = 0;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -104,6 +106,8 @@ public class SuijiqiwuMenu extends AbstractContainerMenu implements Supplier<Map
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 83, 53) {
+			private final int slot = 1;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -116,6 +120,8 @@ public class SuijiqiwuMenu extends AbstractContainerMenu implements Supplier<Map
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 136, 53) {
+			private final int slot = 2;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();
@@ -128,12 +134,16 @@ public class SuijiqiwuMenu extends AbstractContainerMenu implements Supplier<Map
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 83, 22) {
+			private final int slot = 3;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.YUZHOUSUIPIAN.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 158, 5) {
+			private final int slot = 4;
+
 			@Override
 			public boolean mayPickup(Player entity) {
 				return false;

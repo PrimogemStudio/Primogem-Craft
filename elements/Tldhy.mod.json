@@ -1,5 +1,5 @@
 {
-  "_fv": 71,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "塔拉毒火焰",
@@ -15,6 +15,7 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
+    "modifiers": [],
     "onExpired": {
       "name": "Tldhy_sx"
     }

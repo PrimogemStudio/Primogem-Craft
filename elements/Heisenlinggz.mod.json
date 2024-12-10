@@ -1,5 +1,5 @@
 {
-  "_fv": 71,
+  "_fv": 73,
   "_type": "potioneffect",
   "definition": {
     "effectName": "黑森林咕咕钟",
@@ -15,6 +15,7 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
+    "modifiers": [],
     "onActiveTick": {
       "name": "Heisenlin_ggz_xiaoguo_sx_0"
     },

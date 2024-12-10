@@ -85,24 +85,32 @@ public class YinhangMenu extends AbstractContainerMenu implements Supplier<Map<I
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 19, 9) {
+			private final int slot = 0;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.YUZHOUSUIPIAN.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 19, 27) {
+			private final int slot = 1;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.YUZHOUSUIPIAN.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 19, 45) {
+			private final int slot = 2;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.YUZHOUSUIPIAN.get() == stack.getItem();
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 19, 63) {
+			private final int slot = 3;
+
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return PrimogemcraftModItems.YUZHOUSUIPIAN.get() == stack.getItem();

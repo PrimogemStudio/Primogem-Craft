@@ -86,6 +86,8 @@ public class GUISJfumoMenu extends AbstractContainerMenu implements Supplier<Map
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 80, 35) {
+			private final int slot = 0;
+
 			@Override
 			public void setChanged() {
 				super.setChanged();

@@ -29,7 +29,7 @@ public class Zsslpsx2Procedure {
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if ((entityiterator instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND) {
-					a = new ItemStack(PrimogemcraftModItems.ZSSP.get());
+					a = new ItemStack(PrimogemcraftModItems.ZSSP.get()).copy();
 					a.setCount(
 							(int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) != 0
 									? Mth.nextInt(RandomSource.create(), 0,
