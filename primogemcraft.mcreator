@@ -30846,12 +30846,7 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/XGsmcwsxProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -30864,12 +30859,7 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/XGsmcwsx0Procedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {

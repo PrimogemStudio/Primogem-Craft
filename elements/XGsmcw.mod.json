@@ -15,7 +15,15 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": true,
-    "modifiers": [],
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MAX_HEALTH"
+        },
+        "amount": -2.0,
+        "operation": "ADD_VALUE"
+      }
+    ],
     "onStarted": {
       "name": "XGsmcwsx"
     },

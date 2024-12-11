@@ -184,7 +184,7 @@ public class PrimogemcraftModMobEffects {
 		} else if (effectInstance.getEffect().is(SMCLZF)) {
 			Smcl_zf_sx_0Procedure.execute(entity.level(), entity);
 		} else if (effectInstance.getEffect().is(X_GSMCW)) {
-			XGsmcwsx0Procedure.execute(entity);
+			XGsmcwsx0Procedure.execute();
 		}
 	}
 }
