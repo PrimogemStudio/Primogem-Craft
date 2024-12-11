@@ -152,7 +152,7 @@ public class PrimogemcraftModMobEffects {
 
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
 		if (effectInstance.getEffect().is(JISHENG)) {
-			Xgjssx0Procedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+			Xgjssx0Procedure.execute();
 		} else if (effectInstance.getEffect().is(GONGJITISHENG)) {
 			Gongjixiangzengyi_shuxingProcedure.execute(entity);
 		} else if (effectInstance.getEffect().is(GUOQU)) {

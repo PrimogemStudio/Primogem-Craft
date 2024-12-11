@@ -15,7 +15,15 @@
     "isCuredByMilk": false,
     "isProtectedByTotem": false,
     "isCuredbyHoney": false,
-    "modifiers": [],
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": 0.2,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ],
     "onStarted": {
       "name": "Xgjssx"
     },

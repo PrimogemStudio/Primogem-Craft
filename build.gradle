@@ -55,7 +55,7 @@ repositories {
  * compileOnly = false 
  */
 dependencies {
-    compileOnly "maven.modrinth:genshincraft:1.6.0"
+    implementation "maven.modrinth:genshincraft:1.6.0"
     api "me.shedaniel:RoughlyEnoughItems-neoforge:16.0.788"
 }
 
