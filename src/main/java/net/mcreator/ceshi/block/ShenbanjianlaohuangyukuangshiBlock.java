@@ -20,7 +20,7 @@ import java.util.List;
 
 public class ShenbanjianlaohuangyukuangshiBlock extends Block {
 	public ShenbanjianlaohuangyukuangshiBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(30f, 1200f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(30f, 5f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -32,7 +32,7 @@ public class DijingqinjingkuangshiBlock extends FallingBlock {
 	}
 
 	public DijingqinjingkuangshiBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(2f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(2f).requiresCorrectToolForDrops());
 	}
 
 	@Override

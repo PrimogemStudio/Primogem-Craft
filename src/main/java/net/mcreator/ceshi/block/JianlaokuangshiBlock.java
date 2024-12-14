@@ -20,7 +20,7 @@ import java.util.List;
 
 public class JianlaokuangshiBlock extends Block {
 	public JianlaokuangshiBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(4f, 15f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(4f, 5f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -33,7 +33,7 @@ public class YsjshuijingcuBlock extends Block {
 	public static final EnumProperty<AttachFace> FACE = FaceAttachedHorizontalDirectionalBlock.FACE;
 
 	public YsjshuijingcuBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST_CLUSTER).strength(5f, 10f).lightLevel(s -> 3).requiresCorrectToolForDrops().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
+		super(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST_CLUSTER).strength(5f).lightLevel(s -> 3).requiresCorrectToolForDrops().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(FACE, AttachFace.WALL));
 	}

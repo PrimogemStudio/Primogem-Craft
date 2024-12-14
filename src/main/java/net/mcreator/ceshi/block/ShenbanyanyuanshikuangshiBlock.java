@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class ShenbanyanyuanshikuangshiBlock extends Block {
 	public ShenbanyanyuanshikuangshiBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.POLISHED_DEEPSLATE).strength(5f, 10f).lightLevel(s -> 1).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.POLISHED_DEEPSLATE).strength(5f).lightLevel(s -> 1).requiresCorrectToolForDrops());
 	}
 
 	@Override

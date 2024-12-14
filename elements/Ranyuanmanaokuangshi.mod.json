@@ -41,7 +41,7 @@
       ]
     },
     "hardness": 1.0,
-    "resistance": 5.0,
+    "resistance": 2.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [

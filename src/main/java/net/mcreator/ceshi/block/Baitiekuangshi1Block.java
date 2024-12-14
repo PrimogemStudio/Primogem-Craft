@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class Baitiekuangshi1Block extends Block {
 	public Baitiekuangshi1Block() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).strength(4f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).strength(4f, 5f).requiresCorrectToolForDrops());
 	}
 
 	@Override

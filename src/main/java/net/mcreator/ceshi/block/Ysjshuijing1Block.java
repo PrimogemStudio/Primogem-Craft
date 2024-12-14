@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class Ysjshuijing1Block extends Block {
 	public Ysjshuijing1Block() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST).strength(7f, 10f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST).strength(7f, 5f).requiresCorrectToolForDrops());
 	}
 
 	@Override

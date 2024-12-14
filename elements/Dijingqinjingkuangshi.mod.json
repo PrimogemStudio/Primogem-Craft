@@ -41,7 +41,7 @@
       ]
     },
     "hardness": 2.0,
-    "resistance": 10.0,
+    "resistance": 2.0,
     "hasGravity": true,
     "isWaterloggable": false,
     "creativeTabs": [
@@ -61,7 +61,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "EARTH"
+      "value": "NONE"
     },
     "tickRate": 0,
     "tickRandomly": false,

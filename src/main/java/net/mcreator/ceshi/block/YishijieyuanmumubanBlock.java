@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class YishijieyuanmumubanBlock extends Block {
 	public YishijieyuanmumubanBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f));
 	}
 
 	@Override

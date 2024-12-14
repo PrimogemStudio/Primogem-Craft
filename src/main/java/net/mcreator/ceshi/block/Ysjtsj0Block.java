@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class Ysjtsj0Block extends Block {
 	public Ysjtsj0Block() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(3f, 10f).lightLevel(s -> 1).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(3f, 5f).lightLevel(s -> 1).requiresCorrectToolForDrops());
 	}
 
 	@Override
