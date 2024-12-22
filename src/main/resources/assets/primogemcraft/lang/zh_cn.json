@@ -2109,7 +2109,7 @@
   "item.primogemcraft.qwsmcd": "§5§l『奇物』§e神秘磁袋",
   "item.primogemcraft.ruzst_chestplate.description_2": "§7 4x 对攻击你的目标施加熔岩伤害和燃烧",
   "item.primogemcraft.zziyousongshiduanpian": "§a自在松石 断片",
-  "enchantment.primogemcraft.ceshifumo_01.desc": "§6物品损坏或即将损坏时，恢复其附魔等级*20%耐久度",
+  "enchantment.primogemcraft.ceshifumo_01.desc": "§6物品损坏或即将损坏时，恢复其附魔等级*20%耐久度，恢复后降级",
   "item.primogemcraft.ruzst_chestplate.description_3": "§8伤害量\u003d10*套装数值*%玩家当前生命值",
   "item.primogemcraft.ruzst_chestplate.description_0": "§6套装效果：",
   "item.primogemcraft.ruzst_chestplate.description_1": "§7 2x 提供永久抗火效果",
