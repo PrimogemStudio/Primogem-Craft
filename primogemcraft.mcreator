@@ -34646,9 +34646,6 @@
       "CUSTOM:Qwclhy",
       "CUSTOM:Qwjlbhy"
     ],
-    "ENTITIES:minecraft:undead": [
-      "~CUSTOM:SWfengraojiangshi"
-    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Ysjshuijingcu",
       "~CUSTOM:Ysjshuijing1",
@@ -34708,23 +34705,8 @@
       "~CUSTOM:Jiuchanzhiyuankuai",
       "~CUSTOM:Yuanshikuangshi"
     ],
-    "ITEMS:c:curio/normal/b": [
-      "CUSTOM:Wawanxiangwuchangtou",
-      "CUSTOM:Cebuzhunxia",
-      "CUSTOM:Pengkeluodejingshen",
-      "CUSTOM:Yiyimuguoshi",
-      "CUSTOM:Wanshinang",
-      "CUSTOM:Qwkwzj",
-      "CUSTOM:Qwtldhy",
-      "CUSTOM:Qwhdlz",
-      "CUSTOM:Jlbj",
-      "CUSTOM:Qwybtzdypj",
-      "CUSTOM:Qwxyzq",
-      "CUSTOM:Qwxbzsq",
-      "CUSTOM:Xiangdanganlao",
-      "CUSTOM:Qiwuchongwang",
-      "CUSTOM:Qwlbtdgcl",
-      "CUSTOM:Qwsmcl"
+    "ENTITIES:minecraft:undead": [
+      "~CUSTOM:SWfengraojiangshi"
     ],
     "BLOCKS:minecraft:beacon_base_blocks": [
       "CUSTOM:Shengzhangbifeidakuai",
@@ -34748,6 +34730,24 @@
       "CUSTOM:Ryjsk",
       "CUSTOM:Lajsk",
       "CUSTOM:Jdyk"
+    ],
+    "ITEMS:c:curio/normal/b": [
+      "CUSTOM:Wawanxiangwuchangtou",
+      "CUSTOM:Cebuzhunxia",
+      "CUSTOM:Pengkeluodejingshen",
+      "CUSTOM:Yiyimuguoshi",
+      "CUSTOM:Wanshinang",
+      "CUSTOM:Qwkwzj",
+      "CUSTOM:Qwtldhy",
+      "CUSTOM:Qwhdlz",
+      "CUSTOM:Jlbj",
+      "CUSTOM:Qwybtzdypj",
+      "CUSTOM:Qwxyzq",
+      "CUSTOM:Qwxbzsq",
+      "CUSTOM:Xiangdanganlao",
+      "CUSTOM:Qiwuchongwang",
+      "CUSTOM:Qwlbtdgcl",
+      "CUSTOM:Qwsmcl"
     ],
     "ITEMS:c:curio/normal/a": [
       "CUSTOM:Yiyinhedaletou",
@@ -34878,6 +34878,14 @@
       "CUSTOM:Axhjt.legs",
       "CUSTOM:Axhjt.boots"
     ],
+    "ITEMS:pgc:yszb": [
+      "CUSTOM:Yuanshijian",
+      "CUSTOM:Yuanshigao",
+      "CUSTOM:Yuanshifu",
+      "CUSTOM:Yuanshiqiao",
+      "CUSTOM:Yuanshichutou",
+      "CUSTOM:Qgdysj"
+    ],
     "ITEMS:c:hejin_2": [
       "CUSTOM:Zizizaihejintao.legs",
       "CUSTOM:Jlkjhj.legs",
@@ -34886,14 +34894,6 @@
       "CUSTOM:Djhjt.legs",
       "CUSTOM:Ryhjt.legs",
       "CUSTOM:Axhjt.legs"
-    ],
-    "ITEMS:pgc:yszb": [
-      "CUSTOM:Yuanshijian",
-      "CUSTOM:Yuanshigao",
-      "CUSTOM:Yuanshifu",
-      "CUSTOM:Yuanshiqiao",
-      "CUSTOM:Yuanshichutou",
-      "CUSTOM:Qgdysj"
     ],
     "ITEMS:c:hejin_3": [
       "CUSTOM:Zizizaihejintao.boots",
@@ -36913,6 +36913,7 @@
       "Cllk",
       "Tclwqcjq",
       "Tcllk",
+      "Tclzhaiquan",
       "Jhsb0",
       "Jhsb1",
       "Jhsb2",
@@ -37056,8 +37057,7 @@
       "Yxaxg",
       "Axf",
       "Axq",
-      "Axc",
-      "Tclzhaiquan"
+      "Axc"
     ],
     "CUSTOM:Yuanshifangkuaika": [
       "Yuanshikuangshi",
@@ -37746,7 +37746,7 @@
       "item.primogemcraft.zstkj_helmet.description_0": "§6套装效果：",
       "item.primogemcraft.zstkj_helmet.description_3": "§",
       "item.primogemcraft.zstkj_helmet.description_2": "§8level of improvement based on suit amount",
-      "item.primogemcraft.tclzhaiquan.description_1": "§7使用§5特处理良矿§b（祈愿武器用）§7得到",
+      "item.primogemcraft.tclzhaiquan.description_1": "§7使用§b祈愿武器用良矿§7分解高阶武器得到",
       "item.primogemcraft.zstkj_helmet.description_4": "§9+0.5 套装值（紫金）",
       "item.primogemcraft.tclzhaiquan.description_0": "§7用于合成任意祈愿武器",
       "item.primogemcraft.ssanbamiantou": "§5『Curio』§dShiny Trapezohedron Die",
@@ -37836,7 +37836,7 @@
       "effect.qiqiaodaimaxiufu": "§aFixed§fCode",
       "item.primogemcraft.axzsj": "§b『Shivada Jade』Diamond Sword",
       "item.primogemcraft.qhmbmlys_01.description_0": "§7元素晶体升级",
-      "item.primogemcraft.tclzhaiquan": "§9特处理债券",
+      "item.primogemcraft.tclzhaiquan": "§d流光余晖",
       "item.primogemcraft.zizaizuantao_chestplate": "§a『Vayuda Turquoise』 §bDiamond Chestplate",
       "gui.primogemcraft.ceshishijianxuanzejiemian.label_cuo_wu_dai_ma_zhuan_hua": "Error Code Curios Transformation",
       "item.primogemcraft.ljtg_01": "Shield of Shiny Will",
@@ -40370,7 +40370,7 @@
       "item.primogemcraft.zstkj_helmet.description_0": "§6套装效果：",
       "item.primogemcraft.zstkj_helmet.description_3": "§",
       "item.primogemcraft.zstkj_helmet.description_2": "§8level of improvement based on suit amount",
-      "item.primogemcraft.tclzhaiquan.description_1": "§7使用§5特处理良矿§b（祈愿武器用）§7得到",
+      "item.primogemcraft.tclzhaiquan.description_1": "§7使用§b祈愿武器用良矿§7分解高阶武器得到",
       "item.primogemcraft.zstkj_helmet.description_4": "§9+0.5 套装值（紫金）",
       "item.primogemcraft.tclzhaiquan.description_0": "§7用于合成任意祈愿武器",
       "item.primogemcraft.ssanbamiantou": "§5『Curio』§dShiny Trapezohedron Die",
@@ -40460,7 +40460,7 @@
       "effect.qiqiaodaimaxiufu": "§aFixed§fCode",
       "item.primogemcraft.axzsj": "§b『Shivada Jade』Diamond Sword",
       "item.primogemcraft.qhmbmlys_01.description_0": "§7元素晶体升级",
-      "item.primogemcraft.tclzhaiquan": "§9特处理债券",
+      "item.primogemcraft.tclzhaiquan": "§d流光余晖",
       "item.primogemcraft.zizaizuantao_chestplate": "§a『Vayuda Turquoise』 §bDiamond Chestplate",
       "gui.primogemcraft.ceshishijianxuanzejiemian.label_cuo_wu_dai_ma_zhuan_hua": "Error Code Curios Transformation",
       "item.primogemcraft.ljtg_01": "Shield of Shiny Will",
@@ -42992,7 +42992,7 @@
       "item.primogemcraft.zstkj_helmet.description_0": "§6套装效果：",
       "item.primogemcraft.zstkj_helmet.description_3": "§",
       "item.primogemcraft.zstkj_helmet.description_2": "§8提升程度基于套装值",
-      "item.primogemcraft.tclzhaiquan.description_1": "§7使用§5特处理良矿§b（祈愿武器用）§7得到",
+      "item.primogemcraft.tclzhaiquan.description_1": "§7使用§b祈愿武器用良矿§7分解高阶武器得到",
       "item.primogemcraft.zstkj_helmet.description_4": "§9+0.5 套装值（紫金）",
       "item.primogemcraft.tclzhaiquan.description_0": "§7用于合成任意祈愿武器",
       "item.primogemcraft.ssanbamiantou": "§5『奇物』§d闪耀的偏方三八面骰",
@@ -43082,7 +43082,7 @@
       "effect.qiqiaodaimaxiufu": "§a已修复§f代码",
       "item.primogemcraft.axzsj": "§b『哀叙冰玉』钻石剑",
       "item.primogemcraft.qhmbmlys_01.description_0": "§7元素晶体升级",
-      "item.primogemcraft.tclzhaiquan": "§9特处理债券",
+      "item.primogemcraft.tclzhaiquan": "§d流光余晖",
       "item.primogemcraft.zizaizuantao_chestplate": "§a『自在松石』 §b钻石胸甲",
       "gui.primogemcraft.ceshishijianxuanzejiemian.label_cuo_wu_dai_ma_zhuan_hua": "错误代码转化",
       "item.primogemcraft.ljtg_01": "光耀意志之盾",

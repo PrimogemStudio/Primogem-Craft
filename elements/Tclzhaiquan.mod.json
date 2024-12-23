@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§9特处理债券",
+    "name": "§d流光余晖",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -31,7 +31,7 @@
     "specialInformation": {
       "fixedValue": [
         "§7用于合成任意祈愿武器",
-        "§7使用§5特处理良矿§b（祈愿武器用）§7得到"
+        "§7使用§b祈愿武器用良矿§7分解高阶武器得到"
       ]
     },
     "glowCondition": {

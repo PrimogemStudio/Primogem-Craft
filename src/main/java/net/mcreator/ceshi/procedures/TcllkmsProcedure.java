@@ -17,6 +17,6 @@ public class TcllkmsProcedure {
 						? "\n" + "\u00A7c\u8FD4\u8FD8\u00A7e"
 								+ new java.text.DecimalFormat("##.##\u672C\u00A7c\u706B\u7130\u9644\u52A0 II").format(Math.floor(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("fu_mo") / 2))
 						: "")
-				+ (itemstack.getItem() == PrimogemcraftModItems.TCLLK.get() ? "\n" + "\u00A7a\u8FD4\u8FD8\u00A7e1\u4E2A\u00A7a\u7279\u5904\u7406\u503A\u5238" : "");
+				+ (itemstack.getItem() == PrimogemcraftModItems.TCLLK.get() ? "\n" + "\u00A7a\u8FD4\u8FD8\u00A7e1\u4E2A\u00A7d\u6D41\u5149\u4F59\u6656" : "");
 	}
 }
