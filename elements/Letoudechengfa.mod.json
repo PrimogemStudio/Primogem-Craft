@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "乐透的惩罚",
-    "icon": "zhen_yin_he_da_le_tou_.png",
+    "icon": "zhen_yin_he_da_le_tou_",
     "color": {
       "value": -39169,
       "falpha": 0.0
@@ -15,9 +15,20 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
-    "modifiers": [],
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MAX_HEALTH"
+        },
+        "amount": -100.0,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ],
     "onActiveTick": {
       "name": "ZLetouchengfahenshuxing"
+    },
+    "onExpired": {
+      "name": "Ltcgxgsx"
     }
   }
 }

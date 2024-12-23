@@ -74,7 +74,7 @@ public class XxiaoguanziletoshuxingProcedure {
 							});
 						}
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.LETOUDECHENGFA, 20000000, 0));
+							_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.LETOUDECHENGFA, (int) Double.POSITIVE_INFINITY, 0));
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal("\u00A75\u7CFB\u7EDF\uFF1A\u300E\u771F\u300F\u00A7b\u94F6\u6CB3\u5927\u4E50\u900F\u00A7c\u5DF2\u635F\u574F"), false);
 						if (world instanceof Level _level) {

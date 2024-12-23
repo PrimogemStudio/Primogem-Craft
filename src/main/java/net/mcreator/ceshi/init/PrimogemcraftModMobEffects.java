@@ -23,6 +23,7 @@ import net.mcreator.ceshi.procedures.WxntdmjxgsxProcedure;
 import net.mcreator.ceshi.procedures.Tldhy_sxProcedure;
 import net.mcreator.ceshi.procedures.Smcl_zf_sx_0Procedure;
 import net.mcreator.ceshi.procedures.QylqsxProcedure;
+import net.mcreator.ceshi.procedures.LtcgxgsxProcedure;
 import net.mcreator.ceshi.procedures.Hslggz_xiaoguo_sx_2Procedure;
 import net.mcreator.ceshi.procedures.Heisenlin_ggz_xiaoguo_sx_1Procedure;
 import net.mcreator.ceshi.procedures.Guoqu_jieshuProcedure;
@@ -155,6 +156,8 @@ public class PrimogemcraftModMobEffects {
 			Xgjssx0Procedure.execute();
 		} else if (effectInstance.getEffect().is(GONGJITISHENG)) {
 			Gongjixiangzengyi_shuxingProcedure.execute(entity);
+		} else if (effectInstance.getEffect().is(LETOUDECHENGFA)) {
+			LtcgxgsxProcedure.execute(entity.level(), entity);
 		} else if (effectInstance.getEffect().is(GUOQU)) {
 			Guoqu_jieshuProcedure.execute(entity.level(), entity);
 		} else if (effectInstance.getEffect().is(FENGRAO)) {
