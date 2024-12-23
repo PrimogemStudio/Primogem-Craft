@@ -19,7 +19,7 @@ public class LetoudechengfaMobEffect extends MobEffect {
 
 	@Override
 	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
-		ZLetouchengfahenshuxingProcedure.execute(entity);
+		ZLetouchengfahenshuxingProcedure.execute();
 		return super.applyEffectTick(entity, amplifier);
 	}
 }

@@ -3923,12 +3923,7 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/ZLetouchengfahenshuxingProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -37952,7 +37947,7 @@
       "advancements.jindushilianchou.title": " Wish Ten Times！！！",
       "block.primogemcraft.yiyishijieyuanmubanzhuan": "Half of The Another World Wood",
       "gui.primogemcraft.taozhuangchakan.label_tao_zhuang_shu_zhi_jian_ce": "套装数值检测",
-      "effect.primogemcraft.letoudechengfa": "Punishment Of Lotto",
+      "effect.primogemcraft.letoudechengfa": "乐透的惩罚",
       "item.primogemcraft.jijiuchanzhiyuan": "JiInterwined Fate",
       "item.primogemcraft.quxgjibing.description_1": "§7前生命值",
       "item.primogemcraft.qwlhs.description_0": "§6§l获得随机 S 级奇物",

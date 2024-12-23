@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "primogemcraft:item/shuijingkuai"
+    "layer0": "primogemcraft:item/ysjsj_fk"
   },
   "render_type": "translucent"
 }

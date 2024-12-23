@@ -14,7 +14,7 @@
     "enablePitch": true,
     "emissiveRendering": true,
     "displayFluidOverlay": true,
-    "itemTexture": "shuijingkuai",
+    "itemTexture": "ysjsj_fk",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": true,
