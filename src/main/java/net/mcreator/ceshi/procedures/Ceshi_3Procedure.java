@@ -4,7 +4,10 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+
+import net.mcreator.ceshi.PrimogemcraftMod;
 
 public class Ceshi_3Procedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -12,23 +15,8 @@ public class Ceshi_3Procedure {
 			return;
 		double ceshi_01 = 0;
 		double a = 0;
-		if (entity.onGround()) {
-			if (entity.isShiftKeyDown()) {
-				if (world instanceof ServerLevel _level) {
-					(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).hurtAndBreak(10, _level, null, _stkprov -> {
-					});
-				}
-			} else {
-				if (world instanceof ServerLevel _level) {
-					(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
-					});
-				}
-			}
-		} else {
-			if (world instanceof ServerLevel _level) {
-				(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).hurtAndBreak(100, _level, null, _stkprov -> {
-				});
-			}
-		}
+		ceshi_01 = Mth.nextInt(RandomSource.create(), 1, 100);
+		WuqidengjiHSProcedure.execute(world, entity, entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY, ceshi_01);
+		PrimogemcraftMod.LOGGER.info(ceshi_01);
 	}
 }

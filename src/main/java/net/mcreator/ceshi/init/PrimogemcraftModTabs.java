@@ -290,6 +290,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.CLLK.get());
 				tabData.accept(PrimogemcraftModItems.TCLWQCJQ.get());
 				tabData.accept(PrimogemcraftModItems.TCLLK.get());
+				tabData.accept(PrimogemcraftModItems.TCLZHAIQUAN.get());
 				tabData.accept(PrimogemcraftModItems.JHSB_0.get());
 				tabData.accept(PrimogemcraftModItems.JHSB_1.get());
 				tabData.accept(PrimogemcraftModItems.JHSB_2.get());
@@ -497,7 +498,6 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.AXF.get());
 				tabData.accept(PrimogemcraftModItems.AXQ.get());
 				tabData.accept(PrimogemcraftModItems.AXC.get());
-				tabData.accept(PrimogemcraftModItems.TCLZHAIQUAN.get());
 			}).withTabsBefore(ZHENGHUO.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> YUANSHIFANGKUAIKA = REGISTRY.register("yuanshifangkuaika",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.primogemcraft.yuanshifangkuaika")).icon(() -> new ItemStack(PrimogemcraftModBlocks.YUANSHIKUANGSHI.get())).displayItems((parameters, tabData) -> {

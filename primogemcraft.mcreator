@@ -34211,6 +34211,64 @@
           }
         ]
       }
+    },
+    {
+      "name": "WuqidengjiHS",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wuqidengji_hs",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/WuqidengjiHSProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "item",
+            "type": "itemstack"
+          },
+          {
+            "name": "zhi",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wuqishuaxin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wuqishuaxin",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/WuqishuaxinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "item",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
