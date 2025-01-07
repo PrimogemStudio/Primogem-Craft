@@ -10,6 +10,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.component.DataComponents;
 
+import net.mcreator.ceshi.init.PrimogemcraftModGameRules;
+
 public class WuqidengjiHSProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack item, double xian_zhi, double zhi) {
 		if (entity == null)
@@ -18,7 +20,7 @@ public class WuqidengjiHSProcedure {
 		double a = 0;
 		double b = 0;
 		if (item.is(ItemTags.create(ResourceLocation.parse("pgc:wuqi")))) {
-			a = xian_zhi - 1;
+			a = xian_zhi == Double.POSITIVE_INFINITY ? (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEWUQISHANGXIAN)) : xian_zhi - 1;
 			i1 = item;
 			b = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
 			if (b >= a) {

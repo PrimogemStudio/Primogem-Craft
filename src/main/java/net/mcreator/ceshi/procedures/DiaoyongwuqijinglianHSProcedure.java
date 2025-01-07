@@ -13,6 +13,11 @@ public class DiaoyongwuqijinglianHSProcedure {
 			final double _tagValue = (a.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian") + zhi);
 			CustomData.update(DataComponents.CUSTOM_DATA, a, tag -> tag.putDouble(_tagName, _tagValue));
 		}
+		{
+			final String _tagName = "jing_lian_shua_xin";
+			final boolean _tagValue = false;
+			CustomData.update(DataComponents.CUSTOM_DATA, a, tag -> tag.putBoolean(_tagName, _tagValue));
+		}
 		if (a.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian") >= 4) {
 			{
 				final String _tagName = "jing_lian";
