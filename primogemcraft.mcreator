@@ -34219,7 +34219,6 @@
       "locked_code": false,
       "registry_name": "wuqidengji_hs",
       "metadata": {
-        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/WuqidengjiHSProcedure.java"
         ],
@@ -34231,6 +34230,10 @@
           {
             "name": "item",
             "type": "itemstack"
+          },
+          {
+            "name": "xian_zhi",
+            "type": "number"
           },
           {
             "name": "zhi",
@@ -39069,8 +39072,10 @@
       "item.primogemcraft.qwkwzg.description_0": "§6与异木果实效果一致，但",
       "block.primogemcraft.aixubingyukuangshi": "§bShivada Jade Ore",
       "item.primogemcraft.qwflb": "§5§l『奇物』§f分§e分§f裂§e裂§f币§e币",
+      "dengji_hs_2": "§c提供的物品非祈愿武器！",
       "effect.primogemcraft.jiazuxianzhi": "Family Ties Cooling down",
       "item.primogemcraft.zsf.description_3": "§a[SHIFT+左键]调整效果延迟",
+      "dengji_hs_0": "§c提供的武器属性大于加成范围",
       "item.primogemcraft.shengjijlzswp": "§b『Diamond Upgrade』§6Prithiva Topaz",
       "block.primogemcraft.molakuai_01": "Mora Blcok",
       "item.primogemcraft.dayingxiongdejingyan.description_0": "§6store§dEXP§6of",
@@ -41693,8 +41698,10 @@
       "item.primogemcraft.qwkwzg.description_0": "§6与异木果实效果一致，但",
       "block.primogemcraft.aixubingyukuangshi": "§bShivada Jade Ore",
       "item.primogemcraft.qwflb": "§5§l『奇物』§f分§e分§f裂§e裂§f币§e币",
+      "dengji_hs_2": "§c提供的物品非祈愿武器！",
       "effect.primogemcraft.jiazuxianzhi": "Family Ties Cooling down",
       "item.primogemcraft.zsf.description_3": "§a[SHIFT+左键]调整效果延迟",
+      "dengji_hs_0": "§c提供的武器属性大于加成范围",
       "item.primogemcraft.shengjijlzswp": "§b『Diamond Upgrade』§6Prithiva Topaz",
       "block.primogemcraft.molakuai_01": "Mora Blcok",
       "item.primogemcraft.dayingxiongdejingyan.description_0": "§6store§dEXP§6of",
@@ -44313,8 +44320,10 @@
       "item.primogemcraft.qwkwzg.description_0": "§6与异木果实效果一致，但",
       "block.primogemcraft.aixubingyukuangshi": "§b哀叙冰玉 矿石",
       "item.primogemcraft.qwflb": "§5§l『奇物』§f分§e分§f裂§e裂§f币§e币",
+      "dengji_hs_2": "§c提供的物品非祈愿武器！",
       "effect.primogemcraft.jiazuxianzhi": "家族缘结冷却",
       "item.primogemcraft.zsf.description_3": "§a[SHIFT+左键]调整效果延迟",
+      "dengji_hs_0": "§c提供的武器属性大于加成范围",
       "item.primogemcraft.shengjijlzswp": "§b『钻石升级』§6坚牢黄玉",
       "block.primogemcraft.molakuai_01": "§e摩拉块",
       "item.primogemcraft.dayingxiongdejingyan.description_0": "§6可以储存§d30§6经验等级",

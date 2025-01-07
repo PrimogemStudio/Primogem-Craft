@@ -16,7 +16,7 @@ public class Ceshi_3Procedure {
 		double ceshi_01 = 0;
 		double a = 0;
 		ceshi_01 = Mth.nextInt(RandomSource.create(), 1, 100);
-		WuqidengjiHSProcedure.execute(world, entity, entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY, ceshi_01);
+		WuqidengjiHSProcedure.execute(world, entity, entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY, 30, ceshi_01);
 		PrimogemcraftMod.LOGGER.info(ceshi_01);
 	}
 }
