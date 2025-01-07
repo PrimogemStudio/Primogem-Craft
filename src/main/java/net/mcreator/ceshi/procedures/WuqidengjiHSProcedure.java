@@ -13,9 +13,9 @@ import net.minecraft.core.component.DataComponents;
 import net.mcreator.ceshi.init.PrimogemcraftModGameRules;
 
 public class WuqidengjiHSProcedure {
-	public static void execute(LevelAccessor world, Entity entity, ItemStack item, double xian_zhi, double zhi) {
+	public static boolean execute(LevelAccessor world, Entity entity, ItemStack item, double xian_zhi, double zhi) {
 		if (entity == null)
-			return;
+			return false;
 		ItemStack i1 = ItemStack.EMPTY;
 		double a = 0;
 		double b = 0;
@@ -26,6 +26,7 @@ public class WuqidengjiHSProcedure {
 			if (b >= a) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal((Component.translatable("dengji_hs_0").getString())), false);
+				return false;
 			} else {
 				{
 					final String _tagName = "deng_ji";
@@ -40,10 +41,12 @@ public class WuqidengjiHSProcedure {
 					}
 				}
 				WuqishuaxinProcedure.execute(world, entity, i1);
+				return true;
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((Component.translatable("dengji_hs_2").getString())), false);
 		}
+		return false;
 	}
 }

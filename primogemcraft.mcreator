@@ -34219,6 +34219,7 @@
       "locked_code": false,
       "registry_name": "wuqidengji_hs",
       "metadata": {
+        "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/WuqidengjiHSProcedure.java"
         ],
@@ -34293,6 +34294,71 @@
             "type": "number"
           }
         ]
+      }
+    },
+    {
+      "name": "Qwsjgzq",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwsjgzq",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwsjgzq.json",
+          "src/main/java/net/mcreator/ceshi/item/QwsjgzqItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Sjgzqsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sjgzqsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/SjgzqsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sjgzqms",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sjgzqms",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/SjgzqmsProcedure.java"
+        ],
+        "dependencies": []
       }
     }
   ],
@@ -34841,7 +34907,8 @@
       "CUSTOM:Qwtcjlbptbg",
       "CUSTOM:Quxgjibing",
       "CUSTOM:Xingjidaletou",
-      "CUSTOM:Ssanbamiantou"
+      "CUSTOM:Ssanbamiantou",
+      "CUSTOM:Qwsjgzq"
     ],
     "ITEMS:c:yssx_0": [
       "CUSTOM:Ziziyousongshisuixie",
@@ -36969,7 +37036,8 @@
       "Qwyznj",
       "Myzj",
       "Baitiekuang",
-      "Ysjsj"
+      "Ysjsj",
+      "Qwsjgzq"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -39653,6 +39721,7 @@
       "item.primogemcraft.gongsideguguzhong.description_1": "§e当前经验值！",
       "gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian1": "§c该物品不满足附魔条件！",
       "item.primogemcraft.gongsideguguzhong.description_0": "§e拾取该奇物后移除2.5%~75%的",
+      "item.primogemcraft.qwsjgzq": "§5§l『奇物』§f三角滚奏器",
       "item.primogemcraft.ruzst_helmet.description_6": "§9+1 套装值（玛瑙）",
       "gui.primogemcraft.bwdyinhang.label_ji_bei_lu_yu_zhou_sui_pian": "机倍率宇宙碎片！",
       "advancements.djxjhp.descr": "获得奇物：星际大乐透",
@@ -42279,6 +42348,7 @@
       "item.primogemcraft.gongsideguguzhong.description_1": "§e当前经验值！",
       "gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian1": "§c该物品不满足附魔条件！",
       "item.primogemcraft.gongsideguguzhong.description_0": "§e拾取该奇物后移除2.5%~75%的",
+      "item.primogemcraft.qwsjgzq": "§5§l『奇物』§f三角滚奏器",
       "item.primogemcraft.ruzst_helmet.description_6": "§9+1 套装值（玛瑙）",
       "gui.primogemcraft.bwdyinhang.label_ji_bei_lu_yu_zhou_sui_pian": "机倍率宇宙碎片！",
       "advancements.djxjhp.descr": "获得奇物：星际大乐透",
@@ -44899,6 +44969,7 @@
       "item.primogemcraft.gongsideguguzhong.description_1": "§e当前经验值！",
       "gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian1": "§c该物品不满足附魔条件！",
       "item.primogemcraft.gongsideguguzhong.description_0": "§e拾取该奇物后移除2.5%~75%的",
+      "item.primogemcraft.qwsjgzq": "§5§l『奇物』§f三角滚奏器",
       "item.primogemcraft.ruzst_helmet.description_6": "§9+1 套装值（玛瑙）",
       "gui.primogemcraft.bwdyinhang.label_ji_bei_lu_yu_zhou_sui_pian": "机倍率宇宙碎片！",
       "advancements.djxjhp.descr": "获得奇物：星际大乐透",

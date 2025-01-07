@@ -560,7 +560,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Qwsmcl"
+              "value": "CUSTOM:Qwsjgzq"
             },
             "weight": 3,
             "minCount": 1,
@@ -588,11 +588,11 @@
           {
             "type": "item",
             "item": {
-              "value": "Blocks.AIR"
+              "value": "Items.WIND_CHARGE"
             },
-            "weight": 1500,
-            "minCount": 0,
-            "maxCount": 0,
+            "weight": 1200,
+            "minCount": 1,
+            "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -603,7 +603,7 @@
       },
       {
         "minrolls": 0,
-        "maxrolls": 2,
+        "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
         "hasbonusrolls": false,
@@ -863,7 +863,7 @@
           {
             "type": "item",
             "item": {
-              "value": "Blocks.AIR"
+              "value": "Items.APPLE"
             },
             "weight": 150,
             "minCount": 1,
