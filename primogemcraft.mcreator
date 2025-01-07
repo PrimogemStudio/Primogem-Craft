@@ -34269,6 +34269,28 @@
           }
         ]
       }
+    },
+    {
+      "name": "DiaoyongwuqijinglianHS",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diaoyongwuqijinglian_hs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/DiaoyongwuqijinglianHSProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "item",
+            "type": "itemstack"
+          },
+          {
+            "name": "zhi",
+            "type": "number"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
