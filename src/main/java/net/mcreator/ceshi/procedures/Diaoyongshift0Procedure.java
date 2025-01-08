@@ -9,6 +9,6 @@ public class Diaoyongshift0Procedure {
 		if (Screen.hasShiftDown()) {
 			return shift + "\n";
 		}
-		return "\u00A77\u6309\u4F4F\u00A7eShift\u00A77\u67E5\u770B" + shift0 + "\n";
+		return "\u00A77\u6309\u4F4F\u00A7eShift\u00A77\u67E5\u770B" + ((shift0).equals("") ? "\u8BE6\u60C5" : shift0) + "\n";
 	}
 }
