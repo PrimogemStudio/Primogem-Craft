@@ -1,0 +1,20 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "时空棱镜",
+    "icon": "skljxg",
+    "color": {
+      "value": -3368449,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "modifiers": []
+  }
+}

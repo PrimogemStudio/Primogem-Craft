@@ -1,12 +1,10 @@
 package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.core.component.DataComponents;
 
 public class Pyjlsx0Procedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity, ItemStack itemstack) {
@@ -17,7 +15,7 @@ public class Pyjlsx0Procedure {
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.setHealth((float) Math.ceil((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) * 0.01));
 				if (sourceentity instanceof Player _player)
-					_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (160 - 20 * itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian")));
+					_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (160 - 20 * HSjinglianupProcedure.execute(sourceentity, itemstack)));
 			}
 		}
 	}

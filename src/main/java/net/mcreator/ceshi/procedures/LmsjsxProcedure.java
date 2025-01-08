@@ -1,10 +1,8 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.core.component.DataComponents;
 
 public class LmsjsxProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
@@ -12,7 +10,7 @@ public class LmsjsxProcedure {
 			return;
 		double a = 0;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) >= (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.9) {
-			a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
+			a = HSjinglianupProcedure.execute(entity, itemstack);
 			XsfHSProcedure.execute(itemstack, true, false, 0.14 + 0.035 * a);
 		} else {
 			XsfHSProcedure.execute(itemstack, false, false, 0);

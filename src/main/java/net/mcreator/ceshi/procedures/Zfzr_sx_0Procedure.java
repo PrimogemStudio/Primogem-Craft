@@ -40,7 +40,7 @@ public class Zfzr_sx_0Procedure {
 						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.anvil.place")), SoundSource.NEUTRAL, (float) 0.5, (float) 0.5, false);
 					}
 				}
-			} else if (Math.random() < 0.2 + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian") * 0.05) {
+			} else if (Math.random() < 0.2 + HSjinglianupProcedure.execute(sourceentity, itemstack) * 0.05) {
 				{
 					final String _tagName = "zfzr_ceng_shu";
 					final double _tagValue = (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("zfzr_ceng_shu") + 1);

@@ -12,7 +12,7 @@ public class Jslyzhsx1Procedure {
 		double a = 0;
 		ItemStack stack = ItemStack.EMPTY;
 		if (!itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("jing_lian_shua_xin")) {
-			JlqhewaiProcedure.execute(itemstack);
+			JlqhewaiProcedure.execute(entity, itemstack);
 			entity.getPersistentData().putBoolean("jing_lian_shua_xin", true);
 		}
 	}

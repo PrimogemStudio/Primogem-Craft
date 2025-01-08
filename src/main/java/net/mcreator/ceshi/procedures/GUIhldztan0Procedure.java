@@ -61,7 +61,7 @@ public class GUIhldztan0Procedure {
 						final boolean _tagValue = false;
 						CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putBoolean(_tagName, _tagValue));
 					}
-					JlqhewaiProcedure.execute(i1);
+					JlqhewaiProcedure.execute(entity, i1);
 				}
 			}
 		}

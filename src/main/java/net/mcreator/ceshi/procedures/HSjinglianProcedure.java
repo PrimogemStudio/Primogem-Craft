@@ -1,11 +1,12 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.entity.Entity;
 
 public class HSjinglianProcedure {
-	public static double execute(ItemStack itemstack) {
-		return itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian") + 1;
+	public static double execute(Entity entity, ItemStack itemstack) {
+		if (entity == null)
+			return 0;
+		return HSjinglianupProcedure.execute(entity, itemstack) + 1;
 	}
 }

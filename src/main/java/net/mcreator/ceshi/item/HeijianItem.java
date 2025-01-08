@@ -75,7 +75,7 @@ public class HeijianItem extends SwordItem {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
-		String hoverText = HeijianmsProcedure.execute(itemstack);
+		String hoverText = HeijianmsProcedure.execute(entity, itemstack);
 		if (hoverText != null) {
 			for (String line : hoverText.split("\n")) {
 				list.add(Component.literal(line));
@@ -86,6 +86,6 @@ public class HeijianItem extends SwordItem {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		JlqhewaiProcedure.execute(itemstack);
+		JlqhewaiProcedure.execute(entity, itemstack);
 	}
 }

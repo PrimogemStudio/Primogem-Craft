@@ -23,8 +23,7 @@ public class Dijiansx0Procedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth(
 						(float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1))
-								* (1 + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian") * 0.25) * itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("yin_fu")
-								* 0.05));
+								* (1 + HSjinglianupProcedure.execute(entity, itemstack) * 0.25) * itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("yin_fu") * 0.05));
 			for (int index0 = 0; index0 < (int) (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("yin_fu") * 2); index0++) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

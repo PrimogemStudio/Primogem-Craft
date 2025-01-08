@@ -2,13 +2,16 @@ package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.core.component.DataComponents;
 
 public class ZfzrmsProcedure {
-	public static String execute(ItemStack itemstack) {
+	public static String execute(Entity entity, ItemStack itemstack) {
+		if (entity == null)
+			return "";
 		double a = 0;
-		a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
-		return MSHSwuqi00Procedure.execute(itemstack,
+		a = HSjinglianupProcedure.execute(entity, itemstack);
+		return MSHSwuqi00Procedure.execute(entity, itemstack,
 				"\u00A76\u00A7n\u666E\u901A\u653B\u51FB" + "\n"
 						+ ("\u00A7e\u6BCF\u6B21\u653B\u51FB\u76EE\u6807\u6709\u00A7b" + new java.text.DecimalFormat("##.##%").format(0.2 + a * 0.05) + "\u00A7e\u6982\u7387\u83B7\u5F97\u4E00\u5C42\u88AB\u52A8\uFF0C\u81F3\u591A8\u5C42" + "\n"
 								+ "\u00A7e\u5F53\u88AB\u52A8\u6548\u679C\u5DF2\u6EE1\u65F6\u653B\u51FB\u76EE\u6807\uFF0C\u5C06\u5237\u65B0\u4E00\u6B21\u4F24\u5BB3\u5438\u6536\u6548\u679C\uFF0C\u6CA1\u6709\u6548\u679C\u5219\u83B7\u5F97\u6548\u679C"

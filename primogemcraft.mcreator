@@ -31615,6 +31615,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           }
@@ -31648,6 +31652,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           }
@@ -31666,6 +31674,10 @@
           "src/main/java/net/mcreator/ceshi/procedures/MSHSwuqi00Procedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -31689,6 +31701,10 @@
         ],
         "dependencies": [
           {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -31711,6 +31727,10 @@
           "src/main/java/net/mcreator/ceshi/procedures/HSjinglianProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -31769,6 +31789,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           }
@@ -31786,6 +31810,10 @@
           "src/main/java/net/mcreator/ceshi/procedures/Wfj_sxProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -32315,6 +32343,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           }
@@ -32650,6 +32682,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           }
@@ -32693,6 +32729,10 @@
           "src/main/java/net/mcreator/ceshi/procedures/DijianmsProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -32852,6 +32892,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           }
@@ -32947,6 +32991,10 @@
           "src/main/java/net/mcreator/ceshi/procedures/FtyjmsProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -33106,6 +33154,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           }
@@ -33230,6 +33282,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           }
@@ -33283,6 +33339,10 @@
           "src/main/java/net/mcreator/ceshi/procedures/TrzrmsProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -33425,6 +33485,10 @@
           "src/main/java/net/mcreator/ceshi/procedures/PyjlmsProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -33632,6 +33696,10 @@
           "src/main/java/net/mcreator/ceshi/procedures/HeijianmsProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -34360,6 +34428,72 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Skljxg",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skljxg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/potion/SkljxgMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "HSjinglianup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "h_sjinglianup",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/HSjinglianupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qwsklj",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwsklj",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwsklj.json",
+          "src/main/java/net/mcreator/ceshi/item/QwskljItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Qwskljsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwskljsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwskljsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -34908,7 +35042,8 @@
       "CUSTOM:Quxgjibing",
       "CUSTOM:Xingjidaletou",
       "CUSTOM:Ssanbamiantou",
-      "CUSTOM:Qwsjgzq"
+      "CUSTOM:Qwsjgzq",
+      "CUSTOM:Qwsklj"
     ],
     "ITEMS:c:yssx_0": [
       "CUSTOM:Ziziyousongshisuixie",
@@ -35744,7 +35879,8 @@
       "CUSTOM:Qwtcjlbptbg",
       "CUSTOM:Qwlbtdgcl",
       "CUSTOM:Quxgjibing",
-      "CUSTOM:Wanshinang"
+      "CUSTOM:Wanshinang",
+      "CUSTOM:Qwsklj"
     ],
     "ITEMS:pgc:zzzb": [
       "TAG:c:yszsj",
@@ -37037,7 +37173,8 @@
       "Myzj",
       "Baitiekuang",
       "Ysjsj",
-      "Qwsjgzq"
+      "Qwsjgzq",
+      "Qwsklj"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -38205,6 +38342,7 @@
       "gui.primogemcraft.sjgu_ifumo_00.label_chi_kai": "• 离开。",
       "block.primogemcraft.caoyuanhehuamuban": "Dendro Core Wood Planks",
       "rei.pgc.tooltip.forge.4": "使用石板后需放入对应下级材料进行强化刷新",
+      "item.primogemcraft.qwsklj": "§5§l『奇物』§b时空棱镜",
       "gui.primogemcraft.sjgu_ifumo_01.label_dui_wu_pin_jin_xing_1ci_gao_pin_zhi_fu_mo": "对物品进行1次高品质附魔。",
       "item.primogemcraft.djhjt_helmet.description_4": "§",
       "item.primogemcraft.djhjt_helmet.description_5": "§9+2 套装值（青金）",
@@ -38812,7 +38950,7 @@
       "block.primogemcraft.ceshi_mucaibao_slab": "Dendro Core Slab",
       "item.primogemcraft.shengjijltiewp.description_3": "§9 铁剑",
       "item.primogemcraft.axzsj.description_2": "§7 - 20%probability to effect imprison to target already effected slowness",
-      "item.primogemcraft.wufengjian": "Dull Blade",
+      "item.primogemcraft.wufengjian": "无锋剑",
       "item.primogemcraft.shengjijltiewp.description_4": "§9 铁质盔甲",
       "item.primogemcraft.axtsj.description_4": "§9 iron armor",
       "item.primogemcraft.axzsj.description_3": "§7 - last 8s",
@@ -39112,6 +39250,7 @@
       "item.primogemcraft.mllpzs.description_1": "§7右键寻找§b3*y*3§7范围内的记录方块",
       "advancements.beiguotiejiang.descr": "Collect the basic tools of Mora Series",
       "advancements.kewu.title": "Darn it",
+      "item.primogemcraft.qwsklj.description_0": "§7存在物品栏时，祈愿武器精炼等级+1",
       "gamerule.guizemoyinshengminzhi.description": "Mob health Over certain hearts Won\u0027t be judged as Mara-Struck",
       "item.primogemcraft.kjjlt_leggings": "§6『Prithiva Topaz』 §fIron Leggings",
       "item.primogemcraft.heijian": "§4黑剑",
@@ -39534,6 +39673,7 @@
       "subtitles.mengdeyewai001": "~",
       "item.primogemcraft.axf.description_3": "§7    of §b§o [3d8] §7True damage",
       "item.primogemcraft.axf.description_4": "§7 - CD 10s",
+      "effect.primogemcraft.skljxg": "时空棱镜",
       "advancements.nibaodimeila.title": "Your Pity Vanished！",
       "item.primogemcraft.axf.description_1": "§7 - 50%probability to deplete a§d§nvajrada amethyst sliver",
       "block.primogemcraft.hhyinbaoqi.description_1": "§7who will refuse more sense of ritual？",
@@ -40832,6 +40972,7 @@
       "gui.primogemcraft.sjgu_ifumo_00.label_chi_kai": "• 离开。",
       "block.primogemcraft.caoyuanhehuamuban": "Dendro Core Wood Planks",
       "rei.pgc.tooltip.forge.4": "使用石板后需放入对应下级材料进行强化刷新",
+      "item.primogemcraft.qwsklj": "§5§l『奇物』§b时空棱镜",
       "gui.primogemcraft.sjgu_ifumo_01.label_dui_wu_pin_jin_xing_1ci_gao_pin_zhi_fu_mo": "对物品进行1次高品质附魔。",
       "item.primogemcraft.djhjt_helmet.description_4": "§",
       "item.primogemcraft.djhjt_helmet.description_5": "§9+2 套装值（青金）",
@@ -41739,6 +41880,7 @@
       "item.primogemcraft.mllpzs.description_1": "§7右键寻找§b3*y*3§7范围内的记录方块",
       "advancements.beiguotiejiang.descr": "Collect the basic tools of Mora Series",
       "advancements.kewu.title": "Darn it",
+      "item.primogemcraft.qwsklj.description_0": "§7存在物品栏时，祈愿武器精炼等级+1",
       "gamerule.guizemoyinshengminzhi.description": "Mob health Over certain hearts Won\u0027t be judged as Mara-Struck",
       "item.primogemcraft.kjjlt_leggings": "§6『Prithiva Topaz』 §fIron Leggings",
       "item.primogemcraft.heijian": "§4黑剑",
@@ -42161,6 +42303,7 @@
       "subtitles.mengdeyewai001": "~",
       "item.primogemcraft.axf.description_3": "§7    of §b§o [3d8] §7True damage",
       "item.primogemcraft.axf.description_4": "§7 - CD 10s",
+      "effect.primogemcraft.skljxg": "时空棱镜",
       "advancements.nibaodimeila.title": "Your Pity Vanished！",
       "item.primogemcraft.axf.description_1": "§7 - 50%probability to deplete a§d§nvajrada amethyst sliver",
       "block.primogemcraft.hhyinbaoqi.description_1": "§7who will refuse more sense of ritual？",
@@ -43457,6 +43600,7 @@
       "gui.primogemcraft.sjgu_ifumo_00.label_chi_kai": "• 离开。",
       "block.primogemcraft.caoyuanhehuamuban": "草原核化木板",
       "rei.pgc.tooltip.forge.4": "使用石板后需放入对应下级材料进行强化刷新",
+      "item.primogemcraft.qwsklj": "§5§l『奇物』§b时空棱镜",
       "gui.primogemcraft.sjgu_ifumo_01.label_dui_wu_pin_jin_xing_1ci_gao_pin_zhi_fu_mo": "对物品进行1次高品质附魔。",
       "item.primogemcraft.djhjt_helmet.description_4": "§",
       "item.primogemcraft.djhjt_helmet.description_5": "§9+2 套装值（青金）",
@@ -44363,6 +44507,7 @@
       "item.primogemcraft.mllpzs.description_1": "§7右键寻找§b3*y*3§7范围内的记录方块",
       "advancements.beiguotiejiang.descr": "获得全套摩拉系列基础用具",
       "advancements.kewu.title": "§f可恶.....",
+      "item.primogemcraft.qwsklj.description_0": "§7存在物品栏时，祈愿武器精炼等级+1",
       "item.primogemcraft.kjjlt_leggings": "§6『坚牢黄玉』 §f铁护腿",
       "item.primogemcraft.heijian": "§4黑剑",
       "gui.primogemcraft.cunzheshezhi.button_empty3": "？",
@@ -44782,6 +44927,7 @@
       "subtitles.mengdeyewai001": "~",
       "item.primogemcraft.axf.description_3": "§7    造成一次§b§o [3d8] §7真实伤害",
       "item.primogemcraft.axf.description_4": "§7 - 冷却10秒",
+      "effect.primogemcraft.skljxg": "时空棱镜",
       "advancements.nibaodimeila.title": "你保底没啦！",
       "item.primogemcraft.axf.description_1": "§7 - 50%概率消耗一个§d§n最胜紫晶 碎屑",
       "block.primogemcraft.hhyinbaoqi.description_1": "§7谁会拒绝更有仪式感的激活方式呢？",

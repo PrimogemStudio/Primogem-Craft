@@ -69,7 +69,7 @@ public class WqzhgItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		Wqzhg_sx_0Procedure.execute(entity.level(), itemstack);
+		Wqzhg_sx_0Procedure.execute(entity.level(), sourceentity, itemstack);
 		return retval;
 	}
 
@@ -85,7 +85,7 @@ public class WqzhgItem extends SwordItem {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
-		String hoverText = WqzhgmsProcedure.execute(itemstack);
+		String hoverText = WqzhgmsProcedure.execute(entity, itemstack);
 		if (hoverText != null) {
 			for (String line : hoverText.split("\n")) {
 				list.add(Component.literal(line));

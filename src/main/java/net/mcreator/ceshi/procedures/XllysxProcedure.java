@@ -21,14 +21,14 @@ public class XllysxProcedure {
 			return;
 		double a = 0;
 		if (!world.isClientSide()) {
-			a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
+			a = HSjinglianupProcedure.execute(sourceentity, itemstack);
 			if (entity.getRemainingFireTicks() > 0) {
-				if (!(sourceentity instanceof Player _plrCldCheck5 && _plrCldCheck5.getCooldowns().isOnCooldown(itemstack.getItem()))) {
+				if (!(sourceentity instanceof Player _plrCldCheck3 && _plrCldCheck3.getCooldowns().isOnCooldown(itemstack.getItem()))) {
 					PrimogemcraftMod.queueServerWork(10, () -> {
 						entity.hurt(
 								FullToElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("primogemcraft:s_hchixushanghai"))), sourceentity), true, false, true, false,
 										1, 1),
-								(float) ((sourceentity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity6.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
+								(float) ((sourceentity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity4.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
 										* (0.18 + 0.045 * itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian"))));
 						if (sourceentity instanceof Player _player)
 							_player.getCooldowns().addCooldown(itemstack.getItem(), 20);

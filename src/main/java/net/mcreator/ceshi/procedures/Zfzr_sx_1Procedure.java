@@ -2,7 +2,6 @@ package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -14,7 +13,6 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 public class Zfzr_sx_1Procedure {
@@ -23,9 +21,9 @@ public class Zfzr_sx_1Procedure {
 			return;
 		double a = 0;
 		if (!world.isClientSide()) {
-			a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
+			a = HSjinglianupProcedure.execute(entity, itemstack);
 			if (entity.isShiftKeyDown()) {
-				if (entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(MobEffects.ABSORPTION) && !(entity instanceof Player _plrCldCheck6 && _plrCldCheck6.getCooldowns().isOnCooldown(itemstack.getItem()))) {
+				if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(MobEffects.ABSORPTION) && !(entity instanceof Player _plrCldCheck4 && _plrCldCheck4.getCooldowns().isOnCooldown(itemstack.getItem()))) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(MobEffects.ABSORPTION);
 					if (entity instanceof LivingEntity _entity)

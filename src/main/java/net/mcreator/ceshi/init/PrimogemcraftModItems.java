@@ -244,6 +244,7 @@ import net.mcreator.ceshi.item.QwthhjItem;
 import net.mcreator.ceshi.item.QwtcjlbptbgItem;
 import net.mcreator.ceshi.item.QwsmclItem;
 import net.mcreator.ceshi.item.QwsmcdItem;
+import net.mcreator.ceshi.item.QwskljItem;
 import net.mcreator.ceshi.item.QwsjgzqItem;
 import net.mcreator.ceshi.item.QwsbmbItem;
 import net.mcreator.ceshi.item.QwrhjItem;
@@ -1044,6 +1045,7 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> YSJSHUIJINGCU = block(PrimogemcraftModBlocks.YSJSHUIJINGCU);
 	public static final DeferredItem<Item> S_WFENGRAOJIANGSHI_SPAWN_EGG = REGISTRY.register("s_wfengraojiangshi_spawn_egg", () -> new DeferredSpawnEggItem(PrimogemcraftModEntities.S_WFENGRAOJIANGSHI, -16751053, -13312, new Item.Properties()));
 	public static final DeferredItem<Item> QWSJGZQ = REGISTRY.register("qwsjgzq", QwsjgzqItem::new);
+	public static final DeferredItem<Item> QWSKLJ = REGISTRY.register("qwsklj", QwskljItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

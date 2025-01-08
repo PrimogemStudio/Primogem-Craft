@@ -20,6 +20,7 @@ public class Tkzrsx0Procedure {
 		double b = 0;
 		if (!world.isClientSide()) {
 			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("tkzr_sx") < 3) {
+				a = HSjinglianupProcedure.execute(entity, itemstack);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.trident.riptide_2")), SoundSource.PLAYERS, (float) 1.5, 3);
@@ -32,8 +33,8 @@ public class Tkzrsx0Procedure {
 					final double _tagValue = 12;
 					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 				}
-				XsfhsgjsuduProcedure.execute(itemstack, false, false, 1 + 0.5 * itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian"));
-				XsfhsyidongProcedure.execute(itemstack, false, false, 0.01 + 0.01 * itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian"));
+				XsfhsgjsuduProcedure.execute(itemstack, false, false, 1 + 0.5 * a);
+				XsfhsyidongProcedure.execute(itemstack, false, false, 0.01 + 0.01 * a);
 				if (entity instanceof Player _player)
 					_player.getCooldowns().addCooldown(itemstack.getItem(), 300);
 			}

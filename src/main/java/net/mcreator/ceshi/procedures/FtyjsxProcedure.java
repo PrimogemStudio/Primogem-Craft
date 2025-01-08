@@ -24,7 +24,7 @@ public class FtyjsxProcedure {
 		double b = 0;
 		if (!world.isClientSide()) {
 			if (!(entity instanceof Player _plrCldCheck2 && _plrCldCheck2.getCooldowns().isOnCooldown(itemstack.getItem()))) {
-				a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
+				a = HSjinglianupProcedure.execute(entity, itemstack);
 				if (entity.isShiftKeyDown()) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.FEIXING, (int) (60 + 20 * a), 0, false, false));

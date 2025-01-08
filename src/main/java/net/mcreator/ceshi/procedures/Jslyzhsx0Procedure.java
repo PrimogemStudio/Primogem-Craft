@@ -2,14 +2,12 @@ package net.mcreator.ceshi.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 public class Jslyzhsx0Procedure {
@@ -28,7 +26,7 @@ public class Jslyzhsx0Procedure {
 							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:djpp1")), SoundSource.PLAYERS, 1, 1, false);
 						}
 					}
-					a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
+					a = HSjinglianupProcedure.execute(entity, itemstack);
 					XsfHSProcedure.execute(itemstack, false, true, 0.22 + 0.055 * a);
 					HSxsfshengmingProcedure.execute(itemstack, false, true, -0.2);
 					if (entity instanceof Player _player)
