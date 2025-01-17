@@ -10,7 +10,7 @@ public class QwskljsxProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.SKLJXG))) {
+		if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.SKLJXG) ? _livEnt.getEffect(PrimogemcraftModMobEffects.SKLJXG).getAmplifier() : 0) < 5) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.SKLJXG, 60, 0, false, false));
 		}
