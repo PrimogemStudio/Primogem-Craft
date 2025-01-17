@@ -11,7 +11,7 @@
     "rarity": "EPIC",
     "creativeTabs": [
       {
-        "value": "CUSTOM:Zhenghuo"
+        "value": "CUSTOM:Yuanshigongjuxuanxiangka"
       }
     ],
     "stackSize": 64,
@@ -60,6 +60,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }
