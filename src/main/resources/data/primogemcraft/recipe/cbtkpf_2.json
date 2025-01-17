@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 9,
+  "cookingtime": 1800,
+  "ingredient": {
+    "item": "primogemcraft:cbtk"
+  },
+  "result": {
+    "id": "primogemcraft:jlliang"
+  }
+}

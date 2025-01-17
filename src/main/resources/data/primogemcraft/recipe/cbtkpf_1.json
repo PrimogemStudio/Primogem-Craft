@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 9,
+  "cookingtime": 2880,
+  "ingredient": {
+    "item": "primogemcraft:cbtk"
+  },
+  "result": {
+    "id": "primogemcraft:jlliang"
+  }
+}

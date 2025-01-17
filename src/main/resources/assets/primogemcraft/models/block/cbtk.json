@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/cubaitiekuai",
+    "up": "primogemcraft:block/cubaitiekuai",
+    "north": "primogemcraft:block/cubaitiekuai",
+    "east": "primogemcraft:block/cubaitiekuai",
+    "south": "primogemcraft:block/cubaitiekuai",
+    "west": "primogemcraft:block/cubaitiekuai",
+    "particle": "primogemcraft:block/cubaitiekuai"
+  },
+  "render_type": "solid"
+}

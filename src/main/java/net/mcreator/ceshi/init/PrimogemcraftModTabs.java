@@ -604,6 +604,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModBlocks.YSJSHUIJING_0.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.YSJSHUIJING_1.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.YSJSHUIJINGCU.get().asItem());
+				tabData.accept(PrimogemcraftModBlocks.CBTK.get().asItem());
 			}).withTabsBefore(YUANSHIGONGJUXUANXIANGKA.getId()).build());
 
 	@SubscribeEvent

@@ -107,6 +107,7 @@ import net.mcreator.ceshi.block.Ceshi_mucaibaoFenceGateBlock;
 import net.mcreator.ceshi.block.Ceshi_mucaibaoFenceBlock;
 import net.mcreator.ceshi.block.Ceshi_mucaibaoButtonBlock;
 import net.mcreator.ceshi.block.Ccaoyuanhehuamuban3Block;
+import net.mcreator.ceshi.block.CbtkBlock;
 import net.mcreator.ceshi.block.CaoyuansueciBlock;
 import net.mcreator.ceshi.block.CaoyuanhekuaiBlock;
 import net.mcreator.ceshi.block.CaoyuanhehuamubanBlock;
@@ -259,6 +260,7 @@ public class PrimogemcraftModBlocks {
 	public static final DeferredBlock<Block> YSJSHUIJING_0 = REGISTRY.register("ysjshuijing_0", Ysjshuijing0Block::new);
 	public static final DeferredBlock<Block> YSJSHUIJING_1 = REGISTRY.register("ysjshuijing_1", Ysjshuijing1Block::new);
 	public static final DeferredBlock<Block> YSJSHUIJINGCU = REGISTRY.register("ysjshuijingcu", YsjshuijingcuBlock::new);
+	public static final DeferredBlock<Block> CBTK = REGISTRY.register("cbtk", CbtkBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

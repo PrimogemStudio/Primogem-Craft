@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:cbtk"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:baitiekuang",
+    "count": 9
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 9.0,
+    "cookingTime": 2880,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:Cbtk"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Jlliang"
+    },
+    "name": "cbtkpf_1",
+    "namespace": "mod"
+  }
+}

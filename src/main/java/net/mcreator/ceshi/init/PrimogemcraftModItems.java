@@ -1046,6 +1046,7 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> S_WFENGRAOJIANGSHI_SPAWN_EGG = REGISTRY.register("s_wfengraojiangshi_spawn_egg", () -> new DeferredSpawnEggItem(PrimogemcraftModEntities.S_WFENGRAOJIANGSHI, -16751053, -13312, new Item.Properties()));
 	public static final DeferredItem<Item> QWSJGZQ = REGISTRY.register("qwsjgzq", QwsjgzqItem::new);
 	public static final DeferredItem<Item> QWSKLJ = REGISTRY.register("qwsklj", QwskljItem::new);
+	public static final DeferredItem<Item> CBTK = block(PrimogemcraftModBlocks.CBTK);
 
 	// Start of user code block custom items
 	// End of user code block custom items
