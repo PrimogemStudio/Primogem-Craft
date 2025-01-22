@@ -16,7 +16,7 @@
             "item": {
               "value": "Blocks.AIR"
             },
-            "weight": 100,
+            "weight": 1000,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -30,7 +30,7 @@
             "item": {
               "value": "CUSTOM:Weizhiyepian"
             },
-            "weight": 100,
+            "weight": 1000,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -43,6 +43,20 @@
             "type": "item",
             "item": {
               "value": "CUSTOM:Yiyimuguoshi"
+            },
+            "weight": 10,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Heijian"
             },
             "weight": 1,
             "minCount": 1,
