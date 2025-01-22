@@ -256,12 +256,12 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.MMOLACHAN.get());
 				tabData.accept(PrimogemcraftModItems.MMOLACHUTOU.get());
 				tabData.accept(PrimogemcraftModItems.MMOLAJIAN.get());
+				tabData.accept(PrimogemcraftModBlocks.HUALIDUANZAO.get().asItem());
 				tabData.accept(PrimogemcraftModItems.JLZA.get());
 				tabData.accept(PrimogemcraftModItems.JLLIANG.get());
 				tabData.accept(PrimogemcraftModItems.JLMO.get());
 				tabData.accept(PrimogemcraftModItems.ZHAIQUAN.get());
 				tabData.accept(PrimogemcraftModItems.TEZHIDIEYINGQI.get());
-				tabData.accept(PrimogemcraftModBlocks.HUALIDUANZAO.get().asItem());
 				tabData.accept(PrimogemcraftModItems.MYZJ.get());
 				tabData.accept(PrimogemcraftModItems.JHSB_0.get());
 				tabData.accept(PrimogemcraftModItems.JHSB_1.get());
