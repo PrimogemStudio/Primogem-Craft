@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/qiyu",
+    "up": "primogemcraft:block/qiyu",
+    "north": "primogemcraft:block/qiyu",
+    "east": "primogemcraft:block/qiyu",
+    "south": "primogemcraft:block/qiyu",
+    "west": "primogemcraft:block/qiyu",
+    "particle": "primogemcraft:block/qiyu"
+  },
+  "render_type": "solid"
+}
