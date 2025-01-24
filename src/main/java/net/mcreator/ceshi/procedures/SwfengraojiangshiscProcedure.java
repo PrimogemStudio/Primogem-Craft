@@ -34,7 +34,7 @@ public class SwfengraojiangshiscProcedure {
 			return;
 		if (!world.isClientSide()) {
 			if (entity instanceof Zombie) {
-				if (Math.random() < (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEMOYINSHENSHENGCHENGBEILV)) * 0.05) {
+				if (Math.random() < (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEMOYINSHENSHENGCHENGBEILV)) * 0.01) {
 					PrimogemcraftMod.queueServerWork(1, () -> {
 						if (!entity.level().isClientSide())
 							entity.discard();
