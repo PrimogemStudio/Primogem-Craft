@@ -1,9 +1,9 @@
 plugins {
-    id 'net.neoforged.moddev' version '1.0.20'
+    id 'net.neoforged.moddev' version '1.0.21'
 }
 
 neoForge {
-    version = "21.1.74"
+    version = "21.1.113"
 }
 
 repositories {

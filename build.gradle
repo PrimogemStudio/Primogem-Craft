@@ -1,6 +1,6 @@
 plugins {
     id 'eclipse'
-    id 'net.neoforged.moddev' version '1.0.20'
+    id 'net.neoforged.moddev' version '1.0.21'
 }
 
 version = '1.0'
@@ -9,11 +9,17 @@ base.archivesName = "modid"
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = "21.1.74"
+    version = "21.1.113"
 
     runs {
         client {
             client()
+
+            def mcreatorJvmOptions = System.getenv('MCREATOR_JVM_OPTIONS')
+            if (mcreatorJvmOptions) {
+                mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.each { arg -> jvmArgument(arg)
+                }
+            }
         }
         server {
             server()
@@ -51,11 +57,11 @@ repositories {
 }
 
 /*
- * implementation = true 
- * compileOnly = false 
+ * implementation = true
+ * compileOnly = false
  */
 dependencies {
-    compileOnly "maven.modrinth:genshincraft:1.6.0"
+    implementation "maven.modrinth:genshincraft:2.0.2"
     api "me.shedaniel:RoughlyEnoughItems-neoforge:16.0.788"
 }
 
