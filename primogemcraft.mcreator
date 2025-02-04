@@ -34847,6 +34847,18 @@
           }
         ]
       }
+    },
+    {
+      "name": "Xingqiongyuanshi",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xingqiongyuanshi",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/xingqiongyuanshi.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
