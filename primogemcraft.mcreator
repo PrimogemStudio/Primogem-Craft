@@ -34678,6 +34678,19 @@
           }
         ]
       }
+    },
+    {
+      "name": "Xingqiong",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xingqiong",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/XingqiongItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/xingqiong.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -37334,7 +37347,8 @@
       "Caoyuanheshengwu",
       "Xiaoheita",
       "Xiaodeng",
-      "Qwwzsw"
+      "Qwwzsw",
+      "Xingqiong"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -39619,6 +39633,7 @@
       "item.primogemcraft.zstkj_leggings": "§d『最胜紫晶』§f铁护腿",
       "gui.primogemcraft.yibangrenzhinanggui.label_wu_pin_lan": "物品栏",
       "item.primogemcraft.bbuzainianqingdeqincezhuang_012": "不再年轻的村庄",
+      "item.primogemcraft.xingqiong": "星穹",
       "effect.zhongguizhongjuxiaoguo": "§aFixed§fCode",
       "item.primogemcraft.qwggzfenlie_a.description_0": "§6手持右键支付§b1395§6经验值[§b30经验等级§6]",
       "item.primogemcraft.qwggzfenlie_a.description_4": "§7类型亡灵生物",
@@ -42252,6 +42267,7 @@
       "item.primogemcraft.zstkj_leggings": "§d『Vajrada Amethyst』§fIron Leggings",
       "gui.primogemcraft.yibangrenzhinanggui.label_wu_pin_lan": "Inventory",
       "item.primogemcraft.bbuzainianqingdeqincezhuang_012": "The Fading Stories",
+      "item.primogemcraft.xingqiong": "星穹",
       "effect.zhongguizhongjuxiaoguo": "§aFixed§fCode",
       "item.primogemcraft.qwggzfenlie_a.description_0": "§6手持右键支付§b1395§6经验值[§b30经验等级§6]",
       "item.primogemcraft.qwggzfenlie_a.description_4": "§7类型亡灵生物",
@@ -44880,6 +44896,7 @@
       "item.primogemcraft.zstkj_leggings": "§d『最胜紫晶』§f铁护腿",
       "item.primogemcraft.bbuzainianqingdeqincezhuang_012": "不再年轻的村庄",
       "gui.primogemcraft.yibangrenzhinanggui.label_wu_pin_lan": "物品栏",
+      "item.primogemcraft.xingqiong": "星穹",
       "effect.zhongguizhongjuxiaoguo": "§a已修复§f代码",
       "item.primogemcraft.qwggzfenlie_a.description_0": "§6手持右键支付§b1395§6经验值[§b30经验等级§6]",
       "item.primogemcraft.qwggzfenlie_a.description_4": "§7类型亡灵生物",
