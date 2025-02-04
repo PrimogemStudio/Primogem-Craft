@@ -1,0 +1,61 @@
+package net.mcreator.ceshi.procedures;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.ceshi.network.PrimogemcraftModVariables;
+
+public class Wyzp_sx_1Procedure {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
+		if (entity == null)
+			return;
+		if (!world.isClientSide()) {
+			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("kai_jiang")) {
+				if (!entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).xyzp_shou_ci) {
+					Xyzpsxhs0Procedure.execute(entity, itemstack, 60, "\u00A7c\u00A7l\u4E00\u7B49\u5956\uFF01");
+					{
+						PrimogemcraftModVariables.PlayerVariables _vars = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES);
+						_vars.xyzp_shou_ci = true;
+						_vars.syncPlayerVariables(entity);
+					}
+				} else {
+					if (Math.random() < 0.0001) {
+						Xyzpsxhs0Procedure.execute(entity, itemstack, 5000, "\u00A76\u00A7l\u7279\u7B49\u5956\uFF01");
+					} else if (Math.random() < 0.1) {
+						Xyzpsxhs0Procedure.execute(entity, itemstack, 60, "\u00A7c\u00A7l\u4E00\u7B49\u5956\uFF01");
+					} else {
+						Xyzpsxhs0Procedure.execute(entity, itemstack, 5, "\u00A7e\u00A7l\u4E8C\u7B49\u5956\uFF01");
+					}
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.3, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:dashengchulan01")), SoundSource.PLAYERS, (float) 0.3, 1, false);
+						}
+					}
+				}
+			} else if (!itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("dai_kai_jiang")) {
+				{
+					final String _tagName = "dai_kai_jiang";
+					final boolean _tagValue = true;
+					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
+				}
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("\u00A7d\u5DF2\u53C2\u4E0E\u5F00\u5956\uFF01"), false);
+			} else {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal("\u00A7c\u00A7l\u7B49\u5F00\u5F00\u5956\u4E2D......"), true);
+			}
+		}
+	}
+}

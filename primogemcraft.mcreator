@@ -34691,6 +34691,162 @@
           "src/main/resources/assets/primogemcraft/models/item/xingqiong.json"
         ]
       }
+    },
+    {
+      "name": "Xyzp",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xyzp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/xyzp.json",
+          "src/main/java/net/mcreator/ceshi/item/XyzpItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Xyzp_sx_0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xyzp_sx_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Xyzp_sx_0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xyzpsxhs0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xyzpsxhs_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Xyzpsxhs0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "zhi",
+            "type": "number"
+          },
+          {
+            "name": "wen",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wyzp_sx_1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wyzp_sx_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Wyzp_sx_1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xyzosx2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xyzosx_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Xyzosx2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Xyzpms",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xyzpms",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/XyzpmsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -34771,6 +34927,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "xyzp_shou_ci",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -37348,7 +37510,8 @@
       "Xiaoheita",
       "Xiaodeng",
       "Qwwzsw",
-      "Xingqiong"
+      "Xingqiong",
+      "Xyzp"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -38785,6 +38948,7 @@
       "item.primogemcraft.kjjlt_helmet.description_1": "§7 2x：获得永久抗性提升效果",
       "item.primogemcraft.zsg.description_0": "§d右键煤炭矿石时：",
       "item.primogemcraft.kjjlt_helmet.description_4": "§9+0.5 套装值（黄玉）",
+      "item.primogemcraft.xyzp": "幸运专票",
       "item.primogemcraft.kjjlt_helmet.description_3": "§",
       "itemGroup.tabyuanshifangkuaika": "Primogem Craft Blocks",
       "item.primogemcraft.kjjlt_helmet.description_0": "§6套装效果：",
@@ -41419,6 +41583,7 @@
       "item.primogemcraft.kjjlt_helmet.description_1": "§7 2x：获得永久抗性提升效果",
       "item.primogemcraft.zsg.description_0": "§d右键煤炭矿石时：",
       "item.primogemcraft.kjjlt_helmet.description_4": "§9+0.5 套装值（黄玉）",
+      "item.primogemcraft.xyzp": "幸运专票",
       "item.primogemcraft.kjjlt_helmet.description_3": "§",
       "itemGroup.tabyuanshifangkuaika": "Primogem Craft Blocks",
       "item.primogemcraft.kjjlt_helmet.description_0": "§6套装效果：",
@@ -44051,6 +44216,7 @@
       "item.primogemcraft.kjjlt_helmet.description_1": "§7 2x：获得永久抗性提升效果",
       "item.primogemcraft.zsg.description_0": "§d右键煤炭矿石时：",
       "item.primogemcraft.kjjlt_helmet.description_4": "§9+0.5 套装值（黄玉）",
+      "item.primogemcraft.xyzp": "幸运专票",
       "item.primogemcraft.kjjlt_helmet.description_3": "§",
       "itemGroup.tabyuanshifangkuaika": "原石工艺 方块",
       "item.primogemcraft.kjjlt_helmet.description_0": "§6套装效果：",
