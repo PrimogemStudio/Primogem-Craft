@@ -34859,6 +34859,18 @@
           "src/main/resources/data/primogemcraft/recipe/xingqiongyuanshi.json"
         ]
       }
+    },
+    {
+      "name": "Lspf2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lspf_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/lspf_2.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
