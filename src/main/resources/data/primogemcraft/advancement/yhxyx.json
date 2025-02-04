@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "primogemcraft:xingqiong"
+    },
+    "title": {
+      "translate": "advancements.yhxyx.title"
+    },
+    "description": {
+      "translate": "advancements.yhxyx.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "yhxyx_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "parent": "primogemcraft:yhdtjd"
+}

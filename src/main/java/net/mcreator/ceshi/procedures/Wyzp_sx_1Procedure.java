@@ -7,11 +7,14 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.ceshi.network.PrimogemcraftModVariables;
 
@@ -31,6 +34,16 @@ public class Wyzp_sx_1Procedure {
 				} else {
 					if (Math.random() < 0.0001) {
 						Xyzpsxhs0Procedure.execute(entity, itemstack, 5000, "\u00A76\u00A7l\u7279\u7B49\u5956\uFF01");
+						if (entity instanceof ServerPlayer _player) {
+							AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:yhxyx"));
+							if (_adv != null) {
+								AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+								if (!_ap.isDone()) {
+									for (String criteria : _ap.getRemainingCriteria())
+										_player.getAdvancements().award(_adv, criteria);
+								}
+							}
+						}
 					} else if (Math.random() < 0.1) {
 						Xyzpsxhs0Procedure.execute(entity, itemstack, 60, "\u00A7c\u00A7l\u4E00\u7B49\u5956\uFF01");
 					} else {
