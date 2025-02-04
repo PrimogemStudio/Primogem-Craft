@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
-    "aba",
-    "aaa"
+    "ab"
   ],
   "key": {
     "a": {
@@ -16,6 +14,6 @@
   },
   "result": {
     "id": "primogemcraft:xyzp",
-    "count": 4
+    "count": 1
   }
 }
