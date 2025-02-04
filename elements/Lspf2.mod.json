@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 4,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -15,28 +15,28 @@
         "value": "CUSTOM:Yuanshi"
       },
       {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
+        "value": "CUSTOM:Yuanshi"
+      },
+      {
         "value": "CUSTOM:Jinguangbaodi01"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Yuanshi"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Yuanshi"
       },
       {
-        "value": ""
+        "value": "CUSTOM:Yuanshi"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:Yuanshi"
       }
     ],
     "recipeReturnStack": {

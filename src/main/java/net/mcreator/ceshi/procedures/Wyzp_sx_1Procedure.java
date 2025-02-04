@@ -1,5 +1,7 @@
 package net.mcreator.ceshi.procedures;
 
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.CustomData;
@@ -17,11 +19,13 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.ceshi.network.PrimogemcraftModVariables;
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 public class Wyzp_sx_1Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		ItemStack i1 = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
 			if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("kai_jiang")) {
 				if (!entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).xyzp_shou_ci) {
@@ -58,10 +62,18 @@ public class Wyzp_sx_1Procedure {
 					}
 				}
 			} else if (!itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("dai_kai_jiang")) {
+				itemstack.shrink(1);
+				i1 = new ItemStack(PrimogemcraftModItems.XYZP.get());
+				i1.setCount(1);
 				{
 					final String _tagName = "dai_kai_jiang";
 					final boolean _tagValue = true;
-					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
+					CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putBoolean(_tagName, _tagValue));
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = i1.copy();
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("\u00A7d\u5DF2\u53C2\u4E0E\u5F00\u5956\uFF01"), false);
