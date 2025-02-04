@@ -35312,9 +35312,6 @@
       "CUSTOM:Qwclhy",
       "CUSTOM:Qwjlbhy"
     ],
-    "ENTITIES:minecraft:undead": [
-      "~CUSTOM:SWfengraojiangshi"
-    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Cbtk",
       "~CUSTOM:Ysjshuijingcu",
@@ -35375,6 +35372,27 @@
       "~CUSTOM:Jiuchanzhiyuankuai",
       "~CUSTOM:Yuanshikuangshi"
     ],
+    "ENTITIES:minecraft:undead": [
+      "~CUSTOM:SWfengraojiangshi"
+    ],
+    "ITEMS:c:curio/normal/b": [
+      "CUSTOM:Wawanxiangwuchangtou",
+      "CUSTOM:Cebuzhunxia",
+      "CUSTOM:Pengkeluodejingshen",
+      "CUSTOM:Yiyimuguoshi",
+      "CUSTOM:Wanshinang",
+      "CUSTOM:Qwkwzj",
+      "CUSTOM:Qwtldhy",
+      "CUSTOM:Qwhdlz",
+      "CUSTOM:Jlbj",
+      "CUSTOM:Qwybtzdypj",
+      "CUSTOM:Qwxyzq",
+      "CUSTOM:Qwxbzsq",
+      "CUSTOM:Xiangdanganlao",
+      "CUSTOM:Qiwuchongwang",
+      "CUSTOM:Qwlbtdgcl",
+      "CUSTOM:Qwsmcl"
+    ],
     "BLOCKS:minecraft:beacon_base_blocks": [
       "CUSTOM:Shengzhangbifeidakuai",
       "CUSTOM:Jianlaohuangyukuai",
@@ -35397,24 +35415,6 @@
       "CUSTOM:Ryjsk",
       "CUSTOM:Lajsk",
       "CUSTOM:Jdyk"
-    ],
-    "ITEMS:c:curio/normal/b": [
-      "CUSTOM:Wawanxiangwuchangtou",
-      "CUSTOM:Cebuzhunxia",
-      "CUSTOM:Pengkeluodejingshen",
-      "CUSTOM:Yiyimuguoshi",
-      "CUSTOM:Wanshinang",
-      "CUSTOM:Qwkwzj",
-      "CUSTOM:Qwtldhy",
-      "CUSTOM:Qwhdlz",
-      "CUSTOM:Jlbj",
-      "CUSTOM:Qwybtzdypj",
-      "CUSTOM:Qwxyzq",
-      "CUSTOM:Qwxbzsq",
-      "CUSTOM:Xiangdanganlao",
-      "CUSTOM:Qiwuchongwang",
-      "CUSTOM:Qwlbtdgcl",
-      "CUSTOM:Qwsmcl"
     ],
     "ITEMS:c:curio/normal/a": [
       "CUSTOM:Yiyinhedaletou",
@@ -35548,14 +35548,6 @@
       "CUSTOM:Axhjt.legs",
       "CUSTOM:Axhjt.boots"
     ],
-    "ITEMS:pgc:yszb": [
-      "CUSTOM:Yuanshijian",
-      "CUSTOM:Yuanshigao",
-      "CUSTOM:Yuanshifu",
-      "CUSTOM:Yuanshiqiao",
-      "CUSTOM:Yuanshichutou",
-      "CUSTOM:Qgdysj"
-    ],
     "ITEMS:c:hejin_2": [
       "CUSTOM:Zizizaihejintao.legs",
       "CUSTOM:Jlkjhj.legs",
@@ -35564,6 +35556,14 @@
       "CUSTOM:Djhjt.legs",
       "CUSTOM:Ryhjt.legs",
       "CUSTOM:Axhjt.legs"
+    ],
+    "ITEMS:pgc:yszb": [
+      "CUSTOM:Yuanshijian",
+      "CUSTOM:Yuanshigao",
+      "CUSTOM:Yuanshifu",
+      "CUSTOM:Yuanshiqiao",
+      "CUSTOM:Yuanshichutou",
+      "CUSTOM:Qgdysj"
     ],
     "ITEMS:c:hejin_3": [
       "CUSTOM:Zizizaihejintao.boots",
@@ -39821,7 +39821,7 @@
       "item.primogemcraft.zstkj_leggings": "§d『最胜紫晶』§f铁护腿",
       "gui.primogemcraft.yibangrenzhinanggui.label_wu_pin_lan": "物品栏",
       "item.primogemcraft.bbuzainianqingdeqincezhuang_012": "不再年轻的村庄",
-      "item.primogemcraft.xingqiong": "星穹",
+      "item.primogemcraft.xingqiong": "星琼",
       "effect.zhongguizhongjuxiaoguo": "§aFixed§fCode",
       "item.primogemcraft.qwggzfenlie_a.description_0": "§6手持右键支付§b1395§6经验值[§b30经验等级§6]",
       "item.primogemcraft.qwggzfenlie_a.description_4": "§7类型亡灵生物",
@@ -42456,7 +42456,7 @@
       "item.primogemcraft.zstkj_leggings": "§d『Vajrada Amethyst』§fIron Leggings",
       "gui.primogemcraft.yibangrenzhinanggui.label_wu_pin_lan": "Inventory",
       "item.primogemcraft.bbuzainianqingdeqincezhuang_012": "The Fading Stories",
-      "item.primogemcraft.xingqiong": "星穹",
+      "item.primogemcraft.xingqiong": "星琼",
       "effect.zhongguizhongjuxiaoguo": "§aFixed§fCode",
       "item.primogemcraft.qwggzfenlie_a.description_0": "§6手持右键支付§b1395§6经验值[§b30经验等级§6]",
       "item.primogemcraft.qwggzfenlie_a.description_4": "§7类型亡灵生物",
@@ -45086,7 +45086,7 @@
       "item.primogemcraft.zstkj_leggings": "§d『最胜紫晶』§f铁护腿",
       "item.primogemcraft.bbuzainianqingdeqincezhuang_012": "不再年轻的村庄",
       "gui.primogemcraft.yibangrenzhinanggui.label_wu_pin_lan": "物品栏",
-      "item.primogemcraft.xingqiong": "星穹",
+      "item.primogemcraft.xingqiong": "星琼",
       "effect.zhongguizhongjuxiaoguo": "§a已修复§f代码",
       "item.primogemcraft.qwggzfenlie_a.description_0": "§6手持右键支付§b1395§6经验值[§b30经验等级§6]",
       "item.primogemcraft.qwggzfenlie_a.description_4": "§7类型亡灵生物",
