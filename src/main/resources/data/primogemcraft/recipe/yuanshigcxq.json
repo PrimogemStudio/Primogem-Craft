@@ -1,0 +1,13 @@
+{
+  "type": "genshincraft:crafting",
+  "materials": [
+    {
+      "id": "primogemcraft:xingqiong",
+      "count": 6
+    }
+  ],
+  "result": {
+    "id": "genshincraft:primogems",
+    "count": 1
+  }
+}

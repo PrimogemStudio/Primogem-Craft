@@ -35025,6 +35025,18 @@
           "src/main/resources/data/primogemcraft/recipe/jdyzkpfxq.json"
         ]
       }
+    },
+    {
+      "name": "Yuanshigcxq",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yuanshigcxq",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/yuanshigcxq.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
