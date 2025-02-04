@@ -34010,9 +34010,9 @@
       "registry_name": "s_wfengraojiangshi",
       "metadata": {
         "files": [
+          "src/main/resources/assets/primogemcraft/models/item/s_wfengraojiangshi_spawn_egg.json",
           "src/main/java/net/mcreator/ceshi/client/renderer/SWfengraojiangshiRenderer.java",
-          "src/main/java/net/mcreator/ceshi/entity/SWfengraojiangshiEntity.java",
-          "src/main/resources/assets/primogemcraft/models/item/s_wfengraojiangshi_spawn_egg.json"
+          "src/main/java/net/mcreator/ceshi/entity/SWfengraojiangshiEntity.java"
         ]
       }
     },

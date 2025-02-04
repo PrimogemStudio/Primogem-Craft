@@ -8,12 +8,10 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -29,12 +27,10 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
-import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
@@ -42,11 +38,10 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.ceshi.procedures.SwfengraojssxProcedure;
 import net.mcreator.ceshi.procedures.FrjssxProcedure;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
-import net.mcreator.ceshi.init.PrimogemcraftModEntities;
 
 import javax.annotation.Nullable;
 
-public class SWfengraojiangshiEntity extends Animal {
+public class SWfengraojiangshiEntity extends Monster {
 	public SWfengraojiangshiEntity(EntityType<SWfengraojiangshiEntity> type, Level world) {
 		super(type, world);
 		xpReward = 8;
@@ -132,18 +127,6 @@ public class SWfengraojiangshiEntity extends Animal {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
 		SwfengraojssxProcedure.execute(this);
 		return retval;
-	}
-
-	@Override
-	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
-		SWfengraojiangshiEntity retval = PrimogemcraftModEntities.S_WFENGRAOJIANGSHI.get().create(serverWorld);
-		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), MobSpawnType.BREEDING, null);
-		return retval;
-	}
-
-	@Override
-	public boolean isFood(ItemStack stack) {
-		return Ingredient.of(new ItemStack(Items.ROTTEN_FLESH)).test(stack);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
