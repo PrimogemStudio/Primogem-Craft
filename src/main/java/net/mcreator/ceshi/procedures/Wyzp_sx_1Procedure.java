@@ -79,7 +79,7 @@ public class Wyzp_sx_1Procedure {
 					_player.displayClientMessage(Component.literal("\u00A7d\u5DF2\u53C2\u4E0E\u5F00\u5956\uFF01"), false);
 			} else {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("\u00A7c\u00A7l\u7B49\u5F00\u5F00\u5956\u4E2D......"), true);
+					_player.displayClientMessage(Component.literal("\u00A7c\u00A7l\u7B49\u5F85\u5F00\u5956\u4E2D......"), true);
 			}
 		}
 	}
