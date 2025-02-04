@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "primogemcraft:qwkwzg"
+    },
+    "title": {
+      "translate": "advancements.rhqw.title"
+    },
+    "description": {
+      "translate": "advancements.rhqw.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rhqw_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "primogemcraft:rhsys"
+}

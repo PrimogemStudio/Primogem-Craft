@@ -1,36 +1,36 @@
 {
   "display": {
     "icon": {
-      "id": "primogemcraft:yingjicunchunang"
+      "id": "primogemcraft:jhsb_2"
     },
     "title": {
-      "translate": "advancements.shenjinqukk.title"
+      "translate": "advancements.mjdl.title"
     },
     "description": {
-      "translate": "advancements.shenjinqukk.descr"
+      "translate": "advancements.mjdl.descr"
     },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
-    "shenjinqukk_0": {
+    "mjdl_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "primogemcraft:yingjicunchunang"
+              "primogemcraft:jhsb_2"
             ],
             "count": {
               "min": 1,
-              "max": 1
+              "max": 64
             }
           }
         ]
       }
     }
   },
-  "parent": "primogemcraft:wanwuqiyuan"
+  "parent": "primogemcraft:jzdz"
 }
