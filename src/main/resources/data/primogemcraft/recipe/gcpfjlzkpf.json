@@ -1,0 +1,13 @@
+{
+  "type": "genshincraft:crafting",
+  "materials": [
+    {
+      "id": "primogemcraft:baitiekuang",
+      "count": 2
+    }
+  ],
+  "result": {
+    "id": "primogemcraft:jlza",
+    "count": 1
+  }
+}
