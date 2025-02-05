@@ -22,6 +22,6 @@ public class IsChestCondition implements LootItemCondition {
 
     @Override
     public boolean test(LootContext context) {
-        return context.getResolver().lookupOrThrow(LOOT_TABLE).getOrThrow(ResourceKey.create(LOOT_TABLE, context.getQueriedLootTableId())).value().getParamSet() == LootContextParamSets.CHEST;
+        return context.getResolver().lookupOrThrow(LOOT_TABLE).get(ResourceKey.create(LOOT_TABLE, context.getQueriedLootTableId())).filter(holder -> holder.value().getParamSet() == LootContextParamSets.CHEST).isPresent();
     }
 }
