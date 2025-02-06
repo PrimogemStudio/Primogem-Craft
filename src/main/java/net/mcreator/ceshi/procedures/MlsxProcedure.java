@@ -23,11 +23,13 @@ import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 public class MlsxProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, ItemStack itemstack) {
 		if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:moladui"))) && !(blockstate.getBlock() == PrimogemcraftModBlocks.DBMLK.get())) {
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chain.place")), SoundSource.BLOCKS, (float) 0.5, (float) Mth.nextDouble(RandomSource.create(), 1, 1.1));
-				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chain.place")), SoundSource.BLOCKS, (float) 0.5, (float) Mth.nextDouble(RandomSource.create(), 1, 1.1), false);
+			if (!world.isClientSide()) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chain.place")), SoundSource.BLOCKS, (float) 0.5, (float) Mth.nextDouble(RandomSource.create(), 1, 1.1));
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chain.place")), SoundSource.BLOCKS, (float) 0.5, (float) Mth.nextDouble(RandomSource.create(), 1, 1.1), false);
+					}
 				}
 			}
 			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -45,70 +47,10 @@ public class MlsxProcedure {
 				_itemHandlerModifiable.setStackInSlot(0, _setstack);
 			}
 			itemstack.shrink(1);
-			if (blockstate.getBlock() == PrimogemcraftModBlocks.MOLADUI_02.get()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 0) > 4) {
-					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable)
-						_itemHandlerModifiable.setStackInSlot(0, ItemStack.EMPTY);
-					world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.MLXDML_01.get().defaultBlockState(), 3);
-				}
-			}
-			if (blockstate.getBlock() == PrimogemcraftModBlocks.MLXDML_01.get()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 0) > 7) {
-					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable)
-						_itemHandlerModifiable.setStackInSlot(0, ItemStack.EMPTY);
-					world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.MLXDML_02.get().defaultBlockState(), 3);
-				}
-			}
-			if (blockstate.getBlock() == PrimogemcraftModBlocks.MLXDML_02.get()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 0) > 20) {
-					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable)
-						_itemHandlerModifiable.setStackInSlot(0, ItemStack.EMPTY);
-					world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.MLXDML_03.get().defaultBlockState(), 3);
-				}
-			}
-			if (blockstate.getBlock() == PrimogemcraftModBlocks.MLXDML_03.get()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 0) > 25) {
-					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable)
-						_itemHandlerModifiable.setStackInSlot(0, ItemStack.EMPTY);
-					world.setBlock(BlockPos.containing(x, y, z), PrimogemcraftModBlocks.DBMLK.get().defaultBlockState(), 3);
-				}
-			}
+			MoladuiHSProcedure.execute(world, x, y, z, PrimogemcraftModBlocks.MOLADUI_02.get().defaultBlockState(), PrimogemcraftModBlocks.MLXDML_01.get().defaultBlockState(), blockstate, 4);
+			MoladuiHSProcedure.execute(world, x, y, z, PrimogemcraftModBlocks.MLXDML_01.get().defaultBlockState(), PrimogemcraftModBlocks.MLXDML_02.get().defaultBlockState(), blockstate, 7);
+			MoladuiHSProcedure.execute(world, x, y, z, PrimogemcraftModBlocks.MLXDML_02.get().defaultBlockState(), PrimogemcraftModBlocks.MLXDML_03.get().defaultBlockState(), blockstate, 20);
+			MoladuiHSProcedure.execute(world, x, y, z, PrimogemcraftModBlocks.MLXDML_03.get().defaultBlockState(), PrimogemcraftModBlocks.DBMLK.get().defaultBlockState(), blockstate, 25);
 		}
 	}
 }

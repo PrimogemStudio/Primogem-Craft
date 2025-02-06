@@ -35068,6 +35068,53 @@
           "src/main/resources/data/primogemcraft/recipe/gcpfxiantiaoqiang.json"
         ]
       }
+    },
+    {
+      "name": "MoladuiHS",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moladui_hs",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/MoladuiHSProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "block1",
+            "type": "blockstate"
+          },
+          {
+            "name": "block2",
+            "type": "blockstate"
+          },
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "zhi",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
