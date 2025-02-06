@@ -27,6 +27,8 @@ public class MengyingItem extends Item {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.primogemcraft.mengying.description_0"));
 		list.add(Component.translatable("item.primogemcraft.mengying.description_1"));
+		list.add(Component.translatable("item.primogemcraft.mengying.description_2"));
+		list.add(Component.translatable("item.primogemcraft.mengying.description_3"));
 	}
 
 	@Override

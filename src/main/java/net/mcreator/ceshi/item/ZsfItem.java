@@ -74,8 +74,6 @@ public class ZsfItem extends AxeItem {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.primogemcraft.zsf.description_0"));
 		list.add(Component.translatable("item.primogemcraft.zsf.description_1"));
-		list.add(Component.translatable("item.primogemcraft.zsf.description_2"));
-		list.add(Component.translatable("item.primogemcraft.zsf.description_3"));
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class ZsqsxProcedure {
 				}
 			}
 			if (world instanceof ServerLevel _level) {
-				itemstack.hurtAndBreak((int) (itemstack.getMaxDamage() * 0.05), _level, null, _stkprov -> {
+				itemstack.hurtAndBreak((int) (itemstack.getMaxDamage() * 0.02), _level, null, _stkprov -> {
 				});
 			}
 			if (entity instanceof Player _player)

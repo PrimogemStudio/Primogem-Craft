@@ -31,7 +31,9 @@
     "specialInformation": {
       "fixedValue": [
         "§7持有此物品时，如若在§d过去§7效果持续期间死亡",
-        "§7则视本次死亡无效并触发过去效果"
+        "§7则视本次死亡无效并触发过去效果",
+        "§8每次触发1%概率损坏，可修复",
+        "§d使用“最胜紫金”工具可获得过去效果"
       ]
     },
     "glowCondition": {
@@ -59,6 +61,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

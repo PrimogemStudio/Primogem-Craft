@@ -1,15 +1,19 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": {
-    "item": "primogemcraft:mmola_01"
-  },
-  "base": {
-    "item": "primogemcraft:posuimengying"
-  },
-  "addition": {
-    "item": "primogemcraft:zuishengsuixie"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:posuimengying"
+    },
+    "b": {
+      "item": "primogemcraft:zuishengduanpian"
+    }
   },
   "result": {
-    "id": "primogemcraft:mengying"
+    "id": "primogemcraft:mengying",
+    "count": 1
   }
 }
