@@ -19,7 +19,7 @@ import java.util.List;
 
 public class XiantiaoqiangItem extends Item {
 	public XiantiaoqiangItem() {
-		super(new Item.Properties().stacksTo(8).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(8).saturationModifier(10f).alwaysEdible().build()));
+		super(new Item.Properties().stacksTo(8).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(12).saturationModifier(0.8f).alwaysEdible().build()));
 	}
 
 	@Override

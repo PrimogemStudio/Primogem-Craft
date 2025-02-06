@@ -16,7 +16,7 @@ import java.util.List;
 
 public class YuanshiItem extends Item {
 	public YuanshiItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(9).saturationModifier(9f).alwaysEdible().build()));
+		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(9).saturationModifier(0.4f).alwaysEdible().build()));
 	}
 
 	@Override

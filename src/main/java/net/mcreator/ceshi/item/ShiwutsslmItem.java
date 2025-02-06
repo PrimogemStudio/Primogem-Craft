@@ -12,7 +12,7 @@ import net.mcreator.ceshi.procedures.Sw_slm_sxProcedure;
 
 public class ShiwutsslmItem extends Item {
 	public ShiwutsslmItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(10f).alwaysEdible().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(0.8f).alwaysEdible().build()));
 	}
 
 	@Override
