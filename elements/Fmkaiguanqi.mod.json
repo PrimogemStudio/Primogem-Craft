@@ -14,7 +14,7 @@
         "value": "TAG:c:tools"
       }
     ],
-    "isTreasureEnchantment": false,
+    "isTreasureEnchantment": true,
     "isCurse": false,
     "canGenerateInLootTables": false,
     "canVillagerTrade": false
