@@ -1,15 +1,15 @@
 package net.mcreator.ceshi.procedures;
 
-import net.neoforged.neoforge.items.ItemHandlerHelper;
-
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -70,10 +70,10 @@ public class Wyzp_sx_1Procedure {
 					final boolean _tagValue = true;
 					CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putBoolean(_tagName, _tagValue));
 				}
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = i1.copy();
-					_setstack.setCount(1);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, i1);
+					entityToSpawn.setPickUpDelay(0);
+					_level.addFreshEntity(entityToSpawn);
 				}
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("\u00A7d\u5DF2\u53C2\u4E0E\u5F00\u5956\uFF01"), false);
