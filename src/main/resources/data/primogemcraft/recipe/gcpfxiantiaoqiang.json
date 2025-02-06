@@ -1,0 +1,21 @@
+{
+  "type": "genshincraft:crafting",
+  "materials": [
+  	{
+      "id": "genshincraft:judgment_time",
+      "count": 1
+    },
+    {
+      "id": "primogemcraft:shanbianzhichen",
+      "count": 1
+    },
+    {
+      "id": "primogemcraft:chuangshijiejing",
+      "count": 1
+    }
+  ],
+  "result": {
+    "id": "primogemcraft:xiantiaoqiang",
+    "count": 1
+  }
+}

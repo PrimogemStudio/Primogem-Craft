@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "攻击项增益",
-    "icon": "xiaoguo.png",
+    "icon": "xiaoguo",
     "color": {
       "value": -1266889,
       "falpha": 0.0
@@ -15,7 +15,15 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
-    "modifiers": [],
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": 0.01,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ],
     "onExpired": {
       "name": "Gongjixiangzengyi_shuxing"
     }

@@ -157,7 +157,7 @@ public class PrimogemcraftModMobEffects {
 		if (effectInstance.getEffect().is(JISHENG)) {
 			Xgjssx0Procedure.execute();
 		} else if (effectInstance.getEffect().is(GONGJITISHENG)) {
-			Gongjixiangzengyi_shuxingProcedure.execute(entity);
+			Gongjixiangzengyi_shuxingProcedure.execute();
 		} else if (effectInstance.getEffect().is(LETOUDECHENGFA)) {
 			LtcgxgsxProcedure.execute(entity.level(), entity);
 		} else if (effectInstance.getEffect().is(GUOQU)) {

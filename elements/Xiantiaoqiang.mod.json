@@ -33,9 +33,11 @@
         "§c别把碗吃了！！！",
         "§",
         "§5当食用后：",
-        "§9+1 力量等级（5:00）",
-        "§9>继承持续时间"
+        "§9+20% 最终攻击力（5:00）"
       ]
+    },
+    "glowCondition": {
+      "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -45,6 +47,9 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 8,
@@ -56,6 +61,10 @@
     "isAlwaysEdible": true,
     "animation": "eat",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }
