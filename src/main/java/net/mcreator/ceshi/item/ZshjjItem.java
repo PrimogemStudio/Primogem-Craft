@@ -74,7 +74,7 @@ public class ZshjjItem extends SwordItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		Zsjsx2Procedure.execute(entity, ar.getObject());
+		Zsjsx2Procedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 

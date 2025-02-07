@@ -13172,8 +13172,8 @@
       "registry_name": "zstj",
       "metadata": {
         "files": [
-          "src/main/resources/assets/primogemcraft/models/item/zstj.json",
-          "src/main/java/net/mcreator/ceshi/item/ZstjItem.java"
+          "src/main/java/net/mcreator/ceshi/item/ZstjItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/zstj.json"
         ]
       }
     },
@@ -13185,8 +13185,8 @@
       "registry_name": "zszsj",
       "metadata": {
         "files": [
-          "src/main/resources/assets/primogemcraft/models/item/zszsj.json",
-          "src/main/java/net/mcreator/ceshi/item/ZszsjItem.java"
+          "src/main/java/net/mcreator/ceshi/item/ZszsjItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/zszsj.json"
         ]
       }
     },
@@ -13273,6 +13273,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }

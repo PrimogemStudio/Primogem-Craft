@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "勾玉",
-    "icon": "gouyu.png",
+    "icon": "gouyu",
     "color": {
       "value": -1878800,
       "falpha": 0.0
@@ -15,7 +15,36 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
-    "modifiers": [],
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": 0.3,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_SPEED"
+        },
+        "amount": 0.3,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "SWIM_SPEED"
+        },
+        "amount": 0.3,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "ARMOR"
+        },
+        "amount": 0.3,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ],
     "onStarted": {
       "name": "Gouyukaishi"
     },
