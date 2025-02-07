@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 
 public class HuoqiHSProcedure {
-	public static double execute(LevelAccessor world, Entity entity, ItemStack item, double zhi) {
+	public static double execute(LevelAccessor world, Entity entity, ItemStack item, boolean zeng, double zhi) {
 		if (entity == null)
 			return 0;
 		boolean o1 = false;
@@ -20,6 +20,6 @@ public class HuoqiHSProcedure {
 				}
 			}
 		}
-		return o1 ? zhi * 0.5 : zhi;
+		return o1 ? (zeng ? zhi * 2 : zhi * 0.5) + 0 : zhi;
 	}
 }

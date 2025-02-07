@@ -29,7 +29,7 @@ public class ZsfsxProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.GUOQU, (int) a, 0));
 			if (sourceentity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) HuoqiHSProcedure.execute(world, sourceentity, new ItemStack(PrimogemcraftModItems.HQLEI.get()), a * 0.5));
+				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) HuoqiHSProcedure.execute(world, sourceentity, new ItemStack(PrimogemcraftModItems.HQLEI.get()), false, a * 0.5));
 		}
 	}
 }
