@@ -1,7 +1,13 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "genshincraft"
+    }
+  ],
   "type": "genshincraft:crafting",
   "materials": [
-  	{
+    {
       "id": "genshincraft:judgment_time",
       "count": 1
     },
