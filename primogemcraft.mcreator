@@ -12835,8 +12835,8 @@
       "registry_name": "jlc",
       "metadata": {
         "files": [
-          "src/main/resources/assets/primogemcraft/models/item/jlc.json",
-          "src/main/java/net/mcreator/ceshi/item/JlcItem.java"
+          "src/main/java/net/mcreator/ceshi/item/JlcItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/jlc.json"
         ]
       }
     },
@@ -35142,6 +35142,44 @@
           },
           {
             "name": "zhi",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jlcsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jlcsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/JlcsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
             "type": "number"
           },
           {

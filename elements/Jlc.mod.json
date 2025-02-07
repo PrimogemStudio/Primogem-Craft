@@ -25,6 +25,9 @@
     "enchantability": 15,
     "damageVsEntity": 8.0,
     "usageCount": 1200,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Jianlaoduanpian"
@@ -36,7 +39,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {
-      "name": "Jjlcjlqsx"
+      "name": "Jlcsx"
     }
   }
 }

@@ -17,7 +17,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.ceshi.procedures.JjlcjlqsxProcedure;
+import net.mcreator.ceshi.procedures.JlcsxProcedure;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 import java.util.List;
@@ -62,7 +62,7 @@ public class JlcItem extends HoeItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		JjlcjlqsxProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		JlcsxProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), sourceentity, itemstack);
 		return retval;
 	}
 
