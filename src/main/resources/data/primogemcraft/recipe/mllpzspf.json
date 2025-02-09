@@ -1,21 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "aaa",
-    "aba",
-    "aaa"
-  ],
-  "key": {
-    "a": {
-      "item": "minecraft:diamond"
-    },
-    "b": {
-      "item": "primogemcraft:mllp"
-    }
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:qhmbml"
+  },
+  "base": {
+    "item": "primogemcraft:mllp"
+  },
+  "addition": {
+    "item": "minecraft:diamond"
   },
   "result": {
-    "id": "primogemcraft:mllpzs",
-    "count": 1
+    "id": "primogemcraft:mllpzs"
   }
 }
