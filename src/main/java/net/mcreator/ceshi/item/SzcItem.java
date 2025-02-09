@@ -7,6 +7,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
@@ -15,12 +16,13 @@ import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.ceshi.procedures.SzcsxProcedure;
+import net.mcreator.ceshi.procedures.Szcsx2Procedure;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 import java.util.List;
@@ -65,7 +67,7 @@ public class SzcItem extends HoeItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		SzcsxProcedure.execute(world, entity, ar.getObject());
+		Szcsx2Procedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
 	}
 
@@ -75,5 +77,12 @@ public class SzcItem extends HoeItem {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.primogemcraft.szc.description_0"));
 		list.add(Component.translatable("item.primogemcraft.szc.description_1"));
+	}
+
+	@Override
+	public InteractionResult useOn(UseOnContext context) {
+		super.useOn(context);
+		Szcsx2Procedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
+		return InteractionResult.SUCCESS;
 	}
 }

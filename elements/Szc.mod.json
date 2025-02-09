@@ -11,8 +11,8 @@
     "name": "§a『生长碧翡』锄",
     "specialInformation": {
       "fixedValue": [
-        "§d手持右键空气时候：",
-        "§7 - 消耗耐久并对脚底释放一次骨粉"
+        "§7右键对脚下使用骨粉",
+        "§7潜行右键对方块使用"
       ]
     },
     "creativeTabs": [
@@ -25,6 +25,9 @@
     "enchantability": 15,
     "damageVsEntity": 3.0,
     "usageCount": 1561,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Yuanshi"
@@ -39,7 +42,10 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedInAir": {
-      "name": "Szcsx"
+      "name": "Szcsx2"
+    },
+    "onRightClickedOnBlock": {
+      "name": "Szcsx2"
     }
   }
 }
