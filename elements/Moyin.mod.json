@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "particle",
   "definition": {
-    "texture": "moyin.png",
+    "texture": "moyin",
     "animate": true,
     "frameDuration": 5,
     "width": 0.2,
