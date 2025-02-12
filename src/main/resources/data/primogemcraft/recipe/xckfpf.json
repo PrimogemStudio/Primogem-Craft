@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:xiangdanganlao"
+    },
+    {
+      "item": "primogemcraft:xiangdanganlao"
+    },
+    {
+      "item": "primogemcraft:xiangdanganlao"
+    },
+    {
+      "item": "primogemcraft:qwsklj"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "id": "primogemcraft:xckf",
+    "count": 1
+  }
+}
