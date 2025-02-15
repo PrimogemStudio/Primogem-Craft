@@ -3,16 +3,21 @@ package net.mcreator.ceshi.procedures;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.network.PrimogemcraftModVariables;
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
+import net.mcreator.ceshi.init.PrimogemcraftModGameRules;
 import net.mcreator.ceshi.init.PrimogemcraftModEntities;
 import net.mcreator.ceshi.entity.QqiyuanJinGuangEntity;
 import net.mcreator.ceshi.entity.QQyuanchuzi01Entity;
@@ -160,9 +165,19 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 				}
 			}
 			if (entity instanceof QqiyuanJinGuangEntity) {
-				if (Math.random() < 1) {
+				if (Math.random() < (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEBUHUOMINGGUANGZHI)) * 0.01) {
 					PrimogemcraftMod.queueServerWork(20, () -> {
-						entity.getPersistentData().putBoolean("bhmg", true);
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:bhmg_y")), SoundSource.NEUTRAL, 4, 1);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:bhmg_y")), SoundSource.NEUTRAL, 4, 1, false);
+							}
+						}
+					});
+					PrimogemcraftMod.queueServerWork(40, () -> {
+						if (entity instanceof QqiyuanJinGuangEntity _datEntSetL)
+							_datEntSetL.getEntityData().set(QqiyuanJinGuangEntity.DATA_bhmg, true);
 					});
 				}
 			}

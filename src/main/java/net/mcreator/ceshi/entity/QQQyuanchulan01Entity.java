@@ -27,7 +27,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.ceshi.procedures.Qiyuanshiti_chushengxiaoguoProcedure;
@@ -40,8 +39,6 @@ public class QQQyuanchulan01Entity extends PathfinderMob {
 		super(type, world);
 		xpReward = 1;
 		setNoAi(false);
-		setCustomName(Component.literal("右键出蓝"));
-		setCustomNameVisible(true);
 		setPersistenceRequired();
 	}
 
@@ -54,11 +51,6 @@ public class QQQyuanchulan01Entity extends PathfinderMob {
 	@Override
 	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
 		return false;
-	}
-
-	@Override
-	public SoundEvent getAmbientSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:choukatiaoguo.1"));
 	}
 
 	@Override

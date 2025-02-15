@@ -18,6 +18,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.world.inventory.GUIbhmgMenu;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
+import net.mcreator.ceshi.entity.QqiyuanJinGuangEntity;
 
 import io.netty.buffer.Unpooled;
 
@@ -25,7 +26,9 @@ public class QqiyuanJinGuangChuShiShiTiShengChengProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
+		boolean o1 = false;
 		if (entity.onGround()) {
+			o1 = entity instanceof QqiyuanJinGuangEntity _datEntL1 && _datEntL1.getEntityData().get(QqiyuanJinGuangEntity.DATA_bhmg);
 			if (new Object() {
 				public boolean checkGamemode(Entity _ent) {
 					if (_ent instanceof ServerPlayer _serverPlayer) {
@@ -37,7 +40,7 @@ public class QqiyuanJinGuangChuShiShiTiShengChengProcedure {
 					return false;
 				}
 			}.checkGamemode(sourceentity)) {
-				if (entity.getPersistentData().getBoolean("bhmg")) {
+				if (o1) {
 					if (sourceentity instanceof ServerPlayer _ent) {
 						BlockPos _bpos = BlockPos.containing(x, y, z);
 						_ent.openMenu(new MenuProvider() {
@@ -65,7 +68,7 @@ public class QqiyuanJinGuangChuShiShiTiShengChengProcedure {
 			} else {
 				if ((entity.getPersistentData().getString("qiyuan_guishu")).equals(sourceentity.getDisplayName().getString())) {
 					if (entity.getPersistentData().getBoolean("chouka_jiance_2")) {
-						if (entity.getPersistentData().getBoolean("bhmg")) {
+						if (o1) {
 							if (sourceentity instanceof ServerPlayer _ent) {
 								BlockPos _bpos = BlockPos.containing(x, y, z);
 								_ent.openMenu(new MenuProvider() {

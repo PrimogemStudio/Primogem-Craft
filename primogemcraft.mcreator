@@ -697,9 +697,9 @@
       "registry_name": "q_qyuanchuzi_01",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/ceshi/entity/QQyuanchuzi01Entity.java",
+          "src/main/resources/assets/primogemcraft/models/item/q_qyuanchuzi_01_spawn_egg.json",
           "src/main/java/net/mcreator/ceshi/client/renderer/QQyuanchuzi01Renderer.java",
-          "src/main/resources/assets/primogemcraft/models/item/q_qyuanchuzi_01_spawn_egg.json"
+          "src/main/java/net/mcreator/ceshi/entity/QQyuanchuzi01Entity.java"
         ]
       }
     },
@@ -787,9 +787,9 @@
       "registry_name": "qq_qyuanchulan_01",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/ceshi/entity/QQQyuanchulan01Entity.java",
           "src/main/java/net/mcreator/ceshi/client/renderer/QQQyuanchulan01Renderer.java",
-          "src/main/resources/assets/primogemcraft/models/item/qq_qyuanchulan_01_spawn_egg.json",
-          "src/main/java/net/mcreator/ceshi/entity/QQQyuanchulan01Entity.java"
+          "src/main/resources/assets/primogemcraft/models/item/qq_qyuanchulan_01_spawn_egg.json"
         ]
       }
     },
@@ -35536,6 +35536,17 @@
           }
         ]
       }
+    },
+    {
+      "name": "Guizebuhuomingguangzhi",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guizebuhuomingguangzhi",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
     }
   ],
   "variable_elements": [
@@ -35896,6 +35907,14 @@
       ],
       "category": "block",
       "subtitle": "炸弹已经被拆除！"
+    },
+    {
+      "name": "bhmg_y",
+      "files": [
+        "bu_huo_ming_guang_"
+      ],
+      "category": "neutral",
+      "subtitle": "触发捕获明光"
     }
   ],
   "tag_elements": {
@@ -38582,6 +38601,7 @@
       "item.primogemcraft.hqhuo.description_1": " §a+50%§8 §/ §d+0.5",
       "item.primogemcraft.hqhuo.description_0": "§9对于燃愿玛瑙系列装备：",
       "item.primogemcraft.hhaokandelaji.description_2": "§9瞬间治疗II",
+      "subtitles.bhmg_y": "触发捕获明光",
       "item.primogemcraft.hhaokandelaji.description_1": "§9生命恢复II（1:00）",
       "effect.primogemcraft.rykjxg": "灼烧反击",
       "item.primogemcraft.axhjt_leggings": "§b『哀叙冰玉』§e下界合金护腿",
@@ -38951,6 +38971,7 @@
       "item.primogemcraft.qgdysj.description_4": "§c • 别在家里使用",
       "item.primogemcraft.meiyouzhushidaima.description_0": "§7将这段代码修复成正常的奇物需要",
       "item.primogemcraft.jlc": "§6『坚牢黄玉』锄",
+      "gamerule.guizebuhuomingguangzhi": "§d捕获明光触发倍率",
       "item.primogemcraft.jlf": "§6『坚牢黄玉』斧",
       "item.primogemcraft.tiaoguozhang.description_0": "§7手持右键快速结算抽取范围",
       "item.primogemcraft.qgdysj.description_1": "§7 • 攻击生命值小于10点的生物使其触发一",
@@ -39513,6 +39534,7 @@
       "item.primogemcraft.sjzshj": "§e『下界合金升级』§d最胜紫晶",
       "advancements.qwhc.descr": "获得奇物合成剂",
       "item.primogemcraft.aixubingyukuai": "§b哀叙冰玉 块",
+      "gamerule.guizebuhuomingguangzhi.description": "默认10%",
       "item.primogemcraft.zhongkouweitieding": "重口味铁锭",
       "item.minecraft.splash_potion.effect.fengraoqiongjiang": "§e喷溅型丰饶琼浆",
       "block.primogemcraft.shenbanyanyuanshikuangshi": "深层原石矿石",
@@ -41246,6 +41268,7 @@
       "item.primogemcraft.hqhuo.description_1": " §a+50%§8 §/ §d+0.5",
       "item.primogemcraft.hqhuo.description_0": "§9对于燃愿玛瑙系列装备：",
       "item.primogemcraft.hhaokandelaji.description_2": "§9瞬间治疗II",
+      "subtitles.bhmg_y": "触发捕获明光",
       "item.primogemcraft.hhaokandelaji.description_1": "§9生命恢复II（1:00）",
       "effect.primogemcraft.rykjxg": "灼烧反击",
       "item.primogemcraft.axhjt_leggings": "§b『Shivada Jade』§eNetherite leggings",
@@ -41615,6 +41638,7 @@
       "item.primogemcraft.qgdysj.description_4": "§c • 别在家里使用",
       "item.primogemcraft.meiyouzhushidaima.description_0": "§7将这段代码修复成正常的奇物需要",
       "item.primogemcraft.jlc": "§6『Prithiva Topaz』Hoe",
+      "gamerule.guizebuhuomingguangzhi": "§d捕获明光触发倍率",
       "item.primogemcraft.jlf": "§6『Prithiva Topaz』Axe",
       "item.primogemcraft.tiaoguozhang.description_0": "§7手持右键快速结算抽取范围",
       "item.primogemcraft.qgdysj.description_1": "§7 • 攻击生命值小于10点的生物使其触发一",
@@ -42177,6 +42201,7 @@
       "item.primogemcraft.sjzshj": "§e『Netherite Upgrade』§dVajrada Amethyst",
       "advancements.qwhc.descr": "获得奇物合成剂",
       "item.primogemcraft.aixubingyukuai": "§bShivada Jade Gemstone",
+      "gamerule.guizebuhuomingguangzhi.description": "默认10%",
       "item.primogemcraft.zhongkouweitieding": "Stinky Iron Ingot",
       "item.minecraft.splash_potion.effect.fengraoqiongjiang": "§eSplash Abundance Drinking",
       "block.primogemcraft.shenbanyanyuanshikuangshi": "Deep Slate Priomogem Ore",
@@ -43910,6 +43935,7 @@
       "item.primogemcraft.hqhuo.description_1": " §a+50%§8 §/ §d+0.5",
       "item.primogemcraft.hqhuo.description_0": "§9对于燃愿玛瑙系列装备：",
       "item.primogemcraft.hhaokandelaji.description_2": "§9瞬间治疗II",
+      "subtitles.bhmg_y": "触发捕获明光",
       "item.primogemcraft.hhaokandelaji.description_1": "§9生命恢复II（1:00）",
       "effect.primogemcraft.rykjxg": "灼烧反击",
       "item.primogemcraft.axhjt_leggings": "§b『哀叙冰玉』§e下界合金护腿",
@@ -44276,6 +44302,7 @@
       "item.primogemcraft.qgdysj.description_4": "§c • 别在家里使用",
       "item.primogemcraft.meiyouzhushidaima.description_0": "§7将这段代码修复成正常的奇物需要",
       "item.primogemcraft.jlc": "§6『坚牢黄玉』锄",
+      "gamerule.guizebuhuomingguangzhi": "§d捕获明光触发倍率",
       "item.primogemcraft.jlf": "§6『坚牢黄玉』斧",
       "item.primogemcraft.tiaoguozhang.description_0": "§7手持右键快速结算抽取范围",
       "item.primogemcraft.qgdysj.description_1": "§7 • 攻击生命值小于10点的生物使其触发一",
@@ -44839,6 +44866,7 @@
       "item.primogemcraft.sjzshj": "§e『下界合金升级』§d最胜紫晶",
       "advancements.qwhc.descr": "获得奇物合成剂",
       "item.primogemcraft.aixubingyukuai": "§b哀叙冰玉 块",
+      "gamerule.guizebuhuomingguangzhi.description": "默认10%",
       "item.primogemcraft.zhongkouweitieding": "重口味铁锭",
       "item.minecraft.splash_potion.effect.fengraoqiongjiang": "§e喷溅型丰饶琼浆",
       "block.primogemcraft.shenbanyanyuanshikuangshi": "深层原石矿石",

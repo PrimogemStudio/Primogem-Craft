@@ -3,11 +3,23 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "祈愿出紫色",
-    "mobLabel": "右键出紫！",
+    "mobLabel": "",
     "mobModelName": "Modeljinguangshiti01_Converted_Converted",
     "mobModelTexture": "xiguang.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [],
     "animations": [],
@@ -63,6 +75,9 @@
     "health": 1,
     "xpAmount": 1,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -90,7 +105,7 @@
       "value": ""
     },
     "livingSound": {
-      "value": "CUSTOM:choukatiaoguo.1"
+      "value": ""
     },
     "hurtSound": {
       "value": "CUSTOM:wu_sheng"
@@ -99,6 +114,9 @@
       "value": "CUSTOM:wu_sheng"
     },
     "stepSound": {
+      "value": ""
+    },
+    "raidCelebrationSound": {
       "value": ""
     },
     "entityDataEntries": [],

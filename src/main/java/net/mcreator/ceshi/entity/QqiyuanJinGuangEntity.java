@@ -27,7 +27,10 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.ceshi.procedures.QqiyuanJinGuangChuShiShiTiShengChengProcedure;
@@ -36,13 +39,19 @@ import net.mcreator.ceshi.procedures.Qiyuanshiti_chushengxiaoguoProcedure;
 import javax.annotation.Nullable;
 
 public class QqiyuanJinGuangEntity extends PathfinderMob {
+	public static final EntityDataAccessor<Boolean> DATA_bhmg = SynchedEntityData.defineId(QqiyuanJinGuangEntity.class, EntityDataSerializers.BOOLEAN);
+
 	public QqiyuanJinGuangEntity(EntityType<QqiyuanJinGuangEntity> type, Level world) {
 		super(type, world);
 		xpReward = 1;
 		setNoAi(false);
-		setCustomName(Component.literal("右键出金！"));
-		setCustomNameVisible(true);
 		setPersistenceRequired();
+	}
+
+	@Override
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+		super.defineSynchedData(builder);
+		builder.define(DATA_bhmg, false);
 	}
 
 	@Override
@@ -54,11 +63,6 @@ public class QqiyuanJinGuangEntity extends PathfinderMob {
 	@Override
 	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
 		return false;
-	}
-
-	@Override
-	public SoundEvent getAmbientSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("primogemcraft:choukatiaoguo.1"));
 	}
 
 	@Override
@@ -117,6 +121,19 @@ public class QqiyuanJinGuangEntity extends PathfinderMob {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
 		Qiyuanshiti_chushengxiaoguoProcedure.execute(world, this.getX(), this.getY(), this.getZ(), this);
 		return retval;
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putBoolean("Databhmg", this.entityData.get(DATA_bhmg));
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("Databhmg"))
+			this.entityData.set(DATA_bhmg, compound.getBoolean("Databhmg"));
 	}
 
 	@Override

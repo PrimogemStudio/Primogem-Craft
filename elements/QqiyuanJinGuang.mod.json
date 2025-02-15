@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "祈愿出金",
-    "mobLabel": "右键出金！",
+    "mobLabel": "",
     "mobModelName": "Modeljinguangshiti01_Converted_Converted",
     "mobModelTexture": "texture.png",
     "transparentModelCondition": {
@@ -24,7 +24,7 @@
     "modelLayers": [
       {
         "model": "Modeljinguangshiti01_Converted_Converted",
-        "texture": "buhuominggguang.png",
+        "texture": "buhuomingguang.png",
         "disableHurtOverlay": false,
         "glow": false,
         "condition": {
@@ -115,7 +115,7 @@
       "value": ""
     },
     "livingSound": {
-      "value": "CUSTOM:choukatiaoguo.1"
+      "value": ""
     },
     "hurtSound": {
       "value": "CUSTOM:wu_sheng"
@@ -129,7 +129,13 @@
     "raidCelebrationSound": {
       "value": ""
     },
-    "entityDataEntries": [],
+    "entityDataEntries": [
+      {
+        "name": "bhmg",
+        "type": "logic",
+        "value": false
+      }
+    ],
     "onRightClickedOn": {
       "name": "QqiyuanJinGuangChuShiShiTiShengCheng"
     },

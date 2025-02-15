@@ -3,7 +3,7 @@
   "_type": "livingentity",
   "definition": {
     "mobName": "祈愿出蓝",
-    "mobLabel": "右键出蓝",
+    "mobLabel": "",
     "mobModelName": "Modeljinguangshiti01_Converted_Converted",
     "mobModelTexture": "languang.png",
     "transparentModelCondition": {
@@ -105,7 +105,7 @@
       "value": ""
     },
     "livingSound": {
-      "value": "CUSTOM:choukatiaoguo.1"
+      "value": ""
     },
     "hurtSound": {
       "value": "CUSTOM:wu_sheng"

@@ -287,5 +287,14 @@
         "stream": false
       }
     ]
+  },
+  "bhmg_y": {
+    "subtitle": "subtitles.bhmg_y",
+    "sounds": [
+      {
+        "name": "primogemcraft:bu_huo_ming_guang_",
+        "stream": false
+      }
+    ]
   }
 }

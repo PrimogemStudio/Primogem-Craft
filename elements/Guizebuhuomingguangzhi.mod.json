@@ -1,0 +1,12 @@
+{
+  "_fv": 73,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "§d捕获明光触发倍率",
+    "description": "默认10%",
+    "category": "MOBS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 10
+  }
+}

@@ -23,7 +23,7 @@ public class QqiyuanJinGuangRenderer extends MobRenderer<QqiyuanJinGuangEntity, 
 	public QqiyuanJinGuangRenderer(EntityRendererProvider.Context context) {
 		super(context, new Modeljinguangshiti01_Converted_Converted<QqiyuanJinGuangEntity>(context.bakeLayer(Modeljinguangshiti01_Converted_Converted.LAYER_LOCATION)), 0.3f);
 		this.addLayer(new RenderLayer<QqiyuanJinGuangEntity, Modeljinguangshiti01_Converted_Converted<QqiyuanJinGuangEntity>>(this) {
-			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("primogemcraft:textures/entities/buhuominggguang.png");
+			final ResourceLocation LAYER_TEXTURE = ResourceLocation.parse("primogemcraft:textures/entities/buhuomingguang.png");
 
 			@Override
 			public void render(PoseStack poseStack, MultiBufferSource bufferSource, int light, QqiyuanJinGuangEntity entity, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
