@@ -3,15 +3,23 @@ package net.mcreator.ceshi.procedures;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.ceshi.world.inventory.GUIbhmgMenu;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
+
+import io.netty.buffer.Unpooled;
 
 public class QqiyuanJinGuangChuShiShiTiShengChengProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
@@ -29,13 +37,57 @@ public class QqiyuanJinGuangChuShiShiTiShengChengProcedure {
 					return false;
 				}
 			}.checkGamemode(sourceentity)) {
-				QycjzlpProcedure.execute(world, x, y, z);
+				if (entity.getPersistentData().getBoolean("bhmg")) {
+					if (sourceentity instanceof ServerPlayer _ent) {
+						BlockPos _bpos = BlockPos.containing(x, y, z);
+						_ent.openMenu(new MenuProvider() {
+							@Override
+							public Component getDisplayName() {
+								return Component.literal("GUIbhmg");
+							}
+
+							@Override
+							public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+								return false;
+							}
+
+							@Override
+							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+								return new GUIbhmgMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
+				} else {
+					QycjzlpProcedure.execute(world, x, y, z);
+				}
 				if (!entity.level().isClientSide())
 					entity.discard();
 			} else {
 				if ((entity.getPersistentData().getString("qiyuan_guishu")).equals(sourceentity.getDisplayName().getString())) {
 					if (entity.getPersistentData().getBoolean("chouka_jiance_2")) {
-						QycjzlpProcedure.execute(world, x, y, z);
+						if (entity.getPersistentData().getBoolean("bhmg")) {
+							if (sourceentity instanceof ServerPlayer _ent) {
+								BlockPos _bpos = BlockPos.containing(x, y, z);
+								_ent.openMenu(new MenuProvider() {
+									@Override
+									public Component getDisplayName() {
+										return Component.literal("GUIbhmg");
+									}
+
+									@Override
+									public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+										return false;
+									}
+
+									@Override
+									public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+										return new GUIbhmgMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+									}
+								}, _bpos);
+							}
+						} else {
+							QycjzlpProcedure.execute(world, x, y, z);
+						}
 						if (!entity.level().isClientSide())
 							entity.discard();
 					} else {

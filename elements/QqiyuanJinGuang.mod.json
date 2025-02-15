@@ -6,10 +6,32 @@
     "mobLabel": "右键出金！",
     "mobModelName": "Modeljinguangshiti01_Converted_Converted",
     "mobModelTexture": "texture.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
     },
-    "modelLayers": [],
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
+    },
+    "modelLayers": [
+      {
+        "model": "Modeljinguangshiti01_Converted_Converted",
+        "texture": "buhuominggguang.png",
+        "disableHurtOverlay": false,
+        "glow": false,
+        "condition": {
+          "name": "Bhmgsx"
+        }
+      }
+    ],
     "animations": [],
     "modelWidth": 0.3,
     "modelHeight": 0.3,
@@ -63,6 +85,9 @@
     "health": 1,
     "xpAmount": 1,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
       "fixedValue": true
     },
@@ -99,6 +124,9 @@
       "value": "CUSTOM:wu_sheng"
     },
     "stepSound": {
+      "value": ""
+    },
+    "raidCelebrationSound": {
       "value": ""
     },
     "entityDataEntries": [],

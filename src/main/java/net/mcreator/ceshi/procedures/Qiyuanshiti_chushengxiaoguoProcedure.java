@@ -17,6 +17,7 @@ import net.mcreator.ceshi.init.PrimogemcraftModEntities;
 import net.mcreator.ceshi.entity.QqiyuanJinGuangEntity;
 import net.mcreator.ceshi.entity.QQyuanchuzi01Entity;
 import net.mcreator.ceshi.entity.QQQyuanchulan01Entity;
+import net.mcreator.ceshi.PrimogemcraftMod;
 
 import java.util.List;
 import java.util.Comparator;
@@ -156,6 +157,13 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 							entity.getPersistentData().putBoolean("chouka_jiance_2", true);
 						}
 					}
+				}
+			}
+			if (entity instanceof QqiyuanJinGuangEntity) {
+				if (Math.random() < 1) {
+					PrimogemcraftMod.queueServerWork(20, () -> {
+						entity.getPersistentData().putBoolean("bhmg", true);
+					});
 				}
 			}
 		}

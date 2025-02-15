@@ -35517,6 +35517,25 @@
           }
         ]
       }
+    },
+    {
+      "name": "Bhmgsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bhmgsx",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/BhmgsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
