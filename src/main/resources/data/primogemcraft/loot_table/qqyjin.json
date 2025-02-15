@@ -393,7 +393,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:ysrqsp",
-          "weight": 10,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
