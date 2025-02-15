@@ -31,6 +31,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		boolean o1 = false;
 		double a = 0;
 		double b = 0;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -166,6 +167,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 			}
 			if (entity instanceof QqiyuanJinGuangEntity) {
 				if (Math.random() < (world.getLevelData().getGameRules().getInt(PrimogemcraftModGameRules.GUIZEBUHUOMINGGUANGZHI)) * 0.01) {
+					o1 = true;
 					PrimogemcraftMod.queueServerWork(20, () -> {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
@@ -175,12 +177,15 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 							}
 						}
 					});
-					PrimogemcraftMod.queueServerWork(40, () -> {
-						if (entity instanceof QqiyuanJinGuangEntity _datEntSetL)
-							_datEntSetL.getEntityData().set(QqiyuanJinGuangEntity.DATA_bhmg, true);
-					});
 				}
 			}
+		}
+		if (o1) {
+			PrimogemcraftMod.queueServerWork(40, () -> {
+				if (entity instanceof QqiyuanJinGuangEntity _datEntSetL)
+					_datEntSetL.getEntityData().set(QqiyuanJinGuangEntity.DATA_bhmg, true);
+				entity.getPersistentData().putBoolean("lizi", true);
+			});
 		}
 	}
 }

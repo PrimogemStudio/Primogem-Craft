@@ -139,6 +139,9 @@
     "onRightClickedOn": {
       "name": "QqiyuanJinGuangChuShiShiTiShengCheng"
     },
+    "onMobTickUpdate": {
+      "name": "Bhmglz"
+    },
     "onInitialSpawn": {
       "name": "Qiyuanshiti_chushengxiaoguo"
     },

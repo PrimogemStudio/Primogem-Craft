@@ -35,6 +35,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.ceshi.procedures.QqiyuanJinGuangChuShiShiTiShengChengProcedure;
 import net.mcreator.ceshi.procedures.Qiyuanshiti_chushengxiaoguoProcedure;
+import net.mcreator.ceshi.procedures.BhmglzProcedure;
 
 import javax.annotation.Nullable;
 
@@ -149,6 +150,12 @@ public class QqiyuanJinGuangEntity extends PathfinderMob {
 
 		QqiyuanJinGuangChuShiShiTiShengChengProcedure.execute(world, x, y, z, entity, sourceentity);
 		return retval;
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		BhmglzProcedure.execute(this);
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
