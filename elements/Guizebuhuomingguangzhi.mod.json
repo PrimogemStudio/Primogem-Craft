@@ -7,6 +7,6 @@
     "description": "默认10%",
     "category": "MOBS",
     "defaultValueLogic": false,
-    "defaultValueNumber": 10
+    "defaultValueNumber": 15
   }
 }
