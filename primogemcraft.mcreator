@@ -31340,7 +31340,16 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/ExampleTestProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -38575,8 +38584,8 @@
       "item.primogemcraft.qwtcjlbptbg.description_0": "§6 - 拾取经验球的收益提升100%",
       "item.primogemcraft.djtj.description_4": "§2增益期间：",
       "item.primogemcraft.qwtcjlbptbg.description_1": "§8 但会将宇宙碎片转化为经验值",
-      "item.primogemcraft.djtj.description_3": "§",
       "item.primogemcraft.qwtcjlbptbg.description_2": "§5宇宙碎片§fx1§b»§5经验值§fx8",
+      "item.primogemcraft.djtj.description_3": "§",
       "item.primogemcraft.djtj.description_2": "§7 - 持续6秒",
       "item.primogemcraft.qwtcjlbptbg.description_3": "§8 转化256宇宙碎片后销毁",
       "item.primogemcraft.qwxbzsq.description_0": "§7杀死亡灵生物或节肢动物有1%概率为主",
@@ -41242,8 +41251,8 @@
       "item.primogemcraft.qwtcjlbptbg.description_0": "§6 - 拾取经验球的收益提升100%",
       "item.primogemcraft.djtj.description_4": "§2增益期间：",
       "item.primogemcraft.qwtcjlbptbg.description_1": "§8 但会将宇宙碎片转化为经验值",
-      "item.primogemcraft.djtj.description_3": "§",
       "item.primogemcraft.qwtcjlbptbg.description_2": "§5宇宙碎片§fx1§b»§5经验值§fx8",
+      "item.primogemcraft.djtj.description_3": "§",
       "item.primogemcraft.djtj.description_2": "§7 - 持续6秒",
       "item.primogemcraft.qwtcjlbptbg.description_3": "§8 转化256宇宙碎片后销毁",
       "item.primogemcraft.qwxbzsq.description_0": "§7杀死亡灵生物或节肢动物有1%概率为主",
@@ -44008,8 +44017,8 @@
       "item.primogemcraft.axzst_chestplate": "§b『哀叙冰玉』钻石胸甲",
       "block.primogemcraft.yishijiemuban_button": "单色异世界木木板 按钮",
       "item.primogemcraft.ysrz_0": "元素熔珠",
-      "item.primogemcraft.qwxyzq": "§5『奇物』§e信仰债券",
       "effect.gongjitisheng": "攻击项增益",
+      "item.primogemcraft.qwxyzq": "§5『奇物』§e信仰债券",
       "item.primogemcraft.zshjt_chestplate": "§d『最胜紫晶』§e下界合金胸甲",
       "item.primogemcraft.hqcao": "§5『奇物』§a智慧火漆",
       "item.primogemcraft.szhjkj_boots": "§a『生长碧翡』§e下界合金靴子",
