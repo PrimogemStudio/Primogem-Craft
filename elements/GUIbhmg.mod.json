@@ -1,0 +1,287 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "color": {
+            "value": -14869978,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 184,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "color": {
+            "value": -14869978,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 224,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": true
+          },
+          "color": {
+            "value": -14869978,
+            "falpha": 0.0
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": false,
+          "x": 266,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_xuanze0",
+          "image": "xuanze0.png",
+          "hoveredImage": "xuanze1.png",
+          "onClick": {
+            "name": "GUIqwxzanniusx0"
+          },
+          "x": 185,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_xuanze01",
+          "image": "xuanze0.png",
+          "hoveredImage": "xuanze1.png",
+          "onClick": {
+            "name": "GUIqwxzanniusx1"
+          },
+          "x": 225,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_xuanze02",
+          "image": "xuanze0.png",
+          "hoveredImage": "xuanze1.png",
+          "onClick": {
+            "name": "GUIqwxzanniusx2"
+          },
+          "x": 267,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sseque_ren_xuan_ze",
+          "text": {
+            "fixedValue": "§e确认选择"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 185,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sseque_ren_xuan_ze1",
+          "text": {
+            "fixedValue": "§e确认选择"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 225,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sseque_ren_xuan_ze2",
+          "text": {
+            "fixedValue": "§e确认选择"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 267,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sscqiang_zhi_tui_chu_jie_mian_hui_sui_ji_xuan_ze_ge_qi_wu",
+          "text": {
+            "fixedValue": "选择一个物品"
+          },
+          "width": 34,
+          "height": 8,
+          "x": 129,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_xuan_ze_ge_qi_wu",
+          "text": {
+            "fixedValue": "捕获明光"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 42,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "xuzhi.png",
+          "use1Xscale": false,
+          "x": 132,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sscsslbu_huo_ming_guang_jin_ke_xuan_ze_ge_wu_pin_zuo_wei_zi_xuan_dui_xiang",
+          "text": {
+            "fixedValue": "§c§l捕获明光仅可选择一个物品作为自选对象！"
+          },
+          "width": 9,
+          "height": 9,
+          "x": 139,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "xuzhi_hong.png",
+          "use1Xscale": false,
+          "x": 139,
+          "y": 68,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_sscsslfang_qi_bu_huo_ming_guang_wei_ke_xuan_xiang",
+          "text": {
+            "fixedValue": "§c§l放弃捕获明光为可选项！"
+          },
+          "width": 9,
+          "height": 9,
+          "x": 139,
+          "y": 68,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_cuoa1",
+          "image": "cuoa1.png",
+          "hoveredImage": "cuoa2.png",
+          "onClick": {
+            "name": "GUIbhmgfq"
+          },
+          "x": 139,
+          "y": 86,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_fang_qi_bu_huo_ming_guang_li_ji_sheng_cheng_ci_chang_gui_chu_jin_zhan_li_pin",
+          "text": {
+            "fixedValue": "放弃捕获明光（立即生成一次常规出金战利品）"
+          },
+          "width": 21,
+          "height": 21,
+          "x": 139,
+          "y": 86,
+          "locked": false
+        }
+      }
+    ],
+    "onTick": {
+      "name": "GUIbhmgsx0"
+    },
+    "onClosed": {
+      "name": "GUIbhmgsx"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 37,
+      "oy": 44,
+      "snapOnGrid": false
+    }
+  }
+}

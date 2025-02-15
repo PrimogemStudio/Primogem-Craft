@@ -1,0 +1,43 @@
+package net.mcreator.ceshi.procedures;
+
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
+
+import java.util.function.Supplier;
+import java.util.Map;
+
+public class GUIbhmgsx0Procedure {
+	public static void execute(LevelAccessor world, Entity entity) {
+		if (entity == null)
+			return;
+		double a = 0;
+		if (!world.isClientSide()) {
+			if (GUIbhmgsxhs1Procedure.execute(entity)) {
+				a = 0;
+				for (int index0 = 0; index0 < 3; index0++) {
+					if (!world.isClientSide() && world.getServer() != null) {
+						for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.parse("primogemcraft:qqyjin")))
+								.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
+							if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+								ItemStack _setstack = itemstackiterator.copy();
+								_setstack.setCount(1);
+								((Slot) _slots.get((int) a)).set(_setstack);
+								_player.containerMenu.broadcastChanges();
+							}
+						}
+					}
+					a = a + 1;
+				}
+			}
+		}
+	}
+}

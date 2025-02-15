@@ -27,6 +27,7 @@ import net.mcreator.ceshi.world.inventory.GanjinglajitongMenu;
 import net.mcreator.ceshi.world.inventory.GUIqiwuxuanzeMenu;
 import net.mcreator.ceshi.world.inventory.GUImoladuiMenu;
 import net.mcreator.ceshi.world.inventory.GUIhualiduanzaotaiMenu;
+import net.mcreator.ceshi.world.inventory.GUIbhmgMenu;
 import net.mcreator.ceshi.world.inventory.GUISJfumoMenu;
 import net.mcreator.ceshi.world.inventory.CunzheshezhiMenu;
 import net.mcreator.ceshi.world.inventory.CeshishijianxuanzejiemianMenu;
@@ -59,4 +60,5 @@ public class PrimogemcraftModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<SJGUIfumo00Menu>> SJGU_IFUMO_00 = REGISTRY.register("sjgu_ifumo_00", () -> IMenuTypeExtension.create(SJGUIfumo00Menu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SJGUIfumo01Menu>> SJGU_IFUMO_01 = REGISTRY.register("sjgu_ifumo_01", () -> IMenuTypeExtension.create(SJGUIfumo01Menu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<GUIhualiduanzaotaiMenu>> GU_IHUALIDUANZAOTAI = REGISTRY.register("gu_ihualiduanzaotai", () -> IMenuTypeExtension.create(GUIhualiduanzaotaiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GUIbhmgMenu>> GU_IBHMG = REGISTRY.register("gu_ibhmg", () -> IMenuTypeExtension.create(GUIbhmgMenu::new));
 }
