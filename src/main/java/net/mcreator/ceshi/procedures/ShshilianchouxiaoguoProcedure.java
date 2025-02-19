@@ -21,6 +21,10 @@ public class ShshilianchouxiaoguoProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		double R_radius = 0;
+		double D_delta_theta = 0;
+		double T_theta = 0;
+		double N_number = 0;
 		if (!world.isClientSide()) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
@@ -50,66 +54,7 @@ public class ShshilianchouxiaoguoProcedure {
 				entity.getPersistentData().putDouble("chouka", 10);
 				entity.getPersistentData().putDouble("chouka_jiacheng", 10);
 				entity.getPersistentData().putDouble("Prayers_strengthen", (entity.getPersistentData().getDouble("bu_chong")));
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x, y + 7, z), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-					}
-				}
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x, y + 6, z), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-					}
-				}
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x + 3, y + 6, z), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-					}
-				}
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x, y + 6, z - 3), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-					}
-				}
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x - 3, y + 6, z), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-					}
-				}
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x, y + 6, z + 3), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-					}
-				}
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x + 2, y + 6, z + 2), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-					}
-				}
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x - 2, y + 6, z - 2), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-					}
-				}
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x - 2, y + 6, z + 2), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-					}
-				}
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = PrimogemcraftModEntities.QQ_QYUANCHULAN_01.get().spawn(_level, BlockPos.containing(x + 2, y + 6, z - 2), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
-					}
-				}
+				ShilianhsProcedure.execute(world, x, y, z);
 			});
 		}
 	}
