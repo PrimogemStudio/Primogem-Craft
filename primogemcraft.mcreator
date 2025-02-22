@@ -35625,18 +35625,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "C",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "c",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/c.json"
-        ]
-      }
     }
   ],
   "variable_elements": [
