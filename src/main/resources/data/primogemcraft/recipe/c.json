@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "ACA"
+  ],
+  "key": {
+    "A": { "item": "minecraft:apple" },
+    "B": { "item": "minecraft:dirt" },
+    "C": { "tag": "c:curio" }
+  },
+  "result": {
+    "item": "minecraft:diamond_pickaxe",
+    "count": 1
+  }
+}
