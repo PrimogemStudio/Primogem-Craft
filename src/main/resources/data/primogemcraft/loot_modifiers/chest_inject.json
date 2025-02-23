@@ -3,7 +3,8 @@
   "conditions": [
     {
       "condition": "primogemcraft:is_chest"
-    }
+    },
+    { "condition": "minecraft:random_chance", "chance": 0.1 }
   ],
   "table": "primogemcraft:custominject"
 }
