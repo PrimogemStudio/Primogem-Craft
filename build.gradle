@@ -9,7 +9,7 @@ base.archivesName = "modid"
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = "21.1.92"
+    version = "21.1.115"
 
     runs {
         client {
@@ -17,8 +17,7 @@ neoForge {
 
             def mcreatorJvmOptions = System.getenv('MCREATOR_JVM_OPTIONS')
             if (mcreatorJvmOptions) {
-                mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.each { arg ->
-                    jvmArgument(arg)
+                mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.each { arg -> jvmArgument(arg)
                 }
             }
         }
@@ -37,10 +36,43 @@ neoForge {
             sourceSet sourceSets.main
         }
     }
+
+    accessTransformers {
+        from "src/main/resources/pgc.at"
+    }
+}
+
+repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                url "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+    maven { url "https://maven.shedaniel.me/" }
+}
+
+/*
+ * implementation = true
+ * compileOnly = false
+ */
+dependencies {
+    compileOnly "maven.modrinth:genshincraft:2.1.0"
+    api "me.shedaniel:RoughlyEnoughItems-neoforge:16.0.788"
 }
 
 tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+    options.encoding = 'UTF-8'
+    dependsOn overwriteJava
+}
+
+tasks.register('overwriteJava', Copy) {
+    from 'overwrite/src/main/java'
+    into 'src/main/java'
 }
 
 apply from: 'mcreator.gradle'
