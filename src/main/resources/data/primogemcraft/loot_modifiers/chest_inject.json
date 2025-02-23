@@ -5,9 +5,9 @@
       "condition": "primogemcraft:is_chest"
     },
     {
-      "condition": "neoforge:inverted",
+      "condition": "minecraft:inverted",
       "term": {
-        "condition": "neoforge:any",
+        "condition": "minecraft:any_of",
         "terms": [
           {
             "condition": "neoforge:loot_table_id",
