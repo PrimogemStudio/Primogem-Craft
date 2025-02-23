@@ -54,10 +54,13 @@ public class FenlieggzsxProcedure {
 		ItemStack c1 = ItemStack.EMPTY;
 		ItemStack c2 = ItemStack.EMPTY;
 		ItemStack c3 = ItemStack.EMPTY;
-		if (sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_0) && sourceentity instanceof Player && entity.getType().is(EntityTypeTags.UNDEAD)
+		if (entity.getType().is(EntityTypeTags.UNDEAD) && !(sourceentity instanceof Player _plrCldCheck1 && _plrCldCheck1.getCooldowns().isOnCooldown(PrimogemcraftModItems.QWGGZFENLIE_A.get())) && sourceentity instanceof LivingEntity _livEnt2
+				&& _livEnt2.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_0) && sourceentity instanceof Player
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) <= (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)
 				&& Math.random() <= ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1) ? _livEnt.getEffect(PrimogemcraftModMobEffects.FZGGZXG_1).getAmplifier() : 0) + 2) * 0.05) {
 			if (!world.isClientSide()) {
+				if (sourceentity instanceof Player _player)
+					_player.getCooldowns().addCooldown(PrimogemcraftModItems.QWGGZFENLIE_A.get(), 20);
 				s1 = BuiltInRegistries.ENTITY_TYPE.getKey(entity.getType()).toString();
 				var t = entity.getType();
 				var p = entity.blockPosition();
@@ -81,7 +84,7 @@ public class FenlieggzsxProcedure {
 					if (_entity instanceof Player _player)
 						_player.getInventory().setChanged();
 				}
-				if (sourceentity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1)) {
+				if (sourceentity instanceof LivingEntity _livEnt13 && _livEnt13.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1)) {
 					if ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.FZGGZXG_1) ? _livEnt.getEffect(PrimogemcraftModMobEffects.FZGGZXG_1).getAmplifier() : 0) == 0) {
 						{
 							Entity _entity = e1;
