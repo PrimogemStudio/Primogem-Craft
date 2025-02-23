@@ -11,35 +11,35 @@
         "terms": [
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:reward"
+            "value": "minecraft:loot_table/chests/trial_chambers/reward"
           },
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:reward_common"
+            "value": "minecraft:loot_table/chests/trial_chambers/reward_common"
           },
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:reward_ominous"
+            "value": "minecraft:loot_table/chests/trial_chambers/reward_ominous"
           },
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:reward_ominous_common"
+            "value": "minecraft:loot_table/chests/trial_chambers/reward_ominous_common"
           },
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:reward_ominous_rare"
+            "value": "minecraft:loot_table/chests/trial_chambers/reward_ominous_rare"
           },
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:reward_ominous_unique"
+            "value": "minecraft:loot_table/chests/trial_chambers/reward_ominous_unique"
           },
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:reward_rare"
+            "value": "minecraft:loot_table/chests/trial_chambers/reward_rare"
           },
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:reward_unique"
+            "value": "minecraft:loot_table/chests/trial_chambers/reward_unique"
           }
         ]
       }
