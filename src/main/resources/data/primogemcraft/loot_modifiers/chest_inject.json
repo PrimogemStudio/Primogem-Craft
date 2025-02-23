@@ -4,7 +4,36 @@
     {
       "condition": "primogemcraft:is_chest"
     },
+    {
+      "condition": "neoforge:inverted",
+      "term": {
+        "condition": "neoforge:any",
+        "terms": [
+          {
+            "condition": "neoforge:loot_table_id",
+            "value": "minecraft:chests/trial_chambers/common"
+          },
+          {
+            "condition": "neoforge:loot_table_id",
+            "value": "minecraft:chests/trial_chambers/rare"
+          },
+          {
+            "condition": "neoforge:loot_table_id",
+            "value": "minecraft:chests/trial_chambers/vault"
+          },
+          {
+            "condition": "neoforge:loot_table_id",
+            "value": "minecraft:entities/trial_spawner/rewards"
+          },
+          {
+            "condition": "neoforge:loot_table_id",
+            "value": "minecraft:gameplay/trial_chambers/completion"
+          }
+        ]
+      }
+    },
     { "condition": "minecraft:random_chance", "chance": 0.1 }
   ],
+
   "table": "primogemcraft:custominject"
 }
