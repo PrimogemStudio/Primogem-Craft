@@ -11,15 +11,35 @@
         "terms": [
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:chests/trial_chambers/common"
+            "value": "minecraft:reward"
           },
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:chests/trial_chambers/treasure"
+            "value": "minecraft:reward_common"
           },
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:entities/trial_spawner/rewards"
+            "value": "minecraft:reward_ominous"
+          },
+          {
+            "condition": "neoforge:loot_table_id",
+            "value": "minecraft:reward_ominous_common"
+          },
+          {
+            "condition": "neoforge:loot_table_id",
+            "value": "minecraft:reward_ominous_rare"
+          },
+          {
+            "condition": "neoforge:loot_table_id",
+            "value": "minecraft:reward_ominous_unique"
+          },
+          {
+            "condition": "neoforge:loot_table_id",
+            "value": "minecraft:reward_rare"
+          },
+          {
+            "condition": "neoforge:loot_table_id",
+            "value": "minecraft:reward_unique"
           }
         ]
       }
