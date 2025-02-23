@@ -56,12 +56,15 @@ public class CunzheshezhiScreen extends AbstractContainerScreen<CunzheshezhiMenu
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		cunzhe_shuliang.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 66 && mouseX < leftPos + 111 && mouseY > topPos + 14 && mouseY < topPos + 32)
+		if (mouseX > leftPos + 66 && mouseX < leftPos + 111 && mouseY > topPos + 14 && mouseY < topPos + 32) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.cunzheshezhi.tooltip_cong_xia_fang_an_niu_shu_ru"), mouseX, mouseY);
-		if (mouseX > leftPos + 62 && mouseX < leftPos + 86 && mouseY > topPos + 57 && mouseY < topPos + 81)
+		}
+		if (mouseX > leftPos + 62 && mouseX < leftPos + 86 && mouseY > topPos + 57 && mouseY < topPos + 81) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.cunzheshezhi.tooltip_dian_ci_huo_qu_bu_wen_ding_ban_ben"), mouseX, mouseY);
-		if (mouseX > leftPos + 96 && mouseX < leftPos + 120 && mouseY > topPos + 57 && mouseY < topPos + 81)
+		}
+		if (mouseX > leftPos + 96 && mouseX < leftPos + 120 && mouseY > topPos + 57 && mouseY < topPos + 81) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.cunzheshezhi.tooltip_huo_qu"), mouseX, mouseY);
+		}
 	}
 
 	@Override

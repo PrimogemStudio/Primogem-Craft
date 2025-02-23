@@ -25,7 +25,8 @@ import net.mcreator.ceshi.entity.XiaodengEntity;
 public class Xiaodengfasheqi_shuxingProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if (world instanceof Level _level0 && _level0.hasNeighborSignal(BlockPos.containing(x, y, z))) {
-			if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.AIR && !(!world.getEntitiesOfClass(XiaodengEntity.class, AABB.ofSize(new Vec3(x, (y + 1), z), 1, 1, 1), e -> true).isEmpty())) {
+			if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.AIR
+					&& !(!world.getEntitiesOfClass(XiaodengEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3(x, (y + 1), z)).inflate(1 / 2d), e -> true).isEmpty())) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = PrimogemcraftModEntities.XIAODENG.get().spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {
@@ -45,14 +46,7 @@ public class Xiaodengfasheqi_shuxingProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("lengque", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "lengque") + 1));
+							_blockEntity.getPersistentData().putDouble("lengque", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "lengque") + 1));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -67,14 +61,7 @@ public class Xiaodengfasheqi_shuxingProcedure {
 				}
 			}
 		}
-		if (new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "lengque") >= 11) {
+		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "lengque") >= 11) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(PrimogemcraftModBlocks.CESHIXIAODENGFASHEQI.get()));
 				entityToSpawn.setPickUpDelay(10);
@@ -91,5 +78,12 @@ public class Xiaodengfasheqi_shuxingProcedure {
 				}
 			}
 		}
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

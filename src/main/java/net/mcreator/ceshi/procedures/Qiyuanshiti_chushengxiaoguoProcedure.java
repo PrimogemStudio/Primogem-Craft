@@ -24,7 +24,6 @@ import net.mcreator.ceshi.entity.QQyuanchuzi01Entity;
 import net.mcreator.ceshi.entity.QQQyuanchulan01Entity;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class Qiyuanshiti_chushengxiaoguoProcedure {
@@ -42,8 +41,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 			if (entity instanceof QQQyuanchulan01Entity) {
 				{
 					final Vec3 _center = new Vec3(x, (y - 10), z);
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-					for (Entity entityiterator : _entfound) {
+					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 						if (entityiterator.getPersistentData().getDouble("chouka") > 0) {
 							a = entityiterator.getPersistentData().getBoolean("xiangyu")
 									? 0.01
@@ -136,8 +134,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 			if (entity instanceof QQyuanchuzi01Entity) {
 				{
 					final Vec3 _center = new Vec3(x, (y - 10), z);
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-					for (Entity entityiterator : _entfound) {
+					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 						if (entityiterator.getPersistentData().getBoolean("chouka")) {
 							entity.getPersistentData().putString("qiyuan_guishu", (entityiterator.getDisplayName().getString()));
 							entityiterator.getPersistentData().putDouble("chouka", (entityiterator.getPersistentData().getDouble("chouka") - 1));
@@ -150,8 +147,7 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 			if (entity instanceof QqiyuanJinGuangEntity) {
 				{
 					final Vec3 _center = new Vec3(x, (y - 10), z);
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-					for (Entity entityiterator : _entfound) {
+					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 						if (entityiterator.getPersistentData().getBoolean("chouka") || entityiterator.getPersistentData().getBoolean("baodi_shoudong")) {
 							entity.getPersistentData().putString("qiyuan_guishu", (entityiterator.getDisplayName().getString()));
 							if (entityiterator.getPersistentData().getBoolean("baodi_shoudong")) {

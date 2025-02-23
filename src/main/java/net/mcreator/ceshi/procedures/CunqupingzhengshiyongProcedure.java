@@ -36,7 +36,7 @@ public class CunqupingzhengshiyongProcedure {
 				if (!itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("bwd_yinhang")) {
 					if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == PrimogemcraftModBlocks.XJHPYHFH.get()) {
 						a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("pgc_cunchu");
-						a0 = new ItemStack(PrimogemcraftModItems.YUZHOUSUIPIAN.get());
+						a0 = new ItemStack(PrimogemcraftModItems.YUZHOUSUIPIAN.get()).copy();
 						a0.setCount((int) a);
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, a0);
@@ -46,14 +46,7 @@ public class CunqupingzhengshiyongProcedure {
 						itemstack.shrink(1);
 						if (entity instanceof Player _player)
 							_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
-						if (!(new Object() {
-							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getBoolean(tag);
-								return false;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "yinhang_busunhuai"))) {
+						if (!getBlockNBTLogic(world, BlockPos.containing(x, y, z), "yinhang_busunhuai")) {
 							world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId((world.getBlockState(BlockPos.containing(x, y, z)))));
 							world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 						}
@@ -72,7 +65,7 @@ public class CunqupingzhengshiyongProcedure {
 					b = Mth.nextDouble(RandomSource.create(), 0.5, 2.4);
 					a = Math.round(itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("pgc_cunchu") * b);
 					if (Math.random() < 0.5) {
-						a0 = new ItemStack(PrimogemcraftModItems.YUZHOUSUIPIAN.get());
+						a0 = new ItemStack(PrimogemcraftModItems.YUZHOUSUIPIAN.get()).copy();
 						a0.setCount((int) a);
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, a0);
@@ -103,19 +96,19 @@ public class CunqupingzhengshiyongProcedure {
 					itemstack.shrink(1);
 					if (entity instanceof Player _player)
 						_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
-					if (!(new Object() {
-						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getBoolean(tag);
-							return false;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "yinhang_busunhuai"))) {
+					if (!getBlockNBTLogic(world, BlockPos.containing(x, y, z), "yinhang_busunhuai")) {
 						world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId((world.getBlockState(BlockPos.containing(x, y, z)))));
 						world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 					}
 				}
 			}
 		}
+	}
+
+	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getBoolean(tag);
+		return false;
 	}
 }

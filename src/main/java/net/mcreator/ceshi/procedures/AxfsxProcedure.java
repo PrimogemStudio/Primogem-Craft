@@ -23,7 +23,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class AxfsxProcedure {
@@ -42,8 +41,7 @@ public class AxfsxProcedure {
 					}
 					{
 						final Vec3 _center = new Vec3(x, y, z);
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(9 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-						for (Entity entityiterator : _entfound) {
+						for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(9 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 							if (!(entityiterator == entity) && !entityiterator.getPersistentData().getBoolean((entity.getDisplayName().getString() + "ceshi_duiyou"))) {
 								entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), Mth.nextInt(RandomSource.create(), (int) (1 * 3), (int) (8 * 3)));
 							}

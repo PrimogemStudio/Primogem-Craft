@@ -29,14 +29,7 @@ public class GUIyinhanggunkaiProcedure {
 		}
 		if (entity instanceof Player _player)
 			_player.closeContainer();
-		if (!(new Object() {
-			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getBoolean(tag);
-				return false;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "yinhang_busunhuai"))) {
+		if (!getBlockNBTLogic(world, BlockPos.containing(x, y, z), "yinhang_busunhuai")) {
 			PrimogemcraftMod.queueServerWork(10, () -> {
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(PrimogemcraftModBlocks.XJHPYHFH.get().defaultBlockState()));
@@ -45,5 +38,12 @@ public class GUIyinhanggunkaiProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("\u00A7c\u8BE5\u94F6\u884C\u5DF2\u88AB\u66F4\u9AD8\u7EA7\u7684\u5B58\u5728\u4FDD\u62A4\uFF01"), false);
 		}
+	}
+
+	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getBoolean(tag);
+		return false;
 	}
 }

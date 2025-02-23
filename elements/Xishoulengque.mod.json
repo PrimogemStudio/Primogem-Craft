@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "potioneffect",
   "definition": {
     "effectName": "伤害吸收冷却",
@@ -12,8 +12,6 @@
     "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": false,
     "renderStatusInHUD": false,
-    "isCuredByMilk": false,
-    "isProtectedByTotem": false,
     "isCuredbyHoney": false,
     "modifiers": []
   }

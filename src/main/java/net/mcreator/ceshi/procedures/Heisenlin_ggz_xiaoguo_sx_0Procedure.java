@@ -9,7 +9,6 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class Heisenlin_ggz_xiaoguo_sx_0Procedure {
@@ -19,8 +18,7 @@ public class Heisenlin_ggz_xiaoguo_sx_0Procedure {
 		entity.getPersistentData().putDouble("heisenlin_ggz", (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.HEISENLINGGZ) ? _livEnt.getEffect(PrimogemcraftModMobEffects.HEISENLINGGZ).getDuration() : 0));
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
+			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				if (entityiterator instanceof Mob _entity && entity instanceof LivingEntity _ent)
 					_entity.setTarget(_ent);
 			}

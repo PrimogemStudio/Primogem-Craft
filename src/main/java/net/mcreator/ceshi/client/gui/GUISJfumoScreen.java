@@ -44,29 +44,37 @@ public class GUISJfumoScreen extends AbstractContainerScreen<GUISJfumoMenu> {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (GUIfumobaocuoProcedure.execute(entity))
-			if (mouseX > leftPos + 97 && mouseX < leftPos + 102 && mouseY > topPos + 29 && mouseY < topPos + 57)
+			if (mouseX > leftPos + 97 && mouseX < leftPos + 102 && mouseY > topPos + 29 && mouseY < topPos + 57) {
 				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian"), mouseX, mouseY);
+			}
 		if (GUIfumopinzhixianshi0Procedure.execute(world))
-			if (mouseX > leftPos + 74 && mouseX < leftPos + 98 && mouseY > topPos + 52 && mouseY < topPos + 57)
+			if (mouseX > leftPos + 74 && mouseX < leftPos + 98 && mouseY > topPos + 52 && mouseY < topPos + 57) {
 				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian1"), mouseX, mouseY);
+			}
 		if (GUIfumopinzhixianshi0Procedure.execute(world))
-			if (mouseX > leftPos + 74 && mouseX < leftPos + 79 && mouseY > topPos + 29 && mouseY < topPos + 52)
+			if (mouseX > leftPos + 74 && mouseX < leftPos + 79 && mouseY > topPos + 29 && mouseY < topPos + 52) {
 				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian2"), mouseX, mouseY);
+			}
 		if (GUIfumopinzhixianshi0Procedure.execute(world))
-			if (mouseX > leftPos + 79 && mouseX < leftPos + 97 && mouseY > topPos + 29 && mouseY < topPos + 34)
+			if (mouseX > leftPos + 79 && mouseX < leftPos + 97 && mouseY > topPos + 29 && mouseY < topPos + 34) {
 				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guis_jfumo.tooltip_sscgai_wu_pin_bu_man_zu_fu_mo_tiao_jian3"), mouseX, mouseY);
+			}
 		if (GUIfumopinzhixianshi0Procedure.execute(world))
-			if (mouseX > leftPos + 80 && mouseX < leftPos + 97 && mouseY > topPos + 20 && mouseY < topPos + 28)
+			if (mouseX > leftPos + 80 && mouseX < leftPos + 97 && mouseY > topPos + 20 && mouseY < topPos + 28) {
 				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guis_jfumo.tooltip_ss7di_pin_zhi_fu_mo"), mouseX, mouseY);
+			}
 		if (GUIfumopinzhixianshi1Procedure.execute(world))
-			if (mouseX > leftPos + 80 && mouseX < leftPos + 97 && mouseY > topPos + 20 && mouseY < topPos + 28)
+			if (mouseX > leftPos + 80 && mouseX < leftPos + 97 && mouseY > topPos + 20 && mouseY < topPos + 28) {
 				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guis_jfumo.tooltip_ssbzhong_pin_zhi_fu_mo"), mouseX, mouseY);
+			}
 		if (GUIfumopinzhixianshi2Procedure.execute(world))
-			if (mouseX > leftPos + 80 && mouseX < leftPos + 97 && mouseY > topPos + 20 && mouseY < topPos + 28)
+			if (mouseX > leftPos + 80 && mouseX < leftPos + 97 && mouseY > topPos + 20 && mouseY < topPos + 28) {
 				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guis_jfumo.tooltip_ss6gao_pin_zhi_fu_mo"), mouseX, mouseY);
+			}
 		if (GUIfumopinzhixianshi3Procedure.execute(world))
-			if (mouseX > leftPos + 80 && mouseX < leftPos + 97 && mouseY > topPos + 20 && mouseY < topPos + 28)
+			if (mouseX > leftPos + 80 && mouseX < leftPos + 97 && mouseY > topPos + 20 && mouseY < topPos + 28) {
 				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guis_jfumo.tooltip_sscte_ji_fu_mo"), mouseX, mouseY);
+			}
 	}
 
 	@Override

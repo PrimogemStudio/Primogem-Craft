@@ -50,11 +50,13 @@ public class GuiheitaxinyindaoScreen extends AbstractContainerScreen<Guiheitaxin
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (GuixinheitayindaocuowufanhuiProcedure.execute(entity))
-			if (mouseX > leftPos + 31 && mouseX < leftPos + 145 && mouseY > topPos + 13 && mouseY < topPos + 56)
+			if (mouseX > leftPos + 31 && mouseX < leftPos + 145 && mouseY > topPos + 13 && mouseY < topPos + 56) {
 				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guiheitaxinyindao.tooltip_sscdang_qian_mei_you_zu_gou_de_sui_ji_cuo_wu_dai_ma_qiu"), mouseX, mouseY);
+			}
 		if (GUIxinhtydcuowufanhuiProcedure.execute(world, entity))
-			if (mouseX > leftPos + 32 && mouseX < leftPos + 145 && mouseY > topPos + 61 && mouseY < topPos + 104)
+			if (mouseX > leftPos + 32 && mouseX < leftPos + 145 && mouseY > topPos + 61 && mouseY < topPos + 104) {
 				guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.guiheitaxinyindao.tooltip_sscdang_qian_yu_zhou_sui_pian_shu_liang_bu_zu"), mouseX, mouseY);
+			}
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "potioneffect",
   "definition": {
     "effectName": "§c分裂咕咕钟§f[复制品]",
@@ -12,8 +12,6 @@
     "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
-    "isCuredByMilk": true,
-    "isProtectedByTotem": true,
     "isCuredbyHoney": false,
     "modifiers": [],
     "onExpired": {

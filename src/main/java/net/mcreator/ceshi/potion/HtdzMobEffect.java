@@ -1,7 +1,6 @@
 
 package net.mcreator.ceshi.potion;
 
-import net.neoforged.neoforge.common.EffectCure;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientMobEffectExtensions;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -15,16 +14,10 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 
-import java.util.Set;
-
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class HtdzMobEffect extends MobEffect {
 	public HtdzMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -1);
-	}
-
-	@Override
-	public void fillEffectCures(Set<EffectCure> cures, MobEffectInstance effectInstance) {
 	}
 
 	@SubscribeEvent

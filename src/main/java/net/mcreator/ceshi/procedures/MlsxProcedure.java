@@ -34,16 +34,7 @@ public class MlsxProcedure {
 			}
 			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 				ItemStack _setstack = new ItemStack(PrimogemcraftModItems.MMOLA_01.get()).copy();
-				_setstack.setCount((int) (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 0) + 1));
+				_setstack.setCount((int) (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() + 1));
 				_itemHandlerModifiable.setStackInSlot(0, _setstack);
 			}
 			itemstack.shrink(1);
@@ -52,5 +43,14 @@ public class MlsxProcedure {
 			MoladuiHSProcedure.execute(world, x, y, z, PrimogemcraftModBlocks.MLXDML_02.get().defaultBlockState(), PrimogemcraftModBlocks.MLXDML_03.get().defaultBlockState(), blockstate, 20);
 			MoladuiHSProcedure.execute(world, x, y, z, PrimogemcraftModBlocks.MLXDML_03.get().defaultBlockState(), PrimogemcraftModBlocks.DBMLK.get().defaultBlockState(), blockstate, 25);
 		}
+	}
+
+	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
+		if (world instanceof ILevelExtension ext) {
+			IItemHandler itemHandler = ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+			if (itemHandler != null)
+				return itemHandler.getStackInSlot(slot);
+		}
+		return ItemStack.EMPTY;
 	}
 }

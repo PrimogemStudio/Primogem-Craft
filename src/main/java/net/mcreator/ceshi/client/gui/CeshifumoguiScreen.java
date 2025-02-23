@@ -44,8 +44,9 @@ public class CeshifumoguiScreen extends AbstractContainerScreen<CeshifumoguiMenu
 		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 87 && mouseX < leftPos + 169 && mouseY > topPos + 5 && mouseY < topPos + 34)
+		if (mouseX > leftPos + 87 && mouseX < leftPos + 169 && mouseY > topPos + 5 && mouseY < topPos + 34) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.ceshifumogui.tooltip_ssesuo_xu_jing_yan_zhi_jiang_bei_yu_zhou_sui_pian_di_xiao"), mouseX, mouseY);
+		}
 	}
 
 	@Override

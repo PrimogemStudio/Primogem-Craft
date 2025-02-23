@@ -25,7 +25,6 @@ import net.minecraft.commands.CommandSource;
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class Sjguifumo01sx2Procedure {
@@ -50,8 +49,7 @@ public class Sjguifumo01sx2Procedure {
 			}
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-				for (Entity entityiterator : _entfound) {
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if ((entityiterator instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY).getItem() == PrimogemcraftModItems.SH_JWUPIN.get()) {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
@@ -63,7 +61,7 @@ public class Sjguifumo01sx2Procedure {
 			}
 			if (entity instanceof Player _player)
 				_player.closeContainer();
-			b = new ItemStack(PrimogemcraftModItems.SJBCQ.get());
+			b = new ItemStack(PrimogemcraftModItems.SJBCQ.get()).copy();
 			{
 				final String _tagName = "shijianbuchang";
 				final double _tagValue = (Mth.nextInt(RandomSource.create(), 2, 4));

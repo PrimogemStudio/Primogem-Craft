@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "potioneffect",
   "definition": {
     "effectName": "元素熔珠草",
@@ -12,8 +12,6 @@
     "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": false,
     "renderStatusInHUD": false,
-    "isCuredByMilk": true,
-    "isProtectedByTotem": true,
     "isCuredbyHoney": false,
     "modifiers": [],
     "onActiveTick": {

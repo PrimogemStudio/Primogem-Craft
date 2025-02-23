@@ -45,10 +45,12 @@ public class YinhangScreen extends AbstractContainerScreen<YinhangMenu> {
 		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 126 && mouseX < leftPos + 147 && mouseY > topPos + 26 && mouseY < topPos + 47)
+		if (mouseX > leftPos + 126 && mouseX < leftPos + 147 && mouseY > topPos + 26 && mouseY < topPos + 47) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.yinhang.tooltip_ssacun_ru_zhe_xie_bing_huo_de_ping_zheng"), mouseX, mouseY);
-		if (mouseX > leftPos + 126 && mouseX < leftPos + 147 && mouseY > topPos + 53 && mouseY < topPos + 73)
+		}
+		if (mouseX > leftPos + 126 && mouseX < leftPos + 147 && mouseY > topPos + 53 && mouseY < topPos + 73) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.yinhang.tooltip_sscqing_ni_gun_kai_ss8cui_hui_she_shi"), mouseX, mouseY);
+		}
 	}
 
 	@Override

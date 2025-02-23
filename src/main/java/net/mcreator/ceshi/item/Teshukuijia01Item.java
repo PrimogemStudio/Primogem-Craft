@@ -32,7 +32,7 @@ public abstract class Teshukuijia01Item extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 1);
 				map.put(ArmorItem.Type.HELMET, 1);
 				map.put(ArmorItem.Type.BODY, 1);
-			}), 0, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:teshu01_"))), 0f, 0f);
+			}), 1, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("primogemcraft:teshu01_"))), 0f, 0f);
 			registerHelper.register(ResourceLocation.parse("primogemcraft:teshukuijia_01"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});

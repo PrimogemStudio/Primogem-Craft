@@ -28,7 +28,6 @@ import net.minecraft.commands.CommandSource;
 import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 import net.mcreator.ceshi.PrimogemcraftMod;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class Hh_sx_0Procedure {
@@ -41,14 +40,7 @@ public class Hh_sx_0Procedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble("daojishi", (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "daojishi") + 1));
+					_blockEntity.getPersistentData().putDouble("daojishi", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "daojishi") + 1));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -57,33 +49,12 @@ public class Hh_sx_0Procedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble("daojishi2", (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "daojishi2") + 1));
+					_blockEntity.getPersistentData().putDouble("daojishi2", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "daojishi2") + 1));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			n1 = new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "daojishi");
-			n2 = new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "daojishi2");
+			n1 = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "daojishi");
+			n2 = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "daojishi2");
 			if (n1 >= 600) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -94,14 +65,7 @@ public class Hh_sx_0Procedure {
 				}
 				PrimogemcraftMod.queueServerWork(40, () -> {
 					if (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.AIR)) {
-						if (new Object() {
-							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getBoolean(tag);
-								return false;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "hh_baozha")) {
+						if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "hh_baozha")) {
 							if (world instanceof Level _level && !_level.isClientSide())
 								_level.explode(null, x, y, z, 42, Level.ExplosionInteraction.TNT);
 						} else {
@@ -114,8 +78,8 @@ public class Hh_sx_0Procedure {
 							}
 							{
 								final Vec3 _center = new Vec3(x, y, z);
-								List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(24 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-								for (Entity entityiterator : _entfound) {
+								for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(24 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+										.toList()) {
 									if (entityiterator instanceof ItemEntity && (entityiterator instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY)
 											.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("primogemcraft:fumoyuzhezn")))) != 0) {
 										EnchantmentHelper.updateEnchantments((entityiterator instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY), mutableEnchantments -> mutableEnchantments.removeIf(
@@ -175,5 +139,19 @@ public class Hh_sx_0Procedure {
 				}
 			}
 		}
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
+	}
+
+	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getBoolean(tag);
+		return false;
 	}
 }

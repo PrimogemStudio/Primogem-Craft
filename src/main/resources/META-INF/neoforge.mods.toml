@@ -23,7 +23,7 @@ file = "pgc.at"
 [[dependencies.primogemcraft]]
 modId="neoforge"
 type="required"
-versionRange="[21.1.65,)"
+versionRange="[21.1.92,)"
 ordering="AFTER"
 side="BOTH"
 

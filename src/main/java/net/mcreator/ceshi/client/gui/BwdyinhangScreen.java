@@ -45,10 +45,12 @@ public class BwdyinhangScreen extends AbstractContainerScreen<BwdyinhangMenu> {
 		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 126 && mouseX < leftPos + 147 && mouseY > topPos + 27 && mouseY < topPos + 48)
+		if (mouseX > leftPos + 126 && mouseX < leftPos + 147 && mouseY > topPos + 27 && mouseY < topPos + 48) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.bwdyinhang.tooltip_ssecun_ru_hou_huo_de_bu_wen_ding_ping_zheng"), mouseX, mouseY);
-		if (mouseX > leftPos + 126 && mouseX < leftPos + 148 && mouseY > topPos + 54 && mouseY < topPos + 75)
+		}
+		if (mouseX > leftPos + 126 && mouseX < leftPos + 148 && mouseY > topPos + 54 && mouseY < topPos + 75) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.bwdyinhang.tooltip_sscqing_ni_gun_kai_ss8cui_hui_she_shi"), mouseX, mouseY);
+		}
 	}
 
 	@Override

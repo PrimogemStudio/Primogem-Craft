@@ -47,20 +47,27 @@ public class GUIbhmgScreen extends AbstractContainerScreen<GUIbhmgMenu> {
 		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 59 && mouseX < leftPos + 75 && mouseY > topPos + 53 && mouseY < topPos + 69)
+		if (mouseX > leftPos + 59 && mouseX < leftPos + 75 && mouseY > topPos + 53 && mouseY < topPos + 69) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_ibhmg.tooltip_sseque_ren_xuan_ze"), mouseX, mouseY);
-		if (mouseX > leftPos + 99 && mouseX < leftPos + 115 && mouseY > topPos + 53 && mouseY < topPos + 69)
+		}
+		if (mouseX > leftPos + 99 && mouseX < leftPos + 115 && mouseY > topPos + 53 && mouseY < topPos + 69) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_ibhmg.tooltip_sseque_ren_xuan_ze1"), mouseX, mouseY);
-		if (mouseX > leftPos + 141 && mouseX < leftPos + 157 && mouseY > topPos + 53 && mouseY < topPos + 69)
+		}
+		if (mouseX > leftPos + 141 && mouseX < leftPos + 157 && mouseY > topPos + 53 && mouseY < topPos + 69) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_ibhmg.tooltip_sseque_ren_xuan_ze2"), mouseX, mouseY);
-		if (mouseX > leftPos + 3 && mouseX < leftPos + 37 && mouseY > topPos + 6 && mouseY < topPos + 14)
+		}
+		if (mouseX > leftPos + 3 && mouseX < leftPos + 37 && mouseY > topPos + 6 && mouseY < topPos + 14) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_ibhmg.tooltip_sscqiang_zhi_tui_chu_jie_mian_hui_sui_ji_xuan_ze_ge_qi_wu"), mouseX, mouseY);
-		if (mouseX > leftPos + 13 && mouseX < leftPos + 22 && mouseY > topPos + 20 && mouseY < topPos + 29)
+		}
+		if (mouseX > leftPos + 13 && mouseX < leftPos + 22 && mouseY > topPos + 20 && mouseY < topPos + 29) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_ibhmg.tooltip_sscsslbu_huo_ming_guang_jin_ke_xuan_ze_ge_wu_pin_zuo_wei_zi_xuan_dui_xiang"), mouseX, mouseY);
-		if (mouseX > leftPos + 13 && mouseX < leftPos + 22 && mouseY > topPos + 31 && mouseY < topPos + 40)
+		}
+		if (mouseX > leftPos + 13 && mouseX < leftPos + 22 && mouseY > topPos + 31 && mouseY < topPos + 40) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_ibhmg.tooltip_sscsslfang_qi_bu_huo_ming_guang_wei_ke_xuan_xiang"), mouseX, mouseY);
-		if (mouseX > leftPos + 13 && mouseX < leftPos + 34 && mouseY > topPos + 49 && mouseY < topPos + 70)
+		}
+		if (mouseX > leftPos + 13 && mouseX < leftPos + 34 && mouseY > topPos + 49 && mouseY < topPos + 70) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_ibhmg.tooltip_fang_qi_bu_huo_ming_guang_li_ji_sheng_cheng_ci_chang_gui_chu_jin_zhan_li_pin"), mouseX, mouseY);
+		}
 	}
 
 	@Override

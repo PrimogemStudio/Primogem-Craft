@@ -16,7 +16,6 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class Zsslpsx2Procedure {
@@ -26,10 +25,9 @@ public class Zsslpsx2Procedure {
 		ItemStack a = ItemStack.EMPTY;
 		{
 			final Vec3 _center = new Vec3(x, (y + 1), z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
+			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				if ((entityiterator instanceof ItemEntity _itemEnt ? _itemEnt.getItem() : ItemStack.EMPTY).getItem() == Items.DIAMOND) {
-					a = new ItemStack(PrimogemcraftModItems.ZSSP.get());
+					a = new ItemStack(PrimogemcraftModItems.ZSSP.get()).copy();
 					a.setCount(
 							(int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) != 0
 									? Mth.nextInt(RandomSource.create(), 0,

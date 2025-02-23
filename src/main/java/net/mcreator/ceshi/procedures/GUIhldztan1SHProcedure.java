@@ -21,16 +21,7 @@ public class GUIhldztan1SHProcedure {
 		double b = 0;
 		double c = 0;
 		if (!world.isClientSide()) {
-			a = new Object() {
-				public int getAmount(int sltid) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
-						if (stack != null)
-							return stack.getCount();
-					}
-					return 0;
-				}
-			}.getAmount((int) wei_zhi);
+			a = getAmountInGUISlot(entity, (int) wei_zhi);
 			b = deng_ji - item.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("deng_ji");
 			a = a > b ? b : a;
 			{
@@ -45,5 +36,14 @@ public class GUIhldztan1SHProcedure {
 			return WuqishuaxinProcedure.execute(world, entity, item);
 		}
 		return false;
+	}
+
+	private static int getAmountInGUISlot(Entity entity, int sltid) {
+		if (entity instanceof Player player && player.containerMenu instanceof Supplier slotSupplier && slotSupplier.get() instanceof Map guiSlots) {
+			ItemStack stack = ((Slot) guiSlots.get(sltid)).getItem();
+			if (stack != null)
+				return stack.getCount();
+		}
+		return 0;
 	}
 }

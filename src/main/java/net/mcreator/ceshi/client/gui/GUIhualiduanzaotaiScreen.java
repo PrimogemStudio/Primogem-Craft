@@ -45,10 +45,12 @@ public class GUIhualiduanzaotaiScreen extends AbstractContainerScreen<GUIhualidu
 		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 130 && mouseX < leftPos + 147 && mouseY > topPos + 57 && mouseY < topPos + 65)
+		if (mouseX > leftPos + 130 && mouseX < leftPos + 147 && mouseY > topPos + 57 && mouseY < topPos + 65) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_ihualiduanzaotai.tooltip_proc_gu_ihldztmiaoshu"), mouseX, mouseY);
-		if (mouseX > leftPos + 130 && mouseX < leftPos + 147 && mouseY > topPos + 22 && mouseY < topPos + 30)
+		}
+		if (mouseX > leftPos + 130 && mouseX < leftPos + 147 && mouseY > topPos + 22 && mouseY < topPos + 30) {
 			guiGraphics.renderTooltip(font, Component.translatable("gui.primogemcraft.gu_ihualiduanzaotai.tooltip_ssbssljing_lian"), mouseX, mouseY);
+		}
 	}
 
 	@Override

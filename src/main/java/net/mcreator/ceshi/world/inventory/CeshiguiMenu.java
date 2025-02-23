@@ -86,84 +86,138 @@ public class CeshiguiMenu extends AbstractContainerMenu implements Supplier<Map<
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 17) {
 			private final int slot = 0;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 26, 17) {
 			private final int slot = 1;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 44, 17) {
 			private final int slot = 2;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 62, 17) {
 			private final int slot = 3;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 80, 17) {
 			private final int slot = 4;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 98, 17) {
 			private final int slot = 5;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 116, 17) {
 			private final int slot = 6;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 134, 17) {
 			private final int slot = 7;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 152, 17) {
 			private final int slot = 8;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 8, 35) {
 			private final int slot = 9;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 26, 35) {
 			private final int slot = 10;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 44, 35) {
 			private final int slot = 11;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 62, 35) {
 			private final int slot = 12;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 80, 35) {
 			private final int slot = 13;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 98, 35) {
 			private final int slot = 14;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 116, 35) {
 			private final int slot = 15;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 134, 35) {
 			private final int slot = 16;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 152, 35) {
 			private final int slot = 17;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 8, 53) {
 			private final int slot = 18;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 26, 53) {
 			private final int slot = 19;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 44, 53) {
 			private final int slot = 20;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 62, 53) {
 			private final int slot = 21;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 80, 53) {
 			private final int slot = 22;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 98, 53) {
 			private final int slot = 23;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 116, 53) {
 			private final int slot = 24;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 134, 53) {
 			private final int slot = 25;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 152, 53) {
 			private final int slot = 26;
+			private int x = CeshiguiMenu.this.x;
+			private int y = CeshiguiMenu.this.y;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -218,58 +272,56 @@ public class CeshiguiMenu extends AbstractContainerMenu implements Supplier<Map<
 		return itemstack;
 	}
 
-	@Override /**
-				* Merges provided ItemStack with the first available one in the container/player inventor between minIndex (included) and maxIndex (excluded). Args : stack, minIndex, maxIndex, negativDirection. [!] the Container implementation do not check if the item is valid for the slot
-				*/
-	protected boolean moveItemStackTo(ItemStack stack, int startIndex, int endIndex, boolean reverseDirection) {
+	@Override
+	protected boolean moveItemStackTo(ItemStack p_38904_, int p_38905_, int p_38906_, boolean p_38907_) {
 		boolean flag = false;
-		int i = startIndex;
-		if (reverseDirection) {
-			i = endIndex - 1;
+		int i = p_38905_;
+		if (p_38907_) {
+			i = p_38906_ - 1;
 		}
-		if (stack.isStackable()) {
-			while (!stack.isEmpty() && (reverseDirection ? i >= startIndex : i < endIndex)) {
+		if (p_38904_.isStackable()) {
+			while (!p_38904_.isEmpty() && (p_38907_ ? i >= p_38905_ : i < p_38906_)) {
 				Slot slot = this.slots.get(i);
 				ItemStack itemstack = slot.getItem();
-				if (slot.mayPlace(itemstack) && !itemstack.isEmpty() && ItemStack.isSameItemSameComponents(stack, itemstack)) {
-					int j = itemstack.getCount() + stack.getCount();
+				if (slot.mayPlace(itemstack) && !itemstack.isEmpty() && ItemStack.isSameItemSameComponents(p_38904_, itemstack)) {
+					int j = itemstack.getCount() + p_38904_.getCount();
 					int k = slot.getMaxStackSize(itemstack);
 					if (j <= k) {
-						stack.setCount(0);
+						p_38904_.setCount(0);
 						itemstack.setCount(j);
 						slot.set(itemstack);
 						flag = true;
 					} else if (itemstack.getCount() < k) {
-						stack.shrink(k - itemstack.getCount());
+						p_38904_.shrink(k - itemstack.getCount());
 						itemstack.setCount(k);
 						slot.set(itemstack);
 						flag = true;
 					}
 				}
-				if (reverseDirection) {
+				if (p_38907_) {
 					i--;
 				} else {
 					i++;
 				}
 			}
 		}
-		if (!stack.isEmpty()) {
-			if (reverseDirection) {
-				i = endIndex - 1;
+		if (!p_38904_.isEmpty()) {
+			if (p_38907_) {
+				i = p_38906_ - 1;
 			} else {
-				i = startIndex;
+				i = p_38905_;
 			}
-			while (reverseDirection ? i >= startIndex : i < endIndex) {
+			while (p_38907_ ? i >= p_38905_ : i < p_38906_) {
 				Slot slot1 = this.slots.get(i);
 				ItemStack itemstack1 = slot1.getItem();
-				if (itemstack1.isEmpty() && slot1.mayPlace(stack)) {
-					int l = slot1.getMaxStackSize(stack);
-					slot1.setByPlayer(stack.split(Math.min(stack.getCount(), l)));
+				if (itemstack1.isEmpty() && slot1.mayPlace(p_38904_)) {
+					int l = slot1.getMaxStackSize(p_38904_);
+					slot1.setByPlayer(p_38904_.split(Math.min(p_38904_.getCount(), l)));
 					slot1.setChanged();
 					flag = true;
 					break;
 				}
-				if (reverseDirection) {
+				if (p_38907_) {
 					i--;
 				} else {
 					i++;

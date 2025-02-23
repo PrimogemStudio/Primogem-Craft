@@ -16,14 +16,7 @@ public class YsjczsxProcedure {
 		if (entity == null)
 			return;
 		if (blockstate.getBlock() == PrimogemcraftModBlocks.XJHPYHFH.get() || blockstate.getBlock() == PrimogemcraftModBlocks.BWDXJHPYHFH.get()) {
-			if (new Object() {
-				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getBoolean(tag);
-					return false;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "yinhang_busunhuai")) {
+			if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "yinhang_busunhuai")) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -49,5 +42,12 @@ public class YsjczsxProcedure {
 					_player.displayClientMessage(Component.literal("\u00A7a\u8BE5\u661F\u9645\u548C\u5E73\u94F6\u884C\u5C06\u63A5\u53D7\u4FDD\u62A4\uFF01"), false);
 			}
 		}
+	}
+
+	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getBoolean(tag);
+		return false;
 	}
 }
