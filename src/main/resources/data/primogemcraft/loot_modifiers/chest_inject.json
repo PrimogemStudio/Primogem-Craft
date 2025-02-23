@@ -33,11 +33,6 @@
       }
     },
     { "condition": "minecraft:random_chance", "chance": 0.1 }
-=======
-      "condition": "minecraft:random_chance",
-      "chance": 0.1
-    }
->>>>>>> origin/main
   ],
 
   "table": "primogemcraft:custominject"
