@@ -16,6 +16,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
+import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 import javax.annotation.Nullable;
 
@@ -40,27 +41,31 @@ public class Heisenlinggzsx1Procedure {
 				|| immediatesourceentity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(PrimogemcraftModMobEffects.HEISENLINGGZ))) {
 			if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == sourceentity
 					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) <= (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1)) {
-				if (Math.random() < 0.1) {
-					for (int index0 = 0; index0 < 3; index0++) {
-						if (Math.random() < 0.4) {
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = EntityType.ZOMBIE.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+				if (!(sourceentity instanceof Player _plrCldCheck7 && _plrCldCheck7.getCooldowns().isOnCooldown(PrimogemcraftModItems.QIWUHEISENLINGGZ.get()))) {
+					if (Math.random() < 0.1) {
+						if (sourceentity instanceof Player _player)
+							_player.getCooldowns().addCooldown(PrimogemcraftModItems.QIWUHEISENLINGGZ.get(), 20);
+						for (int index0 = 0; index0 < 3; index0++) {
+							if (Math.random() < 0.4) {
+								if (world instanceof ServerLevel _level) {
+									Entity entityToSpawn = EntityType.ZOMBIE.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+									if (entityToSpawn != null) {
+										entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+									}
 								}
-							}
-						} else if (Math.random() < 0.4) {
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = EntityType.SKELETON.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							} else if (Math.random() < 0.4) {
+								if (world instanceof ServerLevel _level) {
+									Entity entityToSpawn = EntityType.SKELETON.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+									if (entityToSpawn != null) {
+										entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+									}
 								}
-							}
-						} else {
-							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = EntityType.WITHER_SKELETON.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
-								if (entityToSpawn != null) {
-									entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							} else {
+								if (world instanceof ServerLevel _level) {
+									Entity entityToSpawn = EntityType.WITHER_SKELETON.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+									if (entityToSpawn != null) {
+										entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+									}
 								}
 							}
 						}
