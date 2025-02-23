@@ -15,19 +15,11 @@
           },
           {
             "condition": "neoforge:loot_table_id",
-            "value": "minecraft:chests/trial_chambers/rare"
-          },
-          {
-            "condition": "neoforge:loot_table_id",
-            "value": "minecraft:chests/trial_chambers/vault"
+            "value": "minecraft:chests/trial_chambers/treasure"
           },
           {
             "condition": "neoforge:loot_table_id",
             "value": "minecraft:entities/trial_spawner/rewards"
-          },
-          {
-            "condition": "neoforge:loot_table_id",
-            "value": "minecraft:gameplay/trial_chambers/completion"
           }
         ]
       }
