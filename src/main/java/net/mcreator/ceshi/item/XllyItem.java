@@ -60,7 +60,7 @@ public class XllyItem extends SwordItem {
 	};
 
 	public XllyItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 6.5f, -3.2f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 6.5f, -3f)).fireResistant());
 	}
 
 	@Override

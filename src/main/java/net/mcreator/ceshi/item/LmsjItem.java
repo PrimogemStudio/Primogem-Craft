@@ -58,7 +58,7 @@ public class LmsjItem extends SwordItem {
 	};
 
 	public LmsjItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 5f, -3.1f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 5f, -3f)).fireResistant());
 	}
 
 	@Override
