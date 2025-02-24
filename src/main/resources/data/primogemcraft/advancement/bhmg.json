@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "primogemcraft:example"
+    },
+    "title": {
+      "translate": "advancements.bhmg.title"
+    },
+    "description": {
+      "translate": "advancements.bhmg.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "bhmg_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "primogemcraft:shshiwanyuyuedacheng"
+}

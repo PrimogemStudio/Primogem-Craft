@@ -10,10 +10,13 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.ceshi.network.PrimogemcraftModVariables;
 import net.mcreator.ceshi.init.PrimogemcraftModMobEffects;
@@ -181,6 +184,26 @@ public class Qiyuanshiti_chushengxiaoguoProcedure {
 				if (entity instanceof QqiyuanJinGuangEntity _datEntSetL)
 					_datEntSetL.getEntityData().set(QqiyuanJinGuangEntity.DATA_bhmg, true);
 				entity.getPersistentData().putBoolean("lizi", true);
+				{
+					final Vec3 _center = new Vec3(x, (y - 10), z);
+					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(40 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+						if ((entity.getPersistentData().getString("qiyuan_guishu")).equals(entityiterator.getDisplayName().getString())) {
+							if (!(entityiterator instanceof ServerPlayer _plr61 && _plr61.level() instanceof ServerLevel
+									&& _plr61.getAdvancements().getOrStartProgress(_plr61.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:bhmg"))).isDone())) {
+								if (entityiterator instanceof ServerPlayer _player) {
+									AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:bhmg"));
+									if (_adv != null) {
+										AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+										if (!_ap.isDone()) {
+											for (String criteria : _ap.getRemainingCriteria())
+												_player.getAdvancements().award(_adv, criteria);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
 			});
 		}
 	}
