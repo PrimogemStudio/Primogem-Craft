@@ -19,7 +19,6 @@ import net.neoforged.api.distmarker.OnlyIn;
 
 import java.util.List;
 
-import static net.hackermdch.pgc.rei.PGCClientPlugin.FORGE;
 import static net.mcreator.ceshi.PrimogemcraftMod.MODID;
 import static net.mcreator.ceshi.init.PrimogemcraftModItems.*;
 
@@ -27,7 +26,7 @@ import static net.mcreator.ceshi.init.PrimogemcraftModItems.*;
 public class ForgeCategory implements DisplayCategory<ForgeDisplay> {
     @Override
     public CategoryIdentifier<? extends ForgeDisplay> getCategoryIdentifier() {
-        return FORGE;
+        return PGCPlugin.FORGE;
     }
 
     @Override
