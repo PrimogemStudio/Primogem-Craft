@@ -17,6 +17,7 @@ import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.network.configuration.ICustomConfigurationTask;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.HashSet;
 import java.util.Set;
 import java.util.function.Consumer;
 
@@ -26,6 +27,7 @@ import static net.mcreator.ceshi.PrimogemcraftMod.MODID;
 public record WishInfoConfiguration(ServerConfigurationPacketListener listener) implements ICustomConfigurationTask {
     private static final Type TYPE = new Type(ResourceLocation.fromNamespaceAndPath(MODID, "wish_info"));
     private static Set<Holder<Item>> items, items1, items2;
+    private static final Set<ResourceLocation> r = new HashSet<>(), sr = new HashSet<>(), ssr = new HashSet<>();
     private static RegistryAccess registry;
 
     @Override
@@ -46,16 +48,32 @@ public record WishInfoConfiguration(ServerConfigurationPacketListener listener) 
     private static void onReload(AddReloadListenerEvent event) {
         var provider = event.getRegistryAccess().asGetterLookup();
         registry = event.getRegistryAccess();
-        items = getItems(provider, "qq_qqylan");
-        items1 = getItems(provider, "q_qqyzi");
-        items2 = getItems(provider, "qqyjin");
+        items = getItems(provider, r);
+        items1 = getItems(provider, sr);
+        items2 = getItems(provider, ssr);
     }
 
-    private static Set<Holder<Item>> getItems(HolderGetter.Provider provider, String name) {
+    public static void addRare(ResourceLocation lootTable) {
+        r.add(lootTable);
+    }
+
+    public static void addSuperRare(ResourceLocation lootTable) {
+        sr.add(lootTable);
+    }
+
+    public static void addSuperSuperRare(ResourceLocation lootTable) {
+        ssr.add(lootTable);
+    }
+
+    private static Set<Holder<Item>> getItems(HolderGetter.Provider provider, Set<ResourceLocation> lootTables) {
         var builder = ImmutableSet.<Holder<Item>>builder();
-        provider.get(Registries.LOOT_TABLE, ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath(MODID, name))).ifPresent(table -> table.value().pools.forEach(pool -> pool.entries.forEach(entry -> {
+        for (var id : lootTables) getItems(provider, id, builder);
+        return builder.build();
+    }
+
+    private static void getItems(HolderGetter.Provider provider, ResourceLocation id, ImmutableSet.Builder<Holder<Item>> builder) {
+        provider.get(Registries.LOOT_TABLE, ResourceKey.create(Registries.LOOT_TABLE, id)).ifPresent(table -> table.value().pools.forEach(pool -> pool.entries.forEach(entry -> {
             if (entry instanceof LootItem item) builder.add(item.item);
         })));
-        return builder.build();
     }
 }

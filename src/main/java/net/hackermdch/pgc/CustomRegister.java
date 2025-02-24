@@ -1,8 +1,10 @@
 package net.hackermdch.pgc;
 
+import net.hackermdch.pgc.network.WishInfoConfiguration;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;
 import net.neoforged.bus.api.IEventBus;
@@ -22,6 +24,9 @@ public class CustomRegister {
         DATA_COMPONENT_TYPES.register("custom_bar", () -> CustomComponents.CUSTOM_BAR);
         ShapedWithComponentsRecipe.register();
         MaterialRecoveryRecipe.register();
+        WishInfoConfiguration.addRare(ResourceLocation.fromNamespaceAndPath(MODID, "qq_qqylan"));
+        WishInfoConfiguration.addSuperRare(ResourceLocation.fromNamespaceAndPath(MODID, "q_qqyzi"));
+        WishInfoConfiguration.addSuperSuperRare(ResourceLocation.fromNamespaceAndPath(MODID, "qqyjin"));
     }
 
     public static void register(IEventBus modBus) {
