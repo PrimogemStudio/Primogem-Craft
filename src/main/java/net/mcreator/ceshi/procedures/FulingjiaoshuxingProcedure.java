@@ -1,5 +1,7 @@
 package net.mcreator.ceshi.procedures;
 
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -83,6 +85,11 @@ public class FulingjiaoshuxingProcedure {
 						}
 					}
 				}
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(PrimogemcraftModItems.SHQWFNJ.get()).copy();
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
