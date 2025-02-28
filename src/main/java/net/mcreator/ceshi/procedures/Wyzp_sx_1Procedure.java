@@ -1,5 +1,7 @@
 package net.mcreator.ceshi.procedures;
 
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.CustomData;
@@ -20,6 +22,7 @@ import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.ceshi.network.PrimogemcraftModVariables;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
+import net.mcreator.ceshi.init.PrimogemcraftModBlocks;
 
 public class Wyzp_sx_1Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -37,6 +40,11 @@ public class Wyzp_sx_1Procedure {
 					}
 				} else {
 					if (Math.random() < 0.0001) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(PrimogemcraftModBlocks.XYDX.get()).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
 						Xyzpsxhs0Procedure.execute(entity, itemstack, 5000, "\u00A76\u00A7l\u7279\u7B49\u5956\uFF01");
 						if (entity instanceof ServerPlayer _player) {
 							AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("primogemcraft:yhxyx"));

@@ -1,0 +1,9 @@
+{
+  "parent": "primogemcraft:custom/xingyundiaoxiang",
+  "textures": {
+    "all": "primogemcraft:block/xingyundiaoxiang2",
+    "particle": "primogemcraft:block/xingyundiaoxiang2",
+    "1": "primogemcraft:block/xingyundiaoxiang2"
+  },
+  "render_type": "solid"
+}
