@@ -1,5 +1,6 @@
 package net.hackermdch.pgc;
 
+import net.hackermdch.pgc.network.ParticlePacket;
 import net.hackermdch.pgc.network.WishInfoConfiguration;
 import net.hackermdch.pgc.network.WishInfoPacket;
 import net.mcreator.ceshi.CustomBarRegister;
@@ -31,6 +32,7 @@ public class EventHandler {
     @SubscribeEvent
     private static void registerNetworking(RegisterPayloadHandlersEvent event) {
         var registrar = event.registrar(MODID);
+        ParticlePacket.register(registrar);
         if (ModList.get().isLoaded("roughlyenoughitems")) {
             WishInfoPacket.register(registrar);
         }

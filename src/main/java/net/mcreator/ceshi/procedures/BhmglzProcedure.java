@@ -1,11 +1,11 @@
 package net.mcreator.ceshi.procedures;
 
-import net.minecraft.world.item.component.FireworkExplosion;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.client.particle.FireworkParticles;
-import net.minecraft.client.Minecraft;
+import net.neoforged.neoforge.network.PacketDistributor;
 
-import java.util.List;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+
+import net.hackermdch.pgc.network.ParticlePacket;
 
 public class BhmglzProcedure {
 	public static void execute(Entity entity) {
@@ -18,14 +18,8 @@ public class BhmglzProcedure {
 			x = entity.getX();
 			y = entity.getY();
 			z = entity.getZ();
-			new Object() {
-				void run(double x, double y, double z) {
-					var colors = it.unimi.dsi.fastutil.ints.IntList.of(0xFF9FE0, 0xAEEDFF);
-					var fadeColors = it.unimi.dsi.fastutil.ints.IntList.of(0xF4C6FF);
-					var pt = new FireworkParticles.Starter(Minecraft.getInstance().level, x, y, z, 0, 0, 0, Minecraft.getInstance().particleEngine, List.of(FireworkExplosion.DEFAULT));
-					pt.createParticleBall(0.5, 3, colors, fadeColors, true, false);
-				}
-			}.run(x, y, z);
+			if (entity.level() instanceof ServerLevel level)
+				PacketDistributor.sendToPlayersInDimension(level, new ParticlePacket(0, x, y, z));
 			entity.getPersistentData().putBoolean("lizi", false);
 		}
 	}
