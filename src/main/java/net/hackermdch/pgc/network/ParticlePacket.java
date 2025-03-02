@@ -7,8 +7,6 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.component.FireworkExplosion;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import org.jetbrains.annotations.NotNull;
@@ -43,9 +41,8 @@ public class ParticlePacket implements CustomPacketPayload {
         buf.writeDouble(z);
     }
 
-    @SuppressWarnings("DataFlowIssue")
-    @OnlyIn(Dist.CLIENT)
     private void handle(IPayloadContext context) {
+        assert Minecraft.getInstance().level != null;
         switch (particle) {
             case 0 -> {
                 var colors = it.unimi.dsi.fastutil.ints.IntList.of(0xFF9FE0, 0xAEEDFF);
