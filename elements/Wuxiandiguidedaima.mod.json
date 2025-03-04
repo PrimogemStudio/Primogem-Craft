@@ -38,7 +38,8 @@
         "§7代码修复后：",
         "§2击杀目标后概率提升经验值",
         "§2持续到增益结束"
-      ]
+      ],
+      "name": "Wxdgddm_ms"
     },
     "glowCondition": {
       "fixedValue": true,
@@ -52,6 +53,9 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
@@ -63,6 +67,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

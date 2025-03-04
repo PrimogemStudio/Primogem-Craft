@@ -11,7 +11,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
 
+import net.mcreator.ceshi.procedures.Ydxcddm_msProcedure;
 import net.mcreator.ceshi.procedures.FumianqiwufaguangProcedure;
 import net.mcreator.ceshi.procedures.Daima2shuxingProcedure;
 
@@ -32,14 +34,13 @@ public class YoudianqiqiaodedaimaItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_0"));
-		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_1"));
-		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_2"));
-		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_3"));
-		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_4"));
-		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_5"));
-		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_6"));
-		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_7"));
+		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
+		String hoverText = Ydxcddm_msProcedure.execute();
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 
 	@Override

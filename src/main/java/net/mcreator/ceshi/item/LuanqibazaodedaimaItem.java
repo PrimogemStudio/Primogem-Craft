@@ -11,7 +11,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.Minecraft;
 
+import net.mcreator.ceshi.procedures.LqbzddmmsProcedure;
 import net.mcreator.ceshi.procedures.FumianqiwufaguangProcedure;
 import net.mcreator.ceshi.procedures.Daima_1_shuxingProcedure;
 
@@ -32,20 +34,18 @@ public class LuanqibazaodedaimaItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_0"));
-		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_1"));
-		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_2"));
-		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_3"));
-		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_4"));
-		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_5"));
-		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_6"));
-		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_7"));
-		list.add(Component.translatable("item.primogemcraft.luanqibazaodedaima.description_8"));
+		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
+		String hoverText = LqbzddmmsProcedure.execute();
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		Daima_1_shuxingProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		Daima_1_shuxingProcedure.execute();
 	}
 }

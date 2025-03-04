@@ -3,19 +3,27 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "§a已修复§f代码",
-    "icon": "luanqidaima.png",
+    "icon": "luanqidaima",
     "color": {
       "value": -1,
       "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
     },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
-    "modifiers": [],
-    "onActiveTick": {
-      "name": "Daima_xiaoguo"
-    }
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ARMOR_TOUGHNESS"
+        },
+        "amount": 0.02,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ]
   }
 }

@@ -41,7 +41,8 @@
         "§2若力量效果小于20秒，将继承持续时间",
         "§2否则取持续时间的5%继承",
         "§2持续到增益结束"
-      ]
+      ],
+      "name": "Myzsddm_ms"
     },
     "glowCondition": {
       "fixedValue": true,
@@ -55,6 +56,9 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
@@ -66,6 +70,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

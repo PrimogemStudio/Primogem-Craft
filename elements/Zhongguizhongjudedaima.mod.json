@@ -39,7 +39,8 @@
         "§7代码修复后：",
         "§2有小概率免疫一次攻击",
         "§2持续到增益结束"
-      ]
+      ],
+      "name": "Zgzjddm_ms"
     },
     "glowCondition": {
       "fixedValue": true,
@@ -53,6 +54,9 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
@@ -64,6 +68,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }
