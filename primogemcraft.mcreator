@@ -7726,32 +7726,7 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/Daima2shuxingProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -7768,6 +7743,18 @@
           {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -39238,7 +39225,7 @@
       "item.primogemcraft.qwxgjb.description_1": "§e恢复量为最大生命值的10%",
       "item.primogemcraft.qwhcj": "奇物合成剂",
       "item.primogemcraft.hqlei": "§5『Curio』§dSealing Wax of Eternity",
-      "effect.primogemcraft.qiqiaodaimaxiufu": "§aFixed§fCode",
+      "effect.primogemcraft.qiqiaodaimaxiufu": "§a已修复§f代码",
       "subtitles.yanziyueliang": "QAQ",
       "item.primogemcraft.zizaizuantao_chestplate.description_5": "§9+1 套装值（松石）",
       "item.primogemcraft.zizaizuantao_chestplate.description_3": "§8level of improvement based on suit amount",
@@ -41156,7 +41143,7 @@
       "item.primogemcraft.jlkjzs_leggings": "§6『Prithiva Topaz』 §bDiamond Leggings",
       "item.primogemcraft.zstj.description_1": "§5 - 获得勾玉效果 I",
       "item.primogemcraft.zstj.description_2": "§7 - 持续时间10秒",
-      "item.primogemcraft.youdianqiqiaodedaima": "§5『Curio』§9Odd Code",
+      "item.primogemcraft.youdianqiqiaodedaima": "§5『奇物』§9有点蹊跷的代码",
       "item.primogemcraft.zstj.description_0": "§6[SHIFT+右键]：",
       "item_group.primogemcraft.primogemcraft": "原石工艺",
       "effect.primogemcraft.smclxg": "神秘磁力",

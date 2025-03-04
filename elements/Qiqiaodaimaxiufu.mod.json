@@ -3,17 +3,28 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "§a已修复§f代码",
-    "icon": "qiqiaodedaima_xiaoguo.png",
+    "icon": "qiqiaodedaima_xiaoguo",
     "color": {
       "value": -1,
       "falpha": 0.0
     },
+    "onAddedSound": {
+      "value": ""
+    },
     "isInstant": false,
-    "mobEffectCategory": "BENEFICIAL",
+    "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
-    "modifiers": [],
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": 0.02,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ],
     "onActiveTick": {
       "name": "Daima_xiaoguo"
     }

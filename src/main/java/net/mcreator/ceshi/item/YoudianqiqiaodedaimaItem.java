@@ -46,6 +46,6 @@ public class YoudianqiqiaodedaimaItem extends Item {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		Daima2shuxingProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
+		Daima2shuxingProcedure.execute();
 	}
 }
