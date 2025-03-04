@@ -35658,6 +35658,118 @@
           }
         ]
       }
+    },
+    {
+      "name": "DaimaHS",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daima_hs",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/DaimaHSProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "item",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DaimaHS0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daima_hs_0",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/DaimaHS0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "xiao_guo",
+            "type": "logic"
+          },
+          {
+            "name": "zhi_0",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DaimaHS1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daima_hs_1",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/DaimaHS1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "xiao_guo",
+            "type": "logic"
+          },
+          {
+            "name": "zhi_1",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DaimaHS2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daima_hs_2",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/DaimaHS2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "shang_xian",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
