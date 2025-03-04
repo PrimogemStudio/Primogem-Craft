@@ -35590,6 +35590,18 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Sjsjpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sjsjpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/sjsjpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [

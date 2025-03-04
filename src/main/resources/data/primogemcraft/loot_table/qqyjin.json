@@ -147,7 +147,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 2
+                "max": 5
               }
             }
           ]
@@ -210,20 +210,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:laoshi",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "primogemcraft:qhzllh_2",
           "weight": 4,
           "functions": [
@@ -280,28 +266,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shenshenghuaban",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "primogemcraft:shizuoyuanshikuai",
           "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2,
-                "max": 5
+                "min": 1,
+                "max": 16
               }
             }
           ]
@@ -519,13 +491,13 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:shilianchou",
-          "weight": 4,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 1
+                "max": 2
               }
             }
           ]
@@ -533,7 +505,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:mljnb",
-          "weight": 4,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
