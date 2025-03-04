@@ -42,14 +42,10 @@
       "name": "Wxdgddm_ms"
     },
     "glowCondition": {
-      "fixedValue": true,
-      "name": "Fumianqiwufaguang"
+      "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInInventoryTick": {
-      "name": "Diguidaimashuxing"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

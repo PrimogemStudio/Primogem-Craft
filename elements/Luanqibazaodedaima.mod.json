@@ -43,14 +43,10 @@
       "name": "Lqbzddmms"
     },
     "glowCondition": {
-      "fixedValue": true,
-      "name": "Fumianqiwufaguang"
+      "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInInventoryTick": {
-      "name": "Daima_1_shuxing"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

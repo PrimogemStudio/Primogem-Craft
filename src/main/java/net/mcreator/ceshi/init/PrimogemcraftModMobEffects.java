@@ -63,7 +63,6 @@ import net.mcreator.ceshi.potion.QianyeMobEffect;
 import net.mcreator.ceshi.potion.LjtdwqMobEffect;
 import net.mcreator.ceshi.potion.LinzhongMobEffect;
 import net.mcreator.ceshi.potion.LetoudechengfaMobEffect;
-import net.mcreator.ceshi.potion.LengquezhongguizhongjuMobEffect;
 import net.mcreator.ceshi.potion.JishengMobEffect;
 import net.mcreator.ceshi.potion.JingquedaimaMobEffect;
 import net.mcreator.ceshi.potion.JiazuxianzhiMobEffect;
@@ -97,7 +96,6 @@ public class PrimogemcraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> ZHENGCHANGDAIMA = REGISTRY.register("zhengchangdaima", () -> new ZhengchangdaimaMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> QIQIAODAIMAXIUFU = REGISTRY.register("qiqiaodaimaxiufu", () -> new QiqiaodaimaxiufuMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> ZHONGGUIZHONGJUXIAOGUO = REGISTRY.register("zhongguizhongjuxiaoguo", () -> new ZhongguizhongjuxiaoguoMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> LENGQUEZHONGGUIZHONGJU = REGISTRY.register("lengquezhongguizhongju", () -> new LengquezhongguizhongjuMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> JINGQUEDAIMA = REGISTRY.register("jingquedaima", () -> new JingquedaimaMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> QUEZHUSHIXIAOGUO = REGISTRY.register("quezhushixiaoguo", () -> new QuezhushixiaoguoMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> DIGUIXIAOGUO = REGISTRY.register("diguixiaoguo", () -> new DiguixiaoguoMobEffect());

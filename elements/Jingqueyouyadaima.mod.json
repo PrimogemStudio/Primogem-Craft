@@ -45,14 +45,10 @@
       "name": "Jqyyddm_ms"
     },
     "glowCondition": {
-      "fixedValue": true,
-      "name": "Fumianqiwufaguang"
+      "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInInventoryTick": {
-      "name": "Daima4shuxing"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

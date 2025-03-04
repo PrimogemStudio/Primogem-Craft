@@ -7634,38 +7634,6 @@
       }
     },
     {
-      "name": "Fumianqiwufaguang",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fumianqiwufaguang",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/FumianqiwufaguangProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Daima_1_shuxing",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daima_1_shuxing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/Daima_1_shuxingProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "Zhengchangdaima",
       "type": "potioneffect",
       "compiles": true,
@@ -7675,19 +7643,6 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/potion/ZhengchangdaimaMobEffect.java"
         ]
-      }
-    },
-    {
-      "name": "Daima_xiaoguo",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daima_xiaoguo",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/Daima_xiaoguoProcedure.java"
-        ],
-        "dependencies": []
       }
     },
     {
@@ -7701,19 +7656,6 @@
           "src/main/resources/assets/primogemcraft/models/item/youdianqiqiaodedaima.json",
           "src/main/java/net/mcreator/ceshi/item/YoudianqiqiaodedaimaItem.java"
         ]
-      }
-    },
-    {
-      "name": "Daima2shuxing",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daima_2shuxing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/Daima2shuxingProcedure.java"
-        ],
-        "dependencies": []
       }
     },
     {
@@ -7776,19 +7718,6 @@
       }
     },
     {
-      "name": "Daima3shuxing",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daima_3shuxing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/Daima3shuxingProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "Zhongguizhongjudaima",
       "type": "procedure",
       "compiles": true,
@@ -7835,18 +7764,6 @@
       }
     },
     {
-      "name": "Lengquezhongguizhongju",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lengquezhongguizhongju",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/potion/LengquezhongguizhongjuMobEffect.java"
-        ]
-      }
-    },
-    {
       "name": "Jingqueyouyadaima",
       "type": "item",
       "compiles": true,
@@ -7857,19 +7774,6 @@
           "src/main/resources/assets/primogemcraft/models/item/jingqueyouyadaima.json",
           "src/main/java/net/mcreator/ceshi/item/JingqueyouyadaimaItem.java"
         ]
-      }
-    },
-    {
-      "name": "Daima4shuxing",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "daima_4shuxing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/Daima4shuxingProcedure.java"
-        ],
-        "dependencies": []
       }
     },
     {
@@ -7932,19 +7836,6 @@
       }
     },
     {
-      "name": "Meiyouzhushishuxing",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "meiyouzhushishuxing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/MeiyouzhushishuxingProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "Zhushishuxing1",
       "type": "procedure",
       "compiles": true,
@@ -8001,19 +7892,6 @@
           "src/main/resources/assets/primogemcraft/models/item/wuxiandiguidedaima.json",
           "src/main/java/net/mcreator/ceshi/item/WuxiandiguidedaimaItem.java"
         ]
-      }
-    },
-    {
-      "name": "Diguidaimashuxing",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diguidaimashuxing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/DiguidaimashuxingProcedure.java"
-        ],
-        "dependencies": []
       }
     },
     {
@@ -39848,7 +39726,6 @@
       "subtitles.djpp02": "Clap！",
       "item.primogemcraft.zizaizuanshijian.description_2": "§7 - 触发几率50%",
       "item.primogemcraft.zizaizuanshijian.description_1": "§7 - 可以更好的击飞目标！",
-      "effect.primogemcraft.lengquezhongguizhongju": "Error Code Curios Cool Down",
       "item.primogemcraft.zizaizuanshijian.description_0": "§d攻击目标时：",
       "item.primogemcraft.axhjt_helmet": "§b『Shivada Jade』§eNetherite Helmet",
       "item.primogemcraft.zszsj.description_3": "§7 - 冷却40秒",
@@ -42525,7 +42402,6 @@
       "subtitles.djpp02": "Clap！",
       "item.primogemcraft.zizaizuanshijian.description_2": "§7 - 触发几率50%",
       "item.primogemcraft.zizaizuanshijian.description_1": "§7 - 可以更好的击飞目标！",
-      "effect.primogemcraft.lengquezhongguizhongju": "Error Code Curios Cool Down",
       "item.primogemcraft.zizaizuanshijian.description_0": "§d攻击目标时：",
       "item.primogemcraft.axhjt_helmet": "§b『Shivada Jade』§eNetherite Helmet",
       "item.primogemcraft.zszsj.description_3": "§7 - 冷却40秒",
@@ -45200,7 +45076,6 @@
       "subtitles.djpp02": "啪！",
       "item.primogemcraft.zizaizuanshijian.description_2": "§7 - 触发几率50%",
       "item.primogemcraft.zizaizuanshijian.description_1": "§7 - 可以更好的击飞目标！",
-      "effect.primogemcraft.lengquezhongguizhongju": "错误代码冷却",
       "item.primogemcraft.zizaizuanshijian.description_0": "§d攻击目标时：",
       "item.primogemcraft.axhjt_helmet": "§b『哀叙冰玉』§e下界合金头盔",
       "item.primogemcraft.zszsj.description_3": "§7 - 冷却40秒",

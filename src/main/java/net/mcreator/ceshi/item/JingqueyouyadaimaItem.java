@@ -4,7 +4,6 @@ package net.mcreator.ceshi.item;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -14,20 +13,12 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.ceshi.procedures.Jqyyddm_msProcedure;
-import net.mcreator.ceshi.procedures.FumianqiwufaguangProcedure;
-import net.mcreator.ceshi.procedures.Daima4shuxingProcedure;
 
 import java.util.List;
 
 public class JingqueyouyadaimaItem extends Item {
 	public JingqueyouyadaimaItem() {
 		super(new Item.Properties().durability(31).fireResistant().rarity(Rarity.COMMON));
-	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public boolean isFoil(ItemStack itemstack) {
-		return FumianqiwufaguangProcedure.execute(itemstack);
 	}
 
 	@Override
@@ -41,11 +32,5 @@ public class JingqueyouyadaimaItem extends Item {
 				list.add(Component.literal(line));
 			}
 		}
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		Daima4shuxingProcedure.execute();
 	}
 }

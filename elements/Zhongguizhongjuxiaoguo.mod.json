@@ -24,9 +24,6 @@
         "amount": 0.02,
         "operation": "ADD_MULTIPLIED_BASE"
       }
-    ],
-    "onActiveTick": {
-      "name": "Daima_xiaoguo"
-    }
+    ]
   }
 }
