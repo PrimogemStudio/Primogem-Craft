@@ -30,15 +30,14 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7将这段代码修复成正常的奇物需要",
-        "§7击杀30只生物",
+        "§7击杀生物来修复这段代码，使其提供完整增益",
         "§",
-        "§7修复期间：",
-        "§2玩家造成暴击时概率降低自",
-        "§2身生命值",
-        "§7代码修复后：",
-        "§2造成暴击后极高概率恢复生",
-        "§2命值，持续到增益结束"
+        "§2§l每次击杀视为修复，获得§62%§2§l攻击力加成，至多§610层",
+        "§2§l每次修复都可叠加§620s§2§l持续时间",
+        "§",
+        "§2§l处于多人游戏时，若附近半径8格方块范围内存在玩家",
+        "§2§l每名玩家至多提供§b100%§2增益层数上限，不含敌友",
+        "§c§l每次效果刷新计算一次最大层数"
       ]
     },
     "glowCondition": {
@@ -53,6 +52,9 @@
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
@@ -64,6 +66,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

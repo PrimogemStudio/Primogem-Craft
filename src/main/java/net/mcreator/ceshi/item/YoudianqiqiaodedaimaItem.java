@@ -40,7 +40,6 @@ public class YoudianqiqiaodedaimaItem extends Item {
 		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_5"));
 		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_6"));
 		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_7"));
-		list.add(Component.translatable("item.primogemcraft.youdianqiqiaodedaima.description_8"));
 	}
 
 	@Override
