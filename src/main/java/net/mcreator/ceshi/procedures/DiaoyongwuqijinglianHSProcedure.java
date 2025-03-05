@@ -5,7 +5,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.component.DataComponents;
 
 public class DiaoyongwuqijinglianHSProcedure {
-	public static void execute(ItemStack item, double zhi) {
+	public static void execute(ItemStack item, double xian_zhi, double zhi) {
 		ItemStack a = ItemStack.EMPTY;
 		a = item;
 		{
@@ -18,10 +18,10 @@ public class DiaoyongwuqijinglianHSProcedure {
 			final boolean _tagValue = false;
 			CustomData.update(DataComponents.CUSTOM_DATA, a, tag -> tag.putBoolean(_tagName, _tagValue));
 		}
-		if (a.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian") >= 4) {
+		if (a.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian") >= xian_zhi) {
 			{
 				final String _tagName = "jing_lian";
-				final double _tagValue = 4;
+				final double _tagValue = xian_zhi;
 				CustomData.update(DataComponents.CUSTOM_DATA, a, tag -> tag.putDouble(_tagName, _tagValue));
 			}
 		}
