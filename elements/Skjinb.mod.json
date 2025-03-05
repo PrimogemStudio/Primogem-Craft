@@ -1,0 +1,72 @@
+{
+  "_fv": 77,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "shikong_jinbi",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "§5§l『奇物』§d时空金币",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 12,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§d随着时间的推移，获得随机奖励",
+        "§7根据物品栏中的神秘势力债券数量来决定",
+        "§7下次奖品出现债券的概率，单个债券提供1%",
+        "§7§l未获得债券时获得1~10宇宙碎片",
+        "§e触发3次后该奇物损毁"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "Skjinbisx"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none",
+    "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
+    "musicDiscLengthInTicks": 100,
+    "musicDiscAnalogOutput": 0
+  }
+}
