@@ -7338,16 +7338,8 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "world",
@@ -39414,11 +39406,11 @@
       "item.primogemcraft.zshjt_chestplate.description_2": "§7 4x 雨或雷雨天获得力量 速度",
       "subtitles.dashengchuzi01": "lalala",
       "item.primogemcraft.zshjt_chestplate.description_3": "§8level of improvement based on suit amount",
-      "item.primogemcraft.ceshiyongwupin.description_2": "but the first texture of primogem",
+      "item.primogemcraft.ceshiyongwupin.description_2": "没有任何用途",
       "item.primogemcraft.zshjt_chestplate.description_4": "§",
-      "item.primogemcraft.ceshiyongwupin.description_1": "you can see nothing",
+      "item.primogemcraft.ceshiyongwupin.description_1": "你拿着除了能看原石的初版材质以外",
       "item.primogemcraft.zshjt_chestplate.description_5": "§9+2 套装值（紫金）",
-      "item.primogemcraft.ceshiyongwupin.description_0": "this is for editor",
+      "item.primogemcraft.ceshiyongwupin.description_0": "这是开发者用的",
       "item.primogemcraft.ryzsj.description_1": "§7 - 为目标施加灼烧效果II（6s）",
       "item.primogemcraft.hqfeng.description_0": "§9对于自在松石系列装备：",
       "item.primogemcraft.ryzsj.description_0": "§d攻击目标时：",
@@ -39876,7 +39868,7 @@
       "item.primogemcraft.djzssj": "§b『Diamond Updated』vajrada Lazurite Gemstone",
       "item.primogemcraft.qwxyzq.description_0": "§7在黑塔商店中使用宇宙碎片时",
       "item.primogemcraft.qwxyzq.description_1": "§7减少20%宇宙碎片消耗",
-      "item.primogemcraft.ceshiyongwupin": "item for editor",
+      "item.primogemcraft.ceshiyongwupin": "开发者物品",
       "block.primogemcraft.ziyousongshikuai.description_0": "§2Oh ♂ yeah ——",
       "item.primogemcraft.jhsb_2.description_1": "§9右键使用",
       "item.primogemcraft.jhsb_2.description_0": "§e均衡等级\u003e3",
