@@ -116,7 +116,7 @@
   "item.primogemcraft.qwjlbxyq": "§5§l『奇物』§a俱乐部信仰凭证",
   "gui.primogemcraft.cunzheshezhi.tooltip_qu_chu_shi_you_gu_ding_shu_liang_zhuan_bian_wei_0240": "取出时由固定数量转变为0~240%",
   "item.primogemcraft.qwhygzq.description_2": "§c§l极大概率使祈愿武器等级变为 -999",
-  "item.primogemcraft.qwhygzq.description_1": "§c小概率使祈愿武器直升30级",
+  "item.primogemcraft.qwhygzq.description_1": "§c小概率使祈愿武器直升30级，不可突破上限",
   "subtitles.choukaqianxi01": "ohhhhh",
   "item.primogemcraft.qwsksj.description_1": "§7立即精炼强化一次，可突破一次上限",
   "block.primogemcraft.hualiduanzao.description_0": "§7job site blocks only",
