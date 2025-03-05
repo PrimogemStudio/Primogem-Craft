@@ -25,12 +25,14 @@ public class QwsksjsxProcedure {
 			i1 = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
 			n1 = i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
 			if (i1.is(ItemTags.create(ResourceLocation.parse("pgc:wuqi"))) && n1 <= 4) {
-				{
-					final String _tagName = "jing_lian";
-					final double _tagValue = (n1 + 1);
-					CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putDouble(_tagName, _tagValue));
+				if (Math.random() < 0.5) {
+					{
+						final String _tagName = "jing_lian";
+						final double _tagValue = (n1 + 1);
+						CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putDouble(_tagName, _tagValue));
+					}
+					WuqishuaxinProcedure.execute(world, entity, i1);
 				}
-				WuqishuaxinProcedure.execute(world, entity, i1);
 				itemstack.shrink(1);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
