@@ -227,6 +227,7 @@ import net.mcreator.ceshi.item.QwyhnjItem;
 import net.mcreator.ceshi.item.QwyhjbItem;
 import net.mcreator.ceshi.item.QwybtzdypjItem;
 import net.mcreator.ceshi.item.QwxyzqItem;
+import net.mcreator.ceshi.item.QwxydltItem;
 import net.mcreator.ceshi.item.QwxxggItem;
 import net.mcreator.ceshi.item.QwxgjbItem;
 import net.mcreator.ceshi.item.QwxgdbmtItem;
@@ -1057,6 +1058,7 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> XYZP = REGISTRY.register("xyzp", XyzpItem::new);
 	public static final DeferredItem<Item> XCKF = REGISTRY.register("xckf", XckfItem::new);
 	public static final DeferredItem<Item> XYDX = block(PrimogemcraftModBlocks.XYDX);
+	public static final DeferredItem<Item> QWXYDLT = REGISTRY.register("qwxydlt", QwxydltItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
