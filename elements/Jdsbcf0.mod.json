@@ -1,0 +1,71 @@
+{
+  "_fv": 77,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "jdsbcf",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "§5§l『奇物』§f绝对失败处方",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Zhenghuo"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 100,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§7获取后立即获得负面效果",
+        "§7效果开始时，对自身造成一次50%当前生命值",
+        "§7的虚空伤害，效果持续期间受到伤害触发一次",
+        "§7该效果10分钟内至多触发一次，不包含开始时"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "Jdsbcf0sx"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none",
+    "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
+    "musicDiscLengthInTicks": 100,
+    "musicDiscAnalogOutput": 0
+  }
+}

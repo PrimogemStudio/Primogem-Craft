@@ -1,0 +1,43 @@
+{
+  "_fv": 77,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "绝对失败处方 壹",
+    "icon": "jdsbcf",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": -0.01,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "MAX_HEALTH"
+        },
+        "amount": -0.01,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "ARMOR"
+        },
+        "amount": -0.01,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ]
+  }
+}

@@ -66,6 +66,9 @@ import net.mcreator.ceshi.potion.LetoudechengfaMobEffect;
 import net.mcreator.ceshi.potion.JishengMobEffect;
 import net.mcreator.ceshi.potion.JingquedaimaMobEffect;
 import net.mcreator.ceshi.potion.JiazuxianzhiMobEffect;
+import net.mcreator.ceshi.potion.Jdsbcf2xgMobEffect;
+import net.mcreator.ceshi.potion.Jdsbcf1xgMobEffect;
+import net.mcreator.ceshi.potion.Jdsbcf0xgMobEffect;
 import net.mcreator.ceshi.potion.HtdzMobEffect;
 import net.mcreator.ceshi.potion.HslggzfuzhipinMobEffect;
 import net.mcreator.ceshi.potion.HeisenlinggzMobEffect;
@@ -134,6 +137,9 @@ public class PrimogemcraftModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> HTDZ = REGISTRY.register("htdz", () -> new HtdzMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> XISHOULENGQUE = REGISTRY.register("xishoulengque", () -> new XishoulengqueMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SKLJXG = REGISTRY.register("skljxg", () -> new SkljxgMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> JDSBCF_0XG = REGISTRY.register("jdsbcf_0xg", () -> new Jdsbcf0xgMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> JDSBCF_1XG = REGISTRY.register("jdsbcf_1xg", () -> new Jdsbcf1xgMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> JDSBCF_2XG = REGISTRY.register("jdsbcf_2xg", () -> new Jdsbcf2xgMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

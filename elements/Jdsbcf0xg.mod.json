@@ -1,0 +1,27 @@
+{
+  "_fv": 77,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "绝对失败处方 零",
+    "icon": "jdsbcf",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": {
+      "name": "Jdsbcf0xgsx0"
+    },
+    "onMobHurt": {
+      "name": "Jdsbcf_0_xg_sx_1"
+    }
+  }
+}
