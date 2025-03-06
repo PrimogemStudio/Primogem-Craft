@@ -61,7 +61,7 @@ public class ZshjjItem extends SwordItem {
 	};
 
 	public ZshjjItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 5.5f, -2f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 11f, -2f)).fireResistant());
 	}
 
 	@Override

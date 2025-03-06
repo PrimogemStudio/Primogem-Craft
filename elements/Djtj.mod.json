@@ -33,8 +33,11 @@
     "efficiency": 8.0,
     "attackSpeed": 1.2,
     "enchantability": 12,
-    "damageVsEntity": 4.0,
+    "damageVsEntity": 6.0,
     "usageCount": 320,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Dijingsuixie"

@@ -27,8 +27,11 @@
     "efficiency": 8.0,
     "attackSpeed": 1.8,
     "enchantability": 14,
-    "damageVsEntity": 6.5,
+    "damageVsEntity": 9.0,
     "usageCount": 1920,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Jianransuixie"

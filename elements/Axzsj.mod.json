@@ -25,8 +25,11 @@
     "efficiency": 8.0,
     "attackSpeed": 1.6,
     "enchantability": 18,
-    "damageVsEntity": 6.5,
+    "damageVsEntity": 9.0,
     "usageCount": 1561,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Aixubingyusuixie"

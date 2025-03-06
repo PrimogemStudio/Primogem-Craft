@@ -28,8 +28,11 @@
     "efficiency": 6.0,
     "attackSpeed": 1.6,
     "enchantability": 12,
-    "damageVsEntity": 4.0,
+    "damageVsEntity": 7.0,
     "usageCount": 320,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Zuishengsuixie"

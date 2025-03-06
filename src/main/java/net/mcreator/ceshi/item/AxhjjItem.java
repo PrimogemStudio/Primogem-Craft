@@ -56,7 +56,7 @@ public class AxhjjItem extends SwordItem {
 	};
 
 	public AxhjjItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 7f, -2.2f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 11f, -2.2f)).fireResistant());
 	}
 
 	@Override

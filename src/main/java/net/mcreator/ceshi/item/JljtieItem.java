@@ -56,7 +56,7 @@ public class JljtieItem extends SwordItem {
 	};
 
 	public JljtieItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 4f, -2.4f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 6f, -2.4f)).fireResistant());
 	}
 
 	@Override

@@ -24,8 +24,11 @@
     "efficiency": 9.0,
     "attackSpeed": 2.0,
     "enchantability": 18,
-    "damageVsEntity": 8.0,
+    "damageVsEntity": 12.0,
     "usageCount": 2561,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Ranyuanduanpian"

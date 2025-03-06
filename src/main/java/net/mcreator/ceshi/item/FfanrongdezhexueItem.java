@@ -55,7 +55,7 @@ public class FfanrongdezhexueItem extends SwordItem {
 	};
 
 	public FfanrongdezhexueItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 8f, -1f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 9f, -1f)).fireResistant());
 	}
 
 	@Override

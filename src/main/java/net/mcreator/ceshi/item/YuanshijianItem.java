@@ -49,7 +49,7 @@ public class YuanshijianItem extends SwordItem {
 	};
 
 	public YuanshijianItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 4.5f, -2.4f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 7f, -2.4f)).fireResistant());
 	}
 
 	@Override

@@ -20,8 +20,11 @@
     "efficiency": 8.5,
     "attackSpeed": 1.0,
     "enchantability": 15,
-    "damageVsEntity": 9.5,
+    "damageVsEntity": 10.0,
     "usageCount": 320,
+    "glowCondition": {
+      "fixedValue": false
+    },
     "repairItems": [
       {
         "value": "CUSTOM:Yuanshi"

@@ -56,7 +56,7 @@ public class ZizaihejinjianItem extends SwordItem {
 	};
 
 	public ZizaihejinjianItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 6f, -2f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 11f, -2f)).fireResistant());
 	}
 
 	@Override

@@ -56,7 +56,7 @@ public class JljzsItem extends SwordItem {
 	};
 
 	public JljzsItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 5.5f, -2.2f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 8f, -2.2f)).fireResistant());
 	}
 
 	@Override
