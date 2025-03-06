@@ -14,11 +14,12 @@ public class Jdsbcf0sxProcedure {
 		if (entity == null)
 			return;
 		if (Jdsbcfhs0Procedure.execute(world, x, y, z, entity, itemstack)) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(PrimogemcraftModMobEffects.JDSBCF_0XG);
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.JDSBCF_0XG, (int) Double.POSITIVE_INFINITY, 0, false, false));
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 5);
-			DiaoyongqwyisunhuaiProcedure.execute(entity, itemstack);
 		}
 	}
 }

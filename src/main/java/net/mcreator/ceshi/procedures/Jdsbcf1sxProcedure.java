@@ -15,6 +15,8 @@ public class Jdsbcf1sxProcedure {
 		if (entity == null)
 			return;
 		if (Jdsbcfhs0Procedure.execute(world, x, y, z, entity, itemstack)) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(PrimogemcraftModMobEffects.JDSBCF_1XG);
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(PrimogemcraftModMobEffects.JDSBCF_1XG, (int) Double.POSITIVE_INFINITY, (int) Mth.nextDouble(RandomSource.create(), 0, 14), false, false));
 		}
