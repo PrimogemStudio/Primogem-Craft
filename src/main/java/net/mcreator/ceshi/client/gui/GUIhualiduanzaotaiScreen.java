@@ -42,7 +42,6 @@ public class GUIhualiduanzaotaiScreen extends AbstractContainerScreen<GUIhualidu
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (mouseX > leftPos + 130 && mouseX < leftPos + 147 && mouseY > topPos + 57 && mouseY < topPos + 65) {

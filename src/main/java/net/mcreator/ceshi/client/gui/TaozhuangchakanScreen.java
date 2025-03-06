@@ -49,7 +49,6 @@ public class TaozhuangchakanScreen extends AbstractContainerScreen<Taozhuangchak
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		taozhuang_0.render(guiGraphics, mouseX, mouseY, partialTicks);
 		taozhuang_1.render(guiGraphics, mouseX, mouseY, partialTicks);

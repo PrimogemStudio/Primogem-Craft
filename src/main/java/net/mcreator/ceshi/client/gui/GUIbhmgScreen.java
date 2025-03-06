@@ -44,7 +44,6 @@ public class GUIbhmgScreen extends AbstractContainerScreen<GUIbhmgMenu> {
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (mouseX > leftPos + 59 && mouseX < leftPos + 75 && mouseY > topPos + 53 && mouseY < topPos + 69) {

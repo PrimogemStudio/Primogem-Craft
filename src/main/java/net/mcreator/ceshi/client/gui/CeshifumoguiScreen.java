@@ -41,7 +41,6 @@ public class CeshifumoguiScreen extends AbstractContainerScreen<CeshifumoguiMenu
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (mouseX > leftPos + 87 && mouseX < leftPos + 169 && mouseY > topPos + 5 && mouseY < topPos + 34) {
