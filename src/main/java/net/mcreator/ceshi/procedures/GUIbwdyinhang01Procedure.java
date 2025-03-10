@@ -37,7 +37,7 @@ public class GUIbwdyinhang01Procedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem())) {
 			a = getAmountInGUISlot(entity, 0) + getAmountInGUISlot(entity, 1) + getAmountInGUISlot(entity, 2);
-			b = new ItemStack(PrimogemcraftModItems.CUNQUPINGZHENG.get());
+			b = new ItemStack(PrimogemcraftModItems.CUNQUPINGZHENG.get()).copy();
 			{
 				final String _tagName = "pgc_cunchu";
 				final double _tagValue = a;

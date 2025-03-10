@@ -23,7 +23,7 @@ public class QwwzswsxProcedure {
 		double z1 = 0;
 		ItemStack i1 = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
-			i1 = itemstack;
+			i1 = itemstack.copy();
 			if (i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("wzsw") <= 6000) {
 				{
 					final String _tagName = "wzsw";
