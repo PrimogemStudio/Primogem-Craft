@@ -7109,48 +7109,6 @@
       }
     },
     {
-      "name": "Manyuejinshukuangshi",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "manyuejinshukuangshi",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/block/ManyuejinshukuangshiBlock.java",
-          "src/main/resources/data/primogemcraft/worldgen/configured_feature/manyuejinshukuangshi.json",
-          "src/main/resources/data/primogemcraft/neoforge/biome_modifier/manyuejinshukuangshi_biome_modifier.json",
-          "src/main/resources/data/primogemcraft/worldgen/placed_feature/manyuejinshukuangshi.json",
-          "src/main/resources/assets/primogemcraft/blockstates/manyuejinshukuangshi.json",
-          "src/main/resources/assets/primogemcraft/models/item/manyuejinshukuangshi.json",
-          "src/main/resources/assets/primogemcraft/models/block/manyuejinshukuangshi.json"
-        ]
-      }
-    },
-    {
-      "name": "Manyuejinshushaolian",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "manyuejinshushaolian",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/manyuejinshushaolian.json"
-        ]
-      }
-    },
-    {
-      "name": "Manyuejinshushaolian2",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "manyuejinshushaolian_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/manyuejinshushaolian_2.json"
-        ]
-      }
-    },
-    {
       "name": "Ceshihufu",
       "type": "procedure",
       "compiles": true,
@@ -22426,31 +22384,6 @@
       }
     },
     {
-      "name": "Cukuangmanyue",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cukuangmanyue",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/item/CukuangmanyueItem.java",
-          "src/main/resources/assets/primogemcraft/models/item/cukuangmanyue.json"
-        ]
-      }
-    },
-    {
-      "name": "Manyuekuang",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "manyuekuang",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/loot_table/blocks/manyuejinshukuangshi.json"
-        ]
-      }
-    },
-    {
       "name": "Tsslmpf",
       "type": "recipe",
       "compiles": true,
@@ -36054,6 +35987,18 @@
           "src/main/resources/assets/primogemcraft/models/item/hyjsd.json"
         ]
       }
+    },
+    {
+      "name": "Hyjspf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hyjspf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/hyjspf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -36539,7 +36484,6 @@
       "~CUSTOM:Disuishuijingti",
       "~CUSTOM:Disuikuai1",
       "~CUSTOM:Chuangzaoxiaodengfasheqi",
-      "~CUSTOM:Manyuejinshukuangshi",
       "~CUSTOM:Ceshixiaodengfasheqi",
       "~CUSTOM:Yuansujingshikuai",
       "~CUSTOM:AixubingyufangkuI",
@@ -38029,7 +37973,6 @@
       "~CUSTOM:Jdyk",
       "~CUSTOM:Shenbanjianlaohuangyukuangshi",
       "~CUSTOM:Disuikuai1",
-      "~CUSTOM:Manyuejinshukuangshi",
       "~CUSTOM:Aixubingyukuangshi",
       "~CUSTOM:Dijingqingjinkuai",
       "~CUSTOM:Dijingqinjingkuangshi",
@@ -38473,7 +38416,6 @@
       "Weizhiyepian",
       "Disui",
       "Shanbianzhichen",
-      "Cukuangmanyue",
       "Guzhonglingjian",
       "Gzsmz",
       "Liulangzhezhinang",
@@ -38837,7 +38779,6 @@
       "Caomu24",
       "Caomu34",
       "Cshixiutiezhalan",
-      "Manyuejinshukuangshi",
       "Disuikuai1",
       "Disuishuijingti",
       "Ysjshuijingcu",
@@ -39387,7 +39328,6 @@
       "advancements.yzam.title": "宇宙奥秘",
       "item.primogemcraft.rytj": "§c『燃愿玛瑙』 §f铁剑",
       "block.primogemcraft.dangaoliyue": "§6赠糕于你",
-      "block.primogemcraft.manyuejinshukuangshi.description_0": "§8末地小概率生成",
       "item.primogemcraft.zshjt_leggings.description_0": "§6套装效果：",
       "item.primogemcraft.djzsshjsj.description_2": "§7可应用于：",
       "gui.primogemcraft.bwdyinhang.label_de_shuang_bei_yu_zhou_sui_pian": "得双倍宇宙碎片！",
@@ -40063,7 +40003,6 @@
       "item.primogemcraft.s": "S",
       "item.primogemcraft.zsg.description_2": "§7 - 转化失败后冷却1分钟",
       "block.primogemcraft.ceshi_mucaibao_stairs": "草原核化木 楼梯",
-      "block.primogemcraft.manyuejinshukuangshi": "§e满月金属矿石",
       "item.primogemcraft.zshjt_helmet": "§d『最胜紫晶』§e下界合金头盔",
       "item.primogemcraft.djzst_chestplate.description_5": "§9+1 套装值（青金）",
       "item.primogemcraft.axhjt_boots.description_6": "§9+2 套装值（冰玉）",
@@ -41346,7 +41285,6 @@
       "item.primogemcraft.zstj.description_4": "§6非勾玉状态下",
       "item.ceshi.xixiangyuzhiyuan": "Interwined Fate",
       "item.primogemcraft.caoyuanheshengwu_spawn_egg": "§a草原核 Spawn Egg",
-      "item.primogemcraft.cukuangmanyue": "粗满月矿石",
       "item.primogemcraft.jlkjzs_leggings": "§6『坚牢黄玉』 §b钻石护腿",
       "item.primogemcraft.zstj.description_1": "§5 - 获得勾玉效果 I",
       "item.primogemcraft.zstj.description_2": "§7 - 持续时间10秒",
@@ -42084,7 +42022,6 @@
       "advancements.yzam.title": "宇宙奥秘",
       "item.primogemcraft.rytj": "§c『Agnidus Agate』 §fIron Sword",
       "block.primogemcraft.dangaoliyue": "§6Share the cake with you",
-      "block.primogemcraft.manyuejinshukuangshi.description_0": "§8末地小概率生成",
       "item.primogemcraft.zshjt_leggings.description_0": "§6套装效果：",
       "item.primogemcraft.djzsshjsj.description_2": "§7可应用于：",
       "gui.primogemcraft.bwdyinhang.label_de_shuang_bei_yu_zhou_sui_pian": "得双倍宇宙碎片！",
@@ -42760,7 +42697,6 @@
       "item.primogemcraft.s": "S",
       "item.primogemcraft.zsg.description_2": "§7 - 转化失败后冷却1分钟",
       "block.primogemcraft.ceshi_mucaibao_stairs": "Dendro-Core Wood Stairs",
-      "block.primogemcraft.manyuejinshukuangshi": "§eFull Moon Metal Ore",
       "item.primogemcraft.zshjt_helmet": "§d『Vajrada Amethyst』§eNetherite Helmet",
       "item.primogemcraft.djzst_chestplate.description_5": "§9+1 套装值（青金）",
       "item.primogemcraft.axhjt_boots.description_6": "§9+2 suit amount（shivada jade）",
@@ -44043,7 +43979,6 @@
       "item.primogemcraft.zstj.description_4": "§6非勾玉状态下",
       "item.ceshi.xixiangyuzhiyuan": "Interwined Fate",
       "item.primogemcraft.caoyuanheshengwu_spawn_egg": "§aDendro Core Spawn Egg",
-      "item.primogemcraft.cukuangmanyue": "粗满月矿石",
       "item.primogemcraft.jlkjzs_leggings": "§6『Prithiva Topaz』 §bDiamond Leggings",
       "item.primogemcraft.zstj.description_1": "§5 - 获得勾玉效果 I",
       "item.primogemcraft.zstj.description_2": "§7 - 持续时间10秒",
@@ -44778,7 +44713,6 @@
       "advancements.yzam.title": "宇宙奥秘",
       "item.primogemcraft.rytj": "§c『燃愿玛瑙』 §f铁剑",
       "block.primogemcraft.dangaoliyue": "§6赠糕于你",
-      "block.primogemcraft.manyuejinshukuangshi.description_0": "§8末地小概率生成",
       "item.primogemcraft.zshjt_leggings.description_0": "§6套装效果：",
       "item.primogemcraft.djzsshjsj.description_2": "§7可应用于：",
       "gui.primogemcraft.bwdyinhang.label_de_shuang_bei_yu_zhou_sui_pian": "得双倍宇宙碎片！",
@@ -45455,7 +45389,6 @@
       "item.primogemcraft.s": "S",
       "item.primogemcraft.zsg.description_2": "§7 - 转化失败后冷却1分钟",
       "block.primogemcraft.ceshi_mucaibao_stairs": "草原核化木 楼梯",
-      "block.primogemcraft.manyuejinshukuangshi": "§e满月金属矿石",
       "item.primogemcraft.zshjt_helmet": "§d『最胜紫晶』§e下界合金头盔",
       "item.primogemcraft.djzst_chestplate.description_5": "§9+1 套装值（青金）",
       "item.primogemcraft.axhjt_boots.description_6": "§9+2 套装值（冰玉）",
@@ -46734,7 +46667,6 @@
       "item.primogemcraft.zstj.description_4": "§6非勾玉状态下",
       "item.ceshi.xixiangyuzhiyuan": "相遇之缘",
       "item.primogemcraft.caoyuanheshengwu_spawn_egg": "§a草原核 Spawn Egg",
-      "item.primogemcraft.cukuangmanyue": "粗满月矿石",
       "item.primogemcraft.jlkjzs_leggings": "§6『坚牢黄玉』 §b钻石护腿",
       "item.primogemcraft.zstj.description_1": "§5 - 获得勾玉效果 I",
       "item.primogemcraft.zstj.description_2": "§7 - 持续时间10秒",

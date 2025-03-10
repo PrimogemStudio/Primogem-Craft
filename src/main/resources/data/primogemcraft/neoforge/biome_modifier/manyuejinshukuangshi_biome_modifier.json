@@ -1,6 +1,0 @@
-{
-  "type": "neoforge:add_features",
-  "biomes": "#is_end",
-  "features": "primogemcraft:manyuejinshukuangshi",
-  "step": "underground_ores"
-}

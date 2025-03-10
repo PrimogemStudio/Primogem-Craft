@@ -62,7 +62,6 @@ import net.mcreator.ceshi.block.MmolazhilajitongBlock;
 import net.mcreator.ceshi.block.Mlxdml03Block;
 import net.mcreator.ceshi.block.Mlxdml02Block;
 import net.mcreator.ceshi.block.Mlxdml01Block;
-import net.mcreator.ceshi.block.ManyuejinshukuangshiBlock;
 import net.mcreator.ceshi.block.LlianjiamolakuiaitaijieBlock;
 import net.mcreator.ceshi.block.LlianjiamolakuaiqiangBlock;
 import net.mcreator.ceshi.block.LlianjiamolakuaiBlock;
@@ -198,7 +197,6 @@ public class PrimogemcraftModBlocks {
 	public static final DeferredBlock<Block> AIXUBINGYUFANGKU_I = REGISTRY.register("aixubingyufangku_i", AixubingyufangkuIBlock::new);
 	public static final DeferredBlock<Block> YUANSUJINGSHIKUAI = REGISTRY.register("yuansujingshikuai", YuansujingshikuaiBlock::new);
 	public static final DeferredBlock<Block> CESHIXIAODENGFASHEQI = REGISTRY.register("ceshixiaodengfasheqi", CeshixiaodengfasheqiBlock::new);
-	public static final DeferredBlock<Block> MANYUEJINSHUKUANGSHI = REGISTRY.register("manyuejinshukuangshi", ManyuejinshukuangshiBlock::new);
 	public static final DeferredBlock<Block> CHUANGZAOXIAODENGFASHEQI = REGISTRY.register("chuangzaoxiaodengfasheqi", ChuangzaoxiaodengfasheqiBlock::new);
 	public static final DeferredBlock<Block> YISHIJIEMUBAN_PLANKS = REGISTRY.register("yishijiemuban_planks", YishijiemubanPlanksBlock::new);
 	public static final DeferredBlock<Block> YISHIJIEMUBAN_STAIRS = REGISTRY.register("yishijiemuban_stairs", YishijiemubanStairsBlock::new);

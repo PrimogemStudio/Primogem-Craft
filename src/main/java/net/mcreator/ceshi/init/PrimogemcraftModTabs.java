@@ -164,7 +164,6 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.WEIZHIYEPIAN.get());
 				tabData.accept(PrimogemcraftModItems.DISUI.get());
 				tabData.accept(PrimogemcraftModItems.SHANBIANZHICHEN.get());
-				tabData.accept(PrimogemcraftModItems.CUKUANGMANYUE.get());
 				tabData.accept(PrimogemcraftModItems.GUZHONGLINGJIAN.get());
 				tabData.accept(PrimogemcraftModItems.GZSMZ.get());
 				tabData.accept(PrimogemcraftModItems.LIULANGZHEZHINANG.get());
@@ -596,7 +595,6 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModBlocks.CAOMU_24.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.CAOMU_34.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.CSHIXIUTIEZHALAN.get().asItem());
-				tabData.accept(PrimogemcraftModBlocks.MANYUEJINSHUKUANGSHI.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.DISUIKUAI_1.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.DISUISHUIJINGTI.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.YSJSHUIJINGCU.get().asItem());

@@ -415,7 +415,6 @@ import net.mcreator.ceshi.item.DiijingqingjingItem;
 import net.mcreator.ceshi.item.DdjzsjItem;
 import net.mcreator.ceshi.item.DayingxiongdejingyanItem;
 import net.mcreator.ceshi.item.CunqupingzhengItem;
-import net.mcreator.ceshi.item.CukuangmanyueItem;
 import net.mcreator.ceshi.item.CllkItem;
 import net.mcreator.ceshi.item.ChunmeizhipaoItem;
 import net.mcreator.ceshi.item.ChuangshijiejingItem;
@@ -599,7 +598,6 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> WEIZHIYEPIAN = REGISTRY.register("weizhiyepian", WeizhiyepianItem::new);
 	public static final DeferredItem<Item> CESHIXIAODENGFASHEQI = block(PrimogemcraftModBlocks.CESHIXIAODENGFASHEQI);
 	public static final DeferredItem<Item> KONGYUEZHUFU = REGISTRY.register("kongyuezhufu", KongyuezhufuItem::new);
-	public static final DeferredItem<Item> MANYUEJINSHUKUANGSHI = block(PrimogemcraftModBlocks.MANYUEJINSHUKUANGSHI);
 	public static final DeferredItem<Item> SANYUEZHUFU = REGISTRY.register("sanyuezhufu", SanyuezhufuItem::new);
 	public static final DeferredItem<Item> LUANQIBAZAODEDAIMA = REGISTRY.register("luanqibazaodedaima", LuanqibazaodedaimaItem::new);
 	public static final DeferredItem<Item> YOUDIANQIQIAODEDAIMA = REGISTRY.register("youdianqiqiaodedaima", YoudianqiqiaodedaimaItem::new);
@@ -913,7 +911,6 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> QWYZZM = REGISTRY.register("qwyzzm", QwyzzmItem::new);
 	public static final DeferredItem<Item> JIANSHIJINGBAN = block(PrimogemcraftModBlocks.JIANSHIJINGBAN);
 	public static final DeferredItem<Item> SHIWUTSSLM = REGISTRY.register("shiwutsslm", ShiwutsslmItem::new);
-	public static final DeferredItem<Item> CUKUANGMANYUE = REGISTRY.register("cukuangmanyue", CukuangmanyueItem::new);
 	public static final DeferredItem<Item> QIWUHEISENLINGGZ = REGISTRY.register("qiwuheisenlinggz", QiwuheisenlinggzItem::new);
 	public static final DeferredItem<Item> QWGGZFENLIE_A = REGISTRY.register("qwggzfenlie_a", QwggzfenlieAItem::new);
 	public static final DeferredItem<Item> QWGGZFENLIE_B = REGISTRY.register("qwggzfenlie_b", QwggzfenlieBItem::new);
