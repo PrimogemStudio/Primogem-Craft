@@ -3,8 +3,8 @@
   "category": "misc",
   "pattern": [
     "abc",
-    "def",
-    "cga"
+    "ded",
+    "cda"
   ],
   "key": {
     "a": {
@@ -17,16 +17,10 @@
       "item": "minecraft:light_blue_dye"
     },
     "d": {
-      "item": "primogemcraft:xinyuejinshu"
+      "item": "primogemcraft:hyjsd"
     },
     "e": {
       "item": "primogemcraft:sanyueqidiaoxiang_01"
-    },
-    "f": {
-      "item": "primogemcraft:manyuejinshu"
-    },
-    "g": {
-      "item": "primogemcraft:chiyuejinshu"
     }
   },
   "result": {
