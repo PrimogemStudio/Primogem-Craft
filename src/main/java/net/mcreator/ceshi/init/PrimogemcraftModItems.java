@@ -1058,6 +1058,7 @@ public class PrimogemcraftModItems {
 	public static final DeferredItem<Item> JDSBCF_1 = REGISTRY.register("jdsbcf_1", Jdsbcf1Item::new);
 	public static final DeferredItem<Item> JDSBCF_2 = REGISTRY.register("jdsbcf_2", Jdsbcf2Item::new);
 	public static final DeferredItem<Item> HYJSD = REGISTRY.register("hyjsd", HyjsdItem::new);
+	public static final DeferredItem<Item> MLXZ = block(PrimogemcraftModBlocks.MLXZ);
 
 	// Start of user code block custom items
 	// End of user code block custom items

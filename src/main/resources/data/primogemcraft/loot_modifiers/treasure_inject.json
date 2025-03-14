@@ -7,7 +7,7 @@
     },
     {
       "condition": "minecraft:random_chance",
-      "chance": 1
+      "chance": 0.05
     }
   ],
   "table": "primogemcraft:diaoyus"
