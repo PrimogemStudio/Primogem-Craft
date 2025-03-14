@@ -3,12 +3,12 @@
   "conditions": [
     {
       "condition": "neoforge:loot_table_id",
-      "loot_table_id": "fishing/treasure"
+      "loot_table_id": "minecraft:gameplay/fishing/treasure"
     },
     {
       "condition": "minecraft:random_chance",
       "chance": 1
     }
   ],
-  "table": "primogemcraft:doap_yu_s"
+  "table": "primogemcraft:diaoyus"
 }

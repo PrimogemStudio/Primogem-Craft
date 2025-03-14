@@ -7185,10 +7185,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -36008,7 +36004,7 @@
       "registry_name": "diaoyus",
       "metadata": {
         "files": [
-          "src/main/resources/data/primogemcraft/loot_table/doap_yu_s.json"
+          "src/main/resources/data/primogemcraft/loot_table/diaoyus.json"
         ]
       }
     }
