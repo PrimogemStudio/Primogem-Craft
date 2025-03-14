@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "entries": [
-    "primogemcraft:chest_inject"
-  ]
+  "entries": ["primogemcraft:chest_inject", "primogemcraft:treasure_inject"]
 }

@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "fishing/treasure"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 1
+    }
+  ],
+  "table": "primogemcraft:doap_yu_s"
+}
