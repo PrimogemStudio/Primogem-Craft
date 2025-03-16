@@ -36179,6 +36179,53 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qwlzdlt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlzdlt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwlzdlt.json",
+          "src/main/java/net/mcreator/ceshi/item/QwlzdltItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Qwlzdltsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwlzdltsx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QwlzdltsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -36604,7 +36651,8 @@
       "CUSTOM:Qwxydlt",
       "CUSTOM:Qwhygzq",
       "CUSTOM:Qwsksj",
-      "CUSTOM:Skjinb"
+      "CUSTOM:Skjinb",
+      "CUSTOM:Qwlzdlt"
     ],
     "ITEMS:c:curio/normal/fusion/b": [
       "CUSTOM:Qwkwzg",
@@ -38671,7 +38719,8 @@
       "Qwhygzq",
       "Qwsksj",
       "Skjinb",
-      "Jdsbcf0"
+      "Jdsbcf0",
+      "Qwlzdlt"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -40905,6 +40954,7 @@
       "item.primogemcraft.zhongguizhongjudedaima.description_5": "§2受到额外伤害",
       "item.primogemcraft.zhongguizhongjudedaima.description_4": "§2玩家被攻击且生命值低于50%时",
       "item.primogemcraft.zhongguizhongjudedaima.description_3": "§7修复期间：",
+      "item.primogemcraft.qwlzdlt": "§5『奇物』§d量子大乐透",
       "item.primogemcraft.yuanshi.description_0": "§8给他20原石，他能帮你...",
       "item.primogemcraft.zizaihejinjian.description_2": "§7 - 触发几率75%",
       "item.primogemcraft.hqcao.description_0": "§9对于生长碧翡系列装备：",
@@ -41389,8 +41439,10 @@
       "item.primogemcraft.zizgao.description_1": "§7 - 消耗耐久并飞向高空！",
       "item.primogemcraft.qwfldyhdlb.description_1": "§7其中包含负面奇物",
       "item.primogemcraft.qwfldyhdlb.description_0": "§7随着时间的推移，获得随机奇物",
+      "item.primogemcraft.qwlzdlt.description_1": "§7但也有小概率损坏并获得40宇宙碎片",
       "item.primogemcraft.zsc": "§d『最胜紫晶』锄",
       "item.primogemcraft.bufengping.description_0": "§7右键使用",
+      "item.primogemcraft.qwlzdlt.description_0": "§7破坏方块时，小概率获得一个负面奇物",
       "item.primogemcraft.zsf": "§d『最胜紫晶』斧",
       "item.primogemcraft.zsg": "§d『最胜紫晶』镐",
       "item.primogemcraft.bufengping.description_1": "§7空捕风瓶潜行右键得到",
@@ -43602,6 +43654,7 @@
       "item.primogemcraft.zhongguizhongjudedaima.description_5": "§2受到额外伤害",
       "item.primogemcraft.zhongguizhongjudedaima.description_4": "§2玩家被攻击且生命值低于50%时",
       "item.primogemcraft.zhongguizhongjudedaima.description_3": "§7修复期间：",
+      "item.primogemcraft.qwlzdlt": "§5『奇物』§d量子大乐透",
       "item.primogemcraft.yuanshi.description_0": "§8给他20原石，他能帮你...",
       "item.primogemcraft.zizaihejinjian.description_2": "§7 - 触发几率75%",
       "item.primogemcraft.hqcao.description_0": "§9对于生长碧翡系列装备：",
@@ -44086,8 +44139,10 @@
       "item.primogemcraft.zizgao.description_1": "§7 - 消耗耐久并飞向高空！",
       "item.primogemcraft.qwfldyhdlb.description_1": "§7其中包含负面奇物",
       "item.primogemcraft.qwfldyhdlb.description_0": "§7随着时间的推移，获得随机奇物",
+      "item.primogemcraft.qwlzdlt.description_1": "§7但也有小概率损坏并获得40宇宙碎片",
       "item.primogemcraft.zsc": "§d『Vajrada Amethyst』Hoe",
       "item.primogemcraft.bufengping.description_0": "§7right click to use",
+      "item.primogemcraft.qwlzdlt.description_0": "§7破坏方块时，小概率获得一个负面奇物",
       "item.primogemcraft.zsf": "§d『Vajrada Amethyst』Axe",
       "item.primogemcraft.zsg": "§d『Vajrada Amethyst』Pickaxe",
       "item.primogemcraft.bufengping.description_1": "§7shift and right click the wind bottle to gain",
@@ -46295,6 +46350,7 @@
       "item.primogemcraft.zhongguizhongjudedaima.description_5": "§2受到额外伤害",
       "item.primogemcraft.zhongguizhongjudedaima.description_4": "§2玩家被攻击且生命值低于50%时",
       "item.primogemcraft.zhongguizhongjudedaima.description_3": "§7修复期间：",
+      "item.primogemcraft.qwlzdlt": "§5『奇物』§d量子大乐透",
       "item.primogemcraft.yuanshi.description_0": "§8给他20原石，他能帮你...",
       "item.primogemcraft.zizaihejinjian.description_2": "§7 - 触发几率75%",
       "item.primogemcraft.hqcao.description_0": "§9对于生长碧翡系列装备：",
@@ -46777,8 +46833,10 @@
       "item.primogemcraft.zizgao.description_1": "§7 - 消耗耐久并飞向高空！",
       "item.primogemcraft.qwfldyhdlb.description_1": "§7其中包含负面奇物",
       "item.primogemcraft.qwfldyhdlb.description_0": "§7随着时间的推移，获得随机奇物",
+      "item.primogemcraft.qwlzdlt.description_1": "§7但也有小概率损坏并获得40宇宙碎片",
       "item.primogemcraft.zsc": "§d『最胜紫晶』锄",
       "item.primogemcraft.bufengping.description_0": "§7右键使用",
+      "item.primogemcraft.qwlzdlt.description_0": "§7破坏方块时，小概率获得一个负面奇物",
       "item.primogemcraft.zsf": "§d『最胜紫晶』斧",
       "item.primogemcraft.zsg": "§d『最胜紫晶』镐",
       "item.primogemcraft.bufengping.description_1": "§7空捕风瓶潜行右键得到",
