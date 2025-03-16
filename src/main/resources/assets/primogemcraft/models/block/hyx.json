@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/hyx",
+    "up": "primogemcraft:block/hyx",
+    "north": "primogemcraft:block/hyx",
+    "east": "primogemcraft:block/hyx",
+    "south": "primogemcraft:block/hyx",
+    "west": "primogemcraft:block/hyx",
+    "particle": "primogemcraft:block/hyx"
+  },
+  "render_type": "solid"
+}

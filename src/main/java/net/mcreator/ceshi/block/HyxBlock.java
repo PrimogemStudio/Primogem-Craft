@@ -11,11 +11,11 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.ceshi.procedures.MlxsxProcedure;
+import net.mcreator.ceshi.procedures.HyxsxProcedure;
 
-public class MlxzBlock extends Block {
-	public MlxzBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1f, 10f));
+public class HyxBlock extends Block {
+	public HyxBlock() {
+		super(BlockBehaviour.Properties.of().sound(SoundType.ANCIENT_DEBRIS).strength(1f, 10f));
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public class MlxzBlock extends Block {
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		MlxsxProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		HyxsxProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return retval;
 	}
 }
