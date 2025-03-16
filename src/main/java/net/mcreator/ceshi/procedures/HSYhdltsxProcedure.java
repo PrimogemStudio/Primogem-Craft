@@ -8,6 +8,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
@@ -25,6 +26,7 @@ public class HSYhdltsxProcedure {
 			double kai_shi, double sheng_ming_zhi, double zeng_yi_item, double zeng_yi_zhi_ling, double zhi_ling_shu_liang, String cheng_gong, String wen_ben_item_yichu, String wen_ben_zhi_ling) {
 		if (entity == null || cheng_gong == null || wen_ben_item_yichu == null || wen_ben_zhi_ling == null)
 			return false;
+		ItemStack it_1 = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
 			if (Math.random() < kai_shi) {
 				if (Math.random() < chu_fa) {
@@ -42,10 +44,12 @@ public class HSYhdltsxProcedure {
 					if (!zeng_yi) {
 						if (gailv_lei) {
 							if (item) {
-								if (entity instanceof Player _player) {
-									ItemStack _setstack = item0.copy();
-									_setstack.setCount((int) item_shu_liang);
-									ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+								it_1 = item0;
+								it_1.setCount((int) item_shu_liang);
+								if (world instanceof ServerLevel _level) {
+									ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), it_1);
+									entityToSpawn.setPickUpDelay(0);
+									_level.addFreshEntity(entityToSpawn);
 								}
 							}
 						} else {
