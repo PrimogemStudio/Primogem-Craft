@@ -609,6 +609,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModBlocks.DANGAOLIYUE.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.QIYU.get().asItem());
 				tabData.accept(PrimogemcraftModBlocks.MLXZ.get().asItem());
+				tabData.accept(PrimogemcraftModBlocks.YSX.get().asItem());
 			}).withTabsBefore(PRIMOGEMCRAFT_EQUIPMENT.getId()).build());
 
 	@SubscribeEvent

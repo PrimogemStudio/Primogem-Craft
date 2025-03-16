@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "primogemcraft:block/yuanshixia",
+    "up": "primogemcraft:block/yuanshixia",
+    "north": "primogemcraft:block/yuanshixia",
+    "east": "primogemcraft:block/yuanshixia",
+    "south": "primogemcraft:block/yuanshixia",
+    "west": "primogemcraft:block/yuanshixia",
+    "particle": "primogemcraft:block/yuanshixia"
+  },
+  "render_type": "solid"
+}
