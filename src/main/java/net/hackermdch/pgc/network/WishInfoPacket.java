@@ -67,5 +67,6 @@ public class WishInfoPacket implements CustomPacketPayload {
 
     public static void register(PayloadRegistrar registrar) {
         registrar.configurationToClient(TYPE, StreamCodec.ofMember(WishInfoPacket::encode, WishInfoPacket::new), WishInfoPacket::handle);
+        registrar.playToClient(TYPE, StreamCodec.ofMember(WishInfoPacket::encode, WishInfoPacket::new), WishInfoPacket::handle);
     }
 }

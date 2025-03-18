@@ -14,7 +14,9 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.network.configuration.ICustomConfigurationTask;
+import net.neoforged.neoforge.server.ServerLifecycleHooks;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashSet;
@@ -51,6 +53,10 @@ public record WishInfoConfiguration(ServerConfigurationPacketListener listener) 
         items = getItems(provider, r);
         items1 = getItems(provider, sr);
         items2 = getItems(provider, ssr);
+        if (ServerLifecycleHooks.getCurrentServer() == null) return;
+        PacketDistributor.sendToAllPlayers(new WishInfoPacket(items, 0, registry));
+        PacketDistributor.sendToAllPlayers(new WishInfoPacket(items1, 1, registry));
+        PacketDistributor.sendToAllPlayers(new WishInfoPacket(items2, 2, registry));
     }
 
     public static void addRare(ResourceLocation lootTable) {
