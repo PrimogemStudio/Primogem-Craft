@@ -12,6 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -28,6 +29,7 @@ import static net.mcreator.ceshi.PrimogemcraftMod.MODID;
 @EventBusSubscriber(modid = MODID)
 public record WishInfoConfiguration(ServerConfigurationPacketListener listener) implements ICustomConfigurationTask {
     private static final Type TYPE = new Type(ResourceLocation.fromNamespaceAndPath(MODID, "wish_info"));
+    private static final boolean loaded = ModList.get().isLoaded("roughlyenoughitems");
     private static Set<Holder<Item>> items, items1, items2;
     private static final Set<ResourceLocation> r = new HashSet<>(), sr = new HashSet<>(), ssr = new HashSet<>();
     private static RegistryAccess registry;
@@ -48,6 +50,7 @@ public record WishInfoConfiguration(ServerConfigurationPacketListener listener) 
 
     @SubscribeEvent
     private static void onReload(AddReloadListenerEvent event) {
+        if (!loaded) return;
         var provider = event.getRegistryAccess().asGetterLookup();
         registry = event.getRegistryAccess();
         items = getItems(provider, r);
