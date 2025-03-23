@@ -35,17 +35,19 @@ public class Xgjssx1Procedure {
 		if (sourceentity == null)
 			return;
 		double a = 0;
+		boolean o1 = false;
 		if (!world.isClientSide()) {
 			if (sourceentity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.JISHENG)) {
+				o1 = sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWKWZW.get())) : false;
 				a = a + 0.2;
-				if (sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWKWZW.get())) : false) {
+				if (o1) {
 					if (Math.random() < 0.25) {
 						a = a + 0.2;
 					}
 				}
 				sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC_KILL)), (float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
 						* ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.JISHENG) ? _livEnt.getEffect(PrimogemcraftModMobEffects.JISHENG).getAmplifier() : 0) + 1) * a));
-				if (sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWKWZW.get())) : false) {
+				if (o1) {
 					if (Math.random() < 0.5) {
 						if (sourceentity instanceof LivingEntity _entity)
 							_entity.setHealth((float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.1));
