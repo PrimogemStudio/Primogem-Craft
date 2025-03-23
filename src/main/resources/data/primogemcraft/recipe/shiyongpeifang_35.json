@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab",
+    "c "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:breeze_rod"
+    },
+    "b": {
+      "item": "primogemcraft:yishijiemugun"
+    },
+    "c": {
+      "item": "primogemcraft:zziyousongshiduanpian"
+    }
+  },
+  "result": {
+    "id": "minecraft:breeze_rod",
+    "count": 2
+  }
+}
