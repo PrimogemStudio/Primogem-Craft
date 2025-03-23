@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 4,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.DIAMOND"
+        "value": "TAG:c:yssx_0"
       },
       {
-        "value": "Items.DIAMOND"
+        "value": "TAG:c:yssx_0"
       },
       {
-        "value": "Items.DIAMOND"
+        "value": ""
       },
       {
-        "value": "Items.DIAMOND"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Shanbianzhichen"
+        "value": ""
       },
       {
-        "value": "Items.DIAMOND"
+        "value": ""
       },
       {
-        "value": "Items.DIAMOND"
+        "value": ""
       },
       {
-        "value": "Items.DIAMOND"
+        "value": ""
       },
       {
-        "value": "Items.DIAMOND"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
       "value": "CUSTOM:Ysfc"
     },
-    "name": "yssxpf",
+    "name": "yssxpf_0",
     "namespace": "mod"
   }
 }

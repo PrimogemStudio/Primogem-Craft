@@ -2,20 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
-    "aba",
-    "aaa"
+    "aa"
   ],
   "key": {
     "a": {
-      "item": "minecraft:diamond"
-    },
-    "b": {
-      "item": "primogemcraft:shanbianzhichen"
+      "tag": "c:yssx_0"
     }
   },
   "result": {
     "id": "primogemcraft:ysfc",
-    "count": 4
+    "count": 1
   }
 }

@@ -2,32 +2,25 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "abc",
-    "ded",
-    "cfc"
+    "ab",
+    "cd"
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:laji"
-    },
-    "b": {
       "item": "primogemcraft:shanbianzhichen"
     },
-    "c": {
+    "b": {
       "item": "primogemcraft:yuzhousuipian"
+    },
+    "c": {
+      "item": "minecraft:grass_block"
     },
     "d": {
       "item": "primogemcraft:shengzhangbifeisuixie"
-    },
-    "e": {
-      "item": "minecraft:grass_block"
-    },
-    "f": {
-      "item": "primogemcraft:dijingsuixie"
     }
   },
   "result": {
     "id": "minecraft:sculk",
-    "count": 1
+    "count": 5
   }
 }

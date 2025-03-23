@@ -16081,18 +16081,6 @@
       }
     },
     {
-      "name": "Yssxpf",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "yssxpf",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/primogemcraft/recipe/yssxpf.json"
-        ]
-      }
-    },
-    {
       "name": "Feixing",
       "type": "potioneffect",
       "compiles": true,
@@ -36236,6 +36224,18 @@
       "metadata": {
         "files": [
           "src/main/resources/data/primogemcraft/recipe/shiyongpeifang_35.json"
+        ]
+      }
+    },
+    {
+      "name": "Yssxpf0",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yssxpf_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/yssxpf_0.json"
         ]
       }
     }
