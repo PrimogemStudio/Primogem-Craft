@@ -34,8 +34,7 @@
         "§a与普通虫网效果一致，但",
         "击杀生物后50%恢复10%最大生",
         " 命值",
-        "25%对自身额外造成一次20%最",
-        " 大生命值的真实伤害"
+        "§9寄生伤害概率 -20%"
       ]
     },
     "glowCondition": {
@@ -60,6 +59,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

@@ -34,19 +34,20 @@ public class Xgjssx1Procedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity sourceentity) {
 		if (sourceentity == null)
 			return;
-		double a = 0;
 		boolean o1 = false;
+		double a = 0;
+		double b = 0;
 		if (!world.isClientSide()) {
 			if (sourceentity instanceof LivingEntity _livEnt1 && _livEnt1.hasEffect(PrimogemcraftModMobEffects.JISHENG)) {
 				o1 = sourceentity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWKWZW.get())) : false;
 				a = a + 0.2;
 				if (o1) {
-					if (Math.random() < 0.25) {
-						a = a + 0.2;
-					}
+					b = b + 0.2;
 				}
-				sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC_KILL)), (float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-						* ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.JISHENG) ? _livEnt.getEffect(PrimogemcraftModMobEffects.JISHENG).getAmplifier() : 0) + 1) * a));
+				if (Math.random() < 1 - b) {
+					sourceentity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC_KILL)), (float) ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
+							* ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(PrimogemcraftModMobEffects.JISHENG) ? _livEnt.getEffect(PrimogemcraftModMobEffects.JISHENG).getAmplifier() : 0) + 1) * a));
+				}
 				if (o1) {
 					if (Math.random() < 0.5) {
 						if (sourceentity instanceof LivingEntity _entity)

@@ -26,6 +26,5 @@ public class QwkwzwItem extends Item {
 		list.add(Component.translatable("item.primogemcraft.qwkwzw.description_2"));
 		list.add(Component.translatable("item.primogemcraft.qwkwzw.description_3"));
 		list.add(Component.translatable("item.primogemcraft.qwkwzw.description_4"));
-		list.add(Component.translatable("item.primogemcraft.qwkwzw.description_5"));
 	}
 }
