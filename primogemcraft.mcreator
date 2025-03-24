@@ -36240,6 +36240,18 @@
       }
     },
     {
+      "name": "GenshinCraftLinkage",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "genshin_craft_linkage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/GenshinCraftLinkage.java"
+        ]
+      }
+    },
+    {
       "name": "Molayiji2",
       "type": "feature",
       "compiles": true,
