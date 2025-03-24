@@ -15,6 +15,7 @@ import net.mcreator.ceshi.world.features.YuanshikuangshiFeatureFeature;
 import net.mcreator.ceshi.world.features.Xxiaoguanzi02FeatureFeature;
 import net.mcreator.ceshi.world.features.Xxiaoguanzi01FeatureFeature;
 import net.mcreator.ceshi.world.features.ShenbanyanyuanshikuangshiFeatureFeature;
+import net.mcreator.ceshi.world.features.Molayiji2Feature;
 import net.mcreator.ceshi.world.features.Molayiji01FeatureFeature;
 import net.mcreator.ceshi.world.features.Disuikuai1FeatureFeature;
 import net.mcreator.ceshi.world.features.Ddaguanzi01FeatureFeature;
@@ -30,4 +31,5 @@ public class PrimogemcraftModFeatures {
 	public static final DeferredHolder<Feature<?>, Feature<?>> DDAGUANZI_01_FEATURE = REGISTRY.register("ddaguanzi_01_feature", Ddaguanzi01FeatureFeature::new);
 	public static final DeferredHolder<Feature<?>, Feature<?>> DISUIKUAI_1_FEATURE = REGISTRY.register("disuikuai_1_feature", Disuikuai1FeatureFeature::new);
 	public static final DeferredHolder<Feature<?>, Feature<?>> SHENBANYANYUANSHIKUANGSHI_FEATURE = REGISTRY.register("shenbanyanyuanshikuangshi_feature", ShenbanyanyuanshikuangshiFeatureFeature::new);
+	public static final DeferredHolder<Feature<?>, Feature<?>> MOLAYIJI_2 = REGISTRY.register("molayiji_2", Molayiji2Feature::new);
 }

@@ -36238,6 +36238,22 @@
           "src/main/resources/data/primogemcraft/recipe/yssxpf_0.json"
         ]
       }
+    },
+    {
+      "name": "Molayiji2",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molayiji_2",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/java/net/mcreator/ceshi/world/features/Molayiji2Feature.java",
+          "src/main/resources/data/primogemcraft/worldgen/configured_feature/molayiji_2.json",
+          "src/main/resources/data/primogemcraft/worldgen/placed_feature/molayiji_2.json",
+          "src/main/resources/data/primogemcraft/neoforge/biome_modifier/molayiji_2_biome_modifier.json"
+        ]
+      }
     }
   ],
   "variable_elements": [

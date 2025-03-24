@@ -1,0 +1,12 @@
+{
+  "type": "primogemcraft:molayiji_2",
+  "config": {
+    "structure": "primogemcraft:molayiji_2",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:stone"
+    ]
+  }
+}
