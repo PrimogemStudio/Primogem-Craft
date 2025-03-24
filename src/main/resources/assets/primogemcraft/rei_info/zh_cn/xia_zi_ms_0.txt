@@ -1,0 +1,2 @@
+primogemcraft:mlxz,primogemcraft:hyx,primogemcraft:ysx
+钓鱼有5%概率获得，大部分情况下，它稳定掉落5个星尘。
