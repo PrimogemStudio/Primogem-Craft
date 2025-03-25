@@ -36439,6 +36439,18 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qxzhqpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qxzhqpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/qxzhqpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [

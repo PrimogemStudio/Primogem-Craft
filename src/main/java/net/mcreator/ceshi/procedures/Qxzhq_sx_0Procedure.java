@@ -18,11 +18,13 @@ public class Qxzhq_sx_0Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double nbt1 = 0;
 		boolean o1 = false;
+		ItemStack i1 = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
 			nbt1 = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian");
 			QxzhqsxhsProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.XINGHUI.get()), new ItemStack(PrimogemcraftModItems.XINGCHEN.get()), 1, 2, 1);
 			QxzhqsxhsProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.XINGCHEN.get()), new ItemStack(PrimogemcraftModItems.XINGHUI.get()), 3, 1, 2);
-			if (nbt1 + 3 <= 330 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getCount() >= 1) {
+			i1 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy());
+			if (nbt1 + 3 <= 330 && i1.getCount() >= 1 && i1.getItem() == PrimogemcraftModItems.SHANBIANZHICHEN.get()) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);

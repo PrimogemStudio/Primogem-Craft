@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ece"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_block"
+    },
+    "b": {
+      "item": "primogemcraft:yuansujingti"
+    },
+    "c": {
+      "item": "primogemcraft:hyjsd"
+    },
+    "d": {
+      "item": "primogemcraft:shanbianzhichen"
+    },
+    "e": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:qxzhq",
+    "count": 1
+  }
+}
