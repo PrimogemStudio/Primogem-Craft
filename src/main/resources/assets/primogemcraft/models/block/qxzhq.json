@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "minecraft:block/blackstone_top",
-    "up": "minecraft:block/blackstone_top",
-    "north": "minecraft:block/blackstone_top",
-    "east": "minecraft:block/blackstone_top",
-    "south": "minecraft:block/blackstone_top",
-    "west": "minecraft:block/blackstone_top",
-    "particle": "minecraft:block/blackstone_top"
+    "down": "primogemcraft:block/qxzhq_0",
+    "up": "primogemcraft:block/qxzhq_1",
+    "north": "primogemcraft:block/qxzhq_4",
+    "east": "primogemcraft:block/qxzhq_2",
+    "south": "primogemcraft:block/qxzhq_4",
+    "west": "primogemcraft:block/qxzhq_3",
+    "particle": "primogemcraft:block/qxzhq_0"
   },
   "render_type": "solid"
 }
