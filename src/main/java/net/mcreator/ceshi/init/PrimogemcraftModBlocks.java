@@ -55,6 +55,7 @@ import net.mcreator.ceshi.block.Sanyueqidiaoxiang01Block;
 import net.mcreator.ceshi.block.RyjskBlock;
 import net.mcreator.ceshi.block.RanyuanmanaokuangshiBlock;
 import net.mcreator.ceshi.block.Ranyuankuai2Block;
+import net.mcreator.ceshi.block.QxzhqBlock;
 import net.mcreator.ceshi.block.QiyuBlock;
 import net.mcreator.ceshi.block.MutankuaiBlock;
 import net.mcreator.ceshi.block.Molakuai01Block;
@@ -265,6 +266,7 @@ public class PrimogemcraftModBlocks {
 	public static final DeferredBlock<Block> MLXZ = REGISTRY.register("mlxz", MlxzBlock::new);
 	public static final DeferredBlock<Block> YSX = REGISTRY.register("ysx", YsxBlock::new);
 	public static final DeferredBlock<Block> HYX = REGISTRY.register("hyx", HyxBlock::new);
+	public static final DeferredBlock<Block> QXZHQ = REGISTRY.register("qxzhq", QxzhqBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

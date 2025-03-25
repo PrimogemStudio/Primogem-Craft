@@ -24,6 +24,7 @@ import net.mcreator.ceshi.client.gui.GuiheitaxinyindaoScreen;
 import net.mcreator.ceshi.client.gui.GanjinglajitongScreen;
 import net.mcreator.ceshi.client.gui.GUIqiwuxuanzeScreen;
 import net.mcreator.ceshi.client.gui.GUImoladuiScreen;
+import net.mcreator.ceshi.client.gui.GUIhyzhqScreen;
 import net.mcreator.ceshi.client.gui.GUIhualiduanzaotaiScreen;
 import net.mcreator.ceshi.client.gui.GUIbhmgScreen;
 import net.mcreator.ceshi.client.gui.GUISJfumoScreen;
@@ -60,5 +61,6 @@ public class PrimogemcraftModScreens {
 		event.register(PrimogemcraftModMenus.SJGU_IFUMO_01.get(), SJGUIfumo01Screen::new);
 		event.register(PrimogemcraftModMenus.GU_IHUALIDUANZAOTAI.get(), GUIhualiduanzaotaiScreen::new);
 		event.register(PrimogemcraftModMenus.GU_IBHMG.get(), GUIbhmgScreen::new);
+		event.register(PrimogemcraftModMenus.GU_IHYZHQ.get(), GUIhyzhqScreen::new);
 	}
 }

@@ -36266,6 +36266,148 @@
           "src/main/resources/data/primogemcraft/neoforge/biome_modifier/molayiji_2_biome_modifier.json"
         ]
       }
+    },
+    {
+      "name": "GUIhyzhq",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gu_ihyzhq",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/world/inventory/GUIhyzhqMenu.java",
+          "src/main/java/net/mcreator/ceshi/client/gui/GUIhyzhqScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Qxzhq",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qxzhq",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qxzhq.json",
+          "src/main/java/net/mcreator/ceshi/block/entity/QxzhqBlockEntity.java",
+          "src/main/resources/data/primogemcraft/loot_table/blocks/qxzhq.json",
+          "src/main/resources/assets/primogemcraft/blockstates/qxzhq.json",
+          "src/main/resources/assets/primogemcraft/models/block/qxzhq.json",
+          "src/main/java/net/mcreator/ceshi/block/QxzhqBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Qxzhq_sx_0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qxzhq_sx_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/Qxzhq_sx_0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Qxzhqsxhs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qxzhqsxhs",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QxzhqsxhsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "item",
+            "type": "itemstack"
+          },
+          {
+            "name": "item0",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "zhi",
+            "type": "number"
+          },
+          {
+            "name": "zhi_0",
+            "type": "number"
+          },
+          {
+            "name": "zhi_1",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GUIhyzhqsx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gu_ihyzhqsx",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/GUIhyzhqsxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -36720,6 +36862,7 @@
       "CUSTOM:Qwjlbhy"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Qxzhq",
       "~CUSTOM:Xydx",
       "~CUSTOM:Cbtk",
       "~CUSTOM:Ysjshuijingcu",
@@ -39063,7 +39206,8 @@
       "Qiyu",
       "Mlxz",
       "Ysx",
-      "Hyx"
+      "Hyx",
+      "Qxzhq"
     ]
   },
   "language_map": {
@@ -39923,6 +40067,7 @@
       "advancements.kewu.descr": "§e§k你§a§k被§c§k骗§9§k啦",
       "advancements.zzenmezhemechoua.descr": "获得恶臭溶液",
       "advancements.cchangchangkan.title": "尝尝看",
+      "block.primogemcraft.qxzhq": "§b群星转化器",
       "item.primogemcraft.chunmeizhipao": "§5『奇物』§f纯美之袍",
       "enchantment.primogemcraft.fumoyuzhezn": "愚者之怒",
       "item.primogemcraft.zshjj.description_1": "§5 - 获得勾玉效果 III",
@@ -42622,6 +42767,7 @@
       "advancements.kewu.descr": "§e§kNever§a§kGonna§c§kGive you§9§kUp",
       "advancements.zzenmezhemechoua.descr": "获得恶臭溶液",
       "advancements.cchangchangkan.title": "Take A bite",
+      "block.primogemcraft.qxzhq": "§b群星转化器",
       "item.primogemcraft.chunmeizhipao": "§5『Curio』§fRobe of the beauty",
       "enchantment.primogemcraft.fumoyuzhezn": "愚者之怒",
       "item.primogemcraft.zshjj.description_1": "§5 - 获得勾玉效果 III",
@@ -45319,6 +45465,7 @@
       "advancements.kewu.descr": "§e§k你§a§k被§c§k骗§9§k啦",
       "advancements.zzenmezhemechoua.descr": "获得恶臭溶液",
       "advancements.cchangchangkan.title": "尝尝看",
+      "block.primogemcraft.qxzhq": "§b群星转化器",
       "item.primogemcraft.chunmeizhipao": "§5『奇物』§f纯美之袍",
       "enchantment.primogemcraft.fumoyuzhezn": "愚者之怒",
       "item.primogemcraft.zshjj.description_1": "§5 - 获得勾玉效果 III",

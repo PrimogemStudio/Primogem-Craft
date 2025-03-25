@@ -17,6 +17,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.ceshi.block.entity.XjhpyhfhBlockEntity;
 import net.mcreator.ceshi.block.entity.ShenmiwanouBlockEntity;
+import net.mcreator.ceshi.block.entity.QxzhqBlockEntity;
 import net.mcreator.ceshi.block.entity.Moladui02BlockEntity;
 import net.mcreator.ceshi.block.entity.MmolazhilajitongBlockEntity;
 import net.mcreator.ceshi.block.entity.Mlxdml03BlockEntity;
@@ -54,6 +55,7 @@ public class PrimogemcraftModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> HHZD_1 = register("hhzd_1", PrimogemcraftModBlocks.HHZD_1, Hhzd1BlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> SHENMIWANOU = register("shenmiwanou", PrimogemcraftModBlocks.SHENMIWANOU, ShenmiwanouBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> HHZDBOO = register("hhzdboo", PrimogemcraftModBlocks.HHZDBOO, HhzdbooBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> QXZHQ = register("qxzhq", PrimogemcraftModBlocks.QXZHQ, QxzhqBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -80,5 +82,6 @@ public class PrimogemcraftModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, HHZD_1.get(), (blockEntity, side) -> ((Hhzd1BlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SHENMIWANOU.get(), (blockEntity, side) -> ((ShenmiwanouBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, HHZDBOO.get(), (blockEntity, side) -> ((HhzdbooBlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, QXZHQ.get(), (blockEntity, side) -> ((QxzhqBlockEntity) blockEntity).getItemHandler());
 	}
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/blackstone_top",
+    "up": "minecraft:block/blackstone_top",
+    "north": "minecraft:block/blackstone_top",
+    "east": "minecraft:block/blackstone_top",
+    "south": "minecraft:block/blackstone_top",
+    "west": "minecraft:block/blackstone_top",
+    "particle": "minecraft:block/blackstone_top"
+  },
+  "render_type": "solid"
+}
