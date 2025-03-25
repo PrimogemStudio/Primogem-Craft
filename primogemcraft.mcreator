@@ -36451,6 +36451,36 @@
           "src/main/resources/data/primogemcraft/recipe/qxzhqpf.json"
         ]
       }
+    },
+    {
+      "name": "Qxzhqsxpf",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qxzhqsxpf",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QxzhqsxpfProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
