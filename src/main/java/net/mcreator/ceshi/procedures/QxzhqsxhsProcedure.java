@@ -16,32 +16,42 @@ public class QxzhqsxhsProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z, ItemStack item, ItemStack item0, double zhi, double zhi_0, double zhi_1) {
 		ItemStack i1 = ItemStack.EMPTY;
 		double n1 = 0;
-		i1 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) zhi).copy());
-		n1 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) (zhi + 1)).copy()).getCount() + zhi_1;
-		if (i1.getItem() == item0.getItem() && i1.getCount() >= zhi_0 && n1 <= 64) {
-			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-				int _slotid = (int) zhi;
-				ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
-				_stk.shrink((int) zhi_0);
-				_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian") >= 1) {
+			i1 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) zhi).copy());
+			n1 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) (zhi + 1)).copy()).getCount() + zhi_1;
+			if (i1.getItem() == item0.getItem() && i1.getCount() >= zhi_0 && n1 <= 64) {
+				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+					int _slotid = (int) zhi;
+					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+					_stk.shrink((int) zhi_0);
+					_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+				}
+				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+					ItemStack _setstack = item.copy();
+					_setstack.setCount((int) n1);
+					_itemHandlerModifiable.setStackInSlot((int) (zhi + 1), _setstack);
+				}
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("shan_bian", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian") - 1));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+				return true;
 			}
-			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-				ItemStack _setstack = item.copy();
-				_setstack.setCount((int) n1);
-				_itemHandlerModifiable.setStackInSlot((int) (zhi + 1), _setstack);
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble("shan_bian", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian") - 1));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			return true;
+			return false;
 		}
 		return false;
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
@@ -51,12 +61,5 @@ public class QxzhqsxhsProcedure {
 				return itemHandler.getStackInSlot(slot);
 		}
 		return ItemStack.EMPTY;
-	}
-
-	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
-		BlockEntity blockEntity = world.getBlockEntity(pos);
-		if (blockEntity != null)
-			return blockEntity.getPersistentData().getDouble(tag);
-		return -1;
 	}
 }
