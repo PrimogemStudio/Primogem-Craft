@@ -33,6 +33,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.ceshi.procedures.QystsxProcedure;
 import net.mcreator.ceshi.procedures.QqiyuanJinGuangChuShiShiTiShengChengProcedure;
 import net.mcreator.ceshi.procedures.Qiyuanshiti_chushengxiaoguoProcedure;
 import net.mcreator.ceshi.procedures.BhmglzProcedure;
@@ -78,6 +79,15 @@ public class QqiyuanJinGuangEntity extends PathfinderMob {
 
 	@Override
 	public boolean hurt(DamageSource damagesource, float amount) {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		Entity sourceentity = damagesource.getEntity();
+		Entity immediatesourceentity = damagesource.getDirectEntity();
+		if (!QystsxProcedure.execute())
+			return false;
 		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
 		if (damagesource.getDirectEntity() instanceof AbstractArrow)

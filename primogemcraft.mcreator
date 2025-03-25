@@ -36492,16 +36492,8 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/QystsxProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": [],
+        "return_type": "logic"
       }
     }
   ],

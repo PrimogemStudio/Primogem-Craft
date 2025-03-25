@@ -136,6 +136,9 @@
         "value": false
       }
     ],
+    "whenMobIsHurt": {
+      "name": "Qystsx"
+    },
     "onRightClickedOn": {
       "name": "QqiyuanJinGuangChuShiShiTiShengCheng"
     },

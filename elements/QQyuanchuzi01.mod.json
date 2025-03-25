@@ -120,6 +120,9 @@
       "value": ""
     },
     "entityDataEntries": [],
+    "whenMobIsHurt": {
+      "name": "Qystsx"
+    },
     "onRightClickedOn": {
       "name": "QQyuanchuzi"
     },

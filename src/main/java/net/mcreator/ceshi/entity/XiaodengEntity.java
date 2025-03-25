@@ -34,6 +34,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.ceshi.procedures.Xiaodeng_shuxing_2Procedure;
 import net.mcreator.ceshi.procedures.Xiaodeng_shuxingProcedure;
+import net.mcreator.ceshi.procedures.QystsxProcedure;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
 
 import javax.annotation.Nullable;
@@ -75,6 +76,15 @@ public class XiaodengEntity extends PathfinderMob {
 
 	@Override
 	public boolean hurt(DamageSource damagesource, float amount) {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		Entity sourceentity = damagesource.getEntity();
+		Entity immediatesourceentity = damagesource.getDirectEntity();
+		if (!QystsxProcedure.execute())
+			return false;
 		if (damagesource.is(DamageTypes.IN_FIRE))
 			return false;
 		if (damagesource.getDirectEntity() instanceof AbstractArrow)

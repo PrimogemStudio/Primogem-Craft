@@ -6,8 +6,20 @@
     "mobLabel": "",
     "mobModelName": "Modelceshixiaodeng_Converted",
     "mobModelTexture": "ceshixiaodeng_tietu.png",
+    "transparentModelCondition": {
+      "fixedValue": false
+    },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
     "solidBoundingBox": {
       "fixedValue": false
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
     },
     "modelLayers": [
       {
@@ -73,6 +85,9 @@
     "breatheUnderwater": {
       "fixedValue": true
     },
+    "pushedByFluids": {
+      "fixedValue": true
+    },
     "flyingMob": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -108,7 +123,13 @@
     "stepSound": {
       "value": ""
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
+    "whenMobIsHurt": {
+      "name": "Qystsx"
+    },
     "onMobTickUpdate": {
       "name": "Xiaodeng_shuxing_2"
     },
