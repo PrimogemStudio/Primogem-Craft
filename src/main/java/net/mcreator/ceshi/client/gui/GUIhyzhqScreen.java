@@ -3,12 +3,14 @@ package net.mcreator.ceshi.client.gui;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.ceshi.world.inventory.GUIhyzhqMenu;
+import net.mcreator.ceshi.procedures.GUIqxzhqsx0Procedure;
 import net.mcreator.ceshi.procedures.GUIhyzhqsxProcedure;
 
 import java.util.stream.Collectors;
@@ -40,7 +42,7 @@ public class GUIhyzhqScreen extends AbstractContainerScreen<GUIhyzhqMenu> {
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 12 && mouseX < leftPos + 30 && mouseY > topPos + 12 && mouseY < topPos + 55) {
+		if (mouseX > leftPos + 7 && mouseX < leftPos + 39 && mouseY > topPos + 9 && mouseY < topPos + 57) {
 			String hoverText = GUIhyzhqsxProcedure.execute(world, x, y, z);
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
@@ -54,6 +56,9 @@ public class GUIhyzhqScreen extends AbstractContainerScreen<GUIhyzhqMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(ResourceLocation.parse("primogemcraft:textures/screens/qunxingzhuanhuanqi_sx.png"), this.leftPos + 7, this.topPos + 9, Mth.clamp((int) GUIqxzhqsx0Procedure.execute(world, x, y, z) * 32, 0, 320), 0, 32, 48, 352, 48);
+
 		RenderSystem.disableBlend();
 	}
 

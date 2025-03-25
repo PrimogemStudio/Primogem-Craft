@@ -83,7 +83,7 @@ public class GUIhyzhqMenu extends AbstractContainerMenu implements Supplier<Map<
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 14, 58) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 61) {
 			private final int slot = 0;
 			private int x = GUIhyzhqMenu.this.x;
 			private int y = GUIhyzhqMenu.this.y;
