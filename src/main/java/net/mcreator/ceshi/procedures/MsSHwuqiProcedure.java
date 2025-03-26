@@ -25,7 +25,7 @@ public class MsSHwuqiProcedure {
 			sb.append('□');
 		}
 		o1 = entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(PrimogemcraftModMobEffects.SKLJXG);
-		return ((b <= 0 ? "\u00A7c\u00A7l" : "") + "Lv:" + new java.text.DecimalFormat("").format(b)) + "\n" + "\u00A76\u7CBE\u70BC:"
+		return ((b <= 0 ? "\u00A7c\u00A7l" : "") + "Lv:" + new java.text.DecimalFormat("").format(Math.floor(b))) + "\n" + "\u00A76\u7CBE\u70BC:"
 				+ (a <= 0 ? "\u00A7c\u00A7l" + new java.text.DecimalFormat("").format(a - (o1 ? 0 : 1)) : sb.toString() + "" + (o1 ? "\u00A7b\u25A0" : "")) + "\n";
 	}
 }
