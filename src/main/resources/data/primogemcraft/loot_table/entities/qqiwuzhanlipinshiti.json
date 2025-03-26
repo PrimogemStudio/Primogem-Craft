@@ -594,20 +594,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:qwwzsw",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "primogemcraft:jdsbcf_0",
           "weight": 1,
           "functions": [
