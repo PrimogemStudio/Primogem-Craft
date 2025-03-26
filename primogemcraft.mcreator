@@ -37961,7 +37961,6 @@
       "Items.DYE#4",
       "Items.DIAMOND",
       "Items.EMERALD",
-      "Items.AMETHYST_SHARD",
       "Items.ECHO_SHARD",
       "Items.DIAMOND_SWORD",
       "Items.DIAMOND_SHOVEL",
@@ -38063,7 +38062,8 @@
       "Items.NETHERITE_SCRAP",
       "Items.EMERALD",
       "CUSTOM:Myzj",
-      "CUSTOM:Xingqiong"
+      "CUSTOM:Xingqiong",
+      "Items.AMETHYST_SHARD"
     ],
     "ITEMS:pgc:qysz_3": [
       "CUSTOM:Yuanshi",
