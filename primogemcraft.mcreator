@@ -7118,20 +7118,7 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/CeshihufuProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -20659,16 +20646,7 @@
         "files": [
           "src/main/java/net/mcreator/ceshi/procedures/SanyuezhufushuxingProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "damagesource",
-            "type": "damagesource"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {

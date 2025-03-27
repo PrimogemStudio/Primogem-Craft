@@ -35,6 +35,9 @@ class GlobalAttributeModifier {
         modifiers.put("primogemcraft:qwjlbhy", e -> {
             e.replaceModifier(MOVEMENT_SPEED, modifier("jlbhy", 0.02, ADD_VALUE), ANY);
         });
+        modifiers.put("primogemcraft:sanyuezhufu", e -> {
+            e.replaceModifier(FALL_DAMAGE_MULTIPLIER, modifier("sany", -1, ADD_MULTIPLIED_BASE), ANY);
+        });
         enableForInventory("primogemcraft:qwjlbhy");
         enableForInventory("primogemcraft:qwtldhy");
     }

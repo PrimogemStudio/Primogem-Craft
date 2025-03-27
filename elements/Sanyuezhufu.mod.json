@@ -30,8 +30,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7携带后免疫摔落伤害！",
-        "§7每个游戏日损失1点耐久"
+        "§7携带后免疫摔落伤害！"
       ]
     },
     "glowCondition": {
@@ -59,6 +58,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }
