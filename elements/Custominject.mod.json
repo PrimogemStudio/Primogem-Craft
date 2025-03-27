@@ -16,7 +16,7 @@
             "item": {
               "value": "CUSTOM:Ssanbamiantou"
             },
-            "weight": 5,
+            "weight": 20,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -30,7 +30,7 @@
             "item": {
               "value": "CUSTOM:Xiangdanganlao"
             },
-            "weight": 10,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -44,7 +44,7 @@
             "item": {
               "value": "CUSTOM:Yiyinhedaletou"
             },
-            "weight": 5,
+            "weight": 20,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -58,7 +58,7 @@
             "item": {
               "value": "CUSTOM:Qiwuchongwang"
             },
-            "weight": 5,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -72,7 +72,7 @@
             "item": {
               "value": "CUSTOM:Wawanxiangwuchangtou"
             },
-            "weight": 10,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -86,7 +86,7 @@
             "item": {
               "value": "CUSTOM:Cebuzhunxia"
             },
-            "weight": 10,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -114,7 +114,7 @@
             "item": {
               "value": "CUSTOM:Fulinjiao"
             },
-            "weight": 5,
+            "weight": 20,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -128,7 +128,7 @@
             "item": {
               "value": "CUSTOM:Pengkeluodejingshen"
             },
-            "weight": 3,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -142,7 +142,7 @@
             "item": {
               "value": "CUSTOM:Fenliejinbi"
             },
-            "weight": 2,
+            "weight": 20,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -156,7 +156,7 @@
             "item": {
               "value": "CUSTOM:Yiyimuguoshi"
             },
-            "weight": 2,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -170,7 +170,7 @@
             "item": {
               "value": "CUSTOM:Wanshinang"
             },
-            "weight": 8,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -184,7 +184,7 @@
             "item": {
               "value": "CUSTOM:Xingjidaletou"
             },
-            "weight": 6,
+            "weight": 20,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -198,7 +198,7 @@
             "item": {
               "value": "CUSTOM:Qwhdlz"
             },
-            "weight": 4,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -212,7 +212,7 @@
             "item": {
               "value": "CUSTOM:Jlbj"
             },
-            "weight": 3,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -226,7 +226,7 @@
             "item": {
               "value": "CUSTOM:Qwybtzdypj"
             },
-            "weight": 1,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -240,7 +240,7 @@
             "item": {
               "value": "CUSTOM:Qwxyzq"
             },
-            "weight": 2,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -254,7 +254,7 @@
             "item": {
               "value": "CUSTOM:Qwymzj"
             },
-            "weight": 5,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -268,7 +268,7 @@
             "item": {
               "value": "CUSTOM:Qwflyb"
             },
-            "weight": 4,
+            "weight": 20,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -282,7 +282,7 @@
             "item": {
               "value": "CUSTOM:Qwxbzsq"
             },
-            "weight": 4,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -296,7 +296,7 @@
             "item": {
               "value": "CUSTOM:Qwkwzj"
             },
-            "weight": 4,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -310,7 +310,7 @@
             "item": {
               "value": "CUSTOM:Chunmeizhipao"
             },
-            "weight": 3,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -324,7 +324,7 @@
             "item": {
               "value": "CUSTOM:Qwjzyj"
             },
-            "weight": 1,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -436,7 +436,7 @@
             "item": {
               "value": "CUSTOM:Qwyzzm"
             },
-            "weight": 8,
+            "weight": 20,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -492,7 +492,7 @@
             "item": {
               "value": "CUSTOM:Qwtcjlbptbg"
             },
-            "weight": 2,
+            "weight": 20,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -506,7 +506,7 @@
             "item": {
               "value": "CUSTOM:Qwlbtdgcl"
             },
-            "weight": 5,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -520,7 +520,7 @@
             "item": {
               "value": "CUSTOM:Quxgjibing"
             },
-            "weight": 7,
+            "weight": 20,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -534,7 +534,7 @@
             "item": {
               "value": "CUSTOM:Qwqcxxmx"
             },
-            "weight": 2,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -548,7 +548,7 @@
             "item": {
               "value": "CUSTOM:Qwsmcl"
             },
-            "weight": 3,
+            "weight": 30,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -562,7 +562,7 @@
             "item": {
               "value": "CUSTOM:Qwsjgzq"
             },
-            "weight": 3,
+            "weight": 5,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -588,9 +588,9 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Qwsjgzq"
+              "value": "CUSTOM:Qwsklj"
             },
-            "weight": 1,
+            "weight": 5,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -602,7 +602,21 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Qwsklj"
+              "value": "CUSTOM:Qwsss"
+            },
+            "weight": 20,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Qwwzsw"
             },
             "weight": 1,
             "minCount": 1,

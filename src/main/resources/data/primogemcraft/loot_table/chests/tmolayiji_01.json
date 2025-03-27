@@ -10,20 +10,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mmola_01",
-          "weight": 100,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "primogemcraft:yuanshi",
           "weight": 10,
           "functions": [
@@ -123,7 +109,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qiwuchongwang",
-          "weight": 5,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -137,7 +123,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:taikongmanbuchangpian",
-          "weight": 5,
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -151,7 +137,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:ccangruimilinjian_014",
-          "weight": 5,
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -165,41 +151,27 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:mmola_01",
-          "weight": 70,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:mmola_01",
-          "weight": 70,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:mmola_01",
-          "weight": 100,
+          "weight": 200,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
                 "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "primogemcraft:mmola_01",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
               }
             }
           ]
@@ -221,7 +193,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:wawanxiangwuchangtou",
-          "weight": 5,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -235,7 +207,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:cebuzhunxia",
-          "weight": 5,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -319,7 +291,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:pengkeluodejingshen",
-          "weight": 5,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -445,21 +417,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:wanshinang",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "primogemcraft:maoxianjiazhinang",
-          "weight": 20,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -515,7 +473,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:zhaiquan",
-          "weight": 5,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -529,7 +487,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:laoshi",
-          "weight": 20,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -543,7 +501,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:fengdandaibiao",
-          "weight": 10,
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -669,7 +627,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwtldhy",
-          "weight": 5,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -683,7 +641,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwfjjwl",
-          "weight": 5,
+          "weight": 15,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -711,7 +669,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwrhj",
-          "weight": 5,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -739,7 +697,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:xyzp",
-          "weight": 10,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",

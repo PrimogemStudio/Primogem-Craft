@@ -14,20 +14,6 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Mmola01"
-            },
-            "weight": 100,
-            "minCount": 1,
-            "maxCount": 3,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
               "value": "CUSTOM:Yuanshi"
             },
             "weight": 10,
@@ -128,7 +114,7 @@
             "item": {
               "value": "CUSTOM:Qiwuchongwang"
             },
-            "weight": 5,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -142,7 +128,7 @@
             "item": {
               "value": "CUSTOM:Taikongmanbuchangpian"
             },
-            "weight": 5,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -156,7 +142,7 @@
             "item": {
               "value": "CUSTOM:Ccangruimilinjian014"
             },
-            "weight": 5,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -170,37 +156,23 @@
             "item": {
               "value": "CUSTOM:Mmola01"
             },
-            "weight": 70,
-            "minCount": 1,
-            "maxCount": 2,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Mmola01"
-            },
-            "weight": 70,
-            "minCount": 2,
-            "maxCount": 5,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Mmola01"
-            },
-            "weight": 100,
+            "weight": 200,
             "minCount": 1,
             "maxCount": 3,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Mmola01"
+            },
+            "weight": 40,
+            "minCount": 2,
+            "maxCount": 5,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -226,7 +198,7 @@
             "item": {
               "value": "CUSTOM:Wawanxiangwuchangtou"
             },
-            "weight": 5,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -240,7 +212,7 @@
             "item": {
               "value": "CUSTOM:Cebuzhunxia"
             },
-            "weight": 5,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -324,7 +296,7 @@
             "item": {
               "value": "CUSTOM:Pengkeluodejingshen"
             },
-            "weight": 5,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -450,21 +422,7 @@
             "item": {
               "value": "CUSTOM:Wanshinang"
             },
-            "weight": 5,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:Maoxianjiazhinang"
-            },
-            "weight": 20,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -520,7 +478,7 @@
             "item": {
               "value": "CUSTOM:Zhaiquan"
             },
-            "weight": 5,
+            "weight": 3,
             "minCount": 1,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
@@ -534,7 +492,7 @@
             "item": {
               "value": "CUSTOM:Laoshi"
             },
-            "weight": 20,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -548,7 +506,7 @@
             "item": {
               "value": "CUSTOM:Fengdandaibiao"
             },
-            "weight": 10,
+            "weight": 1,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -674,7 +632,7 @@
             "item": {
               "value": "CUSTOM:Qwtldhy"
             },
-            "weight": 5,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -688,7 +646,7 @@
             "item": {
               "value": "CUSTOM:Qwfjjwl"
             },
-            "weight": 5,
+            "weight": 15,
             "minCount": 1,
             "maxCount": 3,
             "minEnchantmentLevel": 0,
@@ -716,7 +674,7 @@
             "item": {
               "value": "CUSTOM:Qwrhj"
             },
-            "weight": 5,
+            "weight": 10,
             "minCount": 1,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
@@ -744,7 +702,7 @@
             "item": {
               "value": "CUSTOM:Xyzp"
             },
-            "weight": 10,
+            "weight": 20,
             "minCount": 1,
             "maxCount": 2,
             "minEnchantmentLevel": 0,

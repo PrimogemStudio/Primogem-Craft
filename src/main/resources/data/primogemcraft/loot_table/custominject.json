@@ -10,7 +10,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:ssanbamiantou",
-          "weight": 5,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -24,7 +24,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:xiangdanganlao",
-          "weight": 10,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -38,7 +38,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:yiyinhedaletou",
-          "weight": 5,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -52,7 +52,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qiwuchongwang",
-          "weight": 5,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -66,7 +66,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:wawanxiangwuchangtou",
-          "weight": 10,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -80,7 +80,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:cebuzhunxia",
-          "weight": 10,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -108,7 +108,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:fulinjiao",
-          "weight": 5,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -122,7 +122,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:pengkeluodejingshen",
-          "weight": 3,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -136,7 +136,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:fenliejinbi",
-          "weight": 2,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -150,7 +150,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:yiyimuguoshi",
-          "weight": 2,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -164,7 +164,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:wanshinang",
-          "weight": 8,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -178,7 +178,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:xingjidaletou",
-          "weight": 6,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -192,7 +192,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwhdlz",
-          "weight": 4,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -206,7 +206,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:jlbj",
-          "weight": 3,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -220,7 +220,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwybtzdypj",
-          "weight": 1,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -234,7 +234,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwxyzq",
-          "weight": 2,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -248,7 +248,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwymzj",
-          "weight": 5,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -262,7 +262,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwflyb",
-          "weight": 4,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -276,7 +276,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwxbzsq",
-          "weight": 4,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -290,7 +290,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwkwzj",
-          "weight": 4,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -304,7 +304,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:chunmeizhipao",
-          "weight": 3,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -318,7 +318,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwjzyj",
-          "weight": 1,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -430,7 +430,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwyzzm",
-          "weight": 8,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -486,7 +486,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwtcjlbptbg",
-          "weight": 2,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -500,7 +500,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwlbtdgcl",
-          "weight": 5,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -514,7 +514,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:quxgjibing",
-          "weight": 7,
+          "weight": 20,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -528,7 +528,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwqcxxmx",
-          "weight": 2,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -542,7 +542,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwsmcl",
-          "weight": 3,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -556,7 +556,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:qwsjgzq",
-          "weight": 3,
+          "weight": 5,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -583,8 +583,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:qwsjgzq",
-          "weight": 1,
+          "name": "primogemcraft:qwsklj",
+          "weight": 5,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -597,7 +597,21 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:qwsklj",
+          "name": "primogemcraft:qwsss",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "primogemcraft:qwwzsw",
           "weight": 1,
           "functions": [
             {
