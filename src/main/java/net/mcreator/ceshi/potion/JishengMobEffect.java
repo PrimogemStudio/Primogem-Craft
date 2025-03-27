@@ -14,7 +14,7 @@ import net.mcreator.ceshi.PrimogemcraftMod;
 public class JishengMobEffect extends MobEffect {
 	public JishengMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -4756225);
-		this.addAttributeModifier(Attributes.ATTACK_DAMAGE, ResourceLocation.fromNamespaceAndPath(PrimogemcraftMod.MODID, "effect.jisheng_0"), 0.2, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
+		this.addAttributeModifier(Attributes.ATTACK_DAMAGE, ResourceLocation.fromNamespaceAndPath(PrimogemcraftMod.MODID, "effect.jisheng_0"), 0.5, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
 	}
 
 	@Override
