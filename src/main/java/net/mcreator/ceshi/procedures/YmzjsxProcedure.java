@@ -41,7 +41,8 @@ public class YmzjsxProcedure {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, (int) (world.getBlockState(BlockPos.containing(x, y, z)).getDestroySpeed(world, BlockPos.containing(x, y, z)) * 5 * 20), Mth.nextInt(RandomSource.create(), 0, 3)));
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWZJXXMX.get())) : false) {
+			if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(PrimogemcraftModItems.QWZJXXMX.get())) : false)
+					&& !(entity instanceof Player _plrCldCheck6 && _plrCldCheck6.getCooldowns().isOnCooldown(PrimogemcraftModItems.QWZJXXMX.get()))) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, (int) (world.getBlockState(BlockPos.containing(x, y, z)).getDestroySpeed(world, BlockPos.containing(x, y, z)) * 5 * 20), Mth.nextInt(RandomSource.create(), 0, 3)));
 				if (Math.random() < world.getBlockState(BlockPos.containing(x, y, z)).getDestroySpeed(world, BlockPos.containing(x, y, z)) * 0.01) {
@@ -50,6 +51,8 @@ public class YmzjsxProcedure {
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(PrimogemcraftModItems.QWZJXXMX.get(), 5);
 				}
 			}
 		}
