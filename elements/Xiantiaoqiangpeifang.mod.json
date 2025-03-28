@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Hhaokandelaji"
+        "value": ""
       },
       {
-        "value": "Items.BAKED_POTATO"
+        "value": "CUSTOM:Yuanshi"
       },
       {
-        "value": "Items.COOKED_BEEF"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Qiwuchongwang"
+        "value": "CUSTOM:Yuanshi"
       },
       {
-        "value": "Items.WATER_BUCKET"
+        "value": "CUSTOM:Yuanshi"
       },
       {
         "value": "CUSTOM:Chuangshijiejing"
       },
       {
-        "value": "CUSTOM:Jinzhimola"
+        "value": ""
       },
       {
-        "value": "Blocks.BRICK_BLOCK"
+        "value": "Items.RABBIT_STEW"
       },
       {
-        "value": "CUSTOM:Yuanshi"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
