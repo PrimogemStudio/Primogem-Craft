@@ -31,7 +31,8 @@
     "specialInformation": {
       "fixedValue": [
         "§7攻击满血生物时回复自身10%当",
-        "§7前生命值"
+        "§7前生命值",
+        "§7当前血量越多触发后冷却时间越长"
       ]
     },
     "glowCondition": {
@@ -56,6 +57,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

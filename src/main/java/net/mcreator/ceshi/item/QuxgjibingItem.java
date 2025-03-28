@@ -23,5 +23,6 @@ public class QuxgjibingItem extends Item {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.primogemcraft.quxgjibing.description_0"));
 		list.add(Component.translatable("item.primogemcraft.quxgjibing.description_1"));
+		list.add(Component.translatable("item.primogemcraft.quxgjibing.description_2"));
 	}
 }
