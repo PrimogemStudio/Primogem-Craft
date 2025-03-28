@@ -97,11 +97,6 @@ public class GUIhyzhqMenu extends AbstractContainerMenu implements Supplier<Map<
 			private final int slot = 1;
 			private int x = GUIhyzhqMenu.this.x;
 			private int y = GUIhyzhqMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return PrimogemcraftModItems.XINGCHEN.get() == stack.getItem();
-			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 135, 23) {
 			private final int slot = 2;
@@ -117,11 +112,6 @@ public class GUIhyzhqMenu extends AbstractContainerMenu implements Supplier<Map<
 			private final int slot = 3;
 			private int x = GUIhyzhqMenu.this.x;
 			private int y = GUIhyzhqMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return PrimogemcraftModItems.XINGHUI.get() == stack.getItem();
-			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 135, 50) {
 			private final int slot = 4;

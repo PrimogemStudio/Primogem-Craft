@@ -33,7 +33,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Xingchen"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
@@ -65,7 +65,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Xinghui"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false

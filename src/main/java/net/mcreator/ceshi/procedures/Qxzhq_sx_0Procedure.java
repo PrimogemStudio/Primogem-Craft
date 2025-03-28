@@ -21,7 +21,9 @@ public class Qxzhq_sx_0Procedure {
 		ItemStack i1 = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
 			nbt1 = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian");
-			QxzhqsxpfProcedure.execute(world, x, y, z);
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getCount() > 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getCount() > 0) {
+				QxzhqsxpfProcedure.execute(world, x, y, z);
+			}
 			i1 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy());
 			if (nbt1 + 3 <= 330 && i1.getCount() >= 1 && i1.getItem() == PrimogemcraftModItems.SHANBIANZHICHEN.get()) {
 				if (!world.isClientSide()) {

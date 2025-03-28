@@ -13,7 +13,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
 
 public class QxzhqsxhsProcedure {
-	public static boolean execute(LevelAccessor world, double x, double y, double z, ItemStack item, ItemStack item0, double zhi, double zhi_0, double zhi_1) {
+	public static boolean execute(LevelAccessor world, double x, double y, double z, ItemStack item, ItemStack item0, double shan_bian, double zhi, double zhi_0, double zhi_1) {
 		ItemStack i1 = ItemStack.EMPTY;
 		double n1 = 0;
 		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian") >= 1) {
@@ -36,7 +36,7 @@ public class QxzhqsxhsProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("shan_bian", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian") - 1));
+						_blockEntity.getPersistentData().putDouble("shan_bian", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian") - shan_bian));
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
