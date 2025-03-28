@@ -32,7 +32,7 @@
       "fixedValue": [
         "§7每拥有一个已损坏奇物，攻击目标后会对其额外",
         "§7造成一次等同于自身最大生命0.3%的额外伤害",
-        "§7至多以这种方式造成额外300%自身最大生命值",
+        "§7至多以这种方式造成额外30%自身最大生命值",
         "§7的额外伤害！",
         "§",
         "§d该效果每秒至多触发一次"
@@ -60,6 +60,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }
