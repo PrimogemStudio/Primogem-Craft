@@ -36644,6 +36644,56 @@
           }
         ]
       }
+    },
+    {
+      "name": "Qxzhqpfhs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qxzhqpfhs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/QxzhqpfhsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "item_0",
+            "type": "itemstack"
+          },
+          {
+            "name": "item_1",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "zhi",
+            "type": "number"
+          },
+          {
+            "name": "zhi_0",
+            "type": "number"
+          },
+          {
+            "name": "zhi_1",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
