@@ -7,6 +7,7 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -14,12 +15,14 @@ import net.minecraft.core.BlockPos;
 
 public class QxzhqsxhsProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z, ItemStack item, ItemStack item0, double shan_bian, double zhi, double zhi_0, double zhi_1) {
-		ItemStack i1 = ItemStack.EMPTY;
 		double n1 = 0;
+		ItemStack i1 = ItemStack.EMPTY;
+		ItemStack i2 = ItemStack.EMPTY;
 		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian") >= 1) {
 			i1 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) zhi).copy());
-			n1 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) (zhi + 1)).copy()).getCount() + zhi_1;
-			if (i1.getItem() == item0.getItem() && i1.getCount() >= zhi_0 && n1 <= 64) {
+			i2 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) (zhi + 1)).copy());
+			n1 = i2.getCount() + zhi_1;
+			if (n1 <= 64 && i1.getCount() >= zhi_0 && i1.getItem() == item0.getItem() && (i2.getItem() == item.getItem() || i2.getItem() == Blocks.AIR.asItem())) {
 				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 					int _slotid = (int) zhi;
 					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
