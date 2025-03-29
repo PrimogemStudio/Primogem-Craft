@@ -50,14 +50,13 @@ public class CustomAPI {
                     var item2 = inv.getStackInSlot(3);
                     var recipes = level.getServer().getRecipeManager().getAllRecipesFor(CustomRegister.STARDUST_CONVERTER.get());
                     for (var r : recipes) {
-                        var data = r.value().match(item1);
-                        if (data != null) {
-                            if (r1 == null) r1 = data;
-                        } else {
-                            data = r.value().match(item2);
-                            if (data != null) {
-                                if (r2 == null) r2 = data;
-                            }
+                        if (r1 == null) {
+                            var data = r.value().match(item1, false);
+                            if (data != null) r1 = data;
+                        }
+                        if (r2 == null) {
+                            var data = r.value().match(item2, true);
+                            if (data != null) r2 = data;
                         }
                         if (r1 != null && r2 != null) break;
                     }
