@@ -10,6 +10,6 @@ public class Xydx_sxProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.LUCK, (int) Double.POSITIVE_INFINITY, 2));
+			_entity.addEffect(new MobEffectInstance(MobEffects.LUCK, -1, 2));
 	}
 }
