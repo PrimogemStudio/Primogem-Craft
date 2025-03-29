@@ -2,14 +2,19 @@ package net.hackermdch.pgc;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientPacketListener;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.LevelAccessor;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.fml.ModList;
+import net.neoforged.neoforge.capabilities.Capabilities.ItemHandler;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import org.jetbrains.annotations.Nullable;
+import oshi.util.tuples.Pair;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,6 +38,33 @@ public class CustomAPI {
 
     public static AttributeWrapper getAttributes(ItemStack stack) {
         return new AttributeWrapper(stack);
+    }
+
+    public static Pair<StardustConverterRecipe.Data, StardustConverterRecipe.Data> findConvertRecipe(LevelAccessor level, double x, double y, double z) {
+        StardustConverterRecipe.Data r1 = null, r2 = null;
+        if (level.getServer() != null) {
+            if (level instanceof ILevelExtension ext) {
+                var inv = ext.getCapability(ItemHandler.BLOCK, new BlockPos((int) x, (int) y, ((int) z)), null);
+                if (inv != null) {
+                    var item1 = inv.getStackInSlot(1);
+                    var item2 = inv.getStackInSlot(3);
+                    var recipes = level.getServer().getRecipeManager().getAllRecipesFor(CustomRegister.STARDUST_CONVERTER.get());
+                    for (var r : recipes) {
+                        var data = r.value().match(item1);
+                        if (data != null) {
+                            if (r1 == null) r1 = data;
+                        } else {
+                            data = r.value().match(item2);
+                            if (data != null) {
+                                if (r2 == null) r2 = data;
+                            }
+                        }
+                        if (r1 != null && r2 != null) break;
+                    }
+                }
+            }
+        }
+        return new Pair<>(r1, r2);
     }
 
     @OnlyIn(Dist.CLIENT)

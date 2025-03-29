@@ -1,0 +1,18 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "genshincraft"
+    }
+  ],
+  "type": "primogemcraft:stardust_converter",
+  "first": {
+    "id": "primogemcraft:yuanshi",
+    "count": 6
+  },
+  "second": {
+    "id": "genshincraft:primogems",
+    "count": 1
+  },
+  "cost": 2
+}

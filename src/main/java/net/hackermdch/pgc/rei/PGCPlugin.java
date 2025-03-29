@@ -11,6 +11,7 @@ import static net.mcreator.ceshi.PrimogemcraftMod.MODID;
 public class PGCPlugin implements REIServerPlugin {
     static final CategoryIdentifier<WishDisplay> WISH = CategoryIdentifier.of(MODID, "plugins/wish");
     static final CategoryIdentifier<ForgeDisplay> FORGE = CategoryIdentifier.of(MODID, "plugins/forge");
+    static final CategoryIdentifier<ConvertDisplay> CONVERT = CategoryIdentifier.of(MODID, "plugins/convert");
 
     @Override
     public void registerDisplaySerializer(DisplaySerializerRegistry registry) {

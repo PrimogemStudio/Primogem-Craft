@@ -1,20 +1,24 @@
 package net.mcreator.ceshi.procedures;
 
-import net.neoforged.fml.ModList;
-
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.ceshi.init.PrimogemcraftModItems;
+import net.hackermdch.pgc.CustomAPI;
 
 public class QxzhqsxpfProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		boolean o1 = false;
-		QxzhqpfhsProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.XINGCHEN.get()), new ItemStack(PrimogemcraftModItems.XINGHUI.get()), 1, 2, 1);
-		if (ModList.get().isLoaded("genshincraft")) {
-			QxzhqpfhsProcedure.execute(world, x, y, z, new ItemStack(PrimogemcraftModItems.YUANSHI.get()), new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("genshincraft:primogems"))), 2, 6, 1);
+		ItemStack i1 = ItemStack.EMPTY;
+		ItemStack i2 = ItemStack.EMPTY;
+		var recipe = CustomAPI.findConvertRecipe(world, x, y, z);
+		if (recipe.getA() != null) {
+			i1 = recipe.getA().input();
+			i2 = recipe.getA().output();
+			QxzhqsxhsProcedure.execute(world, x, y, z, i2, i1, recipe.getA().cost(), 1, i1.getCount(), i2.getCount());
+		}
+		if (recipe.getB() != null) {
+			i1 = recipe.getB().input();
+			i2 = recipe.getB().output();
+			QxzhqsxhsProcedure.execute(world, x, y, z, i2, i1, recipe.getB().cost(), 3, i1.getCount(), i2.getCount());
 		}
 	}
 }

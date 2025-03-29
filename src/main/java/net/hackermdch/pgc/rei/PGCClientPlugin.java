@@ -7,6 +7,8 @@ import me.shedaniel.rei.api.client.registry.display.DisplayRegistry;
 import me.shedaniel.rei.api.common.util.EntryIngredients;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import me.shedaniel.rei.forge.REIPluginClient;
+import net.hackermdch.pgc.CustomRegister;
+import net.hackermdch.pgc.StardustConverterRecipe;
 import net.hackermdch.pgc.network.WishInfoPacket;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -14,8 +16,7 @@ import net.minecraft.world.level.ItemLike;
 
 import java.util.*;
 
-import static net.hackermdch.pgc.rei.PGCPlugin.FORGE;
-import static net.hackermdch.pgc.rei.PGCPlugin.WISH;
+import static net.hackermdch.pgc.rei.PGCPlugin.*;
 import static net.mcreator.ceshi.init.PrimogemcraftModEntities.*;
 import static net.mcreator.ceshi.init.PrimogemcraftModItems.*;
 
@@ -38,13 +39,15 @@ public class PGCClientPlugin implements REIClientPlugin {
 
     @Override
     public void registerCategories(CategoryRegistry registry) {
-        registry.add(new WishCategory(), new ForgeCategory());
+        registry.add(new WishCategory(), new ForgeCategory(), new ConvertCategory());
         registry.addWorkstations(WISH, EntryStacks.of(XIXIANGYUZHIYUAN), EntryStacks.of(JIJIUCHANZHIYUAN), EntryStacks.of(SHILIANCHOU), EntryStacks.of(QYHX_0WUJIACHENG), EntryStacks.of(QYHXSHILIAN));
         registry.addWorkstations(FORGE, EntryStacks.of(HUALIDUANZAO));
+        registry.addWorkstations(CONVERT, EntryStacks.of(QXZHQ));
     }
 
     @Override
     public void registerDisplays(DisplayRegistry registry) {
+        registry.registerRecipeFiller(StardustConverterRecipe.class, CustomRegister.STARDUST_CONVERTER.get(), ConvertDisplay::new);
         addWishEntry(registry, QQ_QYUANCHULAN_01.get(), WishInfoPacket.info[0]);
         addWishEntry(registry, Q_QYUANCHUZI_01.get(), WishInfoPacket.info[1]);
         addWishEntry(registry, QQIYUAN_JIN_GUANG.get(), WishInfoPacket.info[2]);
