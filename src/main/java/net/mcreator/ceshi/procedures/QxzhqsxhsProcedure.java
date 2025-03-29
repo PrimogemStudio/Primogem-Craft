@@ -15,14 +15,16 @@ import net.minecraft.core.BlockPos;
 
 public class QxzhqsxhsProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z, ItemStack item, ItemStack item0, double shan_bian, double zhi, double zhi_0, double zhi_1) {
-		double n1 = 0;
 		ItemStack i1 = ItemStack.EMPTY;
 		ItemStack i2 = ItemStack.EMPTY;
+		double n1 = 0;
+		double bn1 = 0;
 		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian") >= 1) {
 			i1 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) zhi).copy());
 			i2 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) (zhi + 1)).copy());
 			n1 = i2.getCount() + zhi_1;
-			if (n1 <= 64 && i1.getCount() >= zhi_0 && i1.getItem() == item0.getItem() && (i2.getItem() == item.getItem() || i2.getItem() == Blocks.AIR.asItem())) {
+			bn1 = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian");
+			if (n1 <= 64 && bn1 - shan_bian >= 0 && i1.getCount() >= zhi_0 && i1.getItem() == item0.getItem() && (i2.getItem() == item.getItem() || i2.getItem() == Blocks.AIR.asItem())) {
 				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 					int _slotid = (int) zhi;
 					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
@@ -39,7 +41,7 @@ public class QxzhqsxhsProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("shan_bian", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian") - shan_bian));
+						_blockEntity.getPersistentData().putDouble("shan_bian", (bn1 - shan_bian));
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
