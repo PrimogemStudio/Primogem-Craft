@@ -998,6 +998,7 @@
   "item.primogemcraft.qwlhcc.description_0": "§l概率获得 B 级奇物",
   "item.primogemcraft.jljzs.description_2": "§7 - 触发几率100%",
   "item.primogemcraft.jljzs.description_1": "§7 - 削弱目标攻击伤害",
+  "rei.pgc.tooltip.convert": "",
   "gamerule.jinyongnang": "§b原石工艺 禁用囊",
   "gui.primogemcraft.yinhang.label_jiang_yu_zhou_sui_pian_cun_ru_zhe_li_dang_xia_ci_yu_jian_shi_gei_yu_shuang_bei": "将宇宙碎片存入这里，当下次遇见时给予双倍",
   "gui.primogemcraft.yinhang.button_cun_ru_zhe_xie": "存入这些",
