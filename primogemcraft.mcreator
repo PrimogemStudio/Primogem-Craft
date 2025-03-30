@@ -36668,6 +36668,31 @@
           "src/main/resources/data/primogemcraft/recipe/convert_2.json"
         ]
       }
+    },
+    {
+      "name": "Qwqxqwrhj",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwqxqwrhj",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/item/QwqxqwrhjItem.java",
+          "src/main/resources/assets/primogemcraft/models/item/qwqxqwrhj.json"
+        ]
+      }
+    },
+    {
+      "name": "Convertqxqwrhjpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "convertqxqwrhjpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/convertqxqwrhjpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -39164,7 +39189,8 @@
       "Skjinb",
       "Jdsbcf0",
       "Qwlzdlt",
-      "Qwsss"
+      "Qwsss",
+      "Qwqxqwrhj"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -41421,6 +41447,7 @@
       "block.primogemcraft.cangsangshizhuanweiqiang": "沧桑石砖 围墙",
       "gamerule.guizemoyinshengminzhi": "§bPrimogem Craft§eSpawn Mara-Struck Mob Max Health",
       "item.primogemcraft.jlliang": "§a精锻用良矿",
+      "item.primogemcraft.qwqxqwrhj": "强效奇物融合剂",
       "item.primogemcraft.ffanrongdezhexue.description_0": "§4战斗时§f有小概率掉落§e摩拉",
       "gui.primogemcraft.cunzheshezhi.shifou_bwd": "§a是否不稳定？",
       "advancements.gou_gou_liao_jin_zhi_fu_du.descr": "美少女也是很累的",
@@ -41491,7 +41518,10 @@
       "gui.primogemcraft.yinhang.button_ju_jue_bing_wei_xie_ta_rang_kai": "拒绝并威胁它让开",
       "item.primogemcraft.qyhx_0wujiacheng": "祈愿核心§c[暂无加成]",
       "item.primogemcraft.sztj": "§a『生长碧翡』§f铁剑",
+      "item.primogemcraft.qwqxqwrhj.description_0": "§b融合高级奇物使用",
       "advancements.jdkx.title": "开箱！",
+      "item.primogemcraft.qwqxqwrhj.description_1": "§6部分奇普通融合剂无法融合",
+      "item.primogemcraft.qwqxqwrhj.description_2": "§6强效融合剂奇物功能更强大",
       "entity.primogemcraft.baiguangguodushengwu": "金...？",
       "item.primogemcraft.cebuzhunxia.description_0": "§0§m附不准匣",
       "item.primogemcraft.cebuzhunxia.description_1": "§b右键使用§f后对§b副手§c未附魔§e物品",
@@ -44125,6 +44155,7 @@
       "block.primogemcraft.cangsangshizhuanweiqiang": "Vicissitude Bricks Wall",
       "gamerule.guizemoyinshengminzhi": "§bPrimogem Craft§eSpawn Mara-Struck Mob Max Health",
       "item.primogemcraft.jlliang": "§aFine Enhancement Ore",
+      "item.primogemcraft.qwqxqwrhj": "强效奇物融合剂",
       "item.primogemcraft.ffanrongdezhexue.description_0": "§4战斗时§f有小概率掉落§e摩拉",
       "gui.primogemcraft.cunzheshezhi.shifou_bwd": "§a是否不稳定？",
       "advancements.gou_gou_liao_jin_zhi_fu_du.descr": "A bit of Tired",
@@ -44195,7 +44226,10 @@
       "gui.primogemcraft.yinhang.button_ju_jue_bing_wei_xie_ta_rang_kai": "拒绝并威胁它让开",
       "item.primogemcraft.qyhx_0wujiacheng": "祈愿核心§c[暂无加成]",
       "item.primogemcraft.sztj": "§a『Nagadus Emerald』§fIron Sword",
+      "item.primogemcraft.qwqxqwrhj.description_0": "§b融合高级奇物使用",
       "advancements.jdkx.title": "开箱！",
+      "item.primogemcraft.qwqxqwrhj.description_1": "§6部分奇普通融合剂无法融合",
+      "item.primogemcraft.qwqxqwrhj.description_2": "§6强效融合剂奇物功能更强大",
       "entity.primogemcraft.baiguangguodushengwu": "5-star item...?",
       "item.primogemcraft.cebuzhunxia.description_0": "§0§menchantment inaccuracy",
       "item.primogemcraft.cebuzhunxia.description_1": "§badd§frandom§b1~30 level enchantments§cto items§enot enchanted yet",
@@ -46824,6 +46858,7 @@
       "item.primogemcraft.ryhjt_helmet": "§c『燃愿玛瑙』§e下界合金头盔",
       "block.primogemcraft.cangsangshizhuanweiqiang": "沧桑石砖 围墙",
       "item.primogemcraft.jlliang": "§a精锻用良矿",
+      "item.primogemcraft.qwqxqwrhj": "强效奇物融合剂",
       "item.primogemcraft.ffanrongdezhexue.description_0": "§4战斗时§f有小概率掉落§e摩拉",
       "gui.primogemcraft.cunzheshezhi.shifou_bwd": "§a是否不稳定？",
       "advancements.gou_gou_liao_jin_zhi_fu_du.descr": "美少女也是很累的",
@@ -46894,7 +46929,10 @@
       "gui.primogemcraft.yinhang.button_ju_jue_bing_wei_xie_ta_rang_kai": "拒绝并威胁它让开",
       "item.primogemcraft.qyhx_0wujiacheng": "祈愿核心§c[暂无加成]",
       "item.primogemcraft.sztj": "§a『生长碧翡』§f铁剑",
+      "item.primogemcraft.qwqxqwrhj.description_0": "§b融合高级奇物使用",
       "advancements.jdkx.title": "开箱！",
+      "item.primogemcraft.qwqxqwrhj.description_1": "§6部分奇普通融合剂无法融合",
+      "item.primogemcraft.qwqxqwrhj.description_2": "§6强效融合剂奇物功能更强大",
       "entity.primogemcraft.baiguangguodushengwu": "金...？",
       "item.primogemcraft.cebuzhunxia.description_0": "§0§m附不准匣",
       "item.primogemcraft.cebuzhunxia.description_1": "§b右键使用§f后对§b副手§c未附魔§e物品",
