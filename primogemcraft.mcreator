@@ -36693,6 +36693,91 @@
           "src/main/resources/data/primogemcraft/recipe/convertqxqwrhjpf.json"
         ]
       }
+    },
+    {
+      "name": "Jqyydm",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jqyydm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/potion/JqyydmMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Qwjcdm",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "qwjcdm",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/primogemcraft/models/item/qwjcdm.json",
+          "src/main/java/net/mcreator/ceshi/item/QwjcdmItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Dmqwjcdm",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dmqwjcdm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/DmqwjcdmProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jcdmms",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jcdmms",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/JcdmmsProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Jcdmpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jcdmpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/jcdmpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -39190,7 +39275,8 @@
       "Jdsbcf0",
       "Qwlzdlt",
       "Qwsss",
-      "Qwqxqwrhj"
+      "Qwqxqwrhj",
+      "Qwjcdm"
     ],
     "CUSTOM:Yuanshigongjuxuanxiangka": [
       "Jiuchanzhiyuangao",
@@ -39632,6 +39718,7 @@
       "advancements.jdszzqh.title": "升级再强化",
       "item.primogemcraft.qwkwzw.description_3": " 命值",
       "item.primogemcraft.qwkwzw.description_4": "§9寄生伤害概率 -20%",
+      "effect.primogemcraft.jqyydm": "集成代码",
       "item.primogemcraft.qwqskxjxt": "§5『奇物』§b「奇思狂想」机械团",
       "block.primogemcraft.zhjsk": "智慧金属块",
       "gamerule.jinyongnang.description": "是否阻止囊被使用？",
@@ -40091,6 +40178,7 @@
       "item.primogemcraft.jingqueyouyadaima": "§5『奇物』§f精确优雅的代码",
       "item.primogemcraft.axzssj.description_1": "§",
       "item.primogemcraft.axzssj.description_2": "§7可应用于：",
+      "item.primogemcraft.qwjcdm": "§5『奇物』§e集成代码",
       "item.primogemcraft.axzssj.description_0": "§7可在锻造台升级钻石质装备",
       "item.primogemcraft.yuanshiyuanpei": "§b原石原胚",
       "advancements.jzdz.descr": "获得华丽锻造台",
@@ -42340,6 +42428,7 @@
       "advancements.jdszzqh.title": "upgrading and enhancing",
       "item.primogemcraft.qwkwzw.description_3": " 命值",
       "item.primogemcraft.qwkwzw.description_4": "§9寄生伤害概率 -20%",
+      "effect.primogemcraft.jqyydm": "集成代码",
       "item.primogemcraft.qwqskxjxt": "§5『奇物』§b「奇思狂想」机械团",
       "block.primogemcraft.zhjsk": "Ingenuity  blck",
       "gamerule.jinyongnang.description": "是否阻止囊被使用？",
@@ -42799,6 +42888,7 @@
       "item.primogemcraft.jingqueyouyadaima": "§5『Curio』§fElegant Code",
       "item.primogemcraft.axzssj.description_1": "§",
       "item.primogemcraft.axzssj.description_2": "§7appliable for:",
+      "item.primogemcraft.qwjcdm": "§5『奇物』§e集成代码",
       "item.primogemcraft.axzssj.description_0": "§7upgrade diamond equipments in smithing table",
       "item.primogemcraft.yuanshiyuanpei": "§bPrimogem Catalyst",
       "advancements.jzdz.descr": "获得华丽锻造台",
@@ -45048,6 +45138,7 @@
       "advancements.jdszzqh.title": "升级再强化",
       "item.primogemcraft.qwkwzw.description_3": " 命值",
       "item.primogemcraft.qwkwzw.description_4": "§9寄生伤害概率 -20%",
+      "effect.primogemcraft.jqyydm": "集成代码",
       "item.primogemcraft.qwqskxjxt": "§5『奇物』§b「奇思狂想」机械团",
       "block.primogemcraft.zhjsk": "智慧金属块",
       "gamerule.jinyongnang.description": "是否阻止囊被使用？",
@@ -45505,6 +45596,7 @@
       "advancements.b_bao_di_ren.descr": "在祈愿中获得保底",
       "item.primogemcraft.axzssj.description_1": "§",
       "item.primogemcraft.axzssj.description_2": "§7可应用于：",
+      "item.primogemcraft.qwjcdm": "§5『奇物』§e集成代码",
       "item.primogemcraft.axzssj.description_0": "§7可在锻造台升级钻石质装备",
       "item.primogemcraft.yuanshiyuanpei": "§b原石原胚",
       "advancements.jzdz.descr": "获得华丽锻造台",
