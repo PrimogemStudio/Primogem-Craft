@@ -36790,6 +36790,18 @@
           "src/main/resources/data/primogemcraft/recipe/xcpf.json"
         ]
       }
+    },
+    {
+      "name": "Xhpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xhpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/xhpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [

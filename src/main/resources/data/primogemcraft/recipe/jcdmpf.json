@@ -2,28 +2,28 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aba",
-    "cde",
-    "fag"
+    "abc",
+    "ddd",
+    "efg"
   ],
   "key": {
     "a": {
-      "item": "primogemcraft:qwqxqwrhj"
+      "item": "primogemcraft:luanqibazaodedaima"
     },
     "b": {
       "item": "primogemcraft:youdianqiqiaodedaima"
     },
     "c": {
-      "item": "primogemcraft:luanqibazaodedaima"
-    },
-    "d": {
-      "item": "primogemcraft:jingqueyouyadaima"
-    },
-    "e": {
       "item": "primogemcraft:zhongguizhongjudedaima"
     },
-    "f": {
+    "d": {
+      "item": "primogemcraft:qwqxqwrhj"
+    },
+    "e": {
       "item": "primogemcraft:wuxiandiguidedaima"
+    },
+    "f": {
+      "item": "primogemcraft:jingqueyouyadaima"
     },
     "g": {
       "item": "primogemcraft:meiyouzhushidaima"
