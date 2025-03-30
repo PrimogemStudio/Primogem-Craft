@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    "bbb",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:shanbianzhichen"
+    },
+    "b": {
+      "item": "primogemcraft:xinghui"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:xingchen",
+    "count": 1
+  }
+}

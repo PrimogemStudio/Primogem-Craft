@@ -36778,6 +36778,18 @@
           "src/main/resources/data/primogemcraft/recipe/jcdmpf.json"
         ]
       }
+    },
+    {
+      "name": "Xcpf",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xcpf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/primogemcraft/recipe/xcpf.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
