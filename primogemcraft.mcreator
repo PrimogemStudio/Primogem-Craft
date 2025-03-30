@@ -38040,6 +38040,9 @@
       "Blocks.RAW_GOLD_BLOCK",
       "Blocks.RAW_COPPER_BLOCK"
     ],
+    "ITEMS:c:curio/special/code": [
+      "CUSTOM:Qwjcdm"
+    ],
     "ITEMS:genshincraft:pyro_infusion": [
       "CUSTOM:Rytj",
       "CUSTOM:Ryzsj",
@@ -38194,6 +38197,9 @@
     ],
     "ITEMS:c:kebianjiduiyou": [
       "CUSTOM:Mmola01"
+    ],
+    "ITEMS:c:curio/special": [
+      "TAG:c:curio/special/code"
     ],
     "ITEMS:minecraft:leg_armor": [
       "~CUSTOM:Teshukuijia01.legs",
@@ -38637,7 +38643,8 @@
       "TAG:c:curio/negative",
       "TAG:c:curio/other",
       "TAG:c:curio/fusion",
-      "TAG:c:curio/tianhuihejin"
+      "TAG:c:curio/tianhuihejin",
+      "TAG:c:curio/special"
     ],
     "ITEMS:minecraft:meat": [
       "~CUSTOM:Ysjfr",
