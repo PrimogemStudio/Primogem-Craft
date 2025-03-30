@@ -206,7 +206,7 @@
         {
           "type": "minecraft:item",
           "name": "primogemcraft:hyjsd",
-          "weight": 3,
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
