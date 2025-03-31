@@ -245,6 +245,7 @@ public class PrimogemcraftModTabs {
 				tabData.accept(PrimogemcraftModItems.QWQXQWRHJ.get());
 				tabData.accept(PrimogemcraftModItems.QWJCDM.get());
 				tabData.accept(PrimogemcraftModItems.QWXYDSW.get());
+				tabData.accept(PrimogemcraftModItems.QWXYDD.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PRIMOGEMCRAFT_EQUIPMENT = REGISTRY.register("primogemcraft_equipment",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.primogemcraft.primogemcraft_equipment")).icon(() -> new ItemStack(PrimogemcraftModItems.WUFENGJIAN.get())).displayItems((parameters, tabData) -> {
