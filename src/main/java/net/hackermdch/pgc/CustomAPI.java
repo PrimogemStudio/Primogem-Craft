@@ -51,11 +51,11 @@ public class CustomAPI {
                     var recipes = level.getServer().getRecipeManager().getAllRecipesFor(CustomRegister.STARDUST_CONVERTER.get());
                     for (var r : recipes) {
                         if (r1 == null) {
-                            var data = r.value().match(item1);
+                            var data = r.value().match(item1, false);
                             if (data != null) r1 = data;
                         }
                         if (r2 == null) {
-                            var data = r.value().match(item2);
+                            var data = r.value().match(item2, true);
                             if (data != null) r2 = data;
                         }
                         if (r1 != null && r2 != null) break;

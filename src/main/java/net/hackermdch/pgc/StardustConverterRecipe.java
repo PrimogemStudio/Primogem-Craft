@@ -35,11 +35,15 @@ public final class StardustConverterRecipe implements Recipe<RecipeInput> {
     public static void register() {
     }
 
-    public Data match(ItemStack item) {
-        if (ItemStack.isSameItemSameComponents(first, item) && item.getCount() >= first.getCount()) {
-            return new Data(first.copy(), second.copy(), cost);
-        } else if (ItemStack.isSameItemSameComponents(second, item) && item.getCount() >= second.getCount()) {
-            return new Data(second.copy(), first.copy(), cost);
+    public Data match(ItemStack item, boolean reverse) {
+        if (reverse) {
+            if (ItemStack.isSameItemSameComponents(second, item) && item.getCount() >= second.getCount()) {
+                return new Data(second.copy(), first.copy(), cost);
+            }
+        } else {
+            if (ItemStack.isSameItemSameComponents(first, item) && item.getCount() >= first.getCount()) {
+                return new Data(first.copy(), second.copy(), cost);
+            }
         }
         return null;
     }
