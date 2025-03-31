@@ -36802,6 +36802,108 @@
           "src/main/resources/data/primogemcraft/recipe/xhpf.json"
         ]
       }
+    },
+    {
+      "name": "HSWzsws",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hs_wzsws",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/HSWzswsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "deng_dai_ke",
+            "type": "number"
+          },
+          {
+            "name": "fan_wei",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HS0wzsw",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hs_0wzsw",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/ceshi/procedures/HS0wzswProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "item",
+            "type": "itemstack"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "zhi_ling",
+            "type": "logic"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "zhi_ling_a",
+            "type": "number"
+          },
+          {
+            "name": "zhi_ling_b",
+            "type": "number"
+          },
+          {
+            "name": "zhi_ling_z",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
