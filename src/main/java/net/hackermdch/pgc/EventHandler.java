@@ -4,6 +4,9 @@ import net.hackermdch.pgc.network.ParticlePacket;
 import net.hackermdch.pgc.network.WishInfoConfiguration;
 import net.hackermdch.pgc.network.WishInfoPacket;
 import net.mcreator.ceshi.CustomBarRegister;
+import net.mcreator.ceshi.GenshinCraftLinkage;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -11,6 +14,7 @@ import net.neoforged.neoforge.client.event.RegisterItemDecorationsEvent;
 import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
 import net.neoforged.neoforge.network.event.RegisterConfigurationTasksEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.registries.RegisterEvent;
 
 import static net.mcreator.ceshi.PrimogemcraftMod.MODID;
 
@@ -36,6 +40,13 @@ public class EventHandler {
         if (ModList.get().isLoaded("roughlyenoughitems")) {
             WishInfoPacket.register(registrar);
         }
+    }
+
+    @SubscribeEvent(priority = EventPriority.LOWEST, receiveCanceled = true)
+    private static void onRegister(RegisterEvent event) {
+        if (!ModList.get().isLoaded("genshincraft")) return;
+        if (event.getRegistry() == BuiltInRegistries.ITEM) GenshinCraftLinkage.items();
+        else if (event.getRegistry() == BuiltInRegistries.MOB_EFFECT) GenshinCraftLinkage.effects();
     }
 
     @SubscribeEvent

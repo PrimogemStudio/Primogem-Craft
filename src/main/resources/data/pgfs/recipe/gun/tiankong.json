@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "tacz"
+    }
+  ],
   "type": "tacz:gun_smith_table_crafting",
   "materials": [
     {

@@ -6,7 +6,6 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "AttributeUtilMixin",
-    "EffectRenderMixin",
     "InventoryMixin"
   ],
   "client": [
