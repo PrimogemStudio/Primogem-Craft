@@ -34,5 +34,9 @@ public class GenshinCraftLinkage {
         if (flag2) return;
         flag2 = true;
         TrounceBlossom.addLoot(PrimogemcraftModItems.TIANKONGSP.toStack(), 0.15);
+        TrounceBlossom.addLoot(PrimogemcraftModItems.ZUISHENGSUIXIE.toStack(4), 0.8);
+		TrounceBlossom.addLoot(PrimogemcraftModItems.ZUISHENGDUANPIAN.toStack(2), 0.4);
+		TrounceBlossom.addLoot(PrimogemcraftModItems.ZUISHENGKUAI.toStack(1), 0.1);
+		TrounceBlossom.addLoot(PrimogemcraftModItems.WQZHG.toStack(), 0.01);
     }
 }
