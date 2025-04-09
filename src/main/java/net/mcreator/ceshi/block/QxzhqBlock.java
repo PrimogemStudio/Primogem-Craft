@@ -2,6 +2,7 @@
 package net.mcreator.ceshi.block;
 
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -31,7 +32,7 @@ import io.netty.buffer.Unpooled;
 
 public class QxzhqBlock extends Block implements EntityBlock {
 	public QxzhqBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(10f, 20f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).sound(SoundType.METAL).strength(10f, 20f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -62,7 +62,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ANVIL"
+      "value": "NONE"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -71,7 +71,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "GOLD",
     "creativePickItem": {
       "value": ""
     },

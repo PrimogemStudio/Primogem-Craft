@@ -3,6 +3,7 @@ package net.mcreator.ceshi.block;
 
 import net.neoforged.neoforge.common.util.TriState;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -13,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class ShengzhangbifeidakuaiBlock extends Block {
 	public ShengzhangbifeidakuaiBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(3f, 15f));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GREEN).sound(SoundType.GLASS).strength(3f, 15f));
 	}
 
 	@Override

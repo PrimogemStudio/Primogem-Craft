@@ -3,6 +3,7 @@ package net.mcreator.ceshi.block;
 
 import org.checkerframework.checker.units.qual.s;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -14,8 +15,8 @@ import net.minecraft.core.BlockPos;
 
 public class Disuikuai1Block extends Block {
 	public Disuikuai1Block() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GLASS).strength(5f, 20f).lightLevel(s -> 10).requiresCorrectToolForDrops().friction(0.7f).speedFactor(0.9f).jumpFactor(0.2f)
-				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GLASS).strength(5f, 20f).lightLevel(s -> 10).requiresCorrectToolForDrops().friction(0.7f).speedFactor(0.9f)
+				.jumpFactor(0.2f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

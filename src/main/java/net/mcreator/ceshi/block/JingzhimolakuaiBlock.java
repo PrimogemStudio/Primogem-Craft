@@ -4,6 +4,7 @@ package net.mcreator.ceshi.block;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -21,7 +22,7 @@ import java.util.List;
 
 public class JingzhimolakuaiBlock extends Block {
 	public JingzhimolakuaiBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(4f, 100f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.METAL).strength(4f, 100f).requiresCorrectToolForDrops());
 	}
 
 	@Override

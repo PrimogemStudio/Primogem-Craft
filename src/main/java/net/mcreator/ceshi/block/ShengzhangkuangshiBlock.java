@@ -5,6 +5,7 @@ import net.neoforged.neoforge.common.util.TriState;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -26,7 +27,7 @@ import java.util.List;
 
 public class ShengzhangkuangshiBlock extends Block {
 	public ShengzhangkuangshiBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(2f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRAVEL).strength(2f).requiresCorrectToolForDrops());
 	}
 
 	@Override

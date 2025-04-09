@@ -1,6 +1,7 @@
 
 package net.mcreator.ceshi.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -12,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class Caomu33Block extends FenceBlock {
 	public Caomu33Block() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn());
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.TERRACOTTA_GREEN).sound(SoundType.WOOD).strength(2f, 3f).dynamicShape().forceSolidOn());
 	}
 
 	@Override

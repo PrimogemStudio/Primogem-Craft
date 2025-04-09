@@ -1,6 +1,7 @@
 
 package net.mcreator.ceshi.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -23,7 +24,7 @@ public class DbmlkBlock extends FallingBlock {
 	}
 
 	public DbmlkBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.ANVIL).strength(10f, 20f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.ANVIL).strength(10f, 20f).requiresCorrectToolForDrops());
 	}
 
 	@Override

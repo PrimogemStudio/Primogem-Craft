@@ -3,6 +3,7 @@ package net.mcreator.ceshi.block;
 
 import org.checkerframework.checker.units.qual.s;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -26,8 +27,8 @@ public class ShizuoyuanshikuaiBlock extends Block {
 	public static final EnumProperty<AttachFace> FACE = FaceAttachedHorizontalDirectionalBlock.FACE;
 
 	public ShizuoyuanshikuaiBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.HAT).sound(SoundType.GLASS).strength(6f, 14f).lightLevel(s -> 8).requiresCorrectToolForDrops().friction(0.7f).hasPostProcess((bs, br, bp) -> true)
-				.emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.HAT).mapColor(MapColor.COLOR_PINK).sound(SoundType.GLASS).strength(6f, 14f).lightLevel(s -> 8).requiresCorrectToolForDrops().friction(0.7f)
+				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(FACE, AttachFace.WALL));
 	}
 

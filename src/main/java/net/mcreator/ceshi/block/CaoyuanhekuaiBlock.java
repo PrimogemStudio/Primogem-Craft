@@ -5,6 +5,7 @@ import net.neoforged.neoforge.common.util.TriState;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -22,7 +23,7 @@ import java.util.List;
 
 public class CaoyuanhekuaiBlock extends Block {
 	public CaoyuanhekuaiBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(10f, 20f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_GREEN).sound(SoundType.STONE).strength(10f, 20f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -4,6 +4,7 @@ package net.mcreator.ceshi.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -42,7 +43,7 @@ public class Mlxdml03Block extends FallingBlock implements EntityBlock {
 	}
 
 	public Mlxdml03Block() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.CHAIN).strength(2f, 6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.CHAIN).strength(2f, 6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

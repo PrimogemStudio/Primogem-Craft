@@ -4,6 +4,10 @@ package net.mcreator.ceshi.block;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -32,7 +36,7 @@ public class DijingqinjingkuangshiBlock extends FallingBlock {
 	}
 
 	public DijingqinjingkuangshiBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(2f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().liquid().mapColor(MapColor.WATER).sound(SoundType.GRAVEL).strength(2f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -45,6 +49,11 @@ public class DijingqinjingkuangshiBlock extends FallingBlock {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override

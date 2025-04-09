@@ -4,6 +4,7 @@ package net.mcreator.ceshi.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -17,7 +18,7 @@ import net.mcreator.ceshi.procedures.Manaokuai_shuxingProcedure;
 
 public class Ranyuankuai2Block extends Block {
 	public Ranyuankuai2Block() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GLASS).strength(3f, 18f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().liquid().mapColor(MapColor.FIRE).sound(SoundType.GLASS).strength(3f, 18f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

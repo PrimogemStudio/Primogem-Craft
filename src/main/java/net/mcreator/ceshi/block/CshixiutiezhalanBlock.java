@@ -1,6 +1,7 @@
 
 package net.mcreator.ceshi.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -10,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class CshixiutiezhalanBlock extends IronBarsBlock {
 	public CshixiutiezhalanBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.LANTERN).strength(2f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().ignitedByLava().mapColor(MapColor.COLOR_BLACK).sound(SoundType.LANTERN).strength(2f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

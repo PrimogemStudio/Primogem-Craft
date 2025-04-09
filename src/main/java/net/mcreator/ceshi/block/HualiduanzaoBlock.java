@@ -5,6 +5,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -38,7 +39,7 @@ import io.netty.buffer.Unpooled;
 
 public class HualiduanzaoBlock extends Block implements EntityBlock {
 	public HualiduanzaoBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(3f, 10f));
+		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.GOLD).sound(SoundType.WOOD).strength(3f, 10f));
 	}
 
 	@Override

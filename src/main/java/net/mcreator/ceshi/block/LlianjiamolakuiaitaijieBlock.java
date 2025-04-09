@@ -1,6 +1,7 @@
 
 package net.mcreator.ceshi.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -12,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class LlianjiamolakuiaitaijieBlock extends StairBlock {
 	public LlianjiamolakuiaitaijieBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 4f).requiresCorrectToolForDrops());
+		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.GOLD).sound(SoundType.STONE).strength(2f, 4f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

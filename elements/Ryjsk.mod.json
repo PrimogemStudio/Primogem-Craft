@@ -59,7 +59,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "IRON"
+      "value": "LAVA"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -68,7 +68,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "TNT",
     "creativePickItem": {
       "value": ""
     },

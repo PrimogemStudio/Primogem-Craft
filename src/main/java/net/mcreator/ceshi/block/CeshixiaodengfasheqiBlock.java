@@ -5,6 +5,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -29,7 +30,7 @@ import java.util.List;
 
 public class CeshixiaodengfasheqiBlock extends Block implements EntityBlock {
 	public CeshixiaodengfasheqiBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.NETHERITE_BLOCK).strength(3f, 10f).pushReaction(PushReaction.BLOCK));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_YELLOW).sound(SoundType.NETHERITE_BLOCK).strength(3f, 10f).pushReaction(PushReaction.BLOCK));
 	}
 
 	@Override

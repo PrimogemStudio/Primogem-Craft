@@ -4,6 +4,7 @@ package net.mcreator.ceshi.block;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -21,7 +22,7 @@ import java.util.List;
 
 public class JdykBlock extends Block {
 	public JdykBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.AMETHYST).strength(5f, 15f).requiresCorrectToolForDrops().friction(0.7f));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).sound(SoundType.AMETHYST).strength(5f, 15f).requiresCorrectToolForDrops().friction(0.7f));
 	}
 
 	@Override

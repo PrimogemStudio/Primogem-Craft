@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class JianshijingbanBlock extends IronBarsBlock {
 	public JianshijingbanBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.HAT).mapColor(MapColor.COLOR_BROWN).sound(SoundType.GLASS).strength(300f, 1000f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.HAT).mapColor(MapColor.COLOR_LIGHT_BLUE).sound(SoundType.GLASS).strength(300f, 1000f).requiresCorrectToolForDrops());
 	}
 
 	@Override

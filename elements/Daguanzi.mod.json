@@ -59,7 +59,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "PLANTS"
+      "value": "NONE"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -68,7 +68,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "DIRT",
     "creativePickItem": {
       "value": ""
     },

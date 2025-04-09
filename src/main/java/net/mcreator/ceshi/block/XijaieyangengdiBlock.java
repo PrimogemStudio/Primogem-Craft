@@ -9,6 +9,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -23,8 +24,8 @@ import net.mcreator.ceshi.procedures.Xiajieyangengdi_shuxingProcedure;
 
 public class XijaieyangengdiBlock extends Block {
 	public XijaieyangengdiBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.NETHERRACK).strength(1f, 10f).lightLevel(s -> 6).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.PUSH_ONLY)
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.NETHER).sound(SoundType.NETHERRACK).strength(1f, 10f).lightLevel(s -> 6).requiresCorrectToolForDrops().noOcclusion()
+				.pushReaction(PushReaction.PUSH_ONLY).isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
