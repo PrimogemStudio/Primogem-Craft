@@ -24,7 +24,7 @@ public class QxzhqsxhsProcedure {
 			i2 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) (zhi + 1)).copy());
 			n1 = i2.getCount() + zhi_1;
 			bn1 = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "shan_bian");
-			if (n1 <= i2.getMaxStackSize() && bn1 - shan_bian >= 0 && i1.getCount() >= zhi_0 && i1.getItem() == item0.getItem() && (i2.getItem() == item.getItem() || i2.getItem() == Blocks.AIR.asItem())) {
+			if (!(i2.getItem() == Blocks.AIR.asItem()) && n1 <= i2.getMaxStackSize() && bn1 - shan_bian >= 0 && i1.getCount() >= zhi_0 && i1.getItem() == item0.getItem() && (i2.getItem() == item.getItem() || i2.getItem() == Blocks.AIR.asItem())) {
 				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 					int _slotid = (int) zhi;
 					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
