@@ -1,5 +1,6 @@
 {
-    "pack.pgfs.name": "原石枪械",
-    "pack.pgfs.desc": "包含一把异世界枪械",
-    "pgfs.gun.tiankong.name": "§b[天] - [空]"
-  }
+  "pack.pgfs.name": "原石枪械",
+  "pack.pgfs.desc": "包含一把异世界枪械",
+  "pgfs.gun.tiankong.name": "§b天空",
+  "pgfs.gun.tiankong.desc": "“学医救不了蒙德，也救不了你自己”"
+}
