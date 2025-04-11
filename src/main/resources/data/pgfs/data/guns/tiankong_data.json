@@ -6,7 +6,7 @@
   "bullet": {
     "extra_damage": {
       "armor_ignore": 0.8,
-      "head_shot_multiplier": 2.2,
+      "head_shot_multiplier": 3,
       "damage_adjust": [
         { "distance": 0.5, "damage": 10 },
         { "distance": 25, "damage": 9 },
