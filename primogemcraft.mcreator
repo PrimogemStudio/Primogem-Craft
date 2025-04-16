@@ -26966,44 +26966,6 @@
       }
     },
     {
-      "name": "Tiankongsx",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tiankongsx",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/TiankongsxProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Custominject",
       "type": "loottable",
       "compiles": true,
@@ -37166,74 +37128,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/primogemcraft/painting_variant/jinqi_0.json"
-        ]
-      }
-    },
-    {
-      "name": "Tiankongsx0",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tiankongsx_0",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/Tiankongsx0Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Tiankongsx1",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tiankongsx_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ceshi/procedures/Tiankongsx1Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "da",
-            "type": "damagesource"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     }

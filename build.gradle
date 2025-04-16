@@ -53,6 +53,16 @@ repositories {
             includeGroup "maven.modrinth"
         }
     }
+    exclusiveContent {
+        forRepository {
+            maven {
+                url "https://raw.githubusercontent.com/hackermdch/maven-repo/master/repository"
+            }
+        }
+        filter {
+            includeGroup "com.tacz"
+        }
+    }
     maven { url "https://maven.shedaniel.me/" }
 }
 
@@ -62,6 +72,7 @@ repositories {
  */
 dependencies {
     implementation "maven.modrinth:genshincraft:2.9.0"
+    implementation "com.tacz:tacz-neoforge:0329-005234"
     api "me.shedaniel:RoughlyEnoughItems-neoforge:16.0.799"
 }
 
