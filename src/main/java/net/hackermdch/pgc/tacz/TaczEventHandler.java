@@ -9,19 +9,19 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.LivingEntity;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.common.NeoForge;
 
 import static com.tacz.guns.api.event.common.GunDamageSourcePart.ARMOR_PIERCING;
 import static com.tacz.guns.api.event.common.GunDamageSourcePart.NON_ARMOR_PIERCING;
 import static net.hackermdch.pgc.CustomAPI.GenshinCraftLoaded;
-import static net.mcreator.ceshi.PrimogemcraftMod.MODID;
 
-@EventBusSubscriber(modid = MODID)
 public class TaczEventHandler {
     private static final ResourceLocation id = ResourceLocation.fromNamespaceAndPath("pgfs", "tiankong");
 
-    @SubscribeEvent
+    public static void register() {
+        NeoForge.EVENT_BUS.addListener(TaczEventHandler::onEntityHurtByGun);
+    }
+
     private static void onEntityHurtByGun(EntityHurtByGunEvent.Pre event) {
         if (event.getLogicalSide().isServer() && event.getGunId().equals(id)) {
             var level = event.getBullet().level();

@@ -1,6 +1,7 @@
 package net.hackermdch.pgc;
 
 import net.hackermdch.pgc.network.WishInfoConfiguration;
+import net.hackermdch.pgc.tacz.TaczEventHandler;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -9,6 +10,7 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
@@ -43,5 +45,6 @@ public class CustomRegister {
         DATA_COMPONENT_TYPES.register(modBus);
         RECIPE_TYPES.register(modBus);
         RECIPE_SERIALIZERS.register(modBus);
+        if (ModList.get().isLoaded("tacz")) TaczEventHandler.register();
     }
 }
