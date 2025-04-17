@@ -72,7 +72,7 @@ repositories {
  */
 dependencies {
     implementation "maven.modrinth:genshincraft:2.9.0"
-    implementation "com.tacz:tacz-neoforge:0329-005234"
+    implementation "com.tacz:tacz-neoforge:1.1.4-snapshot-0417"
     api "me.shedaniel:RoughlyEnoughItems-neoforge:16.0.799"
 }
 

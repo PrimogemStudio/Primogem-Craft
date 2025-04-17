@@ -1,9 +1,21 @@
 {
   "transform": {
     "scale": {
-      "thirdperson": [0.6, 0.6, 0.6],
-      "ground": [0.6, 0.6, 0.6],
-      "fixed": [1.0, 1.0, 1.0]
+      "thirdperson": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "ground": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "fixed": [
+        1.0,
+        1.0,
+        1.0
+      ]
     }
   },
   "muzzle_flash": {
@@ -24,5 +36,6 @@
   "texture": "pgfs:gun/uv/tiankong",
   "slot": "pgfs:gun/slot/tiankong",
   "hud": "pgfs:gun/hud/tiankong",
-  "third_person_animation": "default"
+  "third_person_animation": "default",
+  "render_type": "translucent"
 }
